@@ -90,8 +90,14 @@
 .table-striped {
   tbody tr{
     background-color: #e1e2e4;
+   // transition: background-color 0.2s;
     &.active, &:hover{
       background:linear-gradient(to top, #e37506, #e89708);
+      .nl-pl-social{
+        .fa-twitter, .fa-youtube-play, .fa-facebook-square{
+          color: #fff;
+        }
+      }
     }
   }
   tbody tr:nth-of-type(odd) {
