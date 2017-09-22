@@ -1,23 +1,40 @@
-.nl-footer{
+.nl-footer {
   @include fontSize(11px);
   @include lineHeight(16px);
   color: #fff;
-  @include respond-to(allsmall){
+  @include respond-to(allsmall) {
     text-align: center;
   }
-   &--top{
+  &--top {
     background: #061540;
-    padding: calculateRem(20px) calculateRem(40px);
+    padding: calculateRem(20px) calculateRem(100px);
     min-height: calculateRem(140px);
+    @include respond-to(display) {
+      padding: calculateRem(20px) 15px;
+    }
+    @include respond-to(wide-tablets) {
+      padding: calculateRem(20px) 15px;
+    }
+    @include respond-to(allsmall) {
+      padding: calculateRem(20px) 15px;
+    }
   }
-  &--button{
+  &--button {
     background: #0f254f;
-    padding: calculateRem(20px) calculateRem(40px);
+    padding: calculateRem(20px) calculateRem(100px);
     min-height: calculateRem(75px);
-
+    @include respond-to(display) {
+      padding: calculateRem(20px) 15px;
+    }
+    @include respond-to(wide-tablets) {
+      padding: calculateRem(20px) 15px;
+    }
+    @include respond-to(allsmall) {
+      padding: calculateRem(20px) 15px;
+    }
   }
-  .nl-social-icon{
-    a{
+  .nl-social-icon {
+    a {
       margin-left: 15px;
       transition: all .3s;
       display: inline-flex;
@@ -29,13 +46,19 @@
       justify-content: center;
       align-items: center;
       @include fontSize(20px);
-      &:first-child{
+      &:first-child {
         margin-left: 0;
       }
 
-      &:hover{
+      &:hover {
         background: #ff9f2f;
       }
+    }
+  }
+  p {
+    margin: inherit;
+    @include respond-to(allsmall){
+      margin: 1rem 0;
     }
   }
 }

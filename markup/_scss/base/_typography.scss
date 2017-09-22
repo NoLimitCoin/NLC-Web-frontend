@@ -51,3 +51,11 @@ p{
 ul{
 
 }
+
+.nl-section{
+  h1{
+    @include fontSize(26px);
+    margin-bottom: calculateRem(50px);
+    //color: #121a31;
+  }
+}

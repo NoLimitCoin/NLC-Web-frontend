@@ -1,34 +1,38 @@
-.nl-players{
+.nl-players {
   background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
   background-size: cover;
-  img{
+  color: #121a31;
+  padding-bottom: calculateRem(160px);
+  img {
     width: auto;
   }
-  .nl-players-table{
+  .nl-players-table {
     background: linear-gradient(to top, #121a31, #1f3658);
     border-radius: calculateRem(10px);
     color: #fff;
-    box-shadow: 3px 0 7px rgba(0,0,0,0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     overflow: hidden;
-    &-data-field{
+
+    &-data-field {
+      position: relative;
       padding: calculateRem(25px);
       display: flex;
 
     }
   }
-  .nl-data{
-    &--avatar{
+  .nl-data {
+    &--avatar {
       overflow: hidden;
       position: relative;
       width: calculateRem(110px);
       height: calculateRem(110px);
       border-radius: 50%;
       margin-right: calculateRem(20px);
-      img{
+      img {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         z-index: 1;
         width: 100%;
         transition: all .5s;
@@ -36,39 +40,95 @@
         height: 100%;
       }
     }
-    &--text{
+    &--text {
       padding-top: calculateRem(15px);
-      p{
+      p {
         font-weight: 400;
         text-transform: uppercase;
         margin: 0;
         @include fontSize(15.63px);
         letter-spacing: 1px;
-        &.title{
+        &.title {
           font-weight: 700;
           color: #e89708;
-          margin-bottom:calculateRem(5px);
+          margin-bottom: calculateRem(5px);
           @include fontSize(19.54px);
-
 
         }
       }
     }
   }
-  .nl-players-search{
+  .nl-players-search {
     position: absolute;
     min-width: calculateRem(353px);
-    top: 0;
-    right: 0;
-    .input-group{
+    bottom: calculateRem(-33px);
+    right: calculateRem(3px);
+    .input-group {
       display: flex;
       position: relative;
       width: 100%;
     }
-    .input-group-btn{
+    .form-control {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border-right: 0;
+    }
+    .input-group-btn {
       position: relative;
       font-size: 0;
       white-space: nowrap;
+      .btn-secondary {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: 0;
+      }
+    }
+  }
+
+  .nl-players-filter-title {
+    @include fontSize(18px);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: calculateRem(36px) 0 calculateRem(25px);
+  }
+
+  .nl-players-filter {
+    a {
+      margin-right: calculateRem(36px);
+    }
+    .btn-primary{
+      font-weight: 500;
+    }
+  }
+  .nl-players-filter-caruseul {
+    margin-bottom: calculateRem(40px);
+  }
+  .pl-teams {
+    position: relative;
+    padding: 0 calculateRem(30px);
+    width: 100%;
+    .owl-item {
+      line-height: 64px;
+      a{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      img {
+        width: inherit;
+      }
+    }
+    .owl-nav {
+      @include fontSize(40px);
+    }
+    .owl-prev {
+      position: absolute;
+      top: calculateRem(10px);
+      left: 0;
+    }
+    .owl-next {
+      position: absolute;
+      top: calculateRem(10px);
+      right: 0;
     }
   }
 }

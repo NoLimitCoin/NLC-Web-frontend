@@ -80,17 +80,31 @@
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     width: 12.5%;
+    @include respond-to(extra-large-display){
+      max-width:inherit;
+    }
+    @include respond-to(large-display){
+      max-width:inherit;
+    }
     &:nth-child(1) {
       border-left: none;
-      width: 17%;
+      width: 20%;
+      max-width: inherit;
       .nav-link {
-        //padding-left: 12vw;
+        padding-left: 10vw;
+        img{
+          padding-left: calculateRem(20px);
+          padding-right: calculateRem(5px);
+        }
       }
 
     }
     &:last-child {
       border-right: none;
-      width: 7%;
+      width: 5%;
+      img{
+        max-width: calculateRem(38px);
+      }
     }
   }
 }
