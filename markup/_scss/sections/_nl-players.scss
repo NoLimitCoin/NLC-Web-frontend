@@ -55,6 +55,22 @@
       }
     }
   }
+  .nl-players-search{
+    position: absolute;
+    min-width: calculateRem(353px);
+    top: 0;
+    right: 0;
+    .input-group{
+      display: flex;
+      position: relative;
+      width: 100%;
+    }
+    .input-group-btn{
+      position: relative;
+      font-size: 0;
+      white-space: nowrap;
+    }
+  }
 }
 
 

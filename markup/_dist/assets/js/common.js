@@ -28,3 +28,13 @@ $(window).on('load',function (){
 $(function () {
     $('#video a').fancybox({ });
 });
+
+/*--------------------------------------------------------------
+ # CustomScrollbar
+ --------------------------------------------------------------*/
+
+(function($){
+    $(window).on("load",function(){
+        //$(".table-striped").mCustomScrollbar();
+    });
+})(jQuery);
