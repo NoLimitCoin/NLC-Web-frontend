@@ -38,12 +38,12 @@ gulp.task('serve', ['sass'], function() {
     /**
      * watch for changes in sass files 
      */
-    gulp.watch(settings.sassDir + "/*.scss", ['sass']);
+    gulp.watch(settings.sassDir + "/**/*.scss", ['sass']);
 
     /**
      * watch for changes in jade files 
      */
-    gulp.watch([settings.layoutDir + "/*.jade", settings.partialsDir + "/*.jade", settings.dataDir + "/*.jade.json"], ['jade']);
+    gulp.watch([settings.layoutDir + "/**/*.jade", settings.partialsDir + "/**/*.jade", settings.dataDir + "/*.jade.json"], ['jade']);
 
 });
 
