@@ -1,0 +1,193 @@
+.nl-variety {
+  color: #0d3663;
+  a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    margin-right: calculateRem(3px);
+    padding-top: 33%;
+    width: 14.28%;
+    @include respond-to(allsmall) {
+      margin-right: 0;
+      padding-top: 59%;
+    }
+    @include respond-to(handhelds){
+      padding-top: 50%;
+      h4{
+        right: -85%;
+      }
+    }
+    &:nth-child(1) {
+      @include respond-to(allsmall) {
+        width: 33%;
+        //h4{
+        //  bottom: 14.29rem;
+        //  right: -8rem;
+        //}
+
+      }
+      @include respond-to(allmobile){
+        //h4{
+        //  bottom: 9rem;
+        //  right: -5rem;
+        //}
+      }
+      @include respond-to(handhelds){
+        width: 100%;
+        h4{
+          right: -92%;
+        }
+      }
+
+    }
+    &:nth-child(2) {
+      @include respond-to(allsmall) {
+        width: 34%;
+        //h4{
+        //  bottom: 14.29rem;
+        //  right: -8rem;
+        //}
+      }
+      @include respond-to(allmobile){
+        //h4{
+        //  bottom: 9rem;
+        //  right: -5rem;
+        //}
+      }
+      @include respond-to(handhelds){
+        width: 50%;
+        //h4{
+        //  bottom: 14rem;
+        //  right: -7rem;
+        //}
+      }
+    }
+    &:nth-child(3) {
+      @include respond-to(allsmall) {
+        width: 33%;
+        //h4{
+        //  bottom: 14.29rem;
+        //  right: -8rem;
+        //}
+      }
+      @include respond-to(allmobile){
+        //h4{
+        //  bottom: 9rem;
+        //  right: -5rem;
+        //}
+      }
+      @include respond-to(handhelds){
+        width: 50%;
+        //h4{
+        //  bottom: 14rem;
+        //  right: -7rem;
+        //}
+      }
+    }
+    &:nth-child(4) {
+      @include respond-to(allsmall) {
+        width: 25%;
+      }
+      @include respond-to(handhelds){
+        width: 50%;
+      }
+    }
+    &:nth-child(5) {
+      @include respond-to(allsmall) {
+        width: 25%;
+      }
+      @include respond-to(handhelds){
+        width: 50%;
+      }
+    }
+    &:nth-child(6) {
+      @include respond-to(allsmall) {
+        width: 25%;
+      }
+      @include respond-to(handhelds){
+        width: 50%;
+      }
+    }
+    &:nth-child(7) {
+      @include respond-to(allsmall) {
+        width: 25%;
+      }
+      @include respond-to(handhelds){
+        width: 50%;
+      }
+    }
+
+  &:last-child {
+    margin-right: 0;
+  }
+  img {
+    width: 105%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all .5s;
+    //transition: all 0.5s;
+  }
+  h4 {
+    position: absolute;
+    bottom: 0;
+    right: -75%;
+    transition: all 0.5s;
+    text-align: left;
+    width: 100%;
+    transform: rotate(-90deg);
+    z-index: 1;
+    transform-origin: 0 0;
+    //@include respond-to(wide-display) {
+    //  bottom: calculateRem(115px);
+    //}
+    //@include respond-to(display) {
+    //  bottom: calculateRem(110px);
+    //  right: calculateRem(-75px);
+    //}
+    //@include respond-to(wide-tablets) {
+    //  bottom: calculateRem(110px);
+    //  right: calculateRem(-75px);
+    //}
+    //@include respond-to(allsmall) {
+    //   bottom: calculateRem(180px);
+    //   right: calculateRem(-85px);
+    // }
+    //@include respond-to(allmobile) {
+    //  bottom: 7rem;
+    //  right: -4rem;
+    //}
+    //@include respond-to(handhelds) {
+    //  bottom: 14rem;
+    //  right: -7rem;
+    //}
+
+
+
+
+
+  }
+  &:hover {
+    img {
+      width: 120%;
+    }
+  }
+
+}
+
+&-sports {
+  display: flex;
+  @include respond-to(allsmall) {
+    flex-wrap: wrap;
+  }
+}
+
+.nl-section {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+}

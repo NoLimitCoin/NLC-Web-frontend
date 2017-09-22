@@ -1,0 +1,133 @@
+.nl-header {
+  @include fontSize(25px);
+  @include lineHeight(30px);
+  color: #edeeee;
+  background: #061540;
+  min-height: calculateRem(120px);
+  &--top {
+    padding: calculateRem(35px) calculateRem(100px);
+    @include respond-to(display){
+      padding: calculateRem(35px) 0;
+    }
+    @include respond-to(wide-tablets){
+      padding: calculateRem(35px) 0;
+    }
+    @include respond-to(allsmall){
+      padding: calculateRem(25px) 0;
+    }
+  }
+  .nl-logotype {
+    position: relative;
+    @include respond-to(allsmall){
+      text-align: center;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: calculateRem(-80px);
+      max-width: calculateRem(155px);
+      min-width: calculateRem(106px);
+      z-index: 2;
+      @include respond-to(allsmall){
+        max-width: calculateRem(130px);
+        min-width: calculateRem(106px);
+        margin-top: calculateRem(-60px);
+       // position: relative;
+      }
+    }
+  }
+
+  .nl-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    @include respond-to(allsmall){
+      text-align: center;
+      margin-bottom: calculateRem(30px);
+      display: none;
+    }
+  }
+  .nl-btutton-login {
+    text-align: right;
+    @include respond-to(allsmall){
+      //text-align: center;
+    }
+  }
+
+  &--slide {
+    .nl-slide {
+      background: url(../img/nl-slide-img3.jpg) center center no-repeat;
+      background-size: cover;
+      min-height: calculateRem(685px);
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: calculateRem(5px);
+      @include respond-to(extra-large-display){
+        min-height: calculateRem(800px);
+      }
+      @include respond-to(allsmall){
+        min-height: calculateRem(500px);
+        padding-bottom: calculateRem(60px) ;
+        padding-top: calculateRem(50px);
+        background-position: center top;
+      }
+      @include respond-to(allmobile){
+        min-height: inherit;
+        padding-bottom: calculateRem(80px) ;
+        padding-top: calculateRem(70px);
+        background-position: center top;
+      }
+      @include respond-to(wide-handhelds){
+        min-height: calculateRem(400px);
+      }
+    }
+    h1, h2{
+      @include fontSize(86px);
+      @include lineHeight(103px);
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0;
+      text-shadow: 1px 1px 2px black;
+      @include respond-to(display){
+        @include fontSize(72px);
+        @include lineHeight(82px);
+      }
+      @include respond-to(wide-tablets){
+        @include fontSize(72px);
+        @include lineHeight(82px);
+      }
+
+      @include respond-to(allsmall){
+        @include fontSize(70px);
+        @include lineHeight(75px);
+      }
+      @include respond-to(allmobile){
+        @include fontSize(40px);
+        @include lineHeight(45px);
+      }
+
+    }
+    .owl-dots{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+      margin-bottom: calculateRem(55px);
+      bottom: 0;
+      @include respond-to(allsmall){
+        margin-bottom: calculateRem(25px) ;
+      }
+      .owl-dot{
+        padding: calculateRem(6px);
+        border-radius: calculateRem(9px);
+        background: #fff;
+        border: 3px solid #fff;
+        margin: calculateRem(6px);
+        &.active{
+          background: #ff9f2f;
+        }
+      }
+    }
+  }
+}

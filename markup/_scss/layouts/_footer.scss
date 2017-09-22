@@ -1,0 +1,41 @@
+.nl-footer{
+  @include fontSize(11px);
+  @include lineHeight(16px);
+  color: #fff;
+  @include respond-to(allsmall){
+    text-align: center;
+  }
+   &--top{
+    background: #061540;
+    padding: calculateRem(20px) calculateRem(40px);
+    min-height: calculateRem(140px);
+  }
+  &--button{
+    background: #0f254f;
+    padding: calculateRem(20px) calculateRem(40px);
+    min-height: calculateRem(75px);
+
+  }
+  .nl-social-icon{
+    a{
+      margin-left: 15px;
+      transition: all .3s;
+      display: inline-flex;
+      width: calculateRem(30px);
+      height: calculateRem(30px);
+      border-radius: calculateRem(15px);
+      background: #fff;
+      color: #061540;
+      justify-content: center;
+      align-items: center;
+      @include fontSize(20px);
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:hover{
+        background: #ff9f2f;
+      }
+    }
+  }
+}

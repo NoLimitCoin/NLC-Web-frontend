@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  @include respond-to(wide-tablets){
+    @include fontSize(14px);
+  }
+  @include respond-to(allsmall){
+    @include fontSize(14px);
+  }
+  @include respond-to(handhelds){
+    @include fontSize(11px);
+  }
+}
+
+body {
+  @include fontSize(16px);
+  @include lineHeight(21px);
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nl-m-r-15{
+  margin-right: calculateRem(15px);
+  @include respond-to(wide-tablets){
+    margin-right: 0;
+  }
+}
+.nl-p-t-80{
+  padding-top: calculateRem(80px);
+}
+
+.nl-m-r-80{
+  margin-right: calculateRem(80px);
+}
+
+.nl-p-b-80{
+  padding-bottom: calculateRem(80px);
+}
+
+.nl-tar{
+  text-align: right;
+  @include respond-to(allsmall){
+    text-align: center;
+  }
+}
+
+
+
+.nl-h100{
+  height: 100%;
+  @include respond-to(allsmall){
+    height: inherit;
+  }
+}
+
+
+.nl-m-t-40{
+  margin-top: calculateRem(40px);
+  @include respond-to(allmobile){
+    margin-top: calculateRem(20px);
+  }
+}

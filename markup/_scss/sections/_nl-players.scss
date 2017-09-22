@@ -1,0 +1,60 @@
+.nl-players{
+  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background-size: cover;
+  img{
+    width: auto;
+  }
+  .nl-players-table{
+    background: linear-gradient(to top, #121a31, #1f3658);
+    border-radius: calculateRem(10px);
+    color: #fff;
+    box-shadow: 3px 0 7px rgba(0,0,0,0.21);
+    overflow: hidden;
+    &-data-field{
+      padding: calculateRem(25px);
+      display: flex;
+
+    }
+  }
+  .nl-data{
+    &--avatar{
+      overflow: hidden;
+      position: relative;
+      width: calculateRem(110px);
+      height: calculateRem(110px);
+      border-radius: 50%;
+      margin-right: calculateRem(20px);
+      img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        width: 100%;
+        transition: all .5s;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    &--text{
+      padding-top: calculateRem(15px);
+      p{
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+        @include fontSize(15.63px);
+        letter-spacing: 1px;
+        &.title{
+          font-weight: 700;
+          color: #e89708;
+          margin-bottom:calculateRem(5px);
+          @include fontSize(19.54px);
+
+
+        }
+      }
+    }
+  }
+}
+
+

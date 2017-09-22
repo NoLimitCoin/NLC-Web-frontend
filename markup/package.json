@@ -1,0 +1,37 @@
+{
+  "name": "gulp-browsersync-jade-sass-starter",
+  "version": "1.0.4",
+  "description": "Gulp sass jade starter",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Piyush kalsariya",
+    "email": "piyushkalasariya555@gmail.com",
+    "url": "https://github.com/piyushkalasariya"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-data": "^1.2.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "jade",
+    "gulp",
+    "sass",
+    "browsersync"
+  ]
+}

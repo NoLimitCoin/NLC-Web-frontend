@@ -1,0 +1,137 @@
+.nl-header-log {
+  .nl-header-top {
+    color: #fff;
+    &--left {
+      background: #121a31;
+      min-height: calculateRem(120px);
+    }
+    &--right {
+      background: #192643;
+      display: flex;
+      @include fontSize(15px);
+      letter-spacing: calculateRem(1px);
+      text-transform: uppercase;
+      font-weight: 700;
+      @include respond-to(handhelds){
+        display: block;
+      }
+    }
+  }
+  .nl-logotype {
+    position: relative;
+    @include respond-to(allsmall) {
+      text-align: center;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: calculateRem(-20px);
+      max-width: calculateRem(140px);
+      min-width: calculateRem(120px);
+      z-index: 2;
+      @include respond-to(allsmall) {
+        //position: relative;
+      }
+    }
+  }
+
+  .nl-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: calculateRem(15px) 0 calculateRem(15px) calculateRem(15px);
+    @include fontSize(22px);
+    @include lineHeight(26px);
+    letter-spacing: 1px;
+    @include respond-to(allsmall) {
+      text-align: center;
+      margin-bottom: calculateRem(30px);
+    }
+  }
+
+  .nl-profile {
+    width: 30%;
+    border-right: 1px solid #293f64;
+    display: flex;
+    justify-content: center;
+    padding: calculateRem(10px) calculateRem(10px) calculateRem(10px) 0;
+    @include respond-to(handhelds){
+      width: 100%;
+      border-right: inherit;
+      border-bottom: 1px solid #293f64;
+      padding: calculateRem(20px);
+    }
+
+    &--avatar {
+      padding-right: calculateRem(20px);
+      @include fontSize(40px);
+      align-self: center;
+    }
+    &--data{
+      align-self: center;
+    }
+  }
+  .nl-balance {
+    width: 40%;
+    border-left: 1px solid #121a31;
+    border-right: 1px solid #293f64;
+    display: flex;
+    justify-content: center;
+    padding: calculateRem(10px);
+    @include respond-to(handhelds){
+      width: 100%;
+      border-right: inherit;
+      border-left: inherit;
+      border-top: 1px solid #121a31;
+      border-bottom: 1px solid #293f64;
+      padding: calculateRem(20px);
+    }
+    &--logo{
+      align-self: center;
+      margin-right: calculateRem(20px);
+      a{
+        margin: 0;
+      }
+
+     }
+    &--data{
+      align-self: center;
+      .sub-title{
+        font-weight: 400;
+      }
+      .data{
+        font-weight: 300;
+        @include fontSize(8.8px);
+        padding-top: calculateRem(5px);
+      }
+    }
+  }
+  .nl-btn-control {
+    width: 30%;
+    border-left: 1px solid #121a31;
+    display: flex;
+    justify-content: center;
+    padding: calculateRem(10px);
+    @include respond-to(handhelds){
+      width: 100%;
+      border-left: inherit;
+      border-top: 1px solid #121a31;
+      padding: calculateRem(20px);
+    }
+    .nl-btn-group{
+      align-self: center;
+      width: 100%;
+      max-width: 140px;
+    }
+  }
+  a{
+    margin-right: calculateRem(8px);
+    color: #ff9f2f;
+    @include respond-to(wide-tablets){
+      margin-right: calculateRem(3px);
+    }
+    &:hover{
+      color: #fff;
+    }
+  }
+}

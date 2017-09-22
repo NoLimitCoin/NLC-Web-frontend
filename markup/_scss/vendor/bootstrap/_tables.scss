@@ -1,0 +1,220 @@
+//
+// Basic Bootstrap table
+//
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  //margin-bottom: $spacer;
+  border-radius: calculateRem(10px);
+  color: #121a31;
+  @include fontSize(13px);
+  font-weight: 500;
+  //background-color: #e1e2e4;
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    vertical-align: middle;
+
+    &:not(:first-child){
+      text-align: center;
+    }
+    //border-top: $table-border-width solid $table-border-color;
+  }
+
+  thead{
+    border-top-right-radius: calculateRem(10px);
+    border-top-left-radius: calculateRem(10px);
+    th {
+      vertical-align: bottom;
+
+      background: #121a31;
+      color: #e48706;
+      @include fontSize(15.63px);
+      text-transform: uppercase;
+      font-weight: 600;
+      //border-bottom: (2 * $table-border-width) solid $table-border-color;
+    }
+  }
+
+
+  tbody + tbody {
+    //border-top: (2 * $table-border-width) solid $table-border-color;
+  }
+
+  .table {
+    //background-color: #e1e2e4;
+  }
+
+}
+
+
+//
+// Condensed table w/ half padding
+//
+
+.table-sm {
+  th,
+  td {
+    padding: $table-sm-cell-padding;
+  }
+}
+
+
+// Bordered version
+//
+// Add borders all around the table and between all the columns.
+
+.table-bordered {
+  border: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    border: $table-border-width solid $table-border-color;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: (2 * $table-border-width);
+    }
+  }
+}
+
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr{
+    background-color: #e1e2e4;
+    &.active, &:hover{
+      background:linear-gradient(to top, #e37506, #e89708);
+    }
+  }
+  tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+  }
+  tbody tr{
+    td:first-child{
+      display: flex;
+      align-items: center;
+      img{
+        max-width: calculateRem(48px);
+        max-height: calculateRem(48px);
+        border-radius: 50%;
+        margin-right: calculateRem(15px);
+      }
+    }
+    td:nth-child(2){
+      img{
+        max-width: calculateRem(35px);
+      }
+    }
+    td:nth-child(3){
+      @include fontSize(20px);
+      color: #607089;
+    }
+    td{
+      &.act{
+        color: #1e813e;
+      }
+      .nl-pl-social{
+        @include fontSize(20px);
+        .fa-youtube-play{
+          color: #bd3231;
+          margin-right: calculateRem(20px);
+        }
+        .fa-twitter{
+          color: #35b4da;
+          margin-right: calculateRem(20px);
+        }
+        .fa-facebook-square{
+          color: #4d73bb;
+        }
+      }
+    }
+  }
+}
+
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+  tbody tr {
+    @include hover {
+      background-color: $table-bg-hover;
+    }
+  }
+}
+
+
+// Table backgrounds
+//
+// Exact selectors below required to override `.table-striped` and prevent
+// inheritance to nested tables.
+
+// Generate the contextual variants
+@include table-row-variant(active, $table-bg-active);
+@include table-row-variant(success, $state-success-bg);
+@include table-row-variant(info, $state-info-bg);
+@include table-row-variant(warning, $state-warning-bg);
+@include table-row-variant(danger, $state-danger-bg);
+
+
+// Inverse styles
+//
+// Same table markup, but inverted color scheme: dark background and light text.
+
+.thead-inverse {
+  th {
+    color: $table-inverse-color;
+    background-color: $table-inverse-bg;
+  }
+}
+
+.thead-default {
+  th {
+    color: $table-head-color;
+    background-color: $table-head-bg;
+  }
+}
+
+.table-inverse {
+  color: $table-inverse-color;
+  background-color: $table-inverse-bg;
+
+  th,
+  td,
+  thead th {
+    border-color: $body-bg;
+  }
+
+  &.table-bordered {
+    border: 0;
+  }
+}
+
+
+
+// Responsive tables
+//
+// Add `.table-responsive` to `.table`s and we'll make them mobile friendly by
+// enabling horizontal scrolling. Only applies <768px. Everything above that
+// will display normally.
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
+
+  // Prevent double border on horizontal scroll due to use of `display: block;`
+  &.table-bordered {
+    border: 0;
+  }
+}

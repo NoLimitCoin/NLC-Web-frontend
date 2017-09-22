@@ -1,0 +1,45 @@
+.nl-works {
+  color: #061540;
+  @include fontSize(18px);
+  @include respond-to(allsmall) {
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: calculateRem(30px);
+  }
+  a {
+    display: block;
+    &:before {
+      content: "\f04b";
+      font-family: FontAwesome;
+      width: calculateRem(44px);
+      height: calculateRem(44px);
+      text-align: center;
+      border: 3px solid #fff;
+      color: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: calculateRem(18px);
+      border-radius: calculateRem(25px);
+      margin-left: calculateRem(-25px);
+      line-height: calculateRem(44px);
+      margin-top: calculateRem(-25px);
+      transition: all .3s;
+    }
+    &:hover {
+      &:before {
+        border: 3px solid #ff9f2f;
+        color: #ff9f2f;
+      }
+    }
+  }
+  img {
+    display: block;
+  }
+  #video {
+    @include respond-to(allsmall) {
+      margin-bottom: calculateRem(40px);
+    }
+  }
+}
