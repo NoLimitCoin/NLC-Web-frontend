@@ -27,7 +27,7 @@
             </div>
             <div class="col-12 col-lg-3">
               <div class="nl-btutton-login">
-                <div class="btn btn-primary nl-m-r-15">Login</div>
+                <button type="button" data-toggle="modal" data-target="#loginModal" class="btn btn-primary nl-m-r-15">Login</button>
                 <div class="btn">SIGN UP</div>
               </div>
             </div>
@@ -263,6 +263,29 @@
         </div>
       </section>
     </main>
+    <div id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="exampleModalLabel" class="modal-title">Login</h2>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"></span></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-signin">
+              <div class="input-group">
+                <input id="inputEmail" type="email" placeholder="SCREEN NAME OR EMAIL" required="" autofocus="" class="form-control">
+              </div>
+              <div class="input-group">
+                <input type="password" placeholder="PASSWORD" aria-describedby="show" class="form-control"><span id="show" class="input-group-addon">show</span>
+              </div><a href="#">FORGOT MY PASSWORD</a>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Footer Block-->
     <footer class="nl-footer">
       <div class="nl-footer--top">

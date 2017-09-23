@@ -1,0 +1,22 @@
+.nl-my-teams{
+  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background-size: cover;
+  color: #121a31;
+  padding-bottom: calculateRem(160px);
+
+
+  .status-wrapper{
+    background: linear-gradient(to top, #121a31, #1f3658);
+    border-radius: calculateRem(10px);
+    color: #fff;
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    overflow: hidden;
+
+    ul{
+      list-style-type: none;
+    }
+
+  }
+
+
+}

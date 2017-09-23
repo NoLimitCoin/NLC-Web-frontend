@@ -50,4 +50,13 @@ $(function () {
     $(window).on("load",function(){
         //$(".table-striped").mCustomScrollbar();
     });
+
+    var isShowPass = false;
+    var options = [{'type': 'text', 'text': 'HIDE'}, {'type': 'password', 'text': 'SHOW'}];
+    $('#show').on('click', function () {
+        var data = options[+isShowPass];
+        $(this).text(data.text).prev().attr('type', data.type).toggleClass('show-password');
+        isShowPass = !isShowPass;
+    });
+
 })(jQuery);
