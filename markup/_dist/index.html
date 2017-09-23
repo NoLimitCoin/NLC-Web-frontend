@@ -28,7 +28,7 @@
             <div class="col-12 col-lg-3">
               <div class="nl-btutton-login">
                 <button type="button" data-toggle="modal" data-target="#loginModal" class="btn btn-primary nl-m-r-15">Login</button>
-                <div class="btn">SIGN UP</div>
+                <div type="button" data-toggle="modal" data-target="#registrationModal" class="btn">SIGN UP</div>
               </div>
             </div>
           </div>
@@ -267,7 +267,7 @@
       <div role="document" class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 id="exampleModalLabel" class="modal-title">Login</h2>
+            <h2 id="loginModalLabel" class="modal-title">Login</h2>
             <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"></span></button>
           </div>
           <div class="modal-body">
@@ -276,12 +276,64 @@
                 <input id="inputEmail" type="email" placeholder="SCREEN NAME OR EMAIL" required="" autofocus="" class="form-control">
               </div>
               <div class="input-group">
-                <input type="password" placeholder="PASSWORD" aria-describedby="show" class="form-control"><span id="show" class="input-group-addon">show</span>
+                <input type="password" placeholder="PASSWORD" aria-describedby="show" class="form-control"><span class="show-password input-group-addon">show</span>
               </div><a href="#">FORGOT MY PASSWORD</a>
             </form>
           </div>
           <div class="modal-footer">
             <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="registrationModalLabel" class="modal-title">Registration</h2>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"></span></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-signin">
+              <div class="input-group">
+                <input id="inputEmail" type="email" placeholder="EMAIL" required="" autofocus="" class="form-control">
+              </div>
+              <div class="input-group">
+                <input type="password" placeholder="PASSWORD" aria-describedby="show" class="form-control"><span class="show-password input-group-addon">show</span>
+              </div>
+              <div class="input-group">
+                <input type="password" placeholder="RE-TYPE PASSWORD" class="form-control">
+              </div>
+              <div class="input-group">
+                <input id="screenName" placeholder="SCREEN NAME" required="" autofocus="" class="form-control">
+              </div>
+              <div class="input-group">
+                <input id="firstName" placeholder="FIRST NAME" required="" autofocus="" class="form-control">
+              </div>
+              <div class="input-group">
+                <input id="lastName" placeholder="LAST NAME" required="" autofocus="" class="form-control">
+              </div>
+              <div class="input-group">
+                <select id="country" placeholder="COUNTRY" required="" class="form-control">
+                  <option selected="" disabled="" hidden="">COUNTRY</option>
+                  <option>USA</option>
+                  <option>CANADA</option>
+                  <option>UK</option>
+                  <option>PORTUGAL</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <input id="promoCode" placeholder="PROMO CODE(OPTIONAL)" required="" autofocus="" class="form-control">
+              </div>
+              <div data-sitekey="your_site_key" class="g-recaptcha"></div>
+              <label class="check-wrapper">
+                <input type="checkbox" value="">
+                <p>I agree to the No Limit Fantasy Sports, LLC Contest<a href="#">Rules</a>,<a href="#">Terms and Conditions</a> and<a href="#">Privacy Policy</a> and represent that I am of legal age to play Fantasy Sports in my state of residence. Residents of the states of Alabama, Arizona, Colorado, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Louisiana, Massachusetts, Michigan, Mississippi, Missouri, Montana, Nevada, New York, North Dakota, Pennsylvania, Tennessee, Texas, Vermont, Virginia and Washington, as well as Puerto Rico and where otherwise prohibited by law are not eligible to enter Fantasy Sports Pay to play contests.</p>
+              </label>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary btn-block">REGISTER</button>
           </div>
         </div>
       </div>
@@ -309,6 +361,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>

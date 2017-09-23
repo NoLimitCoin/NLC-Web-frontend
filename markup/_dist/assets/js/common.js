@@ -53,10 +53,14 @@ $(function () {
 
     var isShowPass = false;
     var options = [{'type': 'text', 'text': 'HIDE'}, {'type': 'password', 'text': 'SHOW'}];
-    $('#show').on('click', function () {
+    $('.show-password').on('click', function () {
         var data = options[+isShowPass];
-        $(this).text(data.text).prev().attr('type', data.type).toggleClass('show-password');
+        $(this).text(data.text).prev().attr('type', data.type).toggleClass('visible-password');
         isShowPass = !isShowPass;
     });
+
+    var onloadCallback = function() {
+        console.log("grecaptcha is ready!");
+    };
 
 })(jQuery);

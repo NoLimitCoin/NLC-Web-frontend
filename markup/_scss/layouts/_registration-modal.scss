@@ -9,7 +9,7 @@
   }
 }
 
-#loginModal {
+#registrationModal {
 
   .modal-content {
     border-radius: .5rem;
@@ -46,7 +46,7 @@
 
   .modal-body {
     padding: 72px 100px 0;
-    input {
+    input, select {
       height: 60px;
       width: 642px;
       border-radius: 0;
@@ -71,6 +71,24 @@
     a {
       text-decoration: underline;
       color: #fb8700;
+    }
+
+    .check-wrapper{
+      font-size: 12px;
+      position: relative;
+      padding-left: 50px;
+      color: #fff;
+
+      input{
+        outline: none;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+      }
     }
   }
   .modal-footer {

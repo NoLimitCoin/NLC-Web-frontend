@@ -5,11 +5,19 @@ section.nl-section.nl-my-teams
                 h1 My teams
         div.row
             div.col-md-12
-                div.btn.btn-primary.btn-lg Create team
+                div.btn.btn-primary.btn-lg.btn-create-team Create team
         div.row
-            div.col-md-12
+            div.col-md-8
                 div.status-wrapper
                     ul
-                        li Playing
-                        li Played
-                        li Not Playing
+                        li
+                            span.playing.indicator
+                            span Playing
+                        li
+                            span.played.indicator
+                            span Played
+                        li
+                            span.not-playing.indicator
+                            span Not Playing
+            div.col-md-4
+                div.btn.btn-primary.pull-right Create helmet

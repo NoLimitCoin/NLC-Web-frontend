@@ -4,8 +4,13 @@
   color: #121a31;
   padding-bottom: calculateRem(160px);
 
+  .btn-create-team{
+    font-size: 33px;
+    margin: 0 0 36px;
+  }
 
   .status-wrapper{
+    display: inline-block;
     background: linear-gradient(to top, #121a31, #1f3658);
     border-radius: calculateRem(10px);
     color: #fff;
@@ -14,6 +19,41 @@
 
     ul{
       list-style-type: none;
+      margin: 0;
+      padding: 18px;
+
+
+      li{
+        display: inline-block;
+        font-size: 19.02px;
+        text-transform: uppercase;
+        font-size: 20px;
+
+        span{
+          vertical-align: middle;
+          display: inline-block;
+        }
+
+
+        .indicator{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 10px;
+        }
+        .playing{
+          background-color: #2b9c53;
+        }
+        .played{
+          background-color: #6dcff6;
+        }
+        .not-playing{
+          background-color: #e01516;
+        }
+
+      }
     }
 
   }

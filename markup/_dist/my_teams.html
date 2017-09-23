@@ -88,18 +88,21 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <div class="btn btn-primary btn-lg">Create team</div>
+              <div class="btn btn-primary btn-lg btn-create-team">Create team</div>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8">
               <div class="status-wrapper">
                 <ul>
-                  <li>Playing</li>
-                  <li>Played</li>
-                  <li>Not Playing</li>
+                  <li><span class="playing indicator"></span><span>Playing</span></li>
+                  <li><span class="played indicator"></span><span>Played</span></li>
+                  <li><span class="not-playing indicator"></span><span>Not Playing</span></li>
                 </ul>
               </div>
+            </div>
+            <div class="col-md-4">
+              <div class="btn btn-primary pull-right">Create helmet</div>
             </div>
           </div>
         </div>
@@ -120,6 +123,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
