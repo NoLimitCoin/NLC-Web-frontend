@@ -26,14 +26,18 @@
       font-size: calculateRem(65px);
     }
     .close {
-      background: url(../img/close_btn.png);
+      background: url(../img/close_btn.png) no-repeat;
       position: absolute;
       top: calculateRem(36px);
       right: calculateRem(20px);
-      height: calculateRem(49px);
-      width: calculateRem(49px);
+      height: 49px;
+      width: 49px;
       opacity: 1;
       outline: none;
+      @include respond-to(allsmall){
+        top: calculateRem(10px);
+        right: calculateRem(10px);
+      }
     }
   }
 

@@ -142,13 +142,20 @@
   line-height: $custom-select-line-height;
   color: $custom-select-color;
   vertical-align: middle;
-  background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
-  background-size: $custom-select-bg-size;
-  border: $custom-select-border-width solid $custom-select-border-color;
+  background: $custom-select-bg $custom-select-indicator no-repeat right 0 center;
+ // background-size: $custom-select-bg-size;
+  //border: $custom-select-border-width solid $custom-select-border-color;
   @include border-radius($custom-select-border-radius);
   // Use vendor prefixes as `appearance` isn't part of the CSS spec.
   -moz-appearance: none;
   -webkit-appearance: none;
+  &:after{
+    //max-width: 58px;
+    //content: "\f0d7";
+    //font-family: FontAwesome;
+    //color: #fff;
+    //background: linear-gradient(to top, #e37506, #e89708);
+  }
 
   &:focus {
     border-color: $custom-select-focus-border-color;

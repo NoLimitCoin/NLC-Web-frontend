@@ -20,20 +20,30 @@
     background-color: #fb8700;
     color: #fff;
     padding: calculateRem(50px) 0;
+    @include respond-to(allmobile){
+      padding: calculateRem(70px) calculateRem(10px) calculateRem(30px);
+    }
 
     h2 {
       margin: 0 auto;
       font-size: calculateRem(65px);
+      @include respond-to(allmobile){
+        font-size: calculateRem(30px);
+      }
     }
     .close {
-      background: url(../img/close_btn.png);
+      background: url(../img/close_btn.png) no-repeat;
       position: absolute;
       top: calculateRem(36px);
       right: calculateRem(20px);
-      height: calculateRem(49px);
-      width: calculateRem(49px);
+      height: 49px;
+      width: 49px;
       opacity: 1;
       outline: none;
+      @include respond-to(allmobile){
+        top: calculateRem(10px);
+        right: calculateRem(10px);
+      }
     }
   }
 
