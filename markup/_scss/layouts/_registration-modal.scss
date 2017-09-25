@@ -12,26 +12,26 @@
 #registrationModal {
 
   .modal-content {
-    border-radius: .5rem;
+    border-radius: calculateRem(8px);
   }
   .modal-header {
     border-top-right-radius: .3rem;
     border-top-left-radius: .3rem;
     background-color: #fb8700;
     color: #fff;
-    padding: 50px 0;
+    padding: calculateRem(50px) 0;
 
     h2 {
       margin: 0 auto;
-      font-size: 65px;
+      font-size: calculateRem(65px);
     }
     .close {
       background: url(../img/close_btn.png);
       position: absolute;
-      top: 36px;
-      right: 20px;
-      height: 49px;
-      width: 49px;
+      top: calculateRem(36px);
+      right: calculateRem(20px);
+      height: calculateRem(49px);
+      width: calculateRem(49px);
       opacity: 1;
       outline: none;
     }
@@ -45,13 +45,20 @@
   }
 
   .modal-body {
-    padding: 72px 100px 0;
+    padding: calculateRem(72px) calculateRem(100px) 0;
+    @include respond-to(allsmall){
+      padding: calculateRem(72px) calculateRem(20px) 0;
+    }
+
     input, select {
-      height: 60px;
-      width: 642px;
+      height: calculateRem(60px);
+      width: calculateRem(642px);
       border-radius: 0;
-      font-size: 20px;
-      margin-bottom: 20px;
+      font-size: calculateRem(20px);
+      margin-bottom: calculateRem(20px);
+      @include respond-to(allsmall){
+        width: 100%;
+      }
     }
 
     .input-group {
@@ -62,7 +69,7 @@
       user-select: none;
       position: absolute;
       top: 50%;
-      right: 15px;
+      right: calculateRem(15px);
       transform: translate(0, -50%);
       color: #fb8700;
       cursor: pointer;
@@ -74,15 +81,15 @@
     }
 
     .check-wrapper{
-      font-size: 12px;
+      font-size: calculateRem(12px);
       position: relative;
-      padding-left: 50px;
+      padding-left: calculateRem(50px);
       color: #fff;
 
       input{
         outline: none;
-        height: 30px;
-        width: 30px;
+        height: calculateRem(30px);
+        width: calculateRem(30px);
         position: absolute;
         top: 0;
         left: 0;
@@ -92,14 +99,14 @@
     }
   }
   .modal-footer {
-    padding: 58px 0;
+    padding: calculateRem(58px) 0;
     border-bottom-right-radius: .3rem;
     border-bottom-left-radius: .3rem;
 
     button {
-      width: 278px;
+      width: calculateRem(278px);
       margin: 0 auto;
-      font-size: 28.61px;
+      font-size: calculateRem(28.61px);
     }
   }
 
@@ -107,7 +114,7 @@
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 842px;
+    max-width: calculateRem(842px);
   }
 }
 
