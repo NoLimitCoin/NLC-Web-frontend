@@ -42,7 +42,7 @@
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: $dropdown-min-width;
-  padding: $dropdown-padding-y 0;
+  //padding: $dropdown-padding-y 0;
   margin: $dropdown-margin-top 0 0; // override default ul
   font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
   color: $body-color;
@@ -50,8 +50,8 @@
   list-style: none;
   background-color: $dropdown-bg;
   background-clip: padding-box;
-  border: $dropdown-border-width solid $dropdown-border-color;
-  @include border-radius($border-radius);
+  //border: $dropdown-border-width solid $dropdown-border-color;
+  //@include border-radius($border-radius);
   @include box-shadow($dropdown-box-shadow);
 }
 
@@ -66,7 +66,7 @@
 .dropdown-item {
   display: block;
   width: 100%; // For `<button>`s
-  padding: 3px $dropdown-item-padding-x;
+  padding: 9px $dropdown-item-padding-x;
   clear: both;
   font-weight: $font-weight-normal;
   color: $dropdown-link-color;
@@ -76,9 +76,9 @@
   border: 0; // For `<button>`s
 
   @include hover-focus {
-    color: $dropdown-link-hover-color;
+    color: $dropdown-link-active-color;
     text-decoration: none;
-    background-color: $dropdown-link-hover-bg;
+    background-color:  $dropdown-link-active-bg;
   }
 
   &.active,

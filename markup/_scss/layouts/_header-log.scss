@@ -37,7 +37,7 @@
       margin-top: calculateRem(-20px);
       max-width: calculateRem(140px);
       min-width: calculateRem(120px);
-      z-index: 2;
+      z-index: 1001;
       @include respond-to(allsmall) {
         margin-top: calculateRem(-35px);
         max-width: calculateRem(130px);
@@ -143,8 +143,14 @@
     @include respond-to(wide-tablets){
       margin-right: calculateRem(3px);
     }
+    @include respond-to(handhelds){
+      margin-right: calculateRem(1px);
+    }
     &:hover{
       color: #fff;
     }
+  }
+  .dropdown-menu{
+    width: 100%;
   }
 }

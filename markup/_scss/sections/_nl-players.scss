@@ -7,105 +7,12 @@
     padding-left: calculateRem(30px);
     padding-right: calculateRem(30px);
   }
+  @include respond-to(allsmall)
+  {
+    padding-bottom: calculateRem(60px);
+  }
   img {
     width: auto;
-  }
-  .nl-players-table {
-    background: linear-gradient(to top, #121a31, #1f3658);
-    border-radius: calculateRem(10px);
-    color: #fff;
-    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
-    overflow: hidden;
-
-    &-data-field {
-      position: relative;
-      padding: calculateRem(25px);
-      display: flex;
-      @include respond-to(handhelds){
-        flex-direction: column;
-      }
-
-    }
-    @include respond-to(handhelds){
-      @include fontSize(18px);
-    }
-  }
-  .nl-data {
-    &--avatar {
-      overflow: hidden;
-      position: relative;
-      width: calculateRem(110px);
-      height: calculateRem(110px);
-      border-radius: 50%;
-      margin-right: calculateRem(20px);
-      @include respond-to(allmobile){
-        width: calculateRem(60px);
-        height: calculateRem(60px);
-        margin-top: calculateRem(20px);
-      }
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        width: 100%;
-        transition: all .5s;
-        object-fit: cover;
-        height: 100%;
-      }
-    }
-    &--text {
-      padding-top: calculateRem(15px);
-      p {
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0;
-        @include fontSize(15.63px);
-        letter-spacing: 1px;
-        &.title {
-          font-weight: 700;
-          color: #e89708;
-          margin-bottom: calculateRem(5px);
-          @include fontSize(19.54px);
-
-        }
-      }
-    }
-  }
-  .nl-players-search {
-    position: absolute;
-    min-width: calculateRem(353px);
-    bottom: calculateRem(-33px);
-    right: calculateRem(3px);
-    @include respond-to(allsmall){
-      min-width: calculateRem(200px);
-    }
-    @include respond-to(handhelds){
-      bottom: inherit;
-      top: calculateRem(3px);
-      min-width: calculateRem(200px);
-    }
-    .input-group {
-      display: flex;
-      position: relative;
-      width: 100%;
-    }
-    .form-control {
-      border-bottom-right-radius: 0;
-      border-top-right-radius: 0;
-      border-right: 0;
-    }
-    .input-group-btn {
-      position: relative;
-      font-size: 0;
-      white-space: nowrap;
-      .btn-secondary {
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-        border-left: 0;
-      }
-    }
   }
 
   .nl-players-filter-title {
@@ -298,5 +205,105 @@
   }
 
 }
+
+
+.nl-players-table {
+  background: linear-gradient(to top, #121a31, #1f3658);
+  border-radius: calculateRem(10px);
+  color: #fff;
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  overflow: hidden;
+
+  &-data-field {
+    position: relative;
+    padding: calculateRem(25px);
+    display: flex;
+    @include respond-to(handhelds){
+      flex-direction: column;
+    }
+
+  }
+  @include respond-to(handhelds){
+    @include fontSize(18px);
+  }
+  .nl-data {
+    &--avatar {
+      overflow: hidden;
+      position: relative;
+      width: calculateRem(110px);
+      height: calculateRem(110px);
+      border-radius: 50%;
+      margin-right: calculateRem(20px);
+      @include respond-to(allmobile){
+        width: calculateRem(60px);
+        height: calculateRem(60px);
+        margin-top: calculateRem(20px);
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 100%;
+        transition: all .5s;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    &--text {
+      padding-top: calculateRem(15px);
+      p {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+        @include fontSize(15.63px);
+        letter-spacing: 1px;
+        &.title {
+          font-weight: 700;
+          color: #e89708;
+          margin-bottom: calculateRem(5px);
+          @include fontSize(19.54px);
+
+        }
+      }
+    }
+  }
+  .nl-players-search {
+    position: absolute;
+    min-width: calculateRem(353px);
+    bottom: calculateRem(-33px);
+    right: calculateRem(3px);
+    @include respond-to(allsmall){
+      min-width: calculateRem(200px);
+    }
+    @include respond-to(handhelds){
+      bottom: inherit;
+      top: calculateRem(3px);
+      min-width: calculateRem(200px);
+    }
+    .input-group {
+      display: flex;
+      position: relative;
+      width: 100%;
+    }
+    .form-control {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border-right: 0;
+    }
+    .input-group-btn {
+      position: relative;
+      font-size: 0;
+      white-space: nowrap;
+      .btn-secondary {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: 0;
+      }
+    }
+  }
+}
+
 
 

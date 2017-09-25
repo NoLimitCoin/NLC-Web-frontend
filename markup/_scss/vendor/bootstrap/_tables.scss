@@ -111,7 +111,7 @@
     background-color: #ffffff;
   }
   tbody tr {
-    td:first-child {
+    td.avatar {
       //display: flex;
       //align-items: center;
       img {
@@ -131,12 +131,12 @@
         }
       }
     }
-    td:nth-child(2) {
+    td.flag {
       img {
         max-width: calculateRem(35px);
       }
     }
-    td:nth-child(3) {
+    td.news {
       @include fontSize(20px);
       color: #607089;
     }

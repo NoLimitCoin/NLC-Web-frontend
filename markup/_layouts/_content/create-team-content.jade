@@ -102,8 +102,8 @@ section.nl-section.nl-players.nl-create-team
 
 
         div.row
-            div.col-md-12.col-lg-7
-                div.nl-players-table
+            div.col-md-12.col-lg-8
+                div.nl-players-table.nl-create-team-table
                     div.nl-players-table-data-field
                         div.nl-data--avatar
                             <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco">
@@ -113,9 +113,6 @@ section.nl-section.nl-players.nl-create-team
                             p team : Real Madrid
                             p position: A
                             p salary: $89000
-                        div.nl-data--text
-                            p.title team formats
-                            p other details go here
                         div.nl-players-search
                             div.input-group
                                 input(type="text" class="form-control" placeholder="Search by player name")
@@ -268,356 +265,32 @@ section.nl-section.nl-players.nl-create-team
                                 table.table.table-striped
                                     thead
                                         tr
-                                            th NAME
-                                            th LEAGUE
-                                            th NEWS
-                                            th TEAM
-                                            th STATUS
-                                            th FP
+                                            th
+                                            th.avatar NAME
                                             th SALARY
+                                            th FP
                                             th POS
+                                            th team
+                                            th status
                                             th OPP
-                                            th Gameday
-                                            th SOCIAL
+                                            th GameDAY
+                                            th more
                                 div.nl-table-scroll
                                     table.table.table-striped
                                         tbody
                                             tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/USA.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
                                                 td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
+                                                    button.btn.btn-primary.btn-sm Draft
+                                                td.avatar <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo
+                                                td $21000
+                                                td 20
                                                 td A
-                                                td LA GALAXY
+                                                td RMA
+                                                td ACT
+                                                td FCB
                                                 td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/USA.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                            tr
-                                                td <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco
-                                                td <img src="assets/img/flag/Spain.png" alt="USA">
-                                                td <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                td REAL MADRID
-                                                td.act ACT
-                                                td 28.33
-                                                td $12,500
-                                                td A
-                                                td LA GALAXY
-                                                td 09/17/17
-                                                td
-                                                    div.nl-pl-social
-                                                        a(href="#") <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                        a(href="#") <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                                td <a href="#"><span>i</span></a>
+
 
 
                         div.tab-pane(id="gk" role="tabpanel") TAB2
@@ -625,5 +298,5 @@ section.nl-section.nl-players.nl-create-team
                         div.tab-pane(id="m" role="tabpanel") TAB4
                         div.tab-pane(id="a" role="tabpanel") TAB5
 
-            div.col-lg-5
+            div.col-lg-4
                 h2 team
