@@ -4,6 +4,9 @@
     &--left {
       background: #121a31;
       min-height: calculateRem(120px);
+      @include respond-to(allsmall) {
+        min-height: calculateRem(90px);
+      }
     }
     &--right {
       background: #192643;
@@ -12,15 +15,20 @@
       letter-spacing: calculateRem(1px);
       text-transform: uppercase;
       font-weight: 700;
-      @include respond-to(handhelds){
-        display: block;
+      @include respond-to(allsmall){
+        //display: none;
       }
+      @include respond-to(handhelds){
+        //display: block;
+      }
+
     }
   }
   .nl-logotype {
     position: relative;
     @include respond-to(allsmall) {
       text-align: center;
+
     }
     img {
       position: absolute;
@@ -31,6 +39,9 @@
       min-width: calculateRem(120px);
       z-index: 2;
       @include respond-to(allsmall) {
+        margin-top: calculateRem(-35px);
+        max-width: calculateRem(130px);
+
         //position: relative;
       }
     }
@@ -44,8 +55,10 @@
     @include lineHeight(26px);
     letter-spacing: 1px;
     @include respond-to(allsmall) {
-      text-align: center;
+      //text-align: center;
       margin-bottom: calculateRem(30px);
+      padding-left: calculateRem(130px);
+      padding-right: calculateRem(80px);
     }
   }
 

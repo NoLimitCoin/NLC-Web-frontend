@@ -29,10 +29,14 @@ body {
 }
 .nl-p-t-80{
   padding-top: calculateRem(80px);
+
 }
 
 .nl-m-r-80{
   margin-right: calculateRem(80px);
+  @include respond-to(allmobile){
+    margin-right: calculateRem(20px);
+  }
 }
 
 .nl-p-b-80{

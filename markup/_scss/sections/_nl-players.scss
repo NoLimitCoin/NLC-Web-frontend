@@ -3,6 +3,10 @@
   background-size: cover;
   color: #121a31;
   padding-bottom: calculateRem(160px);
+  @include respond-to(wide-display){
+    padding-left: calculateRem(30px);
+    padding-right: calculateRem(30px);
+  }
   img {
     width: auto;
   }
@@ -17,7 +21,13 @@
       position: relative;
       padding: calculateRem(25px);
       display: flex;
+      @include respond-to(handhelds){
+        flex-direction: column;
+      }
 
+    }
+    @include respond-to(handhelds){
+      @include fontSize(18px);
     }
   }
   .nl-data {
@@ -28,6 +38,11 @@
       height: calculateRem(110px);
       border-radius: 50%;
       margin-right: calculateRem(20px);
+      @include respond-to(allmobile){
+        width: calculateRem(60px);
+        height: calculateRem(60px);
+        margin-top: calculateRem(20px);
+      }
       img {
         position: absolute;
         top: 50%;
@@ -63,6 +78,14 @@
     min-width: calculateRem(353px);
     bottom: calculateRem(-33px);
     right: calculateRem(3px);
+    @include respond-to(allsmall){
+      min-width: calculateRem(200px);
+    }
+    @include respond-to(handhelds){
+      bottom: inherit;
+      top: calculateRem(3px);
+      min-width: calculateRem(200px);
+    }
     .input-group {
       display: flex;
       position: relative;
@@ -93,8 +116,16 @@
   }
 
   .nl-players-filter {
-    a {
+    .btn-link {
       margin-right: calculateRem(36px);
+      @include respond-to(allmobile){
+        margin-right: calculateRem(15px);
+      }
+      img{
+        @include respond-to(allmobile){
+          max-width: calculateRem(70px);
+        }
+      }
     }
     .btn-primary{
       font-weight: 500;
@@ -131,6 +162,141 @@
       right: 0;
     }
   }
+
+
+  .nl-table-scroll{
+    max-height: calculateRem(700px);
+  }
+
+  .nl-desc-table  tbody  tr  td,
+  .nl-desc-table  thead  tr  th {
+    @include respond-to(allwide) {
+      //float: left;
+      &:nth-child(1) {
+        width: 17%;
+      }
+      &:nth-child(2) {
+        width: 7%;
+      }
+      &:nth-child(3) {
+        width: 7%;
+      }
+      &:nth-child(4) {
+        width: 12%;
+      }
+      &:nth-child(5) {
+        width: 7%;
+      }
+      &:nth-child(6) {
+        width: 6%;
+      }
+      &:nth-child(7) {
+        width: 8%;
+      }
+      &:nth-child(8) {
+        width: 5%;
+      }
+      &:nth-child(9) {
+        width: 9%;
+      }
+      &:nth-child(10) {
+        width: 10%;
+      }
+      &:nth-child(11) {
+        width: 12%;
+      }
+    }
+  }
+}
+
+
+.nl-desc-table {
+  @include respond-to(allsmall) {
+    display: none;
+  }
+}
+.nl-mob-table {
+  @include respond-to(allwide) {
+    display: none;
+  }
+  .nl-title{
+    background: #121a31;
+    color: #e48706;
+  }
+  .nl-content{
+    background: #fff;
+    color: #121a31;
+  }
+  p{
+    margin: calculateRem(10px) calculateRem(20px);
+  }
+  .card-block{
+    padding-bottom: calculateRem(25px);
+  }
+  #accordion a {
+    .row{
+      position: relative;
+      &:after{
+        display: inline-block;
+        content: '+';
+        font-size: 2.25rem;
+        font-weight: 700;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        width: 2.875rem;
+        height: 2.875rem;
+        color: #fff;
+        background: #0d3663;
+        border-radius: 1.4375rem;
+        text-align: center;
+        line-height: 2.625rem;
+        letter-spacing: 0;
+        position: absolute;
+        top: calculateRem(6px);
+        right: calculateRem(30px);
+      }
+    }
+
+
+    &:not(.collapsed){
+      .row:after{
+        content: '-';
+      }
+    }
+
+  }
+  .avatar{
+    //text-align: center;
+    img{
+      max-width: 5rem;
+      max-height: 5rem;
+      border-radius: 50%;
+    }
+
+    //margin-right: .9375rem;
+  }
+  .nl-pl-social{
+    //text-align: center;
+    @include fontSize(30px);
+    .fa-youtube-play {
+      color: #bd3231;
+      margin-right: calculateRem(20px);
+    }
+    .fa-twitter {
+      color: #35b4da;
+      margin-right: calculateRem(20px);
+    }
+    .fa-facebook-square {
+      color: #4d73bb;
+    }
+  }
+  img{
+    max-width: calculateRem(25px);
+  }
+  i{
+    @include fontSize(20px);
+  }
+
 }
 
 

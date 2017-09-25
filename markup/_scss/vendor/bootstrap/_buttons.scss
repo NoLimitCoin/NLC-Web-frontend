@@ -16,6 +16,7 @@
   text-transform: uppercase;
   color: #fff;
   border: $input-btn-border-width solid #ffffff;
+  background: transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -58,6 +59,10 @@ fieldset[disabled] a.btn {
 //
 // Alternate buttons
 //
+
+.btn-default {
+ // @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
 
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
@@ -134,6 +139,8 @@ fieldset[disabled] a.btn {
   font-weight: $font-weight-normal;
   color: $link-color;
   border-radius: 0;
+  padding: 0;
+  cursor: pointer;
 
   &,
   &:active,

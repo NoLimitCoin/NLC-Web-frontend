@@ -16,14 +16,23 @@
   td {
     padding: $table-cell-padding;
     vertical-align: middle;
+    @include respond-to(wide-tablets ){
+      padding: 0.5rem;
+    }
+    @include respond-to(display){
+      padding: 0.7rem;
+    }
 
-    &:not(:first-child){
+    &:not(:first-child) {
       text-align: center;
     }
+
+
+
     //border-top: $table-border-width solid $table-border-color;
   }
 
-  thead{
+  thead {
     border-top-right-radius: calculateRem(10px);
     border-top-left-radius: calculateRem(10px);
     th {
@@ -38,7 +47,6 @@
     }
   }
 
-
   tbody + tbody {
     //border-top: (2 * $table-border-width) solid $table-border-color;
   }
@@ -48,7 +56,6 @@
   }
 
 }
-
 
 //
 // Condensed table w/ half padding
@@ -61,7 +68,6 @@
   }
 }
 
-
 // Bordered version
 //
 // Add borders all around the table and between all the columns.
@@ -72,6 +78,7 @@
   th,
   td {
     border: $table-border-width solid $table-border-color;
+
   }
 
   thead {
@@ -82,19 +89,19 @@
   }
 }
 
-
 // Zebra-striping
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
 .table-striped {
-  tbody tr{
+
+  tbody tr {
     background-color: #e1e2e4;
-   // transition: background-color 0.2s;
-    &.active, &:hover{
-      background:linear-gradient(to top, #e37506, #e89708);
-      .nl-pl-social{
-        .fa-twitter, .fa-youtube-play, .fa-facebook-square{
+    // transition: background-color 0.2s;
+    &.active, &:hover {
+      background: linear-gradient(to top, #e37506, #e89708);
+      .nl-pl-social {
+        .fa-twitter, .fa-youtube-play, .fa-facebook-square {
           color: #fff;
         }
       }
@@ -103,48 +110,64 @@
   tbody tr:nth-of-type(odd) {
     background-color: #ffffff;
   }
-  tbody tr{
-    td:first-child{
-      display: flex;
-      align-items: center;
-      img{
+  tbody tr {
+    td:first-child {
+      //display: flex;
+      //align-items: center;
+      img {
         max-width: calculateRem(48px);
         max-height: calculateRem(48px);
         border-radius: 50%;
-        margin-right: calculateRem(15px);
+        margin-right: calculateRem(6px);
+        @include respond-to(wide-tablets){
+          max-width: calculateRem(30px);
+          max-height: calculateRem(30px);
+          margin-right: calculateRem(5px);
+        }
+        @include respond-to(display){
+          max-width: calculateRem(40px);
+          max-height: calculateRem(40px);
+          margin-right: calculateRem(6px);
+        }
       }
     }
-    td:nth-child(2){
-      img{
+    td:nth-child(2) {
+      img {
         max-width: calculateRem(35px);
       }
     }
-    td:nth-child(3){
+    td:nth-child(3) {
       @include fontSize(20px);
       color: #607089;
     }
-    td{
-      &.act{
+    td {
+      &.act {
         color: #1e813e;
       }
-      .nl-pl-social{
+      .nl-pl-social {
+        padding-right: calculateRem(20px);
         @include fontSize(20px);
-        .fa-youtube-play{
+        .fa-youtube-play {
           color: #bd3231;
           margin-right: calculateRem(20px);
+          @include respond-to(wide-tablets){
+            margin-right: calculateRem(15px);
+          }
         }
-        .fa-twitter{
+        .fa-twitter {
           color: #35b4da;
           margin-right: calculateRem(20px);
+          @include respond-to(wide-tablets){
+            margin-right: calculateRem(15px);
+          }
         }
-        .fa-facebook-square{
+        .fa-facebook-square {
           color: #4d73bb;
         }
       }
     }
   }
 }
-
 
 // Hover effect
 //
@@ -158,7 +181,6 @@
   }
 }
 
-
 // Table backgrounds
 //
 // Exact selectors below required to override `.table-striped` and prevent
@@ -170,7 +192,6 @@
 @include table-row-variant(info, $state-info-bg);
 @include table-row-variant(warning, $state-warning-bg);
 @include table-row-variant(danger, $state-danger-bg);
-
 
 // Inverse styles
 //
@@ -204,8 +225,6 @@
     border: 0;
   }
 }
-
-
 
 // Responsive tables
 //

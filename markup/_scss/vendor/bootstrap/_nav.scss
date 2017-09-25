@@ -53,6 +53,9 @@
     min-width: calculateRem(90px);
     text-align: center;
     border-bottom: none;
+    @include respond-to(allmobile){
+      min-width: inherit;
+    }
 
     @include hover-focus {
       border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;

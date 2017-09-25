@@ -43,13 +43,10 @@ $(function () {
 });
 
 /*--------------------------------------------------------------
- # CustomScrollbar
+ # Forms Data
  --------------------------------------------------------------*/
 
 (function($){
-    $(window).on("load",function(){
-        //$(".table-striped").mCustomScrollbar();
-    });
 
     var isShowPass = false;
     var options = [{'type': 'text', 'text': 'HIDE'}, {'type': 'password', 'text': 'SHOW'}];
@@ -64,3 +61,31 @@ $(function () {
     };
 
 })(jQuery);
+
+/*--------------------------------------------------------------
+ # Custom Scroll
+ --------------------------------------------------------------*/
+
+(function ($) {
+    $(window).on("load", function () {
+        //if ($('body').hasClass('ck-slider')) {
+        if ($(window).width() > 991) {
+            $(".nl-table-scroll").mCustomScrollbar({
+                theme:"nl-theme",
+                setWidth: true,
+            });
+        } else {
+            $(".nl-table-scroll").mCustomScrollbar("destroy");
+        }
+        //}
+
+    }).trigger('resize');
+
+})(jQuery);
+
+
+// $('.navbar-toggler').on('click', function () {
+//    if($(this).val()==true){
+//        console.log($(this).val());
+//    }
+// });

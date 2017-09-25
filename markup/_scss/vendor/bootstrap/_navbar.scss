@@ -65,6 +65,9 @@
     line-height: calculateRem(25px);
     //display: flex;
     //align-items: center;
+    @include respond-to(wide-tablets){
+      line-height: calculateRem(30px);
+    }
 
     img {
       max-height: calculateRem(29px);
@@ -86,6 +89,19 @@
     @include respond-to(large-display){
       max-width:inherit;
     }
+    @include respond-to(wide-tablets){
+      max-width: inherit;
+      width: 10%;
+    }
+    @include respond-to(allsmall){
+      width: 100%;
+      max-width: inherit;
+      border: 0;
+      text-align: left;
+      a{
+        padding: calculateRem(10px) calculateRem(20px);
+      }
+    }
     &:nth-child(1) {
       border-left: none;
       width: 20%;
@@ -97,7 +113,24 @@
           padding-right: calculateRem(5px);
         }
       }
+      @include respond-to(wide-tablets){
+        width: 25%;
+      }
+      @include respond-to(allsmall){
+        width: 100%;
+        .nav-link {
+          padding-left: calculateRem(20px);
+        }
+      }
 
+    }
+    &:nth-child(7){
+      @include respond-to(wide-tablets){
+        width: 20%;
+      }
+      @include respond-to(allsmall){
+        width: 100%;
+      }
     }
     &:last-child {
       border-right: none;
@@ -105,6 +138,10 @@
       img{
         max-width: calculateRem(38px);
       }
+      @include respond-to(allsmall){
+        width: 100%;
+      }
+
     }
   }
 }
@@ -162,7 +199,9 @@
 
 .navbar-toggler-right {
   position: absolute;
-  right: $navbar-padding-x;
+  right: 0.5rem;
+  top: calculateRem(22px);
+  z-index: 100;
 }
 
 // Generate series of `.navbar-toggleable-*` responsive classes for configuring
@@ -261,7 +300,7 @@
   }
 
   .navbar-toggler {
-    border-color: $navbar-light-toggler-border;
+    //border-color: $navbar-light-toggler-border;
   }
 
   .navbar-toggler-icon {
@@ -316,4 +355,8 @@
   .navbar-text {
     color: $navbar-inverse-color;
   }
+}
+
+nav.navbar.navbar-toggleable-md.navbar-light{
+  display: block;
 }
