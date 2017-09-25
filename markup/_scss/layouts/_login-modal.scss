@@ -46,12 +46,19 @@
 
   .modal-body {
     padding: 72px 100px 0;
+    @include respond-to(allsmall){
+      padding: 72px 20px 0;
+    }
     input {
       height: 60px;
       width: 642px;
       border-radius: 0;
       font-size: 20px;
       margin-bottom: 20px;
+      @include respond-to(allsmall){
+        width: 100%;
+      }
+
     }
 
     .input-group {
