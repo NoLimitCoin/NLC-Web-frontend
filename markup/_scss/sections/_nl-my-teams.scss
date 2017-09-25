@@ -5,52 +5,36 @@
   padding-bottom: calculateRem(160px);
 
   .btn-create-team{
-    font-size: 33px;
-    margin: 0 0 36px;
+    font-size: calculateRem(33px);
+    margin: 0 0 calculateRem(36px);
   }
 
-  .status-wrapper{
+
+  .nl-card-wrapper{
+    overflow: hidden;
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    border-radius: calculateRem(10px);
+  }
+
+  .nl-status-wrapper{
     display: inline-block;
     background: linear-gradient(to top, #121a31, #1f3658);
-    border-radius: calculateRem(10px);
     color: #fff;
-    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     overflow: hidden;
 
     ul{
       list-style-type: none;
       margin: 0;
-      padding: 18px;
-
+      padding: calculateRem(18px);
 
       li{
         display: inline-block;
-        font-size: 19.02px;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: calculateRem(20px);
 
         span{
           vertical-align: middle;
           display: inline-block;
-        }
-
-
-        .indicator{
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          display: inline-block;
-          vertical-align: middle;
-          margin: 0 10px;
-        }
-        .playing{
-          background-color: #2b9c53;
-        }
-        .played{
-          background-color: #6dcff6;
-        }
-        .not-playing{
-          background-color: #e01516;
         }
 
       }
@@ -58,5 +42,126 @@
 
   }
 
+  .indicator{
+    width: calculateRem(20px);
+    height: calculateRem(20px);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 calculateRem(10px);
+  }
+  .playing{
+    background-color: #2b9c53;
+  }
+  .played{
+    background-color: #6dcff6;
+  }
+  .not-playing{
+    background-color: #e01516;
+  }
+
+
+  .nl-team-card {
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    width: 100%;
+    padding: calculateRem(24px);
+    display: flex;
+    background-color: #121a31;
+    color: #fff;
+    overflow: hidden;
+
+    &-data-field {
+      position: relative;
+      padding: calculateRem(25px);
+      display: flex;
+    }
+
+    .nl-data--avatar{
+      position: relative;
+      height: calculateRem(74px);
+      img{
+        width: calculateRem(88px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    p{
+      color: #e89708;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .title{
+      font-weight: 300;
+      color: #fff;
+      margin-left: calculateRem(5px);
+    }
+  }
+
+  .nl-team-card-footer{
+    width: 100%;
+    background-color: #121a31;
+    color: #fff;
+    overflow: hidden;
+
+    .nl-team-card-result{
+      padding: 35px 0;
+      background-color: #1d2d4e;
+
+      p{
+        color: #e89708;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-left: calculateRem(15px);
+        margin-bottom: 0;
+      }
+
+      .result{
+        color: #fff;
+        margin-left: calculateRem(10px);
+      }
+    }
+
+
+    .nl-team-card-btns{
+      padding-left: calculateRem(25px);
+
+      button{
+        display: block;
+        width: calculateRem(100px);
+      }
+    }
+  }
+  .table{
+    .indicated{
+      padding: calculateRem(10px) 0;
+    }
+    .indicator{
+      width: calculateRem(15px);
+      height: calculateRem(15px);
+    }
+    .salary{
+      color: #0fbf0c;
+    }
+  }
+
+  .table td:not(:first-child),.table th{
+    text-align: left;
+  }
+
+  .table th{
+    background-color: #1d2d4e;
+    font-size: calculateRem(13px);
+  }
+
+  .table th, .table td{
+    padding: calculateRem(8px);
+  }
 
 }
