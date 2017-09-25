@@ -43,6 +43,14 @@ body {
   padding-bottom: calculateRem(80px);
 }
 
+.nl-m-b-14{
+  margin-bottom: calculateRem(14px);
+}
+
+.nl-m-b-25{
+  margin-bottom: calculateRem(25px);
+}
+
 .nl-tar{
   text-align: right;
   @include respond-to(allsmall){
