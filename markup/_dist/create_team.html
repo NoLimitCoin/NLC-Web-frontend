@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Team Page | NLC2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-inner"></div>
+    </div>
+    <header class="nl-header-log">
+      <div class="nl-header-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 p-0">
+              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="navbar-toggler-icon"></span></button>
+                <div class="row">
+                  <div class="col-lg-7 nl-header-top--left">
+                    <div class="row nl-h100">
+                      <div class="col-lg-2">
+                        <div class="nl-logotype"><a href="index.html"><img src="assets/img/logotype.svg" alt="NO Limit"></a></div>
+                      </div>
+                      <div class="col-lg-10 align-self-center">
+                        <div class="nl-title">The worlds first crypto fantasy sports</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 nl-header-top--right">
+                    <div class="nl-profile">
+                      <div class="nl-profile--avatar"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+                      <div class="nl-profile--data">
+                        <div class="name">Name</div>
+                        <div class="settings"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="nl-balance">
+                      <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                      <div class="nl-balance--data">
+                        <div class="title">balance</div>
+                        <div class="sub-title">20023 NLC2</div>
+                        <div class="data">1 NLC2=00345 btc</div>
+                      </div>
+                    </div>
+                    <div class="nl-btn-control">
+                      <div class="nl-btn-group">
+                        <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                        <div class="btn btn-big-radius btn-block">logout</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Sport <img src="assets/img/ball.png" alt="#"></a>
+                      <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a href="#" class="dropdown-item">Soccer</a><a href="#" class="dropdown-item">Football</a><a href="#" class="dropdown-item">Baseball</a><a href="#" class="dropdown-item">Tennis</a></div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY TEAMS+</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTESTS+</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PLAYERS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">LIVE SCORES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY DASHBOARD</a></li>
+                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/France.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="nl-section nl-players nl-create-team">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>CREATE TEAM</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-7">
+              <div class="nl-players-filter-title">Filter by lEAgue:</div>
+              <div class="nl-players-filter">
+                <button type="button" class="btn btn-link"><img src="assets/img/flag/USA.png" alt="USA"></button>
+                <button type="button" class="btn btn-link"><img src="assets/img/flag/Spain.png" alt="Spain"></button>
+                <button type="button" class="btn btn-link"><img src="assets/img/flag/Germany.png" alt="Germany"></button>
+                <button type="button" class="btn btn-link"><img src="assets/img/flag/France.png" alt="France"></button>
+                <button type="clear" class="btn btn-primary">Reset Filter</button>
+              </div>
+              <div class="nl-players-filter-title">FILTER by team:</div>
+              <div class="nl-players-filter-caruseul">
+                <div class="owl-carousel pl-teams">
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FC.png" alt="FC"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FC.png" alt="FC"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FC.png" alt="FC"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FC.png" alt="FC"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FC.png" alt="FC"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FC.png" alt="FC"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-7">
+              <div class="nl-players-table">
+                <div class="nl-players-table-data-field">
+                  <div class="nl-data--avatar"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"></div>
+                  <div class="nl-data--text nl-m-r-80">
+                    <p class="title">Cristiano Ronaldo</p>
+                    <p>team : Real Madrid</p>
+                    <p>position: A</p>
+                    <p>salary: $89000</p>
+                  </div>
+                  <div class="nl-data--text">
+                    <p class="title">team formats</p>
+                    <p>other details go here</p>
+                  </div>
+                  <div class="nl-players-search">
+                    <div class="input-group">
+                      <input type="text" placeholder="Search by player name" class="form-control"><span class="input-group-btn">
+                        <button type="button" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+                    </div>
+                  </div>
+                </div>
+                <ul role="tablist" class="nav nav-tabs">
+                  <li class="nav-item"><a data-toggle="tab" href="#all" role="tab" class="nav-link active">All players</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#gk" role="tab" class="nav-link">GK</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#d" role="tab" class="nav-link">D</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#m" role="tab" class="nav-link">m</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#a" role="tab" class="nav-link">A</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="all" role="tabpanel" class="tab-pane active">
+                    <div class="nl-mob-table">
+                      <div class="nl-title">
+                        <div class="row">
+                          <div class="col-6">
+                            <p>NAME</p>
+                            <p>STATUS</p>
+                          </div>
+                          <div class="col-6">
+                            <p>FP</p>
+                            <p>SALARY</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nl-content">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                          <div class="card">
+                            <div role="tab" id="headingOne" class="card-header"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <p>Sebastian Giovinco</p>
+                                    <p class="act">ACT</p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>28.33</p>
+                                    <p>$12,500</p>
+                                  </div>
+                                </div></a></div>
+                            <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="collapse">
+                              <div class="card-block">
+                                <div class="row align-items-center">
+                                  <div class="col-6">
+                                    <p class="avatar"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>LEAGUE:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>
+                                      <p><img src="assets/img/flag/USA.png" alt="USA"></p>
+                                    </p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>NEWS:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><i class="fa fa-newspaper-o" aria-hidden="true"></i></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>TEAM:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>REAL MADRID</p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>POS:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>A</p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>OPP:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>Gameday</p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>Gameday:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>09/17/17</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div role="tab" id="headingTwo" class="card-header"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="collapsed">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <p>Sebastian Giovinco</p>
+                                    <p class="act">ACT</p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>28.33</p>
+                                    <p>$12,500</p>
+                                  </div>
+                                </div></a></div>
+                            <div id="collapseTwo" role="tabpanel" aria-labelledby="headingOne" class="collapse">
+                              <div class="card-block">
+                                <div class="row align-items-center">
+                                  <div class="col-6">
+                                    <p class="avatar"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>LEAGUE:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>
+                                      <p><img src="assets/img/flag/USA.png" alt="USA"></p>
+                                    </p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>NEWS:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><i class="fa fa-newspaper-o" aria-hidden="true"></i></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>TEAM:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>REAL MADRID</p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>POS:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>A</p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>OPP:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>Gameday</p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p><span>Gameday:</span></p>
+                                  </div>
+                                  <div class="col-6">
+                                    <p>09/17/17</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nl-desc-table">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>NAME</th>
+                            <th>LEAGUE</th>
+                            <th>NEWS</th>
+                            <th>TEAM</th>
+                            <th>STATUS</th>
+                            <th>FP</th>
+                            <th>SALARY</th>
+                            <th>POS</th>
+                            <th>OPP</th>
+                            <th>Gameday</th>
+                            <th>SOCIAL</th>
+                          </tr>
+                        </thead>
+                      </table>
+                      <div class="nl-table-scroll">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/USA.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/USA.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Sebastian Giovinco</td>
+                              <td><img src="assets/img/flag/Spain.png" alt="USA"></td>
+                              <td><i class="fa fa-newspaper-o" aria-hidden="true"></i></td>
+                              <td>REAL MADRID</td>
+                              <td class="act">ACT</td>
+                              <td>28.33</td>
+                              <td>$12,500</td>
+                              <td>A</td>
+                              <td>LA GALAXY</td>
+                              <td>09/17/17</td>
+                              <td>
+                                <div class="nl-pl-social"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="gk" role="tabpanel" class="tab-pane">TAB2</div>
+                  <div id="d" role="tabpanel" class="tab-pane">TAB3</div>
+                  <div id="m" role="tabpanel" class="tab-pane">TAB4</div>
+                  <div id="a" role="tabpanel" class="tab-pane">TAB5</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <h2>team</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer Block-->
+    <footer class="nl-footer">
+      <div class="nl-footer--button">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="nl-social-icon"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            <p><br />Copyright © 2017 No Limit Fantasy Sports, LLC All Rights Reserved Contest Rules, Terms and Conditions and Privacy Policy<br /></p>
+          </div>
+          <div class="col-lg-4 nl-tar">
+            <div class="input-group-btn"><a htef="#" class="btn btn-footer">Forum</a><a htef="#" class="btn btn-footer">Contact Us</a></div>
+            <div class="input-group-btn"><a htef="#" class="btn btn-footer">Faq</a><a htef="#" class="btn btn-footer">Terms & Conditions</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+  </body>
+</html>
