@@ -168,6 +168,8 @@
     }
   }
   .table{
+    max-width: none;
+    width: calc(100% + 1px);
     .indicated{
       padding: calculateRem(10px) 0;
     }
