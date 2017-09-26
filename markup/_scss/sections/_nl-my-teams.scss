@@ -2,7 +2,11 @@
   background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
   background-size: cover;
   color: #121a31;
-  padding-bottom: calculateRem(160px);
+  padding-bottom: calculateRem(50px);
+  @include respond-to(wide-tablets){
+    padding-left: calculateRem(30px);
+    padding-right: calculateRem(30px);
+  }
 
   .btn-create-team{
     font-size: calculateRem(33px);
@@ -14,6 +18,7 @@
     overflow: hidden;
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     border-radius: calculateRem(10px);
+    margin-bottom: 2.25rem;
   }
 
   .nl-status-wrapper{
@@ -21,6 +26,7 @@
     background: linear-gradient(to top, #121a31, #1f3658);
     color: #fff;
     overflow: hidden;
+    margin-bottom: 2.25rem;
 
     ul{
       list-style-type: none;
@@ -69,6 +75,11 @@
     background-color: #121a31;
     color: #fff;
     overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width: auto;
+    }
 
     &-data-field {
       position: relative;
@@ -131,6 +142,9 @@
 
     .nl-team-card-btns{
       padding-left: calculateRem(25px);
+      @include respond-to(wide-display){
+        padding-left: calculateRem(15px);
+      }
 
       button{
         display: block;

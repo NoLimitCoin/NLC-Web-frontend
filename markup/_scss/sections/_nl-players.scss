@@ -24,9 +24,9 @@
 
   .nl-players-filter {
     .btn-link {
-      margin-right: calculateRem(36px);
+      //margin-right: calculateRem(36px);
       @include respond-to(allmobile){
-        margin-right: calculateRem(15px);
+        //margin-right: calculateRem(15px);
       }
       img{
         @include respond-to(allmobile){
@@ -41,32 +41,46 @@
   .nl-players-filter-caruseul {
     margin-bottom: calculateRem(40px);
   }
-  .pl-teams {
+  .pl-teams, .pl-flag {
     position: relative;
     padding: 0 calculateRem(30px);
+    margin-bottom: calculateRem(20px);
     width: 100%;
-    .owl-item {
+  }
+
+  .pl-flag{
+    .owl-item{
       line-height: 64px;
-      a{
-        display: inline-block;
-        vertical-align: middle;
-      }
-      img {
-        width: inherit;
-      }
     }
-    .owl-nav {
-      @include fontSize(40px);
+  }
+
+  .owl-item {
+    line-height: 64px;
+    a{
+      display: inline-block;
+      vertical-align: middle;
     }
-    .owl-prev {
-      position: absolute;
-      top: calculateRem(10px);
-      left: 0;
+    img {
+      width: inherit;
     }
-    .owl-next {
-      position: absolute;
-      top: calculateRem(10px);
-      right: 0;
+  }
+  .owl-nav {
+    @include fontSize(40px);
+  }
+  .owl-prev {
+    position: absolute;
+    top: calculateRem(10px);
+    left: 0;
+    @include respond-to(handhelds){
+      top: calculateRem(25px);
+    }
+  }
+  .owl-next {
+    position: absolute;
+    top: calculateRem(10px);
+    right: 0;
+    @include respond-to(handhelds){
+      top: calculateRem(25px);
     }
   }
 

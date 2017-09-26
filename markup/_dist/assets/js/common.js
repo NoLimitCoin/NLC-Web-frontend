@@ -30,6 +30,17 @@ $(window).on('load',function (){
             autoWidth:true,
             margin: 25,
         });
+        $(".owl-carousel.pl-flag").owlCarousel({
+            item: 4,
+            loop:true,
+            nav:true,
+            navText: [
+                '<div class="icon-left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+                '<div class="icon-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
+            ],
+            autoWidth:true,
+            margin: 25,
+        });
     });
 });
 
@@ -68,7 +79,6 @@ $(function () {
 
 (function ($) {
     $(window).on("load", function () {
-        //if ($('body').hasClass('ck-slider')) {
         if ($(window).width() > 991) {
             $(".nl-table-scroll").mCustomScrollbar({
                 theme:"nl-theme",
@@ -77,15 +87,9 @@ $(function () {
         } else {
             $(".nl-table-scroll").mCustomScrollbar("destroy");
         }
-        //}
+
 
     }).trigger('resize');
 
 })(jQuery);
 
-
-// $('.navbar-toggler').on('click', function () {
-//    if($(this).val()==true){
-//        console.log($(this).val());
-//    }
-// });
