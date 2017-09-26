@@ -20,7 +20,8 @@
         //display: none;
       }
       @include respond-to(handhelds){
-        flex-direction: column;
+        //flex-direction: column;
+        display: block;
       }
 
     }
@@ -71,10 +72,12 @@
     justify-content: center;
     padding: calculateRem(10px) calculateRem(10px) calculateRem(10px) 0;
     @include respond-to(handhelds){
-      width: 100%;
-      border-right: inherit;
-      border-bottom: 1px solid #293f64;
-      padding: calculateRem(20px);
+      width: 50%;
+      float: left;
+      height: 60px;
+      //border-right: inherit;
+      //border-bottom: 1px solid #293f64;
+      padding: calculateRem(20px) calculateRem(10px);;
     }
 
     &--avatar {
@@ -94,12 +97,15 @@
     justify-content: center;
     padding: calculateRem(10px);
     @include respond-to(handhelds){
-      width: 100%;
+      width: 50%;
+      float: right;
       border-right: inherit;
-      border-left: inherit;
-      border-top: 1px solid #121a31;
-      border-bottom: 1px solid #293f64;
-      padding: calculateRem(20px);
+      height: 60px;
+
+      //border-left: inherit;
+      //border-top: 1px solid #121a31;
+      //border-bottom: 1px solid #293f64;
+      padding:calculateRem(20px) calculateRem(10px);
     }
     &--logo{
       align-self: center;
@@ -131,14 +137,24 @@
       width: 100%;
       border-left: inherit;
       border-top: 1px solid #121a31;
-      padding: calculateRem(20px);
+      padding: calculateRem(10px);
     }
     .nl-btn-group{
       align-self: center;
       width: 100%;
       max-width: 140px;
+      @include respond-to(handhelds){
+        max-width: inherit;
+        width: auto;
+
+        .btn-block{
+          display: inline-block;
+          width: auto;
+        }
+      }
     }
   }
+
   a{
     margin-right: calculateRem(8px);
     color: #ff9f2f;

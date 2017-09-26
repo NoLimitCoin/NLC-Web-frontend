@@ -109,8 +109,8 @@ section.nl-section.nl-players.nl-create-team
 
 
 
-        div.row
-            div.col-md-12.col-lg-8
+        div.row.nl-no-wrap
+            div.col-md-12.col-lg-8.nl-team-m600
                 div.nl-players-table.nl-create-team-table
                     div.nl-players-table-data-field
                         div.nl-data--avatar
@@ -288,6 +288,18 @@ section.nl-section.nl-players.nl-create-team
                                         tbody
                                             tr
                                                 td
+                                                    button.btn.btn-primary.btn-sm.disabled Draft
+                                                td.avatar <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo
+                                                td $21000
+                                                td 20
+                                                td A
+                                                td RMA
+                                                td ACT
+                                                td FCB
+                                                td 09/17/17
+                                                td <a href="#"><span class="info">i</span></a>
+                                            tr
+                                                td
                                                     button.btn.btn-primary.btn-sm Draft
                                                 td.avatar <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo
                                                 td $21000
@@ -297,7 +309,31 @@ section.nl-section.nl-players.nl-create-team
                                                 td ACT
                                                 td FCB
                                                 td 09/17/17
-                                                td <a href="#"><span>i</span></a>
+                                                td <a href="#"><span class="info">i</span></a>
+                                            tr
+                                                td
+                                                    button.btn.btn-primary.btn-sm Draft
+                                                td.avatar <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo
+                                                td $21000
+                                                td 20
+                                                td A
+                                                td RMA
+                                                td ACT
+                                                td FCB
+                                                td 09/17/17
+                                                td <a href="#"><span class="info">i</span></a>
+                                            tr
+                                                td
+                                                    button.btn.btn-primary.btn-sm Draft
+                                                td.avatar <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo
+                                                td $21000
+                                                td 20
+                                                td A
+                                                td RMA
+                                                td ACT
+                                                td FCB
+                                                td 09/17/17
+                                                td <a href="#"><span class="info">i</span></a>
 
 
 
@@ -306,5 +342,94 @@ section.nl-section.nl-players.nl-create-team
                         div.tab-pane(id="m" role="tabpanel") TAB4
                         div.tab-pane(id="a" role="tabpanel") TAB5
 
-            div.col-lg-4
-                h2 team
+            div.col-lg-4.nl-team-600
+                div.nl-team-info
+                    div.nl-team-name your team
+                    div.nl-team-data
+                        div.row
+                            div.col-6 TOTAL SALARY:
+                            div.col-6
+                                span $46730
+                        div.row
+                            div.col-6 Available:
+                            div.col-6
+                                span.avalibe $25000
+                        div.row
+                            div.col-6 Projections:
+                            div.col-6
+                                span 154
+                div.nl-team-button
+                    button.btn.btn-team.btn-big-radius.active(type="button") field view
+                    button.btn.btn-team.btn-big-radius(type="button") list view
+                div.nl-team-field
+                    div.striker-line
+                    div.midfielder-line
+                    div.defender-line
+                    div.player-main-block
+                        div.nl-player-block.nl-G-position
+                            img(src="assets/img/img-goalkeeper.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-DL-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-DR-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-DAL-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-DAR-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-CM-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-RWM-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-LWM-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-RS-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-LS-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+                        div.nl-player-block.nl-ST-position
+                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            div.nl-player-block--data
+                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p gronkowski
+                                p.data <span>12.67</span> <span>$42000</span>
+

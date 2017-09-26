@@ -3,10 +3,10 @@
  # Preloader
  --------------------------------------------------------------*/
 
-$(window).on('load',function () {
-    $(".loader_inner").fadeOut();
-    $(".loader").delay(300).fadeOut("slow");
-});
+// $(window).on('load',function () {
+//     $(".loader_inner").fadeOut();
+//     $(".loader").delay(300).fadeOut("slow");
+// });
 
 /*--------------------------------------------------------------
  # Own Carusel

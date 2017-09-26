@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <div class="loader">
-      <div class="loader-inner"></div>
-    </div>
+    <!--include _partials/preloader.jade-->
     <header class="nl-header-log">
       <div class="nl-header-top">
         <div class="container-fluid">
@@ -197,8 +195,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12 col-lg-8">
+          <div class="row nl-no-wrap">
+            <div class="col-md-12 col-lg-8 nl-team-m600">
               <div class="nl-players-table nl-create-team-table">
                 <div class="nl-players-table-data-field">
                   <div class="nl-data--avatar"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"></div>
@@ -390,6 +388,20 @@
                           <tbody>
                             <tr>
                               <td>
+                                <button class="btn btn-primary btn-sm disabled">Draft</button>
+                              </td>
+                              <td class="avatar"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo</td>
+                              <td>$21000</td>
+                              <td>20</td>
+                              <td>A</td>
+                              <td>RMA</td>
+                              <td>ACT</td>
+                              <td>FCB</td>
+                              <td>09/17/17</td>
+                              <td><a href="#"><span class="info">i</span></a></td>
+                            </tr>
+                            <tr>
+                              <td>
                                 <button class="btn btn-primary btn-sm">Draft</button>
                               </td>
                               <td class="avatar"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo</td>
@@ -400,7 +412,35 @@
                               <td>ACT</td>
                               <td>FCB</td>
                               <td>09/17/17</td>
-                              <td><a href="#"><span>i</span></a></td>
+                              <td><a href="#"><span class="info">i</span></a></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <button class="btn btn-primary btn-sm">Draft</button>
+                              </td>
+                              <td class="avatar"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo</td>
+                              <td>$21000</td>
+                              <td>20</td>
+                              <td>A</td>
+                              <td>RMA</td>
+                              <td>ACT</td>
+                              <td>FCB</td>
+                              <td>09/17/17</td>
+                              <td><a href="#"><span class="info">i</span></a></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <button class="btn btn-primary btn-sm">Draft</button>
+                              </td>
+                              <td class="avatar"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"> Cristiano Ronaldo</td>
+                              <td>$21000</td>
+                              <td>20</td>
+                              <td>A</td>
+                              <td>RMA</td>
+                              <td>ACT</td>
+                              <td>FCB</td>
+                              <td>09/17/17</td>
+                              <td><a href="#"><span class="info">i</span></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -414,8 +454,112 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <h2>team</h2>
+            <div class="col-lg-4 nl-team-600">
+              <div class="nl-team-info">
+                <div class="nl-team-name">your team</div>
+                <div class="nl-team-data">
+                  <div class="row">
+                    <div class="col-6">TOTAL SALARY:</div>
+                    <div class="col-6"><span>$46730</span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">Available:</div>
+                    <div class="col-6"><span class="avalibe">$25000</span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">Projections:</div>
+                    <div class="col-6"><span>154</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="nl-team-button">
+                <button type="button" class="btn btn-team btn-big-radius active">field view</button>
+                <button type="button" class="btn btn-team btn-big-radius">list view</button>
+              </div>
+              <div class="nl-team-field">
+                <div class="striker-line"></div>
+                <div class="midfielder-line"></div>
+                <div class="defender-line"></div>
+                <div class="player-main-block">
+                  <div class="nl-player-block nl-G-position"><img src="assets/img/img-goalkeeper.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-DL-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-DR-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-DAL-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-DAR-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-CM-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-RWM-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-LWM-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-RS-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-LS-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                  <div class="nl-player-block nl-ST-position"><img src="assets/img/img-players.png" alt="goalkeeper">
+                    <div class="nl-player-block--data">
+                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
+                      <p>gronkowski</p>
+                      <p class="data"><span>12.67</span> <span>$42000</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

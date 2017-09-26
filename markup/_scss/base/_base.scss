@@ -62,6 +62,17 @@ body {
   margin-bottom: 2.25rem;
 }
 
+.nl-team-600{
+  min-width: 620px;
+}
+.nl-team-m600{
+  max-width: calc(100% - 620px);
+}
+
+.nl-no-wrap{
+  flex-wrap: nowrap;
+  width: calc(100% - 30px);
+}
 
 
 .nl-h100{

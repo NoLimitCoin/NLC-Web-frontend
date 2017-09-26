@@ -1,48 +1,208 @@
-.nl-create-team{
+.nl-create-team {
   padding-left: calculateRem(30px);
   padding-right: calculateRem(30px);
 }
 
-.nl-create-team-table{
-  .nl-players-search{
+.nl-create-team-table {
+  .nl-players-search {
     min-width: calculateRem(200px);
   }
+  td, th {
+    padding: 0.5rem;
+  }
+  td:not(:first-child), .table th:not(:first-child) {
+    text-align: left;
+  }
 
-  .nl-desc-table  tbody  tr  td,
-  .nl-desc-table  thead  tr  th {
+  .nl-desc-table tbody tr td,
+  .nl-desc-table thead tr th {
+
     @include respond-to(allwide) {
       //float: left;
-      width: 10% !important;
+      //width: 10% !important;
       &:nth-child(1) {
-        width: 17%;
+        width: 10%;
       }
       &:nth-child(2) {
-        width: 7%;
+        width: 27%;
       }
       &:nth-child(3) {
-        width: 7%;
+        width: 10%;
       }
       &:nth-child(4) {
-        width: 12%;
+        width: 6%;
       }
       &:nth-child(5) {
-        width: 7%;
+        width: 8%;
       }
       &:nth-child(6) {
-        width: 6%;
+        width: 8%;
       }
       &:nth-child(7) {
         width: 8%;
       }
       &:nth-child(8) {
-        width: 5%;
+        width: 7%;
       }
       &:nth-child(9) {
-        width: 9%;
+        width: 10%;
       }
       &:nth-child(10) {
-        width: 10%;
+        width: 6%;
+      }
+    }
+  }
+  .table-striped {
+    tbody tr {
+      &:hover {
+        //background: ;
       }
     }
   }
 }
+
+.nl-team-info {
+  background: #142d57;
+  color: #fff;
+  @include fontSize(15px);
+  text-transform: uppercase;
+  font-weight: 600;
+  overflow: hidden;
+  border-radius: calculateRem(10px);
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  .nl-team-name {
+    width: 100%;
+    background: #121a31;
+    color: #e48706;
+    @include fontSize(21px);
+    font-weight: 700;
+    text-align: center;
+    padding: calculateRem(20px);
+
+  }
+  .nl-team-data {
+    padding: calculateRem(20px);
+    span {
+      font-weight: 500;
+      &.avalibe {
+        color: #e48706;
+      }
+    }
+  }
+}
+
+.nl-team-button {
+  text-align: center;
+  margin: calculateRem(20px) 0;
+  .btn-team {
+    margin: calculateRem(5px);
+  }
+}
+
+.nl-team-field {
+  background: url(../img/nl-soccer-field.png) no-repeat 0 0;
+  background-size: contain;
+  min-width: 620px;
+  min-height: 563px;
+  .goalkeeper-line {
+    position: relative;
+  }
+  .nl-player-block {
+    position: absolute;
+    max-width: 105px;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    p{
+      margin: 0;
+      line-height: 12px
+    }
+    img {
+      max-width: 60px;
+    }
+    &--data{
+      background: #253046;
+      position: relative;
+      min-width: 95px;
+      padding: 5px;
+      .btn-player-close{
+        position: absolute;
+        top: -16px;
+        right: -10px;
+        background: red;
+        color: #fff;
+      }
+      .data{
+        display: flex;
+        justify-content: space-between;
+        span:first-child{
+          color: #df920b;
+        }
+      }
+    }
+
+  }
+}
+
+.player-main-block{
+  width: 100%;
+  height: 100%;
+  min-height: 563px;
+  position: relative;
+}
+.nl-G-position{
+  bottom: 13.5%;
+  left: 43%;
+}
+
+.nl-DL-position{
+  bottom: 28.5%;
+  left: 24%;
+}
+.nl-DR-position{
+  bottom: 28.5%;
+  right: 24%;
+}
+.nl-DAL-position{
+  bottom: 35%;
+  left: 7%;
+}
+.nl-DAR-position{
+  bottom: 35%;
+  right: 6%;
+}
+.nl-CM-position{
+  bottom: 42%;
+  left: 43%;
+}
+
+.nl-ST-position{
+  top: 2.5%;
+  left: 43%;
+}
+
+.nl-LS-position{
+  top: 2.5%;
+  left: 17%;
+}
+
+.nl-RS-position{
+  top: 2.5%;
+  right: 17%;
+}
+
+.nl-LWM-position{
+  top: 25%;
+  left: 25%;
+}
+
+.nl-RWM-position{
+  top: 25%;
+  right: 25%;
+}
+
+

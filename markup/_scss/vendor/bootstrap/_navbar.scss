@@ -68,6 +68,9 @@
     @include respond-to(wide-tablets){
       line-height: calculateRem(30px);
     }
+    @include respond-to(handhelds){
+      line-height: calculateRem(40px);
+    }
 
     img {
       max-height: calculateRem(29px);
@@ -127,6 +130,7 @@
         img{
           margin-left: 1.25rem;
           margin-right: 0.4rem;
+          max-height: calculateRem(29px);
         }
         @include respond-to(allsmall){
           display: flex;
