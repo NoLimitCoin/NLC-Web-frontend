@@ -120,16 +120,29 @@
     background-color: #121a31;
     color: #fff;
     overflow: hidden;
+    display: flex;
+
+    &--left{
+      padding: calculateRem(20px);
+      width: 40%;
+
+    }
+    &--right{
+      padding: calculateRem(30px) calculateRem(20px) calculateRem(20px) ;
+      width: 60%;
+      background-color: #1d2d4e;
+    }
 
     .nl-team-card-result{
-      padding: 35px 0;
-      background-color: #1d2d4e;
+      //padding: 35px 0;
+      text-align: center;
+
 
       p{
         color: #e89708;
         text-transform: uppercase;
         font-weight: 700;
-        margin-left: calculateRem(15px);
+        //margin-left: calculateRem(15px);
         margin-bottom: 0;
       }
 
@@ -141,14 +154,16 @@
 
 
     .nl-team-card-btns{
-      padding-left: calculateRem(25px);
+      //padding-left: calculateRem(25px);
       @include respond-to(wide-display){
-        padding-left: calculateRem(15px);
+        //padding-left: calculateRem(15px);
       }
 
       button{
         display: block;
-        width: calculateRem(100px);
+        min-width: calculateRem(80px);
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
