@@ -1,6 +1,11 @@
 .nl-create-team {
   padding-left: calculateRem(30px);
   padding-right: calculateRem(30px);
+  padding-bottom: calculateRem(50px);
+  @include respond-to(allsmall){
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .nl-create-team-table {
@@ -98,6 +103,11 @@
   margin: calculateRem(20px) 0;
   .btn-team {
     margin: calculateRem(5px);
+    &:first-child{
+      @include respond-to(allsmall){
+        display: none;
+      }
+    }
   }
 }
 
@@ -106,6 +116,9 @@
   background-size: contain;
   min-width: 620px;
   min-height: 563px;
+  @include respond-to(allsmall){
+    display: none;
+  }
   .goalkeeper-line {
     position: relative;
   }
@@ -208,6 +221,7 @@
 .nl-team-list{
   max-width: calculateRem(500px);
   margin: 0 auto;
+  padding: 0;
 }
 
 

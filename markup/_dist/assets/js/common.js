@@ -93,3 +93,46 @@ $(function () {
 
 })(jQuery);
 
+
+/*--------------------------------------------------------------
+ # Demo
+ --------------------------------------------------------------*/
+
+(function ($) {
+
+
+    $('.table-striped button').on('click', function(){
+        if($(this).hasClass('disabled')) {
+            return false;
+        }
+        $(this).addClass('disabled');
+        var position = $(this).parents('tr').find('td:nth-child(5)').text();
+
+        var cl = "nl-" + position + "-position";
+        var imgSrc = position == 'G' ? 'assets/img/img-goalkeeper.png' : 'assets/img/img-players.png';
+        var tempElement = $('<div class="nl-player-block ' + cl + ' "><img src="'+ imgSrc +'" alt="goalkeeper">\n' +
+            '                    <div class="nl-player-block--data" data-position="' + position +'">\n' +
+            '                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>\n' +
+            '                      <p>gronkowski</p>\n' +
+            '                      <p class="data"><span>12.67</span> <span>$42000</span></p>\n' +
+            '                    </div>\n' +
+            '                  </div>');
+
+        $('.player-main-block').append(tempElement);
+
+    });
+
+    $('body').on('click', '.nl-player-block .btn-player-close', function(){
+        $(this).parents('.nl-player-block').remove();
+        var position = $(this).parents('.nl-player-block').data('position');
+        var needle = $('.table-striped').find('td:contains('+ position +')');
+        needle.parent().find('button').removeClass('disabled');
+
+    })
+
+})(jQuery);
+
+
+
+
+

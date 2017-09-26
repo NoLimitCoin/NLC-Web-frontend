@@ -64,14 +64,38 @@ body {
 
 .nl-team-600{
   min-width: 620px;
+  @include respond-to(allwd){
+    //max-width: 100%;
+    margin: calculateRem(40px) auto 0;
+  }
+  @include respond-to(allsmall){
+    margin: calculateRem(40px) auto 0;
+    min-width: 100%;
+
+  }
 }
 .nl-team-m600{
   max-width: calc(100% - 620px);
+  @include respond-to(allwd){
+    max-width: 100%;
+  }
+  @include respond-to(allsmall){
+    max-width: 100%;
+  }
 }
 
 .nl-no-wrap{
   flex-wrap: nowrap;
   width: calc(100% - 30px);
+  @include respond-to(allsmall){
+    flex-wrap: wrap;
+    width: inherit;
+  }
+  @include respond-to(allwd){
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
 

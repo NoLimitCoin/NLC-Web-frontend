@@ -16,18 +16,16 @@
   td {
     padding: $table-cell-padding;
     vertical-align: middle;
-    @include respond-to(wide-tablets ){
+    @include respond-to(wide-tablets) {
       padding: 0.5rem;
     }
-    @include respond-to(display){
+    @include respond-to(display) {
       padding: 0.7rem;
     }
 
     &:not(:first-child) {
       text-align: center;
     }
-
-
 
     //border-top: $table-border-width solid $table-border-color;
   }
@@ -104,6 +102,10 @@
         .fa-twitter, .fa-youtube-play, .fa-facebook-square {
           color: #fff;
         }
+
+      }
+      .pos {
+        color: #fff;
       }
     }
   }
@@ -119,12 +121,12 @@
         max-height: calculateRem(48px);
         border-radius: 50%;
         margin-right: calculateRem(6px);
-        @include respond-to(wide-tablets){
+        @include respond-to(wide-tablets) {
           max-width: calculateRem(30px);
           max-height: calculateRem(30px);
           margin-right: calculateRem(5px);
         }
-        @include respond-to(display){
+        @include respond-to(display) {
           max-width: calculateRem(40px);
           max-height: calculateRem(40px);
           margin-right: calculateRem(6px);
@@ -150,14 +152,14 @@
         .fa-youtube-play {
           color: #bd3231;
           margin-right: calculateRem(20px);
-          @include respond-to(wide-tablets){
+          @include respond-to(wide-tablets) {
             margin-right: calculateRem(15px);
           }
         }
         .fa-twitter {
           color: #35b4da;
           margin-right: calculateRem(20px);
-          @include respond-to(wide-tablets){
+          @include respond-to(wide-tablets) {
             margin-right: calculateRem(15px);
           }
         }
@@ -167,7 +169,7 @@
       }
     }
   }
-  .info{
+  .info {
     display: block;
     width: 22px;
     height: 22px;

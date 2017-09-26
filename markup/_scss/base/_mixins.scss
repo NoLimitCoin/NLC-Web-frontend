@@ -48,6 +48,12 @@
     }
   }
 
+  @else if $media==allwd {
+    @media only screen and (min-width: 992px) and (max-width: 1570px) {
+      @content;
+    }
+  }
+
 
   @else if $media==allwide {
     @media (min-width: 992px)  {
