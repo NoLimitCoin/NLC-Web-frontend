@@ -7,15 +7,23 @@ section.nl-section.nl-players.nl-create-team
             div.col-md-12.col-lg-7
                 div.nl-players-filter-title Filter by lEAgue:
                 div.nl-players-filter
-                    button.btn.btn-link(type="button")
-                        img(src="assets/img/flag/USA.png" alt="USA")
-                    button.btn.btn-link(type="button")
-                        img(src="assets/img/flag/Spain.png" alt="Spain")
-                    button.btn.btn-link(type="button")
-                        img(src="assets/img/flag/Germany.png" alt="Germany")
-                    button.btn.btn-link(type="button")
-                        img(src="assets/img/flag/France.png" alt="France")
-                    button.btn.btn-primary(type="clear") Reset Filter
+                    div.row.align-items-center
+                        div.col-md-5
+                            div.owl-carousel.pl-flag
+                                div
+                                    button.btn.btn-link(type="button")
+                                        img(src="assets/img/flag/USA.png" alt="USA")
+                                div
+                                    button.btn.btn-link(type="button")
+                                        img(src="assets/img/flag/Spain.png" alt="Spain")
+                                div
+                                    button.btn.btn-link(type="button")
+                                        img(src="assets/img/flag/Germany.png" alt="Germany")
+                                div
+                                    button.btn.btn-link(type="button")
+                                        img(src="assets/img/flag/France.png" alt="France")
+                        div.col-md-7
+                            button.btn.btn-primary(type="clear") Reset Filter
                 div.nl-players-filter-title FILTER by team:
                 div.nl-players-filter-caruseul
                     div.owl-carousel.pl-teams

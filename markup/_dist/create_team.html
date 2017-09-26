@@ -59,7 +59,7 @@
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Sport <img src="assets/img/ball.png" alt="#"></a>
-                      <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a href="#" class="dropdown-item">Soccer</a><a href="#" class="dropdown-item">Football</a><a href="#" class="dropdown-item">Baseball</a><a href="#" class="dropdown-item">Tennis</a></div>
+                      <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a href="#" class="dropdown-item"><span>Soccer</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Football</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Baseball</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Tennis</span> <img src="assets/img/ball.png" alt="#"></a></div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">MY TEAMS+</a></li>
@@ -90,11 +90,27 @@
             <div class="col-md-12 col-lg-7">
               <div class="nl-players-filter-title">Filter by lEAgue:</div>
               <div class="nl-players-filter">
-                <button type="button" class="btn btn-link"><img src="assets/img/flag/USA.png" alt="USA"></button>
-                <button type="button" class="btn btn-link"><img src="assets/img/flag/Spain.png" alt="Spain"></button>
-                <button type="button" class="btn btn-link"><img src="assets/img/flag/Germany.png" alt="Germany"></button>
-                <button type="button" class="btn btn-link"><img src="assets/img/flag/France.png" alt="France"></button>
-                <button type="clear" class="btn btn-primary">Reset Filter</button>
+                <div class="row align-items-center">
+                  <div class="col-md-5">
+                    <div class="owl-carousel pl-flag">
+                      <div>
+                        <button type="button" class="btn btn-link"><img src="assets/img/flag/USA.png" alt="USA"></button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-link"><img src="assets/img/flag/Spain.png" alt="Spain"></button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-link"><img src="assets/img/flag/Germany.png" alt="Germany"></button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-link"><img src="assets/img/flag/France.png" alt="France"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <button type="clear" class="btn btn-primary">Reset Filter</button>
+                  </div>
+                </div>
               </div>
               <div class="nl-players-filter-title">FILTER by team:</div>
               <div class="nl-players-filter-caruseul">
