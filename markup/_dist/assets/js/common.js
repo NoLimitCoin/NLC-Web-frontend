@@ -109,6 +109,7 @@ $(function () {
     var $nlMobTableBtn = $nlMobTable.find('button');
 
     function add() {
+        var imgSrc;
         $(this).addClass('disabled');
         var position = $(this)
             .parents('tr')
@@ -127,10 +128,20 @@ $(function () {
                 .find('button')
                 .addClass('disabled');
 
+        }else{
+            $nlMobTable
+                .find('p.nl-position:contains(' + position + ')')
+                .next()
+                .find('button')
+                .addClass('disabled');
         }
 
+        imgSrc = position == 'G' ? 'assets/img/img-goalkeeper.png' : 'assets/img/img-players.png';
+
+        if($('.nl-team-field').hasClass('football')){
+            imgSrc = 'assets/img/football/img-'+ position +'.png';
+        }
         var cl = "nl-" + position + "-position";
-        var imgSrc = position == 'G' ? 'assets/img/img-goalkeeper.png' : 'assets/img/img-players.png';
         var tempElement = $('<div class="nl-player-block ' + cl + ' " data-position="' + position + '"><img src="' + imgSrc + '" alt="goalkeeper">\n' +
             '<div class="nl-player-block--data" >\n' +
             '<button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>\n' +
@@ -211,18 +222,18 @@ $(function () {
     });
 
 
-    function switchAreas(showEl, hideEl, btn) {
+    function switchAreas(showEl, hideEl) {
         $(showEl).addClass('visible').removeClass('hide');
         $(hideEl).addClass('hide').removeClass('visible');
-        $(btn).addClass('active').siblings().removeClass('active');
+        $(this).addClass('active').siblings().removeClass('active');
     }
 
     $('.field-view-btn').on('click', function () {
-        switchAreas('.nl-team-field', '.nl-team-list', this);
+        switchAreas.call(this, '.nl-team-field', '.nl-team-list');
     });
 
     $('.list-view-btn').on('click', function () {
-        switchAreas('.nl-team-list', '.nl-team-field', this);
+        switchAreas.call(this, '.nl-team-list', '.nl-team-field');
     });
 
 
