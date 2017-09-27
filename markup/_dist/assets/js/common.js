@@ -82,10 +82,17 @@ $(function () {
         if ($(window).width() > 991) {
             $(".nl-table-scroll").mCustomScrollbar({
                 theme:"nl-theme",
-                setWidth: true,
+                setWidth: true
             });
+            $(".nl-table-scroll2").mCustomScrollbar({
+                theme:"nl-theme",
+                setWidth: true
+            });
+
+
         } else {
             $(".nl-table-scroll").mCustomScrollbar("destroy");
+            $(".nl-table-scroll2").mCustomScrollbar("destroy");
         }
 
 

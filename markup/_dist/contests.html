@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contests Page | NLC2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="sp">
+    <!--include _partials/preloader.jade-->
+    <header class="nl-header-log">
+      <div class="nl-header-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 p-0">
+              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="navbar-toggler-icon"></span></button>
+                <div class="row m-0">
+                  <div class="col-lg-7 nl-header-top--left">
+                    <div class="row nl-h100">
+                      <div class="col-lg-2">
+                        <div class="nl-logotype"><a href="index.html"><img src="assets/img/logotype.svg" alt="NO Limit"></a></div>
+                      </div>
+                      <div class="col-lg-10 align-self-center">
+                        <div class="nl-title">The worlds first crypto fantasy sports</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 nl-header-top--right">
+                    <div class="nl-profile">
+                      <div class="nl-profile--avatar"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+                      <div class="nl-profile--data">
+                        <div class="name">Name</div>
+                        <div class="settings"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="nl-balance">
+                      <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                      <div class="nl-balance--data">
+                        <div class="title">balance</div>
+                        <div class="sub-title">20023 NLC2</div>
+                        <div class="data">1 NLC2=00345 btc</div>
+                      </div>
+                    </div>
+                    <div class="nl-btn-control">
+                      <div class="nl-btn-group">
+                        <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                        <div class="btn btn-big-radius btn-block">logout</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Sport <img src="assets/img/ball.png" alt="#"></a>
+                      <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a href="#" class="dropdown-item"><span>Soccer</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Football</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Baseball</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Tennis</span> <img src="assets/img/ball.png" alt="#"></a></div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY TEAMS+</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTESTS+</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PLAYERS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">LIVE SCORES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY DASHBOARD</a></li>
+                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/France.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="nl-section nl-players nl-contests">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-12 col-sm-4 col-md-3 col-xl-2">
+              <h1>contests</h1>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-xl-3">
+              <div class="nl-contests-search">
+                <div class="input-group">
+                  <input type="text" placeholder="Search contests" class="form-control"><span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="nl-players-table nl-contests-table">
+                <ul role="tablist" class="nav nav-tabs">
+                  <li class="nav-item"><a data-toggle="tab" href="#all" role="tab" class="nav-link active">Buy in No Limit coin</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#gk" role="tab" class="nav-link">Free</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#d" role="tab" class="nav-link">private pool</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="all" role="tabpanel" class="tab-pane active">
+                    <div class="nl-table-responsive">
+                      <div class="nl-table-mw">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Contests name</th>
+                              <th>Buy-In</th>
+                              <th>TEAMs</th>
+                              <th>week</th>
+                              <th>Payout</th>
+                              <th>ENTRY</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                        </table>
+                        <div class="nl-table-scroll">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td>
+                                  <button class="btn btn-primary btn-sm">enter</button>
+                                </td>
+                                <td>STARTED</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td>
+                                  <button class="btn btn-primary btn-sm">enter</button>
+                                </td>
+                                <td>STARTED</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td>
+                                  <button class="btn btn-primary btn-sm">enter</button>
+                                </td>
+                                <td>STARTED</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td>
+                                  <button class="btn btn-primary btn-sm">enter</button>
+                                </td>
+                                <td>STARTED</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td>
+                                  <button class="btn btn-primary btn-sm">enter</button>
+                                </td>
+                                <td>STARTED</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td>
+                                  <button class="btn btn-primary btn-sm">enter</button>
+                                </td>
+                                <td>STARTED</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td>
+                                  <button class="btn btn-primary btn-sm">enter</button>
+                                </td>
+                                <td>STARTED</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td></td>
+                                <td class="st-full">FULL</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td></td>
+                                <td class="st-full">FULL</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td></td>
+                                <td class="st-full">FULL</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td></td>
+                                <td class="st-full">FULL</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td></td>
+                                <td class="st-full">FULL</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td></td>
+                                <td class="st-full">FULL</td>
+                              </tr>
+                              <tr>
+                                <td>WK3 G Joe Theismann 5 team Challenge</td>
+                                <td>10</td>
+                                <td>71/100</td>
+                                <td>3</td>
+                                <td>1000</td>
+                                <td></td>
+                                <td class="st-full">FULL</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="gk" role="tabpanel" class="tab-pane">TAB2</div>
+                  <div id="d" role="tabpanel" class="tab-pane">TAB3</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="nl-contest-info-title">
+                <h3>Contest info</h3>
+              </div>
+              <div class="nl-contest-info-table">
+                <table class="table table-info1">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div>
+                          <p class="tit">CONTEST:</p>
+                          <p>Goals for Everyone</p>
+                          <p class="tit">buy in:</p>
+                          <p>10nlc2</p>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td>
+                        <div>
+                          <p class="tit">teams:</p>
+                          <p>7/100</p>
+                          <p class="tit">allowed teams:</p>
+                          <p>2</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button type="button" class="btn btn-primary">Enter</button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-default">Payout</button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-default">Live View</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-info2">
+                  <thead>
+                    <tr>
+                      <th>Starts in
+                        <div class="nl-time-block">
+                          <div><span>4</span>Days</div>
+                          <div><span>16</span>hours</div>
+                          <div><span>0</span>minutes</div>
+                          <div><span>5</span>seconds</div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+                <table class="table table-info3">
+                  <thead>
+                    <tr>
+                      <th>Rank</th>
+                      <th>user</th>
+                      <th>team name</th>
+                      <th>score</th>
+                    </tr>
+                  </thead>
+                </table>
+                <div class="nl-table-scroll2">
+                  <table class="table table-striped table-info4">
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
+                        <td>37.90</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
+                        <td>37.90</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
+                        <td>37.90</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
+                        <td>37.90</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
+                        <td>37.90</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
+                        <td>37.90</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="nl-info-table-button">
+                  <button class="btn btn-warning btn-lg">Withdraw</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer Block-->
+    <footer class="nl-footer">
+      <div class="nl-footer--button">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="nl-social-icon"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            <p><br />Copyright © 2017 No Limit Fantasy Sports, LLC All Rights Reserved Contest Rules, Terms and Conditions and Privacy Policy<br /></p>
+          </div>
+          <div class="col-lg-4 nl-tar">
+            <div class="input-group-btn"><a htef="#" class="btn btn-footer">Forum</a><a htef="#" class="btn btn-footer">Contact Us</a></div>
+            <div class="input-group-btn"><a htef="#" class="btn btn-footer">Faq</a><a htef="#" class="btn btn-footer">Terms & Conditions</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+  </body>
+</html>
