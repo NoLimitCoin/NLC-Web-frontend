@@ -113,3 +113,13 @@ body {
     margin-top: calculateRem(20px);
   }
 }
+
+.hide{
+  display: none;
+  @include respond-to(allsmall){
+    display: block;
+  }
+}
+.visible{
+  display: block;
+}

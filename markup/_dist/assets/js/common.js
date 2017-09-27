@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
  # Preloader
  --------------------------------------------------------------*/
@@ -12,33 +11,33 @@
  # Own Carusel
  --------------------------------------------------------------*/
 
-$(window).on('load',function (){
+$(window).on('load', function () {
     $(".owl-carousel.main-carousel").owlCarousel({
-        items:1,
-        loop:true,
+        items: 1,
+        loop: true,
         dots: true
     });
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".owl-carousel.pl-teams").owlCarousel({
-            loop:true,
-            nav:true,
+            loop: true,
+            nav: true,
             navText: [
                 '<div class="icon-left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
                 '<div class="icon-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
             ],
-            autoWidth:true,
+            autoWidth: true,
             margin: 25,
         });
         $(".owl-carousel.pl-flag").owlCarousel({
             item: 4,
-            loop:true,
-            nav:true,
+            loop: true,
+            nav: true,
             navText: [
                 '<div class="icon-left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
                 '<div class="icon-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
             ],
-            autoWidth:true,
+            autoWidth: true,
             margin: 25,
         });
     });
@@ -50,14 +49,14 @@ $(window).on('load',function (){
  --------------------------------------------------------------*/
 
 $(function () {
-    $('#video a').fancybox({ });
+    $('#video a').fancybox({});
 });
 
 /*--------------------------------------------------------------
  # Forms Data
  --------------------------------------------------------------*/
 
-(function($){
+(function ($) {
 
     var isShowPass = false;
     var options = [{'type': 'text', 'text': 'HIDE'}, {'type': 'password', 'text': 'SHOW'}];
@@ -67,7 +66,7 @@ $(function () {
         isShowPass = !isShowPass;
     });
 
-    var onloadCallback = function() {
+    var onloadCallback = function () {
         console.log("grecaptcha is ready!");
     };
 
@@ -81,7 +80,7 @@ $(function () {
     $(window).on("load", function () {
         if ($(window).width() > 991) {
             $(".nl-table-scroll").mCustomScrollbar({
-                theme:"nl-theme",
+                theme: "nl-theme",
                 setWidth: true,
             });
         } else {
@@ -100,35 +99,132 @@ $(function () {
 
 (function ($) {
 
+    var $nlPlayerTable = $('.nl-players-table .table-striped'),
+        $nlTeamListTable = $('.nl-team-list .table-striped'),
+        $nlPlayerBtn = $nlPlayerTable.find('button'),
+        $nlTeamListBtn = $nlTeamListTable.find('button');
 
-    $('.table-striped button').on('click', function(){
-        if($(this).hasClass('disabled')) {
-            return false;
-        }
+
+    var $nlMobTable = $('.nl-mob-table');
+    var $nlMobTableBtn = $nlMobTable.find('button');
+
+    function add() {
         $(this).addClass('disabled');
-        var position = $(this).parents('tr').find('td:nth-child(5)').text();
+        var position = $(this)
+            .parents('tr')
+            .find('td:nth-child(5)')
+            .text();
+
+        if (!position) {
+            position = $(this)
+                .parent()
+                .prev()
+                .text();
+
+            $nlPlayerTable
+                .find('td:contains(' + position + ')')
+                .parent()
+                .find('button')
+                .addClass('disabled');
+
+        }
 
         var cl = "nl-" + position + "-position";
         var imgSrc = position == 'G' ? 'assets/img/img-goalkeeper.png' : 'assets/img/img-players.png';
-        var tempElement = $('<div class="nl-player-block ' + cl + ' "><img src="'+ imgSrc +'" alt="goalkeeper">\n' +
-            '                    <div class="nl-player-block--data" data-position="' + position +'">\n' +
-            '                      <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>\n' +
-            '                      <p>gronkowski</p>\n' +
-            '                      <p class="data"><span>12.67</span> <span>$42000</span></p>\n' +
-            '                    </div>\n' +
-            '                  </div>');
+        var tempElement = $('<div class="nl-player-block ' + cl + ' " data-position="' + position + '"><img src="' + imgSrc + '" alt="goalkeeper">\n' +
+            '<div class="nl-player-block--data" >\n' +
+            '<button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>\n' +
+            '<p>gronkowski</p>\n' +
+            '<p class="data"><span>12.67</span> <span>$42000</span></p>\n' +
+            '</div>\n' +
+            '</div>');
 
         $('.player-main-block').append(tempElement);
+        $nlTeamListTable
+            .find('td:contains(' + position + ')')
+            .parent()
+            .find('button')
+            .removeClass('disabled');
 
+    }
+
+    $nlPlayerBtn.on('click', function () {
+        if ($(this).hasClass('disabled')) {
+            return false;
+        }
+        add.call(this);
     });
 
-    $('body').on('click', '.nl-player-block .btn-player-close', function(){
-        $(this).parents('.nl-player-block').remove();
-        var position = $(this).parents('.nl-player-block').data('position');
-        var needle = $('.table-striped').find('td:contains('+ position +')');
-        needle.parent().find('button').removeClass('disabled');
+    $nlTeamListBtn.on('click', function () {
+        if ($(this).hasClass('disabled')) {
+            return false;
+        }
+        $(this).addClass('disabled');
+        var position = $(this)
+            .parents('tr')
+            .find('td:nth-child(2)')
+            .text();
+        $nlPlayerTable
+            .find('td:contains(' + position + ')')
+            .parent()
+            .find('button')
+            .removeClass('disabled');
+        $('.nl-team-field')
+            .find("[data-position='" + position + "']")
+            .find('.btn-player-close')
+            .click();
+    });
 
-    })
+    $nlMobTableBtn.on('click', function () {
+        if ($(this).hasClass('disabled')) {
+            return false;
+        }
+        add.call(this);
+    });
+
+    $('body').on('click', '.nl-player-block .btn-player-close', function () {
+
+        $(this)
+            .parents('.nl-player-block')
+            .remove();
+        var position = $(this)
+            .parents('.nl-player-block')
+            .data('position');
+
+        $nlPlayerTable
+            .find('td:contains(' + position + ')')
+            .parent()
+            .find('button')
+            .removeClass('disabled');
+
+        $nlTeamListTable
+            .find('td:contains(' + position + ')')
+            .parent()
+            .find('button')
+            .addClass('disabled');
+
+        $nlMobTable
+            .find('p.nl-position:contains(' + position + ')')
+            .next()
+            .find('button')
+            .removeClass('disabled');
+    });
+
+
+    function switchAreas(showEl, hideEl, btn) {
+        $(showEl).addClass('visible').removeClass('hide');
+        $(hideEl).addClass('hide').removeClass('visible');
+        $(btn).addClass('active').siblings().removeClass('active');
+    }
+
+    $('.field-view-btn').on('click', function () {
+        switchAreas('.nl-team-field', '.nl-team-list', this);
+    });
+
+    $('.list-view-btn').on('click', function () {
+        switchAreas('.nl-team-list', '.nl-team-field', this);
+    });
+
 
 })(jQuery);
 
