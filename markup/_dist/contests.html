@@ -127,7 +127,7 @@
                                 <td>3</td>
                                 <td>1000</td>
                                 <td>
-                                  <button class="btn btn-primary btn-sm">enter</button>
+                                  <button type="button" data-toggle="modal" data-target="#enterContestsModal" class="btn btn-primary btn-sm">enter</button>
                                 </td>
                                 <td>STARTED</td>
                               </tr>
@@ -138,7 +138,7 @@
                                 <td>3</td>
                                 <td>1000</td>
                                 <td>
-                                  <button class="btn btn-primary btn-sm">enter</button>
+                                  <button type="button" data-toggle="modal" data-target="#enterContestsModal" class="btn btn-primary btn-sm">enter</button>
                                 </td>
                                 <td>STARTED</td>
                               </tr>
@@ -149,7 +149,7 @@
                                 <td>3</td>
                                 <td>1000</td>
                                 <td>
-                                  <button class="btn btn-primary btn-sm">enter</button>
+                                  <button type="button" data-toggle="modal" data-target="#enterContestsModal" class="btn btn-primary btn-sm">enter</button>
                                 </td>
                                 <td>STARTED</td>
                               </tr>
@@ -160,7 +160,7 @@
                                 <td>3</td>
                                 <td>1000</td>
                                 <td>
-                                  <button class="btn btn-primary btn-sm">enter</button>
+                                  <button type="button" data-toggle="modal" data-target="#enterContestsModal" class="btn btn-primary btn-sm">enter</button>
                                 </td>
                                 <td>STARTED</td>
                               </tr>
@@ -171,7 +171,7 @@
                                 <td>3</td>
                                 <td>1000</td>
                                 <td>
-                                  <button class="btn btn-primary btn-sm">enter</button>
+                                  <button type="button" data-toggle="modal" data-target="#enterContestsModal" class="btn btn-primary btn-sm">enter</button>
                                 </td>
                                 <td>STARTED</td>
                               </tr>
@@ -182,7 +182,7 @@
                                 <td>3</td>
                                 <td>1000</td>
                                 <td>
-                                  <button class="btn btn-primary btn-sm">enter</button>
+                                  <button type="button" data-toggle="modal" data-target="#enterContestsModal" class="btn btn-primary btn-sm">enter</button>
                                 </td>
                                 <td>STARTED</td>
                               </tr>
@@ -193,7 +193,7 @@
                                 <td>3</td>
                                 <td>1000</td>
                                 <td>
-                                  <button class="btn btn-primary btn-sm">enter</button>
+                                  <button type="button" data-toggle="modal" data-target="#enterContestsModal" class="btn btn-primary btn-sm">enter</button>
                                 </td>
                                 <td>STARTED</td>
                               </tr>
@@ -299,7 +299,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <button type="button" class="btn btn-primary">Enter</button>
+                        <button type="button" data-toggle="modal" data-target="#enterContestsModal" class="btn btn-primary">Enter</button>
                       </td>
                       <td>
                         <button type="button" class="btn btn-default">Payout</button>
@@ -385,6 +385,81 @@
         </div>
       </section>
     </main>
+    <div id="enterContestsModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"></span></button>
+            <div class="owl-carousel enterContests">
+              <div><img src="assets/img/enter-img1.png">
+                <button type="button" class="btn btn-primary">team name 1</button>
+              </div>
+              <div><img src="assets/img/enter-img2.png">
+                <button type="button" class="btn btn-primary">team name 2</button>
+              </div>
+              <div><img src="assets/img/enter-img3.png">
+                <button type="button" class="btn btn-primary">team name 3</button>
+              </div>
+              <div><img src="assets/img/enter-img3.png">
+                <button type="button" class="btn btn-primary">team name 4</button>
+              </div>
+              <div><img src="assets/img/enter-img3.png">
+                <button type="button" class="btn btn-primary">team name 5</button>
+              </div>
+            </div>
+            <div class="nl-contests-search">
+              <div class="input-group">
+                <input type="text" placeholder="Search contests" class="form-control"><span class="input-group-btn">
+                  <button type="button" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+              </div>
+            </div>
+            <div class="nl-team-button">
+              <button type="button" class="btn btn-primary field-view-btn active">field view</button>
+              <button type="button" class="btn list-view-btn">list view</button>
+            </div>
+            <div class="nl-team-field football">
+              <div class="player-main-block">
+                <div data-position="QB" class="nl-player-block nl-QB-position"><img src="assets/img/football/img-QB.png" alt="QB">
+                  <div class="nl-player-block--data">
+                    <p>gronkowski</p>
+                    <p class="data"><span>12.67</span> <span>$42000</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nl-modal-table">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <td>Projections</td>
+                    <td class="pos">101.9 FP</td>
+                  </tr>
+                  <tr>
+                    <td>total salary:</td>
+                    <td>$55000</td>
+                  </tr>
+                  <tr>
+                    <td>Total Teams:</td>
+                    <td>69/100</td>
+                  </tr>
+                  <tr>
+                    <td>Buy in:</td>
+                    <td>10 NLC2</td>
+                  </tr>
+                  <tr>
+                    <td>week:</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">enter contest</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Footer Block-->
     <footer class="nl-footer">
       <div class="nl-footer--button">

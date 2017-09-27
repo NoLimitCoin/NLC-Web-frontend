@@ -40,6 +40,29 @@ $(window).on('load', function () {
             autoWidth: true,
             margin: 25,
         });
+        $(".owl-carousel.enterContests").owlCarousel({
+            item: 3,
+            loop: true,
+            nav: true,
+            navText: [
+                '<div class="icon-left"><i class="fa fa-caret-left" aria-hidden="true"></i></div>',
+                '<div class="icon-right"><i class="fa fa-caret-right" aria-hidden="true"></i></div>'
+            ],
+            margin: 10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                400:{
+                    items:2
+                },
+                600:{
+                    items:3
+                }
+            }
+        });
+
     });
 });
 
@@ -104,7 +127,7 @@ $(function () {
 
 (function ($) {
 
-    var $nlPlayerTable = $('.nl-players-table .table-striped'),
+    var $nlPlayerTable = $('.nl-create-team-table .table-striped'),
         $nlTeamListTable = $('.nl-team-list .table-striped'),
         $nlPlayerBtn = $nlPlayerTable.find('button'),
         $nlTeamListBtn = $nlTeamListTable.find('button');
@@ -165,16 +188,16 @@ $(function () {
     }
 
     $nlPlayerBtn.on('click', function () {
-        if ($(this).hasClass('disabled')) {
-            return false;
-        }
+        // if ($(this).hasClass('disabled')) {
+        //     return false;
+        // }
         add.call(this);
     });
 
     $nlTeamListBtn.on('click', function () {
-        if ($(this).hasClass('disabled')) {
-            return false;
-        }
+        // if ($(this).hasClass('disabled')) {
+        //     return false;
+        // }
         $(this).addClass('disabled');
         var position = $(this)
             .parents('tr')
