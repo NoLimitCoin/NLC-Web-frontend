@@ -87,17 +87,20 @@
   }
 }
 
+
 // Zebra-striping
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
 .table-striped {
-
   tbody tr {
     background-color: #e1e2e4;
     // transition: background-color 0.2s;
     &.active, &:hover {
       background: linear-gradient(to top, #e37506, #e89708);
+      .btn-primary.disabled, .btn-primary:disabled, .btn, .btn-primary{
+        border-color: #1d2d4e;
+      }
       .nl-pl-social {
         .fa-twitter, .fa-youtube-play, .fa-facebook-square {
           color: #fff;
@@ -146,6 +149,10 @@
       &.act {
         color: #1e813e;
       }
+      &.st-full{
+        color: #b92929;
+      }
+
       .nl-pl-social {
         padding-right: calculateRem(20px);
         @include fontSize(20px);

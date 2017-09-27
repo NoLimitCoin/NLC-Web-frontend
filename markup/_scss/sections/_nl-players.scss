@@ -44,8 +44,13 @@
   .pl-teams, .pl-flag {
     position: relative;
     padding: 0 calculateRem(30px);
-    margin-bottom: calculateRem(20px);
     width: 100%;
+    @include respond-to(allmobile){
+      margin-bottom: calculateRem(20px);
+    }
+  }
+  .pl-teams{
+    margin-bottom: calculateRem(20px);
   }
 
   .pl-flag{
@@ -87,6 +92,9 @@
 
   .nl-table-scroll{
     max-height: calculateRem(700px);
+    @include respond-to(allsmall){
+      max-height: inherit;
+    }
   }
 
   .nl-desc-table  tbody  tr  td,

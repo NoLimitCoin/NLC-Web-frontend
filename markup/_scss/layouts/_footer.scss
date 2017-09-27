@@ -62,3 +62,8 @@
     }
   }
 }
+
+.sp .nl-footer--button{
+  padding-left: calculateRem(30px);
+  padding-right: calculateRem(30px);
+}

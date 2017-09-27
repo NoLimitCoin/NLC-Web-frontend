@@ -61,7 +61,7 @@ fieldset[disabled] a.btn {
 //
 
 .btn-default {
- // @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
 
 .btn-primary {
@@ -93,9 +93,10 @@ fieldset[disabled] a.btn {
   background: linear-gradient(to top, #951c1c, #cf3232);
   border: none;
   border-radius: 1.5rem;
+  transition: background 0.2s;
 
   &:hover{
-    background: linear-gradient(to top, #951c1c, #cf3232);
+    background: linear-gradient(to top, #652330, #cf3232);
   }
 }
 .btn-danger {

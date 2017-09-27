@@ -1,0 +1,240 @@
+.nl-contests {
+  padding-left: calculateRem(20px);
+  padding-right: calculateRem(20px);
+  @include respond-to(allsmall){
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nl-table-scroll {
+    max-height: calculateRem(550px);
+    @include respond-to(allsmall){
+      max-height: inherit;
+    }
+  }
+  .nl-table-scroll2{
+    max-height: calculateRem(225px);
+    @include respond-to(allsmall){
+      max-height: inherit;
+    }
+  }
+  .nl-contest-info-title{
+    margin-top: calculateRem(40px);
+    min-height: calculateRem(51px);
+    text-align: center;
+    h3{
+      letter-spacing: 1px;
+    }
+  }
+  h1{
+    margin-bottom: 0;
+    padding: calculateRem(20px) 0;
+  }
+}
+
+.nl-contests-table {
+  margin-top: calculateRem(40px);
+  th, td{
+    &:nth-child(1){
+      width: 30%;
+
+    }
+    &:nth-child(2){
+      width: 10%;
+    }
+    &:nth-child(3){
+      width: 10%;
+    }
+    &:nth-child(4){
+      width: 10%;
+    }
+    &:nth-child(5){
+      width: 10%;
+    }
+    &:nth-child(6){
+      width: 15%;
+    }
+    &:nth-child(7){
+      width: 15%;
+    }
+  }
+  .nav-tabs {
+    min-height: calculateRem(50px);
+    .nav-link {
+      padding-top: 1rem;
+      padding-bottom: 0.8rem;
+      @include respond-to(allmobile){
+        height: 100%;
+      }
+    }
+  }
+
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: inherit;
+
+  .tab-content {
+    border-radius: .625rem;
+    box-shadow: 3px 0 7px rgba(0, 0, 0, .21);
+    overflow: hidden;
+    margin-top: 1px;
+
+  }
+  .table {
+
+    @include fontSize(14px);
+
+    tbody tr {
+      &.active, &:hover {
+        color: #1d2d4e;
+      }
+    }
+  }
+  .table thead th {
+    @include fontSize(16px);
+    background: #1d2d4e;
+    padding-top: 1.3rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.nl-contest-info-table {
+  border-radius: .625rem;
+  overflow: hidden;
+  box-shadow: 3px 0 7px rgba(0, 0, 0, .21);
+  .table {
+    @include fontSize(14px);
+    max-width: none;
+    width: calc(100% + 1px);
+    border-radius: 0;
+    td{
+      text-align: left;
+    }
+  }
+  .table-info1 {
+    background: #1d2d4e;
+    p {
+      padding: 0;
+      margin: 0;
+      color: #ffffff;
+      &.tit {
+        text-transform: uppercase;
+        color: #e48706;
+      }
+    }
+    td{
+      width: 33.333%;
+      .btn{
+        width: 100%;
+        padding: calculateRem(6px) calculateRem(12px);
+        font-weight: 600;
+        border-radius: 3px;
+      }
+    }
+  }
+  .table-info2{
+    th {
+      color: #fff;
+    }
+
+    .nl-time-block{
+      background: linear-gradient(to top, #fbfbfc, #e2e3e5);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: calculateRem(5px) 0;
+      div{
+        text-align: center;
+        text-transform: uppercase;
+        color: #030138;
+        @include fontSize(12px);
+        span{
+          display: block;
+          @include fontSize(20px);
+          color: #e48706;
+        }
+      }
+    }
+  }
+  .table-info3, .table-info4{
+    th, td{
+      text-align: center;
+      &:nth-child(1){
+        width: 17%;
+      }
+      &:nth-child(2){
+        width: 25%;
+      }
+      &:nth-child(3){
+        width: 35%;
+      }
+      &:nth-child(4){
+        width: 23%;
+      }
+    }
+  }
+  .nl-info-table-button{
+    background: #1d2d4e;
+    min-height: calculateRem(75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn{
+      @include fontSize(19px);
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: calculateRem(10px)  calculateRem(30px);
+    }
+  }
+}
+
+.nl-contests-search {
+  width: calculateRem(350px);
+
+  .input-group {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  .form-control {
+    border-radius: 0;
+    border-right: 0;
+  }
+  .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    .btn-secondary {
+      border-radius: 0;
+      border-left: 0;
+    }
+  }
+}
+//
+//.nl-table-responsive{
+//  @include respond-to(allsmall){
+//    min-width: 530px;
+//    overflow-x: auto;
+//  }
+//}
+
+//.col-lg-8{
+//  overflow-x: auto;
+//}
+//.nl-contests-table{
+//
+//}
+
+.nl-table-mw{
+  @include respond-to(allsmall){
+    min-width: 530px;
+  }
+}
+
+.nl-table-responsive{
+  @include respond-to(allsmall){
+    overflow-x: auto;
+  }
+}
