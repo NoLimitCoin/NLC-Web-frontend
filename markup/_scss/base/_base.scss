@@ -123,4 +123,14 @@ body {
 .visible{
   display: block;
 }
+main{
+  position: relative;
+}
 
+.nl-white-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.5;
+}

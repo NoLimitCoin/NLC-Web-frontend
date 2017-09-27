@@ -64,9 +64,9 @@ gulp.task('sass', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(cleanCSS({
-            compatibility: '*'
-        }))
+        // .pipe(cleanCSS({
+        //     //compatibility: '*'
+        // }))
         .pipe(gulp.dest(settings.cssDir))
         .pipe(browserSync.stream());
 });
