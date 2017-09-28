@@ -1,0 +1,57 @@
+.nl-about-section{
+  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background-size: cover;
+  color: #121a31;
+  padding-bottom: 10rem;
+}
+
+.nl-about-wrapper{
+  background: linear-gradient(to top, #121a31, #1f3658);
+  border-radius: 0.625rem;
+  color: #fff;
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  max-width:  calculateRem(1180px);
+  margin: 0 auto;
+
+
+  .nl-about-title{
+    padding: calculateRem(24px) 0;
+    h1{
+      color: #ff9f2f;
+      text-align: center;
+      font-size: calculateRem(34px);
+      margin-bottom: 0;
+    }
+  }
+
+  .nl-about-content{
+
+    background-color: #061540;
+    padding-top: calculateRem(25px);
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+
+    .nl-about-card{
+      img{
+        width: 100%;
+        max-width: calculateRem(249px);
+        margin: 0 auto;
+        display: block;
+        border: calculateRem(4px) solid #fff;
+        border-radius: calculateRem(4px);
+        margin-bottom: calculateRem(15px);
+      }
+      p{
+        text-align: center;
+        padding: 0 calculateRem(30px);
+        margin-bottom: calculateRem(12px);
+
+        &.nl-about{
+          color: #ff9f2f;
+        }
+      }
+    }
+  }
+
+
+}

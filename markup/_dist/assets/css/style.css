@@ -9700,7 +9700,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -9817,7 +9817,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -11014,7 +11014,7 @@ p {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -11117,7 +11117,7 @@ p {
     #registrationSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -11127,6 +11127,48 @@ p {
 .block-backdrop.show {
   opacity: 0.8;
   background-color: #fff; }
+
+.nl-about-section {
+  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background-size: cover;
+  color: #121a31;
+  padding-bottom: 10rem; }
+
+.nl-about-wrapper {
+  background: -webkit-gradient(linear, left bottom, left top, from(#121a31), to(#1f3658));
+  background: linear-gradient(to top, #121a31, #1f3658);
+  border-radius: 0.625rem;
+  color: #fff;
+  -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  max-width: 73.75rem;
+  margin: 0 auto; }
+  .nl-about-wrapper .nl-about-title {
+    padding: 1.5rem 0; }
+    .nl-about-wrapper .nl-about-title h1 {
+      color: #ff9f2f;
+      text-align: center;
+      font-size: 2.125rem;
+      margin-bottom: 0; }
+  .nl-about-wrapper .nl-about-content {
+    background-color: #061540;
+    padding-top: 1.5625rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem; }
+    .nl-about-wrapper .nl-about-content .nl-about-card img {
+      width: 100%;
+      max-width: 15.5625rem;
+      margin: 0 auto;
+      display: block;
+      border: 0.25rem solid #fff;
+      border-radius: 0.25rem;
+      margin-bottom: 0.9375rem; }
+    .nl-about-wrapper .nl-about-content .nl-about-card p {
+      text-align: center;
+      padding: 0 1.875rem;
+      margin-bottom: 0.75rem; }
+      .nl-about-wrapper .nl-about-content .nl-about-card p.nl-about {
+        color: #ff9f2f; }
 
 .nl-contests {
   padding-left: 1.25rem;
