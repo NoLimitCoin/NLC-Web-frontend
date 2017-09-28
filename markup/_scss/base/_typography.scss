@@ -55,7 +55,7 @@ ul{
 .nl-section{
   h1{
     @include fontSize(26px);
-    margin-bottom: calculateRem(50px);
+    margin-bottom: calculateRem(20px);
     //color: #121a31;
   }
 }

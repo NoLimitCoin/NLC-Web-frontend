@@ -3,6 +3,7 @@
   background-size: cover;
   color: #121a31;
   padding-bottom: calculateRem(50px);
+  padding-top: calculateRem(40px);
   @include respond-to(wide-tablets){
     padding-left: calculateRem(30px);
     padding-right: calculateRem(30px);
@@ -177,9 +178,6 @@
     .indicator{
       width: calculateRem(15px);
       height: calculateRem(15px);
-    }
-    .salary{
-      color: #0fbf0c;
     }
     .pos{
       color: #e58607;
