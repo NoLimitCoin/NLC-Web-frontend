@@ -1,11 +1,13 @@
 div.nl-white-bg
 section.nl-section.login-wrapper
-    #loginSection(tabindex='-1', role='dialog', aria-labelledby='loginModalLabel', aria-hidden='true')
-        .modal-dialog(role='document')
-            .modal-content
-                .modal-header
-                    h2#loginModalLabel.modal-title Login
-                .modal-body
+    #loginSection(tabindex='-1', role='dialog', aria-labelledby='loginSectionLabel', aria-hidden='true')
+        .block-dialog(role='document')
+            .block-content
+                .block-header
+                    h2#loginSectionLabel.modal-title Login
+                    a.close(href="index.html")
+                        span(aria-hidden='true')
+                .block-body
                     form.form-signin
                         .input-group
                             input#inputEmail.form-control(type='email', placeholder='SCREEN NAME OR EMAIL', required='', autofocus='')
@@ -17,5 +19,5 @@ section.nl-section.login-wrapper
 
 
 
-                .modal-footer
+                .block-footer
                     button.btn.btn-primary.btn-block(type='submit') Login
