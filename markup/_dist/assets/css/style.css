@@ -10976,6 +10976,7 @@ p {
   #loginSection .block-body, #loginSection .block-footer {
     background-color: #1d2d4e; }
   #loginSection .block-body {
+    height: 100%;
     padding: 4.5rem 6.25rem 0; }
     @media (max-width: 991px) {
       #loginSection .block-body {
@@ -11169,6 +11170,104 @@ p {
       margin-bottom: 0.75rem; }
       .nl-about-wrapper .nl-about-content .nl-about-card p.nl-about {
         color: #ff9f2f; }
+
+.change-password-wrapper {
+  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background-size: cover;
+  color: #121a31;
+  padding-bottom: 10rem; }
+
+#changePasswordSection {
+  position: relative; }
+  #changePasswordSection .block-dialog {
+    min-height: 0; }
+  #changePasswordSection .block-content {
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21); }
+  #changePasswordSection .block-header {
+    border-top-right-radius: .3rem;
+    border-top-left-radius: .3rem;
+    background-color: #142d57;
+    color: #fff;
+    margin: 0 auto;
+    padding: 1.5625rem 0;
+    position: relative; }
+    #changePasswordSection .block-header h2 {
+      margin: 0 auto;
+      font-size: 2.125rem;
+      text-align: center;
+      color: #fb8700; }
+    #changePasswordSection .block-header .close {
+      background: url(../img/close_btn.png) no-repeat;
+      position: absolute;
+      top: 2.25rem;
+      right: 1.25rem;
+      height: 49px;
+      width: 49px;
+      opacity: 1;
+      outline: none; }
+      @media (max-width: 991px) {
+        #changePasswordSection .block-header .close {
+          top: 0.625rem;
+          right: 0.625rem; } }
+  #changePasswordSection .block-header, #changePasswordSection .block-footer {
+    border: none; }
+  #changePasswordSection .block-body, #changePasswordSection .block-footer {
+    background-color: #061540; }
+  #changePasswordSection .block-body {
+    height: 100%;
+    padding: 1.5625rem 6.25rem 0; }
+    @media (max-width: 991px) {
+      #changePasswordSection .block-body {
+        padding: 4.5rem 1.25rem 0; } }
+    #changePasswordSection .block-body label {
+      color: #fff;
+      font-size: 1.25rem; }
+    #changePasswordSection .block-body input {
+      height: 3.75rem;
+      width: 40.125rem;
+      border-radius: 0;
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem; }
+      @media (max-width: 991px) {
+        #changePasswordSection .block-body input {
+          width: 100%; } }
+    #changePasswordSection .block-body .input-group {
+      position: relative; }
+    #changePasswordSection .block-body .show-password {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      right: 0.9375rem;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fb8700;
+      cursor: pointer;
+      text-transform: uppercase; }
+    #changePasswordSection .block-body a {
+      text-decoration: underline;
+      color: #fb8700; }
+  #changePasswordSection .block-footer {
+    background-color: #142d57;
+    padding: 1.4375rem 0;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem; }
+    #changePasswordSection .block-footer button {
+      width: 17.375rem;
+      margin: 0 auto;
+      font-size: 1.78812rem; }
+
+@media (min-width: 576px) {
+  .block-dialog {
+    max-width: 52.625rem; } }
+
+.block-backdrop.show {
+  opacity: 0.8;
+  background-color: #fff; }
 
 .nl-contests {
   padding-left: 1.25rem;
