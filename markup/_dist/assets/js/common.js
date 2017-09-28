@@ -32,7 +32,7 @@ $(window).on('load', function () {
         $(".owl-carousel.pl-flag").owlCarousel({
             item: 4,
             loop: true,
-            nav: true,
+            nav: false,
             navText: [
                 '<div class="icon-left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
                 '<div class="icon-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
