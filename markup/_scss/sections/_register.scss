@@ -13,16 +13,16 @@
     border-top-left-radius: .3rem;
     background-color: #fb8700;
     color: #fff;
-    padding: calculateRem(50px) 0;
+    padding: calculateRem(30px) 0;
     position: relative;
     @include respond-to(allmobile){
-      padding: calculateRem(70px) calculateRem(10px) calculateRem(30px);
+      padding: calculateRem(20px) calculateRem(10px) calculateRem(20px);
     }
 
     h2 {
       margin: 0 auto;
       text-align: center;
-      font-size: calculateRem(65px);
+      font-size: calculateRem(50px);
       @include respond-to(allmobile){
         font-size: calculateRem(50px);
       }
@@ -30,13 +30,14 @@
     .close {
       background: url(../img/close_btn.png) no-repeat;
       position: absolute;
-      top: calculateRem(36px);
+      top: calculateRem(28px);
       right: calculateRem(20px);
       height: 49px;
       width: 49px;
       opacity: 1;
       outline: none;
       @include respond-to(allmobile){
+        display: none;
         top: calculateRem(10px);
         right: calculateRem(10px);
       }
@@ -51,7 +52,7 @@
   }
 
   .block-body {
-    padding: calculateRem(72px) calculateRem(100px) 0;
+    padding: calculateRem(40px) calculateRem(100px) 0;
     @include respond-to(allsmall){
       padding: calculateRem(72px) calculateRem(20px) 0;
     }
@@ -105,7 +106,7 @@
     }
   }
   .block-footer {
-    padding: calculateRem(58px) 0;
+    padding: calculateRem(20px) 0 calculateRem(50px);
     border-bottom-right-radius: .3rem;
     border-bottom-left-radius: .3rem;
 

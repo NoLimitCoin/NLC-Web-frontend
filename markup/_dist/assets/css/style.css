@@ -11097,22 +11097,22 @@ p {
     border-top-left-radius: .3rem;
     background-color: #fb8700;
     color: #fff;
-    padding: 3.125rem 0;
+    padding: 1.875rem 0;
     position: relative; }
     @media (max-width: 767px) {
       #registrationSection .block-header {
-        padding: 4.375rem 0.625rem 1.875rem; } }
+        padding: 1.25rem 0.625rem 1.25rem; } }
     #registrationSection .block-header h2 {
       margin: 0 auto;
       text-align: center;
-      font-size: 4.0625rem; }
+      font-size: 3.125rem; }
       @media (max-width: 767px) {
         #registrationSection .block-header h2 {
           font-size: 3.125rem; } }
     #registrationSection .block-header .close {
       background: url(../img/close_btn.png) no-repeat;
       position: absolute;
-      top: 2.25rem;
+      top: 1.75rem;
       right: 1.25rem;
       height: 49px;
       width: 49px;
@@ -11120,6 +11120,7 @@ p {
       outline: none; }
       @media (max-width: 767px) {
         #registrationSection .block-header .close {
+          display: none;
           top: 0.625rem;
           right: 0.625rem; } }
   #registrationSection .block-header, #registrationSection .block-footer {
@@ -11127,7 +11128,7 @@ p {
   #registrationSection .block-body, #registrationSection .block-footer {
     background-color: #1d2d4e; }
   #registrationSection .block-body {
-    padding: 4.5rem 6.25rem 0; }
+    padding: 2.5rem 6.25rem 0; }
     @media (max-width: 991px) {
       #registrationSection .block-body {
         padding: 4.5rem 1.25rem 0; } }
@@ -11171,7 +11172,7 @@ p {
         top: 0;
         left: 0; }
   #registrationSection .block-footer {
-    padding: 3.625rem 0;
+    padding: 1.25rem 0 3.125rem;
     border-bottom-right-radius: .3rem;
     border-bottom-left-radius: .3rem; }
     #registrationSection .block-footer button {
