@@ -1,0 +1,117 @@
+.contact-wrapper{
+  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background-size: cover;
+  color: #121a31;
+  padding-bottom: 10rem;
+}
+#contactSection {
+  position: relative;
+  .block-dialog{
+    min-height: 0;
+  }
+
+  .block-content {
+    border-radius: calculateRem(8px);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  }
+  .block-header {
+
+    border-top-right-radius: .3rem;
+    border-top-left-radius: .3rem;
+
+    background-color: #142d57;
+    color: #fff;
+    margin: 0 auto;
+    padding: calculateRem(25px) 0;
+    position: relative;
+
+    h2 {
+      margin: 0 auto;
+      font-size: calculateRem(34px);
+      text-align: center;
+      color: #fb8700;
+    }
+    .close {
+      background: url(../img/close_btn.png) no-repeat;
+      position: absolute;
+      top: calculateRem(36px);
+      right: calculateRem(20px);
+      height: 49px;
+      width: 49px;
+      opacity: 1;
+      outline: none;
+      @include respond-to(allsmall){
+        top: calculateRem(10px);
+        right: calculateRem(10px);
+      }
+    }
+  }
+
+  .block-header, .block-footer {
+    border: none;
+  }
+  .block-body, .block-footer {
+    background-color: #061540;
+  }
+
+  .block-body {
+    height: 100%;
+    padding: calculateRem(25px) calculateRem(30px) 0;
+    @include respond-to(allsmall){
+      padding: calculateRem(20px) calculateRem(10px) 0;
+    }
+
+    .nl-contact-group-wrapper{
+      position: relative;
+      padding-left: calculateRem(50px);
+      a{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 0;
+      }
+    }
+
+    img{
+
+      margin-top: calculateRem(5px);
+      &.address-icon{
+        width: calculateRem(33px);
+        height: calculateRem(32px);
+      }
+
+      &.mail-icon{
+        width: calculateRem(33px);
+        height: calculateRem(24px);
+      }
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    a {
+      text-decoration: underline;
+      color: #fb8700;
+      margin-left: 15px;
+    }
+    p{
+      color: #fff;
+      font-size: calculateRem(24px);
+      line-height: 1.4;
+
+    }
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+  }
+
+
+}
+
+@media (min-width: 576px) {
+  .block-dialog {
+    max-width: calculateRem(723px);
+  }
+}
+
+.block-backdrop.show {
+  opacity: 0.8;
+  background-color: #fff;
+}

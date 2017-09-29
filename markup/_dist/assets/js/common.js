@@ -265,6 +265,15 @@ $(function () {
     });
 
 
+
+    /*
+    * Menu
+     */
+
+   $('body').on('click', '.mob-nav-toggle', function () {
+      var menu =$(this).attr('data-target');
+      $(menu).slideToggle();
+   });
 })(jQuery);
 
 
