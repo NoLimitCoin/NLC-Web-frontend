@@ -2883,10 +2883,10 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   font-family: Montserrat;
   width: 100%; }
   .navbar-nav .nav-link {
@@ -2896,7 +2896,7 @@ tbody.collapse.show {
     background: -webkit-gradient(linear, left bottom, left top, from(#e37506), to(#e89708));
     background: linear-gradient(to top, #e37506, #e89708);
     color: #fff;
-    min-height: 44px;
+    min-height: 2.875rem;
     line-height: 1.5625rem; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .navbar-nav .nav-link {
@@ -9440,12 +9440,12 @@ p {
     left: 0;
     margin-top: -1.25rem;
     max-width: 8.75rem;
-    min-width: 7.5rem;
+    min-width: 6.875rem;
     z-index: 1001; }
     @media (max-width: 991px) {
       .nl-header-log .nl-logotype img {
         margin-top: -2.1875rem;
-        max-width: 8.125rem; } }
+        max-width: 3.125rem; } }
 
 .nl-header-log .nl-title {
   text-transform: uppercase;
@@ -10469,6 +10469,9 @@ p {
   .nl-desc-table {
     display: none; } }
 
+.nl-mob-table.mob-table-striped .card:nth-of-type(odd) {
+  background-color: #fff; }
+
 @media (min-width: 992px) {
   .nl-mob-table {
     display: none; } }
@@ -10478,11 +10481,12 @@ p {
   color: #e48706; }
 
 .nl-mob-table .nl-content {
-  background: #fff;
+  background-color: #e1e2e4;
   color: #121a31; }
 
 .nl-mob-table p {
-  margin: 0.625rem 1.25rem; }
+  margin: 0.625rem 1.25rem;
+  font-weight: 700; }
 
 .nl-mob-table .card-block {
   padding-bottom: 1.5625rem; }
@@ -10499,7 +10503,7 @@ p {
     width: 2.875rem;
     height: 2.875rem;
     color: #fff;
-    background: #0d3663;
+    background: #e48706;
     border-radius: 1.4375rem;
     text-align: center;
     line-height: 2.625rem;
@@ -10632,7 +10636,7 @@ p {
         border-left: 0; }
 
 .nl-my-teams {
-  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
   background-size: cover;
   color: #121a31;
   padding-bottom: 3.125rem;
@@ -11042,7 +11046,7 @@ p {
         padding: 4.5rem 1.25rem 0; } }
     #loginSection .block-body input {
       height: 3.75rem;
-      width: 40.125rem;
+      width: 32rem;
       border-radius: 0;
       font-size: 1.25rem;
       margin-bottom: 1.25rem; }
@@ -11134,7 +11138,7 @@ p {
         padding: 4.5rem 1.25rem 0; } }
     #registrationSection .block-body input, #registrationSection .block-body select {
       height: 3.75rem;
-      width: 40.125rem;
+      width: 32rem;
       border-radius: 0;
       font-size: 1.25rem;
       margin-bottom: 1.25rem; }
@@ -11190,7 +11194,7 @@ p {
   background-color: #fff; }
 
 .nl-about-section {
-  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
   background-size: cover;
   color: #121a31;
   padding-bottom: 10rem; }
@@ -11232,7 +11236,7 @@ p {
         color: #ff9f2f; }
 
 .change-password-wrapper {
-  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
   background-size: cover;
   color: #121a31;
   padding-bottom: 10rem; }
@@ -11516,7 +11520,7 @@ p {
     overflow-x: auto; } }
 
 .contact-wrapper {
-  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
   background-size: cover;
   color: #121a31;
   padding-bottom: 10rem; }

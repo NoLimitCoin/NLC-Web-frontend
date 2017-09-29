@@ -38,11 +38,11 @@
       left: 0;
       margin-top: calculateRem(-20px);
       max-width: calculateRem(140px);
-      min-width: calculateRem(120px);
+      min-width: calculateRem(110px);
       z-index: 1001;
       @include respond-to(allsmall) {
         margin-top: calculateRem(-35px);
-        max-width: calculateRem(130px);
+        max-width: calculateRem(50px);
 
         //position: relative;
       }

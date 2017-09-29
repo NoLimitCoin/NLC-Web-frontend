@@ -153,6 +153,14 @@
   }
 }
 .nl-mob-table {
+
+  &.mob-table-striped {
+    .card:nth-of-type(odd) {
+      background-color: #fff;
+    }
+  }
+
+
   @include respond-to(allwide) {
     display: none;
   }
@@ -161,11 +169,12 @@
     color: #e48706;
   }
   .nl-content{
-    background: #fff;
+    background-color: #e1e2e4;
     color: #121a31;
   }
   p{
     margin: calculateRem(10px) calculateRem(20px);
+    font-weight: 700;
   }
   .card-block{
     padding-bottom: calculateRem(25px);
@@ -183,7 +192,7 @@
         width: 2.875rem;
         height: 2.875rem;
         color: #fff;
-        background: #0d3663;
+        background: #e48706;
         border-radius: 1.4375rem;
         text-align: center;
         line-height: 2.625rem;

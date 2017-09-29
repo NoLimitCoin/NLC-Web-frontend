@@ -49,9 +49,9 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  @include fontSize(15px);
+  @include fontSize(17px);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   font-family: Montserrat;
   width: 100%;
 
@@ -61,7 +61,7 @@
     margin: 0;
     background: linear-gradient(to top, #e37506, #e89708);
     color: #fff;
-    min-height: 44px;
+    min-height: calculateRem(46px);
     line-height: calculateRem(25px);
     //display: flex;
     //align-items: center;
