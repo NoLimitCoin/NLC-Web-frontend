@@ -11606,6 +11606,138 @@ p {
   opacity: 0.8;
   background-color: #fff; }
 
+.edit-profile-wrapper {
+  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  background-size: cover;
+  color: #121a31;
+  padding-bottom: 10rem; }
+
+#editProfileSection {
+  position: relative; }
+  #editProfileSection .block-dialog {
+    min-height: 0; }
+  #editProfileSection .block-content {
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21); }
+  #editProfileSection .block-header {
+    border-top-right-radius: .3rem;
+    border-top-left-radius: .3rem;
+    background-color: #142d57;
+    color: #fff;
+    margin: 0 auto;
+    padding: 1.5625rem 0;
+    position: relative; }
+    #editProfileSection .block-header h2 {
+      margin: 0 auto;
+      font-size: 2.125rem;
+      text-align: center;
+      color: #fb8700; }
+    #editProfileSection .block-header .close {
+      background: url(../img/close_btn.png) no-repeat;
+      position: absolute;
+      top: 2.25rem;
+      right: 1.25rem;
+      height: 49px;
+      width: 49px;
+      opacity: 1;
+      outline: none; }
+      @media (max-width: 991px) {
+        #editProfileSection .block-header .close {
+          top: 0.625rem;
+          right: 0.625rem; } }
+  #editProfileSection .block-header, #editProfileSection .block-footer {
+    border: none; }
+  #editProfileSection .block-body, #editProfileSection .block-footer {
+    background-color: #061540; }
+  #editProfileSection .block-body {
+    height: 100%;
+    padding: 1.5625rem 1.5625rem 1rem; }
+    @media (max-width: 991px) {
+      #editProfileSection .block-body {
+        padding: 1.5625rem 1.25rem 1rem; } }
+    #editProfileSection .block-body label {
+      color: #fff;
+      font-size: 1.25rem; }
+    #editProfileSection .block-body input, #editProfileSection .block-body select {
+      height: 3.75rem;
+      width: 39.875rem;
+      border-radius: 0;
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem; }
+      @media (max-width: 991px) {
+        #editProfileSection .block-body input, #editProfileSection .block-body select {
+          width: 100%; } }
+    #editProfileSection .block-body .input-group {
+      position: relative; }
+    #editProfileSection .block-body .show-password {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      right: 0.9375rem;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fb8700;
+      cursor: pointer;
+      text-transform: uppercase; }
+    #editProfileSection .block-body a {
+      text-decoration: underline;
+      color: #fb8700; }
+    #editProfileSection .block-body .nl-profile-picture img {
+      width: 6.25rem;
+      height: 6.25rem;
+      display: inline-block; }
+    #editProfileSection .block-body .nl-profile-picture button {
+      display: inline-block;
+      width: 12.5rem;
+      font-size: 0.6875rem;
+      margin-left: 20px; }
+  #editProfileSection .block-copy-link {
+    padding: 1.4375rem 1.5625rem 1rem;
+    background-color: #142d57; }
+    #editProfileSection .block-copy-link .nl-copy-wrapper {
+      padding-left: 3.3125rem;
+      position: relative; }
+      #editProfileSection .block-copy-link .nl-copy-wrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.75rem;
+        height: 1.6875rem; }
+      #editProfileSection .block-copy-link .nl-copy-wrapper p {
+        color: #fff;
+        font-size: 0.875rem; }
+  #editProfileSection .block-checkbox input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.6875rem;
+    height: 1.625rem;
+    margin: 0; }
+  #editProfileSection .block-checkbox span {
+    margin-left: 0.9375rem;
+    vertical-align: middle;
+    color: #fff; }
+  #editProfileSection .block-footer {
+    background-color: #142d57;
+    padding: 1.4375rem 0;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem; }
+    #editProfileSection .block-footer button {
+      width: 17.375rem;
+      margin: 0 auto;
+      font-size: 1.78812rem; }
+
+@media (min-width: 576px) {
+  .block-dialog {
+    max-width: 43.1875rem; } }
+
+.block-backdrop.show {
+  opacity: 0.8;
+  background-color: #fff; }
+
 .mCS-nl-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #dfdfdf; }
 

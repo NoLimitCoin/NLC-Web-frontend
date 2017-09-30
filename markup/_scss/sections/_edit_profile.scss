@@ -1,0 +1,178 @@
+.edit-profile-wrapper{
+  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  background-size: cover;
+  color: #121a31;
+  padding-bottom: 10rem;
+}
+#editProfileSection {
+  position: relative;
+  .block-dialog{
+    min-height: 0;
+  }
+
+  .block-content {
+    border-radius: calculateRem(8px);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  }
+  .block-header {
+
+    border-top-right-radius: .3rem;
+    border-top-left-radius: .3rem;
+
+    background-color: #142d57;
+    color: #fff;
+    margin: 0 auto;
+    padding: calculateRem(25px) 0;
+    position: relative;
+
+    h2 {
+      margin: 0 auto;
+      font-size: calculateRem(34px);
+      text-align: center;
+      color: #fb8700;
+    }
+    .close {
+      background: url(../img/close_btn.png) no-repeat;
+      position: absolute;
+      top: calculateRem(36px);
+      right: calculateRem(20px);
+      height: 49px;
+      width: 49px;
+      opacity: 1;
+      outline: none;
+      @include respond-to(allsmall){
+        top: calculateRem(10px);
+        right: calculateRem(10px);
+      }
+    }
+  }
+
+  .block-header, .block-footer {
+    border: none;
+  }
+  .block-body, .block-footer {
+    background-color: #061540;
+  }
+
+  .block-body {
+    height: 100%;
+    padding: calculateRem(25px) calculateRem(25px) calculateRem(16px);
+    @include respond-to(allsmall){
+      padding: calculateRem(25px) calculateRem(20px) calculateRem(16px);
+    }
+    label{
+      color: #fff;
+      font-size: calculateRem(20px);
+    }
+    input, select {
+      height: calculateRem(60px);
+      width: calculateRem(638px);
+      border-radius: 0;
+      font-size: calculateRem(20px);
+      margin-bottom: calculateRem(20px);
+      @include respond-to(allsmall){
+        width: 100%;
+      }
+
+    }
+
+    .input-group {
+      position: relative;
+
+    }
+    .show-password {
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      right: calculateRem(15px);
+      transform: translate(0, -50%);
+      color: #fb8700;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    a {
+      text-decoration: underline;
+      color: #fb8700;
+    }
+
+
+
+    .nl-profile-picture{
+      img{
+        width: calculateRem(100px);
+        height: calculateRem(100px);
+        display: inline-block;
+      }
+
+      button{
+        display: inline-block;
+        width: calculateRem(200px);
+        font-size: calculateRem(11px);
+        margin-left: 20px;
+      }
+    }
+  }
+  .block-copy-link{
+    padding: calculateRem(23px) calculateRem(25px) calculateRem(16px);
+    background-color: #142d57;
+
+
+    .nl-copy-wrapper{
+      padding-left: calculateRem(53px);
+      position: relative;
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calculateRem(28px);
+        height: calculateRem(27px);
+      }
+      p{
+        color: #fff;
+        font-size: calculateRem(14px);
+      }
+
+    }
+
+  }
+
+  .block-checkbox{
+    input{
+      display: inline-block;
+      vertical-align: middle;
+      width: calculateRem(27px);
+      height: calculateRem(26px);
+      margin: 0;
+    }
+    span{
+      margin-left:calculateRem(15px);
+      vertical-align: middle;
+      color: #fff;
+    }
+  }
+
+  .block-footer {
+    background-color: #142d57;
+    padding: calculateRem(23px) 0;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+
+    button {
+      width: calculateRem(278px);
+      margin: 0 auto;
+      font-size: calculateRem(28.61px);
+    }
+  }
+
+}
+
+@media (min-width: 576px) {
+  .block-dialog {
+    max-width: calculateRem(691px);
+  }
+}
+
+.block-backdrop.show {
+  opacity: 0.8;
+  background-color: #fff;
+}
