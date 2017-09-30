@@ -11738,6 +11738,68 @@ p {
   opacity: 0.8;
   background-color: #fff; }
 
+.nl-faq {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  background-size: cover;
+  color: #061540; }
+  @media (max-width: 991px) {
+    .nl-faq {
+      padding: 0 1.25rem; } }
+  .nl-faq #accordion {
+    color: #0d3663; }
+    .nl-faq #accordion h5 a {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-left: 4.375rem;
+      min-height: 2.875rem;
+      margin-bottom: 1.5625rem; }
+      .nl-faq #accordion h5 a:before {
+        display: inline-block;
+        content: '+';
+        font-size: 36px;
+        font-size: 2.25rem;
+        font-weight: 700;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        width: 2.875rem;
+        height: 2.875rem;
+        color: #fff;
+        background: #0d3663;
+        border-radius: 1.4375rem;
+        text-align: center;
+        line-height: 2.625rem;
+        letter-spacing: 0;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .nl-faq #accordion h5 a:not(.collapsed):before {
+        content: '-'; }
+    .nl-faq #accordion .card-block {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 1.4375rem;
+      padding-left: 4.375rem;
+      padding-bottom: 1.25rem; }
+      @media (max-width: 991px) {
+        .nl-faq #accordion .card-block {
+          padding-left: 0; } }
+      .nl-faq #accordion .card-block a {
+        color: #ff9f2f;
+        -webkit-transition: all .3s;
+        transition: all .3s; }
+        .nl-faq #accordion .card-block a:hover {
+          color: #c7710c; }
+  .nl-faq h2 {
+    margin-bottom: 1.5625rem; }
+
 .mCS-nl-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #dfdfdf; }
 
