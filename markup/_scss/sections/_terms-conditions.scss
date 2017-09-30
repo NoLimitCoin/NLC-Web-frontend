@@ -1,0 +1,99 @@
+.terms-conditions-wrapper{
+  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  background-size: cover;
+  color: #121a31;
+  padding-bottom: 10rem;
+}
+#termsConditionsSection {
+  position: relative;
+  .block-dialog{
+    min-height: 0;
+  }
+
+  .block-content {
+    border-radius: calculateRem(8px);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  }
+  .block-header {
+
+    border-top-right-radius: .3rem;
+    border-top-left-radius: .3rem;
+
+    background-color: #142d57;
+    color: #fff;
+    margin: 0 auto;
+    padding: calculateRem(25px) 0;
+    position: relative;
+
+    h2 {
+      margin: 0 auto;
+      font-size: calculateRem(34px);
+      text-align: center;
+      color: #fb8700;
+    }
+    .close {
+      background: url(../img/close_btn.png) no-repeat;
+      position: absolute;
+      top: calculateRem(36px);
+      right: calculateRem(20px);
+      height: 49px;
+      width: 49px;
+      opacity: 1;
+      outline: none;
+      @include respond-to(allsmall){
+        top: calculateRem(10px);
+        right: calculateRem(10px);
+      }
+    }
+  }
+
+  .block-header, .block-footer {
+    border: none;
+  }
+  .block-body, .block-footer {
+    background-color: #061540;
+  }
+
+  .block-body {
+    height: 100%;
+    padding: calculateRem(25px) 0 0;
+    @include respond-to(allsmall){
+      padding: calculateRem(72px) calculateRem(20px) 0;
+    }
+
+    p{
+      color: #fff;
+      font-size: calculateRem(14px);
+      line-height: calculateRem(24px);
+      padding: 0 20px;
+    }
+
+    h2{
+      font-size: calculateRem(20px);
+      color: #ff9f2f;
+      padding: 0 20px;
+    }
+
+
+  }
+
+
+}
+
+@media (min-width: 576px) {
+  .block-dialog {
+    max-width: calculateRem(1172px);
+  }
+}
+
+.block-backdrop.show {
+  opacity: 0.8;
+  background-color: #fff;
+}
+
+.nl-table-scroll2{
+  //max-height: calculateRem(500px);
+  @include respond-to(allsmall){
+    max-height: inherit;
+  }
+}

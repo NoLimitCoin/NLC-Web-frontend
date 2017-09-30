@@ -110,6 +110,9 @@ $(function () {
                 theme: "nl-theme",
                 setWidth: true,
             });
+
+
+
         } else {
             $(".nl-table-scroll").mCustomScrollbar("destroy");
             $(".nl-table-scroll2").mCustomScrollbar("destroy");
