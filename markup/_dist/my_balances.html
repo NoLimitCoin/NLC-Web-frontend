@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My balances Page | NLC2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="nl-header-log">
+      <div class="nl-header-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 p-0">
+              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
+                <div class="row m-0">
+                  <div class="col-lg-7 nl-header-top--left">
+                    <div class="row nl-h100">
+                      <div class="col-lg-2">
+                        <div class="nl-logotype"><a href="index.html"><img src="assets/img/logotype.png" alt="NO Limit"></a></div>
+                      </div>
+                      <div class="col-lg-10 align-self-center">
+                        <div class="nl-title">The worlds first crypto fantasy sports</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 nl-header-top--right">
+                    <div class="nl-profile">
+                      <div class="nl-profile--avatar"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+                      <div class="nl-profile--data">
+                        <div class="name">Name</div>
+                        <div class="settings"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="nl-balance">
+                      <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                      <div class="nl-balance--data">
+                        <div class="title">balance</div>
+                        <div class="sub-title">20023 NLC2</div>
+                        <div class="data">1 NLC2=00345 btc</div>
+                      </div>
+                    </div>
+                    <div class="nl-btn-control">
+                      <div class="nl-btn-group">
+                        <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                        <div class="btn btn-big-radius btn-block">logout</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/ball.png" alt="#"></a>
+                      <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a href="#" class="dropdown-item"><span>Soccer</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Football</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Baseball</span> <img src="assets/img/ball.png" alt="#"></a><a href="#" class="dropdown-item"><span>Tennis</span> <img src="assets/img/ball.png" alt="#"></a></div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY TEAMS+</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTESTS+</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PLAYERS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">LIVE SCORES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY DASHBOARD</a></li>
+                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/France.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                    </li>
+                  </ul>
+                  <div class="nl-profile-mobile">
+                    <div class="nl-profile--data">
+                      <p><i class="fa fa-user-circle" aria-hidden="true"></i> Name</p>
+                      <p>balance: 1 NLC2=00345 btc</p>
+                      <div class="nl-btn-control">
+                        <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
+                        <div class="btn btn-big-radius">logout</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="nl-section nl-my-balances">
+        <div class="container nl-my-balances-wrapper">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="quote-wrapper">
+                <p>NLC2 quote BTC :<span class="value">0.000043</span></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="quote-wrapper">
+                <p>NLC2 quote USD :<span class="value">0.16089</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h2>MY BALANCES</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <table class="table balance-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>BALANCE</th>
+                    <th>BTC</th>
+                    <th>DOLLARS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="assets/img/nl-logo-header-log.png" alt="icon">
+                      NoLimitCoin
+                    </td>
+                    <td>1,26,277.5</td>
+                    <td>0.2699325</td>
+                    <td>1,009.96</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h2>BALANCE PER CURRENCY</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <table class="table balance-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>BALANCE</th>
+                    <th>IN PLAY</th>
+                    <th>IN PROCESS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="assets/img/nl-logo-header-log.png" alt="icon">
+                      NoLimitCoin
+                    </td>
+                    <td>1,26,277.5</td>
+                    <td>1200</td>
+                    <td>500000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="nl-balances-btn-wrapper">
+                <button class="btn btn-primary dark">VIEW STATEMENT</button>
+                <button class="btn btn-primary">DEPOSITE</button>
+                <button class="btn btn-primary dark">WITHDRAW</button>
+                <button class="btn btn-primary">PURCHASE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--include _partials/login-modal.jade-->
+    <!--include _partials/registration-modal.jade-->
+    <!--Footer Block-->
+    <footer class="nl-footer">
+      <div class="nl-footer--top">
+        <div class="row align-items-center">
+          <div class="col-lg-1"><a href="index.html"><img src="assets/img/nl-footer-logo.jpg" alt="NO Limit"></a></div>
+          <div class="col-lg-8">
+            <p>Residents of the states of Alabama, Arizona, Colorado, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Louisiana, Massachusetts, Michigan, Mississippi, Missouri, Montana, Nevada, New York, North Dakota, Pennsylvania, Tennessee, Texas, Vermont, Virginia and Washington, as well as Puerto Rico and countries where otherwise prohibited by law are not eligible to enter Fantasy Sports Pay to play contests. Free - roll contests are open to all the public over 18 as it does not fall into the pay-to-play category as advertisers provide the prizes.</p>
+          </div>
+          <div class="col-lg-3 nl-tar">
+            <div class="input-group-btn"><a htef="#" class="btn btn-footer">Forum</a><a htef="#" class="btn btn-footer">Contact Us</a></div>
+            <div class="input-group-btn"><a htef="#" class="btn btn-footer">Faq</a><a htef="#" class="btn btn-footer">Terms & Conditions</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="nl-footer--button">
+        <div class="row align-items-center">
+          <div class="col-lg-9">
+            <p>Copyright © 2017 No Limit Fantasy Sports, LLC All Rights Reserved Contest Rules, Terms and Conditions and Privacy Policy</p>
+          </div>
+          <div class="col-lg-3 nl-social-icon nl-tar"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+  </body>
+</html>
