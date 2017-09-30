@@ -10660,7 +10660,8 @@ p {
     background: linear-gradient(to top, #121a31, #1f3658);
     color: #fff;
     overflow: hidden;
-    margin-bottom: 2.25rem; }
+    margin-bottom: 2.25rem;
+    font-weight: 300; }
     .nl-my-teams .nl-status-wrapper ul {
       list-style-type: none;
       margin: 0;
@@ -10735,7 +10736,7 @@ p {
       margin-left: 0.3125rem; }
   .nl-my-teams .nl-team-card-footer {
     width: 100%;
-    background-color: #121a31;
+    background-color: #1d2d4e;
     color: #fff;
     overflow: hidden;
     display: -webkit-box;
@@ -11046,7 +11047,6 @@ p {
         padding: 4.5rem 1.25rem 0; } }
     #loginSection .block-body input {
       height: 3.75rem;
-      width: 32rem;
       border-radius: 0;
       font-size: 1.25rem;
       margin-bottom: 1.25rem; }
@@ -11138,7 +11138,6 @@ p {
         padding: 4.5rem 1.25rem 0; } }
     #registrationSection .block-body input, #registrationSection .block-body select {
       height: 3.75rem;
-      width: 32rem;
       border-radius: 0;
       font-size: 1.25rem;
       margin-bottom: 1.25rem; }
