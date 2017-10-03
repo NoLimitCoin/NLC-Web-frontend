@@ -30,7 +30,6 @@
     position: relative;
     @include respond-to(allsmall) {
       text-align: center;
-
     }
     img {
       position: absolute;
@@ -43,8 +42,18 @@
       @include respond-to(allsmall) {
         margin-top: calculateRem(-35px);
         max-width: calculateRem(50px);
-
-        //position: relative;
+      }
+      @include respond-to(tabdisp) {
+        min-width: calculateRem(90px);
+        max-width: calculateRem(110px);
+      }
+      @include respond-to(wide-display) {
+        min-width: calculateRem(100px);
+        max-width: calculateRem(120px);
+      }
+      @include respond-to(large-display) {
+        min-width: calculateRem(110px);
+        max-width: calculateRem(120px);
       }
     }
   }

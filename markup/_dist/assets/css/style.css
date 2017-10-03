@@ -9462,6 +9462,18 @@ p {
       .nl-header-log .nl-logotype img {
         margin-top: -2.1875rem;
         max-width: 3.125rem; } }
+    @media only screen and (min-width: 992px) and (max-width: 1366px) {
+      .nl-header-log .nl-logotype img {
+        min-width: 5.625rem;
+        max-width: 6.875rem; } }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+      .nl-header-log .nl-logotype img {
+        min-width: 6.25rem;
+        max-width: 7.5rem; } }
+    @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+      .nl-header-log .nl-logotype img {
+        min-width: 6.875rem;
+        max-width: 7.5rem; } }
 
 .nl-header-log .nl-title {
   text-transform: uppercase;
