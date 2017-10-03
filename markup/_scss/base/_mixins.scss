@@ -19,7 +19,7 @@
       @content;
     }
   }
-  @else if $media==display {
+  @else if $media==medium-display{
     @media only screen and (min-width: 1201px) and (max-width: 1366px) {
       @content;
     }

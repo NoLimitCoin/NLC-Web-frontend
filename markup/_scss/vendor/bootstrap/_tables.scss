@@ -19,7 +19,7 @@
     @include respond-to(wide-tablets) {
       padding: 0.5rem;
     }
-    @include respond-to(display) {
+    @include respond-to(medium-display) {
       padding: 0.7rem;
     }
 
@@ -129,7 +129,7 @@
           max-height: calculateRem(30px);
           margin-right: calculateRem(5px);
         }
-        @include respond-to(display) {
+        @include respond-to(medium-display) {
           max-width: calculateRem(40px);
           max-height: calculateRem(40px);
           margin-right: calculateRem(6px);

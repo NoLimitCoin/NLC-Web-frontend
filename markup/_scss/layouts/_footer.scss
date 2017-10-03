@@ -9,7 +9,7 @@
     background: #061540;
     padding: calculateRem(20px) calculateRem(100px);
     min-height: calculateRem(140px);
-    @include respond-to(display) {
+    @include respond-to(medium-display) {
       padding: calculateRem(20px) 15px;
     }
     @include respond-to(wide-tablets) {
@@ -23,7 +23,7 @@
     background: #0f254f;
     padding: calculateRem(20px) calculateRem(100px);
     min-height: calculateRem(75px);
-    @include respond-to(display) {
+    @include respond-to(medium-display) {
       padding: calculateRem(20px) 15px;
     }
     @include respond-to(wide-tablets) {
