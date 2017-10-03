@@ -11,7 +11,7 @@ section.nl-section.nl-players.nl-create-team
                         div
                             ul.country-selector.nav.nav-tabs(role="tablist")
                                 li.nav-item
-                                    a.country-selector__link.active(data-toggle="tab" href="#usa" role="tab")
+                                    a.country-selector__link(data-toggle="tab" href="#usa" role="tab")
                                         img.haat(src="assets/img/flag/USA.png" alt="USA")
                                 li.nav-item
                                     a.country-selector__link(data-toggle="tab" href="#spain" role="tab")
@@ -23,10 +23,10 @@ section.nl-section.nl-players.nl-create-team
                                     a.country-selector__link(data-toggle="tab" href="#france" role="tab")
                                         img.haat(src="assets/img/flag/France.png" alt="France")
 
-                div.nl-players-filter-title Filter by team:
                 div.tab-content
-                    div.tab-pane.active.fade.show(id="usa" role="tabpanel")
+                    div.tab-pane.fade.show(id="usa" role="tabpanel")
                         div.nl-players-filter-caruseul
+                            div.nl-players-filter-title Filter by team:
                             div.owl-carousel.pl-teams
                                 div
                                     button.btn.btn-link(type="button")
@@ -68,12 +68,15 @@ section.nl-section.nl-players.nl-create-team
                                     button.btn.btn-link(type="button")
                                         img(src="assets/img/emblem/MU.png" alt="MU")
                     div.tab-pane.fade(id="spain" role="tabpanel")
+                        div.nl-players-filter-title Filter by team:
                         div.nl-players-filter-caruseul
                            p teams spain
                     div.tab-pane.fade(id="germany" role="tabpanel")
+                        div.nl-players-filter-title Filter by team:
                         div.nl-players-filter-caruseul
                             p teams germany
                     div.tab-pane.fade(id="france" role="tabpanel")
+                        div.nl-players-filter-title Filter by team:
                         div.nl-players-filter-caruseul
                             p teams france
 
