@@ -71,13 +71,13 @@ body {
   @include respond-to(allsmall){
     margin: calculateRem(40px) auto 0;
     min-width: 100%;
-
   }
 }
 .nl-team-m600{
   max-width: calc(100% - 620px);
   @include respond-to(allwd){
     max-width: 100%;
+    flex: 0 0 100%;
   }
   @include respond-to(allsmall){
     max-width: 100%;

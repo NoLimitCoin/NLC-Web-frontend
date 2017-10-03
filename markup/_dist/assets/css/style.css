@@ -9146,7 +9146,10 @@ body {
   max-width: calc(100% - 620px); }
   @media only screen and (min-width: 992px) and (max-width: 1570px) {
     .nl-team-m600 {
-      max-width: 100%; } }
+      max-width: 100%;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%; } }
   @media (max-width: 991px) {
     .nl-team-m600 {
       max-width: 100%; } }
