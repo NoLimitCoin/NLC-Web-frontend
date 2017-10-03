@@ -11031,6 +11031,11 @@ p {
     -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.1); }
 
+/*
+---------------------------------------- */
+.nl-players-filter {
+  margin: 0 0 0.9375rem; }
+
 .login-wrapper {
   background: url(../img/nl-slide-img.jpg) top center no-repeat;
   background-size: cover; }
