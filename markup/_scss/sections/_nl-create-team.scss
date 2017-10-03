@@ -2,7 +2,7 @@
   padding-left: calculateRem(30px);
   padding-right: calculateRem(30px);
   padding-bottom: calculateRem(50px);
-  padding-top: calculateRem(40px);
+  padding-top: calculateRem(30px);
   @include respond-to(allsmall){
     padding-left: 0;
     padding-right: 0;

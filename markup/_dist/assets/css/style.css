@@ -10357,7 +10357,7 @@ p {
   background-size: cover;
   color: #121a31;
   padding-bottom: 10rem;
-  padding-top: 2.5rem; }
+  padding-top: 1.875rem; }
   @media only screen and (min-width: 1367px) and (max-width: 1440px) {
     .nl-players {
       padding-left: 1.875rem;
@@ -10636,7 +10636,7 @@ p {
   background-size: cover;
   color: #121a31;
   padding-bottom: 3.125rem;
-  padding-top: 2.5rem; }
+  padding-top: 1.875rem; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .nl-my-teams {
       padding-left: 1.875rem;
@@ -10782,7 +10782,7 @@ p {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   padding-bottom: 3.125rem;
-  padding-top: 2.5rem; }
+  padding-top: 1.875rem; }
   @media (max-width: 991px) {
     .nl-create-team {
       padding-left: 0;
@@ -11366,7 +11366,7 @@ p {
 .nl-contests {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-top: 2.5rem; }
+  padding-top: 1.875rem; }
   @media (max-width: 991px) {
     .nl-contests {
       padding-left: 0;

@@ -1,7 +1,7 @@
 .nl-contests {
   padding-left: calculateRem(20px);
   padding-right: calculateRem(20px);
-  padding-top: calculateRem(40px);
+  padding-top: calculateRem(30px);
   @include respond-to(allsmall){
     padding-left: 0;
     padding-right: 0;

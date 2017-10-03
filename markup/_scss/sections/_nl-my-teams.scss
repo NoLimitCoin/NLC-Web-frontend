@@ -3,7 +3,7 @@
   background-size: cover;
   color: #121a31;
   padding-bottom: calculateRem(50px);
-  padding-top: calculateRem(40px);
+  padding-top: calculateRem(30px);
   @include respond-to(wide-tablets){
     padding-left: calculateRem(30px);
     padding-right: calculateRem(30px);
