@@ -9204,11 +9204,7 @@ main {
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.3125rem;
   margin: 0; }
-  @media (max-width: 991px) {
-    h1, h2, h3, h4, h5 {
-      letter-spacing: 0.125rem; } }
 
 h2 {
   font-size: 40px;
@@ -9250,9 +9246,9 @@ p {
   margin-top: 0; }
 
 .nl-section h1 {
-  font-size: 26px;
-  font-size: 1.625rem;
-  margin-bottom: 1.25rem; }
+  font-size: 28px;
+  font-size: 1.75rem;
+  margin-bottom: 0.625rem; }
 
 .loader {
   background: none repeat scroll 0 0 #ffffff;
