@@ -147,7 +147,6 @@ main{
   }
   @include respond-to(large-display) { // 1441 - 1680
     width: 1380px;
-    border: 1px solid;
   }
   @include respond-to(extra-large-display) { // 1681
     width: 84%;

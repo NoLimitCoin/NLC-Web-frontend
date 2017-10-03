@@ -9213,8 +9213,7 @@ main {
 
 @media only screen and (min-width: 1441px) and (max-width: 1680px) {
   .container {
-    width: 1380px;
-    border: 1px solid; } }
+    width: 1380px; } }
 
 @media (min-width: 1681px) {
   .container {
@@ -10385,7 +10384,7 @@ p {
         position: relative; } }
 
 .nl-players {
-  background: url(../img/nl-players-bg.jpg) center center no-repeat fixed;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat fixed;
   background-size: cover;
   color: #121a31;
   padding-bottom: 10rem;
