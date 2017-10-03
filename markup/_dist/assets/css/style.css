@@ -10545,7 +10545,8 @@ p {
     right: 1.875rem; }
 
 .nl-mob-table #accordion a:not(.collapsed) .row:after {
-  content: '-'; }
+  content: '-';
+  line-height: 1.9rem; }
 
 .nl-mob-table .avatar img {
   max-width: 5rem;

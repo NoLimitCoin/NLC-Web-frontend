@@ -208,6 +208,7 @@
     &:not(.collapsed){
       .row:after{
         content: '-';
+        line-height: 1.9rem;
       }
     }
 
