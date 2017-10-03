@@ -10376,7 +10376,7 @@ p {
     font-size: 1.125rem;
     text-transform: uppercase;
     font-weight: 700;
-    margin: 1.25rem 0 0.625rem; }
+    margin: 0 0 0.625rem; }
     @media (max-width: 991px) {
       .nl-players .nl-players-filter-title {
         margin: 0.625rem 0 0.625rem; } }

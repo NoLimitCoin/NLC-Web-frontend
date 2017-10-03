@@ -20,7 +20,7 @@
     @include fontSize(18px);
     text-transform: uppercase;
     font-weight: 700;
-    margin: calculateRem(20px) 0 calculateRem(10px);
+    margin: 0 0 calculateRem(10px);
     @include respond-to(allsmall){
       margin: calculateRem(10px) 0 calculateRem(10px);
     }
