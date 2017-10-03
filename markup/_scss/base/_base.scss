@@ -134,3 +134,23 @@ main{
   background: #fff;
   opacity: 0.5;
 }
+
+/* Containers - additional sizes
+---------------------------------------- */
+.container {
+
+  @include respond-to(medium-display) { // 1201 - 1366
+    width: 1200px;
+  }
+  @include respond-to(wide-display) { // 1367 - 1440
+    width: 1280px;
+  }
+  @include respond-to(large-display) { // 1441 - 1680
+    width: 1380px;
+    border: 1px solid;
+  }
+  @include respond-to(extra-large-display) { // 1681
+    width: 84%;
+    max-width: 90%;
+  }
+}

@@ -9201,6 +9201,26 @@ main {
   background: #fff;
   opacity: 0.5; }
 
+/* Containers - additional sizes
+---------------------------------------- */
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  .container {
+    width: 1200px; } }
+
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+  .container {
+    width: 1280px; } }
+
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+  .container {
+    width: 1380px;
+    border: 1px solid; } }
+
+@media (min-width: 1681px) {
+  .container {
+    width: 84%;
+    max-width: 90%; } }
+
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: uppercase;
