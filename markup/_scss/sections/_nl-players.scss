@@ -185,20 +185,21 @@
       &:after{
         display: inline-block;
         content: '+';
-        font-size: 2.25rem;
+        font-size: 2rem;
         font-weight: 700;
         -webkit-transition: all .3s;
         transition: all .3s;
-        width: 2.875rem;
-        height: 2.875rem;
+        width: 2rem;
+        height: 2rem;
         color: #fff;
         background: #e48706;
-        border-radius: 1.4375rem;
+        border-radius: 50%;
         text-align: center;
-        line-height: 2.625rem;
+        line-height: 2rem;
         letter-spacing: 0;
         position: absolute;
-        top: calculateRem(6px);
+        top: 50%;
+        transform: translateY(-50%);
         right: calculateRem(30px);
       }
     }
