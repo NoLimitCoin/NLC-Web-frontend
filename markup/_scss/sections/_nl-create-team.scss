@@ -100,7 +100,7 @@
 
   }
   .nl-team-data {
-    padding: calculateRem(20px);
+    padding: calculateRem(20px) calculateRem(30px);
     span {
       font-weight: 500;
       &.avalibe {
