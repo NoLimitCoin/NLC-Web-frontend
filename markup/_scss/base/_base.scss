@@ -170,3 +170,20 @@ main{
     color: #fff;
   }
 }
+
+/* Helpers alignment
+---------------------------------------- */
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-item--top {
+    align-self: flex-start;
+  }
+
+  &-item--bottom {
+    align-self: flex-end;
+  }
+}
+
