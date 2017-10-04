@@ -19,7 +19,7 @@
     }
   }
   .nl-contest-info-title{
-    margin-top: calculateRem(40px);
+    margin-top: calculateRem(30px);
     min-height: calculateRem(51px);
     text-align: center;
     h3{
@@ -33,7 +33,7 @@
 }
 
 .nl-contests-table {
-  margin-top: calculateRem(40px);
+  margin-top: calculateRem(30px);
   th, td{
     &:nth-child(1){
       width: 30%;
@@ -60,11 +60,20 @@
   }
   .nav-tabs {
     min-height: calculateRem(50px);
+    .nav-item {
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
     .nav-link {
       padding-top: 1rem;
       padding-bottom: 0.8rem;
       @include respond-to(allmobile){
         height: 100%;
+      }
+      @include respond-to(allwide){
+        min-width: 140px;
       }
     }
   }
@@ -76,6 +85,7 @@
 
   .tab-content {
     border-radius: .625rem;
+    border-top-left-radius: 0;
     box-shadow: 3px 0 7px rgba(0, 0, 0, .21);
     overflow: hidden;
     margin-top: 1px;
@@ -188,6 +198,24 @@
       letter-spacing: 1px;
       padding: calculateRem(10px)  calculateRem(30px);
     }
+  }
+}
+
+.heading-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond-to(handhelds){
+    display: block;
+  }
+
+  &__header {
+    margin-left: calculateRem(16px);
+  }
+
+  &__search {
+    margin-left: calculateRem(16px);
   }
 }
 

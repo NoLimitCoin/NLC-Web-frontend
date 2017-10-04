@@ -10952,11 +10952,13 @@ p {
   background: url(../img/nl-soccer-field.png) no-repeat 0 0;
   background-size: contain;
   min-width: 620px;
-  min-height: 563px; }
+  min-height: 563px;
+  background-size: 100% 100%; }
   .nl-team-field.football {
     background: url(../img/football/nl-football-field.png) no-repeat 0 0;
     background-size: contain;
-    min-height: 420px; }
+    min-height: 420px;
+    background-size: 100% 100%; }
     .nl-team-field.football .nl-player-block img {
       max-width: 77px; }
   @media (max-width: 991px) {
@@ -11464,7 +11466,7 @@ p {
       .nl-contests .nl-table-scroll2 {
         max-height: inherit; } }
   .nl-contests .nl-contest-info-title {
-    margin-top: 2.5rem;
+    margin-top: 1.875rem;
     min-height: 3.1875rem;
     text-align: center; }
     .nl-contests .nl-contest-info-title h3 {
@@ -11474,7 +11476,7 @@ p {
     padding: 1.25rem 0; }
 
 .nl-contests-table {
-  margin-top: 2.5rem;
+  margin-top: 1.875rem;
   background: none;
   border-radius: 0;
   -webkit-box-shadow: none;
@@ -11496,14 +11498,20 @@ p {
     width: 15%; }
   .nl-contests-table .nav-tabs {
     min-height: 3.125rem; }
+    .nl-contests-table .nav-tabs .nav-item:first-child {
+      margin-left: 0; }
     .nl-contests-table .nav-tabs .nav-link {
       padding-top: 1rem;
       padding-bottom: 0.8rem; }
       @media (max-width: 767px) {
         .nl-contests-table .nav-tabs .nav-link {
           height: 100%; } }
+      @media (min-width: 992px) {
+        .nl-contests-table .nav-tabs .nav-link {
+          min-width: 140px; } }
   .nl-contests-table .tab-content {
     border-radius: .625rem;
+    border-top-left-radius: 0;
     -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     overflow: hidden;
@@ -11603,6 +11611,24 @@ p {
       font-weight: 500;
       letter-spacing: 1px;
       padding: 0.625rem 1.875rem; }
+
+.heading-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media only screen and (max-width: 575px) {
+    .heading-search {
+      display: block; } }
+  .heading-search__header {
+    margin-left: 1rem; }
+  .heading-search__search {
+    margin-left: 1rem; }
 
 .nl-contests-search {
   width: 21.875rem; }
