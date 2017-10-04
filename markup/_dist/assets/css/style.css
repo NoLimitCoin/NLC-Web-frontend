@@ -2888,6 +2888,12 @@ tbody.collapse.show {
   font-weight: 400;
   font-family: Montserrat;
   width: 100%; }
+  .navbar-nav__sports-img {
+    float: right; }
+    .navbar-nav__sports-img:after {
+      content: "";
+      display: table;
+      clear: both; }
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
@@ -2936,7 +2942,7 @@ tbody.collapse.show {
           padding: 0.625rem 1.25rem; } }
     .navbar-nav li.nav-item:nth-child(1) {
       border-left: none;
-      width: 20%;
+      width: 8%;
       max-width: inherit; }
       .navbar-nav li.nav-item:nth-child(1) .nav-link {
         padding-left: 10vw; }
@@ -2964,7 +2970,8 @@ tbody.collapse.show {
         .navbar-nav li.nav-item:nth-child(1) .dropdown-item img {
           margin-left: 1.25rem;
           margin-right: 0.4rem;
-          max-height: 1.8125rem; }
+          max-height: 1.8125rem;
+          display: none; }
         @media (max-width: 991px) {
           .navbar-nav li.nav-item:nth-child(1) .dropdown-item {
             display: -webkit-box;
@@ -10933,7 +10940,7 @@ p {
     text-align: center;
     padding: 1.25rem; }
   .nl-team-info .nl-team-data {
-    padding: 1.25rem; }
+    padding: 1.25rem 1.875rem; }
     .nl-team-info .nl-team-data span {
       font-weight: 500; }
       .nl-team-info .nl-team-data span.avalibe {
