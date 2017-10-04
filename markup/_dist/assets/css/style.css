@@ -10817,7 +10817,8 @@ p {
     max-width: none;
     width: calc(100% + 1px); }
     .nl-my-teams .table .indicated {
-      padding: 0.625rem 0; }
+      padding: 0.625rem 0;
+      text-align: center; }
     .nl-my-teams .table .indicator {
       width: 0.9375rem;
       height: 0.9375rem; }
@@ -10829,7 +10830,7 @@ p {
     background-color: #1d2d4e;
     font-size: 0.8125rem; }
   .nl-my-teams .table th, .nl-my-teams .table td {
-    padding: 0.5rem; }
+    padding: 0.5rem 1.5rem; }
 
 .nl-create-team {
   padding-left: 1.875rem;
@@ -10846,6 +10847,15 @@ p {
 
 .nl-create-team-table td, .nl-create-team-table th {
   padding: 0.5rem; }
+  .nl-create-team-table td:first-child, .nl-create-team-table th:first-child {
+    text-align: center; }
+  .nl-create-team-table td:last-child a, .nl-create-team-table th:last-child a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 .nl-create-team-table td:not(:first-child), .nl-create-team-table .table th:not(:first-child) {
   text-align: left; }

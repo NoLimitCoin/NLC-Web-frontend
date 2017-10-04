@@ -175,6 +175,7 @@
     width: calc(100% + 1px);
     .indicated{
       padding: calculateRem(10px) 0;
+      text-align: center;
     }
     .indicator{
       width: calculateRem(15px);
@@ -195,7 +196,7 @@
   }
 
   .table th, .table td{
-    padding: calculateRem(8px);
+    padding: calculateRem(8px) calculateRem(24px);
   }
 
 }
