@@ -2077,7 +2077,6 @@ select.form-control-lg:not([size]):not([multiple]) {
   .btn:focus, .btn:hover {
     text-decoration: none; }
   .btn:hover {
-    background: #fff;
     color: #0d3663; }
   .btn:focus, .btn.focus {
     outline: 0;
