@@ -9222,6 +9222,23 @@ main {
     width: 84%;
     max-width: 90%; } }
 
+/* Buttons
+---------------------------------------- */
+.btn-primary {
+  background: #eb9a0d;
+  /* Old browsers */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+  background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
+  border: none;
+  background-size: 200% auto;
+  font-weight: 500;
+  -webkit-transition: all ease-out .2s;
+  transition: all ease-out .2s;
+  background-position-y: 0; }
+  .btn-primary:hover {
+    background-position-y: -100%;
+    color: #fff; }
+
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: uppercase;

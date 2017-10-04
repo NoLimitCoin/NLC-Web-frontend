@@ -153,3 +153,23 @@ main{
     max-width: 90%;
   }
 }
+
+/* Buttons
+---------------------------------------- */
+.btn-primary  {
+  background: #eb9a0d; /* Old browsers */
+  background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
+  border: none;
+  background-size: 200% auto;
+  font-weight: 500;
+  -webkit-transition: all ease-out .2s;
+  -moz-transition: all ease-out .2s;
+  -o-transition: all ease-out .2s;
+  transition: all ease-out .2s;
+  background-position-y: 0;
+
+  &:hover {
+    background-position-y: -100%;
+    color: #fff;
+  }
+}
