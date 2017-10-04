@@ -9229,6 +9229,15 @@ main {
     width: 84%;
     max-width: 90%; } }
 
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+  .container-narrow {
+    width: 1380px; } }
+
+@media (min-width: 1681px) {
+  .container-narrow {
+    width: 75%;
+    max-width: 90%; } }
+
 /* Buttons
 ---------------------------------------- */
 .btn-primary {
@@ -10505,7 +10514,7 @@ p {
   @media (min-width: 992px) {
     .nl-players .nl-desc-table tbody tr td:nth-child(1),
     .nl-players .nl-desc-table thead tr th:nth-child(1) {
-      width: 17%; }
+      width: 20%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(2),
     .nl-players .nl-desc-table thead tr th:nth-child(2) {
       width: 7%; }
@@ -10514,25 +10523,25 @@ p {
       width: 7%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(4),
     .nl-players .nl-desc-table thead tr th:nth-child(4) {
-      width: 12%; }
+      width: 7%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(5),
     .nl-players .nl-desc-table thead tr th:nth-child(5) {
-      width: 7%; }
+      width: 5%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(6),
     .nl-players .nl-desc-table thead tr th:nth-child(6) {
-      width: 6%; }
+      width: 7%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(7),
     .nl-players .nl-desc-table thead tr th:nth-child(7) {
-      width: 8%; }
+      width: 10%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(8),
     .nl-players .nl-desc-table thead tr th:nth-child(8) {
-      width: 5%; }
+      width: 10%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(9),
     .nl-players .nl-desc-table thead tr th:nth-child(9) {
-      width: 9%; }
+      width: 7%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(10),
     .nl-players .nl-desc-table thead tr th:nth-child(10) {
-      width: 10%; }
+      width: 7%; }
     .nl-players .nl-desc-table tbody tr td:nth-child(11),
     .nl-players .nl-desc-table thead tr th:nth-child(11) {
       width: 12%; } }
@@ -10622,6 +10631,12 @@ p {
   -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
   overflow: hidden; }
+  .nl-players-table td, .nl-players-table th {
+    padding: 0.25rem 0.5rem; }
+    .nl-players-table td:first-child, .nl-players-table th:first-child {
+      padding-left: 1.5rem; }
+  .nl-players-table td:not(:first-child), .nl-players-table .table th:not(:first-child) {
+    text-align: left; }
   .nl-players-table-data-field {
     position: relative;
     padding: 1.5625rem;
@@ -10678,11 +10693,23 @@ p {
         margin-bottom: 0.3125rem;
         font-size: 19.54px;
         font-size: 1.22125rem; }
+  @media (max-width: 767px) {
+    .nl-players-table .nl-players-table-data-field {
+      height: 5rem; } }
   .nl-players-table .nl-players-search {
     position: absolute;
     min-width: 22.0625rem;
     bottom: -2.0625rem;
     right: 0.1875rem; }
+    @media (max-width: 767px) {
+      .nl-players-table .nl-players-search {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-top: 1rem;
+        width: 70%; } }
     @media (max-width: 991px) {
       .nl-players-table .nl-players-search {
         min-width: 12.5rem; } }
@@ -10856,7 +10883,7 @@ p {
     background-color: #1d2d4e;
     font-size: 0.8125rem; }
   .nl-my-teams .table th, .nl-my-teams .table td {
-    padding: 0.5rem 1.5rem; }
+    padding: 0.5rem; }
 
 .nl-create-team {
   padding-left: 1.875rem;

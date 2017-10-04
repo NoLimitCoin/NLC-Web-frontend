@@ -110,7 +110,7 @@
     @include respond-to(allwide) {
       //float: left;
       &:nth-child(1) {
-        width: 17%;
+        width: 20%;
       }
       &:nth-child(2) {
         width: 7%;
@@ -119,25 +119,25 @@
         width: 7%;
       }
       &:nth-child(4) {
-        width: 12%;
-      }
-      &:nth-child(5) {
         width: 7%;
       }
-      &:nth-child(6) {
-        width: 6%;
-      }
-      &:nth-child(7) {
-        width: 8%;
-      }
-      &:nth-child(8) {
+      &:nth-child(5) {
         width: 5%;
       }
+      &:nth-child(6) {
+        width: 7%;
+      }
+      &:nth-child(7) {
+        width: 10%;
+      }
+      &:nth-child(8) {
+        width: 10%;
+      }
       &:nth-child(9) {
-        width: 9%;
+        width: 7%;
       }
       &:nth-child(10) {
-        width: 10%;
+        width: 7%;
       }
       &:nth-child(11) {
         width: 12%;
@@ -255,6 +255,17 @@
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
   overflow: hidden;
 
+  td, th {
+    padding: 0.25rem 0.5rem;
+
+    &:first-child {
+      padding-left: calculateRem(24px);
+    }
+  }
+  td:not(:first-child), .table th:not(:first-child) {
+    text-align: left;
+  }
+
   &-data-field {
     position: relative;
     padding: calculateRem(25px);
@@ -311,11 +322,25 @@
       }
     }
   }
+  .nl-players-table-data-field {
+    @include respond-to(allmobile) {
+      height: calculateRem(80px);
+    }
+  }
   .nl-players-search {
     position: absolute;
     min-width: calculateRem(353px);
     bottom: calculateRem(-33px);
     right: calculateRem(3px);
+
+    @include respond-to(allmobile) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 1rem;
+      width: 70%;
+    }
     @include respond-to(allsmall){
       min-width: calculateRem(200px);
     }

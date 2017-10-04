@@ -153,6 +153,15 @@ main{
     max-width: 90%;
   }
 }
+.container-narrow {
+  @include respond-to(large-display) { // 1441 - 1680
+    width: 1380px;
+  }
+  @include respond-to(extra-large-display) { // 1681
+    width: 75%;
+    max-width: 90%;
+  }
+}
 
 /* Buttons
 ---------------------------------------- */
