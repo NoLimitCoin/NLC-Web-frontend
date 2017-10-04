@@ -36,28 +36,35 @@
   margin-top: calculateRem(30px);
   th, td{
     &:nth-child(1){
-      width: 30%;
-
+      width: 35%;
+      text-align: left;
     }
     &:nth-child(2){
-      width: 10%;
+      width: 12%;
     }
     &:nth-child(3){
-      width: 10%;
+      width: 9%;
     }
     &:nth-child(4){
-      width: 10%;
+      width: 9%;
     }
     &:nth-child(5){
       width: 10%;
     }
     &:nth-child(6){
-      width: 15%;
+      width: 9%;
     }
     &:nth-child(7){
-      width: 15%;
+      width: 12%;
     }
   }
+
+  td:not(:first-child),
+  th:not(:first-child) {
+    text-align: center !important;
+    padding: 0.75rem 0.5rem;
+  }
+
   .nav-tabs {
     min-height: calculateRem(50px);
     .nav-item {
@@ -135,6 +142,8 @@
     }
     td{
       width: 33.333%;
+      padding: calculateRem(16px);
+
       .btn{
         width: 100%;
         padding: calculateRem(6px) calculateRem(12px);

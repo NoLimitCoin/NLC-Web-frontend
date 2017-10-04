@@ -163,6 +163,23 @@ main{
   }
 }
 
+.container-wider {
+
+  @include respond-to(large-display) { // 1441 - 1680
+    width: 100%;
+  }
+  @include respond-to(extra-large-display) { // 1681
+    width: 100%;
+    max-width: 100%;
+  }
+  @media (min-width: 1750px) {
+    width: 90%;
+  }
+  @media (min-width: 2050px) {
+    width: 80%;
+  }
+}
+
 /* Buttons
 ---------------------------------------- */
 .btn-primary  {

@@ -10,11 +10,20 @@
 }
 
 .nl-create-team-table {
+
   .nl-players-search {
-    min-width: calculateRem(200px);
+    min-width: calculateRem(300px);
+
+    @include respond-to(tablets) {
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+    }
+
   }
+
   td, th {
-    padding: 0.5rem;
+    padding: 0.25rem 0.5rem;
 
     &:first-child {
       text-align: center;
@@ -27,6 +36,7 @@
       }
     }
   }
+
   td:not(:first-child), .table th:not(:first-child) {
     text-align: left;
   }
@@ -38,10 +48,11 @@
       //float: left;
       //width: 10% !important;
       &:nth-child(1) {
-        width: 10%;
+        width: 8%;
+        min-width: 90px;
       }
       &:nth-child(2) {
-        width: 27%;
+        width: 24%;
       }
       &:nth-child(3) {
         width: 10%;
@@ -50,22 +61,22 @@
         width: 6%;
       }
       &:nth-child(5) {
-        width: 8%;
+        width: 7%;
       }
       &:nth-child(6) {
-        width: 8%;
+        width: 7%;
       }
       &:nth-child(7) {
         width: 8%;
       }
       &:nth-child(8) {
-        width: 7%;
+        width: 8%;
       }
       &:nth-child(9) {
-        width: 10%;
+        width: 14%;
       }
       &:nth-child(10) {
-        width: 6%;
+        width: 8%;
       }
     }
   }
