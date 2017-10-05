@@ -11197,6 +11197,24 @@ p {
 .nl-players-filter {
   margin: 0 0 1.25rem; }
 
+/* Table create team - toggle view
+---------------------------------------- */
+.nl-my-teams .nl-team-list-table th:nth-child(1), .nl-my-teams .nl-team-list-table td:nth-child(1) {
+  width: 40%;
+  padding-left: 1.5rem; }
+
+.nl-my-teams .nl-team-list-table th:nth-child(2), .nl-my-teams .nl-team-list-table td:nth-child(2) {
+  width: 12%; }
+
+.nl-my-teams .nl-team-list-table th:nth-child(3), .nl-my-teams .nl-team-list-table td:nth-child(3) {
+  width: 12%; }
+
+.nl-my-teams .nl-team-list-table th:nth-child(4), .nl-my-teams .nl-team-list-table td:nth-child(4) {
+  width: 12%; }
+
+.nl-my-teams .nl-team-list-table th:nth-child(5), .nl-my-teams .nl-team-list-table td:nth-child(5) {
+  width: 20%; }
+
 .login-wrapper {
   background: url(../img/nl-slide-img.jpg) top center no-repeat;
   background-size: cover; }

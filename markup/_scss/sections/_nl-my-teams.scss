@@ -200,24 +200,25 @@
   }
 }
 
+// refers to table on the my teams page
 .nl-my-teams {
   .table {
     th, td{
-    &:nth-child(1){
-      width: 10%;
+      &:nth-child(1){
+        width: 10%;
+      }
+      &:nth-child(2){
+        width: 30%;
+      }
+      &:nth-child(3){
+        width: 10%;
+      }
+      &:nth-child(4){
+        width: 10%;
+      }
+      &:nth-child(5){
+        width: 20%;
+      }
     }
-    &:nth-child(2){
-      width: 30%;
-    }
-    &:nth-child(3){
-      width: 10%;
-    }
-    &:nth-child(4){
-      width: 10%;
-    }
-    &:nth-child(5){
-      width: 20%;
-    }
-  }
   }
 }
