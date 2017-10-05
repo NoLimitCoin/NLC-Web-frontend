@@ -11762,6 +11762,56 @@ p {
   .nl-table-responsive {
     overflow-x: auto; } }
 
+.nl-enter-contests .heading-search__header {
+  margin-bottom: 0;
+  padding: 1.5rem 0; }
+  @media (max-width: 768px) {
+    .nl-enter-contests .heading-search__header {
+      margin-left: 0; } }
+
+@media (max-width: 768px) {
+  .nl-enter-contests .heading-search__search {
+    margin-left: 0; } }
+
+.nl-enter-contests .nl-contest-info-table {
+  background-color: #121a31; }
+
+.nl-enter-contests .table-heading {
+  width: 100%;
+  background: #121a31;
+  color: #e48706;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.25rem; }
+  .nl-enter-contests .table-heading h5 {
+    margin-bottom: 0.875rem;
+    color: #fff; }
+  .nl-enter-contests .table-heading .btn-primary {
+    font-size: 1.8rem; }
+
+.nl-enter-contests .nl-team-info,
+.nl-enter-contests .nl-team-list {
+  max-width: 100%; }
+
+@media (max-width: 768px) {
+  .nl-enter-contests #dropdownMenuButton {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: left; }
+  .nl-enter-contests .dropdown-toggle::after {
+    position: absolute;
+    top: 25%;
+    right: 0.5rem;
+    color: #e48706; } }
+
+.leaders-list p {
+  padding: 0 0.25rem; }
+
+.leaders-list p:nth-child(even) {
+  padding-bottom: 0.5rem; }
+
 .contact-wrapper {
   background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
   background-size: cover;
