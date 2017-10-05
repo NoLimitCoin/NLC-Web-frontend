@@ -1,1 +1,249 @@
-h1 top5-player
+h5.text-center.visible-xxs.subtitle.position TOP 5
+	span Tight ends
+h5.hidden-xxs.subtitle TOP 5
+	span.position-subtitle 
+		.dropdown.player-position
+			button.btn.btn-primary(type='button', data-toggle='dropdown')
+				h5 Running Back
+					i.fa.fa-caret-down
+			ul.dropdown-menu(id="dropdown-in-player", role='menu', aria-labelledby='player-position')
+				li(role='presentation')
+					a(role='menuitem', tabindex='-1', value="#RB") Running Back
+				li(role='presentation')
+					a(role='menuitem', tabindex='-1', value='#WR') Wide Receiver
+				li(role='presentation')
+					a(role='menuitem', tabindex='-1', value='#QB') Quarterback
+				li(role='presentation')
+					a(role='menuitem', tabindex='-1', value='#FLEX') Flex
+				li(role='presentation')
+					a(role='menuitem', tabindex='-1', value='#DEF') Defense
+				li(role='presentation')
+					a(role='menuitem', tabindex='-1', value='#K') Kicker
+				li(role='presentation')
+					a(role='menuitem', tabindex='-1', value='#TE') Tight Ends
+
+#playerModal.modal.fade(role='dialog')
+	.modal-dialog.modal-sm
+		.modal-content
+			.modal-header
+				h4 Positions
+				a.close.pull-right(type='button', data-dismiss='modal')
+					img(src="assets/img/close_btn.png", alt="")
+			.modal-body(role='menu', aria-labelledby='player-position')
+				div.modal-menu(role='presentation')
+					a(data-dismiss='modal', role='menuitem', tabindex='-1', value="#RB") Running Back
+				div.modal-menu(role='presentation')
+					a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#WR') Wide Receiver
+				div.modal-menu(role='presentation')
+					a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#QB') Quarterback
+				div.modal-menu(role='presentation')
+					a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#FLEX') Flex
+				div.modal-menu(role='presentation')
+					a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#DEF') Defense
+				div.modal-menu(role='presentation')
+					a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#K') Kicker
+				div.modal-menu(role='presentation')
+					a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#TE') Tight Ends
+
+
+div.row
+	button.mobile-menu.dropdown(type='button', data-toggle='modal', data-target='#playerModal') Choose Positions
+	div.mobile-menu(data-toggle="tab" href="#player1" role="tab")
+		div.number
+			p 1
+		p MattRyan1
+div.row
+	div.mobile-menu(data-toggle="tab" href="#player2" role="tab")
+		div.number
+			p 1
+		p MattRyan2
+	div.mobile-menu(data-toggle="tab" href="#player3" role="tab")
+		div.number
+			p 1
+		p MattRyan3
+div.row
+	div.mobile-menu(data-toggle="tab" href="#player4" role="tab")
+		div.number
+			p 1
+		p MattRyan4
+	div.mobile-menu(data-toggle="tab" href="#player5" role="tab")
+		div.number
+			p 1
+		p MattRyan5	
+
+div.tab-content(id="top5-player-content")
+	div(role='tabpanel' class='tab-pane active top-level-panel' id='RB')
+		div.content
+		
+			div.row
+				div.col-lg-12.menubar
+					ul.nav.menu(role="tablist")
+						li.nav-item
+							a.nav-link.active(data-toggle="tab" href="#player1" role="tab")
+								div.menu-item.top-5
+									div.players 
+										div.player-thumbnail
+										div.number
+											p 1
+										div.player-thumbnail-name
+											p MattRyan1
+						li.nav-item
+							a.nav-link(data-toggle="tab" href="#player2" role="tab")
+								div.menu-item.top-5
+									div.players 
+										div.player-thumbnail
+										div.number
+											p 2
+										div.player-thumbnail-name
+											p MattRyan2
+						li.nav-item
+							a.nav-link(data-toggle="tab" href="#player3" role="tab")
+								div.menu-item.top-5
+									div.players 
+										div.player-thumbnail
+										div.number
+											p 3
+										div.player-thumbnail-name
+											p MattRyan3
+						li.nav-item
+							a.nav-link(data-toggle="tab" href="#player4" role="tab")
+								div.menu-item.top-5
+									div.players 
+										div.player-thumbnail
+										div.number
+											p 4
+										div.player-thumbnail-name
+											p MattRyan4
+						li.nav-item
+							a.nav-link(data-toggle="tab" href="#player5" role="tab")
+								div.menu-item.top-5
+									div.players 
+										div.player-thumbnail
+										div.number
+											p 5
+										div.player-thumbnail-name
+											p MattRyan5
+						
+
+					div.tab-content
+						div.tab-pane.active(id="player1" role="tabpanel")
+							div.row.player
+								div.player-image
+									div.player-image-inner
+										div.number
+											p 1
+										div.name
+											p Matt Ryan 1
+										p.points 121 PTS 
+								div.player-info
+									p FP points
+									h5 121.5
+									p Salary
+									h5 $7100
+									p Team Name
+									h5 Barcelona
+									p More info 
+									i.fa.fa-info-circle 
+
+						div.tab-pane(id="player2" role="tabpanel")
+							div.row.player
+								div.player-image
+									div.player-image-inner
+										div.number
+											p 2
+										div.name
+											p Matt Ryan 2
+										p.points 122 PTS 
+								div.player-info
+									p FP points
+									h5 122.5
+									p Salary
+									h5 $7200
+									p Team Name
+									h5 Barcelona
+									p More info 
+									i.fa.fa-info-circle     
+
+						div.tab-pane(id="player3" role="tabpanel")
+							div.row.player
+								div.player-image
+									div.player-image-inner
+										div.number
+											p 3
+										div.name
+											p Matt Ryan 3
+										p.points 123 PTS 
+								div.player-info
+									p FP points
+									h5 123.5
+									p Salary
+									h5 $7300
+									p Team Name
+									h5 Barcelona
+									p More info 
+									i.fa.fa-info-circle 
+
+						div.tab-pane(id="player4" role="tabpanel")
+							div.row.player
+								div.player-image
+									div.player-image-inner
+										div.number
+											p 4
+										div.name
+											p Matt Ryan 4
+										p.points 124 PTS 
+								div.player-info
+									p FP points
+									h5 124.5
+									p Salary
+									h5 $7400
+									p Team Name
+									h5 Barcelona
+									p More info 
+									i.fa.fa-info-circle 
+
+						div.tab-pane(id="player5" role="tabpanel")
+							div.row.player
+								div.player-image
+									div.player-image-inner
+										div.number
+											p 5
+										div.name
+											p Matt Ryan 5
+										p.points 125 PTS 
+								div.player-info
+									p FP points
+									h5 125.5
+									p Salary
+									h5 $7500
+									p Team Name
+									h5 Barcelona
+									p More info 
+									i.fa.fa-info-circle 
+	div(role='tabpanel' class='tab-pane top-level-panel' id='WR')
+		p WR
+	div(role='tabpanel' class='tab-pane top-level-panel' id='QB')
+		p QB
+	div(role='tabpanel' class='tab-pane top-level-panel' id='TE')
+		p TE
+	div(role='tabpanel' class='tab-pane top-level-panel' id='FLEX')
+		p FLEX
+	div(role='tabpanel' class='tab-pane top-level-panel' id='K')
+		p K
+	div(role='tabpanel' class='tab-pane top-level-panel' id='DEF')
+		p DEF
+
+script(type='text/javascript').
+	$("#dropdown-in-player li a").click(function(){
+		$(this).parents(".dropdown").find('.btn').html($(this).text() + '<i class="fa fa-caret-down"></i>');
+		$(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+
+		$('#top5-player-content .top-level-panel').hide('tab');
+		$($(this).attr('value')).show('tab');
+	});
+	$(".modal-content .modal-body a").click(function(){
+		$('#top5-player-content .top-level-panel').hide('tab');
+		$($(this).attr('value')).show('tab');
+		$("h5.text-center.visible-xxs.subtitle.position span").html($(this).text());
+		$('#playerModal').modal('hide');
+	});
