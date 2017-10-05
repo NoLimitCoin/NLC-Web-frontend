@@ -9300,6 +9300,24 @@ main {
     font-size: 10px;
     padding: 0.5rem; }
 
+/* Temp fix to show scrollbar on all tables
+---------------------------------------- */
+.nl-table-scroll {
+  max-height: 34.375rem; }
+  @media (max-width: 991px) {
+    .nl-table-scroll {
+      max-height: inherit; } }
+
+.nl-table-scroll2 {
+  max-height: 14.0625rem; }
+  @media (max-width: 991px) {
+    .nl-table-scroll2 {
+      max-height: inherit; } }
+
+.nl-mob-table {
+  max-height: 25.625rem;
+  overflow: scroll; }
+
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: uppercase;
@@ -11554,16 +11572,6 @@ p {
     .nl-contests {
       padding-left: 0;
       padding-right: 0; } }
-  .nl-contests .nl-table-scroll {
-    max-height: 34.375rem; }
-    @media (max-width: 991px) {
-      .nl-contests .nl-table-scroll {
-        max-height: inherit; } }
-  .nl-contests .nl-table-scroll2 {
-    max-height: 14.0625rem; }
-    @media (max-width: 991px) {
-      .nl-contests .nl-table-scroll2 {
-        max-height: inherit; } }
   .nl-contests .nl-contest-info-title {
     margin-top: 1.875rem;
     min-height: 3.1875rem;

@@ -224,3 +224,24 @@ main{
     padding: 0.5rem;
   }
 }
+
+/* Temp fix to show scrollbar on all tables
+---------------------------------------- */
+.nl-table-scroll {
+  max-height: calculateRem(550px);
+  @include respond-to(allsmall){
+    max-height: inherit;
+  }
+}
+.nl-table-scroll2{
+  max-height: calculateRem(225px);
+  @include respond-to(allsmall){
+    max-height: inherit;
+  }
+}
+
+// Add custom overflow to mobile table
+.nl-mob-table {
+  max-height: calculateRem(410px);
+  overflow: scroll;
+}

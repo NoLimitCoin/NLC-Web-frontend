@@ -6,18 +6,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .nl-table-scroll {
-    max-height: calculateRem(550px);
-    @include respond-to(allsmall){
-      max-height: inherit;
-    }
-  }
-  .nl-table-scroll2{
-    max-height: calculateRem(225px);
-    @include respond-to(allsmall){
-      max-height: inherit;
-    }
-  }
   .nl-contest-info-title{
     margin-top: calculateRem(30px);
     min-height: calculateRem(51px);
