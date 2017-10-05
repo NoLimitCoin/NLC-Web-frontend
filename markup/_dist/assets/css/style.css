@@ -11791,11 +11791,10 @@ p {
   .nl-enter-contests .table-heading .btn-primary {
     font-size: 1.8rem; }
 
-.nl-enter-contests .nl-team-info,
-.nl-enter-contests .nl-team-list {
-  max-width: 100%; }
-
 @media (max-width: 768px) {
+  .nl-enter-contests .nl-team-info,
+  .nl-enter-contests .nl-team-list {
+    max-width: 100%; }
   .nl-enter-contests #dropdownMenuButton {
     width: 100%;
     margin-bottom: 1.5rem;
