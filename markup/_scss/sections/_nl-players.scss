@@ -107,9 +107,19 @@
 
   .nl-desc-table  tbody  tr  td,
   .nl-desc-table  thead  tr  th {
+
+
+    &:not(:first-child), {
+      text-align: center;
+    }
+  }
+
+  .nl-desc-table  tbody  tr  td,
+  .nl-desc-table  thead  tr  th {
     @include respond-to(allwide) {
       //float: left;
       &:nth-child(1) {
+        text-align: left;
         width: 20%;
       }
       &:nth-child(2) {

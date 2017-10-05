@@ -38,7 +38,7 @@
   }
 
   td:not(:first-child), .table th:not(:first-child) {
-    text-align: left;
+    text-align: center;
   }
 
   .nl-desc-table tbody tr td,
@@ -53,6 +53,7 @@
       }
       &:nth-child(2) {
         width: 24%;
+        text-align: left;
       }
       &:nth-child(3) {
         width: 10%;
