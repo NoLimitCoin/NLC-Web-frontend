@@ -56,18 +56,18 @@
                 </div>
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link"></a></li>
+                    <li class="nav-item hidden-md-down"><a class="nav-link"></a></li>
                     <li class="nav-item dropdown"><a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/ball.png" alt="#"></a>
                       <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu"><a href="create_team.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="create_team_football.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Baseball</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Tennis</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a></div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">MY TEAMS+</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">CONTESTS+</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY TEAMS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTESTS</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">PLAYERS</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">LIVE SCORES</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">MY DASHBOARD</a></li>
                     <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
-                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/France.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item">France</a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
                     </li>
                   </ul>
                   <div class="nl-profile-mobile">
@@ -108,17 +108,19 @@
                   </div>
                   <div class="nl-players-search">
                     <div class="input-group">
-                      <input type="text" placeholder="Search by player name" class="form-control"><span class="input-group-btn">
+                      <input type="text" placeholder="Search" class="form-control"><span class="input-group-btn">
                         <button type="button" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button></span>
                     </div>
                   </div>
                 </div>
                 <ul role="tablist" class="nav nav-tabs">
                   <li class="nav-item"><a data-toggle="tab" href="#all" role="tab" class="nav-link active">All players</a></li>
-                  <li class="nav-item"><a data-toggle="tab" href="#gk" role="tab" class="nav-link">GK</a></li>
-                  <li class="nav-item"><a data-toggle="tab" href="#d" role="tab" class="nav-link">D</a></li>
-                  <li class="nav-item"><a data-toggle="tab" href="#m" role="tab" class="nav-link">m</a></li>
-                  <li class="nav-item"><a data-toggle="tab" href="#a" role="tab" class="nav-link">A</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#qb" role="tab" class="nav-link">QB</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#rb" role="tab" class="nav-link">RB</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#wr" role="tab" class="nav-link">WR</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#te" role="tab" class="nav-link">TE</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#k" role="tab" class="nav-link">K</a></li>
+                  <li class="nav-item"><a data-toggle="tab" href="#def" role="tab" class="nav-link">DEF</a></li>
                 </ul>
                 <div class="tab-content">
                   <div id="all" role="tabpanel" class="tab-pane active">
@@ -847,10 +849,12 @@
                       </div>
                     </div>
                   </div>
-                  <div id="gk" role="tabpanel" class="tab-pane">TAB2</div>
-                  <div id="d" role="tabpanel" class="tab-pane">TAB3</div>
-                  <div id="m" role="tabpanel" class="tab-pane">TAB4</div>
-                  <div id="a" role="tabpanel" class="tab-pane">TAB5</div>
+                  <div id="qb" role="tabpanel" class="tab-pane">TAB2</div>
+                  <div id="rb" role="tabpanel" class="tab-pane">TAB3</div>
+                  <div id="wr" role="tabpanel" class="tab-pane">TAB4</div>
+                  <div id="te" role="tabpanel" class="tab-pane">TAB5</div>
+                  <div id="k" role="tabpanel" class="tab-pane">TAB4</div>
+                  <div id="def" role="tabpanel" class="tab-pane">TAB5</div>
                 </div>
               </div>
             </div>

@@ -10608,31 +10608,34 @@ p {
 .nl-mob-table .nl-title {
   background: #121a31;
   color: #e48706; }
+  .nl-mob-table .nl-title p {
+    margin: 0.625rem 1.25rem;
+    font-weight: 700; }
+    .nl-mob-table .nl-title p:first-child {
+      margin-top: 10px; }
 
 .nl-mob-table .nl-content {
   background-color: #e1e2e4;
   color: #121a31; }
-
-.nl-mob-table p {
-  margin: 0.625rem 1.25rem;
-  font-weight: 700; }
+  .nl-mob-table .nl-content p {
+    margin: 0.3125rem 1.25rem; }
 
 .nl-mob-table .card-block {
-  padding-bottom: 1.5625rem; }
+  padding-bottom: 0.5rem; }
 
 .nl-mob-table #accordion a .row {
   position: relative; }
   .nl-mob-table #accordion a .row:after {
+    font-family: 'FontAwesome';
     display: inline-block;
-    content: '+';
+    content: '\f055';
     font-size: 2rem;
     font-weight: 700;
     -webkit-transition: all .3s;
     transition: all .3s;
     width: 2rem;
     height: 2rem;
-    color: #fff;
-    background: #e48706;
+    color: #e48706;
     border-radius: 50%;
     text-align: center;
     line-height: 2rem;
@@ -10644,7 +10647,8 @@ p {
     right: 1.875rem; }
 
 .nl-mob-table #accordion a:not(.collapsed) .row:after {
-  content: '-';
+  font-family: 'FontAwesome';
+  content: '\f056';
   line-height: 1.9rem; }
 
 .nl-mob-table .avatar img {
@@ -10663,6 +10667,9 @@ p {
     margin-right: 1.25rem; }
   .nl-mob-table .nl-pl-social .fa-facebook-square {
     color: #4d73bb; }
+  @media (max-width: 991px) {
+    .nl-mob-table .nl-pl-social .fa {
+      font-size: 2.5rem; } }
 
 .nl-mob-table img {
   max-width: 1.5625rem; }
@@ -10766,6 +10773,16 @@ p {
         bottom: inherit;
         top: 0.1875rem;
         min-width: 12.5rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .nl-players-table .nl-players-search {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-players-table .nl-players-search {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem; } }
     .nl-players-table .nl-players-search .input-group {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -10964,6 +10981,11 @@ p {
 .nl-create-team-table .nl-players-search {
   min-width: 18.75rem; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nl-create-team-table .nl-players-search {
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem; } }
+  @media (min-width: 1441px) and (max-width: 2000px) {
     .nl-create-team-table .nl-players-search {
       position: absolute;
       top: 2rem;
@@ -11192,6 +11214,9 @@ p {
 ---------------------------------------- */
 .country-selector .nav-item:first-child {
   margin-left: 0; }
+  @media (max-width: 991px) {
+    .country-selector .nav-item:first-child {
+      margin-left: 0.5rem; } }
 
 .country-selector__link {
   position: relative;

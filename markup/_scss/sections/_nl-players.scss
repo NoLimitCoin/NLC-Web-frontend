@@ -177,32 +177,43 @@
   .nl-title{
     background: #121a31;
     color: #e48706;
+
+    p{
+      margin: calculateRem(10px) calculateRem(20px);
+
+      &:first-child {
+        margin-top: 10px;
+      }
+      font-weight: 700;
+    }
   }
   .nl-content{
     background-color: #e1e2e4;
     color: #121a31;
+
+    p {
+      margin: calculateRem(5px) calculateRem(20px);
+    }
   }
-  p{
-    margin: calculateRem(10px) calculateRem(20px);
-    font-weight: 700;
-  }
+
   .card-block{
-    padding-bottom: calculateRem(25px);
+    padding-bottom: calculateRem(8px);
   }
   #accordion a {
     .row{
       position: relative;
       &:after{
+        font-family: 'FontAwesome';
         display: inline-block;
-        content: '+';
+        content: '\f055';
         font-size: 2rem;
         font-weight: 700;
         -webkit-transition: all .3s;
         transition: all .3s;
         width: 2rem;
         height: 2rem;
-        color: #fff;
-        background: #e48706;
+        color: #e48706;
+        // background: #e48706;
         border-radius: 50%;
         text-align: center;
         line-height: 2rem;
@@ -217,7 +228,8 @@
 
     &:not(.collapsed){
       .row:after{
-        content: '-';
+        font-family: 'FontAwesome';
+        content: '\f056';
         line-height: 1.9rem;
       }
     }
@@ -246,6 +258,12 @@
     }
     .fa-facebook-square {
       color: #4d73bb;
+    }
+
+    .fa {
+      @include respond-to(allsmall){
+        font-size: 2.5rem;
+      }
     }
   }
   img{
@@ -359,6 +377,18 @@
       top: calculateRem(3px);
       min-width: calculateRem(200px);
     }
+    @include respond-to(tablets){
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+
+    @include respond-to(wide-tablets){
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+
     .input-group {
       display: flex;
       position: relative;

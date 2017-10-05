@@ -20,6 +20,11 @@
       right: 1.5rem;
     }
 
+    @media (min-width: 1441px) and (max-width:2000px) {
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+    }
   }
 
   td, th {
@@ -319,6 +324,10 @@
 
     &:first-child {
       margin-left: 0;
+
+      @include respond-to(allsmall){
+        margin-left: 0.5rem;
+      }
     }
   }
 
