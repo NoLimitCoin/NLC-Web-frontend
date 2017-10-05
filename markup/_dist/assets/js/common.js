@@ -277,9 +277,16 @@ $(function () {
       var menu =$(this).attr('data-target');
       $(menu).slideToggle();
    });
+
+   $('.sport-link').on('click', function() {
+        var sportType = $(this).attr('data-sports');
+        var value = $(this).data('sports') === 'football';
+
+        if (value) {
+            $('.sports-filtering').hide();
+            $('.sports-filtering').prev().find('h1').css('margin-bottom', '2rem');
+        } else {
+            $('.sports-filtering').show();
+        }
+   });
 })(jQuery);
-
-
-
-
-
