@@ -1,1 +1,508 @@
-h1 top5-manager
+h5.text-center.visible-xxs.subtitle TOP 5
+    span Managers
+    | in 
+    span.week Week 3
+h5.hidden-xxs.subtitle TOP 5
+    span Managers  
+    | in
+    span 
+        .dropdown.week-position
+            button.btn.btn-primary(type='button', data-toggle='dropdown') 
+                h5 Week 3
+                    i.fa.fa-caret-down
+            ul.dropdown-menu(id="dropdown-in-week")
+                li(role='presentation')
+                    a(role='menuitem', tabindex='-1', value='#week3') Week 3
+                li(role='presentation')
+                    a(role='menuitem', tabindex='-1', value='#week4') Week 4
+                li(role='presentation')
+                    a(role='menuitem', tabindex='-1', value='#week5') Week 5
+
+#weekModal.modal.fade(role='dialog')
+    .modal-dialog.modal-sm
+        .modal-content
+            .modal-header
+                h4 Week
+                a.close.pull-right(type='button', data-dismiss='modal')
+                    img(src="assets/img/close_btn.png", alt="")
+            .modal-body(role='menu', aria-labelledby='week-position')
+                div.modal-menu(role='presentation')
+                    a(data-dismiss='modal', role='menuitem', tabindex='-1', value="#week3") Week 3
+                div.modal-menu(role='presentation')
+                    a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#week4') Week 4
+                div.modal-menu(role='presentation')
+                    a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#week5') Week 5
+
+
+div.row
+    button.mobile-menu.dropdown(type='button', data-toggle='modal', data-target='#weekModal') Choose Week
+    div.mobile-menu(data-toggle="tab" href="#manager1" role="tab")
+        div.number
+            p 1
+        p MattRyan1
+div.row
+    div.mobile-menu(data-toggle="tab" href="#manager2" role="tab")
+        div.number
+            p 1
+        p MattRyan2
+    div.mobile-menu(data-toggle="tab" href="#manager3" role="tab")
+        div.number
+            p 1
+        p MattRyan3
+div.row
+    div.mobile-menu(data-toggle="tab" href="#manager4" role="tab")
+        div.number
+            p 1
+        p MattRyan4
+    div.mobile-menu(data-toggle="tab" href="#manager5" role="tab")
+        div.number
+            p 1
+        p MattRyan5 
+
+div.tab-content(id="top5-manager-content")
+    div(role='tabpanel' class='tab-pane active top-level-panel2' id='week3')
+        div.content
+            div.row
+                div.col-lg-12
+                    ul.nav.menu(role="tablist")
+                        li.nav-item
+                            a.nav-link.active(data-toggle="tab" href="#manager1" role="tab")
+                                div.menu-item.top-5
+                                    div.players 
+                                        div.player-thumbnail
+                                        div.number
+                                            p 1
+                                        div.player-thumbnail-name
+                                            p MattRyan1
+                        li.nav-item
+                            a.nav-link(data-toggle="tab" href="#manager2" role="tab")
+                                div.menu-item.top-5
+                                    div.players 
+                                        div.player-thumbnail
+                                        div.number
+                                            p 2
+                                        div.player-thumbnail-name
+                                            p MattRyan2
+                        li.nav-item
+                            a.nav-link(data-toggle="tab" href="#manager3" role="tab")
+                                div.menu-item.top-5
+                                    div.players 
+                                        div.player-thumbnail
+                                        div.number
+                                            p 3
+                                        div.player-thumbnail-name
+                                            p MattRyan3
+                        li.nav-item
+                            a.nav-link(data-toggle="tab" href="#manager4" role="tab")
+                                div.menu-item.top-5
+                                    div.players 
+                                        div.player-thumbnail
+                                        div.number
+                                            p 4
+                                        div.player-thumbnail-name
+                                            p MattRyan4
+                        li.nav-item
+                            a.nav-link(data-toggle="tab" href="#manager5" role="tab")
+                                div.menu-item.top-5
+                                    div.players 
+                                        div.player-thumbnail
+                                        div.number
+                                            p 5
+                                        div.player-thumbnail-name
+                                            p MattRyan5
+
+
+                    div.tab-content
+                        div.tab-pane.active(id="manager1" role="tabpanel")
+                            div.row.player
+                                div.manager-image
+                                    div.manager-image-inner
+                                        div.number
+                                            p 1
+                                        div.name
+                                            p Matt Ryan1
+                                        p.points 121.5 PTS 
+                                div.manager-section
+                                    div.manager-info
+                                        div.managed-team
+                                            p Team Name
+                                            h5 LoremFC
+                                        div.managed-points
+                                            p FP points
+                                            h5 121.5
+                                    div.table-responsive.team-name
+                                        div.table-mw
+                                            table.table.table-striped
+                                                thead
+                                                    tr
+                                                        th.t-playername Name1
+                                                        th.t-position POS1
+                                                        th.t-fp FP1
+                                                        th.t-salary Salary1
+                                        div.table-scroll
+                                            table.table.table-striped
+                                                tbody
+                                                    tr
+                                                        td.t-playername Tom Brady
+                                                        td.t-position QB
+                                                        td.t-fp 18.11
+                                                        td.t-salary $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td Tom Brady
+                                                        td QB
+                                                        td 18.11
+                                                        td $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                             
+
+                        div.tab-pane(id="manager2" role="tabpanel")
+                            div.row.player
+                                div.manager-image
+                                    div.manager-image-inner
+                                        div.number
+                                            p 2
+                                        div.name
+                                            p Matt Ryan1
+                                        p.points 122.5 PTS 
+                                div.manager-section
+                                    div.manager-info
+                                        div.managed-team
+                                            p Team Name
+                                            h5 LoremFC
+                                        div.managed-points
+                                            p FP points
+                                            h5 122.5
+                                    div.table-responsive.team-name
+                                        div.table-mw
+                                            table.table.table-striped
+                                                thead
+                                                    tr
+                                                        th.t-playername Name2
+                                                        th.t-position POS2
+                                                        th.t-fp FP2
+                                                        th.t-salary Salary2
+                                        div.table-scroll
+                                            table.table.table-striped
+                                                tbody
+                                                    tr
+                                                        td.t-playername Tom Brady
+                                                        td.t-position QB
+                                                        td.t-fp 18.11
+                                                        td.t-salary $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td Tom Brady
+                                                        td QB
+                                                        td 18.11
+                                                        td $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+
+                        div.tab-pane(id="manager3" role="tabpanel")
+                            div.row.player
+                                div.manager-image
+                                    div.manager-image-inner
+                                        div.number
+                                            p 3
+                                        div.name
+                                            p Matt Ryan1
+                                        p.points 123.5 PTS 
+                                div.manager-section
+                                    div.manager-info
+                                        div.managed-team
+                                            p Team Name
+                                            h5 LoremFC
+                                        div.managed-points
+                                            p FP points
+                                            h5 123.5
+                                    div.table-responsive.team-name
+                                        div.table-mw
+                                            table.table.table-striped
+                                                thead
+                                                    tr
+                                                        th.t-playername Name3
+                                                        th.t-position POS3
+                                                        th.t-fp FP3
+                                                        th.t-salary Salary3
+                                        div.table-scroll
+                                            table.table.table-striped
+                                                tbody
+                                                    tr
+                                                        td.t-playername Tom Brady
+                                                        td.t-position QB
+                                                        td.t-fp 18.11
+                                                        td.t-salary $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td Tom Brady
+                                                        td QB
+                                                        td 18.11
+                                                        td $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+
+                        div.tab-pane(id="manager4" role="tabpanel")
+                            div.row.player
+                                div.manager-image
+                                    div.manager-image-inner
+                                        div.number
+                                            p 4
+                                        div.name
+                                            p Matt Ryan4
+                                        p.points 124.5 PTS 
+                                div.manager-section
+                                    div.manager-info
+                                        div.managed-team
+                                            p Team Name
+                                            h5 LoremFC
+                                        div.managed-points
+                                            p FP points
+                                            h5 124.5
+                                    div.table-responsive.team-name
+                                        div.table-mw
+                                            table.table.table-striped
+                                                thead
+                                                    tr
+                                                        th.t-playername Name4
+                                                        th.t-position POS4
+                                                        th.t-fp FP4
+                                                        th.t-salary Salary4
+                                        div.table-scroll
+                                            table.table.table-striped
+                                                tbody
+                                                    tr
+                                                        td.t-playername Tom Brady
+                                                        td.t-position QB
+                                                        td.t-fp 18.11
+                                                        td.t-salary $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td Tom Brady
+                                                        td QB
+                                                        td 18.11
+                                                        td $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+
+                        div.tab-pane(id="manager5" role="tabpanel")
+                            div.row.player
+                                div.manager-image
+                                    div.manager-image-inner
+                                        div.number
+                                            p 5
+                                        div.name
+                                            p Matt Ryan5
+                                        p.points 121.5 PTS 
+                                div.manager-section
+                                    div.manager-info
+                                        div.managed-team
+                                            p Team Name
+                                            h5 LoremFC
+                                        div.managed-points
+                                            p FP points
+                                            h5 125.5
+                                    div.table-responsive.team-name
+                                        div.table-mw
+                                            table.table.table-striped
+                                                thead
+                                                    tr
+                                                        th.t-playername Name5
+                                                        th.t-position POS5
+                                                        th.t-fp FP5
+                                                        th.t-salary Salary5
+                                        div.table-scroll
+                                            table.table.table-striped
+                                                tbody
+                                                    tr
+                                                        td.t-playername Tom Brady
+                                                        td.t-position QB
+                                                        td.t-fp 18.11
+                                                        td.t-salary $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td Tom Brady
+                                                        td QB
+                                                        td 18.11
+                                                        td $7700
+                                                    tr
+                                                        td Ezekiel Elliot
+                                                        td RB
+                                                        td 15.11
+                                                        td $8300
+                                                    tr
+                                                        td Todd Gurley
+                                                        td RB
+                                                        td 13.43
+                                                        td $6800
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+                                                    tr
+                                                        td AJ Green
+                                                        td WR
+                                                        td 10.72
+                                                        td $7100
+    div(role='tabpanel' class='tab-pane top-level-panel2' id='week4')
+        p week 4
+    div(role='tabpanel' class='tab-pane top-level-panel2' id='week5')
+        p week 5
+
+script(type='text/javascript').
+    $("#dropdown-in-week li a").click(function(){
+        $(this).parents(".dropdown").find('.btn').html($(this).text() + '<i class="fa fa-caret-down"></i>');
+        $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+        $('#top5-manager-content .top-level-panel2').hide('tab');
+        $($(this).attr('value')).show('tab');
+    });
+    $(".modal-content .modal-body a").click(function(){
+        $('#top5-manager-content .top-level-panel2').hide('tab');
+        $($(this).attr('value')).show('tab');
+        $("h5.text-center.visible-xxs.subtitle span.week").html($(this).text());
+        $('#weekModal').modal('hide');
+    });
