@@ -1,0 +1,25 @@
+section.nl-section.nl-players.homepage
+	div.container
+		div.row.sports-options
+			h3.title.col-lg-6 Pick Your Sport:
+			div.sports-icon.col-lg-6
+				img(src="assets/img/football.png", alt="", class="sports")
+				img(src="assets/img/basketball.png", alt="", class="sports")
+				img(src="assets/img/americanfootball.png", alt="", class="sports")
+				img(src="assets/img/baseball.png", alt="", class="sports")
+				img(src="assets/img/cricket.png", alt="", class="sports")
+				img(src="assets/img/hockey.png", alt="", class="sports")
+				img(src="assets/img/mma.png", alt="", class="sports")
+
+
+		div.row
+			div.col-lg-6.position
+				include _homepage/top5-player
+			div.col-lg-6.week
+				include _homepage/top5-manager
+
+		div.row
+			div.col-lg-6.field
+				include _homepage/field
+			div.col-lg-6.contests
+				include _homepage/upcoming_contest

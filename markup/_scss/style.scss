@@ -52,11 +52,13 @@
 @import "layouts/_enter-contasts-modal.scss";
 
 
-
+@import "sections/homepage";
+@import "sections/soccer-field";
 @import "sections/nl-section";
 @import "sections/nl-players";
 @import "sections/nl-my-teams";
 @import "sections/nl-create-team";
+
 
 @import "sections/login";
 @import "sections/register";
@@ -73,10 +75,4 @@
 @import "sections/_my_balances";
 @import "sections/_terms-conditions";
 
-
 @import "elements/nl-theme-selector";
-
-
-
-
-

@@ -1,0 +1,1066 @@
+/*general for homepage*/
+button:focus {
+  outline: none;
+}
+
+.sports-options {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @include respond-to(allsmall) {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .title {
+    text-align: right;
+
+    @include respond-to(allsmall) {
+      text-align: center;
+    }
+  }
+
+  .sports-icon {
+    margin-top: -8px;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+
+    @include respond-to(allsmall) {
+      text-align: center;
+      margin: 8px 0 15px 0;
+    }
+
+    .sports {
+      display: inline-block;
+      max-width: 42px;
+      margin: 0 3px;
+      padding: 0;
+      width: auto;
+
+
+      @include respond-to(allmobile) {
+        max-width: 32px;
+      }
+    }
+  }
+}
+
+.visible-xxs {
+  display: block;
+
+  @include respond-to(tablets) {
+    display: none;
+  }
+
+  @include respond-to(allwide) {
+    display: none;
+  }
+}
+
+.hidden-xxs {
+  display: none;
+
+  @include respond-to(tablets) {
+    display: block;
+  }
+
+  @include respond-to(allwide) {
+    display: block;
+  }
+}
+
+.col-lg-6 {
+  &.week,
+  &.position {
+      @include respond-to(wide-tablets) {
+        padding: 0 !important;
+    }
+  }
+
+  &.field,
+  &.contests {
+    margin: 0 auto 50px auto;
+    padding: 0 30px;
+    
+    @include respond-to(wide-tablets) {
+        max-width: 100% !important;
+        margin: 0 auto 50px auto;
+    }
+    @include respond-to(medium-display) {
+        margin: 30px auto 0 auto;
+        max-width: 100% !important;
+    }
+  }
+
+  &.contests {
+    @include respond-to(allmobile) {
+        margin: 40px auto 0 auto;
+    }
+  }
+
+  &.field {
+    @include respond-to(allmobile) {
+        margin: 80px auto 0 auto;
+    }
+  }
+}
+
+.container {
+
+  @include respond-to(wide-tablets) {
+    width: 100%;
+  }
+
+  @include respond-to(medium-display) {
+    width: 100%;
+    max-width: 1600px;
+  }
+}
+
+.position,
+.week {
+  
+  @include respond-to(allwide) {
+    min-height: 500px;
+  }
+
+  h5 {
+    font-weight: 400;
+
+    &.hidden-xxs {
+      font-weight: 700;
+    }
+
+    &.visible-xxs {
+      font-weight: 700;
+    }
+  }
+}
+
+#top5-player-content,
+#top5-manager-content {
+  @include respond-to(allmobile) {
+    min-height: 200px;
+  }
+}
+
+.subtitle {
+  text-align: left;
+
+  @include respond-to(tablets) {
+    margin-bottom: 25px;
+    margin-left: 15px;
+    height: 40px;
+  }
+
+  @include respond-to(allwide) {
+    margin-bottom: 25px;
+    margin-left: 15px;
+    height: 40px;
+  }
+
+  span {
+    color: #e89708;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    i {
+      padding-left: 10px;
+    }
+  }
+}
+
+.dropdown {
+  &.player-position,
+  &.week-position {
+    display: inline-block;
+
+    .btn-primary {
+      color: #e89708;
+      background-color: transparent;
+      background-image: none;
+      border-color: transparent;
+      width: auto;
+      text-align: left;
+      margin: 0 auto 0 -35px;
+      display: block;
+      font-weight: 700;
+      font-size: 1.375rem;
+
+      &:active,
+      &:hover,
+      &:visited {
+        border: none !important;
+        box-shadow: none !important;
+      }
+    }
+
+    h5 {
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      min-width: 180px;
+      padding-left: 8px;
+      margin-left: -15px;
+      margin-top: -10px;
+
+      &:hover {
+        border: 0;
+        box-shadow: 0;
+      }
+    }
+  }
+}
+
+.modal-header {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.modal-content {
+  background: #0f254f;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+
+  a {
+    display: block;
+    padding: 5px;
+    float: none;
+    opacity: 1;
+    border-radius: none;
+    box-shadow: none;
+    background: #e89608; /* Old browsers */
+    background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
+
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .modal-header {
+    border: none;
+    padding-bottom: 0;
+
+    .close {
+      height: 30px;
+      width: 30px;
+      opacity: 1;
+
+      &.a {
+        background: transparent;
+      }
+
+      img {
+        width: 30px;
+        margin-top: -7px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+.modal-menu {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 3px;
+  background: #e89608; /* Old browsers */
+  background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
+
+  a {
+    text-shadow: none;
+  }
+}
+
+.nav-item {
+  width: 19.5%;
+}
+
+.mobile-menu {
+  width: 49.5%;
+  background: #0f254f;
+  margin: 1px auto;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 40px;
+
+  .number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #e89608; /* Old browsers */
+    background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
+    padding-top: 3px;
+  }
+
+  p {
+    display: inline-block;
+    padding: 8px 0 0 15px;
+  }
+
+  &.dropdown {
+    background: #e89608; /* Old browsers */
+    background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
+    padding-top: 3px;
+    box-shadow: none;
+    border: none;
+
+    i {
+      float: right;
+      padding-right: 20px;
+      padding-top: 2px;
+      font-size: 22px;
+    }
+  }
+
+  @include respond-to(tablets) {
+    display: none;
+  }
+
+  @include respond-to(allwide) {
+    display: none;
+  }
+}
+
+.player-name,
+.manager-name {
+  width: 100%;
+  background: #0f254f;
+  margin: 0 auto;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  .number {
+    display: inline-block;
+    width: 40px;
+    background: #e89608; /* Old browsers */
+    background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
+  }
+
+  p {
+    display: inline-block;
+    padding: 12px 0 0 8px;
+    font-size: 15px;
+
+    &.points {
+      color: #e89708;
+      float: right;
+      padding-left: 10px;
+    }
+  }
+
+  @include respond-to(allmobile) {
+    padding-left: 0;
+  }
+}
+
+.data {
+  width: 50%;
+}
+
+.menu {
+  .nav-link {
+    padding: 0;
+  }
+}
+.menu-item {
+  font-size: 0;
+  letter-spacing: 0;
+  word-spacing: 0;
+
+  .menu-item {
+    display: inline-block;
+    width: 20%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .players,
+  .managers {
+    position: relative;
+    padding: 0 5px;
+
+    @include respond-to(allwide) {
+      padding: 0 2px;
+    }
+  }
+
+  .player-thumbnail {
+    height: 100px;
+    background: url(../img/player1.png) top center no-repeat;
+    background-size: cover;
+    
+
+    @include respond-to(wide-tablets) {
+      height: 55px;
+    }
+
+    @include respond-to(medium-display) {
+      height: 70px;
+    }
+
+    @include respond-to(wide-display) {
+      height: 70px;
+    }
+
+    @include respond-to(large-display) {
+      height: 80px;
+    }
+  }
+
+  .number {
+    position: absolute;
+    top: 103px;
+    width: 22px;
+    height: 22px;
+    background: #e89608;
+    background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
+    font-size: 15px;
+    padding-left: 8px;
+    padding-top: 1px;
+    display: inline-block;
+    margin-top: -3px;
+    color: #ffffff;
+
+    @include respond-to(wide-tablets) {
+      top: 58px;
+      left: 0;
+      font-size: 10px;
+      width: 18px;
+      height: 18px;
+    }
+
+    @include respond-to(medium-display) {
+      top: 73px;
+      left: 2px;
+      font-size: 10px;
+      width: 18px;
+      height: 18px;
+    }
+
+    @include respond-to(wide-display) {
+      top: 73px;
+      left: 2px;
+      font-size: 10px;
+      width: 18px;
+      height: 18px;
+    }
+
+    @include respond-to(large-display) {
+      top: 83px;
+      font-size: 10px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .player-thumbnail-name {
+    background: #0f254f;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    height: 22px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    p {
+      padding: 2px 5px 5px 15px;
+    }
+
+    @include respond-to(wide-tablets) {
+      font-size: 10px;
+      height: 18px;
+
+      p {
+        padding-left: 20px;
+        padding-top: 1px;
+      }
+    }
+
+    @include respond-to(medium-display) {
+      font-size: 10px;
+      height: 18px;
+
+      p {
+        padding-left: 20px;
+        padding-top: 0;
+      }
+    }
+
+    @include respond-to(wide-display) {
+      font-size: 10px;
+      height: 18px;
+
+      p {
+        padding-left: 20px;
+        padding-top: 0;
+      }
+    }
+
+    @include respond-to(large-display) {
+      font-size: 10px;
+      height: 18px;
+
+      p {
+        padding-left: 20px;
+        padding-top: 0;
+        margin-top: -2px;
+      }
+    }
+  }
+}
+
+
+.player-image-inner,
+.manager-image-inner {
+  background: #0f254f;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-transform: uppercase;
+  height: 40px;
+
+  @include respond-to(allmobile) {
+    width: calc(100% - 50px);
+    margin: 0 25px;
+  }
+
+  .number {
+    display: inline-block;
+    width: 30px;
+    background: #e89608; /* Old browsers */
+    background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
+  }
+
+  .name {
+    position: absolute;
+      top: 7px;
+      left: 60px;
+
+      p {
+        font-size: 14px;
+        margin-left: -15px;
+      }
+  }
+
+  p {
+    display: inline-block;
+    padding: 5px 0 0 8px;
+    font-size: 15px;
+
+    &.points {
+      color: #e89708;
+      float: right;
+      padding-right: 10px;
+      padding-top: 12px;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &.name {
+      padding-top:8px !important;
+      padding-left: 10px;
+    }
+  }
+
+  .number {
+    width: 40px;
+    height: 40px;
+    padding-left: 8px;
+
+
+    p {
+      font-size: 28px;
+      padding-top: 12px;
+    }
+  }
+}
+
+.top-5 {
+  text-transform: uppercase;
+  display: none;
+
+  @include respond-to(tablets) {
+    display: block;
+  }
+
+  @include respond-to(allwide) {
+    display: block;
+  }
+}
+
+.top-5-mobile {
+  text-transform: uppercase;
+  display: block;
+
+  @include respond-to(tablets) {
+    display: none;
+  }
+
+  @include respond-to(allwide) {
+    display: none;
+  }
+}
+
+/*player*/
+.player-image {
+  background: url(../img/player1.png) top center no-repeat;
+  width: 100%;
+  height: 180px;
+  background-size: 236px 100%;
+  margin-top: 20px;
+
+  @include respond-to(tablets) {
+    width: 60%;
+    height: 267px;
+    position: relative;
+    background-size: cover;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+
+  @include respond-to(allwide) {
+    width: 60%;
+    height: 307px;
+    position: relative;
+    background-size: cover;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+
+  @include respond-to(wide-tablets) {
+    margin: 0 auto;
+    height: 280px;
+  }
+
+  @include respond-to(medium-display) {
+    width: 60%;
+    height: 310px;
+    position: relative;
+    background-size: cover;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+}
+
+.player {
+  margin-top: 0;
+  padding: 0;
+
+  @include respond-to(tablets) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 30px 0 28px;
+  }
+
+  @include respond-to(allwide) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 30px 0 28px;
+  }
+
+  @include respond-to(medium-display) {
+    min-height: 310px;
+  }
+}
+
+.player-info {
+  width: 40%;
+  background: #0f254f;
+  border: 1px solid #0f254f;
+  border-radius: 10px 10px 10px 0; 
+  color: #ffffff;
+  padding: 14px;
+  display: none;
+  text-transform: uppercase;
+
+  p {
+    color: #e89708;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+
+  h5 {
+    margin-bottom: 15px;
+
+    @include respond-to(tablets) {
+      margin-bottom: 22px;
+    }
+
+    @include respond-to(allwide) {
+      margin-bottom: 28px;
+    }
+  }
+
+  i {
+    font-size: 24px;
+    color: #e89708;
+    padding-left: 20px;
+  }
+
+  @include respond-to(tablets) {
+    display: inline-block !important;
+  }
+
+  @include respond-to(allwide) {
+    display: inline-block !important;
+  }
+}
+
+.player-list {
+  width: 20%;
+}
+
+/*week or manager*/
+.manager-name {
+  margin-top: 20px;
+}
+
+.week {
+  margin-top: 0;
+
+  @include respond-to(allmobile) {
+    margin-top: 30px;
+  }
+}
+
+.team-name {
+  padding-left: 0;
+
+  @include respond-to(allmobile) {
+    padding: 0;
+  }
+}
+
+.manager-image {
+  background: url(../img/player1.png) top center no-repeat;
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  background-size: 236px 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 40%;
+    height: 280px;
+    position: relative;
+    background-size: cover;
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: 1201px) {
+    width: 40%;
+    height: 310px;
+    position: relative;
+    background-size: cover;
+    background-color: transparent;
+  }
+
+  .manager-image-inner {
+
+    @include respond-to(allmobile) {
+      bottom: -40px;
+    }
+  }
+}
+
+.manager {
+  padding: 0 18px 0 30px;
+  margin-top: 20px;
+
+  @include respond-to(allmobile)  {
+    padding: 0;
+    margin-top: 48px;
+  }
+}
+
+.manager-section {
+  padding: 0;
+  width: 60%;
+
+  @include respond-to(allmobile)  {
+    width: 100%;
+    margin: 0 25px;
+  }
+}
+
+.manager-info {
+  background: #0f254f;
+  color: #ffffff;
+  text-transform: uppercase;
+  height: 81px;
+  padding: 15px;
+
+  p {
+    color: #e89708;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+
+  h5 {
+    margin-bottom: 15px;
+  }
+
+  i {
+    font-size: 24px;
+    color: #e89708;
+    padding-left: 20px;
+  }
+
+  @include respond-to(handhelds) {
+    margin: 20px 0 0 0;
+    height: 57px;
+    padding: 10px;
+  }
+
+  @include respond-to(wide-handhelds) {
+    margin: 20px 0 0 0;
+    height: 67px;
+    padding: 10px;
+  }
+}
+
+.managed-team {
+  float: left;
+}
+
+.managed-points {
+  float: right;
+}
+
+.manager-section {
+  .table td, .table th {
+    font-size: 12px;
+    padding: 1px 3px;
+  }
+}
+
+.t-playername {
+  width: 40%;
+}
+
+.t-position,
+.t-fp,
+.t-salary {
+  width: 20%;
+}
+
+/*upcoming contests*/
+.homepage-table {
+  .homepage {
+    .tab-content {
+      border-radius: 0 !important;
+    }
+    .table {
+      border-radius: 0 !important; 
+    }
+  }
+  .nav-item {
+      width: 25%;
+      margin: 0;
+
+      @media screen and (min-width: 420px) and (max-width: 499px) {
+        width: auto;
+        min-width: 65px;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 420px) {
+        width: auto;
+        min-width: 65px;
+      }
+  }
+
+  .nav-tabs {
+    padding: 10px 10px 0 10px;
+    background-color: #1d2d4e;
+    margin-bottom: -3px;
+
+    .nav-item:first-child {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.nl-team-info {
+  &.my-teams {
+    max-width: 100%;
+
+    @include respond-to(allmobile) {
+      max-width: 80%;
+    }
+  }
+}
+
+.edit-team {
+    width: 35%;
+    display: inline-block;
+    margin-top: -45px;
+    padding-left: 50px;
+    padding-right: 30px;
+    vertical-align: middle;
+
+    @include respond-to(allmobile) {
+      width: 60%;
+      margin-top: 10px;
+      padding-left: 25px;
+      max-width: 180px;
+    }
+}
+
+.my-teams-data {
+  width: 60%;
+  display: inline-block;
+
+  .col-6 {
+    color: #e48706;
+
+    span {
+      color: #ffffff;
+    }
+  }
+
+  @include respond-to(allmobile) {
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+
+.homepage-fieldpage {
+  .dropdown {
+    margin-top: 30px;
+
+    .btn-primary {
+      width: 100% !important;
+      border: 1px solid #e1e2e4;
+      height: 40px;
+      font-size: 12px;
+
+      @include respond-to(allmobile) {
+        margin: -10px 0 0 0;
+      }
+
+      i {
+        float: right;
+      }
+    }
+
+    .dropdown-menu {
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      li {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  @include respond-to(wide-tablets) {
+    width: 100%;
+  }
+}
+
+.nl-player-block--data {
+    p {
+      span:nth-last-child(1) {
+        padding-left: 20px;
+      }
+    }
+  }
+
+.nl-team-list {
+  &.homepage-updated {
+    max-width: 100% !important;
+  }
+}
+
+.field-dropdown {
+  width: 100% !important;
+
+  .nl-team-600 {
+    margin-top: 0 !important;
+  } 
+}
+
+.nl-table-scroll {
+  &.height-max {
+    max-height: 615px !important;
+    overflow: scroll;
+  }
+}
+
+.homepage-field-player {
+  max-width: 95px !important;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  &.homepage-list-view {
+    width: 25%;
+
+    @include respond-to(handhelds) {
+      width: 67% !important;
+    }
+  }
+}
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4),
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
+  &.homepage-list-view {
+    width: 25%;
+    @include respond-to(handhelds) {
+      width: 11% !important;
+    }
+  }
+}
+
+.homepage-list-view {
+  font-size: 12px !important;
+}
+
+.nl-my-teams {
+  .nl-team-card {
+    padding: 2rem;
+
+    @include respond-to(allmobile) {
+      padding: 1rem !important;
+    }
+
+    img {
+      @include respond-to(allmobile) {
+        display: none;
+      }
+    }
+  }
+}
+.homepage-table {
+  .nl-contests-table {
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 30% !important;
+    }
+  }
+
+  td, th {
+    @include respond-to(allmobile) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
