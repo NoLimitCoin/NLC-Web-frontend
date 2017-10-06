@@ -10745,8 +10745,7 @@ button:focus {
         margin-bottom: 28px; } }
   .player-info i {
     font-size: 24px;
-    color: #e89708;
-    padding-left: 20px; }
+    color: #ffffff; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .player-info {
       display: inline-block !important; } }
