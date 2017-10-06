@@ -294,7 +294,7 @@
     padding: 0.25rem 0.5rem;
 
     &:first-child {
-      padding-left: calculateRem(18px);
+      padding-left: 0.5rem;
     }
   }
   td:not(:first-child), .table th:not(:first-child) {
@@ -364,7 +364,8 @@
   }
   .nl-players-search {
     position: absolute;
-    min-width: calculateRem(353px);
+    min-width: 9.75rem;
+    max-width: 10rem;
     bottom: calculateRem(-33px);
     right: calculateRem(3px);
 

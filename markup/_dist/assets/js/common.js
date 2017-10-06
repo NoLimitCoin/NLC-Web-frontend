@@ -170,7 +170,7 @@ $(function () {
         imgSrc = position == 'G' ? 'assets/img/img-goalkeeper.png' : 'assets/img/img-players.png';
 
         if($('.nl-team-field').hasClass('football')){
-            imgSrc = 'assets/img/football/img-'+ position +'.png';
+            imgSrc = 'assets/img/football/'+ position +'.png';
         }
         var cl = "nl-" + position + "-position";
         var tempElement = $('<div class="nl-player-block ' + cl + ' " data-position="' + position + '"><img src="' + imgSrc + '" alt="goalkeeper">\n' +
