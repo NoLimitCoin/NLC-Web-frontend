@@ -10923,8 +10923,7 @@ button:focus {
     margin-top: 0 !important; }
 
 .nl-table-scroll.height-max {
-  max-height: 615px !important;
-  overflow: scroll; }
+  max-height: 615px !important; }
 
 .homepage-field-player {
   max-width: 95px !important; }
