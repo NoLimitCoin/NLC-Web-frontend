@@ -1,6 +1,28 @@
+
 /*general for homepage*/
+.homepage {
+  .container-wider {
+
+    @include respond-to(allmobile) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    @include respond-to(wide-tablets) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+  }
+}
+
+
 button:focus {
   outline: none;
+}
+
+.homepage {
+  .container-wider {
+    margin: 0 auto;
+  }
 }
 
 .sports-options {
@@ -73,23 +95,29 @@ button:focus {
 .col-lg-6 {
   &.week,
   &.position {
-      @include respond-to(wide-tablets) {
+    padding: 0 20px;
+
+    @include respond-to(wide-tablets) {
         padding: 0 !important;
     }
   }
 
   &.field,
   &.contests {
-    margin: 0 auto 50px auto;
-    padding: 0 30px;
+
+    @include respond-to(allwide) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    @include respond-to(medium-display) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
     
     @include respond-to(wide-tablets) {
         max-width: 100% !important;
         margin: 0 auto 50px auto;
-    }
-    @include respond-to(medium-display) {
-        margin: 30px auto 0 auto;
-        max-width: 100% !important;
     }
   }
 
@@ -142,6 +170,11 @@ button:focus {
 #top5-manager-content {
   @include respond-to(allmobile) {
     min-height: 200px;
+  }
+
+  .nav {
+    padding-left: 10px;
+    margin-right: -10px;
   }
 }
 
@@ -677,6 +710,15 @@ button:focus {
   }
 }
 
+#top5-player-content {
+  .player {
+    @include respond-to(tablets) {
+      width: 80%;
+      margin: 20px auto 50px auto;
+    }
+  }
+}
+
 .player-info {
   width: 40%;
   background: #0f254f;
@@ -939,6 +981,10 @@ button:focus {
 }
 
 .homepage-fieldpage {
+  @include respond-to(tablets) {
+      padding-right: 15px;
+      padding-left: 15px;
+  }
   .dropdown {
     margin-top: 30px;
 
@@ -1048,6 +1094,10 @@ td:nth-child(4) {
   }
 }
 .homepage-table {
+  @include respond-to(tablets) {
+      padding-right: 15px;
+      padding-left: 15px;
+  }
   .nl-contests-table {
     th:nth-child(1),
     td:nth-child(1) {
@@ -1059,6 +1109,77 @@ td:nth-child(4) {
     @include respond-to(allmobile) {
       font-size: 12px;
       line-height: 16px;
+    }
+  }
+}
+
+.homepage-contest-content {
+  th {
+    font-size: 0.8rem !important;
+  }
+
+  td:nth-child(1) {
+    width: 33% !important;
+  }
+
+  td:nth-child(2) {
+    width: 12% !important;
+  }
+
+  td:nth-child(3) {
+    width: 10% !important;
+  }
+
+  td:nth-child(4) {
+    width: 10% !important;
+  }
+
+  td:nth-child(5) {
+    width: 10% !important;
+  }
+
+  td:nth-child(6) {
+    width: 15% !important;
+  }
+
+  td:nth-child(7) {
+    width: 10% !important;
+  }
+
+  th:nth-child(1) {
+    width: 33% !important;
+  }
+
+  th:nth-child(2) {
+    width: 12% !important;
+  }
+
+  th:nth-child(3) {
+    width: 10% !important;
+  }
+
+  th:nth-child(4) {
+    width: 10% !important;
+  }
+
+  th:nth-child(5) {
+    width: 10% !important;
+  }
+
+  th:nth-child(6) {
+    width: 14% !important;
+  }
+
+  th:nth-child(7) {
+    width: 13% !important;
+  }
+}
+
+.upcoming-contests {
+  h5 {
+    @include respond-to(tablets) {
+        padding-left: 15px;
+        padding-top: 30px;
     }
   }
 }

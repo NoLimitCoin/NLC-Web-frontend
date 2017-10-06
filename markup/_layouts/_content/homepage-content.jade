@@ -1,5 +1,5 @@
 section.nl-section.nl-players.homepage
-	div.container
+	div.container-wider
 		div.row.sports-options
 			h3.title.col-lg-6 Pick Your Sport:
 			div.sports-icon.col-lg-6
@@ -13,13 +13,13 @@ section.nl-section.nl-players.homepage
 
 
 		div.row
-			div.col-lg-6.position
+			div.col-lg-6.col-xl-5.position
 				include _homepage/top5-player
-			div.col-lg-6.week
+			div.col-lg-6.offset-xl-1.col-xl-6.week
 				include _homepage/top5-manager
 
 		div.row
-			div.col-lg-6.field
+			div.col-lg-6.col-xl-5.field
 				include _homepage/field
-			div.col-lg-6.contests
+			div.col-lg-6.offset-xl-1.col-xl-6.contests
 				include _homepage/upcoming_contest

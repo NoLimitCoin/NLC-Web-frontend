@@ -10159,8 +10159,21 @@ p {
   background-color: #fff; }
 
 /*general for homepage*/
+@media (max-width: 767px) {
+  .homepage .container-wider {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .homepage .container-wider {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
 button:focus {
   outline: none; }
+
+.homepage .container-wider {
+  margin: 0 auto; }
 
 .sports-options {
   margin-top: 20px;
@@ -10211,21 +10224,26 @@ button:focus {
     .hidden-xxs {
       display: block; } }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .col-lg-6.week, .col-lg-6.position {
-    padding: 0 !important; } }
-
-.col-lg-6.field, .col-lg-6.contests {
-  margin: 0 auto 50px auto;
-  padding: 0 30px; }
+.col-lg-6.week, .col-lg-6.position {
+  padding: 0 20px; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .col-lg-6.field, .col-lg-6.contests {
-      max-width: 100% !important;
-      margin: 0 auto 50px auto; } }
-  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-    .col-lg-6.field, .col-lg-6.contests {
-      margin: 30px auto 0 auto;
-      max-width: 100% !important; } }
+    .col-lg-6.week, .col-lg-6.position {
+      padding: 0 !important; } }
+
+@media (min-width: 992px) {
+  .col-lg-6.field, .col-lg-6.contests {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  .col-lg-6.field, .col-lg-6.contests {
+    padding-right: 30px;
+    padding-left: 30px; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .col-lg-6.field, .col-lg-6.contests {
+    max-width: 100% !important;
+    margin: 0 auto 50px auto; } }
 
 @media (max-width: 767px) {
   .col-lg-6.contests {
@@ -10263,6 +10281,11 @@ button:focus {
   #top5-player-content,
   #top5-manager-content {
     min-height: 200px; } }
+
+#top5-player-content .nav,
+#top5-manager-content .nav {
+  padding-left: 10px;
+  margin-right: -10px; }
 
 .subtitle {
   text-align: left; }
@@ -10693,6 +10716,11 @@ button:focus {
     .player {
       min-height: 310px; } }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #top5-player-content .player {
+    width: 80%;
+    margin: 20px auto 50px auto; } }
+
 .player-info {
   width: 40%;
   background: #0f254f;
@@ -10889,6 +10917,11 @@ button:focus {
       width: 100%;
       padding-left: 10px; } }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .homepage-fieldpage {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
 .homepage-fieldpage .dropdown {
   margin-top: 30px; }
   .homepage-fieldpage .dropdown .btn-primary {
@@ -10964,6 +10997,11 @@ td:nth-child(4).homepage-list-view {
     .nl-my-teams .nl-team-card img {
       display: none; } }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .homepage-table {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
 .homepage-table .nl-contests-table th:nth-child(1),
 .homepage-table .nl-contests-table td:nth-child(1) {
   width: 30% !important; }
@@ -10972,6 +11010,56 @@ td:nth-child(4).homepage-list-view {
   .homepage-table td, .homepage-table th {
     font-size: 12px;
     line-height: 16px; } }
+
+.homepage-contest-content th {
+  font-size: 0.8rem !important; }
+
+.homepage-contest-content td:nth-child(1) {
+  width: 33% !important; }
+
+.homepage-contest-content td:nth-child(2) {
+  width: 12% !important; }
+
+.homepage-contest-content td:nth-child(3) {
+  width: 10% !important; }
+
+.homepage-contest-content td:nth-child(4) {
+  width: 10% !important; }
+
+.homepage-contest-content td:nth-child(5) {
+  width: 10% !important; }
+
+.homepage-contest-content td:nth-child(6) {
+  width: 15% !important; }
+
+.homepage-contest-content td:nth-child(7) {
+  width: 10% !important; }
+
+.homepage-contest-content th:nth-child(1) {
+  width: 33% !important; }
+
+.homepage-contest-content th:nth-child(2) {
+  width: 12% !important; }
+
+.homepage-contest-content th:nth-child(3) {
+  width: 10% !important; }
+
+.homepage-contest-content th:nth-child(4) {
+  width: 10% !important; }
+
+.homepage-contest-content th:nth-child(5) {
+  width: 10% !important; }
+
+.homepage-contest-content th:nth-child(6) {
+  width: 14% !important; }
+
+.homepage-contest-content th:nth-child(7) {
+  width: 13% !important; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .upcoming-contests h5 {
+    padding-left: 15px;
+    padding-top: 30px; } }
 
 .nl-create-team {
   padding-left: 1.875rem;
