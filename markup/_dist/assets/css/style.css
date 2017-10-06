@@ -9364,8 +9364,7 @@ p {
 
 .nl-section h1 {
   font-size: 28px;
-  font-size: 1.75rem;
-  margin-bottom: 0.625rem; }
+  font-size: 1.75rem; }
 
 @media (max-width: 991px) {
   .nl-team-card.table-data-field h3 {
@@ -10500,6 +10499,11 @@ p {
       padding-bottom: 3.75rem; } }
   .nl-players img {
     width: auto; }
+  .nl-players .sports-filtering {
+    margin-top: 1rem; }
+    @media (max-width: 991px) {
+      .nl-players .sports-filtering {
+        margin-top: 0.5rem; } }
   .nl-players .nl-players-filter-title {
     font-size: 18px;
     font-size: 1.125rem;
@@ -11075,7 +11079,7 @@ p {
   .nl-team-info .nl-team-name {
     width: 100%;
     background: #121a31;
-    color: #e48706;
+    color: #FFF;
     font-size: 21px;
     font-size: 1.3125rem;
     font-weight: 700;
@@ -11106,6 +11110,11 @@ p {
   min-width: 100%;
   min-height: 573px;
   background-size: 100% 100%; }
+  .nl-team-field.soccer .nl-player-block img {
+    max-width: 69px; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-team-field.soccer .nl-player-block img {
+        max-width: 51px; } }
   .nl-team-field.football {
     background: url(../img/football/nl-football-field.png) no-repeat 0 0;
     background-size: contain;
@@ -11164,10 +11173,10 @@ p {
     bottom: 6.5%;
     left: 43%; }
   .player-main-block .nl-DL-position {
-    bottom: 28.5%;
+    bottom: 21.5%;
     left: 24%; }
   .player-main-block .nl-DR-position {
-    bottom: 28.5%;
+    bottom: 21.5%;
     right: 24%; }
   .player-main-block .nl-DAL-position {
     bottom: 35%;
@@ -11176,11 +11185,11 @@ p {
     bottom: 35%;
     right: 6%; }
   .player-main-block .nl-CM-position {
-    bottom: 42%;
-    left: 43%; }
+    bottom: 43%;
+    left: 40%; }
   .player-main-block .nl-ST-position {
     top: 2.5%;
-    left: 43%; }
+    left: 40%; }
   .player-main-block .nl-LS-position {
     top: 2.5%;
     left: 17%; }
@@ -11189,10 +11198,23 @@ p {
     right: 17%; }
   .player-main-block .nl-LWM-position {
     top: 25%;
-    left: 25%; }
+    left: 17%; }
   .player-main-block .nl-RWM-position {
     top: 25%;
-    right: 25%; }
+    right: 17%; }
+  @media (min-width: 1200px) {
+    .player-main-block .nl-CM-position {
+      bottom: 43%;
+      left: 43%; }
+    .player-main-block .nl-LWM-position {
+      top: 25%;
+      left: 25%; }
+    .player-main-block .nl-RWM-position {
+      top: 25%;
+      right: 25%; }
+    .player-main-block .nl-ST-position {
+      top: 2.5%;
+      left: 43%; } }
   .player-main-block.football {
     min-height: 511px;
     margin-top: 80px;
@@ -11640,7 +11662,7 @@ p {
       letter-spacing: 1px; }
   .nl-contests h1 {
     margin-bottom: 0;
-    padding: 1.25rem 0; }
+    padding: 0 0 1.25rem 0; }
 
 .nl-contests-table {
   margin-top: 1.875rem;
@@ -11833,7 +11855,8 @@ p {
 
 .nl-enter-contests .heading-search__header {
   margin-bottom: 0;
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0;
+  text-align: center; }
   @media (max-width: 768px) {
     .nl-enter-contests .heading-search__header {
       margin-left: 0; } }

@@ -109,7 +109,7 @@
   .nl-team-name {
     width: 100%;
     background: #121a31;
-    color: #e48706;
+    color: #FFF;
     @include fontSize(21px);
     font-weight: 700;
     text-align: center;
@@ -148,6 +148,17 @@
   min-width: 100%;
   min-height: 573px;
   background-size: 100% 100%;
+
+  &.soccer {
+    .nl-player-block{
+      img{
+        max-width: 69px;
+         @include respond-to(wide-tablets){
+          max-width: 51px;
+        }
+      }
+    }
+  }
 
   &.football{
     background: url(../img/football/nl-football-field.png) no-repeat 0 0;
@@ -219,11 +230,11 @@
   }
 
   .nl-DL-position{
-    bottom: 28.5%;
+    bottom: 21.5%;
     left: 24%;
   }
   .nl-DR-position{
-    bottom: 28.5%;
+    bottom: 21.5%;
     right: 24%;
   }
   .nl-DAL-position{
@@ -235,13 +246,13 @@
     right: 6%;
   }
   .nl-CM-position{
-    bottom: 42%;
-    left: 43%;
+    bottom: 43%;
+    left: 40%;
   }
 
   .nl-ST-position{
     top: 2.5%;
-    left: 43%;
+    left: 40%;
   }
 
   .nl-LS-position{
@@ -256,12 +267,32 @@
 
   .nl-LWM-position{
     top: 25%;
-    left: 25%;
+    left: 17%;
   }
 
   .nl-RWM-position{
     top: 25%;
-    right: 25%;
+    right: 17%;
+  }
+  
+
+  @media (min-width: 1200px)  {
+    .nl-CM-position{
+      bottom: 43%;
+      left: 43%;
+    }
+    .nl-LWM-position{
+      top: 25%;
+      left: 25%;
+    }
+    .nl-RWM-position{
+      top: 25%;
+      right: 25%;
+    }
+    .nl-ST-position{
+      top: 2.5%;
+      left: 43%;
+    }
   }
 
   &.football{

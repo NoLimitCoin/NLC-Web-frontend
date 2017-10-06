@@ -16,6 +16,13 @@
     width: auto;
   }
 
+  .sports-filtering {
+    margin-top: 1rem;
+    @include respond-to(allsmall){
+       margin-top: 0.5rem;
+    }
+  }
+
   .nl-players-filter-title {
     @include fontSize(18px);
     text-transform: uppercase;
