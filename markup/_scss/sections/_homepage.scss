@@ -182,6 +182,10 @@ button:focus {
     padding-left: 10px;
     margin-right: -10px;
   }
+
+  .nav-item {
+    width: 19.5%;
+  }
 }
 
 .subtitle {
@@ -315,10 +319,6 @@ button:focus {
   a {
     text-shadow: none;
   }
-}
-
-.nav-item {
-  width: 19.5%;
 }
 
 .mobile-menu {
