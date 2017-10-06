@@ -24,6 +24,11 @@
       @content;
     }
   }
+  @else if $media==medium-wide-display {
+    @media only screen and (min-width: 1201px) and (max-width: 1500px) {
+      @content;
+    }
+  }
   @else if $media==wide-display {
     @media only screen and (min-width: 1367px) and (max-width: 1440px) {
       @content;

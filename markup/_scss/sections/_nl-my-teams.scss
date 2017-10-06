@@ -1,12 +1,13 @@
-.soccer.nl-section {
-  padding: calculateRem(40px) 3.25rem;
-}
-
-.soccer .nl-team-card.table-data-field {
-  padding: 1.625rem 0.625rem;
-}
-
 .nl-my-teams{
+
+  .soccer.nl-section {
+    padding: calculateRem(40px) 3.25rem;
+  }
+
+  .soccer .nl-team-card.table-data-field {
+    padding: 1.625rem 0.625rem;
+  }
+
   background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
   background-size: cover;
   color: #121a31;

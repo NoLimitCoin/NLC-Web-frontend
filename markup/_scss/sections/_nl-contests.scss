@@ -135,7 +135,7 @@
     }
     td{
       width: 33.333%;
-      padding: 0.5em 0.5rem 0.25rem;
+      padding: 0.5em 1.25rem 0.25rem;
       vertical-align: top;
 
     // @include respond-to(wide-tablets){
@@ -205,6 +205,9 @@
       padding: calculateRem(10px)  calculateRem(30px);
     }
   }
+  .leaders-list p:nth-child(even) {
+    padding-bottom:0;
+  }
 }
 
 .nl-contest-info-table {
@@ -222,7 +225,10 @@
       width: 33.333%;
       padding: 0.75em 1.5rem 0.25rem;
       vertical-align: top;
-    }     
+    } 
+    td.bottom {
+      padding-top: 0;
+    }      
   }
 }
 
