@@ -54,7 +54,6 @@
     }
   }
 
-
   @else if $media==allwide {
     @media (min-width: 992px)  {
       @content;

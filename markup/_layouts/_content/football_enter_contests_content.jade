@@ -1,16 +1,19 @@
 section.nl-section.nl-players.nl-enter-contests
 	div.container.container-narrow
 		div.row
-			div.col-lg-6
+			div.col-md-12.col-lg-6
 				div.heading-search
-					h1.heading-search__header Teams
-					div.heading-search__search
-						div.dropdown
-							button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Select your team
-							div.dropdown-menu(aria-labelledby="dropdownMenuButton")
-								a.dropdown-item Team A
-								a.dropdown-item Team B
-								a.dropdown-item Team C
+					h1.heading-search__header Enter contest
+					div.row
+						div.col-md-4.col-lg-3
+						div.heading-search__search.col-md-4.col-lg-6
+							div.dropdown
+								button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Select your team
+								div.dropdown-menu(aria-labelledby="dropdownMenuButton")
+									a.dropdown-item Team A
+									a.dropdown-item Team B
+									a.dropdown-item Team C
+						div.col-md-4.col-lg-3
 
 				div.nl-team-info
 					div.nl-team-name your team
@@ -40,42 +43,42 @@ section.nl-section.nl-players.nl-enter-contests
 					div.defender-line
 					div.player-main-block.football
 						div.nl-player-block.nl-FLEX-position(data-position="FLEX")
-							img(src="assets/img/football/img-FLEX.png" alt="FLEX")
+							img(src="assets/img/football/FLEX.png" alt="FLEX")
 							div.nl-player-block--data
 								p gronkowski
 								p.data <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-K-position(data-position="K")
-							img(src="assets/img/football/img-K.png" alt="K")
+							img(src="assets/img/football/K.png" alt="K")
 							div.nl-player-block--data
 								p gronkowski
 								p.data <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-LRB-position(data-position="LRB")
-							img(src="assets/img/football/img-LRB.png" alt="LRB")
+							img(src="assets/img/football/LRB.png" alt="LRB")
 							div.nl-player-block--data
 								p gronkowski
 								p.data <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-RRB-position(data-position="RRB")
-							img(src="assets/img/football/img-RRB.png" alt="RRB")
+							img(src="assets/img/football/RRB.png" alt="RRB")
 							div.nl-player-block--data
 								p gronkowski
 								p.data <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-QB-position(data-position="QB")
-							img(src="assets/img/football/img-QB.png" alt="QB")
+							img(src="assets/img/football/QB.png" alt="QB")
 							div.nl-player-block--data
 								p gronkowski
 								p.data <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-LWR-position(data-position="LWR")
-							img(src="assets/img/football/img-LWR.png" alt="LWR")
+							img(src="assets/img/football/LWR.png" alt="LWR")
 							div.nl-player-block--data
 								p gronkowski
 								p.data <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-RWR-position(data-position="RWR")
-							img(src="assets/img/football/img-RWR.png" alt="RWR")
+							img(src="assets/img/football/RWR.png" alt="RWR")
 							div.nl-player-block--data
 								p gronkowski
 								p.data <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-TE-position(data-position="TE")
-							img(src="assets/img/football/img-TE.png" alt="TE")
+							img(src="assets/img/football/TE.png" alt="TE")
 							div.nl-player-block--data
 								p gronkowski
 								p.data <span>12.67</span> <span>$42000</span>
@@ -150,7 +153,13 @@ section.nl-section.nl-players.nl-enter-contests
 											td.pos TE
 											td 30
 											td $0
-			div.col-lg-6
+										tr
+
+											td Player name
+											td.pos TE
+											td 30
+											td $0
+			div.col-md-12.col-lg-6
 				div.nl-contest-info-title
 					h1.heading-search__header Contest information
 				div.nl-contest-info-table
@@ -181,13 +190,11 @@ section.nl-section.nl-players.nl-enter-contests
 								td
 									div.leaders-list
 										p.tit First Game
-										p Goals for Everyone
+										p 19-07-2017 08:25 AM
 										p.tit Week
 										p 3
 										p.tit Prize money
 										p 1.000 NLC
-										p.tit
-										button.btn.btn-primary Payout
 								td
 									div.leaders-list
 										p.tit Last game
@@ -239,3 +246,8 @@ section.nl-section.nl-players.nl-enter-contests
 									td Username
 									td MyTeamName
 									td 37.90
+					table.table.table-info3
+						thead
+							tr
+								th 
+									button.btn.btn-primary Payout

@@ -2,6 +2,10 @@
   padding: calculateRem(40px) 3.25rem;
 }
 
+.soccer .nl-team-card.table-data-field {
+  padding: 1.625rem 0.625rem;
+}
+
 .nl-my-teams{
   background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
   background-size: cover;
@@ -14,8 +18,13 @@
   }
 
   .btn-create-team{
-    font-size: calculateRem(33px);
-    margin: calculateRem(36px) 0 calculateRem(36px);
+    font-size: calculateRem(18px);
+    margin: 1.25rem 0 1.25rem;
+
+    @include respond-to(handhelds){
+      padding-left: 1.1rem;
+      padding-right: 1.1rem;
+    }
   }
 
   .nl-m-b-14 {
@@ -80,7 +89,7 @@
   .nl-team-card {
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     width: 100%;
-    padding: calculateRem(10px);
+    padding: 0.625rem;
     display: flex;
     background-color: #121a31;
     color: #fff;
@@ -114,8 +123,10 @@
     p{
       color: #e89708;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 400;
       margin-bottom: 0;
+      color: white;
+      margin-left: 2.351rem;
     }
 
     .title{

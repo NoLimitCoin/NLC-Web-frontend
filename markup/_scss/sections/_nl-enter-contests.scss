@@ -1,5 +1,17 @@
 .nl-enter-contests {
 
+  @media (max-width: 1200px) {
+      .player-main-block.football {
+        min-height: 418px;
+      }
+    }
+  
+
+  #dropdownMenuButton {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
 	.heading-search__header {
 		margin-bottom: 0;
 		padding: 1.5rem 0;
@@ -31,30 +43,30 @@
 	    padding: 1.25rem;
 
       h5 {
-        margin-bottom:  0.875rem;
+        margin-bottom:  1.875rem;
         color: #fff;
       }
 
       .btn-primary {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       }
 	}
 
   // temp - refactor acc mixins
-  @media (max-width: 768px) {
+  //@media (max-width: 768px) {
 
-    #dropdownMenuButton {
-      width: 100%;
-      margin-bottom: 1.5rem;
-      text-align: left;
-    }
-    .dropdown-toggle::after {
-      position: absolute;
-      top: 25%;
-      right: 0.5rem;
-      color: #e48706;
-    }
-  }
+    // #dropdownMenuButton {
+    //   width: 100%;
+    //   margin-bottom: 1.5rem;
+    //   text-align: left;
+    // }
+    // .dropdown-toggle::after {
+    //   position: absolute;
+    //   top: 25%;
+    //   right: 0.5rem;
+    //   color: #e48706;
+    // }
+  //}
 }
 
 .nl-team-info,

@@ -157,6 +157,9 @@
     .nl-player-block{
       img{
         max-width: 115px;
+         @include respond-to(wide-tablets){
+          max-width: 90px;
+        }
       }
     }
   }

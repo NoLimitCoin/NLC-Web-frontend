@@ -54,3 +54,11 @@ ul{
     margin-bottom: calculateRem(10px);
   }
 }
+
+.nl-team-card.table-data-field {
+  @include respond-to(allsmall) {
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+}
