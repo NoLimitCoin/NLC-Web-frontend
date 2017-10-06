@@ -395,6 +395,9 @@
                 	$("h5.text-center.visible-xxs.subtitle.position span").html($(this).text());
                 	$('#playerModal').modal('hide');
                 });
+                $("ul#dropdown-in-player").hover(function(){
+                	$("button.btn.btn-primary").css( "box-shadow", "none" );
+                });
               </script>
             </div>
             <div class="col-lg-6 offset-xl-1 col-xl-6 week">
@@ -1058,6 +1061,9 @@
                     $($(this).attr('value')).show('tab');
                     $("h5.text-center.visible-xxs.subtitle span.week").html($(this).text());
                     $('#weekModal').modal('hide');
+                });
+                $("ul#dropdown-in-week").hover(function(){
+                    $("button.btn.btn-primary").css( "box-shadow", "none" );
                 });
               </script>
             </div>
