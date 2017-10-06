@@ -1,4 +1,3 @@
-
 mixin repeat(times)
 	each i in new Array(times)
 		div.matches__result
@@ -17,6 +16,14 @@ mixin repeat(times)
 					li
 						span Final
 
+mixin current-table(times)
+	each i in new Array(times)
+		tr
+			td Football 1775 LONGFootballFootballFootballFootball
+			td TEAM NAME LONG 111
+			td 350 min
+			td 114/150
+
 section.nl-section.nl-players.nl-live-score
 	div.container.container-wider
 		div.row
@@ -24,10 +31,25 @@ section.nl-section.nl-players.nl-live-score
 				h1 Live scores
 		div.row
 			div.col-sm-12.col.col-lg-6.col-xl-8
-				h6 Matches
+				h6.d-inline-block Matches
 				div.matches
 					div.matches__scrollarea
 						+repeat(12)
 
 			div.col-sm-12.col.col-lg-6.col-xl-4
+				h6.d-inline-block My current contests
+				a.btn.btn-primary.btn-sm.btn-inline Refresh
 				div.current-contents
+					div.nl-table-responsive
+						div.nl-table-mw.table-current-contests
+							table.table.table-striped
+								thead
+									tr
+										th Contests name
+										th Team name
+										th PMR
+										th Rank
+							div.nl-table-scroll2
+								table.table.table-striped
+									tbody
+										+current-table(8)

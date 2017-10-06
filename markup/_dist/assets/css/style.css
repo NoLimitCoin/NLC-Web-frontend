@@ -9327,6 +9327,11 @@ main {
 .page-heading {
   margin-bottom: 1rem; }
 
+/* Helper classes
+---------------------------------------- */
+.btn-inline {
+  margin-left: .5rem; }
+
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: uppercase;
@@ -13103,7 +13108,8 @@ td:nth-child(4).homepage-list-view {
   width: 100%;
   height: 140px;
   overflow-y: hidden;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  margin: .25rem 0 .5rem 0; }
   .matches__scrollarea {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13162,6 +13168,9 @@ td:nth-child(4).homepage-list-view {
   @media (min-width: 992px) {
     .matches {
       height: 155px; } }
+  @media (max-width: 991px) {
+    .matches {
+      margin-bottom: 1.5rem; } }
 
 .matches::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -13175,6 +13184,37 @@ td:nth-child(4).homepage-list-view {
   border-radius: 6px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #F5F5F5; }
+
+/* current-contests
+---------------------------------------- */
+.current-contents {
+  margin: .25rem 0 .5rem 0; }
+  .current-contents .nl-table-scroll2 {
+    max-height: 120px; }
+  @media (max-width: 991px) {
+    .current-contents {
+      margin-bottom: 1.5rem; } }
+
+.table-current-contests .table th,
+.table-current-contests .table td {
+  padding: 0.5rem 0.5rem;
+  text-align: left;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .table-current-contests .table th:nth-child(1),
+  .table-current-contests .table td:nth-child(1) {
+    width: 35%; }
+  .table-current-contests .table th:nth-child(2),
+  .table-current-contests .table td:nth-child(2) {
+    width: 35%; }
+  .table-current-contests .table th:nth-child(3),
+  .table-current-contests .table td:nth-child(3) {
+    width: 15%; }
+  .table-current-contests .table th:nth-child(3),
+  .table-current-contests .table td:nth-child(3) {
+    width: 15%; }
 
 .contact-wrapper {
   background: url(../img/stadion_full.jpg) 0 0 no-repeat;
