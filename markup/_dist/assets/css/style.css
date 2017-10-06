@@ -10802,6 +10802,9 @@ p {
         border-top-left-radius: 0;
         border-left: 0; }
 
+.soccer.nl-section {
+  padding: 2.5rem 3.25rem; }
+
 .nl-my-teams {
   background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
   background-size: cover;
@@ -10913,7 +10916,7 @@ p {
       padding: 1.25rem;
       width: 40%; }
     .nl-my-teams .nl-team-card-footer--right {
-      padding: 1.875rem 1.25rem 1.25rem;
+      padding: 0.875rem 1.25rem 1.25rem;
       width: 60%;
       background-color: #1d2d4e; }
     .nl-my-teams .nl-team-card-footer .nl-team-card-result {
@@ -10935,7 +10938,7 @@ p {
     max-width: none;
     width: calc(100% + 1px); }
     .nl-my-teams .table .indicated {
-      padding: 0.625rem 0;
+      padding: 0.25rem 0;
       text-align: center; }
     .nl-my-teams .table .indicator {
       width: 0.9375rem;
@@ -10948,7 +10951,7 @@ p {
     background-color: #1d2d4e;
     font-size: 0.8125rem; }
   .nl-my-teams .table th, .nl-my-teams .table td {
-    padding: 0.5rem; }
+    padding: 0.25rem 0; }
     .nl-my-teams .table th:nth-child(2), .nl-my-teams .table td:nth-child(2) {
       width: 24%;
       text-align: left; }
@@ -11062,7 +11065,7 @@ p {
     text-align: center;
     padding: 1.25rem; }
   .nl-team-info .nl-team-data {
-    padding: 1.25rem 1.875rem; }
+    padding: 1.25rem 1.25rem; }
     .nl-team-info .nl-team-data span {
       font-weight: 500; }
       .nl-team-info .nl-team-data span.avalibe {
@@ -11081,7 +11084,7 @@ p {
   background: url(../img/nl-soccer-field.png) no-repeat 0 0;
   background-size: contain;
   min-width: 100%;
-  min-height: 563px;
+  min-height: 573px;
   background-size: 100% 100%; }
   .nl-team-field.football {
     background: url(../img/football/nl-football-field.png) no-repeat 0 0;
@@ -11089,7 +11092,7 @@ p {
     min-height: 420px;
     background-size: 100% 100%; }
     .nl-team-field.football .nl-player-block img {
-      max-width: 77px; }
+      max-width: 115px; }
   @media (max-width: 991px) {
     .nl-team-field {
       display: none; } }
@@ -11135,7 +11138,7 @@ p {
   min-height: 563px;
   position: relative; }
   .player-main-block .nl-G-position {
-    bottom: 13.5%;
+    bottom: 6.5%;
     left: 43%; }
   .player-main-block .nl-DL-position {
     bottom: 28.5%;
@@ -11168,23 +11171,21 @@ p {
     top: 25%;
     right: 25%; }
   .player-main-block.football {
-    min-height: 420px;
+    min-height: 511px;
     margin-top: 80px;
     margin-bottom: 30px; }
     .player-main-block.football .nl-FLEX-position {
-      bottom: 12.8%;
-      right: 10%; }
-      .player-main-block.football .nl-FLEX-position img {
-        max-width: 95px; }
+      bottom: 8.8%;
+      right: 7%; }
     .player-main-block.football .nl-K-position {
-      bottom: 25%;
+      bottom: 20%;
       left: 43%; }
     .player-main-block.football .nl-LRB-position {
       bottom: 46%;
-      left: 28.5%; }
+      left: 23.5%; }
     .player-main-block.football .nl-RRB-position {
-      bottom: 46%;
-      right: 25.5%; }
+      bottom: 41%;
+      right: 19.5%; }
     .player-main-block.football .nl-QB-position {
       top: 15%;
       left: 43%; }
@@ -11192,15 +11193,13 @@ p {
       top: -1%;
       left: 18%; }
     .player-main-block.football .nl-RWR-position {
-      top: 2%;
-      right: 18%; }
+      top: 5%;
+      right: 15%; }
     .player-main-block.football .nl-TE-position {
-      top: -15%;
+      top: -11%;
       right: 34%; }
-      .player-main-block.football .nl-TE-position img {
-        max-width: 95px; }
     .player-main-block.football .nl-team-logo-position {
-      bottom: 13.8%;
+      bottom: 8.8%;
       left: 13%; }
       .player-main-block.football .nl-team-logo-position img {
         max-width: inherit; }

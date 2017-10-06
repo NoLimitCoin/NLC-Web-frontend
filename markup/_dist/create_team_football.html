@@ -61,11 +61,13 @@
                       <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu"><a href="create_team.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="create_team_football.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Baseball</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Tennis</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a></div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">MY TEAMS</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">CONTESTS</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">PLAYERS</a></li>
+                    <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
+                    <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
+                    <li class="nav-item"><a href="players.html" class="nav-link">PLAYERS</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">LIVE SCORES</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">MY DASHBOARD</a></li>
+                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
+                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="edit_profile.html" class="dropdown-item">Profile</a><a href="change_password.html" class="dropdown-item">Change Password</a><a href="#" class="dropdown-item">Friends </a><a href="my_balances.html" class="dropdown-item">My Balance</a></div>
+                    </li>
                     <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
                       <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item">France</a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
                     </li>
@@ -863,6 +865,10 @@
                 <div class="nl-team-name">your team</div>
                 <div class="nl-team-data">
                   <div class="row">
+                    <div class="col-6">SALARY CAP:</div>
+                    <div class="col-6"><span>$65000</span></div>
+                  </div>
+                  <div class="row">
                     <div class="col-6">TOTAL SALARY:</div>
                     <div class="col-6"><span>$46730</span></div>
                   </div>
@@ -885,56 +891,56 @@
                 <div class="midfielder-line"></div>
                 <div class="defender-line"></div>
                 <div class="player-main-block football">
-                  <div data-position="FLEX" class="nl-player-block nl-FLEX-position"><img src="assets/img/football/img-FLEX.png" alt="FLEX">
+                  <div data-position="FLEX" class="nl-player-block nl-FLEX-position"><img src="assets/img/football/FLEX.png" alt="FLEX">
                     <div class="nl-player-block--data">
                       <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
                       <p>gronkowski</p>
                       <p class="data"><span>12.67</span> <span>$42000</span></p>
                     </div>
                   </div>
-                  <div data-position="K" class="nl-player-block nl-K-position"><img src="assets/img/football/img-K.png" alt="K">
+                  <div data-position="K" class="nl-player-block nl-K-position"><img src="assets/img/football/K.png" alt="K">
                     <div class="nl-player-block--data">
                       <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
                       <p>gronkowski</p>
                       <p class="data"><span>12.67</span> <span>$42000</span></p>
                     </div>
                   </div>
-                  <div data-position="LRB" class="nl-player-block nl-LRB-position"><img src="assets/img/football/img-LRB.png" alt="LRB">
+                  <div data-position="LRB" class="nl-player-block nl-LRB-position"><img src="assets/img/football/LRB.png" alt="LRB">
                     <div class="nl-player-block--data">
                       <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
                       <p>gronkowski</p>
                       <p class="data"><span>12.67</span> <span>$42000</span></p>
                     </div>
                   </div>
-                  <div data-position="RRB" class="nl-player-block nl-RRB-position"><img src="assets/img/football/img-RRB.png" alt="RRB">
+                  <div data-position="RRB" class="nl-player-block nl-RRB-position"><img src="assets/img/football/RRB.png" alt="RRB">
                     <div class="nl-player-block--data">
                       <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
                       <p>gronkowski</p>
                       <p class="data"><span>12.67</span> <span>$42000</span></p>
                     </div>
                   </div>
-                  <div data-position="QB" class="nl-player-block nl-QB-position"><img src="assets/img/football/img-QB.png" alt="QB">
+                  <div data-position="QB" class="nl-player-block nl-QB-position"><img src="assets/img/football/QB.png" alt="QB">
                     <div class="nl-player-block--data">
                       <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
                       <p>gronkowski</p>
                       <p class="data"><span>12.67</span> <span>$42000</span></p>
                     </div>
                   </div>
-                  <div data-position="LWR" class="nl-player-block nl-LWR-position"><img src="assets/img/football/img-LWR.png" alt="LWR">
+                  <div data-position="LWR" class="nl-player-block nl-LWR-position"><img src="assets/img/football/LWR.png" alt="LWR">
                     <div class="nl-player-block--data">
                       <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
                       <p>gronkowski</p>
                       <p class="data"><span>12.67</span> <span>$42000</span></p>
                     </div>
                   </div>
-                  <div data-position="RWR" class="nl-player-block nl-RWR-position"><img src="assets/img/football/img-RWR.png" alt="RWR">
+                  <div data-position="RWR" class="nl-player-block nl-RWR-position"><img src="assets/img/football/RWR.png" alt="RWR">
                     <div class="nl-player-block--data">
                       <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
                       <p>gronkowski</p>
                       <p class="data"><span>12.67</span> <span>$42000</span></p>
                     </div>
                   </div>
-                  <div data-position="TE" class="nl-player-block nl-TE-position"><img src="assets/img/football/img-TE.png" alt="TE">
+                  <div data-position="TE" class="nl-player-block nl-TE-position"><img src="assets/img/football/TE.png" alt="TE">
                     <div class="nl-player-block--data">
                       <button type="button" class="btn btn-link btn-player-close"><i class="fa fa-close" aria-hidden="true"></i></button>
                       <p>gronkowski</p>
@@ -986,7 +992,7 @@
                           </tr>
                           <tr>
                             <td>Player name</td>
-                            <td class="pos">LRB</td>
+                            <td class="pos">RB</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -995,7 +1001,7 @@
                           </tr>
                           <tr>
                             <td>Player name</td>
-                            <td class="pos">RRB</td>
+                            <td class="pos">RB</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1013,7 +1019,7 @@
                           </tr>
                           <tr>
                             <td>Player name</td>
-                            <td class="pos">LWR</td>
+                            <td class="pos">WR</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1022,7 +1028,7 @@
                           </tr>
                           <tr>
                             <td>Player name</td>
-                            <td class="pos">RWR</td>
+                            <td class="pos">WR</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1032,6 +1038,15 @@
                           <tr>
                             <td>Player name</td>
                             <td class="pos">TE</td>
+                            <td>30</td>
+                            <td>$0</td>
+                            <td>
+                              <button class="btn btn-primary btn-sm btn-warning">cut</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Player name</td>
+                            <td class="pos">DEF</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>

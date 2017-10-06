@@ -1,3 +1,7 @@
+.soccer.nl-section {
+  padding: calculateRem(40px) 3.25rem;
+}
+
 .nl-my-teams{
   background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
   background-size: cover;
@@ -131,7 +135,7 @@
 
     }
     &--right{
-      padding: calculateRem(30px) calculateRem(20px) calculateRem(20px) ;
+      padding: 0.875rem 1.25rem 1.25rem;
       width: 60%;
       background-color: #1d2d4e;
     }
@@ -174,7 +178,7 @@
     max-width: none;
     width: calc(100% + 1px);
     .indicated{
-      padding: calculateRem(10px) 0;
+      padding: 0.25rem 0;
       text-align: center;
     }
     .indicator{
@@ -196,7 +200,8 @@
   }
 
   .table th, .table td{
-    padding: calculateRem(8px);
+    //padding: calculateRem(8px);
+    padding: 0.25rem 0;
 
     &:nth-child(2) {
       width: 24%;
