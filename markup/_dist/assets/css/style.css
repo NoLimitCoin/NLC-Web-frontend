@@ -9364,7 +9364,8 @@ p {
 
 .nl-section h1 {
   font-size: 28px;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  margin-bottom: 1rem; }
 
 @media (max-width: 991px) {
   .nl-team-card.table-data-field h3 {
@@ -10158,7 +10159,7 @@ p {
   background-color: #fff; }
 
 .nl-section {
-  padding: 5rem 6.25rem; }
+  padding: 2.5rem 3.25rem; }
   @media only screen and (min-width: 1201px) and (max-width: 1366px) {
     .nl-section {
       padding: 5rem 0; } }
@@ -10499,11 +10500,6 @@ p {
       padding-bottom: 3.75rem; } }
   .nl-players img {
     width: auto; }
-  .nl-players .sports-filtering {
-    margin-top: 1rem; }
-    @media (max-width: 991px) {
-      .nl-players .sports-filtering {
-        margin-top: 0.5rem; } }
   .nl-players .nl-players-filter-title {
     font-size: 18px;
     font-size: 1.125rem;
