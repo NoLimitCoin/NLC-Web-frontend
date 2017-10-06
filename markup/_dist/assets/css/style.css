@@ -13212,9 +13212,52 @@ td:nth-child(4).homepage-list-view {
   .table-current-contests .table th:nth-child(3),
   .table-current-contests .table td:nth-child(3) {
     width: 15%; }
-  .table-current-contests .table th:nth-child(3),
-  .table-current-contests .table td:nth-child(3) {
+  .table-current-contests .table th:nth-child(4),
+  .table-current-contests .table td:nth-child(4) {
     width: 15%; }
+
+/* contest-info-table
+---------------------------------------- */
+.nl-contest-info-table {
+  background-color: #1d2d4e;
+  padding: 0.875rem 0 0 0; }
+  .nl-contest-info-table .dropdown {
+    padding: 0.5rem;
+    margin: 0 auto;
+    width: 80%; }
+  .nl-contest-info-table #dropdownMenuButton {
+    width: 100%;
+    text-align: left; }
+  .nl-contest-info-table .dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    color: #e48706; }
+  .nl-contest-info-table .dropdown-menu {
+    width: 96%;
+    left: 0.5rem; }
+  .nl-contest-info-table .table-info4 th,
+  .nl-contest-info-table .table-info4 td,
+  .nl-contest-info-table .table-info3 th,
+  .nl-contest-info-table .table-info3 td {
+    text-align: left; }
+    .nl-contest-info-table .table-info4 th:nth-child(1),
+    .nl-contest-info-table .table-info4 td:nth-child(1),
+    .nl-contest-info-table .table-info3 th:nth-child(1),
+    .nl-contest-info-table .table-info3 td:nth-child(1) {
+      width: 10%;
+      color: #e48706;
+      text-align: right; }
+    .nl-contest-info-table .table-info4 th:nth-child(2),
+    .nl-contest-info-table .table-info4 td:nth-child(2),
+    .nl-contest-info-table .table-info3 th:nth-child(2),
+    .nl-contest-info-table .table-info3 td:nth-child(2) {
+      width: 60%; }
+    .nl-contest-info-table .table-info4 th:nth-child(3),
+    .nl-contest-info-table .table-info4 td:nth-child(3),
+    .nl-contest-info-table .table-info3 th:nth-child(3),
+    .nl-contest-info-table .table-info3 td:nth-child(3) {
+      width: 30%; }
 
 .contact-wrapper {
   background: url(../img/stadion_full.jpg) 0 0 no-repeat;

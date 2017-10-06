@@ -24,6 +24,13 @@ mixin current-table(times)
 			td 350 min
 			td 114/150
 
+mixin contest-info(times)
+	each i in new Array(times)
+		tr
+			td 1.
+			td Username xxx
+			td Score
+
 section.nl-section.nl-players.nl-live-score
 	div.container.container-wider
 		div.row
@@ -53,3 +60,50 @@ section.nl-section.nl-players.nl-live-score
 								table.table.table-striped
 									tbody
 										+current-table(8)
+
+		div.row
+			div.col-sm-12.col-lg-6.col-xl-4
+				h6.d-inline-block Contest info
+				div.nl-contest-info-table
+					div.table-heading
+						div.dropdown
+							button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Contest touchdowns all day!
+							div.dropdown-menu(aria-labelledby="dropdownMenuButton")
+								a.dropdown-item Team A
+								a.dropdown-item Team B
+								a.dropdown-item Team C
+
+					table.table.table-info1
+						tbody
+							tr
+								td
+									div.leaders-list
+										p.tit First Game
+										p 09/14/2017 08:25 AM
+										p.tit Week
+										p 3
+										p.tit Prize money
+										p 1.000 NLC
+										p.tit
+										button.btn.btn-primary Payout
+								td
+									div.leaders-list
+										p.tit Last game
+										p 19/07-2017 08:25 AM
+										p.tit Buy-in
+										p 10
+										p.tit Registered Teams
+										p 198 / 200
+										p.tit
+										button.btn.btn-warning Withdraw
+
+					table.table.table-info3
+						thead
+							tr
+								th
+								th Contestant
+								th Score
+					div.nl-table-scroll2
+						table.table.table-striped.table-info4
+							tbody
+								+contest-info(11)

@@ -110,7 +110,6 @@
 	background-color: #F5F5F5;
 }
 
-
 /* current-contests
 ---------------------------------------- */
 .current-contents {
@@ -145,8 +144,56 @@
       &:nth-child(3) {
         width: 15%;
       }
-      &:nth-child(3) {
+      &:nth-child(4) {
         width: 15%;
+      }
+		}
+	}
+}
+
+/* contest-info-table
+---------------------------------------- */
+.nl-contest-info-table {
+	background-color: #1d2d4e;
+	padding: 0.875rem 0 0 0;
+
+	// Temp - needs custom dropdown
+	.dropdown {
+		padding: 0.5rem;
+		margin: 0 auto;
+		width: 80%;
+	}
+  #dropdownMenuButton {
+    width: 100%;
+    text-align: left;
+  }
+  .dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    color: #e48706;
+  }
+  .dropdown-menu {
+  	width: 96%;
+  	left: 0.5rem;
+  }
+
+	.table-info4,
+	.table-info3 {
+		th,
+		td {
+			text-align: left;
+
+ 			&:nth-child(1) {
+        width: 10%;
+        color: #e48706;
+        text-align: right;
+      }
+      &:nth-child(2) {
+        width: 60%;
+      }
+      &:nth-child(3) {
+        width: 30%;
       }
 		}
 	}
