@@ -10914,7 +10914,10 @@ p {
       font-weight: 400;
       margin-bottom: 0;
       color: white;
-      margin-left: 2.351rem; }
+      margin-left: 3rem; }
+      @media (min-width: 1200px) {
+        .nl-my-teams .nl-team-card p {
+          margin-left: 2rem; } }
     .nl-my-teams .nl-team-card .title {
       font-weight: 400;
       color: #fff;

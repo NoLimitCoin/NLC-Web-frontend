@@ -54,6 +54,12 @@
     }
   }
 
+  @else if $media==allwider {
+    @media (min-width: 1200px)  {
+      @content;
+    }
+  }
+  
   @else if $media==allwide {
     @media (min-width: 992px)  {
       @content;

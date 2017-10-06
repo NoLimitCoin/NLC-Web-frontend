@@ -126,7 +126,11 @@
       font-weight: 400;
       margin-bottom: 0;
       color: white;
-      margin-left: 2.351rem;
+      margin-left: 3rem;
+
+      @include respond-to(allwider){
+        margin-left: 2rem;
+      }
     }
 
     .title{
