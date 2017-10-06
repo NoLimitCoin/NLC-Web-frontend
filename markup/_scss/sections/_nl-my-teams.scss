@@ -15,9 +15,12 @@
 
   .btn-create-team{
     font-size: calculateRem(33px);
-    margin: 0 0 calculateRem(36px);
+    margin: calculateRem(36px) 0 calculateRem(36px);
   }
 
+  .nl-m-b-14 {
+    margin-bottom: 0.475rem;
+  }
 
   .nl-card-wrapper{
     overflow: hidden;
@@ -77,7 +80,7 @@
   .nl-team-card {
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     width: 100%;
-    padding: calculateRem(24px);
+    padding: calculateRem(10px);
     display: flex;
     background-color: #121a31;
     color: #fff;
@@ -116,7 +119,7 @@
     }
 
     .title{
-      font-weight: 300;
+      font-weight: 400;
       color: #fff;
       margin-left: calculateRem(5px);
     }
@@ -130,12 +133,13 @@
     display: flex;
 
     &--left{
-      padding: calculateRem(20px);
+      padding: calculateRem(5px);
       width: 40%;
 
     }
     &--right{
-      padding: 0.875rem 1.25rem 1.25rem;
+      //padding: 0.875rem 1.25rem 1.25rem;
+      padding: 1.2rem 0.25rem 0.25rem;
       width: 60%;
       background-color: #1d2d4e;
     }
@@ -165,6 +169,7 @@
       @include respond-to(wide-display){
         //padding-left: calculateRem(15px);
       }
+      margin: 0.5rem 0;
 
       button{
         display: block;

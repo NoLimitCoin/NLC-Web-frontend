@@ -10817,7 +10817,9 @@ p {
       padding-right: 1.875rem; } }
   .nl-my-teams .btn-create-team {
     font-size: 2.0625rem;
-    margin: 0 0 2.25rem; }
+    margin: 2.25rem 0 2.25rem; }
+  .nl-my-teams .nl-m-b-14 {
+    margin-bottom: 0.475rem; }
   .nl-my-teams .nl-card-wrapper {
     overflow: hidden;
     -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
@@ -10860,7 +10862,7 @@ p {
     -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     width: 100%;
-    padding: 1.5rem;
+    padding: 0.625rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10901,7 +10903,7 @@ p {
       font-weight: 700;
       margin-bottom: 0; }
     .nl-my-teams .nl-team-card .title {
-      font-weight: 300;
+      font-weight: 400;
       color: #fff;
       margin-left: 0.3125rem; }
   .nl-my-teams .nl-team-card-footer {
@@ -10913,10 +10915,10 @@ p {
     display: -ms-flexbox;
     display: flex; }
     .nl-my-teams .nl-team-card-footer--left {
-      padding: 1.25rem;
+      padding: 0.3125rem;
       width: 40%; }
     .nl-my-teams .nl-team-card-footer--right {
-      padding: 0.875rem 1.25rem 1.25rem;
+      padding: 1.2rem 0.25rem 0.25rem;
       width: 60%;
       background-color: #1d2d4e; }
     .nl-my-teams .nl-team-card-footer .nl-team-card-result {
@@ -10929,11 +10931,13 @@ p {
       .nl-my-teams .nl-team-card-footer .nl-team-card-result .result {
         color: #fff;
         margin-left: 0.625rem; }
-    .nl-my-teams .nl-team-card-footer .nl-team-card-btns button {
-      display: block;
-      min-width: 5rem;
-      margin-left: auto;
-      margin-right: auto; }
+    .nl-my-teams .nl-team-card-footer .nl-team-card-btns {
+      margin: 0.5rem 0; }
+      .nl-my-teams .nl-team-card-footer .nl-team-card-btns button {
+        display: block;
+        min-width: 5rem;
+        margin-left: auto;
+        margin-right: auto; }
   .nl-my-teams .table {
     max-width: none;
     width: calc(100% + 1px); }
