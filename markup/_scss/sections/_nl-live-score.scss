@@ -1,0 +1,107 @@
+/* Matches component
+---------------------------------------- */
+.matches {
+	width: 100%;
+	height: 140px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+
+	&__scrollarea {
+		display: flex;
+	}
+
+	&__result {
+		flex: 1 0 auto;
+		background-color: #607089;
+		border: 1px solid #121a31;
+		color: #fff;
+		font-weight: 400;
+		font-size: 16px;
+
+		&:first-child {
+			border-left: none;
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+
+	&__result-header {
+    background-color: #1d2d4e;
+    text-align: center;
+    max-width: 150px;
+	  overflow-wrap: break-word;
+	  word-wrap: break-word;
+	  hyphens: auto;
+
+		span {
+			color: #fff;
+			display: inline-block;
+			font-size: 12px;
+			padding: calculateRem(4px) calculateRem(8px);
+		}
+	}
+
+	&__content {
+		padding: calculateRem(8px) calculateRem(16px);
+	}
+
+	&__leaders-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+    font-size: 1em;
+
+    li {
+      line-height: 1.6em;
+      margin-bottom: calculateRem(8px);
+
+      img {
+      	width: 28px;
+      }
+      span {
+      	float: left;
+      	padding: calculateRem(2px) calculateRem(4px) calculateRem(0px);
+      }
+
+      & >span:last-child {
+    		float: right;
+      }
+
+      &:last-child {
+
+      	span {
+      		font-weight: 300;
+      		float: left;
+      	}
+      }
+  		&:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+  		}
+    }
+	}
+
+	@include respond-to(allwide) {
+		height: 155px;
+	}
+}
+
+// Add custom scrollbar and make visible
+.matches::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #1d2d4e;
+}
+
+.matches::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+.matches::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #F5F5F5;
+}

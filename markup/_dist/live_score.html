@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Live scores</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="sp">
+    <!--include _partials/preloader.jade-->
+    <header class="nl-header-log">
+      <div class="nl-header-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 p-0">
+              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
+                <div class="row m-0">
+                  <div class="col-lg-7 nl-header-top--left">
+                    <div class="row nl-h100">
+                      <div class="col-lg-2">
+                        <div class="nl-logotype"><a href="index.html"><img src="assets/img/logotype.png" alt="NO Limit"></a></div>
+                      </div>
+                      <div class="col-lg-10 align-self-center">
+                        <div class="nl-title">The worlds first crypto fantasy sports</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 nl-header-top--right">
+                    <div class="nl-profile">
+                      <div class="nl-profile--avatar"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+                      <div class="nl-profile--data">
+                        <div class="name">Name</div>
+                        <div class="settings"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="nl-balance">
+                      <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                      <div class="nl-balance--data">
+                        <div class="title">balance</div>
+                        <div class="sub-title">20023 NLC2</div>
+                        <div class="data">1 NLC2=00345 btc</div>
+                      </div>
+                    </div>
+                    <div class="nl-btn-control">
+                      <div class="nl-btn-group">
+                        <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                        <div class="btn btn-big-radius btn-block">logout</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item hidden-md-down"><a class="nav-link"></a></li>
+                    <li class="nav-item dropdown"><a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/ball.png" alt="#"></a>
+                      <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu"><a href="create_team.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="create_team_football.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Baseball</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Tennis</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a></div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY TEAMS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTESTS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PLAYERS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">LIVE SCORES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MY DASHBOARD</a></li>
+                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item">France</a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                    </li>
+                  </ul>
+                  <div class="nl-profile-mobile">
+                    <div class="nl-profile--data">
+                      <p><i class="fa fa-user-circle" aria-hidden="true"></i> Name</p>
+                      <p>balance: 1 NLC2=00345 btc</p>
+                      <div class="nl-btn-control">
+                        <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
+                        <div class="btn btn-big-radius">logout</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="nl-section nl-players nl-live-score">
+        <div class="container container-wider">
+          <div class="row">
+            <div class="col-sm-12 page-heading">
+              <h1>Live scores</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col col-lg-6 col-xl-8">
+              <h6>Matches</h6>
+              <div class="matches">
+                <div class="matches__scrollarea">
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="matches__result">
+                          <div class="matches__result-header"><span>Wed. 12th 10:45</span></div>
+                          <div class="matches__content">
+                            <ul class="matches__leaders-list">
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cl</span><span>7</span></li>
+                              <li><span><img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU"></span><span>cin</span><span>448</span></li>
+                              <li><span>Final</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col col-lg-6 col-xl-4">
+              <div class="current-contents"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="enterContestsModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"></span></button>
+            <div class="owl-carousel enterContests">
+              <div><img src="assets/img/enter-img1.png">
+                <button type="button" class="btn btn-primary">team name 1</button>
+              </div>
+              <div><img src="assets/img/enter-img2.png">
+                <button type="button" class="btn btn-primary">team name 2</button>
+              </div>
+              <div><img src="assets/img/enter-img3.png">
+                <button type="button" class="btn btn-primary">team name 3</button>
+              </div>
+              <div><img src="assets/img/enter-img3.png">
+                <button type="button" class="btn btn-primary">team name 4</button>
+              </div>
+              <div><img src="assets/img/enter-img3.png">
+                <button type="button" class="btn btn-primary">team name 5</button>
+              </div>
+            </div>
+            <div class="nl-contests-search">
+              <div class="input-group">
+                <input type="text" placeholder="Search contests" class="form-control"><span class="input-group-btn">
+                  <button type="button" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+              </div>
+            </div>
+            <div class="nl-team-button">
+              <button type="button" class="btn btn-primary field-view-btn active">field view</button>
+              <button type="button" class="btn list-view-btn">list view</button>
+            </div>
+            <div class="nl-team-field football">
+              <div class="player-main-block">
+                <div data-position="QB" class="nl-player-block nl-QB-position"><img src="assets/img/football/img-QB.png" alt="QB">
+                  <div class="nl-player-block--data">
+                    <p>gronkowski</p>
+                    <p class="data"><span>12.67</span> <span>$42000</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nl-modal-table">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <td>Projections</td>
+                    <td class="pos">101.9 FP</td>
+                  </tr>
+                  <tr>
+                    <td>total salary:</td>
+                    <td>$55000</td>
+                  </tr>
+                  <tr>
+                    <td>Total Teams:</td>
+                    <td>69/100</td>
+                  </tr>
+                  <tr>
+                    <td>Buy in:</td>
+                    <td>10 NLC2</td>
+                  </tr>
+                  <tr>
+                    <td>week:</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">enter contest</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer Block-->
+    <footer class="nl-footer">
+      <div class="nl-footer--button">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="nl-social-icon"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="btn btn-charity"><span>Charity<br>Projects</span></a></div>
+            <p><br />Copyright © 2017 No Limit Fantasy Sports, LLC All Rights Reserved Contest Rules, Terms and Conditions and Privacy Policy<br /></p>
+          </div>
+          <div class="col-lg-4 nl-tar">
+            <div class="input-group-btn"><a htef="#" class="btn btn-footer">Forum</a><a htef="#" class="btn btn-footer">Contact Us</a></div>
+            <div class="input-group-btn"><a htef="#" class="btn btn-footer">Faq</a><a htef="#" class="btn btn-footer">Terms & Conditions</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+  </body>
+</html>

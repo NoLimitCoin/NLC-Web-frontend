@@ -1,0 +1,33 @@
+
+mixin repeat(times)
+	each i in new Array(times)
+		div.matches__result
+			div.matches__result-header
+				span Wed. 12th 10:45
+			div.matches__content
+				ul.matches__leaders-list
+					li
+						span <img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU">
+						span cl
+						span 7
+					li
+						span <img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU">
+						span cin
+						span 448
+					li
+						span Final
+
+section.nl-section.nl-players.nl-live-score
+	div.container.container-wider
+		div.row
+			div.col-sm-12.page-heading
+				h1 Live scores
+		div.row
+			div.col-sm-12.col.col-lg-6.col-xl-8
+				h6 Matches
+				div.matches
+					div.matches__scrollarea
+						+repeat(12)
+
+			div.col-sm-12.col.col-lg-6.col-xl-4
+				div.current-contents
