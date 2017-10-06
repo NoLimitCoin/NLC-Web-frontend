@@ -1,6 +1,12 @@
-
 /*general for homepage*/
 .homepage {
+  .row {
+    @include respond-to(tablets) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   .container-wider {
 
     @include respond-to(allmobile) {

@@ -10159,6 +10159,11 @@ p {
   background-color: #fff; }
 
 /*general for homepage*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .homepage .row {
+    margin-left: 0;
+    margin-right: 0; } }
+
 @media (max-width: 767px) {
   .homepage .container-wider {
     padding-right: 15px;
