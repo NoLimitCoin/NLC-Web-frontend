@@ -43,11 +43,6 @@
   // temp - refactor acc mixins
   @media (max-width: 768px) {
 
-    .nl-team-info,
-    .nl-team-list {
-      max-width: 100%;
-    }
-
     #dropdownMenuButton {
       width: 100%;
       margin-bottom: 1.5rem;
@@ -59,6 +54,14 @@
       right: 0.5rem;
       color: #e48706;
     }
+  }
+}
+
+.nl-team-info,
+.nl-team-list {
+
+  @include respond-to(allmobile) {
+    max-width: 100%;
   }
 }
 

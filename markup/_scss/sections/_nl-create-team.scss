@@ -125,6 +125,10 @@
       }
     }
   }
+
+  @include respond-to(allmobile) {
+    max-width: 100%;
+  }
 }
 
 .nl-team-button {
@@ -307,6 +311,10 @@
   max-width: calculateRem(500px);
   margin: 0 auto;
   padding: 0;
+
+  @include respond-to(allmobile) {
+    max-width: 100%;
+  }
 }
 
 /* country-selector

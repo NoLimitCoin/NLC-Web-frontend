@@ -11074,6 +11074,9 @@ p {
       font-weight: 500; }
       .nl-team-info .nl-team-data span.avalibe {
         color: #e48706; }
+  @media (max-width: 767px) {
+    .nl-team-info {
+      max-width: 100%; } }
 
 .nl-team-button {
   text-align: center;
@@ -11212,6 +11215,9 @@ p {
   max-width: 31.25rem;
   margin: 0 auto;
   padding: 0; }
+  @media (max-width: 767px) {
+    .nl-team-list {
+      max-width: 100%; } }
 
 /* country-selector
 ---------------------------------------- */
@@ -11836,9 +11842,6 @@ p {
     font-size: 1.8rem; }
 
 @media (max-width: 768px) {
-  .nl-enter-contests .nl-team-info,
-  .nl-enter-contests .nl-team-list {
-    max-width: 100%; }
   .nl-enter-contests #dropdownMenuButton {
     width: 100%;
     margin-bottom: 1.5rem;
@@ -11848,6 +11851,11 @@ p {
     top: 25%;
     right: 0.5rem;
     color: #e48706; } }
+
+@media (max-width: 767px) {
+  .nl-team-info,
+  .nl-team-list {
+    max-width: 100%; } }
 
 .leaders-list p {
   padding: 0 0.25rem; }
