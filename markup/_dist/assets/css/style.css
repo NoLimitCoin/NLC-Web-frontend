@@ -11614,6 +11614,8 @@ p {
     .nl-contests {
       padding-left: 0;
       padding-right: 0; } }
+  .nl-contests .container-fluid {
+    max-width: 1700px; }
   .nl-contests .nl-contest-info-title {
     margin-top: 1.875rem;
     min-height: 3.1875rem;
@@ -11706,7 +11708,8 @@ p {
         color: #e48706; }
     .nl-contest-info-table .table-info1 td {
       width: 33.333%;
-      padding: 1rem; }
+      padding: 0.5em 0.5rem 0.25rem;
+      vertical-align: top; }
       .nl-contest-info-table .table-info1 td .btn {
         width: 100%;
         padding: 0.375rem 0.75rem;
@@ -11767,23 +11770,15 @@ p {
       letter-spacing: 1px;
       padding: 0.625rem 1.875rem; }
 
-.heading-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  @media only screen and (max-width: 575px) {
-    .heading-search {
-      display: block; } }
-  .heading-search__header {
-    margin-left: 1rem; }
-  .heading-search__search {
-    margin-left: 1rem; }
+.nl-contest-info-table .table-info1.buttons td {
+  width: 33.333%;
+  padding: 0.5em 0.5rem 0.25rem;
+  vertical-align: top; }
+
+.nl-contest-info-table .table-info1.text td {
+  width: 33.333%;
+  padding: 0.75em 1.5rem 0.25rem;
+  vertical-align: top; }
 
 .nl-contests-search {
   width: 21.875rem; }

@@ -6,6 +6,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .container-fluid {
+     max-width: 1700px;
+  }
   .nl-contest-info-title{
     margin-top: calculateRem(30px);
     min-height: calculateRem(51px);
@@ -119,6 +122,8 @@
   }
   .table-info1 {
     background: #1d2d4e;
+    
+
     p {
       padding: 0;
       margin: 0;
@@ -130,15 +135,19 @@
     }
     td{
       width: 33.333%;
-      padding: calculateRem(16px);
+      padding: 0.5em 0.5rem 0.25rem;
+      vertical-align: top;
 
+    // @include respond-to(wide-tablets){
+    //   padding: calculateRem(8px);
+    // }
       .btn{
         width: 100%;
         padding: calculateRem(6px) calculateRem(12px);
         font-weight: 600;
         border-radius: 3px;
       }
-    }
+    }     
   }
   .table-info2{
     th {
@@ -198,21 +207,22 @@
   }
 }
 
-.heading-search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @include respond-to(handhelds){
-    display: block;
+.nl-contest-info-table {
+  .table-info1.buttons {
+    td{
+      width: 33.333%;
+      padding: 0.5em 0.5rem 0.25rem;
+      vertical-align: top;
+    }     
   }
-
-  &__header {
-    margin-left: calculateRem(16px);
-  }
-
-  &__search {
-    margin-left: calculateRem(16px);
+}
+.nl-contest-info-table {
+  .table-info1.text {
+    td{
+      width: 33.333%;
+      padding: 0.75em 1.5rem 0.25rem;
+      vertical-align: top;
+    }     
   }
 }
 
