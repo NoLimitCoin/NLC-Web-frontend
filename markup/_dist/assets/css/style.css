@@ -10820,6 +10820,8 @@ p {
   color: #121a31;
   padding-bottom: 3.125rem;
   padding-top: 1.875rem; }
+  .nl-my-teams .helmet {
+    text-align: right; }
   .nl-my-teams .soccer.nl-section {
     padding: 2.5rem 3.25rem; }
   .nl-my-teams .soccer .nl-team-card.table-data-field {
@@ -10894,6 +10896,9 @@ p {
     align-items: center; }
     .nl-my-teams .nl-team-card img {
       width: auto; }
+      @media (max-width: 1200px) {
+        .nl-my-teams .nl-team-card img {
+          height: 50px; } }
     .nl-my-teams .nl-team-card-data-field {
       position: relative;
       padding: 1.5625rem;
@@ -10920,10 +10925,22 @@ p {
       font-weight: 400;
       margin-bottom: 0;
       color: white;
-      margin-left: 3rem; }
+      margin-left: 2rem;
+      max-width: 52%; }
+      @media (max-width: 1200px) {
+        .nl-my-teams .nl-team-card p {
+          font-size: 20px; } }
       @media (min-width: 1200px) {
         .nl-my-teams .nl-team-card p {
-          margin-left: 2rem; } }
+          margin-left: 2rem;
+          font-size: 17px; } }
+      @media only screen and (max-width: 575px) {
+        .nl-my-teams .nl-team-card p {
+          font-size: 15px;
+          margin-left: 3rem; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .nl-my-teams .nl-team-card p {
+          font-size: 17px; } }
     .nl-my-teams .nl-team-card .title {
       font-weight: 400;
       color: #fff;
