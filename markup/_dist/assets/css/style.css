@@ -10503,6 +10503,7 @@ p {
 .nl-players {
   background: url(../img/stadion_full.jpg) 0 0 no-repeat fixed;
   background-size: cover;
+  background-position: bottom;
   color: #121a31;
   padding-bottom: 10rem;
   padding-top: 1.875rem; }
@@ -12415,7 +12416,7 @@ p.ads {
 .nl-faq {
   padding: 1.875rem;
   background: url(../img/stadion_detail.jpg) 0 0 no-repeat fixed;
-  background-size: cover;
+  background-position: bottom;
   color: #061540; }
   @media (max-width: 991px) {
     .nl-faq {
