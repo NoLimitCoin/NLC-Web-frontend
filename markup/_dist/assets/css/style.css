@@ -11125,9 +11125,9 @@ p {
     font-size: 1.3125rem;
     font-weight: 700;
     text-align: center;
-    padding: 1.25rem; }
+    padding: 0.5rem; }
   .nl-team-info .nl-team-data {
-    padding: 1.25rem 1.25rem; }
+    padding: 0.25rem 1.25rem 0.5rem; }
     .nl-team-info .nl-team-data span {
       font-weight: 500; }
       .nl-team-info .nl-team-data span.avalibe {
@@ -12408,7 +12408,7 @@ p {
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 0;
-  background: url(../img/stadion_full.jpg) 0 0 no-repeat fixed;
+  background: url(../img/stadion_detail.jpg) 0 0 no-repeat fixed;
   background-size: cover;
   color: #061540; }
   @media (max-width: 991px) {

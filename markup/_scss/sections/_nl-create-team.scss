@@ -129,11 +129,11 @@
     @include fontSize(21px);
     font-weight: 700;
     text-align: center;
-    padding: calculateRem(20px);
+    padding: 0.5rem;
 
   }
   .nl-team-data {
-    padding: calculateRem(20px) calculateRem(20px);
+    padding: 0.25rem 1.25rem 0.5rem;
     span {
       font-weight: 500;
       &.avalibe {
