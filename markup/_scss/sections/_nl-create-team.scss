@@ -1,4 +1,12 @@
 .nl-create-team {
+
+  .nl-team-info {
+
+     @include respond-to(allsmall){
+      margin-top: 10px;
+    }    
+  }
+
   padding-left: calculateRem(30px);
   padding-right: calculateRem(30px);
   padding-bottom: calculateRem(50px);

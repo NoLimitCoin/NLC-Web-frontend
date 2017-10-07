@@ -11033,6 +11033,9 @@ p {
   padding-bottom: 3.125rem;
   padding-top: 1.875rem; }
   @media (max-width: 991px) {
+    .nl-create-team .nl-team-info {
+      margin-top: 10px; } }
+  @media (max-width: 991px) {
     .nl-create-team {
       padding-left: 0;
       padding-right: 0; } }
