@@ -1,4 +1,9 @@
 .nl-footer {
+
+  .btn-footer {
+    margin: 0px 2px 5px;
+  }
+
   @include fontSize(11px);
   @include lineHeight(16px);
   color: #fff;

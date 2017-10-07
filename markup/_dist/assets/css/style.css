@@ -9736,6 +9736,8 @@ p {
   font-size: 0.6875rem;
   line-height: 1rem;
   color: #fff; }
+  .nl-footer .btn-footer {
+    margin: 0px 2px 5px; }
   @media (max-width: 991px) {
     .nl-footer {
       text-align: center; } }
@@ -12406,12 +12408,12 @@ p {
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 0;
-  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat fixed;
   background-size: cover;
   color: #061540; }
   @media (max-width: 991px) {
     .nl-faq {
-      padding: 0 1.25rem; } }
+      padding: 2.5rem 0 1rem; } }
   .nl-faq #accordion {
     color: #0d3663; }
     .nl-faq #accordion h5 a {

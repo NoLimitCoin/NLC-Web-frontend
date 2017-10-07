@@ -2,12 +2,12 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 0;
-  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat fixed;
   background-size: cover;
   color: #061540;
 
   @include respond-to(allsmall){
-    padding: 0 calculateRem(20px);
+    padding: 2.5rem 0 1rem;
   }
   #accordion{
     color: #0d3663;
