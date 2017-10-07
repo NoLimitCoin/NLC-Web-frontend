@@ -25,6 +25,7 @@
     position: relative;
     @include respond-to(allsmall){
       text-align: center;
+
     }
     img {
       height: 165px;
@@ -40,6 +41,7 @@
         min-width: calculateRem(106px);
         margin-top: calculateRem(-60px);
        // position: relative;
+       top: 5px;
       }
     }
   }
@@ -54,7 +56,7 @@
       display: none;
     }
   }
-  .nl-btutton-login {
+  .nl-button-login {
     text-align: right;
     @include respond-to(allsmall){
       //text-align: center;
