@@ -11481,61 +11481,64 @@ p {
   opacity: 0.8;
   background-color: #fff; }
 
-.register-wrapper {
-  background: url(../img/nl-slide-img.jpg) top center no-repeat;
-  background-size: cover; }
+.registration-wrapper {
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 2rem 0; }
 
 #registrationSection {
   position: relative; }
+  #registrationSection #country {
+    margin-bottom: 1.25rem; }
+  #registrationSection .block-dialog {
+    min-height: 0; }
   #registrationSection .block-content {
     border-radius: 0.5rem; }
   #registrationSection .block-header {
-    border-top-right-radius: .3rem;
-    border-top-left-radius: .3rem;
-    background-color: #fb8700;
-    color: #fff;
-    padding: 1.875rem 0;
+    background-color: transparent;
+    color: #061540;
+    padding: 1rem;
     position: relative; }
-    @media (max-width: 767px) {
-      #registrationSection .block-header {
-        padding: 1.25rem 0.625rem 1.25rem; } }
     #registrationSection .block-header h2 {
       margin: 0 auto;
-      text-align: center;
-      font-size: 3.125rem; }
-      @media (max-width: 767px) {
-        #registrationSection .block-header h2 {
-          font-size: 3.125rem; } }
+      font-size: 2rem;
+      text-align: center; }
     #registrationSection .block-header .close {
       background: url(../img/close_btn.png) no-repeat;
       position: absolute;
-      top: 1.75rem;
+      top: 1.0rem;
       right: 1.25rem;
       height: 49px;
       width: 49px;
       opacity: 1;
       outline: none; }
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         #registrationSection .block-header .close {
-          display: none;
           top: 0.625rem;
           right: 0.625rem; } }
   #registrationSection .block-header, #registrationSection .block-footer {
     border: none; }
-  #registrationSection .block-body, #registrationSection .block-footer {
-    background-color: #1d2d4e; }
   #registrationSection .block-body {
-    padding: 2.5rem 6.25rem 0; }
+    background-color: transparent; }
+  #registrationSection .block-footer {
+    background-color: transparent; }
+  #registrationSection .block-body {
+    height: 100%;
+    padding: 0.5rem 6.25rem 0; }
     @media (max-width: 991px) {
       #registrationSection .block-body {
         padding: 4.5rem 1.25rem 0; } }
-    #registrationSection .block-body input, #registrationSection .block-body select {
-      height: 3.75rem;
-      border-radius: 0;
-      font-size: 1.25rem;
+    #registrationSection .block-body input {
+      border-top-right-radius: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      border-bottom-right-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+      height: 2.8125rem;
+      font-size: 0.75rem;
       margin-bottom: 1.25rem; }
       @media (max-width: 991px) {
-        #registrationSection .block-body input, #registrationSection .block-body select {
+        #registrationSection .block-body input {
           width: 100%; } }
     #registrationSection .block-body .input-group {
       position: relative; }
@@ -11551,30 +11554,34 @@ p {
       transform: translate(0, -50%);
       color: #fb8700;
       cursor: pointer;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 0.75rem; }
     #registrationSection .block-body a {
       text-decoration: underline;
       color: #fb8700; }
-    #registrationSection .block-body .check-wrapper {
-      font-size: 0.75rem;
-      position: relative;
-      padding-left: 3.125rem;
-      color: #fff; }
-      #registrationSection .block-body .check-wrapper input {
-        outline: none;
-        height: 1.875rem;
-        width: 1.875rem;
-        position: absolute;
-        top: 0;
-        left: 0; }
   #registrationSection .block-footer {
-    padding: 1.25rem 0 3.125rem;
+    padding: 0.625rem 0;
     border-bottom-right-radius: .3rem;
     border-bottom-left-radius: .3rem; }
     #registrationSection .block-footer button {
-      width: 17.375rem;
+      width: auto;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.38813rem;
+      font-weight: 600; }
+  #registrationSection .check-wrapper {
+    font-size: 0.75rem;
+    position: relative;
+    padding-left: 3.125rem;
+    color: #fff; }
+    #registrationSection .check-wrapper p {
+      color: #061540; }
+    #registrationSection .check-wrapper input {
+      outline: none;
+      height: 1.875rem;
+      width: 1.875rem;
+      position: absolute;
+      top: 0;
+      left: 0; }
 
 @media (min-width: 576px) {
   .block-dialog {
