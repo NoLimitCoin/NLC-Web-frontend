@@ -12196,6 +12196,14 @@ p {
   color: #121a31;
   padding: 3rem; }
 
+@media (max-width: 991px) {
+  .contact-title {
+    padding-left: 5rem; } }
+
+@media (min-width: 992px) {
+  .contact-title {
+    padding-left: 5.6rem; } }
+
 #contactSection {
   position: relative; }
   #contactSection .block-dialog {

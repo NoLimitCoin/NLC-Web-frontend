@@ -6,6 +6,16 @@
   padding: 3rem;
 
 }
+
+.contact-title {
+  @include respond-to(allsmall){
+   padding-left: 5rem;
+  }
+  @include respond-to(allwide){
+    padding-left: 5.6rem;
+  }
+}
+
 #contactSection {
   position: relative;
   .block-dialog{
