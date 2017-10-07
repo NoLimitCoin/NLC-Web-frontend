@@ -31,7 +31,7 @@
   @media (min-width: 1441px) and (max-width:2000px) {
     position: absolute;
     //top: 2rem;
-    right: 1.5rem;
+    //right: 1.5rem;
   }
 
   td, th {
@@ -247,6 +247,7 @@
 
       margin-top: 80px;
       margin-bottom: 30px;
+
       .nl-FLEX-position{
         bottom: 8.8%;
         right: 7%;
@@ -289,44 +290,62 @@
     }
   }
 
-    .nl-team-field {
-      background: url(../img/nl-soccer-field.png) no-repeat 0 0;
-      background-size: contain;
-      min-width: 100%;
-      background-size: 100% 100%;
+  .nl-team-field {
+    background: url(../img/nl-soccer-field.png) no-repeat 0 0;
+    background-size: contain;
+    min-width: 100%;
+    background-size: 100% 100%;
 
-    @include respond-to(wide-tablets){
-      .player-main-block {
-        min-height: 373px;
-      }
-      .football {
+  @include respond-to(wide-tablets){
+    
+    .football.player-main-block {
+      min-height: 373px;
+    }
 
-        .nl-RRB-position{
-          bottom: 41%;
-          right: 13.5%;
-        }
+    .soccer.player-main-block {
+      min-height: 418px;
 
-          .nl-LRB-position{
-          bottom: 46%;
-          left: 18.5%;
-        }
-
-        .nl-QB-position {
-          top: 20%;
-        }
+      img {
+        max-width: 50px;
       }
     }
 
-    &.soccer {
-      .nl-player-block{
-        img{
-          max-width: 69px;
-           @include respond-to(wide-tablets){
-            max-width: 51px;
-          }
-        }
+    .football {
+
+      .nl-RRB-position{
+        bottom: 41%;
+        right: 13.5%;
+      }
+
+        .nl-LRB-position{
+        bottom: 46%;
+        left: 18.5%;
+      }
+
+      .nl-QB-position {
+        top: 20%;
       }
     }
+  }
+
+  .soccer {
+    @media (min-width: 1200px) and (max-width:1425px) {
+      min-height: 507px;
+      max-height: 507px;
+    }  
+  }
+  
+
+  // &.soccer {
+  //   .nl-player-block{
+  //     img{
+  //       max-width: 69px;
+  //        @include respond-to(wide-tablets){
+  //         max-width: 51px;
+  //       }
+  //     }
+  //   }
+  // }
 
     &.football{
       background: url(../img/football/nl-football-field.png) no-repeat 0 0;
