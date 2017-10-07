@@ -11945,6 +11945,9 @@ p {
   .nl-table-responsive {
     overflow-x: auto; } }
 
+.nl-enter-contests .payout {
+  margin: 8px; }
+
 .nl-enter-contests .player-main-block {
   width: 100%;
   height: 100%;
@@ -12022,7 +12025,7 @@ p {
       top: 5%;
       right: 15%; }
     .nl-enter-contests .player-main-block.football .nl-TE-position {
-      top: -11%;
+      top: -9%;
       right: 34%; }
     .nl-enter-contests .player-main-block.football .nl-team-logo-position {
       bottom: 8.8%;
@@ -12095,8 +12098,8 @@ p {
   font-weight: 600; }
 
 .nl-enter-contests .nl-team-field {
-  max-height: 460px;
-  min-height: 458px; }
+  max-height: 500px;
+  min-height: 496px; }
   .nl-enter-contests .nl-team-field .nl-ST-position {
     top: -1.5%; }
   .nl-enter-contests .nl-team-field .nl-LS-position, .nl-enter-contests .nl-team-field .nl-RS-position {
@@ -12106,7 +12109,7 @@ p {
 
 .nl-enter-contests .football.nl-team-field {
   max-height: 397px;
-  min-height: 396px; }
+  min-height: 434px; }
 
 .nl-enter-contests .nl-team-field.football .nl-player-block img {
   max-width: 93px; }
@@ -12116,7 +12119,7 @@ p {
     max-width: 87px; } }
 
 .nl-enter-contests .soccer .player-main-block {
-  min-height: 450px; }
+  min-height: 496px; }
   .nl-enter-contests .soccer .player-main-block img {
     max-width: 60px; }
 
@@ -12125,7 +12128,7 @@ p {
 
 @media (max-width: 1200px) {
   .nl-enter-contests .player-main-block.football {
-    min-height: 322px;
+    min-height: 422px;
     margin-top: 35px; }
     .nl-enter-contests .player-main-block.football .nl-LRB-position {
       left: 20%; }
@@ -12134,18 +12137,18 @@ p {
   .nl-enter-contests .nl-team-field.football .nl-player-block img {
     max-width: 81px; }
   .nl-enter-contests .soccer .player-main-block {
-    min-height: 378px; }
+    min-height: 382px; }
     .nl-enter-contests .soccer .player-main-block img {
       max-width: 47px; }
     .nl-enter-contests .soccer .player-main-block .nl-G-position {
       left: 40%; }
   .nl-enter-contests .nl-team-field.soccer {
-    max-height: 351px;
-    min-height: 355px;
+    max-height: 400px;
+    min-height: 398px;
     margin-top: 35px; }
   .nl-enter-contests .football.nl-team-field {
     max-height: 370px;
-    min-height: 354px; } }
+    min-height: 422px; } }
 
 .nl-enter-contests #dropdownMenuButton {
   width: 100%;
