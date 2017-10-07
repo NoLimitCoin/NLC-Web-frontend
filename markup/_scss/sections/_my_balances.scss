@@ -1,12 +1,24 @@
 .nl-my-balances {
 
+  .balance-spacing {
+    margin-top: 3.6rem;
+  }
+
+  .deposit-purchase {
+    text-align: center;
+    button {
+      font-weight: 600;
+      margin-top: 1rem;
+    }  
+  }
+
   padding: 2.5rem 0;
 
   background: url(../img/stadion_full.jpg) 0 0 no-repeat fixed;
   background-size: cover;
 
   .nl-my-balances-wrapper {
-    max-width: calculateRem(999px);
+    max-width: calculateRem(1600px);
     margin: 0 auto;
   }
 
@@ -20,7 +32,7 @@
   }
 
   .quote-wrapper {
-    margin-bottom: calculateRem(10px);
+    margin: 0.6rem 0;
     border-radius: 10px;
     padding: 0.925rem 0;
     background-color: #142d57;
@@ -39,11 +51,11 @@
 }
 
 .balance-status {
-  margin-top: 4rem;
+  //margin-top: 4rem;
 
-  @include respond-to (allsmall) {
-    margin-top: 1rem;
-  }
+  // @include respond-to (allsmall) {
+  //   margin-top: 1rem;
+  // }
 }
 
 .balance-table {
@@ -60,6 +72,7 @@
     th {
       padding: 0.75rem 0;
       background-color: #142d57;
+      //background-color: transparent;
       color: #ff9f2f;
       font-size: calculateRem(20px);
       font-weight: 400;
@@ -72,16 +85,23 @@
   }
   tbody {
     background-color: #061540;
-    color: #fff;
+    //background-color: transparent;
+    color: #FFF;
     font-weight: 400;
     font-size: calculateRem(18px);
     @include respond-to(allsmall){
       font-size: calculateRem(15px);
     }
     td {
+
+      font-size: 1.5rem;
       padding: 0.875rem 0;
       &:first-child {
         padding: 0 calculateRem(30px);
+      }
+
+      @include respond-to(allsmall) {
+        font-size: 1.15rem;
       }
     }
 

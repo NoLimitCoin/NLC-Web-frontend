@@ -10982,6 +10982,7 @@ p {
     .nl-my-teams .nl-team-card-footer .nl-team-card-btns {
       margin: 0.5rem 0; }
       .nl-my-teams .nl-team-card-footer .nl-team-card-btns button {
+        font-weight: 600;
         display: block;
         min-width: 5rem;
         margin-left: auto;
@@ -12479,8 +12480,15 @@ p.ads {
   padding: 2.5rem 0;
   background: url(../img/stadion_full.jpg) 0 0 no-repeat fixed;
   background-size: cover; }
+  .nl-my-balances .balance-spacing {
+    margin-top: 3.6rem; }
+  .nl-my-balances .deposit-purchase {
+    text-align: center; }
+    .nl-my-balances .deposit-purchase button {
+      font-weight: 600;
+      margin-top: 1rem; }
   .nl-my-balances .nl-my-balances-wrapper {
-    max-width: 62.4375rem;
+    max-width: 100rem;
     margin: 0 auto; }
   .nl-my-balances h2 {
     font-weight: 500;
@@ -12490,7 +12498,7 @@ p.ads {
     margin-top: 1.25rem;
     margin-bottom: 1.0625rem; }
   .nl-my-balances .quote-wrapper {
-    margin-bottom: 0.625rem;
+    margin: 0.6rem 0;
     border-radius: 10px;
     padding: 0.925rem 0;
     background-color: #142d57; }
@@ -12502,12 +12510,6 @@ p.ads {
       .nl-my-balances .quote-wrapper p .value {
         color: #ff9f2f;
         margin-left: 0.9375rem; }
-
-.balance-status {
-  margin-top: 4rem; }
-  @media (max-width: 991px) {
-    .balance-status {
-      margin-top: 1rem; } }
 
 .balance-table {
   margin-bottom: 1.875rem;
@@ -12526,16 +12528,20 @@ p.ads {
         font-size: 0.9375rem; } }
   .balance-table tbody {
     background-color: #061540;
-    color: #fff;
+    color: #FFF;
     font-weight: 400;
     font-size: 1.125rem; }
     @media (max-width: 991px) {
       .balance-table tbody {
         font-size: 0.9375rem; } }
     .balance-table tbody td {
+      font-size: 1.5rem;
       padding: 0.875rem 0; }
       .balance-table tbody td:first-child {
         padding: 0 1.875rem; }
+      @media (max-width: 991px) {
+        .balance-table tbody td {
+          font-size: 1.15rem; } }
     .balance-table tbody img {
       width: 1.875rem;
       height: 2.5625rem;
