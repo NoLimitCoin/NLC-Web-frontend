@@ -12459,7 +12459,8 @@ p {
     margin-bottom: 1.5625rem; }
 
 .nl-my-balances {
-  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  padding: 2.5rem 0;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat fixed;
   background-size: cover; }
   .nl-my-balances .nl-my-balances-wrapper {
     max-width: 62.4375rem;
@@ -12472,17 +12473,21 @@ p {
     margin-top: 1.25rem;
     margin-bottom: 1.0625rem; }
   .nl-my-balances .quote-wrapper {
-    margin-bottom: 1.875rem;
+    margin-bottom: 0.625rem;
     border-radius: 10px;
-    padding: 1.25rem;
+    padding: 0.925rem 0;
     background-color: #142d57; }
     .nl-my-balances .quote-wrapper p {
+      text-align: center;
       margin: 0;
       font-size: 1.5rem;
       color: #fff; }
       .nl-my-balances .quote-wrapper p .value {
         color: #ff9f2f;
         margin-left: 0.9375rem; }
+
+.balance-status {
+  margin-top: 4rem; }
 
 .balance-table {
   margin-bottom: 1.875rem;
@@ -12491,7 +12496,7 @@ p {
   .balance-table th:not(:first-child), .balance-table td:not(:first-child) {
     text-align: left; }
   .balance-table thead th {
-    padding: 1.25rem 0;
+    padding: 0.75rem 0;
     background-color: #142d57;
     color: #ff9f2f;
     font-size: 1.25rem;
@@ -12508,7 +12513,7 @@ p {
       .balance-table tbody {
         font-size: 0.9375rem; } }
     .balance-table tbody td {
-      padding: 1.875rem 0; }
+      padding: 0.875rem 0; }
       .balance-table tbody td:first-child {
         padding: 0 1.875rem; }
     .balance-table tbody img {
@@ -12517,23 +12522,12 @@ p {
       margin-right: 1.0625rem; }
 
 .nl-balances-btn-wrapper {
-  padding: 0 5.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-  .nl-balances-btn-wrapper .dark {
-    border-color: #061540;
-    background-color: #061540; }
-  @media (max-width: 991px) {
-    .nl-balances-btn-wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      .nl-balances-btn-wrapper button {
-        margin-bottom: 0.9375rem; } }
+  text-align: center; }
+  .nl-balances-btn-wrapper .btn {
+    font-weight: 600;
+    margin: 0 10px; }
+  .nl-balances-btn-wrapper .nlc-blue {
+    background: #142d57; }
 
 .terms-conditions-wrapper {
   background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;

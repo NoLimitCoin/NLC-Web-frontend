@@ -1,23 +1,26 @@
 section.nl-section.nl-my-balances
     div.container.nl-my-balances-wrapper
         div.row
-            .col-12.col-sm-12.col-md-12.col-lg-6
+            .col-12.col-sm-12.col-md-12.col-lg-4
                 .quote-wrapper
                     p
-                        | NLC2 quote BTC :
+                        | NLC2 - BTC:
                         span.value 0.000043
-            .col-12.col-sm-12.col-md-12.col-lg-6
+            .col-lg-4
+            .col-12.col-sm-12.col-md-12.col-lg-4
                 .quote-wrapper
                     p
-                        | NLC2 quote USD :
+                        | NLC2 - USD :
                         span.value 0.16089
 
+        
         div.row
             .col-12
-                h2 MY BALANCES
+                h2 MY BALANCE
 
         div.row
-            .col-12
+            .col-lg-2
+            .col-12.col-sm-10.col-md-10.col-lg-8
                 table.table.balance-table
                     thead
                         tr
@@ -34,12 +37,20 @@ section.nl-section.nl-my-balances
                             td 1,26,277.5
                             td 0.2699325
                             td 1,009.96
+            .col-lg-2                
+        
+        div.row.nl-balances-btn-wrapper
+            .col-12 
+                button.btn.btn-primary DEPOSIT
+                button.btn.btn-primary purchase
 
-        div.row
+        div.row.balance-status
             .col-12
-                h2 BALANCE PER CURRENCY
+                h2 BALANCE STATUS
+        
         div.row
-            .col-12
+            .col-lg-2
+            .col-12.col-sm-10.col-md-10.col-lg-8
                 table.table.balance-table
                     thead
                         tr
@@ -56,13 +67,11 @@ section.nl-section.nl-my-balances
                             td 1,26,277.5
                             td 1200
                             td 500000
-
-        div.row
+            .col-lg-2    
+        div.row.nl-balances-btn-wrapper
             .col-12
-                .nl-balances-btn-wrapper
-                    button.btn.btn-primary.dark VIEW STATEMENT
-                    button.btn.btn-primary DEPOSITE
-                    button.btn.btn-primary.dark WITHDRAW
-                    button.btn.btn-primary PURCHASE
+                button.btn.btn-primary STATEMENT
+                
+                button.btn.btn-primary WITHDRAW
 
 
