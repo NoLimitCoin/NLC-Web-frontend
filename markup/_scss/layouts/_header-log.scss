@@ -81,6 +81,7 @@
   }
 
   .nl-profile {
+    text-align: center;
     width: 30%;
     border-right: 1px solid #293f64;
     display: flex;
@@ -96,9 +97,13 @@
     }
 
     &--avatar {
-      padding-right: calculateRem(20px);
+      //padding-right: calculateRem(20px);
       @include fontSize(40px);
       align-self: center;
+
+      img {
+        height: 73px;
+      }
     }
     &--data {
       align-self: center;

@@ -9601,6 +9601,7 @@ p {
       display: none; } }
 
 .nl-header-log .nl-profile {
+  text-align: center;
   width: 30%;
   border-right: 1px solid #293f64;
   display: -webkit-box;
@@ -9617,11 +9618,12 @@ p {
       height: 60px;
       padding: 1.25rem 0.625rem; } }
   .nl-header-log .nl-profile--avatar {
-    padding-right: 1.25rem;
     font-size: 40px;
     font-size: 2.5rem;
     -ms-flex-item-align: center;
     align-self: center; }
+    .nl-header-log .nl-profile--avatar img {
+      height: 73px; }
   .nl-header-log .nl-profile--data {
     -ms-flex-item-align: center;
     align-self: center; }
