@@ -11,6 +11,12 @@
 
 .nl-create-team-table {
 
+  .nav-tabs .nav-link {
+    @media (max-width:1357px) {
+      min-width: 3.625rem;
+    }
+  }
+
   .nl-players-search {
     min-width: 9.75rem;
     max-width: 10rem;
@@ -26,12 +32,6 @@
      .table-striped tbody tr td.avatar img {
         display: none;
      }
-  }
-
-  @media (min-width: 1441px) and (max-width:2000px) {
-    position: absolute;
-    //top: 2rem;
-    //right: 1.5rem;
   }
 
   td, th {
@@ -164,7 +164,7 @@
 
     width: 100%;
     height: 100%;
-    min-height: 563px;
+    min-height: 625px;
     position: relative;
 
     .nl-G-position{
@@ -238,11 +238,11 @@
     }
 
     &.football{
-      min-height: 511px;
+      min-height: 562px;
 
       @media (min-width: 1200px) and (max-width:1425px) {
-        min-height: 465px;
-        max-height: 465px;
+        min-height: 500px;
+        max-height: 521px;
       }
 
       margin-top: 80px;
@@ -299,11 +299,11 @@
   @include respond-to(wide-tablets){
     
     .football.player-main-block {
-      min-height: 373px;
+      min-height: 401px;
     }
 
     .soccer.player-main-block {
-      min-height: 418px;
+      min-height: 465px;
 
       img {
         max-width: 50px;
@@ -330,8 +330,8 @@
 
   .soccer {
     @media (min-width: 1200px) and (max-width:1425px) {
-      min-height: 507px;
-      max-height: 507px;
+      min-height: 558px;
+      max-height: 558px;
     }  
   }
   
