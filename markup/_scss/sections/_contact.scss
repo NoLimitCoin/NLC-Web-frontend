@@ -1,8 +1,10 @@
 .contact-wrapper{
-  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
   background-size: cover;
+  background-position: bottom;
   color: #121a31;
-  padding-bottom: 10rem;
+  padding: 3rem;
+
 }
 #contactSection {
   position: relative;
@@ -10,26 +12,23 @@
     min-height: 0;
   }
 
-  .block-content {
-    border-radius: calculateRem(8px);
-    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
-  }
   .block-header {
 
     border-top-right-radius: .3rem;
     border-top-left-radius: .3rem;
 
-    background-color: #142d57;
+    //background-color: #142d57;
     color: #fff;
     margin: 0 auto;
-    padding: calculateRem(25px) 0;
+    padding: 0.625rem 0;
     position: relative;
 
-    h2 {
+    h4 {
       margin: 0 auto;
       font-size: calculateRem(34px);
       text-align: center;
-      color: #fb8700;
+      color: #121a31;
+      font-weight: 500;
     }
     .close {
       background: url(../img/close_btn.png) no-repeat;
@@ -51,14 +50,14 @@
     border: none;
   }
   .block-body, .block-footer {
-    background-color: #061540;
+    //background-color: #061540;
   }
 
   .block-body {
     height: 100%;
-    padding: calculateRem(25px) calculateRem(30px) 0;
+    padding: calculateRem(10px) calculateRem(25px);
     @include respond-to(allsmall){
-      padding: calculateRem(20px) calculateRem(10px) 0;
+      padding: calculateRem(10px) calculateRem(10px);
     }
 
     .nl-contact-group-wrapper{
@@ -66,7 +65,7 @@
       padding-left: calculateRem(50px);
       a{
         text-decoration: none;
-        color: #fff;
+        color: #121a31;
         margin-left: 0;
       }
     }
@@ -93,7 +92,7 @@
       margin-left: 15px;
     }
     p{
-      color: #fff;
+      color: #121a31;
       font-size: calculateRem(24px);
       line-height: 1.4;
 
@@ -103,6 +102,24 @@
   }
 
 
+}
+
+p.ads {
+  font-size: 13px;
+  //text-align: center;
+  //padding-top: 2rem;
+  color: #061540;
+  line-height: 1.5rem;
+  a {
+    color: orange;
+  }
+
+  @include respond-to(allsmall){
+    font-size: 14px;
+  }
+  @include respond-to(handhelds){
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 576px) {

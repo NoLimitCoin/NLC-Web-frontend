@@ -1,26 +1,29 @@
 section.nl-section.contact-wrapper
-    #contactSection(tabindex='-1', role='dialog', aria-labelledby='contactSectionLabel', aria-hidden='true')
-        .block-dialog(role='document')
-            .block-content
-                .block-header
-                    h2#contactLabel.modal-title Contact
-                .block-body
-                    form.form-signin
-                        .nl-contact-group-wrapper
-                            img.address-icon(src='assets/img/address-icon.png', alt="address icon")
-                            p
-                                | No Limit Fantasy Sports, LLC
-                                br
-                                |   1407 Foothill Blvd #305
-                                br
-                                |  La Verne, CA 91750
-                        .nl-contact-group-wrapper
-                            img.mail-icon(src='assets/img/mail-icon.png', alt="mail icon")
-                            p
-                                a(href='mailto:nlfantasymonitor@gmail.com') nlfantasymonitor@gmail.com
+    
+    div.row
+        .col-lg-8.offset-lg-4.col-md-6.offset-md-3.col-sm-6.offset-sm-3.col-12
+            h1 Contact
 
-                        p
-                            |For information regarding Advertising or
-                            br
-                            | Affiliates, please email
-                            a(href='mailto:oaperalta27@gmail.com') oaperalta27@gmail.com
+    div.row
+        .col-lg-8.offset-lg-4.col-md-10.offset-md-2.col-sm-12.col-12
+            #contactSection(tabindex='-1', role='dialog', aria-labelledby='contactSectionLabel', aria-hidden='true')
+                .block-dialog(role='document')
+                    .block-content
+                        .block-body
+                            form.form-signin
+                                .nl-contact-group-wrapper
+                                    img.address-icon(src='assets/img/address-icon.png', alt="address icon")
+                                    p
+                                        | No Limit Fantasy Sports, LLC
+                                        br
+                                        |   1407 Foothill Blvd #305
+                                        br
+                                        |  La Verne, CA 91750
+                                .nl-contact-group-wrapper
+                                    img.mail-icon(src='assets/img/mail-icon.png', alt="mail icon")
+                                    p
+                                        a(href='mailto:nlfantasymonitor@gmail.com') nlfantasymonitor@gmail.com
+        .col-lg-8.offset-lg-4.col-md-6.offset-md-3.col-sm-6.offset-sm-3.col-8.offset-2
+            p.ads
+                |For information regarding Advertising or Affiliates, please email: &nbsp;
+                a(href='mailto:oaperalta27@gmail.com') oaperalta27@gmail.com

@@ -12186,32 +12186,29 @@ p {
   padding: 0 0.25rem; }
 
 .contact-wrapper {
-  background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
   background-size: cover;
+  background-position: bottom;
   color: #121a31;
-  padding-bottom: 10rem; }
+  padding: 3rem; }
 
 #contactSection {
   position: relative; }
   #contactSection .block-dialog {
     min-height: 0; }
-  #contactSection .block-content {
-    border-radius: 0.5rem;
-    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
-    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21); }
   #contactSection .block-header {
     border-top-right-radius: .3rem;
     border-top-left-radius: .3rem;
-    background-color: #142d57;
     color: #fff;
     margin: 0 auto;
-    padding: 1.5625rem 0;
+    padding: 0.625rem 0;
     position: relative; }
-    #contactSection .block-header h2 {
+    #contactSection .block-header h4 {
       margin: 0 auto;
       font-size: 2.125rem;
       text-align: center;
-      color: #fb8700; }
+      color: #121a31;
+      font-weight: 500; }
     #contactSection .block-header .close {
       background: url(../img/close_btn.png) no-repeat;
       position: absolute;
@@ -12227,22 +12224,20 @@ p {
           right: 0.625rem; } }
   #contactSection .block-header, #contactSection .block-footer {
     border: none; }
-  #contactSection .block-body, #contactSection .block-footer {
-    background-color: #061540; }
   #contactSection .block-body {
     height: 100%;
-    padding: 1.5625rem 1.875rem 0;
+    padding: 0.625rem 1.5625rem;
     border-bottom-right-radius: .3rem;
     border-bottom-left-radius: .3rem; }
     @media (max-width: 991px) {
       #contactSection .block-body {
-        padding: 1.25rem 0.625rem 0; } }
+        padding: 0.625rem 0.625rem; } }
     #contactSection .block-body .nl-contact-group-wrapper {
       position: relative;
       padding-left: 3.125rem; }
       #contactSection .block-body .nl-contact-group-wrapper a {
         text-decoration: none;
-        color: #fff;
+        color: #121a31;
         margin-left: 0; }
     #contactSection .block-body img {
       margin-top: 0.3125rem;
@@ -12260,9 +12255,22 @@ p {
       color: #fb8700;
       margin-left: 15px; }
     #contactSection .block-body p {
-      color: #fff;
+      color: #121a31;
       font-size: 1.5rem;
       line-height: 1.4; }
+
+p.ads {
+  font-size: 13px;
+  color: #061540;
+  line-height: 1.5rem; }
+  p.ads a {
+    color: orange; }
+  @media (max-width: 991px) {
+    p.ads {
+      font-size: 14px; } }
+  @media only screen and (max-width: 575px) {
+    p.ads {
+      font-size: 12px; } }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -12405,9 +12413,7 @@ p {
   background-color: #fff; }
 
 .nl-faq {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-right: 0;
+  padding: 1.875rem;
   background: url(../img/stadion_detail.jpg) 0 0 no-repeat fixed;
   background-size: cover;
   color: #061540; }
@@ -12417,6 +12423,7 @@ p {
   .nl-faq #accordion {
     color: #0d3663; }
     .nl-faq #accordion h5 a {
+      text-transform: none;
       position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -12426,7 +12433,8 @@ p {
       align-items: center;
       padding-left: 4.375rem;
       min-height: 2.875rem;
-      margin-bottom: 1.5625rem; }
+      margin-bottom: 1.5625rem;
+      font-weight: 500; }
       .nl-faq #accordion h5 a:before {
         display: inline-block;
         content: '+';

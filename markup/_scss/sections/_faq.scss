@@ -1,7 +1,5 @@
 .nl-faq {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-right: 0;
+  padding: 1.875rem;
   background: url(../img/stadion_detail.jpg) 0 0 no-repeat fixed;
   background-size: cover;
   color: #061540;
@@ -13,12 +11,14 @@
     color: #0d3663;
     h5{
       a{
+        text-transform: none;
         position: relative;
         display: flex;
         align-items: center;
         padding-left: calculateRem(70px);
         min-height: calculateRem(46px);
         margin-bottom: calculateRem(25px);
+        font-weight: 500;
         &:before{
           display: inline-block;
           content: '+';
