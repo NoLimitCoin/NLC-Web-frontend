@@ -43,6 +43,10 @@
        // position: relative;
        top: 5px;
       }
+      @include respond-to(handhelds){
+        top: -7px;
+        height: 151px;
+      }
     }
   }
 

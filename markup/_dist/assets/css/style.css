@@ -9438,6 +9438,10 @@ p {
           min-width: 6.625rem;
           margin-top: -3.75rem;
           top: 5px; } }
+      @media only screen and (max-width: 575px) {
+        .nl-header .nl-logotype img {
+          top: -7px;
+          height: 151px; } }
   .nl-header .nl-title {
     text-transform: uppercase;
     font-weight: 600;
@@ -11456,7 +11460,7 @@ p {
     padding: 0.5rem 6.25rem 0; }
     @media (max-width: 991px) {
       #loginSection .block-body {
-        padding: 4.5rem 1.25rem 0; } }
+        padding: 0.5rem 1.25rem 0; } }
     #loginSection .block-body input {
       border-top-right-radius: 0.3rem;
       border-top-left-radius: 0.3rem;
@@ -11550,7 +11554,7 @@ p {
     padding: 0.5rem 6.25rem 0; }
     @media (max-width: 991px) {
       #registrationSection .block-body {
-        padding: 4.5rem 1.25rem 0; } }
+        padding: 0.5rem 1.25rem 0; } }
     #registrationSection .block-body input {
       border-top-right-radius: 0.3rem;
       border-top-left-radius: 0.3rem;
