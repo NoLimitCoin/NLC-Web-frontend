@@ -10698,7 +10698,7 @@ p {
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
   overflow: hidden; }
   .nl-players-table td, .nl-players-table th {
-    padding: 0.25rem 0.5rem; }
+    padding: 0.25rem 0.25rem; }
     .nl-players-table td:first-child, .nl-players-table th:first-child {
       padding-left: 0.5rem; }
   .nl-players-table td:not(:first-child), .nl-players-table .table th:not(:first-child) {
@@ -11741,7 +11741,7 @@ p {
   .nl-contests-table td:not(:first-child),
   .nl-contests-table th:not(:first-child) {
     text-align: center !important;
-    padding: 0.75rem 0.5rem; }
+    padding: 0.5rem 0.5rem; }
   .nl-contests-table .nav-tabs {
     min-height: 3.125rem; }
     .nl-contests-table .nav-tabs .nav-item:first-child {
@@ -11773,6 +11773,9 @@ p {
     background: #1d2d4e;
     padding-top: 1.3rem;
     padding-bottom: 1.2rem; }
+    @media (max-width: 767px) {
+      .nl-contests-table .table thead th {
+        font-size: 0.85rem; } }
 
 .nl-contest-info-table {
   border-radius: .625rem;
@@ -11832,7 +11835,8 @@ p {
         font-size: 1.25rem;
         color: #e48706; }
   .nl-contest-info-table .table-info3 th, .nl-contest-info-table .table-info3 td, .nl-contest-info-table .table-info4 th, .nl-contest-info-table .table-info4 td {
-    text-align: center; }
+    text-align: center;
+    padding: 0.25rem; }
     .nl-contest-info-table .table-info3 th:nth-child(1), .nl-contest-info-table .table-info3 td:nth-child(1), .nl-contest-info-table .table-info4 th:nth-child(1), .nl-contest-info-table .table-info4 td:nth-child(1) {
       width: 17%; }
     .nl-contest-info-table .table-info3 th:nth-child(2), .nl-contest-info-table .table-info3 td:nth-child(2), .nl-contest-info-table .table-info4 th:nth-child(2), .nl-contest-info-table .table-info4 td:nth-child(2) {
