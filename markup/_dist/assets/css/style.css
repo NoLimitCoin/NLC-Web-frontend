@@ -9407,15 +9407,14 @@ p {
   line-height: 1.875rem;
   color: #edeeee;
   background: #061540;
-  min-height: 7.5rem; }
+  min-height: 3.5rem; }
+  .nl-header button {
+    font-weight: 600; }
+  .nl-header .orange-bar {
+    background: #e98f0b;
+    height: 35px; }
   .nl-header--top {
-    padding: 2.1875rem 6.25rem; }
-    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-      .nl-header--top {
-        padding: 2.1875rem 0; } }
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .nl-header--top {
-        padding: 2.1875rem 0; } }
+    padding: 1.6875rem 2.25rem; }
     @media (max-width: 991px) {
       .nl-header--top {
         padding: 1.5625rem 0; } }
@@ -9425,8 +9424,9 @@ p {
       .nl-header .nl-logotype {
         text-align: center; } }
     .nl-header .nl-logotype img {
+      height: 165px;
       position: absolute;
-      top: 0;
+      top: 25px;
       left: 0;
       margin-top: -5rem;
       max-width: 9.6875rem;
@@ -9439,7 +9439,8 @@ p {
           margin-top: -3.75rem; } }
   .nl-header .nl-title {
     text-transform: uppercase;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 20px; }
     @media (max-width: 991px) {
       .nl-header .nl-title {
         text-align: center;
@@ -11378,8 +11379,21 @@ p {
   width: 20%; }
 
 .login-wrapper {
-  background: url(../img/nl-slide-img.jpg) top center no-repeat;
-  background-size: cover; }
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 6rem 0; }
+  .login-wrapper button.btn.btn-primary {
+    font-weight: 600; }
+  .login-wrapper .show-password {
+    font-size: 0.75rem; }
+  .login-wrapper button.btn.btn-primary {
+    font-size: 11px; }
+  .login-wrapper .forget-password {
+    float: right;
+    color: #fb8700;
+    font-size: 0.75rem;
+    text-decoration: underline; }
 
 #loginSection {
   position: relative; }
@@ -11388,20 +11402,18 @@ p {
   #loginSection .block-content {
     border-radius: 0.5rem; }
   #loginSection .block-header {
-    border-top-right-radius: .3rem;
-    border-top-left-radius: .3rem;
-    background-color: #fb8700;
-    color: #fff;
-    padding: 3.125rem 0;
+    background-color: transparent;
+    color: #061540;
+    padding: 1rem;
     position: relative; }
     #loginSection .block-header h2 {
       margin: 0 auto;
-      font-size: 4.0625rem;
+      font-size: 2rem;
       text-align: center; }
     #loginSection .block-header .close {
       background: url(../img/close_btn.png) no-repeat;
       position: absolute;
-      top: 2.25rem;
+      top: 1.0rem;
       right: 1.25rem;
       height: 49px;
       width: 49px;
@@ -11413,18 +11425,23 @@ p {
           right: 0.625rem; } }
   #loginSection .block-header, #loginSection .block-footer {
     border: none; }
-  #loginSection .block-body, #loginSection .block-footer {
-    background-color: #1d2d4e; }
+  #loginSection .block-body {
+    background-color: transparent; }
+  #loginSection .block-footer {
+    background-color: transparent; }
   #loginSection .block-body {
     height: 100%;
-    padding: 4.5rem 6.25rem 0; }
+    padding: 0.5rem 6.25rem 0; }
     @media (max-width: 991px) {
       #loginSection .block-body {
         padding: 4.5rem 1.25rem 0; } }
     #loginSection .block-body input {
-      height: 3.75rem;
-      border-radius: 0;
-      font-size: 1.25rem;
+      border-top-right-radius: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      border-bottom-right-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+      height: 2.8125rem;
+      font-size: 0.75rem;
       margin-bottom: 1.25rem; }
       @media (max-width: 991px) {
         #loginSection .block-body input {
@@ -11448,7 +11465,7 @@ p {
       text-decoration: underline;
       color: #fb8700; }
   #loginSection .block-footer {
-    padding: 3.625rem 0;
+    padding: 0.625rem 0;
     border-bottom-right-radius: .3rem;
     border-bottom-left-radius: .3rem; }
     #loginSection .block-footer button {

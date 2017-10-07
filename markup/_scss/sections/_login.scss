@@ -1,6 +1,27 @@
 .login-wrapper{
-  background: url(../img/nl-slide-img.jpg) top center no-repeat;
+  // background: url(../img/nl-slide-img.jpg) top center no-repeat;
+  // background: url(../img/stadion_detail-no_filter.jpg) 0 0 no-repeat;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
   background-size: cover;
+  background-position: bottom;
+  padding: 6rem 0;
+
+  button.btn.btn-primary {
+    font-weight: 600;
+  }
+  .show-password {
+    font-size: 0.75rem;
+  }
+
+  button.btn.btn-primary {
+    font-size: 11px;
+  }
+  .forget-password {
+    float: right; 
+    color: #fb8700;
+    font-size: 0.75rem;
+    text-decoration: underline;
+  }
 }
 #loginSection {
 position: relative;
@@ -12,23 +33,22 @@ position: relative;
     border-radius: calculateRem(8px);
   }
   .block-header {
-    border-top-right-radius: .3rem;
-    border-top-left-radius: .3rem;
-    background-color: #fb8700;
-    color: #fff;
-    padding: calculateRem(50px) 0;
+
+    background-color: transparent;
+    color: #061540;
+    padding: 1rem;
     position: relative;
 
     h2 {
       margin: 0 auto;
-      font-size: calculateRem(65px);
+      font-size: 2rem;
       text-align: center;
     }
     .close {
       background: url(../img/close_btn.png) no-repeat;
       position: absolute;
-      top: calculateRem(36px);
-      right: calculateRem(20px);
+      top: 1.0rem;
+      right: 1.25rem;
       height: 49px;
       width: 49px;
       opacity: 1;
@@ -43,20 +63,28 @@ position: relative;
   .block-header, .block-footer {
     border: none;
   }
-  .block-body, .block-footer {
-    background-color: #1d2d4e;
+  .block-body {
+    background-color: transparent;
+  }
+
+  .block-footer {
+    background-color: transparent;
   }
 
   .block-body {
     height: 100%;
-    padding: calculateRem(72px) calculateRem(100px) 0;
+    padding: 0.5rem 6.25rem 0;
     @include respond-to(allsmall){
       padding: calculateRem(72px) calculateRem(20px) 0;
     }
     input {
-      height: calculateRem(60px);
-      border-radius: 0;
-      font-size: calculateRem(20px);
+      border-top-right-radius: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      border-bottom-right-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+      height: calculateRem(45px);
+      // border: 0;
+      font-size: 0.75rem;
       margin-bottom: calculateRem(20px);
       @include respond-to(allsmall){
         width: 100%;
@@ -84,7 +112,7 @@ position: relative;
     }
   }
   .block-footer {
-    padding: calculateRem(58px) 0;
+    padding: 0.625rem 0;
     border-bottom-right-radius: .3rem;
     border-bottom-left-radius: .3rem;
 

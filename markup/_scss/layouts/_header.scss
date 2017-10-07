@@ -1,17 +1,22 @@
 .nl-header {
+
+  button {
+    font-weight: 600;
+  }
+
+  .orange-bar {
+    background: #e98f0b;
+    height: 35px;
+  }
+
   @include fontSize(25px);
   @include lineHeight(30px);
   color: #edeeee;
   background: #061540;
-  min-height: calculateRem(120px);
+  min-height: 3.5rem;
   &--top {
-    padding: calculateRem(35px) calculateRem(100px);
-    @include respond-to(medium-display){
-      padding: calculateRem(35px) 0;
-    }
-    @include respond-to(wide-tablets){
-      padding: calculateRem(35px) 0;
-    }
+    padding: 1.6875rem 2.25rem;
+
     @include respond-to(allsmall){
       padding: calculateRem(25px) 0;
     }
@@ -22,8 +27,9 @@
       text-align: center;
     }
     img {
+      height: 165px;
       position: absolute;
-      top: 0;
+      top: 25px;
       left: 0;
       margin-top: calculateRem(-80px);
       max-width: calculateRem(155px);
@@ -41,6 +47,7 @@
   .nl-title {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 20px;
     @include respond-to(allsmall){
       text-align: center;
       margin-bottom: calculateRem(30px);

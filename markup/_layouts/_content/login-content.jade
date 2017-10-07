@@ -1,23 +1,25 @@
-div.nl-white-bg
+//- <div class="nl-white-bg"></div>
 section.nl-section.login-wrapper
-    #loginSection(tabindex='-1', role='dialog', aria-labelledby='loginSectionLabel', aria-hidden='true')
-        .block-dialog(role='document')
-            .block-content
-                .block-header
-                    h2#loginSectionLabel.modal-title Login
-                    a.close(href="index.html")
-                        span(aria-hidden='true')
-                .block-body
-                    form.form-signin
-                        .input-group
-                            input#inputEmail.form-control(type='email', placeholder='SCREEN NAME OR EMAIL', required='', autofocus='')
-                        .input-group
-                            input.form-control(type='password', placeholder='PASSWORD', aria-describedby='show')
-                            span.show-password.input-group-addon show
+    div.row
+        .col-lg-3 
+        .col-lg-6 
+            #loginSection(tabindex='-1', role='dialog', aria-labelledby='loginSectionLabel', aria-hidden='true')
+                .block-dialog(role='document')
+                .block-content
+                    .block-header
+                        h2#loginSectionLabel.modal-title Login
+                    .block-body
+                        form.form-signin
+                            .input-group
+                                input#inputEmail.form-control(type='email', placeholder='SCREEN NAME OR EMAIL', required='', autofocus='')
+                            .input-group
+                                input.form-control(type='password', placeholder='PASSWORD', aria-describedby='show')
+                                span.show-password.input-group-addon show
+                            button.btn.btn-primary LOGIN
+                            //- button.btn.btn-primary.forget-password FORGOT PASSWORD
+                            p.forget-password FORGOT PASSWORD
+                            <div class="g-recaptcha" data-sitekey="6Lf-kjMUAAAAALqIEnd5dP1T-hQbpXOBPLd1ilJD"></div>
 
-                        a(href="#") FORGOT MY PASSWORD
-
-
-
-                .block-footer
-                    button.btn.btn-primary.btn-block(type='submit') Login
+                    //- .block-footer
+                        button.btn.btn-primary.btn-block(type='submit') Login
+        .col-lg-3
