@@ -9794,6 +9794,12 @@ p {
     @media (max-width: 991px) {
       .nl-footer p {
         margin: 1rem 0; } }
+  @media (max-width: 991px) {
+    .nl-footer .nl-tar {
+      text-align: center; } }
+  @media only screen and (max-width: 575px) {
+    .nl-footer .btn-charity span {
+      font-size: 0.75rem; } }
 
 .sp .nl-footer--button {
   padding-left: 1.875rem;
@@ -12397,8 +12403,8 @@ p {
   background-color: #fff; }
 
 .nl-faq {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   padding-right: 0;
   background: url(../img/nl-players-bg.jpg) top center no-repeat fixed;
   background-size: cover;
@@ -12430,7 +12436,7 @@ p {
         width: 2.875rem;
         height: 2.875rem;
         color: #fff;
-        background: #0d3663;
+        background: #e58707;
         border-radius: 1.4375rem;
         text-align: center;
         line-height: 2.625rem;
@@ -12488,6 +12494,9 @@ p {
 
 .balance-status {
   margin-top: 4rem; }
+  @media (max-width: 991px) {
+    .balance-status {
+      margin-top: 1rem; } }
 
 .balance-table {
   margin-bottom: 1.875rem;

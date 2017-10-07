@@ -40,6 +40,10 @@
 
 .balance-status {
   margin-top: 4rem;
+
+  @include respond-to (allsmall) {
+    margin-top: 1rem;
+  }
 }
 
 .balance-table {

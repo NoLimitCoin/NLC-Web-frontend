@@ -61,6 +61,18 @@
       margin: 1rem 0;
     }
   }
+
+  @include respond-to(allsmall){
+    .nl-tar {
+      text-align: center;
+    }
+  }
+
+  @include respond-to(handhelds){
+    .btn-charity span {
+      font-size: 0.75rem;
+    }
+  }
 }
 
 .sp .nl-footer--button{
