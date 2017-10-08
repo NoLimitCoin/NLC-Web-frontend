@@ -1,0 +1,169 @@
+div.homepage-fieldpage
+	div.row
+		div.col-md-12
+			h5 My teams
+	div.row.nl-no-wrap.field-dropdown
+		div.col-lg-12
+			.dropdown
+				button.btn.btn-primary(type='button', data-toggle='dropdown') FantasyFootballGod
+					i.fa.fa-caret-down
+				ul.dropdown-menu(id="dropdown-in-field")
+					li(role='presentation')
+						a(role='menuitem', tabindex='-1', value='#field1') FantasyFootballGod
+					li(role='presentation')
+						a(role='menuitem', tabindex='-1', value='#field2') FantasyFootballGod2
+					li(role='presentation')
+						a(role='menuitem', tabindex='-1', value='#field3') FantasyFootballGod3
+					
+	div.tab-content(id="field-content")
+		div(role='tabpanel' class='tab-pane active top-level-panel3' id='field1')
+			div.nl-team-button.homepage-field
+					button.btn.btn-team.btn-big-radius.active(type="button").field-view-btn field view
+					button.btn.btn-team.btn-big-radius(type="button").list-view-btn list view
+				div.nl-team-field.football
+					div.striker-line
+					div.midfielder-line
+					div.defender-line
+					div.player-main-block.football
+						div.nl-player-block.nl-FLEX-position(data-position="FLEX")
+							img(class="homepage-field-player" src="assets/img/football/img-FLEX.png" alt="FLEX")
+							div.nl-player-block--data
+								p gronkowski
+								p.data <span>12.67</span> <span>$42000</span>
+						div.nl-player-block.nl-K-position(data-position="K")
+							img(class="homepage-field-player" src="assets/img/football/img-K.png" alt="K")
+							div.nl-player-block--data
+								p gronkowski
+								p.data <span>12.67</span> <span>$42000</span>
+						div.nl-player-block.nl-LRB-position(data-position="LRB")
+							img(class="homepage-field-player" src="assets/img/football/img-LRB.png" alt="LRB")
+							div.nl-player-block--data
+								p gronkowski
+								p.data <span>12.67</span> <span>$42000</span>
+						div.nl-player-block.nl-RRB-position(data-position="RRB")
+							img(class="homepage-field-player" src="assets/img/football/img-RRB.png" alt="RRB")
+							div.nl-player-block--data
+								p gronkowski
+								p.data <span>12.67</span> <span>$42000</span>
+						div.nl-player-block.nl-QB-position(data-position="QB")
+							img(class="homepage-field-player" src="assets/img/football/img-QB.png" alt="QB")
+							div.nl-player-block--data
+								p gronkowski
+								p.data <span>12.67</span> <span>$42000</span>
+						div.nl-player-block.nl-LWR-position(data-position="LWR")
+							img(class="homepage-field-player" src="assets/img/football/img-LWR.png" alt="LWR")
+							div.nl-player-block--data
+								p gronkowski
+								p.data <span>12.67</span> <span>$42000</span>
+						div.nl-player-block.nl-RWR-position(data-position="RWR")
+							img(class="homepage-field-player" src="assets/img/football/img-RWR.png" alt="RWR")
+							div.nl-player-block--data
+								p gronkowski
+								p.data <span>12.67</span> <span>$42000</span>
+						div.nl-player-block.nl-TE-position(data-position="TE")
+							img(class="homepage-field-player" src="assets/img/football/img-TE.png" alt="TE")
+							div.nl-player-block--data
+								p gronkowski
+								p.data <span>12.67</span> <span>$42000</span>
+						div.nl-player-block.nl-team-logo-position
+							img(src="assets/img/football/team-logo.png" alt="logo")
+
+				div.nl-team-list.nl-my-teams.hide.homepage-updated
+					.nl-card-wrapper
+						.row
+							.col-12
+								div.nl-team-card.table-data-field
+									h3 team NLC2
+									<img src="assets/img/helmet.png" alt="helmet">
+
+						.row
+							.col-12
+								table.table.table-striped
+									thead
+										tr
+
+											th.homepage-list-view NAME
+											th.homepage-list-view POS
+											th.homepage-list-view FP
+											th.homepage-list-view SALARY
+
+									tbody
+										tr
+
+											td.homepage-list-view Player name
+											td.homepage-list-view.pos FLEX
+											td.homepage-list-view 30
+											td.homepage-list-view $0
+										tr
+
+											td.homepage-list-view Player name
+											td.homepage-list-view.pos K
+											td.homepage-list-view 30
+											td.homepage-list-view $0
+										tr
+
+											td.homepage-list-view Player name
+											td.homepage-list-view.pos LRB
+											td.homepage-list-view 30
+											td.homepage-list-view $0
+										tr
+
+											td.homepage-list-view Player name
+											td.homepage-list-view.pos RRB
+											td.homepage-list-view 30
+											td.homepage-list-view $0
+										tr
+
+											td.homepage-list-view Player name
+											td.homepage-list-view.pos QB
+											td.homepage-list-view 30
+											td.homepage-list-view $0
+										tr
+
+											td.homepage-list-view Player name
+											td.homepage-list-view.pos LWR
+											td.homepage-list-view 30
+											td.homepage-list-view $0
+										tr
+
+											td.homepage-list-view Player name
+											td.homepage-list-view.pos RWR
+											td.homepage-list-view 30
+											td.homepage-list-view $0
+										tr
+
+											td.homepage-list-view Player name
+											td.homepage-list-view.pos TE
+											td.homepage-list-view 30
+											td.homepage-list-view $0
+
+
+			div.nl-team-info.my-teams
+				div.edit-team
+					div.block-footer
+						button.btn.btn-primary.btn-block(type='submit', href="#") Edit
+				div.my-teams-data
+					div.nl-team-data
+						div.row
+							div.col-6 Earnings:
+							div.col-6
+								span $25000
+						div.row
+							div.col-6 Total&nbsp;Salary:
+							div.col-6
+								span $46730
+						div.row
+							div.col-6 Projections:
+							div.col-6
+								span 154
+
+		div(role='tabpanel' class='tab-pane top-level-panel3' id='field2')
+			p field 2
+		div(role='tabpanel' class='tab-pane top-level-panel3' id='field3')
+			p field 3
+
+script(type='text/javascript').
+	$("#dropdown-in-field li a").click(function(){
+		$('#field-content .top-level-panel3').hide('tab');
+		$($(this).attr('value')).show('tab');
+	});
