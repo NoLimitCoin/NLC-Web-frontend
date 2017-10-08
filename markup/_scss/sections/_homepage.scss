@@ -96,6 +96,10 @@
     margin-bottom: 15px;
   }
 
+  .nl-my-teams {
+    background: none;
+  }
+
   @include respond-to (allwider) {
     .player-image {
       height: 258px;
@@ -111,6 +115,36 @@
         height: 230px;
     }
   }
+
+
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    #top5-player-content .player {
+      margin: 10px auto 10px auto;
+    }
+    .player-image {
+        height: 216px;
+        background-size: contain;
+    }
+    .manager-image {
+      height: 224px;
+      background-size: contain;
+    }
+    .manager-info {
+      height: 44px;
+    }
+    .subtitle {
+      margin-bottom: 10px;
+    }
+    .player-info {
+      padding: 5px 14px;
+    }
+    .nl-my-teams .nl-card-wrapper {
+      overflow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+  
 
 
   /* kaspers update are above here */

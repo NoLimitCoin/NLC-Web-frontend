@@ -10242,6 +10242,8 @@ p {
     max-width: 83px; }
   .homepage .nl-create-team .player-main-block.football {
     margin-bottom: 15px; }
+  .homepage .nl-my-teams {
+    background: none; }
   @media (min-width: 1200px) {
     .homepage .player-image {
       height: 258px; }
@@ -10250,6 +10252,25 @@ p {
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .homepage .player-info, .homepage .player-image, .homepage .manager-image {
       height: 230px; } }
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    .homepage #top5-player-content .player {
+      margin: 10px auto 10px auto; }
+    .homepage .player-image {
+      height: 216px;
+      background-size: contain; }
+    .homepage .manager-image {
+      height: 224px;
+      background-size: contain; }
+    .homepage .manager-info {
+      height: 44px; }
+    .homepage .subtitle {
+      margin-bottom: 10px; }
+    .homepage .player-info {
+      padding: 5px 14px; }
+    .homepage .nl-my-teams .nl-card-wrapper {
+      overflow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .homepage .row {
       margin-left: 0;
