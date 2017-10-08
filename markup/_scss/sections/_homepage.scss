@@ -1,5 +1,125 @@
 /*general for homepage*/
+.nl-section.homepage {
+  padding: 1.5rem 3.25rem;
+}
+
 .homepage {
+
+  background: url(../img/stadion_full_big_whiter.jpg) 0 0 no-repeat;
+  background-size: contain;
+  background-size: cover;
+  background-position: bottom;
+  padding: 6rem 0;
+
+  .nl-team-info {
+    max-width: 100%;
+
+    button {
+      font-weight: 600;
+    }
+  }
+
+  .nl-team-info .nl-team-data {
+    padding: 0.25rem;
+  }
+
+  .nl-create-team {
+    padding: 0;
+  }
+
+  .custom-select {
+    background-size: contain;
+  }
+
+  .nl-contests-table .table {
+    font-size: 0.75rem;
+  }
+  .nl-contests-table td:not(:first-child), .nl-contests-table th:not(:first-child) {
+      text-align: center !important;
+      padding: 0.35rem 0.35rem;
+  }
+
+
+  .manager-section .table td, .manager-section .table th {
+    font-size: 11px;
+    padding: 0px 3px;
+  }
+
+  .manager-info h5 {
+    margin-bottom: 0;
+    font-size: 1.175rem;
+    font-weight: 500;
+    line-height: 0.95rem;
+  }
+
+  .player-info h5 {
+    font-size: 1.175rem;
+    line-height: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .manager-info {
+    height: 50px;
+    padding: 5px 15px 0;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (min-width: 1201px) {
+    .manager-image {
+      width: 40%;
+      height: 260px;
+    }
+  }
+
+  .menu-item .number {
+    top: 83px;
+  }
+
+  .menu-item .player-thumbnail {
+    height: 80px;
+  }
+    
+  .nl-create-team .player-main-block.football {
+    min-height: 360px;
+    margin-top: 55px;
+  }
+
+  .nl-create-team .nl-team-field.football .nl-player-block img {
+    max-width: 83px;
+  }
+
+  .nl-create-team .player-main-block.football {
+    margin-bottom: 15px;
+  }
+
+  @include respond-to (allwider) {
+    .player-image {
+      height: 258px;
+    }
+
+    .player-info {
+      height: 258px;
+    }  
+  }
+
+  @include respond-to (wide-tablets) {
+    .player-info, .player-image, .manager-image {
+        height: 230px;
+    }
+  }
+
+
+  /* kaspers update are above here */
+  /* kaspers update are above here */
+  /* kaspers update are above here */
+
+
+
+
   .row {
     @include respond-to(tablets) {
       margin-left: 0;
@@ -987,6 +1107,24 @@ button:focus {
 }
 
 .homepage-fieldpage {
+
+  background: url(../img/football/nl-football-field.png) no-repeat 0 0;
+  background-size: contain;
+  //min-height: 420px;
+  background-size: 100% 100%;
+
+  .nl-player-block{
+    img{
+      max-width: 105px;
+      @include respond-to(wide-tablets){
+        max-width: 81px;
+      }
+      @include respond-to(medium-display){
+        max-width: 95px;
+      }
+    }
+  }
+
   @include respond-to(tablets) {
       padding-right: 15px;
       padding-left: 15px;

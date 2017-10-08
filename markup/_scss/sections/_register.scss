@@ -5,7 +5,12 @@
   background-size: cover;
   background-position: bottom;
   padding: 2rem 0;
+
+  .custom-select {
+    background-size: contain;
+  } 
 }
+
 #registrationSection {
   
   #country {
