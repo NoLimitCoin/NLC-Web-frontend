@@ -1,15 +1,126 @@
 /*general for homepage*/
 .nl-section.homepage {
-  padding: 1.5rem 3.25rem;
+  
+  padding: 1.5rem 2.25rem;
+
+  @media (min-width: 1942px) {
+    padding: 1.5rem 11.25rem;
+  } 
+  @media (max-width: 1942px) and (min-width: 1681px) {
+    padding: 1.5rem 2.25rem;
+  }  
+
+  @include respond-to (allnotwide) {
+    padding: 1rem 0.5rem;
+  }
+
+  @include respond-to (tablets) {
+    padding: 1rem 0.5rem;
+  }
+
+  @include respond-to (allmobile) {
+    padding: 1rem 0.5rem;
+  }
+}
+
+.homepage-field {
+  .nl-team-list {
+    max-width: 100%;
+  }
 }
 
 .homepage {
 
-  background: url(../img/stadion_full_big_whiter.jpg) 0 0 no-repeat;
+
+  .no-padding {
+    padding: 0 15px;
+  }
+
+  @include respond-to (allmobile) {
+    .contests .upcoming-contests {
+      padding-top: 20px;
+    }
+  }  
+
+  @include respond-to (tablets) {
+    .no-padding {
+      padding: 0px;
+    }
+  }
+
+  @include respond-to (allsmall) {
+    .nl-my-teams .nl-card-wrapper {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .nl-create-team .player-main-block.football .nl-QB-position {
+    top: 19%;
+  }
+
+  .nl-create-team .player-main-block.football .nl-RWR-position {
+    top: 1%;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(1), .nl-my-teams .nl-team-list-table td:nth-child(1) {
+    width: 50%;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(2), .nl-my-teams .nl-team-list-table td:nth-child(2) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(3), .nl-my-teams .nl-team-list-table td:nth-child(3) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(4), .nl-my-teams .nl-team-list-table td:nth-child(4) {
+    width: 20%;
+    text-align: center;
+  }
+
+  .nl-my-teams .nl-team-list-table th.name-list-view {
+    text-align: left;
+  }
+
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
   background-size: contain;
   background-size: cover;
   background-position: bottom;
   padding: 6rem 0;
+
+  .nl-contests-table .table thead th {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .tab-content {
+    border-radius: 0;
+  }
+
+  @media (min-width: 992px) {
+      .nl-contests-table .nav-tabs .nav-link {
+        min-width: 100px;
+    }
+  }
+  
+
+  .top-5-section {
+    margin-bottom: 40px;
+  }
+
+  .bottom-teams-contests-section {
+    margin-bottom: 20px;
+
+    @include respond-to (allmobile) {
+      padding-top: 20px;
+    }
+  }
+
+  .dropdown-my-teams {
+    margin-top: 1.875rem;
+  }
 
   .nl-team-info {
     max-width: 100%;
@@ -39,10 +150,35 @@
       padding: 0.35rem 0.35rem;
   }
 
+  .manager-section .table .t-playername {
+    padding: 0rem 1rem;
+  }
 
-  .manager-section .table td, .manager-section .table th {
-    font-size: 11px;
-    padding: 0px 3px;
+  .manager-section .table td, .manager-section .table th, .nl-my-teams .nl-team-list-table td {
+    font-size: 12px;
+    padding: 0;
+      
+    @include respond-to (extra-large-display) {
+      font-size: 13px;
+    }
+
+    @include respond-to (wide-tablets) {
+      font-size: 11px;
+    }
+
+    @include respond-to (tablets) {
+      font-size: 13px;
+      //padding: 0rem 1rem;
+    }
+
+    @include respond-to (allmobile) {
+      font-size: 11px;
+      //padding: 0rem 1rem;
+    }
+
+    @include respond-to (handhelds) {
+      //padding: 0.5rem 1rem;
+    }
   }
 
   .manager-info h5 {
@@ -82,6 +218,10 @@
   .menu-item .player-thumbnail {
     height: 80px;
   }
+
+  .menu-item .manager-thumbnail {
+    height: 80px;
+  }
     
   .nl-create-team .player-main-block.football {
     min-height: 360px;
@@ -103,6 +243,13 @@
   @include respond-to (allwider) {
     .player-image {
       height: 258px;
+      background-size: contain;
+      width: 60%;
+      height: 258px;
+      position: relative;
+      //background-size: cover;
+      background-color: transparent;
+      margin: 0 auto;
     }
 
     .player-info {
@@ -153,6 +300,9 @@
     }
   }
   
+  .t-fp {
+    color: #e19708;
+  }
 
 
   /* kaspers update are above here */
@@ -181,35 +331,35 @@
 
     @include respond-to(tablets) {
       margin-top: 20px;
-      margin-bottom: 50px;
-      padding: 0 30px 0 28px;
+      margin-bottom: 0px;
+      padding: 0px;
     }
 
     @include respond-to(allwide) {
       margin-top: 20px;
-      margin-bottom: 50px;
-      padding: 0 30px 0 28px;
+      margin-bottom: 0px;
+      padding: 0px;
     }
 
     @include respond-to(medium-display) {
-      min-height: 310px;
+      min-height: 256px;
     }
   }
 
 
   .player-image {
     background: url(../img/player1.png) top center no-repeat;
-    width: 100%;
-    height: 180px;
-    background-size: 236px 100%;
-    margin-top: 20px;
-    position: relative;
+    //width: 100%;
+    // height: 180px;
+    // background-size: 236px 100%;
+    // margin-top: 20px;
+    // position: relative;
 
     @include respond-to(allsmall) {
       width: 60%;
       height: 232px;
       position: relative;
-      background-size: contain;
+      background-size: cover;
       background-color: transparent;
       margin: 0 auto;
     }
@@ -224,12 +374,12 @@
     }
 
     @include respond-to(allwider) {
-      width: 60%;
-      height: 258px;
-      position: relative;
-      background-size: cover;
-      background-color: transparent;
-      margin: 0 auto;
+      // width: 60%;
+      // height: 258px;
+      // position: relative;
+      // //background-size: cover;
+      // background-color: transparent;
+      // margin: 0 auto;
     }
 
     // @include respond-to(wide-tablets) {
@@ -244,6 +394,24 @@
       background-size: cover;
       background-color: transparent;
       margin: 0 auto;
+    }
+
+    @include respond-to(allmobile) {
+      width: 60%;
+      height: 232px;
+      position: relative;
+      background-size: contain;
+      background-color: transparent;
+      margin: 0 auto;
+    }
+
+    @include respond-to(handhelds) {
+      width: 80%;
+      height: 202px;
+      position: relative;
+      background-size: contain;
+      background-color: transparent;
+      margin: 10px auto 0 ;
     }
   }
 
@@ -300,6 +468,54 @@
       }
     }
 
+    .manager-thumbnail {
+      height: 100px;
+      //background: url(../img/player1.png) top center no-repeat;
+      background-size: cover;
+      
+
+      @include respond-to(wide-tablets) {
+        height: 55px;
+      }
+
+      @include respond-to(medium-display) {
+        height: 70px;
+      }
+
+      @include respond-to(wide-display) {
+        height: 70px;
+      }
+
+      @include respond-to(large-display) {
+        height: 80px;
+      }
+    }
+
+    .manager-1 {
+      background: url(../img/about/person1.png) center center no-repeat;
+      background-size: contain;
+    }
+
+    .manager-2 {
+      background: url(../img/about/Oscar.jpg) center center no-repeat;
+      background-size: contain;
+    }
+
+    .manager-3 {
+      background: url(../img/about/person3.png) center center no-repeat;
+      background-size: contain;
+    }
+
+    .manager-4 {
+      background: url(../img/about/person4.png) center center no-repeat;
+      background-size: contain;
+    }
+
+    .manager-5 {
+      background: url(../img/about/person5.png) center center no-repeat;
+      background-size: contain;
+    }
+
     .number {
       position: absolute;
       top: 103px;
@@ -347,6 +563,64 @@
     }
 
     .player-thumbnail-name {
+      background: #0f254f;
+      color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+      display: inline-block;
+      height: 22px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      p {
+        padding: 2px 5px 5px 15px;
+      }
+
+      @include respond-to(wide-tablets) {
+        font-size: 10px;
+        height: 18px;
+
+        p {
+          padding-left: 20px;
+          padding-top: 1px;
+        }
+      }
+
+      @include respond-to(medium-display) {
+        font-size: 10px;
+        height: 18px;
+
+        p {
+          padding-left: 20px;
+          padding-top: 0;
+        }
+      }
+
+      @include respond-to(wide-display) {
+        font-size: 10px;
+        height: 18px;
+
+        p {
+          padding-left: 20px;
+          padding-top: 0;
+        }
+      }
+
+      @include respond-to(large-display) {
+        font-size: 10px;
+        height: 18px;
+
+        p {
+          padding-left: 20px;
+          padding-top: 0;
+          margin-top: -2px;
+        }
+      }
+    }
+
+    .manager-thumbnail-name {
       background: #0f254f;
       color: #ffffff;
       font-size: 12px;
@@ -512,8 +786,100 @@
     }
   }
 
-  .player-image-inner,
   .manager-image-inner {
+    background: #0f254f;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-transform: uppercase;
+    height: 40px;
+
+    @include respond-to(allsmall) {
+      width: 100%;
+      margin: 0;
+      height: 40px;
+    }
+
+    @include respond-to(allmobile) {
+      width: 100%;
+      margin: 0;
+    }
+
+    @include respond-to(handhelds) {
+      width: 100%;
+      margin: 0px;
+    }
+
+    .number {
+      display: inline-block;
+      width: 30px;
+      background: #e89608; /* Old browsers */
+      background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
+    }
+
+    .name {
+      position: absolute;
+        top: 7px;
+        left: 60px;
+        
+        @include respond-to(allnotwide) {
+            left: 40px;
+          }
+
+
+        p {
+
+          @include respond-to(allwider) {
+            font-size: 15px;
+            margin-left: -14px;
+            padding: 3px 0 0 8px;
+          }
+
+          @include respond-to(allnotwide) {
+            font-size: 13px;
+          }
+          
+        }
+    }
+
+    p {
+      display: inline-block;
+      padding: 5px 0 0 8px;
+      font-size: 15px;
+
+      &.points {
+        color: #e89708;
+        float: right;
+        padding-right: 10px;
+        padding-top: 12px;
+
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
+      }
+
+      &.name {
+        padding-top:8px !important;
+        padding-left: 10px;
+      }
+    }
+
+    .number {
+      width: 40px;
+      height: 40px;
+      padding-left: 8px;
+
+
+      p {
+        font-size: 28px;
+        padding-top: 12px;
+      }
+    }
+  }
+
+  .player-image-inner {
     background: #0f254f;
     color: #ffffff;
     position: absolute;
@@ -528,6 +894,11 @@
       margin: 0 25px;
     }
 
+    @include respond-to(handhelds) {
+      width: 100%;
+      margin: 0;
+    }
+
     .number {
       display: inline-block;
       width: 30px;
@@ -540,9 +911,23 @@
         top: 7px;
         left: 60px;
 
+        @include respond-to(allnotwide) {
+            left: 40px;
+          }
+
+
         p {
-          font-size: 14px;
-          margin-left: -15px;
+
+          @include respond-to(allwider) {
+            font-size: 15px;
+            margin-left: -14px;
+            padding: 3px 0 0 8px;
+          }
+
+          @include respond-to(allnotwide) {
+            font-size: 16px;
+          }
+          
         }
     }
 
@@ -716,7 +1101,7 @@
 .week {
   
   @include respond-to(allwide) {
-    min-height: 500px;
+    //min-height: 500px;
   }
 
   h5 {
@@ -927,7 +1312,7 @@
 }
 
 .manager-image {
-  background: url(../img/player1.png) top center no-repeat;
+  background: url(../img/about/person1.png) center center no-repeat;
   width: 100%;
   height: 0;
   margin: 0 auto;
@@ -947,6 +1332,10 @@
     position: relative;
     background-size: cover;
     background-color: transparent;
+  }
+
+  @include respond-to(extra-large-display)  {
+    background-size: contain;
   }
 
   .manager-image-inner {
@@ -973,7 +1362,12 @@
 
   @include respond-to(allmobile)  {
     width: 100%;
-    margin: 0 25px;
+    margin: 0px;
+  }
+
+  @include respond-to(handhelds)  {
+    width: 100%;
+    margin: 0 0px;
   }
 }
 
@@ -1022,13 +1416,6 @@
   float: right;
 }
 
-.manager-section {
-  .table td, .table th {
-    font-size: 12px;
-    padding: 1px 3px;
-  }
-}
-
 .t-playername {
   width: 40%;
 }
@@ -1041,6 +1428,7 @@
 
 /*upcoming contests*/
 .homepage-table {
+
   .homepage {
     .tab-content {
       border-radius: 0 !important;
@@ -1049,8 +1437,9 @@
       border-radius: 0 !important; 
     }
   }
+
   .nav-item {
-      width: 25%;
+      width: 23.33%;
       margin: 0;
 
       @media screen and (min-width: 420px) and (max-width: 499px) {
@@ -1062,6 +1451,19 @@
         width: auto;
         min-width: 65px;
       }
+  }
+
+  .nav-item.bigger-nav {
+
+    @media screen and (max-width: 1360px) {
+      width: 30%;
+    }
+  }
+  .nav-item.smaller-nav {
+
+    @media screen and (max-width: 1360px) {
+      width: 23.33%;
+    }
   }
 
   .nav-tabs {
@@ -1158,6 +1560,7 @@ td:nth-child(4) {
       padding-right: 15px;
       padding-left: 15px;
   }
+
   .nl-contests-table {
     th:nth-child(1),
     td:nth-child(1) {
@@ -1170,6 +1573,11 @@ td:nth-child(4) {
       font-size: 12px;
       line-height: 16px;
     }
+
+    @include respond-to(handhelds) {
+      font-size: 11px;
+      line-height: 16px;
+    }
   }
 }
 
@@ -1179,19 +1587,19 @@ td:nth-child(4) {
   }
 
   td:nth-child(1) {
-    width: 33% !important;
+    width: 37% !important;
   }
 
   td:nth-child(2) {
-    width: 12% !important;
+    width: 8% !important;
   }
 
   td:nth-child(3) {
-    width: 10% !important;
+    width: 12% !important;
   }
 
   td:nth-child(4) {
-    width: 10% !important;
+    width: 8% !important;
   }
 
   td:nth-child(5) {
@@ -1199,27 +1607,31 @@ td:nth-child(4) {
   }
 
   td:nth-child(6) {
-    width: 15% !important;
+    width: 12.5% !important;
   }
 
   td:nth-child(7) {
-    width: 10% !important;
+    width: 12.5% !important;
   }
 
+
+
+
+
   th:nth-child(1) {
-    width: 33% !important;
+    width: 37% !important;
   }
 
   th:nth-child(2) {
-    width: 12% !important;
+    width: 8% !important;
   }
 
   th:nth-child(3) {
-    width: 10% !important;
+    width: 12% !important;
   }
 
   th:nth-child(4) {
-    width: 10% !important;
+    width: 8% !important;
   }
 
   th:nth-child(5) {
@@ -1227,11 +1639,11 @@ td:nth-child(4) {
   }
 
   th:nth-child(6) {
-    width: 14% !important;
+    width: 12.5% !important;
   }
 
   th:nth-child(7) {
-    width: 13% !important;
+    width: 12.5% !important;
   }
 }
 

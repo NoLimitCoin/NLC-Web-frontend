@@ -71,6 +71,12 @@
       @content;
     }
   }
+
+  @else if $media==allnotwide {
+    @media (max-width: 1200px)  {
+      @content;
+    }
+  }
   
   @else if $media==allwide {
     @media (min-width: 992px)  {

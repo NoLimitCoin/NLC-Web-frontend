@@ -1,8 +1,8 @@
 section.nl-section.homepage
-	div.container-wider
+	div.container-fluid
 		div.row.sports-options
-			h3.title.col-lg-6 Pick Your Sport:
-			div.sports-icon.col-lg-6
+			h3.title.col-12.col-lg-6 Pick Your Sport:
+			div.sports-icon.col-12.col-lg-6
 				img(src="assets/img/football.png", alt="", class="sports")
 				img(src="assets/img/basketball.png", alt="", class="sports")
 				img(src="assets/img/americanfootball.png", alt="", class="sports")
@@ -12,14 +12,14 @@ section.nl-section.homepage
 				img(src="assets/img/mma.png", alt="", class="sports")
 
 
-		div.row
-			div.col-lg-6.col-xl-5.position
+		div.row.top-5-section
+			div.col-12.col-lg-5.col-xl-5.position
 				include _homepage/top5-player
-			div.col-lg-6.offset-xl-1.col-xl-6.week
+			div.col-12.col-lg-6.offset-lg-1.offset-xl-1.col-xl-6.week
 				include _homepage/top5-manager
 
-		div.row
-			div.col-lg-6.col-xl-5.field
+		div.row.contests.bottom-teams-contests-section
+			div.col-12.col-lg-5.col-xl-5.field
 				include _homepage/field
-			div.col-lg-6.offset-xl-1.col-xl-6.contests
+			div.col-12.col-lg-6.offset-lg-1.offset-xl-1.col-xl-6
 				include _homepage/upcoming_contest
