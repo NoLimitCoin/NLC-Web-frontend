@@ -257,7 +257,7 @@
 	font-size: 16px;
 
 	&__content {
-		padding: calculateRem(14px) calculateRem(16px);
+		padding: calculateRem(24px) calculateRem(16px) calculateRem(14px) calculateRem(16px);
 	}
 
 	&__no {
@@ -341,5 +341,49 @@
 		p:nth-child(even) {
 	    padding-bottom: 0.25rem;
 		}
+	}
+}
+
+
+/* Chat
+---------------------------------------- */
+.chat-search {
+	padding: calculateRem(8px) calculateRem(24px) calculateRem(24px);
+
+	.chat-search__input {
+		width: 60%;
+		display: inline-block;
+		margin-right: calculateRem(8px);
+
+		@include respond-to(large-display) {
+			width: 65%;
+		}
+
+		@include respond-to(extra-large-display) {
+			width: 72%;
+		}
+
+		@media (min-width: 2300px) {
+			width: 80%;
+		}
+	}
+
+	.chat-search__button {
+		float: right;
+
+		&:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+	}
+}
+.chat {
+	background-color: #fff;
+	min-height: 630px;
+
+	&__area {
+		padding: calculateRem(24px);
 	}
 }
