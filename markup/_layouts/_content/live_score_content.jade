@@ -41,6 +41,76 @@ mixin team-field-table(times)
 			td
 				button.btn.btn-primary.btn-sm.btn-warning cut
 
+mixin list-of-teams(times)
+	each i in new Array(times)
+		div.col-sm-6.col-lg-4.col-xl-2
+			div.nl-contest-info-table.nl-live-score-contest-table
+				div.rank
+					div.rank__no.aligner
+						div.rank__center
+							span Rank
+							span 124
+					div.rank__title
+						p Best team evah
+					div.rank__thumb
+						img(src="http://via.placeholder.com/32x32", alt="")
+				table.table.table-info3
+					thead
+						tr
+							th
+							th Name
+							th Pos
+							th FP
+							th Score
+				div.nl-table-scroll2
+					table.table.table-striped.table-info4
+						tbody
+							tr
+								td.indicated
+									span.played.indicator
+								td Name
+								td Pos
+								td 123
+								td $1000
+							tr
+								td.indicated
+									span.played.indicator
+								td Name
+								td Pos
+								td 123
+								td $1000
+							tr
+								td.indicated
+									span.played.indicator
+								td Name
+								td Pos
+								td 123
+								td $1000
+							tr
+								td.indicated
+									span.played.indicator
+								td Name
+								td Pos
+								td 123
+								td $1000
+				div.nl-info-table-button
+					div.rank
+						div.rank__stats
+							div.row
+								div.col
+									div.rank__content.leaders-list
+										p.tit original
+										p 90.3 FP
+								div.col
+									div.rank__content.leaders-list
+										p.tit Live projections
+										p 114.8 FP
+								div.col
+									div.rank__content.leaders-list
+										p.tit PMR
+										p 360 min
+
+
 section.nl-section.nl-players.nl-live-score
 	div.container.container-wider
 		div.row
@@ -252,7 +322,7 @@ section.nl-section.nl-players.nl-live-score
 									tbody
 										+team-field-table(7)
 
-			div.col-sm-12.col-lg-6.col-xl-4
+			div.col-sm-12.col-xl-4
 				h5.d-inline-block.component-header Live chat
 				div.nl-contest-info-table
 					div.table-heading
@@ -271,3 +341,6 @@ section.nl-section.nl-players.nl-live-score
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+
+		div.row
+			+list-of-teams(6)

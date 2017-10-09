@@ -71,26 +71,6 @@
 
   }
 
-
-  .indicator{
-    width: calculateRem(20px);
-    height: calculateRem(20px);
-    border-radius: 50%;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 calculateRem(10px);
-  }
-  .playing{
-    background-color: #2b9c53;
-  }
-  .played{
-    background-color: #6dcff6;
-  }
-  .not-playing{
-    background-color: #e01516;
-  }
-
-
   .nl-team-card {
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     width: 100%;
@@ -137,7 +117,7 @@
       color: white;
       margin-left: 2rem;
       max-width: 52%;
-      
+
       @media (max-width: 1200px) {
         font-size: 20px;
       }
@@ -276,5 +256,26 @@
         width: 20%;
       }
     }
+  }
+}
+
+// Moved  so that classes are available in other tables
+.indicator{
+  width: calculateRem(20px);
+  height: calculateRem(20px);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 calculateRem(10px);
+}
+.table {
+  .playing{
+    background-color: #2b9c53;
+  }
+  .played{
+    background-color: #6dcff6;
+  }
+  .not-playing{
+    background-color: #e01516;
   }
 }
