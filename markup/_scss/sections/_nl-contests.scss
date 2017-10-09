@@ -1,4 +1,9 @@
 .nl-contests {
+
+  .nl-table-scroll {
+    max-height: 34.5rem;
+  }
+
   padding-left: calculateRem(20px);
   padding-right: calculateRem(20px);
   padding-top: calculateRem(30px);
@@ -20,6 +25,46 @@
   h1{
     margin-bottom: 0;
     padding: 0 0 1.25rem 0;
+  }
+
+  .nl-contest-info-table .table-info4 td:nth-child(1) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info4 td:nth-child(2) {
+    width: 30%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info4 td:nth-child(3) {
+    width: 35%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info4 td:nth-child(4) {
+    width: 20%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info3 th:nth-child(1) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info3 th:nth-child(2) {
+    width: 30%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info3 th:nth-child(3) {
+    width: 35%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info3 th:nth-child(4) {
+    width: 20%;
+    text-align: center;
   }
 }
 
@@ -124,6 +169,17 @@
       text-align: left;
     }
   }
+  
+  .table-info1.buttons td {
+    .button-enter {
+      //font-size: 17px;
+    }
+    .btn-default {
+      padding: 0.25rem 0.65rem;
+    }
+  }
+  
+
   .table-info1 {
     background: #1d2d4e;
     
@@ -132,6 +188,11 @@
       padding: 0;
       margin: 0;
       color: #ffffff;
+
+      @include respond-to (handhelds) {
+        font-size: 11px;
+      }
+
       &.tit {
         text-transform: uppercase;
         color: #e48706;

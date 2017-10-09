@@ -1,18 +1,20 @@
 section.nl-section.nl-players.nl-enter-contests.soccer
 	div.container-fluid
 		div.row
-			div.col-md-6.col-lg-6
+			div.col-md-6.col-lg-6.col-xl-6
 				div.heading-search
 					h1.heading-search__header Enter contest
 					div.row
 						div.col-sm-3.col-md-2.col-lg-3
 						div.heading-search__search.col-sm-6.col-md-8.col-lg-6
-							div.dropdown
-								button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Select your team
-								div.dropdown-menu(aria-labelledby="dropdownMenuButton")
-									a.dropdown-item Team A
-									a.dropdown-item Team B
-									a.dropdown-item Team C
+							form.form-signin
+								.input-group
+									select#country.form-control.custom-select(placeholder='COUNTRY', required='')
+										option(selected='' disabled='' hidden='') SELECT TEAM
+										option USA
+										option CANADA
+										option UK
+										option PORTUGAL
 						div.col-md-2.col-lg-3
 
 				div.nl-team-info
@@ -107,7 +109,7 @@ section.nl-section.nl-players.nl-enter-contests.soccer
 									thead
 										tr
 
-											th NAME
+											th.name-enter-contest NAME
 											th POS
 											th FP
 											th SALARY
@@ -179,7 +181,7 @@ section.nl-section.nl-players.nl-enter-contests.soccer
 											td.pos ST
 											td 30
 											td $0
-			div.col-md-6.col-lg-5.offset-lg-1
+			div.col-md-6.col-lg-6.col-xl-5.offset-xl-1
 				div.nl-contest-info-title
 					h1.heading-search__header Contest information
 				div.nl-contest-info-table

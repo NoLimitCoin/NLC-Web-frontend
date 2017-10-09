@@ -7,12 +7,14 @@ section.nl-section.nl-players.nl-enter-contests
 					div.row
 						div.col-sm-3.col-md-2.col-lg-3
 						div.heading-search__search.col-sm-6.col-md-8.col-lg-6
-							div.dropdown
-								button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Select your team
-								div.dropdown-menu(aria-labelledby="dropdownMenuButton")
-									a.dropdown-item Team A
-									a.dropdown-item Team B
-									a.dropdown-item Team C
+							form.form-signin
+								.input-group
+									select#country.form-control.custom-select(placeholder='COUNTRY', required='')
+										option(selected='' disabled='' hidden='') SELECT TEAM
+										option USA
+										option CANADA
+										option UK
+										option PORTUGAL
 						div.col-md-2.col-lg-3
 
 				div.nl-team-info
@@ -88,7 +90,7 @@ section.nl-section.nl-players.nl-enter-contests
 							.col-12
 								div.nl-team-card.table-data-field
 									h3 team NLC2
-									<img src="assets/img/helmet.png" alt="helmet" class="hidden-xs-down">
+									<img src="assets/img/helmet.png" alt="helmet" class="hidden-xs-down helmet-team">
 
 						.row
 							.col-12
@@ -96,7 +98,7 @@ section.nl-section.nl-players.nl-enter-contests
 									thead
 										tr
 
-											th NAME
+											th.name-enter-contest NAME
 											th POS
 											th FP
 											th SALARY

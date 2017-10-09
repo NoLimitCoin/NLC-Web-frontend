@@ -1,5 +1,62 @@
 .nl-enter-contests {
 
+  .nl-my-teams .nl-team-card img {
+    height: 70px;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(1) {
+    text-align: left;
+  }
+
+  .name-enter-contest {
+    text-align: left;
+  }
+
+  .nl-contest-info-table .table-info4 td:nth-child(1) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info4 th:nth-child(1) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info4 td:nth-child(2), th:nth-child(2) {
+    width: 30%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info4 td:nth-child(3), th:nth-child(3) {
+    width: 35%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info4 td:nth-child(4), th:nth-child(4) {
+    width: 20%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info3 th:nth-child(1) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info3 th:nth-child(2) {
+    width: 30%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info3 th:nth-child(3) {
+    width: 35%;
+    text-align: center;
+  }
+
+  .nl-contest-info-table .table-info3 th:nth-child(4) {
+    width: 20%;
+    text-align: center;
+  }
+
   .payout {
     margin: 8px;
   }
@@ -9,6 +66,7 @@
   height: 100%;
   min-height: 563px;
   position: relative;
+
   .nl-G-position{
     bottom: 6.5%;
     left: 43%;
@@ -366,23 +424,29 @@
 
 .nl-enter-contests {
 
-  .nl-table-scroll2 {
-    max-height: 16.25rem;
-    td {
-      padding: 0.25rem;
-    }
+  .custom-select {
+    background-size: contain;
+  }
+
+  .nl-contest-info-table .table-info4 td {
+    padding: 0.18rem;
+  }
+
+  .nl-contest-info-table .nl-table-scroll2 {
+    max-height: 13.5rem;
   }
 
   .nl-team-info,
   .nl-team-list {
 
     @include respond-to(allsmall) {
-      margin: 0 3rem;
+      // margin: 0 3rem;
+      margin: 0 auto;
       max-width: 374px;
     }
 
     @include respond-to(allmobile) {
-      margin: 0 9rem;
+      margin: 0 auto;
     }
 
     @include respond-to(handhelds) {
@@ -401,6 +465,14 @@
       margin: 0;
     }
   }
+
+  .nl-team-info {
+    margin-top: 25px;
+
+    @include respond-to(allsmall) {
+      //margin: 2rem 3rem;
+    }
+  }
 }
 
 .leaders-list {
@@ -414,6 +486,6 @@
     font-size: 14px;
 	}
 	p:nth-child(even) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
 	}
 }
