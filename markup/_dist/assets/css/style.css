@@ -10195,6 +10195,8 @@ p {
   /* kaspers update are above here */
   /* kaspers update are above here */
   /* kaspers update are above here */ }
+  .homepage .nl-contests-table .tab-content {
+    border-radius: 0; }
   @media (min-width: 992px) {
     .homepage .nl-contests-table .nav-tabs .nav-link {
       min-width: 100px; } }
@@ -10354,17 +10356,17 @@ p {
         width: 60%;
         height: 232px;
         position: relative;
-        background-size: cover;
+        background-size: contain;
         background-color: transparent;
         margin: 0 auto; } }
     @media only screen and (max-width: 575px) {
       .homepage .player-image {
         width: 60%;
-        height: 232px;
+        height: 202px;
         position: relative;
-        background-size: cover;
+        background-size: contain;
         background-color: transparent;
-        margin: 0 auto; } }
+        margin: 10px auto 0; } }
   .homepage .menu .nav-link {
     padding: 0; }
   .homepage .menu-item {
@@ -10696,6 +10698,9 @@ p {
       .homepage .player-image-inner {
         width: calc(100% - 50px);
         margin: 0 25px; } }
+    @media only screen and (max-width: 575px) {
+      .homepage .player-image-inner {
+        width: 100%; } }
     .homepage .player-image-inner .number {
       display: inline-block;
       width: 30px;

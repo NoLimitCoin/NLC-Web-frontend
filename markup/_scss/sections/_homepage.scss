@@ -14,6 +14,10 @@
   background-position: bottom;
   padding: 6rem 0;
 
+  .nl-contests-table .tab-content {
+    border-radius: 0;
+  }
+
   @media (min-width: 992px) {
       .nl-contests-table .nav-tabs .nav-link {
         min-width: 100px;
@@ -290,18 +294,18 @@
       width: 60%;
       height: 232px;
       position: relative;
-      background-size: cover;
+      background-size: contain;
       background-color: transparent;
       margin: 0 auto;
     }
 
     @include respond-to(handhelds) {
       width: 60%;
-      height: 232px;
+      height: 202px;
       position: relative;
-      background-size: cover;
+      background-size: contain;
       background-color: transparent;
-      margin: 0 auto;
+      margin: 10px auto 0 ;
     }
   }
 
@@ -771,6 +775,10 @@
     @include respond-to(allmobile) {
       width: calc(100% - 50px);
       margin: 0 25px;
+    }
+
+    @include respond-to(handhelds) {
+      width: 100%;
     }
 
     .number {
@@ -1429,6 +1437,7 @@ td:nth-child(4) {
       padding-right: 15px;
       padding-left: 15px;
   }
+
   .nl-contests-table {
     th:nth-child(1),
     td:nth-child(1) {
