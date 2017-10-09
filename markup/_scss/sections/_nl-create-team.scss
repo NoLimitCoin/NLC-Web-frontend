@@ -9,7 +9,7 @@
     padding: 5px;
     font-size: 11px;
 
-    
+
   }
 
   .save-delete {
@@ -30,7 +30,7 @@
   .nl-team-info {
      @include respond-to(allsmall){
       margin-top: 10px;
-    }    
+    }
   }
 
   padding-left: calculateRem(30px);
@@ -192,7 +192,8 @@
   }
 }
 
-.nl-create-team {
+.nl-create-team,
+.nl-live-score {
 
   .player-main-block {
 
@@ -250,7 +251,7 @@
     .nl-RWM-position{
       top: 25%;
       right: 17%;
-    }  
+    }
 
     @media (min-width: 1200px)  {
       .nl-CM-position{
@@ -331,7 +332,7 @@
     background-size: 100% 100%;
 
   @include respond-to(wide-tablets){
-    
+
     .football.player-main-block {
       margin-top: 50px;
       min-height: 381px;
@@ -367,9 +368,9 @@
     @media (min-width: 1200px) and (max-width:1425px) {
       min-height: 499px;
       max-height: 558px;
-    }  
+    }
   }
-  
+
 
   // &.soccer {
   //   .nl-player-block{
@@ -444,7 +445,6 @@
 
     }
   }
-
 }
 
 

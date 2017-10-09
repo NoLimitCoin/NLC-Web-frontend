@@ -177,11 +177,20 @@
   	width: 96%;
   	left: 0.5rem;
   }
+	.table-info1 {
+		margin-bottom: 0.5rem;
+
+		th,
+		td {
+			text-align: left;
+		}
+	}
 
 	.table-info4,
 	.table-info3 {
 		th,
 		td {
+			padding: 0.5rem;
 			text-align: left;
 
  			&:nth-child(1) {
@@ -197,11 +206,35 @@
       }
 		}
 	}
+
+	.nl-table-scroll2{
+	  max-height: calculateRem(805px);
+	  @include respond-to(allsmall){
+	    max-height: inherit;
+	  }
+	}
 }
 
 /* team-field-section
 ---------------------------------------- */
-.team-field-section {}
+// override to nl-create-team.scss
+.nl-live-score {
+
+	.player-main-block {
+
+		&.football {
+			min-height: 400px;
+
+			.nl-player-block { // img shirts
+				max-width: 80px;
+
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
 
 .rank {
 	display: flex;
