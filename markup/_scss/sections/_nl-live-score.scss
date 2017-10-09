@@ -234,6 +234,17 @@
 			}
 		}
 	}
+
+	.nl-team-list-table {
+		th,
+		td {
+			padding: 0.5rem;
+
+			&:first-child {
+				text-align: left;
+			}
+		}
+	}
 }
 
 .rank {
