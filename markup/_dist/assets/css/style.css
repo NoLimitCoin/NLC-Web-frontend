@@ -13099,8 +13099,17 @@ td:nth-child(4).homepage-list-view {
     max-width: 100%;
     margin: 0; } }
 
-.nl-enter-contests .leaders-list p {
-  padding: 0 0.25rem; }
+.leaders-list .tit {
+  text-transform: uppercase;
+  color: #e48706; }
+
+.leaders-list p {
+  padding: 0 0.25rem;
+  margin-bottom: 0;
+  font-size: 14px; }
+
+.leaders-list p:nth-child(even) {
+  padding-bottom: 0.5rem; }
 
 /* Matches component
 ---------------------------------------- */
@@ -13258,6 +13267,87 @@ td:nth-child(4).homepage-list-view {
     .nl-contest-info-table .table-info3 th:nth-child(3),
     .nl-contest-info-table .table-info3 td:nth-child(3) {
       width: 30%; }
+
+/* team-field-section
+---------------------------------------- */
+.rank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1d2d4e;
+  border-radius: .625rem;
+  -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px; }
+  .rank__content {
+    padding: 0.875rem 1rem; }
+  .rank__no {
+    background-color: orange;
+    border-top-left-radius: .625rem;
+    border-bottom-left-radius: .625rem; }
+    .rank__no span {
+      display: block;
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.1;
+      padding: 0 1rem; }
+    .rank__no span + span {
+      font-size: 32px;
+      font-weight: 700; }
+  .rank__playlist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 96px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .rank__playlist-item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .rank__playlist-item span {
+      display: block;
+      position: relative;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.2; }
+    .rank__playlist-item span + span:before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      margin: 0.25rem;
+      line-height: 1.2;
+      vertical-align: middle; }
+    .rank__playlist-item .playing + span:before {
+      background-color: green; }
+    .rank__playlist-item .played + span:before {
+      background-color: orange; }
+    .rank__playlist-item .not-played + span:before {
+      background-color: red; }
+  .rank .leaders-list p {
+    padding: 0 0.25rem;
+    margin-bottom: 0;
+    font-size: 12px; }
+  .rank .leaders-list p:nth-child(even) {
+    padding-bottom: 0.25rem; }
 
 .contact-wrapper {
   background: url(../img/stadion_full.jpg) 0 0 no-repeat;

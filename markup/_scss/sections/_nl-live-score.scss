@@ -198,3 +198,104 @@
 		}
 	}
 }
+
+/* team-field-section
+---------------------------------------- */
+.team-field-section {}
+
+.rank {
+	display: flex;
+	background-color: #1d2d4e;
+  border-radius: .625rem;
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+
+	&__content {
+		padding: calculateRem(14px) calculateRem(16px);
+	}
+
+	&__no {
+		background-color: orange;
+		border-top-left-radius: .625rem;
+		border-bottom-left-radius: .625rem;
+
+		span {
+			display: block;
+			text-align: center;
+			font-weight: 400;
+			line-height: 1.1;
+			padding: 0 1rem;
+		}
+
+		span + span {
+			font-size: 32px;
+			font-weight: 700;
+		}
+	}
+
+	&__playlist {
+		display: flex;
+		height: 96px;
+		align-items: flex-end;
+	}
+
+	&__playlist-item {
+	  align-items: center;
+		flex: 1 0 auto;
+	  justify-content: center;
+	  display: flex;
+	  flex-direction: column;
+
+	  span {
+	  	display: block;
+	  	position: relative;
+	  	font-size: 18px;
+	  	font-weight: 400;
+	  	line-height: 1.2;
+	  }
+
+	  span + span {
+
+			&:before {
+	  		content: '';
+	  		display: inline-block;
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				margin: 0.25rem;
+				line-height: 1.2;
+				vertical-align: middle;
+	  	}
+	  }
+
+	  .playing + span {
+			&:before {
+				background-color: green;
+	  	}
+	  }
+	  .played + span {
+			&:before {
+				background-color: orange;
+	  	}
+	  }
+	  .not-played + span {
+			&:before {
+				background-color: red;
+	  	}
+	  }
+	}
+
+	// adjustments default leaders list
+	.leaders-list {
+		p {
+			padding: 0 0.25rem;
+	    margin-bottom: 0;
+	    font-size: 12px;
+		}
+		p:nth-child(even) {
+	    padding-bottom: 0.25rem;
+		}
+	}
+}
