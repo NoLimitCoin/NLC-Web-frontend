@@ -1,3 +1,6 @@
 # Ignore everything
 /.idea/
 /markup/node_modules/
+/markup/_dist/assets/css/fonts
+/markup/_dist/assets/css/style.css
+/markup/_dist/*.html
