@@ -1,6 +1,9 @@
 /*general for homepage*/
 .nl-section.homepage {
-  
+    .nl-table-scroll2 {
+      max-height: 31.5rem;
+    }
+
   padding: 1.5rem 2.25rem;
 
   @media (min-width: 1942px) {
@@ -26,6 +29,9 @@
 .homepage-field {
   .nl-team-list {
     max-width: 100%;
+  }
+  img.helmet {
+    height: 75px;
   }
 }
 
