@@ -10186,7 +10186,7 @@ p {
   padding: 1.5rem 3.25rem; }
 
 .homepage {
-  background: url(../img/stadion_full_big_whiter.jpg) 0 0 no-repeat;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
   background-size: contain;
   background-size: cover;
   background-position: bottom;
@@ -10194,6 +10194,15 @@ p {
   /* kaspers update are above here */
   /* kaspers update are above here */
   /* kaspers update are above here */ }
+  @media (min-width: 992px) {
+    .homepage .nl-contests-table .nav-tabs .nav-link {
+      min-width: 100px; } }
+  .homepage .top-5-section {
+    margin-bottom: 40px; }
+  .homepage .bottom-teams-contests-section {
+    margin-bottom: 20px; }
+  .homepage .dropdown-my-teams {
+    margin-top: 1.875rem; }
   .homepage .nl-team-info {
     max-width: 100%; }
     .homepage .nl-team-info button {
@@ -10210,7 +10219,7 @@ p {
     text-align: center !important;
     padding: 0.35rem 0.35rem; }
   .homepage .manager-section .table td, .homepage .manager-section .table th {
-    font-size: 11px;
+    font-size: 12px;
     padding: 0px 3px; }
   .homepage .manager-info h5 {
     margin-bottom: 0;
@@ -10235,6 +10244,8 @@ p {
     top: 83px; }
   .homepage .menu-item .player-thumbnail {
     height: 80px; }
+  .homepage .menu-item .manager-thumbnail {
+    height: 80px; }
   .homepage .nl-create-team .player-main-block.football {
     min-height: 360px;
     margin-top: 55px; }
@@ -10246,7 +10257,13 @@ p {
     background: none; }
   @media (min-width: 1200px) {
     .homepage .player-image {
-      height: 258px; }
+      height: 258px;
+      background-size: contain;
+      width: 60%;
+      height: 258px;
+      position: relative;
+      background-color: transparent;
+      margin: 0 auto; }
     .homepage .player-info {
       height: 258px;
       padding: 8px 14px; } }
@@ -10291,29 +10308,24 @@ p {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .homepage .player {
         margin-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         padding: 0 30px 0 28px; } }
     @media (min-width: 992px) {
       .homepage .player {
         margin-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         padding: 0 30px 0 28px; } }
     @media only screen and (min-width: 1201px) and (max-width: 1366px) {
       .homepage .player {
         min-height: 310px; } }
   .homepage .player-image {
-    background: url(../img/player1.png) top center no-repeat;
-    width: 100%;
-    height: 180px;
-    background-size: 236px 100%;
-    margin-top: 20px;
-    position: relative; }
+    background: url(../img/player1.png) top center no-repeat; }
     @media (max-width: 991px) {
       .homepage .player-image {
         width: 60%;
         height: 232px;
         position: relative;
-        background-size: contain;
+        background-size: cover;
         background-color: transparent;
         margin: 0 auto; } }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -10324,17 +10336,25 @@ p {
         background-size: cover;
         background-color: transparent;
         margin: 0 auto; } }
-    @media (min-width: 1200px) {
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
       .homepage .player-image {
         width: 60%;
-        height: 258px;
         position: relative;
         background-size: cover;
         background-color: transparent;
         margin: 0 auto; } }
-    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    @media (max-width: 767px) {
       .homepage .player-image {
         width: 60%;
+        height: 232px;
+        position: relative;
+        background-size: cover;
+        background-color: transparent;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 575px) {
+      .homepage .player-image {
+        width: 60%;
+        height: 232px;
         position: relative;
         background-size: cover;
         background-color: transparent;
@@ -10374,6 +10394,36 @@ p {
       @media only screen and (min-width: 1441px) and (max-width: 1680px) {
         .homepage .menu-item .player-thumbnail {
           height: 80px; } }
+    .homepage .menu-item .manager-thumbnail {
+      height: 100px;
+      background-size: cover; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .homepage .menu-item .manager-thumbnail {
+          height: 55px; } }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        .homepage .menu-item .manager-thumbnail {
+          height: 70px; } }
+      @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+        .homepage .menu-item .manager-thumbnail {
+          height: 70px; } }
+      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+        .homepage .menu-item .manager-thumbnail {
+          height: 80px; } }
+    .homepage .menu-item .manager-1 {
+      background: url(../img/about/person1.png) center center no-repeat;
+      background-size: contain; }
+    .homepage .menu-item .manager-2 {
+      background: url(../img/about/Oscar.jpg) center center no-repeat;
+      background-size: contain; }
+    .homepage .menu-item .manager-3 {
+      background: url(../img/about/person3.png) center center no-repeat;
+      background-size: contain; }
+    .homepage .menu-item .manager-4 {
+      background: url(../img/about/person4.png) center center no-repeat;
+      background-size: contain; }
+    .homepage .menu-item .manager-5 {
+      background: url(../img/about/person5.png) center center no-repeat;
+      background-size: contain; }
     .homepage .menu-item .number {
       position: absolute;
       top: 103px;
@@ -10454,6 +10504,48 @@ p {
           font-size: 10px;
           height: 18px; }
           .homepage .menu-item .player-thumbnail-name p {
+            padding-left: 20px;
+            padding-top: 0;
+            margin-top: -2px; } }
+    .homepage .menu-item .manager-thumbnail-name {
+      background: #0f254f;
+      color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+      display: inline-block;
+      height: 22px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .homepage .menu-item .manager-thumbnail-name p {
+        padding: 2px 5px 5px 15px; }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .homepage .menu-item .manager-thumbnail-name {
+          font-size: 10px;
+          height: 18px; }
+          .homepage .menu-item .manager-thumbnail-name p {
+            padding-left: 20px;
+            padding-top: 1px; } }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        .homepage .menu-item .manager-thumbnail-name {
+          font-size: 10px;
+          height: 18px; }
+          .homepage .menu-item .manager-thumbnail-name p {
+            padding-left: 20px;
+            padding-top: 0; } }
+      @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+        .homepage .menu-item .manager-thumbnail-name {
+          font-size: 10px;
+          height: 18px; }
+          .homepage .menu-item .manager-thumbnail-name p {
+            padding-left: 20px;
+            padding-top: 0; } }
+      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+        .homepage .menu-item .manager-thumbnail-name {
+          font-size: 10px;
+          height: 18px; }
+          .homepage .menu-item .manager-thumbnail-name p {
             padding-left: 20px;
             padding-top: 0;
             margin-top: -2px; } }
@@ -10642,11 +10734,6 @@ p {
     .hidden-xxs {
       display: block; } }
 
-@media (min-width: 992px) {
-  .position,
-  .week {
-    min-height: 500px; } }
-
 .position h5,
 .week h5 {
   font-weight: 400; }
@@ -10811,7 +10898,7 @@ p {
   margin-top: 20px; }
 
 .manager-image {
-  background: url(../img/player1.png) top center no-repeat;
+  background: url(../img/about/person1.png) center center no-repeat;
   width: 100%;
   height: 0;
   margin: 0 auto;
@@ -10904,7 +10991,7 @@ p {
   border-radius: 0 !important; }
 
 .homepage-table .nav-item {
-  width: 25%;
+  width: 23.33%;
   margin: 0; }
   @media screen and (min-width: 420px) and (max-width: 499px) {
     .homepage-table .nav-item {
@@ -10914,6 +11001,14 @@ p {
     .homepage-table .nav-item {
       width: auto;
       min-width: 65px; } }
+
+@media screen and (max-width: 1360px) {
+  .homepage-table .nav-item.bigger-nav {
+    width: 30%; } }
+
+@media screen and (max-width: 1360px) {
+  .homepage-table .nav-item.smaller-nav {
+    width: 23.33%; } }
 
 .homepage-table .nav-tabs {
   padding: 10px 10px 0 10px;

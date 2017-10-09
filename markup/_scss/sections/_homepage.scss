@@ -5,11 +5,30 @@
 
 .homepage {
 
-  background: url(../img/stadion_full_big_whiter.jpg) 0 0 no-repeat;
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
   background-size: contain;
   background-size: cover;
   background-position: bottom;
   padding: 6rem 0;
+
+  @media (min-width: 992px) {
+      .nl-contests-table .nav-tabs .nav-link {
+        min-width: 100px;
+    }
+  }
+  
+
+  .top-5-section {
+    margin-bottom: 40px;
+  }
+
+  .bottom-teams-contests-section {
+    margin-bottom: 20px;
+  }
+
+  .dropdown-my-teams {
+    margin-top: 1.875rem;
+  }
 
   .nl-team-info {
     max-width: 100%;
@@ -41,7 +60,7 @@
 
 
   .manager-section .table td, .manager-section .table th {
-    font-size: 11px;
+    font-size: 12px;
     padding: 0px 3px;
   }
 
@@ -82,6 +101,10 @@
   .menu-item .player-thumbnail {
     height: 80px;
   }
+
+  .menu-item .manager-thumbnail {
+    height: 80px;
+  }
     
   .nl-create-team .player-main-block.football {
     min-height: 360px;
@@ -103,6 +126,13 @@
   @include respond-to (allwider) {
     .player-image {
       height: 258px;
+      background-size: contain;
+      width: 60%;
+      height: 258px;
+      position: relative;
+      //background-size: cover;
+      background-color: transparent;
+      margin: 0 auto;
     }
 
     .player-info {
@@ -181,13 +211,13 @@
 
     @include respond-to(tablets) {
       margin-top: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       padding: 0 30px 0 28px;
     }
 
     @include respond-to(allwide) {
       margin-top: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       padding: 0 30px 0 28px;
     }
 
@@ -199,17 +229,17 @@
 
   .player-image {
     background: url(../img/player1.png) top center no-repeat;
-    width: 100%;
-    height: 180px;
-    background-size: 236px 100%;
-    margin-top: 20px;
-    position: relative;
+    //width: 100%;
+    // height: 180px;
+    // background-size: 236px 100%;
+    // margin-top: 20px;
+    // position: relative;
 
     @include respond-to(allsmall) {
       width: 60%;
       height: 232px;
       position: relative;
-      background-size: contain;
+      background-size: cover;
       background-color: transparent;
       margin: 0 auto;
     }
@@ -224,12 +254,12 @@
     }
 
     @include respond-to(allwider) {
-      width: 60%;
-      height: 258px;
-      position: relative;
-      background-size: cover;
-      background-color: transparent;
-      margin: 0 auto;
+      // width: 60%;
+      // height: 258px;
+      // position: relative;
+      // //background-size: cover;
+      // background-color: transparent;
+      // margin: 0 auto;
     }
 
     // @include respond-to(wide-tablets) {
@@ -240,6 +270,24 @@
     @include respond-to(medium-display) {
       width: 60%;
       //height: 310px;
+      position: relative;
+      background-size: cover;
+      background-color: transparent;
+      margin: 0 auto;
+    }
+
+    @include respond-to(allmobile) {
+      width: 60%;
+      height: 232px;
+      position: relative;
+      background-size: cover;
+      background-color: transparent;
+      margin: 0 auto;
+    }
+
+    @include respond-to(handhelds) {
+      width: 60%;
+      height: 232px;
       position: relative;
       background-size: cover;
       background-color: transparent;
@@ -300,6 +348,54 @@
       }
     }
 
+    .manager-thumbnail {
+      height: 100px;
+      //background: url(../img/player1.png) top center no-repeat;
+      background-size: cover;
+      
+
+      @include respond-to(wide-tablets) {
+        height: 55px;
+      }
+
+      @include respond-to(medium-display) {
+        height: 70px;
+      }
+
+      @include respond-to(wide-display) {
+        height: 70px;
+      }
+
+      @include respond-to(large-display) {
+        height: 80px;
+      }
+    }
+
+    .manager-1 {
+      background: url(../img/about/person1.png) center center no-repeat;
+      background-size: contain;
+    }
+
+    .manager-2 {
+      background: url(../img/about/Oscar.jpg) center center no-repeat;
+      background-size: contain;
+    }
+
+    .manager-3 {
+      background: url(../img/about/person3.png) center center no-repeat;
+      background-size: contain;
+    }
+
+    .manager-4 {
+      background: url(../img/about/person4.png) center center no-repeat;
+      background-size: contain;
+    }
+
+    .manager-5 {
+      background: url(../img/about/person5.png) center center no-repeat;
+      background-size: contain;
+    }
+
     .number {
       position: absolute;
       top: 103px;
@@ -347,6 +443,64 @@
     }
 
     .player-thumbnail-name {
+      background: #0f254f;
+      color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+      display: inline-block;
+      height: 22px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      p {
+        padding: 2px 5px 5px 15px;
+      }
+
+      @include respond-to(wide-tablets) {
+        font-size: 10px;
+        height: 18px;
+
+        p {
+          padding-left: 20px;
+          padding-top: 1px;
+        }
+      }
+
+      @include respond-to(medium-display) {
+        font-size: 10px;
+        height: 18px;
+
+        p {
+          padding-left: 20px;
+          padding-top: 0;
+        }
+      }
+
+      @include respond-to(wide-display) {
+        font-size: 10px;
+        height: 18px;
+
+        p {
+          padding-left: 20px;
+          padding-top: 0;
+        }
+      }
+
+      @include respond-to(large-display) {
+        font-size: 10px;
+        height: 18px;
+
+        p {
+          padding-left: 20px;
+          padding-top: 0;
+          margin-top: -2px;
+        }
+      }
+    }
+
+    .manager-thumbnail-name {
       background: #0f254f;
       color: #ffffff;
       font-size: 12px;
@@ -716,7 +870,7 @@
 .week {
   
   @include respond-to(allwide) {
-    min-height: 500px;
+    //min-height: 500px;
   }
 
   h5 {
@@ -927,7 +1081,7 @@
 }
 
 .manager-image {
-  background: url(../img/player1.png) top center no-repeat;
+  background: url(../img/about/person1.png) center center no-repeat;
   width: 100%;
   height: 0;
   margin: 0 auto;
@@ -1041,6 +1195,7 @@
 
 /*upcoming contests*/
 .homepage-table {
+
   .homepage {
     .tab-content {
       border-radius: 0 !important;
@@ -1049,8 +1204,9 @@
       border-radius: 0 !important; 
     }
   }
+
   .nav-item {
-      width: 25%;
+      width: 23.33%;
       margin: 0;
 
       @media screen and (min-width: 420px) and (max-width: 499px) {
@@ -1062,6 +1218,19 @@
         width: auto;
         min-width: 65px;
       }
+  }
+
+  .nav-item.bigger-nav {
+
+    @media screen and (max-width: 1360px) {
+      width: 30%;
+    }
+  }
+  .nav-item.smaller-nav {
+
+    @media screen and (max-width: 1360px) {
+      width: 23.33%;
+    }
   }
 
   .nav-tabs {
