@@ -48,13 +48,13 @@ section.nl-section.nl-players.nl-live-score
 				h1 Live scores
 		div.row
 			div.col-sm-12.col-lg-6.col-xl-8
-				h6.d-inline-block Matches
+				h5.d-inline-block.component-header Matches
 				div.matches
 					div.matches__scrollarea
 						+repeat(12)
 
 			div.col-sm-12.col-lg-6.col-xl-4
-				h6.d-inline-block My current contests
+				h5.d-inline-block.component-header My current contests
 				a.btn.btn-primary.btn-sm.btn-inline Refresh
 				div.current-contents
 					div.nl-table-responsive
@@ -73,7 +73,7 @@ section.nl-section.nl-players.nl-live-score
 
 		div.row
 			div.col-sm-12.col-lg-6.col-xl-4
-				h6.d-inline-block Contest info
+				h5.d-inline-block.component-header Contest info
 				div.nl-contest-info-table
 					div.table-heading
 						div.dropdown
@@ -119,14 +119,14 @@ section.nl-section.nl-players.nl-live-score
 								+contest-info(11)
 
 			div.col-sm-12.col-lg-6.col-xl-4
-				h6.d-inline-block Stats
+				h5.d-inline-block.component-header Stats
 				div.team-field-section
 					div.rank
 						div.rank__no.aligner
 							div.rank__center
 								span Rank
 								span 124
-						div.rank_select
+						div.rank__select
 							div.rank__content
 								div.dropdown
 									button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Contest touchdowns all day!
@@ -144,7 +144,7 @@ section.nl-section.nl-players.nl-live-score
 									div.rank__playlist-item
 										span.not-played Not played
 										span 4
-						div.rank__stats
+						div.rank__stats.part-of-block
 							div.rank__content.leaders-list
 								p.tit original
 								p 90.3 FP
@@ -152,6 +152,22 @@ section.nl-section.nl-players.nl-live-score
 								p 114.8 FP
 								p.tit PMR
 								p 360 min
+
+				div.rank
+					div.rank__stats.single-block
+						div.row
+							div.col
+								div.rank__content.leaders-list
+									p.tit original
+									p 90.3 FP
+							div.col
+								div.rank__content.leaders-list
+									p.tit Live projections
+									p 114.8 FP
+							div.col
+								div.rank__content.leaders-list
+									p.tit PMR
+									p 360 min
 
 				div.nl-team-button
 					button.btn.btn-team.btn-big-radius.active(type="button").field-view-btn field view
@@ -237,7 +253,7 @@ section.nl-section.nl-players.nl-live-score
 										+team-field-table(7)
 
 			div.col-sm-12.col-lg-6.col-xl-4
-				h6.d-inline-block Live chat
+				h5.d-inline-block.component-header Live chat
 				div.nl-contest-info-table
 					div.table-heading
 						div.chat-search

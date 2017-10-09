@@ -4,6 +4,13 @@
       @content;
     }
   }
+
+  @else if $media==tabletup {
+    @media (min-width: 768px)  {
+      @content;
+    }
+  }
+
   @else if $media==wide-handhelds {
     @media only screen and (min-width: 576px) and (max-width: 767px) {
       @content;
