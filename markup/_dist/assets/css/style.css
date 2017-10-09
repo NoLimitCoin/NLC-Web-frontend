@@ -10182,8 +10182,9 @@ p {
   background-color: #fff; }
 
 /*general for homepage*/
-.nl-section.homepage {
-  padding: 1.5rem 3.25rem; }
+@media (min-width: 1681px) {
+  .nl-section.homepage {
+    padding: 1.5rem 11.25rem; } }
 
 .homepage {
   background: url(../img/stadion_full.jpg) 0 0 no-repeat;
@@ -10221,6 +10222,9 @@ p {
   .homepage .manager-section .table td, .homepage .manager-section .table th {
     font-size: 12px;
     padding: 0px 3px; }
+    @media (min-width: 1681px) {
+      .homepage .manager-section .table td, .homepage .manager-section .table th {
+        font-size: 13px; } }
   .homepage .manager-info h5 {
     margin-bottom: 0;
     font-size: 1.175rem;
@@ -10293,6 +10297,8 @@ p {
       overflow: none;
       -webkit-box-shadow: none;
       box-shadow: none; } }
+  .homepage .t-fp {
+    color: #e19708; }
   .homepage .week {
     margin-top: 0; }
     @media (max-width: 767px) {
@@ -10317,7 +10323,7 @@ p {
         padding: 0 30px 0 28px; } }
     @media only screen and (min-width: 1201px) and (max-width: 1366px) {
       .homepage .player {
-        min-height: 310px; } }
+        min-height: 256px; } }
   .homepage .player-image {
     background: url(../img/player1.png) top center no-repeat; }
     @media (max-width: 991px) {
@@ -10620,7 +10626,6 @@ p {
     @media (min-width: 992px) {
       .homepage .player-info {
         display: inline-block !important; } }
-  .homepage .player-image-inner,
   .homepage .manager-image-inner {
     background: #0f254f;
     color: #ffffff;
@@ -10631,11 +10636,9 @@ p {
     text-transform: uppercase;
     height: 40px; }
     @media (max-width: 767px) {
-      .homepage .player-image-inner,
       .homepage .manager-image-inner {
         width: calc(100% - 50px);
         margin: 0 25px; } }
-    .homepage .player-image-inner .number,
     .homepage .manager-image-inner .number {
       display: inline-block;
       width: 30px;
@@ -10643,41 +10646,98 @@ p {
       /* Old browsers */
       background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
       background: linear-gradient(to bottom, #e89608 0%, #e37606 100%); }
-    .homepage .player-image-inner .name,
     .homepage .manager-image-inner .name {
       position: absolute;
       top: 7px;
       left: 60px; }
-      .homepage .player-image-inner .name p,
-      .homepage .manager-image-inner .name p {
-        font-size: 14px;
-        margin-left: -15px; }
-    .homepage .player-image-inner p,
+      @media (max-width: 1200px) {
+        .homepage .manager-image-inner .name {
+          left: 40px; } }
+      @media (min-width: 1200px) {
+        .homepage .manager-image-inner .name p {
+          font-size: 15px;
+          margin-left: -14px;
+          padding: 3px 0 0 8px; } }
+      @media (max-width: 1200px) {
+        .homepage .manager-image-inner .name p {
+          font-size: 13px; } }
     .homepage .manager-image-inner p {
       display: inline-block;
       padding: 5px 0 0 8px;
       font-size: 15px; }
-      .homepage .player-image-inner p.points,
       .homepage .manager-image-inner p.points {
         color: #e89708;
         float: right;
         padding-right: 10px;
         padding-top: 12px; }
         @media screen and (min-width: 768px) {
-          .homepage .player-image-inner p.points,
           .homepage .manager-image-inner p.points {
             display: none; } }
-      .homepage .player-image-inner p.name,
       .homepage .manager-image-inner p.name {
         padding-top: 8px !important;
         padding-left: 10px; }
-    .homepage .player-image-inner .number,
     .homepage .manager-image-inner .number {
       width: 40px;
       height: 40px;
       padding-left: 8px; }
-      .homepage .player-image-inner .number p,
       .homepage .manager-image-inner .number p {
+        font-size: 28px;
+        padding-top: 12px; }
+  .homepage .player-image-inner {
+    background: #0f254f;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-transform: uppercase;
+    height: 40px; }
+    @media (max-width: 767px) {
+      .homepage .player-image-inner {
+        width: calc(100% - 50px);
+        margin: 0 25px; } }
+    .homepage .player-image-inner .number {
+      display: inline-block;
+      width: 30px;
+      background: #e89608;
+      /* Old browsers */
+      background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
+      background: linear-gradient(to bottom, #e89608 0%, #e37606 100%); }
+    .homepage .player-image-inner .name {
+      position: absolute;
+      top: 7px;
+      left: 60px; }
+      @media (max-width: 1200px) {
+        .homepage .player-image-inner .name {
+          left: 40px; } }
+      @media (min-width: 1200px) {
+        .homepage .player-image-inner .name p {
+          font-size: 15px;
+          margin-left: -14px;
+          padding: 3px 0 0 8px; } }
+      @media (max-width: 1200px) {
+        .homepage .player-image-inner .name p {
+          font-size: 16px; } }
+    .homepage .player-image-inner p {
+      display: inline-block;
+      padding: 5px 0 0 8px;
+      font-size: 15px; }
+      .homepage .player-image-inner p.points {
+        color: #e89708;
+        float: right;
+        padding-right: 10px;
+        padding-top: 12px; }
+        @media screen and (min-width: 768px) {
+          .homepage .player-image-inner p.points {
+            display: none; } }
+      .homepage .player-image-inner p.name {
+        padding-top: 8px !important;
+        padding-left: 10px; }
+    .homepage .player-image-inner .number {
+      width: 40px;
+      height: 40px;
+      padding-left: 8px; }
+      .homepage .player-image-inner .number p {
         font-size: 28px;
         padding-top: 12px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -10917,6 +10977,9 @@ p {
       position: relative;
       background-size: cover;
       background-color: transparent; } }
+  @media (min-width: 1681px) {
+    .manager-image {
+      background-size: contain; } }
   @media (max-width: 767px) {
     .manager-image .manager-image-inner {
       bottom: -40px; } }
@@ -10970,10 +11033,6 @@ p {
 
 .managed-points {
   float: right; }
-
-.manager-section .table td, .manager-section .table th {
-  font-size: 12px;
-  padding: 1px 3px; }
 
 .t-playername {
   width: 40%; }
