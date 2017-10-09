@@ -1,12 +1,89 @@
 /*general for homepage*/
 .nl-section.homepage {
-    
-  @include respond-to (extra-large-display) {
+  
+  padding: 1.5rem 2.25rem;
+
+  @media (min-width: 1942px) {
     padding: 1.5rem 11.25rem;
+  } 
+  @media (max-width: 1942px) and (min-width: 1681px) {
+    padding: 1.5rem 2.25rem;
   }  
+
+  @include respond-to (allnotwide) {
+    padding: 1rem 0.5rem;
+  }
+
+  @include respond-to (tablets) {
+    padding: 1rem 0.5rem;
+  }
+
+  @include respond-to (allmobile) {
+    padding: 1rem 0.5rem;
+  }
+}
+
+.homepage-field {
+  .nl-team-list {
+    max-width: 100%;
+  }
 }
 
 .homepage {
+
+
+  .no-padding {
+    padding: 0 15px;
+  }
+
+  @include respond-to (allmobile) {
+    .contests .upcoming-contests {
+      padding-top: 20px;
+    }
+  }  
+
+  @include respond-to (tablets) {
+    .no-padding {
+      padding: 0px;
+    }
+  }
+
+  @include respond-to (allsmall) {
+    .nl-my-teams .nl-card-wrapper {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .nl-create-team .player-main-block.football .nl-QB-position {
+    top: 19%;
+  }
+
+  .nl-create-team .player-main-block.football .nl-RWR-position {
+    top: 1%;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(1), .nl-my-teams .nl-team-list-table td:nth-child(1) {
+    width: 50%;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(2), .nl-my-teams .nl-team-list-table td:nth-child(2) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(3), .nl-my-teams .nl-team-list-table td:nth-child(3) {
+    width: 15%;
+    text-align: center;
+  }
+
+  .nl-my-teams .nl-team-list-table th:nth-child(4), .nl-my-teams .nl-team-list-table td:nth-child(4) {
+    width: 20%;
+    text-align: center;
+  }
+
+  .nl-my-teams .nl-team-list-table th.name-list-view {
+    text-align: left;
+  }
 
   background: url(../img/stadion_full.jpg) 0 0 no-repeat;
   background-size: contain;
@@ -14,7 +91,11 @@
   background-position: bottom;
   padding: 6rem 0;
 
-  .nl-contests-table .tab-content {
+  .nl-contests-table .table thead th {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .tab-content {
     border-radius: 0;
   }
 
@@ -31,6 +112,10 @@
 
   .bottom-teams-contests-section {
     margin-bottom: 20px;
+
+    @include respond-to (allmobile) {
+      padding-top: 20px;
+    }
   }
 
   .dropdown-my-teams {
@@ -65,13 +150,34 @@
       padding: 0.35rem 0.35rem;
   }
 
+  .manager-section .table .t-playername {
+    padding: 0rem 1rem;
+  }
 
-  .manager-section .table td, .manager-section .table th {
+  .manager-section .table td, .manager-section .table th, .nl-my-teams .nl-team-list-table td {
     font-size: 12px;
-    padding: 0px 3px;
-
+    padding: 0;
+      
     @include respond-to (extra-large-display) {
       font-size: 13px;
+    }
+
+    @include respond-to (wide-tablets) {
+      font-size: 11px;
+    }
+
+    @include respond-to (tablets) {
+      font-size: 13px;
+      //padding: 0rem 1rem;
+    }
+
+    @include respond-to (allmobile) {
+      font-size: 11px;
+      //padding: 0rem 1rem;
+    }
+
+    @include respond-to (handhelds) {
+      //padding: 0.5rem 1rem;
     }
   }
 
@@ -226,13 +332,13 @@
     @include respond-to(tablets) {
       margin-top: 20px;
       margin-bottom: 0px;
-      padding: 0 30px 0 28px;
+      padding: 0px;
     }
 
     @include respond-to(allwide) {
       margin-top: 20px;
       margin-bottom: 0px;
-      padding: 0 30px 0 28px;
+      padding: 0px;
     }
 
     @include respond-to(medium-display) {
@@ -300,7 +406,7 @@
     }
 
     @include respond-to(handhelds) {
-      width: 60%;
+      width: 80%;
       height: 202px;
       position: relative;
       background-size: contain;
@@ -690,9 +796,20 @@
     text-transform: uppercase;
     height: 40px;
 
+    @include respond-to(allsmall) {
+      width: 100%;
+      margin: 0;
+      height: 40px;
+    }
+
     @include respond-to(allmobile) {
-      width: calc(100% - 50px);
-      margin: 0 25px;
+      width: 100%;
+      margin: 0;
+    }
+
+    @include respond-to(handhelds) {
+      width: 100%;
+      margin: 0px;
     }
 
     .number {
@@ -779,6 +896,7 @@
 
     @include respond-to(handhelds) {
       width: 100%;
+      margin: 0;
     }
 
     .number {
@@ -1244,7 +1362,12 @@
 
   @include respond-to(allmobile)  {
     width: 100%;
-    margin: 0 25px;
+    margin: 0px;
+  }
+
+  @include respond-to(handhelds)  {
+    width: 100%;
+    margin: 0 0px;
   }
 }
 
@@ -1450,6 +1573,11 @@ td:nth-child(4) {
       font-size: 12px;
       line-height: 16px;
     }
+
+    @include respond-to(handhelds) {
+      font-size: 11px;
+      line-height: 16px;
+    }
   }
 }
 
@@ -1459,19 +1587,19 @@ td:nth-child(4) {
   }
 
   td:nth-child(1) {
-    width: 33% !important;
+    width: 37% !important;
   }
 
   td:nth-child(2) {
-    width: 12% !important;
+    width: 8% !important;
   }
 
   td:nth-child(3) {
-    width: 10% !important;
+    width: 12% !important;
   }
 
   td:nth-child(4) {
-    width: 10% !important;
+    width: 8% !important;
   }
 
   td:nth-child(5) {
@@ -1479,27 +1607,31 @@ td:nth-child(4) {
   }
 
   td:nth-child(6) {
-    width: 15% !important;
+    width: 12.5% !important;
   }
 
   td:nth-child(7) {
-    width: 10% !important;
+    width: 12.5% !important;
   }
 
+
+
+
+
   th:nth-child(1) {
-    width: 33% !important;
+    width: 37% !important;
   }
 
   th:nth-child(2) {
-    width: 12% !important;
+    width: 8% !important;
   }
 
   th:nth-child(3) {
-    width: 10% !important;
+    width: 12% !important;
   }
 
   th:nth-child(4) {
-    width: 10% !important;
+    width: 8% !important;
   }
 
   th:nth-child(5) {
@@ -1507,11 +1639,11 @@ td:nth-child(4) {
   }
 
   th:nth-child(6) {
-    width: 14% !important;
+    width: 12.5% !important;
   }
 
   th:nth-child(7) {
-    width: 13% !important;
+    width: 12.5% !important;
   }
 }
 
