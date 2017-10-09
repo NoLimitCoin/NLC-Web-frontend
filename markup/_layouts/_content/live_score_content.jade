@@ -31,6 +31,16 @@ mixin contest-info(times)
 			td Username xxx
 			td Score
 
+mixin team-field-table(times)
+	each i in new Array(times)
+		tr
+			td Player name
+			td.pos FLEX
+			td 30
+			td $0
+			td
+				button.btn.btn-primary.btn-sm.btn-warning cut
+
 section.nl-section.nl-players.nl-live-score
 	div.container.container-wider
 		div.row
@@ -224,67 +234,4 @@ section.nl-section.nl-players.nl-live-score
 											th
 
 									tbody
-										tr
-
-											td Player name
-											td.pos FLEX
-											td 30
-											td $0
-											td
-												button.btn.btn-primary.btn-sm.btn-warning cut
-										tr
-
-											td Player name
-											td.pos K
-											td 30
-											td $0
-											td
-												button.btn.btn-primary.btn-sm.btn-warning cut
-										tr
-
-											td Player name
-											td.pos LRB
-											td 30
-											td $0
-											td
-												button.btn.btn-primary.btn-sm.btn-warning cut
-										tr
-
-											td Player name
-											td.pos RRB
-											td 30
-											td $0
-											td
-												button.btn.btn-primary.btn-sm.btn-warning cut
-										tr
-
-											td Player name
-											td.pos QB
-											td 30
-											td $0
-											td
-												button.btn.btn-primary.btn-sm.btn-warning cut
-										tr
-
-											td Player name
-											td.pos LWR
-											td 30
-											td $0
-											td
-												button.btn.btn-primary.btn-sm.btn-warning cut
-										tr
-
-											td Player name
-											td.pos RWR
-											td 30
-											td $0
-											td
-												button.btn.btn-primary.btn-sm.btn-warning cut
-										tr
-
-											td Player name
-											td.pos TE
-											td 30
-											td $0
-											td
-												button.btn.btn-primary.btn-sm.btn-warning cut
+										+team-field-table(7)
