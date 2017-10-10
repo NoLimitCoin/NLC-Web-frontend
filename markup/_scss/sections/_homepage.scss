@@ -29,6 +29,10 @@
       height: 65px;
     }
 
+    #top5-manager-content .manager-image-inner .name p {
+      padding-left: 25px;
+    }
+
     .nl-create-team .nl-team-card.table-data-field h3, #top5-manager-content h3 {
       font-size: 1.5rem;
     }
@@ -37,6 +41,12 @@
       font-size: 1.15rem;
       line-height: 1rem;
       padding-left: 0;
+    }
+  }
+
+  @include respond-to(wide-tablets) {
+    #top5-manager-content .manager-image-inner .name p {
+      padding-left: 5px;
     }
   }
 
@@ -1261,7 +1271,7 @@
     }
   }
   .manager-image-inner .name p {
-    padding-left: 25px;
+    //padding-left: 25px;
     padding-top: 3px;
   }
 
