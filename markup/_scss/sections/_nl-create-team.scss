@@ -4,8 +4,9 @@
 }
 
 .nl-create-team.nl-players.soccer {
-    background: url(../img/stadion_detail.jpg) no-repeat 0 0;
-  }
+  background: url(../img/stadion_detail.jpg) no-repeat 0 0;
+  background-size: cover;
+}
 
 .nl-create-team.soccer {
   @include respond-to (allwider) {
@@ -34,6 +35,17 @@
 }
 
 .nl-create-team {
+
+  .nl-mob-table .nl-content p.orange, td.orange {
+    color: #ff9f2f;
+  }
+
+  .nl-mob-table .nl-content .btn-primary {
+    padding: 0.75rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
 
   .nl-my-teams .nl-team-list-table th:nth-child(1) {
     text-align: left;
@@ -91,10 +103,11 @@
     }
   }
 
-  padding-left: calculateRem(30px);
-  padding-right: calculateRem(30px);
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
   padding-bottom: calculateRem(50px);
-  padding-top: calculateRem(30px);
+  padding-top: 0.875rem;
+
   @include respond-to(allsmall){
     padding-left: 0;
     padding-right: 0;
@@ -167,7 +180,6 @@
       }
     }
   }
-
   .table thead th {
     font-size: 12px;
   }
@@ -216,12 +228,26 @@
       }
     }
   }
+
+  .nl-desc-table thead tr th {
+    &:nth-child(2) {
+      text-align: center;
+    }
+  }
+
   .table-striped {
     tbody tr {
       &:hover {
 
       }
     }
+  }
+}
+
+.nl-create-team-table .table thead th {
+  @include respond-to(wide-tablets) {
+    padding: 0.5rem 0;
+    font-size: 11px;
   }
 }
 
@@ -309,28 +335,28 @@
     }
 
     .nl-ST-position{
-      top: 2.5%;
+      top: -0.5%;
       left: 40%;
     }
 
     .nl-LS-position{
-      top: 2.5%;
+      top: -0.5%;
       left: 17%;
     }
 
     .nl-RS-position{
-      top: 2.5%;
+      top: -0.5%;
       right: 17%;
     }
 
     .nl-LWM-position{
       top: 25%;
-      left: 17%;
+      left: 19%;
     }
 
     .nl-RWM-position{
       top: 25%;
-      right: 17%;
+      right: 19%;
     }
 
     @media (min-width: 1200px)  {
@@ -340,11 +366,11 @@
       }
       .nl-LWM-position{
         top: 25%;
-        left: 25%;
+        left: 22%;
       }
       .nl-RWM-position{
         top: 25%;
-        right: 25%;
+        right: 22%;
       }
       .nl-ST-position{
         top: 2.5%;
@@ -482,7 +508,7 @@
       }
 
       .nl-player-block.nl-DEF-position img {
-        max-width: 90px;
+        max-width: 80px;
       }
     }
     @include respond-to(allsmall){
