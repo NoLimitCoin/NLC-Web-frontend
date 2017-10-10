@@ -9920,7 +9920,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10037,7 +10037,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -12293,6 +12293,16 @@ td:nth-child(4).homepage-list-view {
   padding-right: 0.875rem;
   padding-bottom: 3.125rem;
   padding-top: 0.875rem; }
+  .nl-create-team .nl-my-teams .table td {
+    padding: 0rem; }
+  .nl-create-team .nl-my-teams .table td p {
+    margin-bottom: 0px; }
+  .nl-create-team .nl-my-teams .table td button {
+    font-weight: 600; }
+  .nl-create-team .nl-my-teams .table td p.gametime {
+    line-height: 1rem;
+    font-size: 10px;
+    font-style: italic; }
   .nl-create-team .nl-mob-table .nl-content p.orange, .nl-create-team td.orange {
     color: #ff9f2f; }
   .nl-create-team .nl-mob-table .nl-content .btn-primary {
@@ -12303,15 +12313,15 @@ td:nth-child(4).homepage-list-view {
     text-align: left; }
   @media (min-width: 992px) {
     .nl-create-team .nl-my-teams .nl-team-card img {
-      height: 100px; } }
+      height: 80px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .nl-create-team .nl-my-teams .nl-team-card img {
-      height: 100px; }
+      height: 70px; }
     .nl-create-team .nl-team-card.table-data-field h3 {
       font-size: 2rem; } }
   @media (max-width: 767px) {
     .nl-create-team .nl-my-teams .nl-team-card img {
-      height: 80px; }
+      height: 60px; }
     .nl-create-team .nl-team-card.table-data-field h3 {
       font-size: 2rem; } }
   .nl-create-team .btn-big-radius {
@@ -12348,6 +12358,9 @@ td:nth-child(4).homepage-list-view {
 
 .nl-players-table.nl-create-team-table td:first-child {
   padding-left: 0.25rem; }
+
+.nl-create-team-table .nl-table-scroll2 {
+  max-height: 34rem; }
 
 .nl-create-team-table .visibility-hidden {
   visibility: hidden; }
@@ -12862,7 +12875,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13118,7 +13131,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14313,7 +14326,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
