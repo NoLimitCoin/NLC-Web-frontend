@@ -5,7 +5,13 @@
 .nl-enter-contests {
 
   .nl-my-teams .nl-team-card img {
-    height: 70px;
+    height: 80px;
+  }
+
+  @include respond-to (allmobile) {
+    .nl-my-teams .nl-team-card img {
+      height: 50px;
+    } 
   }
 
   .nl-my-teams .nl-team-list-table th:nth-child(1) {
