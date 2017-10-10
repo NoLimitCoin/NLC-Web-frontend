@@ -124,7 +124,7 @@
 
       @include respond-to(allwider){
         margin-left: 2rem;
-        font-size: 17px;
+        font-size: 23px;
 
       }
 
@@ -256,6 +256,10 @@
         width: 20%;
       }
     }
+  }
+
+  .more-teams-button {
+    text-align: center;
   }
 }
 
