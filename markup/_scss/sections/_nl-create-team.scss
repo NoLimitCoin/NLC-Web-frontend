@@ -7,6 +7,32 @@
     background: url(../img/stadion_detail.jpg) no-repeat 0 0;
   }
 
+.nl-create-team.soccer {
+  @include respond-to (allwider) {
+    .nl-my-teams .nl-team-card img {
+      height: 80px;
+    }
+  }
+
+  @include respond-to (wide-tablets) {
+    .nl-my-teams .nl-team-card img {
+      height: 73px;
+    }
+  }
+
+  @include respond-to (tablets) {
+    .nl-my-teams .nl-team-card img {
+      height: 70px;
+    }
+  }
+
+  @include respond-to (allmobile) {
+    .nl-my-teams .nl-team-card img {
+      height: 70px;
+    }
+  }
+}
+
 .nl-create-team {
 
   .nl-my-teams .nl-team-list-table th:nth-child(1) {

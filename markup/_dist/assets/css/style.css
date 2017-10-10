@@ -12271,6 +12271,22 @@ td:nth-child(4).homepage-list-view {
 .nl-create-team.nl-players.soccer {
   background: url(../img/stadion_detail.jpg) no-repeat 0 0; }
 
+@media (min-width: 1200px) {
+  .nl-create-team.soccer .nl-my-teams .nl-team-card img {
+    height: 80px; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .nl-create-team.soccer .nl-my-teams .nl-team-card img {
+    height: 73px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nl-create-team.soccer .nl-my-teams .nl-team-card img {
+    height: 70px; } }
+
+@media (max-width: 767px) {
+  .nl-create-team.soccer .nl-my-teams .nl-team-card img {
+    height: 70px; } }
+
 .nl-create-team {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
