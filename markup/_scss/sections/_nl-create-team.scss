@@ -5,11 +5,31 @@
 
 .nl-create-team {
 
+  .nl-my-teams .nl-team-list-table th:nth-child(1) {
+    text-align: left;
+  }
+
+  @include respond-to (allwide) {
+    .nl-my-teams .nl-team-card img {
+      height: 100px;
+    }
+  }
+
+  @include respond-to (tablets) {
+    .nl-my-teams .nl-team-card img {
+      height: 100px;
+    }
+  }
+
+  @include respond-to (allmobile) {
+    .nl-my-teams .nl-team-card img {
+      height: 80px;
+    }
+  }
+
   .btn-big-radius {
     padding: 5px;
     font-size: 11px;
-
-
   }
 
   .save-delete {
@@ -60,6 +80,13 @@
       top: 2rem;
       right: 1.5rem;
     }
+
+    @media (min-width: 769px) and (max-width:1630px) {
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+    }
+
   }
 
   @media (min-width: 992px) and (max-width:1425px) {
