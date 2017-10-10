@@ -143,15 +143,20 @@
 }
 
 .nl-create-team-table .table thead th:first-child {
-  padding-left: 0.25rem;
+  padding-left: 0.5rem;
 }
 
 .nl-players-table.nl-create-team-table td:first-child {
-  padding-left: 0.25rem;
+  padding-left: 0.5rem;
 }
 
 .nl-create-team-table {
   
+  .btn-sm {
+    padding: 0.25rem;
+    font-weight: 600;
+  }
+
   .nl-table-scroll2 {
     max-height: 37.5em;
   }
