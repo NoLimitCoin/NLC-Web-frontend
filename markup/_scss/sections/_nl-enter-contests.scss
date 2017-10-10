@@ -2,6 +2,10 @@
   padding-bottom: 2rem;
 }
 
+.nl-enter-contests .nl-team-field.football .nl-player-block .nl-DEF-position img {
+  height: 75px;
+}
+
 .nl-enter-contests {
 
   .nl-my-teams .nl-team-card img {
@@ -187,7 +191,7 @@
       bottom: 8.8%;
       left: 13%;
       img{
-        max-width: inherit;
+        max-width: 75px;
       }
     }
   }
@@ -307,6 +311,10 @@
 
   .nl-team-field.football .nl-player-block img {
       max-width: 93px;
+  }
+
+  .nl-team-field.football .nl-player-block.nl-DEF-position img {
+    max-width: 75px;  
   }
 
   @include respond-to(medium-wide-display) {

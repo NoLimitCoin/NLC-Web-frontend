@@ -13341,6 +13341,9 @@ td:nth-child(4).homepage-list-view {
 .nl-players.nl-enter-contests {
   padding-bottom: 2rem; }
 
+.nl-enter-contests .nl-team-field.football .nl-player-block .nl-DEF-position img {
+  height: 75px; }
+
 .nl-enter-contests .nl-my-teams .nl-team-card img {
   height: 80px; }
 
@@ -13476,7 +13479,7 @@ td:nth-child(4).homepage-list-view {
       bottom: 8.8%;
       left: 13%; }
       .nl-enter-contests .player-main-block.football .nl-DEF-position img {
-        max-width: inherit; }
+        max-width: 75px; }
 
 .nl-enter-contests .nl-team-field {
   background: url(../img/nl-soccer-field.png) no-repeat 0 0;
@@ -13558,6 +13561,9 @@ td:nth-child(4).homepage-list-view {
 
 .nl-enter-contests .nl-team-field.football .nl-player-block img {
   max-width: 93px; }
+
+.nl-enter-contests .nl-team-field.football .nl-player-block.nl-DEF-position img {
+  max-width: 75px; }
 
 @media only screen and (min-width: 1201px) and (max-width: 1500px) {
   .nl-enter-contests .nl-team-field.football .nl-player-block img {
