@@ -7,14 +7,14 @@
   .nl-header-top {
     color: #fff;
     &--left {
-      background: #121a31;
+      background: #061540;
       min-height: calculateRem(120px);
       @include respond-to(allsmall) {
         min-height: calculateRem(90px);
       }
     }
     &--right {
-      background: #192643;
+      background: #0f254f;
       display: flex;
       @include fontSize(15px);
       letter-spacing: calculateRem(1px);
@@ -109,7 +109,7 @@
       align-self: center;
     }
     &-mobile {
-      background: #192643;
+      background: #0f254f;
       display: none;
       @include respond-to(allsmall) {
         display: block;
@@ -142,7 +142,7 @@
   }
   .nl-balance {
     width: 40%;
-    border-left: 1px solid #121a31;
+    border-left: 1px solid #061540;
     border-right: 1px solid #293f64;
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@
       height: 60px;
 
       //border-left: inherit;
-      //border-top: 1px solid #121a31;
+      //border-top: 1px solid #061540;
       //border-bottom: 1px solid #293f64;
       padding: calculateRem(20px) calculateRem(10px);
     }
@@ -180,14 +180,14 @@
   }
   .nl-btn-control {
     width: 30%;
-    border-left: 1px solid #121a31;
+    border-left: 1px solid #061540;
     display: flex;
     justify-content: center;
     padding: calculateRem(10px);
     @include respond-to(handhelds) {
       width: 100%;
       border-left: inherit;
-      border-top: 1px solid #121a31;
+      border-top: 1px solid #061540;
       padding: calculateRem(10px);
     }
     .nl-btn-group {

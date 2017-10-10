@@ -19,11 +19,19 @@
     .nl-my-teams .nl-team-card img {
       height: 100px;
     }
+
+    .nl-team-card.table-data-field h3 {
+      font-size: 2rem;
+    }
   }
 
   @include respond-to (allmobile) {
     .nl-my-teams .nl-team-card img {
       height: 80px;
+    }
+
+    .nl-team-card.table-data-field h3 {
+      font-size: 2rem;
     }
   }
 

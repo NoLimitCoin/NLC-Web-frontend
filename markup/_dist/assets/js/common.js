@@ -63,9 +63,17 @@ $(window).on('load', function () {
             }
         });
 
+        // function setHeight() {
+        //     windowHeight = ($(window).innerHeight()) - ($(window).innerHeight() * 21.8 / 100);
+        //     $('.nl-section').css('min-height', windowHeight);
+        // };
+        // setHeight();
+
+        // $(window).resize(function () {
+        //     setHeight();
+        // });
     });
 });
-
 
 /*--------------------------------------------------------------
  # Fancybox Video
