@@ -112,6 +112,8 @@
 
   .nl-contests-table .tab-content {
     border-radius: 0;
+    border-bottom-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
   }
 
   @media (min-width: 992px) {
