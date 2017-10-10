@@ -1525,6 +1525,8 @@
   .homepage {
     .tab-content {
       border-radius: 0 !important;
+      border-bottom-right-radius: 0.625rem;
+      border-bottom-left-radius: 0.625rem;
     }
     .table {
       border-radius: 0 !important; 
