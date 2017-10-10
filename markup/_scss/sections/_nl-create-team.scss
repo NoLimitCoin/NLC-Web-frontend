@@ -3,6 +3,10 @@
   font-size: 11px;
 }
 
+.nl-create-team.nl-players.soccer {
+    background: url(../img/stadion_detail.jpg) no-repeat 0 0;
+  }
+
 .nl-create-team {
 
   .nl-my-teams .nl-team-list-table th:nth-child(1) {
@@ -350,7 +354,7 @@
         top: -11%;
         right: 34%;
       }
-      .nl-team-logo-position{
+      .nl-DEF-position{
         bottom: 8.8%;
         left: 13%;
         img{
