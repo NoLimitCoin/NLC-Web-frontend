@@ -1,6 +1,5 @@
 # Ignore everything
 /.idea/
 /markup/node_modules/
-/markup/_dist/assets/css/style.css
 .DS_Store
 /.DS_Store

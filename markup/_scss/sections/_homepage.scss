@@ -24,11 +24,56 @@
 
   @include respond-to (tablets) {
     padding: 1rem 0.5rem;
+
+    #top5-manager-content img.helmet, .nl-create-team .nl-my-teams .nl-team-card img {
+      height: 65px;
+    }
+
+    .nl-create-team .nl-team-card.table-data-field h3, #top5-manager-content h3 {
+      font-size: 1.5rem;
+    }
+
+    #top5-manager-content h3 {
+      font-size: 1.15rem;
+      line-height: 1rem;
+      padding-left: 0;
+    }
   }
 
   @include respond-to (allmobile) {
     padding: 1rem 0.5rem;
+
+    #top5-manager-content img.helmet, .nl-create-team .nl-my-teams .nl-team-card img {
+      height: 65px;
+    }
+
+    .nl-create-team .nl-team-card.table-data-field h3, #top5-manager-content h3 {
+      font-size: 1rem;
+    }
+
+    #top5-manager-content h3 {
+      line-height: 1rem;
+      padding-left: 0;
+    }
   }
+
+  @include respond-to (handhelds) {
+
+    #top5-manager-content img.helmet, .nl-create-team .nl-my-teams .nl-team-card img {
+      height: 65px;
+    }
+
+    .nl-create-team .nl-team-card.table-data-field h3, #top5-manager-content h3 {
+      font-size: 1.5rem;
+    }
+
+    #top5-manager-content h3 {
+      line-height: 1.5rem;
+      padding-left: 0;
+    }
+  }
+
+
 }
 
 .homepage-field {
