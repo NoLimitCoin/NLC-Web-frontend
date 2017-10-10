@@ -14,7 +14,7 @@
 
   background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
   background-size: cover;
-  color: #121a31;
+  color: #061540;
   padding-bottom: calculateRem(50px);
   padding-top: calculateRem(30px);
   @include respond-to(wide-tablets){
@@ -45,7 +45,7 @@
 
   .nl-status-wrapper{
     display: inline-block;
-    background: linear-gradient(to top, #121a31, #1f3658);
+    background: linear-gradient(to top, #061540, #1f3658);
     color: #fff;
     overflow: hidden;
     margin-bottom: 2.25rem;
@@ -76,7 +76,7 @@
     width: 100%;
     padding: 0.625rem;
     display: flex;
-    background-color: #121a31;
+    background-color: #061540;
     color: #fff;
     overflow: hidden;
     justify-content: space-between;
@@ -147,7 +147,7 @@
 
   .nl-team-card-footer{
     width: 100%;
-    background-color: #1d2d4e;
+    background-color: #0f254f;
     color: #fff;
     overflow: hidden;
     display: flex;
@@ -161,7 +161,7 @@
       //padding: 0.875rem 1.25rem 1.25rem;
       padding: 1.2rem 0.25rem 0.25rem;
       width: 60%;
-      background-color: #1d2d4e;
+      background-color: #0f254f;
     }
 
     .nl-team-card-result{
@@ -221,7 +221,7 @@
   }
 
   .table th{
-    background-color: #1d2d4e;
+    background-color: #0f254f;
     font-size: calculateRem(13px);
   }
 

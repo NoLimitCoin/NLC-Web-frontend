@@ -81,7 +81,7 @@
       border-radius: calculateRem(10px);
       @include fontSize(17px);
       text-transform: uppercase;
-      color: #1d2d4e;
+      color: #0f254f;
       overflow: hidden;
       td{
         text-align: left;
@@ -112,7 +112,7 @@
     border: none;
   }
   .modal-body, .modal-footer {
-    background-color: #1d2d4e;
+    background-color: #0f254f;
   }
 
   .modal-body {

@@ -2,7 +2,7 @@
   background: url(../img/stadion_full.jpg) bottom center no-repeat fixed;
   background-size: cover;
   background-position: bottom;
-  color: #121a31;
+  color: #061540;
   padding-bottom: 4rem;
   padding-top: calculateRem(30px);
   @include respond-to(wide-display){
@@ -183,7 +183,7 @@
     display: none;
   }
   .nl-title{
-    background: #121a31;
+    background: #061540;
     color: #e48706;
 
     p{
@@ -197,7 +197,7 @@
   }
   .nl-content{
     background-color: #e1e2e4;
-    color: #121a31;
+    color: #061540;
 
     p {
       margin: calculateRem(5px) calculateRem(20px);
@@ -285,7 +285,7 @@
 
 
 .nl-players-table {
-  background: linear-gradient(to top, #121a31, #1f3658);
+  background: linear-gradient(to top, #061540, #1f3658);
   border-radius: calculateRem(10px);
   color: #fff;
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);

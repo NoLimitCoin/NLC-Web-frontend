@@ -144,13 +144,13 @@
 
     tbody tr {
       &.active, &:hover {
-        color: #1d2d4e;
+        color: #0f254f;
       }
     }
   }
   .table thead th {
     @include fontSize(16px);
-    background: #1d2d4e;
+    background: #0f254f;
     padding-top: 1.3rem;
     padding-bottom: 1.2rem;
 
@@ -185,7 +185,7 @@
   
 
   .table-info1 {
-    background: #1d2d4e;
+    background: #0f254f;
     
 
     p {
@@ -262,7 +262,7 @@
     }
   }
   .nl-info-table-button{
-    background: #1d2d4e;
+    background: #0f254f;
     min-height: calculateRem(75px);
     display: flex;
     align-items: center;

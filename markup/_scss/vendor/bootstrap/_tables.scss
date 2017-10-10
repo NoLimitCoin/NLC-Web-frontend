@@ -7,7 +7,7 @@
   max-width: 100%;
   //margin-bottom: $spacer;
   border-radius: calculateRem(10px);
-  color: #121a31;
+  color: #061540;
   @include fontSize(13px);
   font-weight: 500;
   //background-color: #e1e2e4;
@@ -36,7 +36,7 @@
     th {
       vertical-align: bottom;
 
-      background: #121a31;
+      background: #061540;
       color: #e48706;
       @include fontSize(15.63px);
       text-transform: uppercase;
@@ -99,7 +99,7 @@
     &.active, &:hover {
       background: linear-gradient(to top, #e37506, #e89708);
       .btn-primary.disabled, .btn-primary:disabled, .btn, .btn-primary{
-        border-color: #1d2d4e;
+        border-color: #0f254f;
       }
       .nl-pl-social {
         .fa-twitter, .fa-youtube-play, .fa-facebook-square {

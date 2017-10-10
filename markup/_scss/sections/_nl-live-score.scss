@@ -14,7 +14,7 @@
 	&__result {
 		flex: 1 0 auto;
 		background-color: #607089;
-		border: 1px solid #121a31;
+		border: 1px solid #061540;
 		color: #fff;
 		font-weight: 400;
 		font-size: 16px;
@@ -29,7 +29,7 @@
 	}
 
 	&__result-header {
-    background-color: #1d2d4e;
+    background-color: #0f254f;
     text-align: center;
     max-width: 150px;
 	  overflow-wrap: break-word;
@@ -96,7 +96,7 @@
 // Add custom scrollbar and make visible
 .matches::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #1d2d4e;
+	background-color: #0f254f;
 }
 
 .matches::-webkit-scrollbar {
@@ -154,7 +154,7 @@
 /* contest-info-table
 ---------------------------------------- */
 .nl-contest-info-table {
-	background-color: #1d2d4e;
+	background-color: #0f254f;
 	padding: 0.875rem 0 0 0;
 	margin: .25rem 0 1.5rem 0;
 
@@ -250,7 +250,7 @@
 
 .rank {
 	display: flex;
-	background-color: #1d2d4e;
+	background-color: #0f254f;
   border-radius: .625rem;
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
 	color: #fff;
