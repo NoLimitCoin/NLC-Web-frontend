@@ -12642,6 +12642,10 @@ td:nth-child(4).homepage-list-view {
     .nl-create-team .nl-team-field.football .nl-player-block.nl-DEF-position img,
     .nl-live-score .nl-team-field.football .nl-player-block.nl-DEF-position img {
       max-width: 80px; }
+    @media only screen and (min-width: 992px) and (max-width: 1366px) {
+      .nl-create-team .nl-team-field.football .nl-player-block.nl-DEF-position img,
+      .nl-live-score .nl-team-field.football .nl-player-block.nl-DEF-position img {
+        max-width: 70px; } }
   @media (max-width: 991px) {
     .nl-create-team .nl-team-field,
     .nl-live-score .nl-team-field {

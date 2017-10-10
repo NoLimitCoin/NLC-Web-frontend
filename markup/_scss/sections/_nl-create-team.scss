@@ -510,6 +510,14 @@
       .nl-player-block.nl-DEF-position img {
         max-width: 80px;
       }
+
+      @include respond-to(tabdisp){
+        .nl-player-block.nl-DEF-position img {
+          max-width: 70px;
+        }
+      }
+
+      
     }
     @include respond-to(allsmall){
       display: none;
