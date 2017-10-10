@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: bottom;
   color: #121a31;
-  padding-bottom: calculateRem(160px);
+  padding-bottom: 4rem;
   padding-top: calculateRem(30px);
   @include respond-to(wide-display){
     padding-left: calculateRem(30px);

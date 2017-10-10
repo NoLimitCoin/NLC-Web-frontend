@@ -1,8 +1,13 @@
 /*general for homepage*/
 .nl-section.homepage {
-    .nl-table-scroll2 {
-      max-height: 31.5rem;
-    }
+
+  .manager-image {
+    width: 100%;
+  }
+
+  .nl-table-scroll2 {
+    max-height: 31.5rem;
+  }
 
   padding: 1.5rem 2.25rem;
 
@@ -133,11 +138,32 @@
 
     button {
       font-weight: 600;
+      margin: 14px 30px;
+
+      @include respond-to ( handhelds) {
+        margin: 8px 12px;
+        padding: 5px 15px;
+      }
+
+      @include respond-to (wide-handhelds) {
+        margin: 15px 10px;
+        padding: 5px 15px;
+      }
+
+      @include respond-to (tablets) {
+        margin: 11px 0px;
+      }
+
+      @include respond-to (wide-tablets) {
+        margin: 12px 30px;
+      }
     }
   }
 
   .nl-team-info .nl-team-data {
     padding: 0.25rem;
+    font-size: 11px;
+    line-height: 1rem;
   }
 
   .nl-create-team {
@@ -212,7 +238,7 @@
 
   @media screen and (min-width: 1201px) {
     .manager-image {
-      width: 40%;
+      width: 100%;
       height: 260px;
     }
   }
@@ -318,7 +344,7 @@
   .week {
     margin-top: 0;
 
-    @include respond-to(allmobile) {
+    @include respond-to(allsmall) {
       margin-top: 30px;
     }
   }
@@ -361,11 +387,20 @@
     // margin-top: 20px;
     // position: relative;
 
-    @include respond-to(allsmall) {
+    @include respond-to(allmobile) {
       width: 60%;
       height: 232px;
       position: relative;
       background-size: cover;
+      background-color: transparent;
+      margin: 0 auto;
+    }
+
+    @include respond-to(tablets) {
+      width: 60%;
+      height: 232px;
+      position: relative;
+      background-size: contain;
       background-color: transparent;
       margin: 0 auto;
     }
@@ -806,6 +841,7 @@
       width: 100%;
       margin: 0;
       height: 40px;
+      position: unset;
     }
 
     @include respond-to(allmobile) {
@@ -1127,6 +1163,25 @@
 #top5-manager-content {
   @include respond-to(allmobile) {
     min-height: 200px;
+    padding-top: 20px;
+  }
+
+  h3 {
+    font-size: 0.95rem;
+    padding-left: 1rem;
+    line-height: 1rem;
+  }
+
+  .orange {
+    color: #e48706;
+  }
+
+  .nl-my-teams {
+    padding: 0;
+  }
+
+  .nl-my-teams .nl-team-card {
+    padding: 0 0.625rem;
   }
 
   .nav {
@@ -1136,6 +1191,34 @@
 
   .nav-item {
     width: 19.5%;
+  }
+
+  img.helmet {
+    height: 45px;
+  }
+}
+
+#top5-manager-content {
+  @include respond-to (allmobile) {
+    .col-12.team-list-view {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .col-sm-6.hidden-title-bar {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .manager-image-inner .name p {
+    padding-left: 25px;
+    padding-top: 3px;
+  }
+
+  @include respond-to (handhelds) {
+    .manager-image-inner .name p {
+      padding-left: 20px;
+      padding-top: 5px;
+    }
   }
 }
 
