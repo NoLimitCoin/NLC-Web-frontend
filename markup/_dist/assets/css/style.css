@@ -12145,6 +12145,9 @@ td:nth-child(4).homepage-list-view {
       @media (max-width: 1200px) {
         .nl-my-teams .nl-team-card img {
           height: 50px; } }
+      @media (min-width: 1200px) {
+        .nl-my-teams .nl-team-card img {
+          height: 65px; } }
     .nl-my-teams .nl-team-card-data-field {
       position: relative;
       padding: 1.5625rem;
@@ -12179,7 +12182,7 @@ td:nth-child(4).homepage-list-view {
       @media (min-width: 1200px) {
         .nl-my-teams .nl-team-card p {
           margin-left: 2rem;
-          font-size: 23px; } }
+          font-size: 21px; } }
       @media only screen and (max-width: 575px) {
         .nl-my-teams .nl-team-card p {
           font-size: 15px;
@@ -12231,8 +12234,8 @@ td:nth-child(4).homepage-list-view {
       padding: 0.25rem 0;
       text-align: center; }
     .nl-my-teams .table .indicator {
-      width: 0.9375rem;
-      height: 0.9375rem; }
+      width: 0.625rem;
+      height: 0.625rem; }
     .nl-my-teams .table .pos {
       color: #e58607; }
   .nl-my-teams .table td:not(:first-child), .nl-my-teams .table th {
