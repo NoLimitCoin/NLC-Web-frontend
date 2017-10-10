@@ -12326,9 +12326,9 @@ td:nth-child(4).homepage-list-view {
   .nl-create-team .nl-mob-table .nl-content p.orange, .nl-create-team td.orange {
     color: #ff9f2f; }
   .nl-create-team .nl-mob-table .nl-content .btn-primary {
-    padding: 0.75rem 2.5rem;
+    padding: 0.5rem 2.5rem;
     font-size: 1rem;
-    font-weight: 500; }
+    font-weight: 600; }
   .nl-create-team .nl-my-teams .nl-team-list-table th:nth-child(1) {
     text-align: left; }
   @media (min-width: 992px) {
