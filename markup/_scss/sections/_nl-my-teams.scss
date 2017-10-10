@@ -1,5 +1,31 @@
 .nl-my-teams{
 
+  .nl-status-wrapper {
+    margin: 0 auto;
+  }
+
+  .nl-status-wrapper ul {
+    padding: 0.25rem 0.5rem;
+    font-weight: 400;
+    font-size: 13px;
+
+    .indicator {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+  }
+  .nl-status-wrapper span.playing {
+    background: green;
+  }
+
+  .nl-status-wrapper span.played {
+    background: #6dcff6;
+  }
+
+  .nl-status-wrapper span.not-playing {
+    background: red;
+  }
+
   .helmet {
     text-align: right;
   }
@@ -48,18 +74,22 @@
     background: linear-gradient(to top, #061540, #1f3658);
     color: #fff;
     overflow: hidden;
-    margin-bottom: 2.25rem;
+    margin-bottom: 0.75rem;
+    //margin-top: -3rem;
     font-weight: 300;
+    overflow: hidden;
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    border-radius: calculateRem(10px);
 
     ul{
       list-style-type: none;
       margin: 0;
-      padding: calculateRem(18px);
+      //padding: calculateRem(18px);
 
       li{
         display: inline-block;
         text-transform: uppercase;
-        font-size: calculateRem(20px);
+        //font-size: calculateRem(20px);
 
         span{
           vertical-align: middle;

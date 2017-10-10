@@ -12062,6 +12062,21 @@ td:nth-child(4).homepage-list-view {
   color: #061540;
   padding-bottom: 3.125rem;
   padding-top: 1.875rem; }
+  .nl-my-teams .nl-status-wrapper {
+    margin: 0 auto; }
+  .nl-my-teams .nl-status-wrapper ul {
+    padding: 0.25rem 0.5rem;
+    font-weight: 400;
+    font-size: 13px; }
+    .nl-my-teams .nl-status-wrapper ul .indicator {
+      width: 0.75rem;
+      height: 0.75rem; }
+  .nl-my-teams .nl-status-wrapper span.playing {
+    background: green; }
+  .nl-my-teams .nl-status-wrapper span.played {
+    background: #6dcff6; }
+  .nl-my-teams .nl-status-wrapper span.not-playing {
+    background: red; }
   .nl-my-teams .helmet {
     text-align: right; }
   .nl-my-teams .soccer.nl-section {
@@ -12093,16 +12108,18 @@ td:nth-child(4).homepage-list-view {
     background: linear-gradient(to top, #061540, #1f3658);
     color: #fff;
     overflow: hidden;
-    margin-bottom: 2.25rem;
-    font-weight: 300; }
+    margin-bottom: 0.75rem;
+    font-weight: 300;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    border-radius: 0.625rem; }
     .nl-my-teams .nl-status-wrapper ul {
       list-style-type: none;
-      margin: 0;
-      padding: 1.125rem; }
+      margin: 0; }
       .nl-my-teams .nl-status-wrapper ul li {
         display: inline-block;
-        text-transform: uppercase;
-        font-size: 1.25rem; }
+        text-transform: uppercase; }
         .nl-my-teams .nl-status-wrapper ul li span {
           vertical-align: middle;
           display: inline-block; }
