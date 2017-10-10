@@ -110,6 +110,10 @@
     border-radius: 0;
   }
 
+  .nl-contests-table .tab-content {
+    border-radius: 0;
+  }
+
   @media (min-width: 992px) {
       .nl-contests-table .nav-tabs .nav-link {
         min-width: 100px;
@@ -1559,6 +1563,13 @@
     padding: 10px 10px 0 10px;
     background-color: #1d2d4e;
     margin-bottom: -3px;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    border-radius: 0.625rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
 
     .nav-item:first-child {
       margin-left: 0 !important;
