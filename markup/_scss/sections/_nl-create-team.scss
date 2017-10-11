@@ -38,6 +38,14 @@
 
   .nl-my-teams .table td {
     padding: 0rem;
+
+    @include respond-to (handhelds) {
+      font-size: 1rem;
+
+      .gametime {
+        font-size: 0.85rem;
+      }
+    }
   }
 
   .nl-my-teams .table td p {
@@ -52,6 +60,10 @@
     line-height: 1rem;
     font-size: 10px;
     font-style: italic;
+
+    @include respond-to (handhelds) {
+      font-size: 0.85rem;
+    }
   }
 
   .nl-mob-table .nl-content p.orange, td.orange {
@@ -124,7 +136,7 @@
   padding-left: 0.875rem;
   padding-right: 0.875rem;
   padding-bottom: calculateRem(50px);
-  padding-top: 0.875rem;
+  padding-top: 1.875rem;
 
   @include respond-to(allsmall){
     padding-left: 0;
@@ -159,6 +171,14 @@
 
   .nl-table-scroll2 {
     max-height: 37.5em;
+
+    @media (min-width: 1200px) and (max-width:1425px) {
+      max-height: 33.5em;
+    }
+
+    @include respond-to(wide-tablets) {
+     max-height: 32rem;
+    }
   }
 
   .visibility-hidden {
@@ -313,6 +333,7 @@
   }
   .nl-team-data {
     padding: 0.25rem 1.25rem 0.5rem;
+    font-weight: 500;
     span {
       font-weight: 500;
       &.avalibe {
@@ -348,74 +369,110 @@
     position: relative;
 
     .nl-G-position{
-      bottom: 6.5%;
-      left: 43%;
+      bottom: 5.5%;
+      left: 41%;
     }
 
     .nl-DL-position{
-      bottom: 21.5%;
-      left: 24%;
+      bottom: 30.5%;
+      left: 15%;
     }
     .nl-DR-position{
-      bottom: 21.5%;
-      right: 24%;
+      bottom: 30.5%;
+      right: 15%;
     }
     .nl-DAL-position{
-      bottom: 35%;
-      left: 7%;
+      bottom: 3%;
+      left: 2%;
     }
     .nl-DAR-position{
-      bottom: 35%;
-      right: 6%;
+      bottom: 30%;
+      right: 41%;
     }
-    .nl-CM-position{
-      bottom: 43%;
-      left: 40%;
-    }
+    // .nl-CM-position{
+    //   bottom: 43%;
+    //   left: 40%;
+    // }
 
-    .nl-ST-position{
-      top: -0.5%;
-      left: 40%;
-    }
+    // .nl-ST-position{
+    //   top: -3.5%;
+    //   left: 56%;
+    // }
 
     .nl-LS-position{
-      top: -0.5%;
-      left: 17%;
+      top: -3.5%;
+      left: 28%;
     }
 
     .nl-RS-position{
-      top: -0.5%;
-      right: 17%;
+      top: 78%;
+      right: 2%;
     }
 
+    // .nl-LWM-position{
+    //   top: 30%;
+    //   left: 19%;
+    // }
+
+    // .nl-RWM-position{
+    //   top: 30%;
+    //   right: 19%;
+    // }
+
+    .nl-CM-position{
+      bottom: 56%;
+      left: 42%;
+    }
     .nl-LWM-position{
-      top: 25%;
-      left: 19%;
+      top: 18%;
+      left: 12%;
     }
-
     .nl-RWM-position{
-      top: 25%;
-      right: 19%;
+      top: 18%;
+      right: 12%;
+    }
+    .nl-ST-position{
+      top: -3.5%;
+      left: 56%;
     }
 
-    @media (min-width: 1200px)  {
-      .nl-CM-position{
-        bottom: 43%;
-        left: 43%;
+    @media (max-width: 1425px) and (min-width: 1200px) {
+      .nl-RS-position{
+        top: 76%;
+        right: 2%;
       }
-      .nl-LWM-position{
-        top: 25%;
-        left: 22%;
+      .nl-G-position {
+        bottom: 7.5%;
       }
-      .nl-RWM-position{
-        top: 25%;
-        right: 22%;
-      }
-      .nl-ST-position{
-        top: 2.5%;
+    }
+
+    @media (min-width: 1425px) {
+      .nl-G-position {
+        bottom: 9.5%;
         left: 43%;
       }
     }
+
+    @include respond-to (wide-tablets){
+      .nl-RS-position{
+        top: 74%;
+        right: 2%;
+      }
+
+       .nl-ST-position{
+        top: -3.5%;
+        left: 53%;
+      }
+
+      .nl-DR-position {
+        right: 11%;
+      }
+
+      .nl-DL-position {
+        left: 11%;
+      }
+    }
+    
 
     &.football{
       min-height: 509px;
@@ -471,7 +528,7 @@
   }
 
   .nl-team-field {
-    background: url(../img/nl-soccer-field.png) no-repeat 0 0;
+    background: url(../img/nl-soccer-field-2.png) no-repeat 0 0;
     background-size: contain;
     min-width: 100%;
     background-size: 100% 100%;

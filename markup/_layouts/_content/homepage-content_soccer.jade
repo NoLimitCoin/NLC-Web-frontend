@@ -1,0 +1,23 @@
+section.nl-section.homepage.soccer
+	div.container-fluid
+		div.row.sports-options
+			h3.title.col-12.col-lg-6 Pick Your Sport:
+			div.sports-icon.col-12.col-lg-6
+				img(src="assets/img/football.png", alt="", class="sports")
+				img(src="assets/img/basketball.png", alt="", class="sports")
+				img(src="assets/img/americanfootball.png", alt="", class="sports")
+				img(src="assets/img/baseball.png", alt="", class="sports")
+				img(src="assets/img/cricket.png", alt="", class="sports")
+				img(src="assets/img/hockey.png", alt="", class="sports")
+				img(src="assets/img/mma.png", alt="", class="sports")
+
+		div.row.top-5-section
+			div.col-12.col-lg-5.col-xl-5.position
+				include _homepage/top5-player-soccer
+			div.col-12.col-lg-6.offset-lg-1.offset-xl-1.col-xl-6.week
+				include _homepage/top5-manager-soccer
+		div.row.contests.bottom-teams-contests-section
+			div.col-12.col-sm-6.offset-sm-3.col-lg-5.offset-lg-0.col-xl-5.field
+				include _homepage/field-soccer
+			div.col-12.col-lg-6.offset-lg-1.offset-xl-1.col-xl-6
+				include _homepage/upcoming_contest

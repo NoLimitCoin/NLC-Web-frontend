@@ -3,7 +3,12 @@
   background-size: cover;
 }
 
-.nl-players {
+.nl-players { 
+
+  .nl-table-scroll2 {
+    max-height: 40rem;
+  }
+
   background: url(../img/stadion_full.jpg) bottom center no-repeat fixed;
   background-size: cover;
   background-position: bottom;
@@ -14,10 +19,13 @@
     padding-left: calculateRem(30px);
     padding-right: calculateRem(30px);
   }
-  @include respond-to(allsmall)
-  {
+  @include respond-to(allsmall) {
     padding-bottom: calculateRem(60px);
+    .nl-table-scroll2 {
+      max-height: 35rem;
+    }
   }
+
   img {
     width: auto;
   }
@@ -57,7 +65,7 @@
     }
   }
   .nl-players-filter-caruseul {
-    margin-bottom: calculateRem(10px);
+    margin-bottom: calculateRem(5px);
   }
   .pl-teams, .pl-flag {
     position: relative;
@@ -68,8 +76,7 @@
     }
   }
   .pl-teams{
-    margin-bottom: calculateRem(20px);
-
+    margin-bottom:0;
   }
 
   .pl-flag{
@@ -88,6 +95,7 @@
     }
     img {
       width: inherit;
+      height: 45px;
     }
   }
   .owl-nav {

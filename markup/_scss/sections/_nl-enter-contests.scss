@@ -81,73 +81,162 @@
   min-height: 563px;
   position: relative;
 
-  .nl-G-position{
-    bottom: 6.5%;
-    left: 43%;
-  }
+  // .nl-G-position{
+  //   bottom: 6.5%;
+  //   left: 43%;
+  // }
 
-  .nl-DL-position{
-    bottom: 21.5%;
-    left: 24%;
-  }
-  .nl-DR-position{
-    bottom: 21.5%;
-    right: 24%;
-  }
-  .nl-DAL-position{
-    bottom: 35%;
-    left: 7%;
-  }
-  .nl-DAR-position{
-    bottom: 35%;
-    right: 6%;
-  }
-  .nl-CM-position{
-    bottom: 43%;
-    left: 40%;
-  }
+  // .nl-DL-position{
+  //   bottom: 21.5%;
+  //   left: 24%;
+  // }
+  // .nl-DR-position{
+  //   bottom: 21.5%;
+  //   right: 24%;
+  // }
+  // .nl-DAL-position{
+  //   bottom: 35%;
+  //   left: 7%;
+  // }
+  // .nl-DAR-position{
+  //   bottom: 35%;
+  //   right: 6%;
+  // }
+  // .nl-CM-position{
+  //   bottom: 43%;
+  //   left: 40%;
+  // }
 
-  .nl-ST-position{
-    top: 2.5%;
-    left: 40%;
-  }
+  // .nl-ST-position{
+  //   top: 2.5%;
+  //   left: 40%;
+  // }
 
-  .nl-LS-position{
-    top: 2.5%;
-    left: 17%;
-  }
+  // .nl-LS-position{
+  //   top: 2.5%;
+  //   left: 17%;
+  // }
 
-  .nl-RS-position{
-    top: 2.5%;
-    right: 17%;
-  }
+  // .nl-RS-position{
+  //   top: 2.5%;
+  //   right: 17%;
+  // }
 
-  .nl-LWM-position{
-    top: 25%;
-    left: 17%;
-  }
+  // .nl-LWM-position{
+  //   top: 25%;
+  //   left: 17%;
+  // }
 
-  .nl-RWM-position{
-    top: 25%;
-    right: 17%;
-  }
+  // .nl-RWM-position{
+  //   top: 25%;
+  //   right: 17%;
+  // }
 
-  @media (min-width: 1200px)  {
-    .nl-CM-position{
-      bottom: 43%;
+  // @media (min-width: 1200px)  {
+  //   .nl-CM-position{
+  //     bottom: 43%;
+  //     left: 43%;
+  //   }
+  //   .nl-LWM-position{
+  //     top: 25%;
+  //     left: 25%;
+  //   }
+  //   .nl-RWM-position{
+  //     top: 25%;
+  //     right: 25%;
+  //   }
+  //   .nl-ST-position{
+  //     top: 2.5%;
+  //     left: 43%;
+  //   }
+  // }
+
+    .nl-G-position{
+      bottom: 3.5%;
       left: 43%;
+    }
+
+    .nl-DL-position{
+      bottom: 30.5%;
+      left: 15%;
+    }
+    .nl-DR-position{
+      bottom: 30.5%;
+      right: 15%;
+    }
+    .nl-DAL-position{
+      bottom: -2%;
+      left: 2%;
+    }
+    .nl-DAR-position{
+      bottom: 30%;
+      right: 40%;
+    }
+    // .nl-CM-position{
+    //   bottom: 43%;
+    //   left: 40%;
+    // }
+
+    // .nl-ST-position{
+    //   top: -3.5%;
+    //   left: 56%;
+    // }
+
+    .nl-LS-position{
+      top: -6.5%;
+      left: 28%;
+    }
+
+    .nl-RS-position{
+      top: 77%;
+      right: 2%;
+    }
+
+    // .nl-LWM-position{
+    //   top: 30%;
+    //   left: 19%;
+    // }
+
+    // .nl-RWM-position{
+    //   top: 30%;
+    //   right: 19%;
+    // }
+
+    .nl-CM-position{
+      bottom: 56%;
+      left: 42%;
     }
     .nl-LWM-position{
-      top: 25%;
-      left: 25%;
+      top: 18%;
+      left: 12%;
     }
     .nl-RWM-position{
-      top: 25%;
-      right: 25%;
+      top: 18%;
+      right: 12%;
     }
     .nl-ST-position{
-      top: 2.5%;
-      left: 43%;
+      top: -6.5%;
+      left: 56%;
+    }
+
+  @include respond-to(allwider){ 
+    .nl-ST-position{
+      top: -2.5%;
+      left: 56%;
+    }
+    .nl-LS-position{
+      top: -2.5%;
+      left: 28%;
+    }
+
+    .nl-DAL-position{
+      bottom: 3%;
+      left: 2%;
+    }
+
+    .nl-RS-position{
+      top: 73%;
+      right: 2%;
     }
   }
 
@@ -198,7 +287,7 @@
 }
 
   .nl-team-field {
-      background: url(../img/nl-soccer-field.png) no-repeat 0 0;
+      background: url(../img/nl-soccer-field-2.png) no-repeat 0 0;
       background-size: contain;
       min-width: 100%;
       background-size: 100% 100%;
@@ -291,17 +380,17 @@
     max-height: 500px;
     min-height: 496px;
 
-    .nl-ST-position {
-      top: -1.5%;
-    }
+    // .nl-ST-position {
+    //   top: -1.5%;
+    // }
 
-    .nl-LS-position, .nl-RS-position {
-      top: -5.5%;
-    }
+    // .nl-LS-position, .nl-RS-position {
+    //   top: -5.5%;
+    // }
 
-    .nl-RWM-position, .nl-LWM-position {
-      top: 23%;
-    }
+    // .nl-RWM-position, .nl-LWM-position {
+    //   top: 23%;
+    // }
   }
 
   .football.nl-team-field {
@@ -360,9 +449,9 @@
           max-width: 47px;
         }
 
-        .nl-G-position {
-          left: 40%;
-        }
+        // .nl-G-position {
+        //   left: 40%;
+        // }
       }
       .nl-team-field.soccer  {
         max-height: 400px;

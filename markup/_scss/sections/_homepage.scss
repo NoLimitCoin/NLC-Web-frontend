@@ -1,12 +1,109 @@
 /*general for homepage*/
+.nl-section.homepage.soccer {
+
+  #top5-manager-content img.helmet {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .nl-G-position {
+    bottom: 4.5%;
+  } 
+   
+  .nl-RS-position{
+    top: 73%;
+    right: 2%;
+  }
+
+  .nl-LWM-position{
+    top: 16%;
+  }
+  .nl-RWM-position{
+    top: 16%;
+  }
+
+  .nl-CM-position {
+    top: 14%;
+  }
+
+  .nl-DAR-position {
+    bottom: 31%;
+  }
+
+  @include respond-to (allwide) {
+    .manager-image, .player-image, .player-info {
+      height: 303px;
+    }
+  }
+
+  @media (max-width: 1425px) and (min-width: 1200px) {
+    .nl-CM-position {
+      top: 18%;
+    }
+
+    .nl-LWM-position{
+      top: 19%;
+    }
+    .nl-RWM-position{
+      top: 19%;
+    }
+  }
+
+  @include respond-to (wide-tablets) {
+    .nl-CM-position {
+      top: 20%;
+      left: 40%;
+    }
+  }
+
+  @include respond-to (wide-tablets) {
+    .manager-image, .player-image, .player-info {
+      height: 267px;
+    }
+  }
+
+  @include respond-to (tablets) {
+    .manager-image, .player-image, .player-info {
+      height: 225px;
+    }
+  }
+
+  .nl-card-wrapper {
+    overflow: hidden;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    border-radius: 0.625rem;
+  }
+}
+
 .nl-section.homepage {
+
+  .btn-primary {
+    font-weight: 600;
+  }
+
+  .table-data-field h3 {
+    font-size: 1.5rem;
+  }
+
+  .nl-create-team.soccer .nl-my-teams .nl-team-card img {
+    height: 60px;
+  }
 
   .manager-image {
     width: 100%;
   }
 
   .nl-table-scroll2 {
-    max-height: 31.5rem;
+    max-height: 32rem;
+
+    @include respond-to (wide-tablets) {
+      max-height: 30.5rem;
+    }
+
+    @media (max-width: 1450px) and (min-width: 1200px) {
+      max-height: 32rem;
+    }
   }
 
   padding: 1.5rem 2.25rem;
@@ -55,6 +152,8 @@
 
     #top5-manager-content img.helmet, .nl-create-team .nl-my-teams .nl-team-card img {
       height: 65px;
+      padding-top: 0.35rem;
+      padding-bottom: 0.35rem;
     }
 
     .nl-create-team .nl-team-card.table-data-field h3, #top5-manager-content h3 {
@@ -86,6 +185,33 @@
 
 }
 
+.homepage .nl-create-team .nl-team-field .soccer.player-main-block {
+   
+   img {
+    max-width: 55px;
+   }
+
+   @include respond-to (wide-tablets) {
+    min-height: 344px;
+
+    img {
+      max-width: 40px;
+    }
+  }
+}
+
+.homepage .nl-create-team.soccer .player-main-block {
+  width: 100%;
+  height: 100%;
+  min-height: 399px;
+  position: relative;
+  margin-bottom: 15px;
+
+  @media (max-width: 1425px) and (min-width: 1200px) {
+    min-height: 420px;
+  }
+}
+
 .homepage-field {
   .nl-team-list {
     max-width: 100%;
@@ -96,7 +222,6 @@
 }
 
 .homepage {
-
 
   .no-padding {
     padding: 0 15px;
@@ -452,7 +577,7 @@
       width: 60%;
       height: 232px;
       position: relative;
-      background-size: cover;
+      background-size: contain;
       background-color: transparent;
       margin: 0 auto;
     }
@@ -993,13 +1118,16 @@
     height: 40px;
 
     @include respond-to(allmobile) {
-      width: calc(100% - 50px);
-      margin: 0 25px;
+      // width: calc(100% - 50px);
+      // margin: 0 25px;
+      width: 100%;
+      margin: 0;
     }
 
     @include respond-to(handhelds) {
       width: 100%;
       margin: 0;
+
     }
 
     .number {
@@ -1591,7 +1719,7 @@
   }
 
   .nav-item {
-      width: 23.33%;
+      //width: 23.33%;
       margin: 0;
 
       @media screen and (min-width: 420px) and (max-width: 499px) {
@@ -1608,23 +1736,23 @@
   .nav-item.bigger-nav {
 
     @media screen and (max-width: 1360px) {
-      width: 30%;
+      //width: 25%;
     }
   }
   .nav-item.smaller-nav {
 
     @media screen and (max-width: 1360px) {
-      width: 23.33%;
+      //width: 15%;
     }
   }
 
   .nav-tabs {
-    padding: 10px 10px 0 10px;
-    background-color: #0f254f;
-    margin-bottom: -3px;
-    overflow: hidden;
-    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
-    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    //padding: 10px 10px 0 10px;
+    //background-color: #0f254f;
+    margin-bottom: -1px;
+    //overflow: hidden;
+    //-webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    //box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     border-radius: 0.625rem;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
