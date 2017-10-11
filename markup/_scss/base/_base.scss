@@ -241,6 +241,13 @@ main{
   }
 }
 
+// .nl-table-scroll2-horizontal{
+//   max-height: calculateRem(225px);
+//   @include respond-to(allsmall){
+//     max-width: inherit;
+//   }
+// }
+
 // Add custom overflow to mobile table
 .nl-mob-table {
   max-height: 38rem;

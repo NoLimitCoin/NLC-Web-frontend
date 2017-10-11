@@ -98,7 +98,7 @@
     </header>
     <main>
       <section class="nl-section nl-players nl-live-score">
-        <div class="container container-wider">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-sm-12 page-heading">
               <h1>Live scores</h1>
@@ -232,7 +232,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-6 col-xl-4">
+            <div class="col-sm-12 col-lg-6 col-xl-4 live-current-contest">
               <h5 class="d-inline-block component-header">My current contests</h5><a class="btn btn-primary btn-sm btn-inline">Refresh</a>
               <div class="current-contents">
                 <div class="nl-table-responsive">
@@ -242,8 +242,8 @@
                         <tr>
                           <th>Contests name</th>
                           <th>Team name</th>
-                          <th>PMR</th>
                           <th>Rank</th>
+                          <th>PMR</th>
                         </tr>
                       </thead>
                     </table>
@@ -253,50 +253,50 @@
                                 <tr>
                                   <td>Football 1775 LONGFootballFootballFootballFootball</td>
                                   <td>TEAM NAME LONG 111</td>
-                                  <td>350 min</td>
                                   <td>114/150</td>
+                                  <td>350 min</td>
                                 </tr>
                                 <tr>
                                   <td>Football 1775 LONGFootballFootballFootballFootball</td>
                                   <td>TEAM NAME LONG 111</td>
-                                  <td>350 min</td>
                                   <td>114/150</td>
+                                  <td>350 min</td>
                                 </tr>
                                 <tr>
                                   <td>Football 1775 LONGFootballFootballFootballFootball</td>
                                   <td>TEAM NAME LONG 111</td>
-                                  <td>350 min</td>
                                   <td>114/150</td>
+                                  <td>350 min</td>
                                 </tr>
                                 <tr>
                                   <td>Football 1775 LONGFootballFootballFootballFootball</td>
                                   <td>TEAM NAME LONG 111</td>
-                                  <td>350 min</td>
                                   <td>114/150</td>
+                                  <td>350 min</td>
                                 </tr>
                                 <tr>
                                   <td>Football 1775 LONGFootballFootballFootballFootball</td>
                                   <td>TEAM NAME LONG 111</td>
-                                  <td>350 min</td>
                                   <td>114/150</td>
+                                  <td>350 min</td>
                                 </tr>
                                 <tr>
                                   <td>Football 1775 LONGFootballFootballFootballFootball</td>
                                   <td>TEAM NAME LONG 111</td>
-                                  <td>350 min</td>
                                   <td>114/150</td>
+                                  <td>350 min</td>
                                 </tr>
                                 <tr>
                                   <td>Football 1775 LONGFootballFootballFootballFootball</td>
                                   <td>TEAM NAME LONG 111</td>
-                                  <td>350 min</td>
                                   <td>114/150</td>
+                                  <td>350 min</td>
                                 </tr>
                                 <tr>
                                   <td>Football 1775 LONGFootballFootballFootballFootball</td>
                                   <td>TEAM NAME LONG 111</td>
-                                  <td>350 min</td>
                                   <td>114/150</td>
+                                  <td>350 min</td>
                                 </tr>
                         </tbody>
                       </table>
@@ -311,10 +311,17 @@
               <h5 class="d-inline-block component-header">Contest info</h5>
               <div class="nl-contest-info-table">
                 <div class="table-heading">
-                  <div class="dropdown">
-                    <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary dropdown-toggle">Select your contests</button>
-                    <div aria-labelledby="dropdownMenuButton" class="dropdown-menu"><a class="dropdown-item">Team A</a><a class="dropdown-item">Team B</a><a class="dropdown-item">Team C</a></div>
-                  </div>
+                  <form class="form-signin dropdown-my-contests">
+                    <div class="input-group">
+                      <select id="country" placeholder="COUNTRY" required="" class="form-control custom-select">
+                        <option selected="" disabled="" hidden="">SUPER SATURDAY H2H</option>
+                        <option>Other amazing team name1!</option>
+                        <option>Other amazing team name2!</option>
+                        <option>Other amazing team name3!</option>
+                        <option>Other amazing team name4!</option>
+                      </select>
+                    </div>
+                  </form>
                 </div>
                 <table class="table table-info1">
                   <tbody>
@@ -427,14 +434,21 @@
                   </div>
                   <div class="rank__select">
                     <div class="rank__content">
-                      <div class="dropdown">
-                        <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary dropdown-toggle">Select my teams</button>
-                        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu"><a class="dropdown-item">Team A</a><a class="dropdown-item">Team B</a><a class="dropdown-item">Team C</a></div>
-                      </div>
+                      <form class="form-signin dropdown-my-teams">
+                        <div class="input-group">
+                          <select id="country" placeholder="COUNTRY" required="" class="form-control custom-select">
+                            <option selected="" disabled="" hidden="">Main best NFL Team!</option>
+                            <option>Other amazing team name1!</option>
+                            <option>Other amazing team name2!</option>
+                            <option>Other amazing team name3!</option>
+                            <option>Other amazing team name4! </option>
+                          </select>
+                        </div>
+                      </form>
                       <div class="rank__playlist">
-                        <div class="rank__playlist-item"><span class="playing">Playing</span><span>4</span></div>
-                        <div class="rank__playlist-item"><span class="played">Played</span><span>2</span></div>
-                        <div class="rank__playlist-item"><span class="not-played">Not played</span><span>4</span></div>
+                        <div class="rank__playlist-item"><span class="playing">PLAYING</span><span>4</span></div>
+                        <div class="rank__playlist-item"><span class="played">PLAYED</span><span>2</span></div>
+                        <div class="rank__playlist-item"><span class="not-played">NOT PLAYED</span><span>4</span></div>
                       </div>
                     </div>
                   </div>
@@ -656,7 +670,7 @@
             </div>
           </div>
           <div class="row">
-                  <div class="col-sm-6 col-lg-4 col-xl-2">
+                  <div class="col-sm-6 col-lg-4 col-xl-2 small-padding-live-score">
                     <div class="nl-contest-info-table nl-live-score-contest-table">
                       <div class="rank">
                         <div class="rank__no aligner">
@@ -664,13 +678,14 @@
                         </div>
                         <div class="rank__title">
                           <p>Best team evah</p>
+                          <p>Best manager evah</p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/helmet-2" alt=""></div>
                       </div>
                       <table class="table table-info3">
                         <thead>
                           <tr>
-                            <th></th>
+                            <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
                             <th>Pos</th>
                             <th>FP</th>
@@ -751,19 +766,19 @@
                         <div class="rank">
                           <div class="rank__stats">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">original</p>
                                   <p>90.3 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-6">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">Live projections</p>
                                   <p>114.8 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">PMR</p>
                                   <p>360 min</p>
@@ -775,7 +790,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-2">
+                  <div class="col-sm-6 col-lg-4 col-xl-2 small-padding-live-score">
                     <div class="nl-contest-info-table nl-live-score-contest-table">
                       <div class="rank">
                         <div class="rank__no aligner">
@@ -783,13 +798,14 @@
                         </div>
                         <div class="rank__title">
                           <p>Best team evah</p>
+                          <p>Best manager evah</p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/helmet-2" alt=""></div>
                       </div>
                       <table class="table table-info3">
                         <thead>
                           <tr>
-                            <th></th>
+                            <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
                             <th>Pos</th>
                             <th>FP</th>
@@ -870,19 +886,19 @@
                         <div class="rank">
                           <div class="rank__stats">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">original</p>
                                   <p>90.3 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-6">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">Live projections</p>
                                   <p>114.8 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">PMR</p>
                                   <p>360 min</p>
@@ -894,7 +910,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-2">
+                  <div class="col-sm-6 col-lg-4 col-xl-2 small-padding-live-score">
                     <div class="nl-contest-info-table nl-live-score-contest-table">
                       <div class="rank">
                         <div class="rank__no aligner">
@@ -902,13 +918,14 @@
                         </div>
                         <div class="rank__title">
                           <p>Best team evah</p>
+                          <p>Best manager evah</p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/helmet-2" alt=""></div>
                       </div>
                       <table class="table table-info3">
                         <thead>
                           <tr>
-                            <th></th>
+                            <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
                             <th>Pos</th>
                             <th>FP</th>
@@ -989,19 +1006,19 @@
                         <div class="rank">
                           <div class="rank__stats">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">original</p>
                                   <p>90.3 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-6">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">Live projections</p>
                                   <p>114.8 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">PMR</p>
                                   <p>360 min</p>
@@ -1013,7 +1030,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-2">
+                  <div class="col-sm-6 col-lg-4 col-xl-2 small-padding-live-score">
                     <div class="nl-contest-info-table nl-live-score-contest-table">
                       <div class="rank">
                         <div class="rank__no aligner">
@@ -1021,13 +1038,14 @@
                         </div>
                         <div class="rank__title">
                           <p>Best team evah</p>
+                          <p>Best manager evah</p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/helmet-2" alt=""></div>
                       </div>
                       <table class="table table-info3">
                         <thead>
                           <tr>
-                            <th></th>
+                            <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
                             <th>Pos</th>
                             <th>FP</th>
@@ -1108,19 +1126,19 @@
                         <div class="rank">
                           <div class="rank__stats">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">original</p>
                                   <p>90.3 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-6">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">Live projections</p>
                                   <p>114.8 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">PMR</p>
                                   <p>360 min</p>
@@ -1132,7 +1150,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-2">
+                  <div class="col-sm-6 col-lg-4 col-xl-2 small-padding-live-score">
                     <div class="nl-contest-info-table nl-live-score-contest-table">
                       <div class="rank">
                         <div class="rank__no aligner">
@@ -1140,13 +1158,14 @@
                         </div>
                         <div class="rank__title">
                           <p>Best team evah</p>
+                          <p>Best manager evah</p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/helmet-2" alt=""></div>
                       </div>
                       <table class="table table-info3">
                         <thead>
                           <tr>
-                            <th></th>
+                            <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
                             <th>Pos</th>
                             <th>FP</th>
@@ -1227,19 +1246,19 @@
                         <div class="rank">
                           <div class="rank__stats">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">original</p>
                                   <p>90.3 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-6">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">Live projections</p>
                                   <p>114.8 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">PMR</p>
                                   <p>360 min</p>
@@ -1251,7 +1270,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-2">
+                  <div class="col-sm-6 col-lg-4 col-xl-2 small-padding-live-score">
                     <div class="nl-contest-info-table nl-live-score-contest-table">
                       <div class="rank">
                         <div class="rank__no aligner">
@@ -1259,13 +1278,14 @@
                         </div>
                         <div class="rank__title">
                           <p>Best team evah</p>
+                          <p>Best manager evah</p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/helmet-2" alt=""></div>
                       </div>
                       <table class="table table-info3">
                         <thead>
                           <tr>
-                            <th></th>
+                            <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
                             <th>Pos</th>
                             <th>FP</th>
@@ -1346,19 +1366,19 @@
                         <div class="rank">
                           <div class="rank__stats">
                             <div class="row">
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">original</p>
                                   <p>90.3 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-6">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">Live projections</p>
                                   <p>114.8 FP</p>
                                 </div>
                               </div>
-                              <div class="col">
+                              <div class="col-3">
                                 <div class="rank__content leaders-list">
                                   <p class="tit">PMR</p>
                                   <p>360 min</p>

@@ -21,8 +21,8 @@ mixin current-table(times)
 		tr
 			td Football 1775 LONGFootballFootballFootballFootball
 			td TEAM NAME LONG 111
-			td 350 min
 			td 114/150
+			td 350 min
 
 mixin contest-info(times)
 	each i in new Array(times)
@@ -43,7 +43,7 @@ mixin team-field-table(times)
 
 mixin list-of-teams(times)
 	each i in new Array(times)
-		div.col-sm-6.col-lg-4.col-xl-2
+		div.col-sm-6.col-lg-4.col-xl-2.small-padding-live-score
 			div.nl-contest-info-table.nl-live-score-contest-table
 				div.rank
 					div.rank__no.aligner
@@ -51,12 +51,14 @@ mixin list-of-teams(times)
 							span 124
 					div.rank__title
 						p Best team evah
+						p Best manager evah
 					div.rank__thumb
 						img(src="assets/img/helmet-2", alt="")
 				table.table.table-info3
 					thead
 						tr
-							th
+							th.indicated
+								span.played.indicator.visibility-hidden
 							th Name
 							th Pos
 							th FP
@@ -131,22 +133,22 @@ mixin list-of-teams(times)
 					div.rank
 						div.rank__stats
 							div.row
-								div.col
+								div.col-3
 									div.rank__content.leaders-list
 										p.tit original
 										p 90.3 FP
-								div.col
+								div.col-6
 									div.rank__content.leaders-list
 										p.tit Live projections
 										p 114.8 FP
-								div.col
+								div.col-3
 									div.rank__content.leaders-list
 										p.tit PMR
 										p 360 min
 
 
 section.nl-section.nl-players.nl-live-score
-	div.container.container-wider
+	div.container-fluid
 		div.row
 			div.col-sm-12.page-heading
 				h1 Live scores
@@ -157,7 +159,7 @@ section.nl-section.nl-players.nl-live-score
 					div.matches__scrollarea
 						+repeat(12)
 
-			div.col-sm-12.col-lg-6.col-xl-4
+			div.col-sm-12.col-lg-6.col-xl-4.live-current-contest
 				h5.d-inline-block.component-header My current contests
 				a.btn.btn-primary.btn-sm.btn-inline Refresh
 				div.current-contents
@@ -168,8 +170,8 @@ section.nl-section.nl-players.nl-live-score
 									tr
 										th Contests name
 										th Team name
-										th PMR
 										th Rank
+										th PMR
 							div.nl-table-scroll2
 								table.table.table-striped
 									tbody
@@ -180,12 +182,14 @@ section.nl-section.nl-players.nl-live-score
 				h5.d-inline-block.component-header Contest info
 				div.nl-contest-info-table
 					div.table-heading
-						div.dropdown
-							button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Select your contests
-							div.dropdown-menu(aria-labelledby="dropdownMenuButton")
-								a.dropdown-item Team A
-								a.dropdown-item Team B
-								a.dropdown-item Team C
+						form.form-signin.dropdown-my-contests
+							.input-group
+								select#country.form-control.custom-select(placeholder='COUNTRY', required='')
+									option(selected='' disabled='' hidden='') SUPER SATURDAY H2H
+									option Other amazing team name1!
+									option Other amazing team name2!
+									option Other amazing team name3!
+									option Other amazing team name4!
 
 					table.table.table-info1
 						tbody
@@ -232,21 +236,23 @@ section.nl-section.nl-players.nl-live-score
 								span 124
 						div.rank__select
 							div.rank__content
-								div.dropdown
-									button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Select my teams
-									div.dropdown-menu(aria-labelledby="dropdownMenuButton")
-										a.dropdown-item Team A
-										a.dropdown-item Team B
-										a.dropdown-item Team C
+								form.form-signin.dropdown-my-teams
+									.input-group
+										select#country.form-control.custom-select(placeholder='COUNTRY', required='')
+											option(selected='' disabled='' hidden='') Main best NFL Team!
+											option Other amazing team name1!
+											option Other amazing team name2!
+											option Other amazing team name3!
+											option Other amazing team name4! 
 								div.rank__playlist
 									div.rank__playlist-item
-										span.playing Playing
+										span.playing PLAYING
 										span 4
 									div.rank__playlist-item
-										span.played Played
+										span.played PLAYED
 										span 2
 									div.rank__playlist-item
-										span.not-played Not played
+										span.not-played NOT PLAYED
 										span 4
 						div.rank__stats.part-of-block
 							div.rank__content.leaders-list
