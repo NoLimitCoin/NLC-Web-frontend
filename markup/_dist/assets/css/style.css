@@ -10262,6 +10262,13 @@ p {
 
 .nl-section.homepage {
   padding: 1.5rem 2.25rem; }
+  .nl-section.homepage .rounded-corners {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21); }
   .nl-section.homepage .btn-primary {
     font-weight: 600; }
   .nl-section.homepage .table-data-field h3 {
@@ -10396,7 +10403,6 @@ p {
   .homepage .tab-content {
     border-radius: 0; }
   .homepage .nl-contests-table .tab-content {
-    border-radius: 0;
     border-bottom-right-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem; }
   @media (min-width: 992px) {
@@ -11203,6 +11209,10 @@ p {
   .mobile-menu p {
     display: inline-block;
     padding: 8px 0 0 15px; }
+    .mobile-menu p.rank-manager-top5, .mobile-menu p.rank-player-top5 {
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: 600; }
   .mobile-menu.dropdown {
     background: #e89608;
     /* Old browsers */
@@ -11211,7 +11221,9 @@ p {
     padding-top: 3px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: none; }
+    border: none;
+    font-weight: 600;
+    font-size: 12px; }
     .mobile-menu.dropdown i {
       float: right;
       padding-right: 20px;
