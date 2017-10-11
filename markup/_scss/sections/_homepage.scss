@@ -6,27 +6,27 @@
     padding-bottom: 0.25rem;
   }
 
-  .nl-G-position {
+  .nl-GK-position {
     bottom: 4.5%;
   } 
    
-  .nl-RS-position{
+  .nl-FLEXR-position{
     top: 73%;
     right: 2%;
   }
 
-  .nl-LWM-position{
+  .nl-ML-position{
     top: 16%;
   }
-  .nl-RWM-position{
+  .nl-MR-position{
     top: 16%;
   }
 
-  .nl-CM-position {
+  .nl-MM-position {
     top: 14%;
   }
 
-  .nl-DAR-position {
+  .nl-DM-position {
     bottom: 31%;
   }
 
@@ -37,20 +37,20 @@
   }
 
   @media (max-width: 1425px) and (min-width: 1200px) {
-    .nl-CM-position {
+    .nl-MM-position {
       top: 18%;
     }
 
-    .nl-LWM-position{
+    .nl-ML-position{
       top: 19%;
     }
-    .nl-RWM-position{
+    .nl-MR-position{
       top: 19%;
     }
   }
 
   @include respond-to (wide-tablets) {
-    .nl-CM-position {
+    .nl-MM-position {
       top: 20%;
       left: 40%;
     }
@@ -223,8 +223,18 @@
 
 .homepage {
 
+  .nl-create-team .player-main-block.football .nl-LRB-position {
+    bottom: 43%;
+  }
+
   .no-padding {
     padding: 0 15px;
+  }
+
+  .no-padding-mobile {
+    @include respond-to (handhelds) {
+        padding: 0px;
+    }
   }
 
   @include respond-to (allmobile) {
@@ -254,7 +264,7 @@
   }
 
   .nl-my-teams .nl-team-list-table th:nth-child(1), .nl-my-teams .nl-team-list-table td:nth-child(1) {
-    width: 50%;
+    width: 50%
   }
 
   .nl-my-teams .nl-team-list-table th:nth-child(2), .nl-my-teams .nl-team-list-table td:nth-child(2) {

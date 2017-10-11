@@ -81,7 +81,7 @@
   min-height: 563px;
   position: relative;
 
-  // .nl-G-position{
+  // .nl-GK-position{
   //   bottom: 6.5%;
   //   left: 43%;
   // }
@@ -94,64 +94,64 @@
   //   bottom: 21.5%;
   //   right: 24%;
   // }
-  // .nl-DAL-position{
+  // .nl-FLEXL-position{
   //   bottom: 35%;
   //   left: 7%;
   // }
-  // .nl-DAR-position{
+  // .nl-DM-position{
   //   bottom: 35%;
   //   right: 6%;
   // }
-  // .nl-CM-position{
+  // .nl-MM-position{
   //   bottom: 43%;
   //   left: 40%;
   // }
 
-  // .nl-ST-position{
+  // .nl-AR-position{
   //   top: 2.5%;
   //   left: 40%;
   // }
 
-  // .nl-LS-position{
+  // .nl-AL-position{
   //   top: 2.5%;
   //   left: 17%;
   // }
 
-  // .nl-RS-position{
+  // .nl-FLEXR-position{
   //   top: 2.5%;
   //   right: 17%;
   // }
 
-  // .nl-LWM-position{
+  // .nl-ML-position{
   //   top: 25%;
   //   left: 17%;
   // }
 
-  // .nl-RWM-position{
+  // .nl-MR-position{
   //   top: 25%;
   //   right: 17%;
   // }
 
   // @media (min-width: 1200px)  {
-  //   .nl-CM-position{
+  //   .nl-MM-position{
   //     bottom: 43%;
   //     left: 43%;
   //   }
-  //   .nl-LWM-position{
+  //   .nl-ML-position{
   //     top: 25%;
   //     left: 25%;
   //   }
-  //   .nl-RWM-position{
+  //   .nl-MR-position{
   //     top: 25%;
   //     right: 25%;
   //   }
-  //   .nl-ST-position{
+  //   .nl-AR-position{
   //     top: 2.5%;
   //     left: 43%;
   //   }
   // }
 
-    .nl-G-position{
+    .nl-GK-position{
       bottom: 3.5%;
       left: 43%;
     }
@@ -164,77 +164,77 @@
       bottom: 30.5%;
       right: 15%;
     }
-    .nl-DAL-position{
+    .nl-FLEXL-position{
       bottom: -2%;
       left: 2%;
     }
-    .nl-DAR-position{
+    .nl-DM-position{
       bottom: 30%;
       right: 40%;
     }
-    // .nl-CM-position{
+    // .nl-MM-position{
     //   bottom: 43%;
     //   left: 40%;
     // }
 
-    // .nl-ST-position{
+    // .nl-AR-position{
     //   top: -3.5%;
     //   left: 56%;
     // }
 
-    .nl-LS-position{
+    .nl-AL-position{
       top: -6.5%;
       left: 28%;
     }
 
-    .nl-RS-position{
+    .nl-FLEXR-position{
       top: 77%;
       right: 2%;
     }
 
-    // .nl-LWM-position{
+    // .nl-ML-position{
     //   top: 30%;
     //   left: 19%;
     // }
 
-    // .nl-RWM-position{
+    // .nl-MR-position{
     //   top: 30%;
     //   right: 19%;
     // }
 
-    .nl-CM-position{
+    .nl-MM-position{
       bottom: 56%;
       left: 42%;
     }
-    .nl-LWM-position{
+    .nl-ML-position{
       top: 18%;
       left: 12%;
     }
-    .nl-RWM-position{
+    .nl-MR-position{
       top: 18%;
       right: 12%;
     }
-    .nl-ST-position{
+    .nl-AR-position{
       top: -6.5%;
       left: 56%;
     }
 
   @include respond-to(allwider){ 
-    .nl-ST-position{
+    .nl-AR-position{
       top: -2.5%;
       left: 56%;
     }
-    .nl-LS-position{
+    .nl-AL-position{
       top: -2.5%;
       left: 28%;
     }
 
-    .nl-DAL-position{
+    .nl-FLEXL-position{
       bottom: 3%;
       left: 2%;
     }
 
-    .nl-RS-position{
+    .nl-FLEXR-position{
       top: 73%;
       right: 2%;
     }
@@ -380,15 +380,15 @@
     max-height: 500px;
     min-height: 496px;
 
-    // .nl-ST-position {
+    // .nl-AR-position {
     //   top: -1.5%;
     // }
 
-    // .nl-LS-position, .nl-RS-position {
+    // .nl-AL-position, .nl-FLEXR-position {
     //   top: -5.5%;
     // }
 
-    // .nl-RWM-position, .nl-LWM-position {
+    // .nl-MR-position, .nl-ML-position {
     //   top: 23%;
     // }
   }
@@ -449,7 +449,7 @@
           max-width: 47px;
         }
 
-        // .nl-G-position {
+        // .nl-GK-position {
         //   left: 40%;
         // }
       }

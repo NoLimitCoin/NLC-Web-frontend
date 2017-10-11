@@ -368,7 +368,7 @@
     min-height: 563px;
     position: relative;
 
-    .nl-G-position{
+    .nl-GK-position{
       bottom: 5.5%;
       left: 41%;
     }
@@ -381,85 +381,85 @@
       bottom: 30.5%;
       right: 15%;
     }
-    .nl-DAL-position{
+    .nl-FLEXL-position{
       bottom: 3%;
       left: 2%;
     }
-    .nl-DAR-position{
+    .nl-DM-position{
       bottom: 30%;
       right: 41%;
     }
-    // .nl-CM-position{
+    // .nl-MM-position{
     //   bottom: 43%;
     //   left: 40%;
     // }
 
-    // .nl-ST-position{
+    // .nl-AR-position{
     //   top: -3.5%;
     //   left: 56%;
     // }
 
-    .nl-LS-position{
+    .nl-AL-position{
       top: -3.5%;
       left: 28%;
     }
 
-    .nl-RS-position{
+    .nl-FLEXR-position{
       top: 78%;
       right: 2%;
     }
 
-    // .nl-LWM-position{
+    // .nl-ML-position{
     //   top: 30%;
     //   left: 19%;
     // }
 
-    // .nl-RWM-position{
+    // .nl-MR-position{
     //   top: 30%;
     //   right: 19%;
     // }
 
-    .nl-CM-position{
+    .nl-MM-position{
       bottom: 56%;
       left: 42%;
     }
-    .nl-LWM-position{
+    .nl-ML-position{
       top: 18%;
       left: 12%;
     }
-    .nl-RWM-position{
+    .nl-MR-position{
       top: 18%;
       right: 12%;
     }
-    .nl-ST-position{
+    .nl-AR-position{
       top: -3.5%;
       left: 56%;
     }
 
     @media (max-width: 1425px) and (min-width: 1200px) {
-      .nl-RS-position{
+      .nl-FLEXR-position{
         top: 76%;
         right: 2%;
       }
-      .nl-G-position {
+      .nl-GK-position {
         bottom: 7.5%;
       }
     }
 
     @media (min-width: 1425px) {
-      .nl-G-position {
+      .nl-GK-position {
         bottom: 9.5%;
         left: 43%;
       }
     }
 
     @include respond-to (wide-tablets){
-      .nl-RS-position{
+      .nl-FLEXR-position{
         top: 74%;
         right: 2%;
       }
 
-       .nl-ST-position{
+       .nl-AR-position{
         top: -3.5%;
         left: 53%;
       }
