@@ -9322,8 +9322,7 @@ main {
       max-height: inherit; } }
 
 .nl-mob-table {
-  max-height: 38rem;
-  overflow: scroll; }
+  max-height: 38rem; }
 
 /* Page headings
 ---------------------------------------- */
@@ -9920,7 +9919,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10037,7 +10036,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -12013,6 +12012,9 @@ td:nth-child(4).homepage-list-view {
   overflow: hidden; }
   .nl-players-table td, .nl-players-table th {
     padding: 0.25rem 0.25rem; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-players-table td, .nl-players-table th {
+        padding: 0.5rem 0.25rem; } }
     .nl-players-table td:first-child, .nl-players-table th:first-child {
       padding-left: 0.5rem; }
   .nl-players-table td:not(:first-child), .nl-players-table .table th:not(:first-child) {
@@ -13003,7 +13005,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13259,7 +13261,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14023,6 +14025,14 @@ td:nth-child(4).homepage-list-view {
 
 /* team-field-section
 ---------------------------------------- */
+.nl-live-score .rank__no {
+  background: #eb9a0d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+  background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%); }
+
+.nl-live-score h5 {
+  margin-bottom: 1.875rem; }
+
 .nl-live-score .player-main-block.football {
   min-height: 400px; }
   .nl-live-score .player-main-block.football .nl-player-block {
@@ -14189,7 +14199,10 @@ td:nth-child(4).homepage-list-view {
   .nl-live-score-contest-table .rank {
     margin-bottom: 0; }
   .nl-live-score-contest-table .rank__no {
-    border-bottom-left-radius: 0; }
+    border-bottom-left-radius: 0;
+    background: #eb9a0d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+    background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%); }
     .nl-live-score-contest-table .rank__no span {
       font-size: 12px;
       line-height: 1.2;
@@ -14446,7 +14459,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {

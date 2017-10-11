@@ -221,6 +221,15 @@
 // override to nl-create-team.scss
 .nl-live-score {
 
+	.rank__no {
+		background: #eb9a0d;
+    	background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+    	background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
+	}
+
+	h5 {
+		margin-bottom: 1.875rem;
+	}
 	.player-main-block {
 
 		&.football {
@@ -452,6 +461,10 @@
 	.rank__no {
 		border-bottom-left-radius: 0;
 
+		background: #eb9a0d;
+    	background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+    	background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
+		
 		span {
 			font-size: 12px;
 			line-height: 1.2;
