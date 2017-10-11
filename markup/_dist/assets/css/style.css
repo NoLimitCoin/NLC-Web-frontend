@@ -9321,6 +9321,12 @@ main {
     .nl-table-scroll2 {
       max-height: inherit; } }
 
+.nl-table-scroll3 {
+  max-height: 14.0625rem; }
+  @media (max-width: 991px) {
+    .nl-table-scroll3 {
+      max-height: inherit; } }
+
 .nl-mob-table {
   max-height: 38rem; }
 
@@ -13992,24 +13998,34 @@ td:nth-child(4).homepage-list-view {
   .nl-contest-info-table .table-info3 th,
   .nl-contest-info-table .table-info3 td {
     padding: 0.5rem;
-    text-align: left; }
+    text-align: center; }
     .nl-contest-info-table .table-info4 th:nth-child(1),
     .nl-contest-info-table .table-info4 td:nth-child(1),
     .nl-contest-info-table .table-info3 th:nth-child(1),
     .nl-contest-info-table .table-info3 td:nth-child(1) {
       width: 10%;
-      color: #e48706;
-      text-align: right; }
+      color: #e48706; }
     .nl-contest-info-table .table-info4 th:nth-child(2),
     .nl-contest-info-table .table-info4 td:nth-child(2),
     .nl-contest-info-table .table-info3 th:nth-child(2),
     .nl-contest-info-table .table-info3 td:nth-child(2) {
-      width: 60%; }
+      width: 39%;
+      text-align: left; }
     .nl-contest-info-table .table-info4 th:nth-child(3),
     .nl-contest-info-table .table-info4 td:nth-child(3),
     .nl-contest-info-table .table-info3 th:nth-child(3),
     .nl-contest-info-table .table-info3 td:nth-child(3) {
-      width: 30%; }
+      width: 17%; }
+    .nl-contest-info-table .table-info4 th:nth-child(4),
+    .nl-contest-info-table .table-info4 td:nth-child(4),
+    .nl-contest-info-table .table-info3 th:nth-child(4),
+    .nl-contest-info-table .table-info3 td:nth-child(4) {
+      width: 17%; }
+    .nl-contest-info-table .table-info4 th:nth-child(5),
+    .nl-contest-info-table .table-info4 td:nth-child(5),
+    .nl-contest-info-table .table-info3 th:nth-child(5),
+    .nl-contest-info-table .table-info3 td:nth-child(5) {
+      width: 17%; }
   .nl-contest-info-table .nl-table-scroll2 {
     max-height: 50.3125rem; }
     @media (max-width: 991px) {
@@ -14018,6 +14034,44 @@ td:nth-child(4).homepage-list-view {
 
 /* team-field-section
 ---------------------------------------- */
+.nl-live-score .more-teams-button {
+  text-align: center; }
+  .nl-live-score .more-teams-button a .btn-more-teams-live {
+    font-size: 15px; }
+
+.nl-live-score .nl-contest-info-table .table-info1 td .btn {
+  margin-top: 10px; }
+
+.nl-live-score .rounded-corners {
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21); }
+
+.nl-live-score .orange {
+  color: #e98c0c; }
+
+.nl-live-score .nl-contest-info-table .nl-table-scroll2 {
+  max-height: 34.5rem; }
+
+.nl-live-score .nl-contest-info-table .nl-table-scroll3 {
+  max-height: 23rem; }
+
+.nl-live-score .table-current-contests .table td {
+  padding: 0.25rem 0.25rem; }
+
+.nl-live-score .nl-contest-info-table .table-info4 td, .nl-live-score .nl-contest-info-table .table-info4 tr {
+  padding: 0.25rem; }
+
+.nl-live-score .nl-contest-info-table .table-info4 td:nth-child(1) {
+  text-align: center; }
+
+.nl-live-score .nl-team-button {
+  margin: 0.75rem 0; }
+
 .nl-live-score .small-padding-live-score {
   padding: 0 5px; }
 
@@ -14042,7 +14096,8 @@ td:nth-child(4).homepage-list-view {
   margin-bottom: 0.75rem; }
 
 .nl-live-score .player-main-block.football {
-  min-height: 400px; }
+  min-height: 400px;
+  margin-top: 60px; }
   .nl-live-score .player-main-block.football .nl-player-block {
     max-width: 80px; }
     .nl-live-score .player-main-block.football .nl-player-block img {
@@ -14053,7 +14108,23 @@ td:nth-child(4).homepage-list-view {
   padding: 0.5rem; }
   .nl-live-score .nl-team-list-table th:first-child,
   .nl-live-score .nl-team-list-table td:first-child {
-    text-align: left; }
+    text-align: left;
+    width: 40%; }
+
+.nl-live-score .nl-my-teams .nl-team-list-table td:nth-child(2) {
+  text-align: center;
+  width: 20%; }
+
+.nl-live-score .nl-my-teams .nl-team-list-table td:nth-child(3) {
+  text-align: center;
+  width: 20%; }
+
+.nl-live-score .nl-my-teams .nl-team-list-table td:nth-child(4) {
+  text-align: center;
+  width: 20%; }
+
+.rank.margin-top-10 {
+  margin-top: 10px; }
 
 .rank {
   display: -webkit-box;
@@ -14066,7 +14137,9 @@ td:nth-child(4).homepage-list-view {
   color: #fff;
   font-weight: 400;
   font-size: 16px;
-  margin-bottom: 1rem; }
+  margin-bottom: 0rem; }
+  .rank.below-teams {
+    width: 100%; }
   .rank__content {
     padding: 1rem 1rem 0.375rem 1rem; }
   .rank__no {
@@ -14166,10 +14239,24 @@ td:nth-child(4).homepage-list-view {
       display: none; } }
 
 .rank__stats.single-block {
-  display: none; }
+  display: none;
+  text-align: center; }
   @media (min-width: 992px) and (max-width: 1680px) {
     .rank__stats.single-block {
-      display: block; } }
+      display: block;
+      width: 100%; } }
+  .rank__stats.single-block .rank__content {
+    padding: .5rem 1rem 0.375rem 1rem; }
+
+.rank__stats.below-teams {
+  line-height: 1rem;
+  width: 100%;
+  padding: 0 0.75rem; }
+  .rank__stats.below-teams .rank__content {
+    padding: .5rem 1rem 0.375rem 1rem;
+    font-size: 13px; }
+    .rank__stats.below-teams .rank__content p {
+      font-size: 13px; }
 
 /* Chat
 ---------------------------------------- */
@@ -14195,6 +14282,18 @@ td:nth-child(4).homepage-list-view {
       display: table;
       clear: both; }
 
+@media (max-width: 1200px) {
+  .chatbox .nl-contest-info-table .nl-table-scroll2 {
+    max-height: 15rem; } }
+
+@media only screen and (max-width: 575px) {
+  .chatbox .nl-contest-info-table .nl-table-scroll2 {
+    max-height: 10rem; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .nl-live-score .nl-contest-info-table .nl-table-scroll3 {
+    max-height: 29rem; } }
+
 .chat {
   background-color: #fff;
   min-height: 630px; }
@@ -14205,6 +14304,9 @@ td:nth-child(4).homepage-list-view {
 ---------------------------------------- */
 .nl-live-score-contest-table {
   padding: 0; }
+  .nl-live-score-contest-table .nl-info-table-button {
+    min-height: 3.5rem;
+    text-align: center; }
   .nl-live-score-contest-table .visibility-hidden {
     visibility: hidden; }
   .nl-live-score-contest-table .rank {
@@ -14226,7 +14328,7 @@ td:nth-child(4).homepage-list-view {
   .nl-live-score-contest-table .rank__stats .leaders-list p {
     margin: 0;
     padding: 0;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.2; }
   .nl-live-score-contest-table .rank__title {
     padding: 0.5rem;
@@ -14245,7 +14347,8 @@ td:nth-child(4).homepage-list-view {
   .nl-live-score-contest-table .table-info3 td,
   .nl-live-score-contest-table .table-info4 th,
   .nl-live-score-contest-table .table-info4 td {
-    font-size: 12px; }
+    font-size: 10px;
+    padding: 0.25rem; }
   .nl-live-score-contest-table .indicator {
     width: 0.625rem;
     height: 0.625rem;

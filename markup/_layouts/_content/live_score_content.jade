@@ -21,8 +21,8 @@ mixin current-table(times)
 		tr
 			td Football 1775 LONGFootballFootballFootballFootball
 			td TEAM NAME LONG 111
-			td 114/150
-			td 350 min
+			td.orange 114/150
+			td 350
 
 mixin contest-info(times)
 	each i in new Array(times)
@@ -38,8 +38,6 @@ mixin team-field-table(times)
 			td.pos FLEX
 			td 30
 			td $0
-			td
-				button.btn.btn-primary.btn-sm.btn-warning cut
 
 mixin list-of-teams(times)
 	each i in new Array(times)
@@ -70,81 +68,81 @@ mixin list-of-teams(times)
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 							tr
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 							tr
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 							tr
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 							tr
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 							tr
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 							tr
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 							tr
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 							tr
 								td.indicated
 									span.played.indicator
 								td Name
-								td Pos
+								td.orange QB
 								td 123
 								td 15
 				div.nl-info-table-button
-					div.rank
-						div.rank__stats
+					div.rank.below-teams
+						div.rank__stats.below-teams
 							div.row
-								div.col-3
+								div.col-4.small-padding-live-score
 									div.rank__content.leaders-list
-										p.tit original
+										p.tit FP
 										p 90.3 FP
-								div.col-6
+								div.col-4.small-padding-live-score
 									div.rank__content.leaders-list
-										p.tit Live projections
+										p.tit Live SCORE
 										p 114.8 FP
-								div.col-3
+								div.col-4.small-padding-live-score
 									div.rank__content.leaders-list
 										p.tit PMR
-										p 360 min
+										p 360
 
 
 section.nl-section.nl-players.nl-live-score
@@ -165,7 +163,7 @@ section.nl-section.nl-players.nl-live-score
 				div.current-contents
 					div.nl-table-responsive
 						div.nl-table-mw.table-current-contests
-							table.table.table-striped
+							table.table.table-striped.rounded-corners
 								thead
 									tr
 										th Contests name
@@ -221,10 +219,10 @@ section.nl-section.nl-players.nl-live-score
 								th
 								th Contestant
 								th Score
-					div.nl-table-scroll2
+					div.nl-table-scroll3
 						table.table.table-striped.table-info4
 							tbody
-								+contest-info(11)
+								+contest-info(26)
 
 			div.col-sm-12.col-lg-6.col-xl-4
 				h5.d-inline-block.component-header MY TEAM
@@ -256,28 +254,32 @@ section.nl-section.nl-players.nl-live-score
 										span 4
 						div.rank__stats.part-of-block
 							div.rank__content.leaders-list
-								p.tit original
-								p 90.3 FP
-								p.tit Live projections
-								p 114.8 FP
-								p.tit PMR
-								p 360 min
+								div.row
+									div.col
+										p.tit original
+										p 90.3 FP
+									div.col
+										p.tit Live projections
+										p 114.8 FP
+									div.col
+										p.tit PMR
+										p 360
 
-				div.rank
+				div.rank.margin-top-10
 					div.rank__stats.single-block
 						div.row
-							div.col
+							div.col-3.small-padding-live-score
 								div.rank__content.leaders-list
 									p.tit original
 									p 90.3 FP
-							div.col
+							div.col-6.small-padding-live-score
 								div.rank__content.leaders-list
 									p.tit Live projections
 									p 114.8 FP
-							div.col
+							div.col-3.small-padding-live-score
 								div.rank__content.leaders-list
 									p.tit PMR
-									p 360 min
+									p 360
 
 				div.nl-team-button
 					button.btn.btn-team.btn-big-radius.active(type="button").field-view-btn field view
@@ -361,11 +363,10 @@ section.nl-section.nl-players.nl-live-score
 											th FP
 											th SALARY
 											th
-
 									tbody
-										+team-field-table(7)
+										+team-field-table(9)
 
-			div.col-sm-12.col-xl-4
+			div.col-sm-8.offset-sm-2.col-xl-4.offset-xl-0.chatbox
 				h5.d-inline-block.component-header Live chat
 				div.nl-contest-info-table
 					div.table-heading
@@ -377,13 +378,21 @@ section.nl-section.nl-players.nl-live-score
 					div.nl-table-scroll2
 						div.chat
 							div.chat__area
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								div.row 
+									div.col-4.col-lg-3
+										p.orange Kasper
+									div.col-8.col-lg-9
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									div.col-4.col-lg-3
+										p.orange Dharmesh
+									div.col-8.col-lg-9
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
 
 
 		div.row
-			+list-of-teams(6)
+			+list-of-teams(12)
+		div.row
+			div.col-12.more-teams-button
+				a(href="") 
+					div.btn.btn-primary.btn-lg.btn-more-teams-live More Teams

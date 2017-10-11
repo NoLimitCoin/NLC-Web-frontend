@@ -241,6 +241,13 @@ main{
   }
 }
 
+.nl-table-scroll3{
+  max-height: calculateRem(225px);
+  @include respond-to(allsmall){
+    max-height: inherit;
+  }
+}
+
 // .nl-table-scroll2-horizontal{
 //   max-height: calculateRem(225px);
 //   @include respond-to(allsmall){
