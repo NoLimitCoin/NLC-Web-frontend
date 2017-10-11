@@ -9928,7 +9928,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10045,7 +10045,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -13019,7 +13019,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13275,7 +13275,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13879,6 +13879,12 @@ td:nth-child(4).homepage-list-view {
   @media (max-width: 1200px) {
     .matches {
       height: 156px; } }
+  @media only screen and (max-width: 575px) {
+    .matches {
+      height: 140px; } }
+  .matches.rounded-corners {
+    overflow-y: hidden;
+    overflow-x: scroll !important; }
   .matches__scrollarea {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14040,6 +14046,23 @@ td:nth-child(4).homepage-list-view {
 
 /* team-field-section
 ---------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .rank .leaders-list p {
+    font-size: 11px; } }
+
+@media only screen and (max-width: 575px) {
+  .nl-live-score .rank__stats.part-of-block {
+    max-width: 133px; } }
+
+.nl-live-score .nl-team-field .nl-player-block p.playing {
+  background: green; }
+
+.nl-live-score .nl-team-field .nl-player-block p.played {
+  background: #6dcff6; }
+
+.nl-live-score .nl-team-field .nl-player-block p.not-playing {
+  background: red; }
+
 .nl-live-score .more-teams-button {
   text-align: center; }
   .nl-live-score .more-teams-button a .btn-more-teams-live {
@@ -14051,8 +14074,8 @@ td:nth-child(4).homepage-list-view {
 .nl-live-score .rounded-corners {
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
-  border-bottom-left-radius: 0rem;
-  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
   overflow: hidden;
   -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21); }
@@ -14073,7 +14096,7 @@ td:nth-child(4).homepage-list-view {
   padding: 0.25rem 0.25rem; }
 
 .nl-live-score .nl-contest-info-table .table-info4 td, .nl-live-score .nl-contest-info-table .table-info4 tr {
-  padding: 0.25rem; }
+  padding: 0rem; }
 
 .nl-live-score .nl-contest-info-table .table-info4.contestants td, .nl-live-score .nl-contest-info-table .table-info4.contestants tr {
   padding: 0.5rem; }
@@ -14173,6 +14196,9 @@ td:nth-child(4).homepage-list-view {
     .rank__no span + span {
       font-size: 40px;
       font-weight: 700; }
+      @media (max-width: 767px) {
+        .rank__no span + span {
+          font-size: 30px; } }
   .rank__playlist {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14184,6 +14210,9 @@ td:nth-child(4).homepage-list-view {
     @media (min-width: 768px) {
       .rank__playlist {
         height: 54px; } }
+    @media only screen and (max-width: 575px) {
+      .rank__playlist {
+        height: 43px; } }
   .rank__playlist-item {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -14210,6 +14239,9 @@ td:nth-child(4).homepage-list-view {
       @media (min-width: 992px) {
         .rank__playlist-item span {
           font-size: 13px; } }
+      @media only screen and (max-width: 575px) {
+        .rank__playlist-item span {
+          font-size: 9px; } }
     .rank__playlist-item span + span:before {
       content: '';
       display: inline-block;
@@ -14219,6 +14251,10 @@ td:nth-child(4).homepage-list-view {
       margin: 0.25rem;
       line-height: 1.2;
       vertical-align: middle; }
+      @media only screen and (max-width: 575px) {
+        .rank__playlist-item span + span:before {
+          width: 13px;
+          height: 13px; } }
     .rank__playlist-item .playing + span:before {
       background-color: green; }
     .rank__playlist-item .played + span:before {
@@ -14231,6 +14267,9 @@ td:nth-child(4).homepage-list-view {
     padding: 0 0.25rem;
     margin-bottom: 0;
     font-size: 12px; }
+    @media only screen and (max-width: 575px) {
+      .rank .leaders-list p {
+        font-size: 11px; } }
   .rank .leaders-list p:nth-child(even) {
     padding-bottom: 0.25rem; }
   .rank__select {
@@ -14255,11 +14294,18 @@ td:nth-child(4).homepage-list-view {
   @media (min-width: 992px) and (max-width: 1680px) {
     .rank__stats.part-of-block {
       display: none; } }
+  @media only screen and (max-width: 575px) {
+    .rank__stats.part-of-block {
+      display: none; } }
 
 .rank__stats.single-block {
   display: none;
   text-align: center; }
   @media (min-width: 992px) and (max-width: 1680px) {
+    .rank__stats.single-block {
+      display: block;
+      width: 100%; } }
+  @media only screen and (max-width: 575px) {
     .rank__stats.single-block {
       display: block;
       width: 100%; } }
@@ -14323,7 +14369,7 @@ td:nth-child(4).homepage-list-view {
 .nl-live-score-contest-table {
   padding: 0; }
   .nl-live-score-contest-table .nl-info-table-button {
-    min-height: 3.5rem;
+    min-height: 3rem;
     text-align: center; }
   .nl-live-score-contest-table .visibility-hidden {
     visibility: hidden; }
@@ -14346,8 +14392,9 @@ td:nth-child(4).homepage-list-view {
   .nl-live-score-contest-table .rank__stats .leaders-list p {
     margin: 0;
     padding: 0;
-    font-size: 11px;
-    line-height: 1.2; }
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 500; }
   .nl-live-score-contest-table .rank__title {
     padding: 0.5rem;
     -webkit-box-flex: 1;
@@ -14366,13 +14413,13 @@ td:nth-child(4).homepage-list-view {
   .nl-live-score-contest-table .table-info4 th,
   .nl-live-score-contest-table .table-info4 td {
     font-size: 10px;
-    padding: 0.25rem; }
+    padding: 0rem; }
   .nl-live-score-contest-table .table-info4.contestants th,
   .nl-live-score-contest-table .table-info4.contestants td {
     padding: 0.5rem; }
   .nl-live-score-contest-table .indicator {
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 0.5rem;
+    height: 0.5rem;
     margin: 0; }
 
 .contact-wrapper {
@@ -14600,7 +14647,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {

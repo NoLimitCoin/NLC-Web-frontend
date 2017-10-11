@@ -11,6 +11,15 @@
 		height: 156px;
 	}
 
+	@include respond-to (handhelds) {
+		height: 140px;
+	}
+
+	&.rounded-corners {
+		overflow-y: hidden;
+		overflow-x: scroll !important;
+	}
+
 	&__scrollarea {
 		display: flex;
 	}
@@ -233,9 +242,34 @@
 
 /* team-field-section
 ---------------------------------------- */
+
+@include respond-to(handhelds){
+    	
+	.rank .leaders-list p {
+		font-size: 11px;
+	}
+}
+
 // override to nl-create-team.scss
 .nl-live-score {
 
+	@include respond-to(handhelds){
+
+    	.rank__stats.part-of-block {
+    		max-width: 133px;
+
+    	}
+ 	}
+
+	.nl-team-field .nl-player-block p.playing {
+		background: green;
+	}
+	.nl-team-field .nl-player-block p.played {
+		background: #6dcff6;
+	}
+	.nl-team-field .nl-player-block p.not-playing {
+		background: red;
+	}	
 	
   	.more-teams-button {
    		text-align: center;
@@ -252,8 +286,8 @@
 	.rounded-corners {
 		border-top-left-radius:  0.625rem;
 		border-top-right-radius: 0.625rem;
-		border-bottom-left-radius: 0rem;
-		border-bottom-right-radius: 0rem;
+		border-bottom-left-radius: 0.625rem;;
+		border-bottom-right-radius: 0.625rem;;
 	    overflow: hidden;
 	    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
 	    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
@@ -280,7 +314,7 @@
 	}
 
 	.nl-contest-info-table .table-info4 td, .nl-contest-info-table .table-info4 tr  {
-		padding: 0.25rem;
+		padding: 0rem;
 	}
 
 	.nl-contest-info-table .table-info4.contestants td, .nl-contest-info-table .table-info4.contestants tr  {
@@ -415,6 +449,10 @@
 		span + span {
 			font-size: 40px;
 			font-weight: 700;
+
+			@include respond-to (allmobile) {
+	    		font-size: 30px;
+	    	}
 		}
 	}
 
@@ -425,6 +463,10 @@
 
 		@include respond-to(tabletup) {
 			height: 54px;
+		}
+
+		@include respond-to(handhelds) {
+			height: 43px;
 		}
 	}
 
@@ -445,6 +487,10 @@
 	  	@include respond-to(allwide) {
 	  		font-size: 13px;
 	  	}
+
+	  	@include respond-to (handhelds) {
+    		font-size: 9px;
+    	}
 	  }
 
 	  span + span {
@@ -458,6 +504,11 @@
 				margin: 0.25rem;
 				line-height: 1.2;
 				vertical-align: middle;
+
+			@include respond-to (handhelds) {
+	    		width: 13px;
+				height: 13px;
+	    	}
 	  	}
 	  }
 
@@ -487,8 +538,12 @@
 	.leaders-list {
 		p {
 			padding: 0 0.25rem;
-	    margin-bottom: 0;
-	    font-size: 12px;
+	    	margin-bottom: 0;
+	    	font-size: 12px;
+
+	    	@include respond-to (handhelds) {
+	    		font-size: 11px;
+	    	}
 		}
 		p:nth-child(even) {
 	    padding-bottom: 0.25rem;
@@ -523,12 +578,22 @@
 		@media (min-width: 992px) and (max-width: 1680px) {
 			display: none;
 		}
+
+		@include respond-to (handhelds) {
+			display: none;
+
+		}
 	}
 
 	&.single-block {
 		display: none;
 
 		@media (min-width: 992px) and (max-width: 1680px) {
+			display: block;
+			width: 100%;
+		}
+
+		@include respond-to (handhelds) {
 			display: block;
 			width: 100%;
 		}
@@ -625,7 +690,7 @@
 	padding: 0;
 
 	.nl-info-table-button {
-		min-height: 3.5rem;
+		min-height: 3rem;
 		text-align: center;
 	}
 
@@ -665,8 +730,9 @@
 			p {
 				margin: 0;
 				padding: 0;
-				font-size: 11px;
+				font-size: 12px;
 				line-height: 1.2;
+				font-weight: 500;
 			}
 		}
 	}
@@ -695,7 +761,7 @@
 		th,
 		td {
 			font-size: 10px;
-			padding: 0.25rem;
+			padding: 0rem;
 		}
 	}
 
@@ -707,8 +773,8 @@
 	}
 
 	.indicator{
-	  width: calculateRem(10px);
-	  height: calculateRem(10px);
+	  width: calculateRem(8px);
+	  height: calculateRem(8px);
 	  margin: 0;
 	}
 }

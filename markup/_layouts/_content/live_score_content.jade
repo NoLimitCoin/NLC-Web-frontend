@@ -41,7 +41,7 @@ mixin team-field-table(times)
 
 mixin list-of-teams(times)
 	each i in new Array(times)
-		div.col-10.offset-1.col-sm-6.offset-sm-0.col-lg-4.col-xl-2.small-padding-live-score
+		div.col-10.offset-1.col-sm-6.offset-sm-0.col-lg-3.col-xl-2.small-padding-live-score
 			div.nl-contest-info-table.nl-live-score-contest-table
 				div.rank
 					div.rank__no.aligner
@@ -134,11 +134,11 @@ mixin list-of-teams(times)
 								div.col-4.small-padding-live-score
 									div.rank__content.leaders-list
 										p.tit FP
-										p 90.3 FP
+										p 90.3
 								div.col-4.small-padding-live-score
 									div.rank__content.leaders-list
-										p.tit Live SCORE
-										p 114.8 FP
+										p.tit SCORE
+										p 114.8
 								div.col-4.small-padding-live-score
 									div.rank__content.leaders-list
 										p.tit PMR
@@ -153,17 +153,17 @@ section.nl-section.nl-players.nl-live-score
 		div.row
 			div.col-12.col-lg-6.offset-lg-0.col-xl-8
 				h5.d-inline-block.component-header Matches
-				div.matches
+				div.matches.rounded-corners
 					div.matches__scrollarea
 						+repeat(12)
 
-			div.col-10.offset-1.col-sm-10.offset-sm-1.col-lg-6.offset-lg-0.col-xl-4.live-current-contest
+			div.col-12.offset-0.col-sm-10.offset-sm-1.col-lg-6.offset-lg-0.col-xl-4.live-current-contest
 				h5.d-inline-block.component-header My current contests
 				a.btn.btn-primary.btn-sm.btn-inline Refresh
 				div.current-contents
 					div.nl-table-responsive
-						div.nl-table-mw.table-current-contests
-							table.table.table-striped.rounded-corners
+						div.nl-table-mw.table-current-contests.rounded-corners
+							table.table.table-striped
 								thead
 									tr
 										th Contests name
@@ -176,7 +176,7 @@ section.nl-section.nl-players.nl-live-score
 										+current-table(8)
 
 		div.row
-			div.col-10.offset-1.col-sm-6.offset-sm-3.col-lg-6.offset-lg-0.col-xl-4
+			div.col-12.offset-0.col-sm-6.offset-sm-3.col-lg-6.offset-lg-0.col-xl-4
 				h5.d-inline-block.component-header Contest info
 				div.nl-contest-info-table
 					div.table-heading
@@ -224,7 +224,7 @@ section.nl-section.nl-players.nl-live-score
 							tbody
 								+contest-info(26)
 
-			div.col-10.offset-1.col-sm-10.offset-sm-1.col-lg-6.offset-lg-0.col-xl-4
+			div.col-12.offset-0.col-sm-10.offset-sm-1.col-lg-6.offset-lg-0.col-xl-4
 				h5.d-inline-block.component-header MY TEAM
 				div.team-field-section
 					div.rank
@@ -250,17 +250,17 @@ section.nl-section.nl-players.nl-live-score
 										span.played PLAYED
 										span 2
 									div.rank__playlist-item
-										span.not-played NOT PLAYED
+										span.not-played NOT PLAYING
 										span 4
 						div.rank__stats.part-of-block
 							div.rank__content.leaders-list
 								div.row
 									div.col
 										p.tit original
-										p 90.3 FP
+										p 90.3
 									div.col
 										p.tit Live projections
-										p 114.8 FP
+										p 114.8
 									div.col
 										p.tit PMR
 										p 360
@@ -271,11 +271,11 @@ section.nl-section.nl-players.nl-live-score
 							div.col-3.small-padding-live-score
 								div.rank__content.leaders-list
 									p.tit original
-									p 90.3 FP
+									p 90.3
 							div.col-6.small-padding-live-score
 								div.rank__content.leaders-list
 									p.tit Live projections
-									p 114.8 FP
+									p 114.8
 							div.col-3.small-padding-live-score
 								div.rank__content.leaders-list
 									p.tit PMR
@@ -294,7 +294,7 @@ section.nl-section.nl-players.nl-live-score
 							img(src="assets/img/football/FLEX.png" alt="FLEX")
 							div.nl-player-block--data
 								
-								p gronkowski
+								p.played gronkowski
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-K-position(data-position="K")
@@ -308,14 +308,14 @@ section.nl-section.nl-players.nl-live-score
 							img(src="assets/img/football/LRB.png" alt="LRB")
 							div.nl-player-block--data
 								
-								p gronkowski
+								p.playing gronkowski
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-RRB-position(data-position="RRB")
 							img(src="assets/img/football/RRB.png" alt="RRB")
 							div.nl-player-block--data
 								
-								p gronkowski
+								p.played gronkowski
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-QB-position(data-position="QB")
@@ -329,14 +329,14 @@ section.nl-section.nl-players.nl-live-score
 							img(src="assets/img/football/LWR.png" alt="LWR")
 							div.nl-player-block--data
 								
-								p gronkowski
+								p.not-playing gronkowski
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-RWR-position(data-position="RWR")
 							img(src="assets/img/football/RWR.png" alt="RWR")
 							div.nl-player-block--data
 								
-								p gronkowski
+								p.playing gronkowski
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-TE-position(data-position="TE")
@@ -349,7 +349,7 @@ section.nl-section.nl-players.nl-live-score
 						div.nl-player-block.nl-DEF-position(data-position="DEF")
 							img(src="assets/img/helmet-3" alt="logo")
 							div.nl-player-block--data
-								p PATRIOTS
+								p.not-playing PATRIOTS
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>		
 
