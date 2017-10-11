@@ -7,6 +7,10 @@
 	overflow-x: scroll;
 	margin: .25rem 0 1.5rem 0;
 
+	@include respond-to (allnotwide) {
+		height: 156px;
+	}
+
 	&__scrollarea {
 		display: flex;
 	}
@@ -86,7 +90,7 @@
 	}
 
 	@include respond-to(allwide) {
-		height: 155px;
+		height: 158px;
 	}
 	@include respond-to(allsmall) {
 		margin-bottom: calculateRem(24px);
@@ -131,7 +135,7 @@
 		td {
 			font-size: 11px;
 			padding: 0.5rem 0.5rem;
-			text-align: left;
+			text-align: center;
 			max-width: 120px;
 		  white-space: nowrap;
 		  overflow: hidden;
@@ -256,7 +260,11 @@
 	}
 
 	.orange {
-		color: #e98c0c;
+		color: #df920b;
+	}
+
+	.italic {
+		font-style: italic;
 	}
 
 	.nl-contest-info-table .nl-table-scroll2 {
@@ -275,6 +283,10 @@
 		padding: 0.25rem;
 	}
 
+	.nl-contest-info-table .table-info4.contestants td, .nl-contest-info-table .table-info4.contestants tr  {
+		padding: 0.5rem;
+	}
+
 	.nl-contest-info-table .table-info4 td:nth-child(1) {
 		text-align: center;
 	}
@@ -285,6 +297,10 @@
 
 	.small-padding-live-score {
 		padding: 0 5px;
+	}
+
+	.no-padding {
+		padding: 0px;
 	}
 
 	.container-fluid {
@@ -354,6 +370,10 @@
 		text-align: center;
 		width: 20%;
 	}
+
+	.nl-team-field .nl-player-block p {
+		line-height: 11px;
+	}
 }
 
 .rank.margin-top-10 {
@@ -389,11 +409,11 @@
 			text-align: center;
 			font-weight: 400;
 			line-height: 1.1;
-			padding: 0 1rem;
+			padding: 0 0.5rem;
 		}
 
 		span + span {
-			font-size: 32px;
+			font-size: 40px;
 			font-weight: 700;
 		}
 	}
@@ -676,6 +696,13 @@
 		td {
 			font-size: 10px;
 			padding: 0.25rem;
+		}
+	}
+
+	.table-info4.contestants {
+		th,
+		td {
+			padding: 0.5rem;
 		}
 	}
 

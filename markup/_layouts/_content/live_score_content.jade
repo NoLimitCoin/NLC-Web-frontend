@@ -41,7 +41,7 @@ mixin team-field-table(times)
 
 mixin list-of-teams(times)
 	each i in new Array(times)
-		div.col-sm-6.col-lg-4.col-xl-2.small-padding-live-score
+		div.col-10.offset-1.col-sm-6.offset-sm-0.col-lg-4.col-xl-2.small-padding-live-score
 			div.nl-contest-info-table.nl-live-score-contest-table
 				div.rank
 					div.rank__no.aligner
@@ -49,7 +49,7 @@ mixin list-of-teams(times)
 							span 124
 					div.rank__title
 						p Best team evah
-						p Best manager evah
+						p.italic Best manager evah
 					div.rank__thumb
 						img(src="assets/img/helmet-2", alt="")
 				table.table.table-info3
@@ -148,16 +148,16 @@ mixin list-of-teams(times)
 section.nl-section.nl-players.nl-live-score
 	div.container-fluid
 		div.row
-			div.col-sm-12.page-heading
+			div.col-12.page-heading
 				h1 Live scores
 		div.row
-			div.col-sm-12.col-lg-6.col-xl-8
+			div.col-12.col-lg-6.offset-lg-0.col-xl-8
 				h5.d-inline-block.component-header Matches
 				div.matches
 					div.matches__scrollarea
 						+repeat(12)
 
-			div.col-sm-12.col-lg-6.col-xl-4.live-current-contest
+			div.col-10.offset-1.col-sm-10.offset-sm-1.col-lg-6.offset-lg-0.col-xl-4.live-current-contest
 				h5.d-inline-block.component-header My current contests
 				a.btn.btn-primary.btn-sm.btn-inline Refresh
 				div.current-contents
@@ -176,7 +176,7 @@ section.nl-section.nl-players.nl-live-score
 										+current-table(8)
 
 		div.row
-			div.col-sm-12.col-lg-6.col-xl-4
+			div.col-10.offset-1.col-sm-6.offset-sm-3.col-lg-6.offset-lg-0.col-xl-4
 				h5.d-inline-block.component-header Contest info
 				div.nl-contest-info-table
 					div.table-heading
@@ -220,11 +220,11 @@ section.nl-section.nl-players.nl-live-score
 								th Contestant
 								th Score
 					div.nl-table-scroll3
-						table.table.table-striped.table-info4
+						table.table.table-striped.table-info4.contestants
 							tbody
 								+contest-info(26)
 
-			div.col-sm-12.col-lg-6.col-xl-4
+			div.col-10.offset-1.col-sm-10.offset-sm-1.col-lg-6.offset-lg-0.col-xl-4
 				h5.d-inline-block.component-header MY TEAM
 				div.team-field-section
 					div.rank
@@ -295,54 +295,63 @@ section.nl-section.nl-players.nl-live-score
 							div.nl-player-block--data
 								
 								p gronkowski
-								p.data <span>12.67</span> <span>$42000</span>
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>
 						div.nl-player-block.nl-K-position(data-position="K")
 							img(src="assets/img/football/K.png" alt="K")
 							div.nl-player-block--data
 								
 								p gronkowski
-								p.data <span>12.67</span> <span>$42000</span>
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>
 						div.nl-player-block.nl-LRB-position(data-position="LRB")
 							img(src="assets/img/football/LRB.png" alt="LRB")
 							div.nl-player-block--data
 								
 								p gronkowski
-								p.data <span>12.67</span> <span>$42000</span>
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>
 						div.nl-player-block.nl-RRB-position(data-position="RRB")
 							img(src="assets/img/football/RRB.png" alt="RRB")
 							div.nl-player-block--data
 								
 								p gronkowski
-								p.data <span>12.67</span> <span>$42000</span>
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>
 						div.nl-player-block.nl-QB-position(data-position="QB")
 							img(src="assets/img/football/QB.png" alt="QB")
 							div.nl-player-block--data
 								
 								p gronkowski
-								p.data <span>12.67</span> <span>$42000</span>
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>
 						div.nl-player-block.nl-LWR-position(data-position="LWR")
 							img(src="assets/img/football/LWR.png" alt="LWR")
 							div.nl-player-block--data
 								
 								p gronkowski
-								p.data <span>12.67</span> <span>$42000</span>
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>
 						div.nl-player-block.nl-RWR-position(data-position="RWR")
 							img(src="assets/img/football/RWR.png" alt="RWR")
 							div.nl-player-block--data
 								
 								p gronkowski
-								p.data <span>12.67</span> <span>$42000</span>
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>
 						div.nl-player-block.nl-TE-position(data-position="TE")
 							img(src="assets/img/football/TE.png" alt="TE")
 							div.nl-player-block--data
 								
 								p gronkowski
-								p.data <span>12.67</span> <span>$42000</span>
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>
 						div.nl-player-block.nl-DEF-position(data-position="DEF")
 							img(src="assets/img/helmet-3" alt="logo")
 							div.nl-player-block--data
 								p PATRIOTS
-								p.data <span>12.67</span> <span>$42000</span>		
+								p.data FP <span>12.67</span> 
+								p.data Score <span>15</span>		
 
 				div.nl-team-list.nl-my-teams.hide
 					.nl-card-wrapper
@@ -353,7 +362,7 @@ section.nl-section.nl-players.nl-live-score
 									<img src="assets/img/helmet.png" alt="helmet" class="hidden-xs-down">
 
 						.row
-							.col-12
+							.col-12.no-padding
 								table.table.table-striped.nl-team-list-table
 									thead
 										tr
@@ -366,7 +375,7 @@ section.nl-section.nl-players.nl-live-score
 									tbody
 										+team-field-table(9)
 
-			div.col-sm-8.offset-sm-2.col-xl-4.offset-xl-0.chatbox
+			div.col-10.offset-1.col-sm-6.offset-sm-3.col-xl-4.offset-xl-0.chatbox
 				h5.d-inline-block.component-header Live chat
 				div.nl-contest-info-table
 					div.table-heading

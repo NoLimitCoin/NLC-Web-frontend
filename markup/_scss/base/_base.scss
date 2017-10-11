@@ -21,6 +21,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.orange {
+  color: #df920b;
+}
+
 .nl-m-r-15{
   margin-right: calculateRem(15px);
   @include respond-to(wide-tablets){
