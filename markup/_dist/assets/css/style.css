@@ -14500,6 +14500,21 @@ td:nth-child(4).homepage-list-view {
     .nl-live-score.soccer .nl-MR-position {
       top: 21%; } }
 
+.nl-live-score.soccer .nl-team-list-table td {
+  padding: 0;
+  margin: 0; }
+  .nl-live-score.soccer .nl-team-list-table td p {
+    margin: 0.25rem 0; }
+
+.nl-live-score.soccer .nl-team-list-table td:first-child {
+  text-align: left; }
+
+.nl-live-score.soccer .nl-my-teams .nl-team-list-table td:nth-child(1) {
+  padding-left: 1.5rem; }
+
+.nl-live-score.soccer .nl-team-list {
+  max-width: 27.25rem; }
+
 /* Matches component
 ---------------------------------------- */
 .matches {
@@ -14676,6 +14691,9 @@ td:nth-child(4).homepage-list-view {
 @media only screen and (max-width: 575px) {
   .rank .leaders-list p {
     font-size: 11px; } }
+
+.nl-live-score .nl-team-list {
+  max-width: 27.25rem; }
 
 .nl-live-score .nl-my-teams .table th:nth-child(2) {
   text-align: center; }

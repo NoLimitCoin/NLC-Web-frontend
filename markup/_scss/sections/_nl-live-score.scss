@@ -178,6 +178,27 @@
 		top: 21%;
 	  }
 	}  
+
+	.nl-team-list-table td {
+		padding: 0;
+		margin: 0;
+
+		p {
+			margin: 0.25rem 0;
+		}
+	}
+
+	.nl-team-list-table td:first-child {
+		text-align: left;
+	}
+
+	.nl-my-teams .nl-team-list-table td:nth-child(1) {
+		padding-left: 1.5rem;
+	}
+
+	.nl-team-list {
+		max-width: 27.25rem;
+	}
 }
 
 /* Matches component
@@ -431,6 +452,10 @@
 
 // override to nl-create-team.scss
 .nl-live-score {
+
+	.nl-team-list {
+		max-width: 27.25rem;
+	}
 
 	.nl-my-teams .table th:nth-child(2) {
 		text-align: center;
