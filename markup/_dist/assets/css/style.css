@@ -9112,8 +9112,14 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif; }
 
+section .container-fluid {
+  max-width: 2000px; }
+
 .orange {
   color: #df920b; }
+
+.btn.btn-primary {
+  font-weight: 600; }
 
 .nl-m-r-15 {
   margin-right: 0.9375rem; }
@@ -9928,7 +9934,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10045,7 +10051,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10210,7 +10216,7 @@ p {
   margin-bottom: 15px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .nl-section.homepage.football-homepage .player-info h5 {
-      margin-bottom: 22px; } }
+      line-height: 1.4rem; } }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .nl-section.homepage.football-homepage .player-info h5 {
       line-height: 1.65rem; } }
@@ -10459,6 +10465,28 @@ p {
 
 .nl-section.homepage {
   padding: 1.5rem 2.25rem; }
+  @media (max-width: 767px) {
+    .nl-section.homepage .name-top5 {
+      font-size: 16px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-section.homepage .name-top5 {
+      top: 20%; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-section.homepage .name-top5 {
+      top: 21%;
+      left: 12%; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-section.homepage .name-top5 {
+      top: 20%;
+      left: 18%; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-section.homepage .name-top5 {
+      top: 21%;
+      left: 18%; } }
+  @media (min-width: 1681px) {
+    .nl-section.homepage .name-top5 {
+      top: 23%;
+      left: 25%; } }
   .nl-section.homepage .carousel-item.active, .nl-section.homepage .carousel-item-next, .nl-section.homepage .carousel-item-prev {
     display: block; }
   .nl-section.homepage .rounded-corners {
@@ -10475,7 +10503,8 @@ p {
   .nl-section.homepage .nl-create-team.soccer .nl-my-teams .nl-team-card img {
     height: 60px; }
   .nl-section.homepage .manager-image {
-    width: 100%; }
+    width: 100%;
+    border-radius: 0.625rem; }
   .nl-section.homepage .nl-table-scroll2 {
     max-height: 32rem; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -10501,11 +10530,13 @@ p {
       .nl-section.homepage #top5-manager-content .manager-image-inner .name p {
         padding-left: 25px; }
       .nl-section.homepage .nl-create-team .nl-team-card.table-data-field h3, .nl-section.homepage #top5-manager-content h3 {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        font-weight: 500; }
       .nl-section.homepage #top5-manager-content h3 {
         font-size: 1.15rem;
-        line-height: 1rem;
-        padding-left: 0; } }
+        line-height: 1.3rem;
+        padding-left: 0;
+        font-weight: 500; } }
   @media (max-width: 767px) {
     .nl-section.homepage {
       padding: 1rem 0.5rem; }
@@ -10514,18 +10545,22 @@ p {
         padding-top: 0.35rem;
         padding-bottom: 0.35rem; }
       .nl-section.homepage .nl-create-team .nl-team-card.table-data-field h3, .nl-section.homepage #top5-manager-content h3 {
-        font-size: 1rem; }
+        font-size: 1rem;
+        font-weight: 500; }
       .nl-section.homepage #top5-manager-content h3 {
         line-height: 1rem;
-        padding-left: 0; } }
+        padding-left: 0;
+        font-weight: 500; } }
   @media only screen and (max-width: 575px) {
     .nl-section.homepage #top5-manager-content img.helmet, .nl-section.homepage .nl-create-team .nl-my-teams .nl-team-card img {
       height: 65px; }
     .nl-section.homepage .nl-create-team .nl-team-card.table-data-field h3, .nl-section.homepage #top5-manager-content h3 {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-weight: 500; }
     .nl-section.homepage #top5-manager-content h3 {
       line-height: 1.5rem;
-      padding-left: 0; } }
+      padding-left: 0;
+      font-weight: 500; } }
 
 .homepage .nl-create-team .nl-team-field .soccer.player-main-block img {
   max-width: 55px; }
@@ -10570,6 +10605,9 @@ p {
   .homepage .menu-item.top-5 .number p {
     font-size: 18px;
     line-height: 1.1; }
+    @media (min-width: 1681px) {
+      .homepage .menu-item.top-5 .number p {
+        line-height: 1.3; } }
     @media (min-width: 1681px) {
       .homepage .menu-item.top-5 .number p {
         line-height: 1.3; } }
@@ -10850,7 +10888,8 @@ p {
     .homepage .menu-item .player-thumbnail {
       height: 100px;
       background: url(../img/player1.png) top center no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      border-radius: 0.625rem; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .menu-item .player-thumbnail {
           height: 55px; } }
@@ -10909,7 +10948,8 @@ p {
       margin: 0;
       display: inline-block;
       margin-top: -3px;
-      color: #ffffff; }
+      color: #ffffff;
+      border-radius: 0.325rem 0 0 0.325rem; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .menu-item .number {
           top: 58px;
@@ -10947,7 +10987,8 @@ p {
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      border-radius: 0.325rem; }
       .homepage .menu-item .player-thumbnail-name p {
         padding: 2px 5px 5px 15px; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -10989,7 +11030,8 @@ p {
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      border-radius: 0.325rem; }
       .homepage .menu-item .manager-thumbnail-name p {
         padding: 2px 5px 5px 15px; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -11127,7 +11169,8 @@ p {
     right: 0;
     width: 100%;
     text-transform: uppercase;
-    height: 40px; }
+    height: 40px;
+    border-radius: 0.625rem; }
     @media (max-width: 991px) {
       .homepage .manager-image-inner {
         width: 100%;
@@ -11198,7 +11241,8 @@ p {
       width: 40px;
       height: 40px;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      border-radius: 0.625rem 0 0 0.625rem; }
       @media only screen and (max-width: 575px) {
         .homepage .manager-image-inner .number {
           width: 50px;
@@ -11233,11 +11277,13 @@ p {
     right: 0;
     width: 100%;
     text-transform: uppercase;
-    height: 40px; }
+    height: 40px;
+    border-radius: 0.625rem 0 0 0.625rem; }
     @media (max-width: 767px) {
       .homepage .player-image-inner {
         width: 100%;
-        margin: 0; } }
+        margin: 0;
+        border-radius: 0.625rem; } }
     @media only screen and (max-width: 575px) {
       .homepage .player-image-inner {
         width: 100%;
@@ -11246,22 +11292,56 @@ p {
       background: #e89608;
       /* Old browsers */
       background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
-      background: linear-gradient(to bottom, #e89608 0%, #e37606 100%); }
+      background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
+      border-radius: 0.625rem 0 0 0.625rem; }
     .homepage .player-image-inner .name {
       position: absolute;
-      top: 7px;
-      left: 60px; }
-      @media (max-width: 1200px) {
+      top: 4px;
+      left: 49px; }
+      @media only screen and (max-width: 575px) {
         .homepage .player-image-inner .name {
-          left: 40px; } }
-      @media (min-width: 1200px) {
-        .homepage .player-image-inner .name p {
-          font-size: 15px;
-          margin-left: -14px;
-          padding: 3px 0 0 8px; } }
-      @media (max-width: 1200px) {
-        .homepage .player-image-inner .name p {
-          font-size: 16px; } }
+          top: 4px; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .homepage .player-image-inner .name {
+          top: 4px;
+          left: 55px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .homepage .player-image-inner .name {
+          top: 6px;
+          left: 50px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .homepage .player-image-inner .name {
+          top: 4px;
+          left: 45px; } }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        .homepage .player-image-inner .name {
+          top: 4px;
+          left: 48px; } }
+      @media (min-width: 1366px) {
+        .homepage .player-image-inner .name {
+          top: 4px;
+          left: 49px; } }
+      .homepage .player-image-inner .name p {
+        font-size: 15px;
+        margin-left: 0; }
+        @media only screen and (max-width: 575px) {
+          .homepage .player-image-inner .name p {
+            font-size: 18px; } }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+          .homepage .player-image-inner .name p {
+            font-size: 19px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .homepage .player-image-inner .name p {
+            font-size: 21px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .homepage .player-image-inner .name p {
+            font-size: 17px; } }
+        @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+          .homepage .player-image-inner .name p {
+            font-size: 19px; } }
+        @media (min-width: 1366px) {
+          .homepage .player-image-inner .name p {
+            font-size: 21px; } }
     .homepage .player-image-inner p {
       padding: 5px 0 0 8px;
       font-size: 15px; }
@@ -11280,7 +11360,8 @@ p {
       width: 40px;
       height: 40px;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      border-radius: 0.625rem 0 0 0.625rem; }
       @media only screen and (max-width: 575px) {
         .homepage .player-image-inner .number {
           width: 35px;
@@ -11393,7 +11474,8 @@ p {
 #top5-manager-content h3 {
   font-size: 0.95rem;
   padding-left: 1rem;
-  line-height: 1rem; }
+  line-height: 1rem;
+  font-weight: 500; }
 
 #top5-player-content .orange,
 #top5-manager-content .orange {
@@ -11508,7 +11590,8 @@ p {
   color: #ffffff;
   text-transform: uppercase;
   display: inline-block;
-  height: 40px; }
+  height: 40px;
+  border-radius: 0.625rem; }
   .mobile-menu .number {
     display: inline-block;
     width: 40px;
@@ -11517,14 +11600,25 @@ p {
     /* Old browsers */
     background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
     background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
-    padding-top: 3px; }
+    padding-top: 3px;
+    border-radius: 0.625rem 0 0 0.625rem; }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .mobile-menu .number p {
+        line-height: 1.1rem; } }
   .mobile-menu p {
     display: inline-block;
-    padding: 8px 0 0 15px; }
+    padding: 8px 0 0 15px;
+    line-height: 0.8rem; }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .mobile-menu p {
+        line-height: 1.1rem; } }
     .mobile-menu p.rank-manager-top5, .mobile-menu p.rank-player-top5 {
       padding-top: 10px;
       font-size: 18px;
-      font-weight: 600; }
+      font-weight: 600;
+      line-height: 1.3rem; }
+    .mobile-menu p.name-top5 {
+      line-height: 1.2rem; }
   .mobile-menu.dropdown {
     background: #e89608;
     /* Old browsers */
@@ -11535,7 +11629,7 @@ p {
     box-shadow: none;
     border: none;
     font-weight: 600;
-    font-size: 12px; }
+    font-size: 16px; }
     .mobile-menu.dropdown i {
       float: right;
       padding-right: 20px;
@@ -12133,6 +12227,9 @@ td:nth-child(4).homepage-list-view {
       .nl-learn img {
         position: relative; } }
 
+.nl-players .nl-mob-table #accordion a .row:after {
+  right: 2.5rem; }
+
 .nl-players.soccer {
   background: url(../img/stadion_detail.jpg) center center no-repeat fixed;
   background-size: cover; }
@@ -12702,6 +12799,12 @@ td:nth-child(4).homepage-list-view {
 .table .not-playing {
   background-color: #e01516; }
 
+.nl-create-teams .nl-mob-table #accordion a .row:after {
+  right: 2.5rem; }
+
+.nl-player-block--data {
+  border-radius: 0.325rem; }
+
 .btn-big-radius {
   padding: 5px;
   font-size: 11px; }
@@ -12813,6 +12916,16 @@ td:nth-child(4).homepage-list-view {
 .nl-players-table.nl-create-team-table td:first-child {
   padding-left: 0.5rem; }
 
+@media (min-width: 992px) and (max-width: 1050px) {
+  .nl-players-table.nl-create-team-table .nl-players-search {
+    min-width: 9.75rem;
+    max-width: 10rem; } }
+
+@media (min-width: 756px) and (max-width: 887px) {
+  .nl-players-table.nl-create-team-table .nl-players-search {
+    min-width: 8.75rem;
+    max-width: 9rem; } }
+
 .nl-create-team-table .btn-sm {
   padding: 0.25rem;
   font-weight: 600; }
@@ -12849,7 +12962,7 @@ td:nth-child(4).homepage-list-view {
 
 .nl-create-team-table .nl-players-search {
   min-width: 10.75rem;
-  max-width: 13rem; }
+  max-width: 11rem; }
 
 @media (min-width: 992px) and (max-width: 1425px) {
   .nl-create-team-table .table-striped tbody tr td.avatar img {
@@ -13275,8 +13388,9 @@ td:nth-child(4).homepage-list-view {
     .nl-live-score .nl-team-field .nl-player-block--data {
       background: #253046;
       position: relative;
-      min-width: 85px;
-      padding: 2px; }
+      min-width: 80px;
+      padding: 2px;
+      border-radius: 0.325rem; }
       .nl-create-team .nl-team-field .nl-player-block--data .btn-player-close,
       .nl-live-score .nl-team-field .nl-player-block--data .btn-player-close {
         position: absolute;
@@ -13456,7 +13570,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13712,7 +13826,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -15317,7 +15431,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {

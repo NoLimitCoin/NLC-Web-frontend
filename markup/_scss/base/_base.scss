@@ -21,8 +21,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+section .container-fluid {
+  max-width: 2000px;
+}
+
 .orange {
   color: #df920b;
+}
+
+.btn.btn-primary {
+  font-weight: 600;
 }
 
 .nl-m-r-15{

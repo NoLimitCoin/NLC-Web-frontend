@@ -1,3 +1,11 @@
+.nl-create-teams .nl-mob-table #accordion a .row:after {
+  right: 2.5rem;
+}
+
+.nl-player-block--data {
+  border-radius: 0.325rem;
+}
+
 .btn-big-radius {
   padding: 5px;
   font-size: 11px;
@@ -168,8 +176,22 @@
   padding-left: 0.5rem;
 }
 
+
 .nl-players-table.nl-create-team-table td:first-child {
   padding-left: 0.5rem;
+}
+
+.nl-players-table.nl-create-team-table .nl-players-search {
+  
+    @media (min-width: 992px) and (max-width:1050px) {
+      min-width: 9.75rem;
+      max-width: 10rem;
+    }
+
+    @media (min-width: 756px) and (max-width:887px) {
+      min-width: 8.75rem;
+      max-width: 9rem;
+    }
 }
 
 .nl-create-team-table {
@@ -221,7 +243,7 @@
 
   .nl-players-search {
     min-width: 10.75rem;
-    max-width: 13rem;
+    max-width: 11rem;
   }
 
   @media (min-width: 992px) and (max-width:1425px) {
@@ -734,8 +756,10 @@
       &--data{
         background: #253046;
         position: relative;
-        min-width: 85px;
+        min-width: 80px;
         padding: 2px;
+        border-radius: 0.325rem;
+
         .btn-player-close{
           position: absolute;
           top: -16px;
