@@ -462,10 +462,10 @@
 	}
 
 	.rank__content.leaders-list {
-		padding: 1rem 0rem 0.375rem 0rem;
+		padding: 0.375rem 0rem 0.375rem 0rem;
 		margin-left: 0px;
 		p {
-			font-weight: 600;
+			font-weight: 500;
 		}
 	}
 
@@ -755,13 +755,26 @@
 
 	// adjustments default leaders list
 	.leaders-list {
+
+		text-align: center;
+
 		p {
 			padding: 0 0.25rem;
 			margin-bottom: 0;
 			font-size: 12px;
 
+			line-height: 1rem;
+
 			@include respond-to (handhelds) {
 				font-size: 11px;
+			}
+
+			&.tit {
+				font-weight: 300;
+			}
+
+			&.points {
+				font-size: 16px;
 			}
 		}
 		p:nth-child(even) {
@@ -802,6 +815,13 @@
 			display: none;
 
 		}
+
+		@include respond-to (allsmall) {
+			
+			p { 
+				line-height: 1.25rem;
+			}
+		}
 	}
 
 	&.single-block {
@@ -821,6 +841,15 @@
 
 		.rank__content {
 			padding: 0.5rem 1rem 0.375rem 1rem;
+		}
+		.leaders-list {
+			p.tit {
+				font-size: 12px;
+			}
+
+			p.points {
+				font-size: 16px;
+			}
 		}
 	}
 

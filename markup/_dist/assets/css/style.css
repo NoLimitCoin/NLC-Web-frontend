@@ -14699,10 +14699,10 @@ td:nth-child(4).homepage-list-view {
   text-align: center; }
 
 .nl-live-score .rank__content.leaders-list {
-  padding: 1rem 0rem 0.375rem 0rem;
+  padding: 0.375rem 0rem 0.375rem 0rem;
   margin-left: 0px; }
   .nl-live-score .rank__content.leaders-list p {
-    font-weight: 600; }
+    font-weight: 500; }
 
 .nl-live-score .top-bar-live-scores {
   margin-bottom: 3rem; }
@@ -14920,15 +14920,22 @@ td:nth-child(4).homepage-list-view {
       background-color: red; }
   .rank.mobile-only {
     margin: 1rem 0; }
-  .rank .leaders-list p {
-    padding: 0 0.25rem;
-    margin-bottom: 0;
-    font-size: 12px; }
-    @media only screen and (max-width: 575px) {
-      .rank .leaders-list p {
-        font-size: 11px; } }
-  .rank .leaders-list p:nth-child(even) {
-    padding-bottom: 0.25rem; }
+  .rank .leaders-list {
+    text-align: center; }
+    .rank .leaders-list p {
+      padding: 0 0.25rem;
+      margin-bottom: 0;
+      font-size: 12px;
+      line-height: 1rem; }
+      @media only screen and (max-width: 575px) {
+        .rank .leaders-list p {
+          font-size: 11px; } }
+      .rank .leaders-list p.tit {
+        font-weight: 300; }
+      .rank .leaders-list p.points {
+        font-size: 16px; }
+    .rank .leaders-list p:nth-child(even) {
+      padding-bottom: 0.25rem; }
   .rank__select {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -14954,6 +14961,9 @@ td:nth-child(4).homepage-list-view {
   @media only screen and (max-width: 575px) {
     .rank__stats.part-of-block {
       display: none; } }
+  @media (max-width: 991px) {
+    .rank__stats.part-of-block p {
+      line-height: 1.25rem; } }
 
 .rank__stats.single-block {
   display: none;
@@ -14968,6 +14978,10 @@ td:nth-child(4).homepage-list-view {
       width: 100%; } }
   .rank__stats.single-block .rank__content {
     padding: 0.5rem 1rem 0.375rem 1rem; }
+  .rank__stats.single-block .leaders-list p.tit {
+    font-size: 12px; }
+  .rank__stats.single-block .leaders-list p.points {
+    font-size: 16px; }
 
 .rank__stats.below-teams {
   line-height: 1rem;
