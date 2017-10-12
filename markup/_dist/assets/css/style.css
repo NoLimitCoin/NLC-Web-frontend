@@ -9928,7 +9928,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10045,7 +10045,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10262,6 +10262,8 @@ p {
 
 .nl-section.homepage {
   padding: 1.5rem 2.25rem; }
+  .nl-section.homepage .carousel-item.active, .nl-section.homepage .carousel-item-next, .nl-section.homepage .carousel-item-prev {
+    display: block; }
   .nl-section.homepage .rounded-corners {
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
@@ -10307,9 +10309,6 @@ p {
         font-size: 1.15rem;
         line-height: 1rem;
         padding-left: 0; } }
-  @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .nl-section.homepage #top5-manager-content .manager-image-inner .name p {
-      padding-left: 5px; } }
   @media (max-width: 767px) {
     .nl-section.homepage {
       padding: 1rem 0.5rem; }
@@ -10687,9 +10686,12 @@ p {
       background: #e89608;
       background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
       background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
-      font-size: 15px;
+      font-size: 19px;
       padding-left: 8px;
       padding-top: 1px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
       display: inline-block;
       margin-top: -3px;
       color: #ffffff; }
@@ -10898,50 +10900,89 @@ p {
       .homepage .manager-image-inner {
         width: 100%;
         margin: 0px; } }
-    .homepage .manager-image-inner .number {
-      display: inline-block;
-      width: 30px;
-      background: #e89608;
-      /* Old browsers */
-      background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
-      background: linear-gradient(to bottom, #e89608 0%, #e37606 100%); }
     .homepage .manager-image-inner .name {
       position: absolute;
       top: 7px;
       left: 60px; }
-      @media (max-width: 1200px) {
+      @media only screen and (max-width: 575px) {
         .homepage .manager-image-inner .name {
-          left: 40px; } }
-      @media (min-width: 1200px) {
-        .homepage .manager-image-inner .name p {
-          font-size: 15px;
-          margin-left: -14px;
-          padding: 3px 0 0 8px; } }
-      @media (max-width: 1200px) {
-        .homepage .manager-image-inner .name p {
-          font-size: 13px; } }
-    .homepage .manager-image-inner p {
-      display: inline-block;
-      padding: 5px 0 0 8px;
-      font-size: 15px; }
-      .homepage .manager-image-inner p.points {
-        color: #e89708;
-        float: right;
-        padding-right: 10px;
-        padding-top: 12px; }
-        @media screen and (min-width: 768px) {
-          .homepage .manager-image-inner p.points {
-            display: none; } }
-      .homepage .manager-image-inner p.name {
-        padding-top: 8px !important;
-        padding-left: 10px; }
+          top: 12px; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .homepage .manager-image-inner .name {
+          top: 10px;
+          left: 55px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .homepage .manager-image-inner .name {
+          top: 10px;
+          left: 50px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .homepage .manager-image-inner .name {
+          top: 11px;
+          left: 45px; } }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        .homepage .manager-image-inner .name {
+          top: 10px;
+          left: 48px; } }
+      @media (min-width: 1366px) {
+        .homepage .manager-image-inner .name {
+          top: 9px;
+          left: 50px; } }
+      .homepage .manager-image-inner .name p {
+        font-size: 15px;
+        margin-left: 0; }
+        @media only screen and (max-width: 575px) {
+          .homepage .manager-image-inner .name p {
+            font-size: 18px; } }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+          .homepage .manager-image-inner .name p {
+            font-size: 19px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .homepage .manager-image-inner .name p {
+            font-size: 21px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .homepage .manager-image-inner .name p {
+            font-size: 17px; } }
+        @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+          .homepage .manager-image-inner .name p {
+            font-size: 19px; } }
+        @media (min-width: 1366px) {
+          .homepage .manager-image-inner .name p {
+            font-size: 21px; } }
     .homepage .manager-image-inner .number {
+      background: #e89608;
+      /* Old browsers */
+      background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
+      background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
       width: 40px;
       height: 40px;
-      padding-left: 8px; }
+      padding: 0;
+      margin: 0; }
+      @media only screen and (max-width: 575px) {
+        .homepage .manager-image-inner .number {
+          width: 50px;
+          height: 40px; } }
       .homepage .manager-image-inner .number p {
-        font-size: 28px;
-        padding-top: 12px; }
+        font-size: 35px;
+        padding-top: 11px;
+        text-align: center; }
+        @media only screen and (max-width: 575px) {
+          .homepage .manager-image-inner .number p {
+            font-size: 30px; } }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+          .homepage .manager-image-inner .number p {
+            padding-top: 10px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .homepage .manager-image-inner .number p {
+            padding-top: 10px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .homepage .manager-image-inner .number p {
+            padding-top: 10px; } }
+        @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+          .homepage .manager-image-inner .number p {
+            padding-top: 8px; } }
+        @media (min-width: 1366px) {
+          .homepage .manager-image-inner .number p {
+            padding-top: 8px; } }
   .homepage .player-image-inner {
     background: #0f254f;
     color: #ffffff;
@@ -10960,8 +11001,6 @@ p {
         width: 100%;
         margin: 0; } }
     .homepage .player-image-inner .number {
-      display: inline-block;
-      width: 30px;
       background: #e89608;
       /* Old browsers */
       background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
@@ -10982,7 +11021,6 @@ p {
         .homepage .player-image-inner .name p {
           font-size: 16px; } }
     .homepage .player-image-inner p {
-      display: inline-block;
       padding: 5px 0 0 8px;
       font-size: 15px; }
       .homepage .player-image-inner p.points {
@@ -10993,16 +11031,38 @@ p {
         @media screen and (min-width: 768px) {
           .homepage .player-image-inner p.points {
             display: none; } }
-      .homepage .player-image-inner p.name {
-        padding-top: 8px !important;
-        padding-left: 10px; }
+        @media screen and (max-width: 365px) {
+          .homepage .player-image-inner p.points {
+            display: none; } }
     .homepage .player-image-inner .number {
       width: 40px;
       height: 40px;
-      padding-left: 8px; }
+      padding: 0;
+      margin: 0; }
+      @media only screen and (max-width: 575px) {
+        .homepage .player-image-inner .number {
+          width: 35px;
+          height: 40px; } }
       .homepage .player-image-inner .number p {
-        font-size: 28px;
-        padding-top: 12px; }
+        padding: 0;
+        font-size: 35px;
+        padding-top: 11px;
+        text-align: center; }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+          .homepage .player-image-inner .number p {
+            padding-top: 10px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .homepage .player-image-inner .number p {
+            padding-top: 10px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .homepage .player-image-inner .number p {
+            padding-top: 10px; } }
+        @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+          .homepage .player-image-inner .number p {
+            padding-top: 8px; } }
+        @media (min-width: 1366px) {
+          .homepage .player-image-inner .number p {
+            padding-top: 8px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .homepage .upcoming-contests h5 {
       padding-left: 15px;
@@ -11067,6 +11127,20 @@ p {
   .week h5.visible-xxs {
     font-weight: 700; }
 
+#top5-player-content .no-padding,
+#top5-manager-content .no-padding {
+  padding: 0; }
+
+#top5-player-content .row,
+#top5-manager-content .row {
+  margin-left: 0;
+  margin-right: 0; }
+
+#top5-player-content .col-10,
+#top5-manager-content .col-10 {
+  padding-left: 0;
+  padding-right: 0; }
+
 @media (max-width: 767px) {
   #top5-player-content,
   #top5-manager-content {
@@ -11112,13 +11186,9 @@ p {
     padding-left: 0;
     padding-right: 0; } }
 
-#top5-manager-content .manager-image-inner .name p {
-  padding-top: 3px; }
-
-@media only screen and (max-width: 575px) {
-  #top5-manager-content .manager-image-inner .name p {
-    padding-left: 20px;
-    padding-top: 5px; } }
+@media (min-width: 992px) {
+  #top5-manager-content h3 {
+    padding-left: 0; } }
 
 .subtitle {
   text-align: left; }
@@ -13031,7 +13101,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13287,7 +13357,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14717,7 +14787,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {

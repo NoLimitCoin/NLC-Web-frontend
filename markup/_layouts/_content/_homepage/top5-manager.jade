@@ -36,180 +36,583 @@ h5.hidden-xxs.subtitle TOP 5
 
 div.row
     button.mobile-menu.dropdown(type='button', data-toggle='modal', data-target='#weekModal') Choose Week
-    div.mobile-menu(data-toggle="tab" href="#manager1" role="tab")
-        div.number
-            p.rank-manager-top5 1
-        p MattRyan1
+    div.mobile-menu
+        a.active(href="" data-target="#carouselTop5Managers" data-slide-to="0")    
+            div.number
+                p.rank-manager-top5 1
+            p MattRyan1
 div.row
     div.mobile-menu(data-toggle="tab" href="#manager2" role="tab")
-        div.number
-            p.rank-manager-top5 2
-        p MattRyan2
+        a.active(href="" data-target="#carouselTop5Managers" data-slide-to="1")        
+            div.number
+                p.rank-manager-top5 2
+            p MattRyan2
     div.mobile-menu(data-toggle="tab" href="#manager3" role="tab")
-        div.number
-            p.rank-manager-top5 3
-        p MattRyan3
+        a.active(href="" data-target="#carouselTop5Managers" data-slide-to="2")        
+            div.number
+                p.rank-manager-top5 3
+            p MattRyan3
 div.row
     div.mobile-menu(data-toggle="tab" href="#manager4" role="tab")
-        div.number
-            p.rank-manager-top5 4
-        p MattRyan4
+        a.active(href="" data-target="#carouselTop5Managers" data-slide-to="3")        
+            div.number
+                p.rank-manager-top5 4
+            p MattRyan4
     div.mobile-menu(data-toggle="tab" href="#manager5" role="tab")
-        div.number
-            p.rank-manager-top5 5
-        p MattRyan5 
+        a.active(href="" data-target="#carouselTop5Managers" data-slide-to="4")        
+            div.number
+                p.rank-manager-top5 5
+            p MattRyan5
 
 div.tab-content(id="top5-manager-content")
     div(role='tabpanel' class='tab-pane active top-level-panel2' id='week3')
         div.content
             div.row
-                div.col-10.offset-1.col-lg-12.offset-lg-0
-                    ul.nav.menu(role="tablist")
-                        li.nav-item
-                            a.nav-link.active(data-toggle="tab" href="#manager1" role="tab")
-                                div.menu-item.top-5
-                                    div.players 
-                                        div.manager-thumbnail.manager-1
-                                        div.number
-                                            p 1
-                                        div.manager-thumbnail-name
-                                            p Rafael
-                        li.nav-item
-                            a.nav-link(data-toggle="tab" href="#manager2" role="tab")
-                                div.menu-item.top-5
-                                    div.players 
-                                        div.manager-thumbnail.manager-2
-                                        div.number
-                                            p 2
-                                        div.manager-thumbnail-name
-                                            p Oscar
-                        li.nav-item
-                            a.nav-link(data-toggle="tab" href="#manager3" role="tab")
-                                div.menu-item.top-5
-                                    div.players 
-                                        div.manager-thumbnail.manager-3
-                                        div.number
-                                            p 3
-                                        div.manager-thumbnail-name
-                                            p Dan
-                        li.nav-item
-                            a.nav-link(data-toggle="tab" href="#manager4" role="tab")
-                                div.menu-item.top-5
-                                    div.players 
-                                        div.manager-thumbnail.manager-4
-                                        div.number
-                                            p 4
-                                        div.manager-thumbnail-name
-                                            p Nicholas
-                        li.nav-item
-                            a.nav-link(data-toggle="tab" href="#manager5" role="tab")
-                                div.menu-item.top-5
-                                    div.players 
-                                        div.manager-thumbnail.manager-5
-                                        div.number
-                                            p 5
-                                        div.manager-thumbnail-name
-                                            p Anthony
-
-
-                    div.tab-content
-                        div.tab-pane.active(id="manager1" role="tabpanel")
-                            div.row.player
-                                div.col-12.col-xs-5.hidden-md-down.col-lg-5
-                                    div.manager-image
-                                        div.manager-image-inner
+                div.col-12.col-lg-12.offset-lg-0
+                    div#carouselTop5Managers.carousel.slide(data-ride='carousel')
+                        ul.nav.menu(role="tablist")
+                            li.nav-item
+                                a.active(data-target="#carouselTop5Managers" href="" data-slide-to="0")
+                                    div.menu-item.top-5
+                                        div.players 
+                                            div.manager-thumbnail.manager-1
                                             div.number
                                                 p 1
-                                            div.name
-                                                p Rafael Groswirt
-                                div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
-                                    div.nl-team-list-homepage.nl-my-teams
-                                        .nl-card-wrapper
-                                            .row
-                                                .col-12.no-padding
-                                                    div.nl-team-card.table-data-field
-                                                        div.row 
-                                                            div.col-12.orange
-                                                                h3 Score: 123
-                                                            div.col-12
-                                                                h3 The best NLC2 team!
-                                                        div.row 
-                                                            div.col-12
-                                                                <img src="assets/img/helmet.png" alt="helmet" class="helmet">
-
-                                            .row
-                                                .col-12.no-padding
-                                                    table.table.table-striped.nl-team-list-table
-                                                        thead
-                                                            tr
-
-                                                                th.name-list-view NAME
-                                                                th POS
-                                                                th FP
-                                                                th SALARY
-                                                                th
-
-                                                        tbody
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos FLEX
-                                                                td 30
-                                                                td $0
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos K
-                                                                td 30
-                                                                td $0
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos RB
-                                                                td 30
-                                                                td $0
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos RB
-                                                                td 30
-                                                                td $0
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos QB
-                                                                td 30
-                                                                td $0
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos WR
-                                                                td 30
-                                                                td $0
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos WR
-                                                                td 30
-                                                                td $0
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos TE
-                                                                td 30
-                                                                td $0
-                                                            tr
-
-                                                                td Player name
-                                                                td.pos DEF
-                                                                td 30
-                                                                td $0
-                                div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
-                                    div.manager-image-inner
+                                            div.manager-thumbnail-name
+                                                p Rafael
+                            li.nav-item
+                                a(data-target="#carouselTop5Managers" href="" data-slide-to="1")
+                                    div.menu-item.top-5
+                                        div.players 
+                                            div.manager-thumbnail.manager-2
                                             div.number
-                                                p 1
-                                            div.name
-                                                p Rafael Groswirt
+                                                p 2
+                                            div.manager-thumbnail-name
+                                                p Oscar
+                            li.nav-item
+                                a(data-target="#carouselTop5Managers" href="" data-slide-to="2")
+                                    div.menu-item.top-5
+                                        div.players 
+                                            div.manager-thumbnail.manager-3
+                                            div.number
+                                                p 3
+                                            div.manager-thumbnail-name
+                                                p Dan
+                            li.nav-item
+                                a(data-target="#carouselTop5Managers" href="" data-slide-to="3")
+                                    div.menu-item.top-5
+                                        div.players 
+                                            div.manager-thumbnail.manager-4
+                                            div.number
+                                                p 4
+                                            div.manager-thumbnail-name
+                                                p Nicholas
+                            li.nav-item
+                                a(data-target="#carouselTop5Managers" href="" data-slide-to="4")
+                                    div.menu-item.top-5
+                                        div.players 
+                                            div.manager-thumbnail.manager-5
+                                            div.number
+                                                p 5
+                                            div.manager-thumbnail-name
+                                                p Anthony
+
+                        div.carousel-inner
+                            div.carousel-item.active
+                                div.tab-content
+                                    div.tab-pane.active(id="manager1" role="tabpanel")
+                                        div.row.player
+                                            div.col-12.col-xs-5.hidden-md-down.col-lg-5
+                                                div.manager-image
+                                                    div.manager-image-inner
+                                                        div.number
+                                                            p 1
+                                                        div.name
+                                                            p Rafael Groswirt
+                                            div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+                                                div.nl-team-list-homepage.nl-my-teams
+                                                    .nl-card-wrapper
+                                                        .row
+                                                            .col-12.no-padding
+                                                                div.nl-team-card.table-data-field
+                                                                    div.row 
+                                                                        div.col-12.orange
+                                                                            h3 Score: 123
+                                                                        div.col-12
+                                                                            h3 The best NLC2 team!
+                                                                    div.row 
+                                                                        div.col-12
+                                                                            <img src="assets/img/helmet.png" alt="helmet" class="helmet">
+
+                                                        .row
+                                                            .col-12.no-padding
+                                                                table.table.table-striped.nl-team-list-table
+                                                                    thead
+                                                                        tr
+
+                                                                            th.name-list-view NAME
+                                                                            th POS
+                                                                            th FP
+                                                                            th SALARY
+                                                                            th
+
+                                                                    tbody
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos FLEX
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos K
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos QB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos TE
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos DEF
+                                                                            td 30
+                                                                            td $0
+                                            div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+                                                div.manager-image-inner
+                                                        div.number
+                                                            p 1
+                                                        div.name
+                                                            p Rafael Groswirt
+                            div.carousel-item
+                                div.tab-content
+                                    div.tab-pane.active(id="manager1" role="tabpanel")
+                                        div.row.player
+                                            div.col-12.col-xs-5.hidden-md-down.col-lg-5
+                                                div.manager-image
+                                                    div.manager-image-inner
+                                                        div.number
+                                                            p 2
+                                                        div.name
+                                                            p Kasper
+                                            div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+                                                div.nl-team-list-homepage.nl-my-teams
+                                                    .nl-card-wrapper
+                                                        .row
+                                                            .col-12.no-padding
+                                                                div.nl-team-card.table-data-field
+                                                                    div.row 
+                                                                        div.col-12.orange
+                                                                            h3 Score: 123
+                                                                        div.col-12
+                                                                            h3 The best NLC2 team!
+                                                                    div.row 
+                                                                        div.col-12
+                                                                            <img src="assets/img/helmet.png" alt="helmet" class="helmet">
+
+                                                        .row
+                                                            .col-12.no-padding
+                                                                table.table.table-striped.nl-team-list-table
+                                                                    thead
+                                                                        tr
+
+                                                                            th.name-list-view NAME
+                                                                            th POS
+                                                                            th FP
+                                                                            th SALARY
+                                                                            th
+
+                                                                    tbody
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos FLEX
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos K
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos QB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos TE
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos DEF
+                                                                            td 30
+                                                                            td $0
+                                            div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+                                                div.manager-image-inner
+                                                        div.number
+                                                            p 2
+                                                        div.name
+                                                            p Kasper
+                            div.carousel-item
+                                div.tab-content
+                                    div.tab-pane.active(id="manager1" role="tabpanel")
+                                        div.row.player
+                                            div.col-12.col-xs-5.hidden-md-down.col-lg-5
+                                                div.manager-image
+                                                    div.manager-image-inner
+                                                        div.number
+                                                            p 3
+                                                        div.name
+                                                            p XP
+                                            div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+                                                div.nl-team-list-homepage.nl-my-teams
+                                                    .nl-card-wrapper
+                                                        .row
+                                                            .col-12.no-padding
+                                                                div.nl-team-card.table-data-field
+                                                                    div.row 
+                                                                        div.col-12.orange
+                                                                            h3 Score: 123
+                                                                        div.col-12
+                                                                            h3 The best NLC2 team!
+                                                                    div.row 
+                                                                        div.col-12
+                                                                            <img src="assets/img/helmet.png" alt="helmet" class="helmet">
+
+                                                        .row
+                                                            .col-12.no-padding
+                                                                table.table.table-striped.nl-team-list-table
+                                                                    thead
+                                                                        tr
+
+                                                                            th.name-list-view NAME
+                                                                            th POS
+                                                                            th FP
+                                                                            th SALARY
+                                                                            th
+
+                                                                    tbody
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos FLEX
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos K
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos QB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos TE
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos DEF
+                                                                            td 30
+                                                                            td $0
+                                            div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+                                                div.manager-image-inner
+                                                        div.number
+                                                            p 3
+                                                        div.name
+                                                            p Rafael 
+                            div.carousel-item
+                                div.tab-content
+                                    div.tab-pane.active(id="manager1" role="tabpanel")
+                                        div.row.player
+                                            div.col-12.col-xs-5.hidden-md-down.col-lg-5
+                                                div.manager-image
+                                                    div.manager-image-inner
+                                                        div.number
+                                                            p 4
+                                                        div.name
+                                                            p Dan
+                                            div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+                                                div.nl-team-list-homepage.nl-my-teams
+                                                    .nl-card-wrapper
+                                                        .row
+                                                            .col-12.no-padding
+                                                                div.nl-team-card.table-data-field
+                                                                    div.row 
+                                                                        div.col-12.orange
+                                                                            h3 Score: 123
+                                                                        div.col-12
+                                                                            h3 The best NLC2 team!
+                                                                    div.row 
+                                                                        div.col-12
+                                                                            <img src="assets/img/helmet.png" alt="helmet" class="helmet">
+
+                                                        .row
+                                                            .col-12.no-padding
+                                                                table.table.table-striped.nl-team-list-table
+                                                                    thead
+                                                                        tr
+
+                                                                            th.name-list-view NAME
+                                                                            th POS
+                                                                            th FP
+                                                                            th SALARY
+                                                                            th
+
+                                                                    tbody
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos FLEX
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos K
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos QB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos TE
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos DEF
+                                                                            td 30
+                                                                            td $0
+                                            div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+                                                div.manager-image-inner
+                                                        div.number
+                                                            p 4
+                                                        div.name
+                                                            p Groswirt
+                            div.carousel-item
+                                div.tab-content
+                                    div.tab-pane.active(id="manager1" role="tabpanel")
+                                        div.row.player
+                                            div.col-12.col-xs-5.hidden-md-down.col-lg-5
+                                                div.manager-image
+                                                    div.manager-image-inner
+                                                        div.number
+                                                            p 5
+                                                        div.name
+                                                            p Anthony
+                                            div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+                                                div.nl-team-list-homepage.nl-my-teams
+                                                    .nl-card-wrapper
+                                                        .row
+                                                            .col-12.no-padding
+                                                                div.nl-team-card.table-data-field
+                                                                    div.row 
+                                                                        div.col-12.orange
+                                                                            h3 Score: 123
+                                                                        div.col-12
+                                                                            h3 The best NLC2 team!
+                                                                    div.row 
+                                                                        div.col-12
+                                                                            <img src="assets/img/helmet.png" alt="helmet" class="helmet">
+
+                                                        .row
+                                                            .col-12.no-padding
+                                                                table.table.table-striped.nl-team-list-table
+                                                                    thead
+                                                                        tr
+
+                                                                            th.name-list-view NAME
+                                                                            th POS
+                                                                            th FP
+                                                                            th SALARY
+                                                                            th
+
+                                                                    tbody
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos FLEX
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos K
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos RB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos QB
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos WR
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos TE
+                                                                            td 30
+                                                                            td $0
+                                                                        tr
+
+                                                                            td Player name
+                                                                            td.pos DEF
+                                                                            td 30
+                                                                            td $0
+                                            div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+                                                div.manager-image-inner
+                                                        div.number
+                                                            p 5
+                                                        div.name
+                                                            p Rafael 
 
     div(role='tabpanel' class='tab-pane top-level-panel2' id='week4')
         p week 4

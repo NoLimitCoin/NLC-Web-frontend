@@ -78,6 +78,10 @@
 
 .nl-section.homepage {
 
+  .carousel-item.active, .carousel-item-next, .carousel-item-prev {
+    display: block;
+  }
+
   .rounded-corners {
     border-top-left-radius:  0.625rem;
     border-top-right-radius: 0.625rem;
@@ -151,11 +155,11 @@
     }
   }
 
-  @include respond-to(wide-tablets) {
-    #top5-manager-content .manager-image-inner .name p {
-      padding-left: 5px;
-    }
-  }
+  // @include respond-to(wide-tablets) {
+  //   #top5-manager-content .manager-image-inner .name p {
+  //     padding-left: 5px;
+  //   }
+  // }
 
   @include respond-to (allmobile) {
     padding: 1rem 0.5rem;
@@ -770,9 +774,12 @@
       height: 22px;
       background: #e89608;
       background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
-      font-size: 15px;
+      font-size: 19px;
       padding-left: 8px;
       padding-top: 1px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
       display: inline-block;
       margin-top: -3px;
       color: #ffffff;
@@ -1060,69 +1067,139 @@
       margin: 0px;
     }
 
-    .number {
-      display: inline-block;
-      width: 30px;
-      background: #e89608; /* Old browsers */
-      background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
-    }
 
     .name {
-      position: absolute;
+        position: absolute;
         top: 7px;
         left: 60px;
         
-        @include respond-to(allnotwide) {
-            left: 40px;
-          }
+        @include respond-to(handhelds) {
+          top: 12px;
+        }
+
+        @include respond-to(wide-handhelds) {
+          top: 10px;
+          left: 55px;
+        }
+
+        @include respond-to(tablets) {
+          top: 10px;
+          left: 50px;
+        }
+
+        @include respond-to(wide-tablets) {
+          top: 11px;
+          left: 45px;
+        }
+        @include respond-to(medium-display) {
+          top: 10px;
+          left: 48px;
+        }
+        @media (min-width: 1366px) {
+          top: 9px;
+          left: 50px;
+        }
 
 
         p {
 
-          @include respond-to(allwider) {
-            font-size: 15px;
-            margin-left: -14px;
-            padding: 3px 0 0 8px;
+          font-size: 15px;
+          margin-left: 0;
+
+          @include respond-to(handhelds) {
+            font-size: 18px;
           }
 
-          @include respond-to(allnotwide) {
-            font-size: 13px;
+          @include respond-to(wide-handhelds) {
+            font-size: 19px;
+          }
+
+          @include respond-to(tablets) {
+            font-size: 21px;
+          }
+
+          @include respond-to(wide-tablets) {
+            font-size: 17px;
+          }
+          @include respond-to(medium-display) {
+            font-size: 19px;
+          }
+          @media (min-width: 1366px) {
+            font-size: 21px;
           }
           
         }
     }
 
     p {
-      display: inline-block;
-      padding: 5px 0 0 8px;
-      font-size: 15px;
+      // display: inline-block;
+      //padding: 5px 0 0 8px;
+      //font-size: 15px;
 
-      &.points {
-        color: #e89708;
-        float: right;
-        padding-right: 10px;
-        padding-top: 12px;
+      // &.points {
+      //   color: #e89708;
+      //   float: right;
+      //   padding-right: 10px;
+      //   padding-top: 12px;
 
-        @media screen and (min-width: 768px) {
-          display: none;
-        }
-      }
+      //   @media screen and (min-width: 768px) {
+      //     display: none;
+      //   }
+      // }
 
-      &.name {
-        padding-top:8px !important;
-        padding-left: 10px;
-      }
+      // &.name {
+      //   padding-top:8px !important;
+      //   padding-left: 10px;
+      // }
     }
 
+
+
     .number {
+      background: #e89608; /* Old browsers */
+      background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
       width: 40px;
       height: 40px;
-      padding-left: 8px;
+      padding: 0;
+      margin: 0;
 
+      @include respond-to(handhelds) {
+        width: 50px;
+        height: 40px;
+        //padding-left: 0.9rem;
+        //padding-top: 0.3rem;
+      }
+
+      @include respond-to(wide-handhelds) {
+        //padding-left: 0.4rem;
+      }
 
       p {
-        font-size: 28px;
-        padding-top: 12px;
+        font-size: 35px;
+        padding-top:11px;
+        text-align: center;
+
+        @include respond-to(handhelds) {
+          font-size: 30px;
+        }
+
+        @include respond-to(wide-handhelds) {
+          padding-top:10px;
+        }
+
+        @include respond-to(tablets) {
+          padding-top:10px;
+        }
+
+        @include respond-to(wide-tablets) {
+          padding-top:10px;
+        }
+        @include respond-to(medium-display) {
+          padding-top:8px;
+        }
+        @media (min-width: 1366px) {
+          padding-top:8px;
+        }
       }
     }
   }
@@ -1151,39 +1228,37 @@
     }
 
     .number {
-      display: inline-block;
-      width: 30px;
       background: #e89608; /* Old browsers */
       background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
     }
 
     .name {
       position: absolute;
-        top: 7px;
-        left: 60px;
+      top: 7px;
+      left: 60px;
+
+      @include respond-to(allnotwide) {
+          left: 40px;
+        }
+
+
+      p {
+
+        @include respond-to(allwider) {
+          font-size: 15px;
+          margin-left: -14px;
+          padding: 3px 0 0 8px;
+        }
 
         @include respond-to(allnotwide) {
-            left: 40px;
-          }
-
-
-        p {
-
-          @include respond-to(allwider) {
-            font-size: 15px;
-            margin-left: -14px;
-            padding: 3px 0 0 8px;
-          }
-
-          @include respond-to(allnotwide) {
-            font-size: 16px;
-          }
-          
+          font-size: 16px;
         }
+        
+      }
     }
 
     p {
-      display: inline-block;
+      //display: inline-block;
       padding: 5px 0 0 8px;
       font-size: 15px;
 
@@ -1196,23 +1271,58 @@
         @media screen and (min-width: 768px) {
           display: none;
         }
+
+        @media screen and (max-width: 365px) {
+          display: none;
+        }
       }
 
-      &.name {
-        padding-top:8px !important;
-        padding-left: 10px;
-      }
+      // &.name {
+      //   padding-top:8px !important;
+      //   padding-left: 10px;
+      // }
     }
 
     .number {
       width: 40px;
       height: 40px;
-      padding-left: 8px;
+      padding: 0;
+      margin: 0;
 
+      @include respond-to(handhelds) {
+        width: 35px;
+        height: 40px;
+        //padding-left: 0.9rem;
+        //padding-top: 0.3rem;
+      }
+
+      @include respond-to(wide-handhelds) {
+        //padding-left: 0.4rem;
+      }
 
       p {
-        font-size: 28px;
-        padding-top: 12px;
+        padding: 0;
+        font-size: 35px;
+        padding-top:11px;
+        text-align: center;
+
+        @include respond-to(wide-handhelds) {
+          padding-top:10px;
+        }
+
+        @include respond-to(tablets) {
+          padding-top:10px;
+        }
+
+        @include respond-to(wide-tablets) {
+          padding-top:10px;
+        }
+        @include respond-to(medium-display) {
+          padding-top:8px;
+        }
+        @media (min-width: 1366px) {
+          padding-top:8px;
+        }
       }
     }
   }
@@ -1370,6 +1480,21 @@
 
 #top5-player-content,
 #top5-manager-content {
+  
+  .no-padding {
+    padding: 0;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-10 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @include respond-to(allmobile) {
     min-height: 200px;
     padding-top: 20px;
@@ -1418,17 +1543,24 @@
       padding-right: 0;
     }
   }
-  .manager-image-inner .name p {
-    //padding-left: 25px;
-    padding-top: 3px;
-  }
 
-  @include respond-to (handhelds) {
-    .manager-image-inner .name p {
-      padding-left: 20px;
-      padding-top: 5px;
+  h3 {
+    @include respond-to (allwide) {
+      padding-left: 0;
     }
   }
+  // .manager-image-inner .name p {
+  //   //padding-left: 25px;
+  //   //padding-top: 3px;
+  //   padding: 5px 0 0 8px;
+  // }
+
+  // @include respond-to (handhelds) {
+  //   .manager-image-inner .name p {
+  //     padding-left: 20px;
+  //     padding-top: 5px;
+  //   }
+  // }
 }
 
 .subtitle {
