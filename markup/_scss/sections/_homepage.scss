@@ -142,8 +142,8 @@
   .rounded-corners {
     border-top-left-radius:  0.625rem;
     border-top-right-radius: 0.625rem;
-    border-bottom-left-radius: 0.625rem;;
-    border-bottom-right-radius: 0.625rem;;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
     // overflow: hidden;
     -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
@@ -393,6 +393,7 @@
     //border-radius: 0;
     border-bottom-right-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
+    border-top-left-radius: 0;
   }
 
   @media (min-width: 992px) {

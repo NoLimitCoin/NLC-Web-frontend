@@ -10452,7 +10452,8 @@ p {
     border-radius: 0; }
   .homepage .nl-contests-table .tab-content {
     border-bottom-right-radius: 0.625rem;
-    border-bottom-left-radius: 0.625rem; }
+    border-bottom-left-radius: 0.625rem;
+    border-top-left-radius: 0; }
   @media (min-width: 992px) {
     .homepage .nl-contests-table .nav-tabs .nav-link {
       min-width: 100px; } }
