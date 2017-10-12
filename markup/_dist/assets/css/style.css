@@ -10206,43 +10206,40 @@ p {
   background-color: #fff; }
 
 /*general for homepage*/
-.nl-section.homepage.football-homepage h5 {
+.nl-section.homepage.football-homepage .player-info h5 {
   margin-bottom: 15px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .nl-section.homepage.football-homepage h5 {
+    .nl-section.homepage.football-homepage .player-info h5 {
       margin-bottom: 22px; } }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .nl-section.homepage.football-homepage h5 {
-      line-height: 0.9rem; } }
+    .nl-section.homepage.football-homepage .player-info h5 {
+      line-height: 1.65rem; } }
   @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-    .nl-section.homepage.football-homepage h5 {
-      line-height: 1rem; } }
+    .nl-section.homepage.football-homepage .player-info h5 {
+      line-height: 1.65rem; } }
   @media only screen and (min-width: 1367px) and (max-width: 1440px) {
-    .nl-section.homepage.football-homepage h5 {
-      line-height: 1rem; } }
-  @media (min-width: 992px) {
-    .nl-section.homepage.football-homepage h5 {
-      margin-bottom: 28px; } }
+    .nl-section.homepage.football-homepage .player-info h5 {
+      line-height: 1.65rem; } }
   @media only screen and (min-width: 1441px) and (max-width: 1680px) {
-    .nl-section.homepage.football-homepage h5 {
+    .nl-section.homepage.football-homepage .player-info h5 {
       font-size: 1.25rem;
-      line-height: 0.8rem; } }
+      line-height: 1.65rem; } }
   @media (min-width: 1681px) {
-    .nl-section.homepage.football-homepage h5 {
+    .nl-section.homepage.football-homepage .player-info h5 {
       font-size: 1.25rem;
-      line-height: 0.85rem; } }
+      line-height: 1.55rem; } }
 
-.nl-section.homepage.football-homepage i.fa-info-circle {
+.nl-section.homepage.football-homepage .player-info i.fa-info-circle {
   font-size: 24px;
   color: #ffffff;
   text-align: center; }
   @media only screen and (min-width: 1441px) and (max-width: 1680px) {
-    .nl-section.homepage.football-homepage i.fa-info-circle {
+    .nl-section.homepage.football-homepage .player-info i.fa-info-circle {
       font-size: 2rem; } }
   @media (min-width: 1681px) {
-    .nl-section.homepage.football-homepage i.fa-info-circle {
+    .nl-section.homepage.football-homepage .player-info i.fa-info-circle {
       font-size: 2.15rem; } }
-  .nl-section.homepage.football-homepage i.fa-info-circle.fa.fa-info-circle {
+  .nl-section.homepage.football-homepage .player-info i.fa-info-circle.fa.fa-info-circle {
     display: block; }
 
 .nl-section.homepage.soccer #top5-manager-content img.helmet {
@@ -10406,6 +10403,14 @@ p {
   /* kaspers update are above here */
   /* kaspers update are above here */
   /* kaspers update are above here */ }
+  .homepage .menu-item.top-5 .number p {
+    font-size: 18px;
+    line-height: 1.1; }
+    @media (min-width: 1681px) {
+      .homepage .menu-item.top-5 .number p {
+        line-height: 1.3; } }
+  .homepage .menu-item.top-5 .number {
+    font-size: 18px; }
   .homepage .nl-create-team .player-main-block.football .nl-LRB-position {
     bottom: 43%; }
   .homepage .no-padding {
@@ -10910,7 +10915,7 @@ p {
       margin-bottom: 15px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .homepage .player-info h5 {
-          margin-bottom: 22px; } }
+          line-height: 1.25rem; } }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .player-info h5 {
           line-height: 1.65rem; } }
