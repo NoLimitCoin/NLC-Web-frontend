@@ -580,6 +580,41 @@
     top: 1%;
   }
 
+
+
+
+
+  .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(1), .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(1) {
+    width: 5%;
+    padding: 0;
+  }
+
+  .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(2), .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(2) {
+    width: 50%;
+    text-align: left;
+  }
+
+  .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(3), .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(3) {
+    width: 12.5%;
+    text-align: center;
+  }
+
+  .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(4), .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(4) {
+    width: 12.5%;
+    text-align: center;
+  }
+
+  .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(5), .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(5) {
+    width: 20%;
+    text-align: center;
+  }
+
+
+
+
+
+
+
   .nl-my-teams .nl-team-list-table th:nth-child(1), .nl-my-teams .nl-team-list-table td:nth-child(1) {
     width: 50%
   }

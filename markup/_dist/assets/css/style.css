@@ -10635,6 +10635,21 @@ p {
     top: 19%; }
   .homepage .nl-create-team .player-main-block.football .nl-RWR-position {
     top: 1%; }
+  .homepage .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(1), .homepage .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(1) {
+    width: 5%;
+    padding: 0; }
+  .homepage .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(2), .homepage .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(2) {
+    width: 50%;
+    text-align: left; }
+  .homepage .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(3), .homepage .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(3) {
+    width: 12.5%;
+    text-align: center; }
+  .homepage .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(4), .homepage .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(4) {
+    width: 12.5%;
+    text-align: center; }
+  .homepage .nl-my-teams .nl-team-list-table.homepage-field th:nth-child(5), .homepage .nl-my-teams .nl-team-list-table.homepage-field td:nth-child(5) {
+    width: 20%;
+    text-align: center; }
   .homepage .nl-my-teams .nl-team-list-table th:nth-child(1), .homepage .nl-my-teams .nl-team-list-table td:nth-child(1) {
     width: 50%; }
   .homepage .nl-my-teams .nl-team-list-table th:nth-child(2), .homepage .nl-my-teams .nl-team-list-table td:nth-child(2) {
