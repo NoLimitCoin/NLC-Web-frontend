@@ -10206,6 +10206,45 @@ p {
   background-color: #fff; }
 
 /*general for homepage*/
+.nl-section.homepage.football-homepage h5 {
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nl-section.homepage.football-homepage h5 {
+      margin-bottom: 22px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-section.homepage.football-homepage h5 {
+      line-height: 0.9rem; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-section.homepage.football-homepage h5 {
+      line-height: 1rem; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-section.homepage.football-homepage h5 {
+      line-height: 1rem; } }
+  @media (min-width: 992px) {
+    .nl-section.homepage.football-homepage h5 {
+      margin-bottom: 28px; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-section.homepage.football-homepage h5 {
+      font-size: 1.25rem;
+      line-height: 0.8rem; } }
+  @media (min-width: 1681px) {
+    .nl-section.homepage.football-homepage h5 {
+      font-size: 1.25rem;
+      line-height: 0.85rem; } }
+
+.nl-section.homepage.football-homepage i {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center; }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-section.homepage.football-homepage i {
+      font-size: 2rem; } }
+  @media (min-width: 1681px) {
+    .nl-section.homepage.football-homepage i {
+      font-size: 2.15rem; } }
+  .nl-section.homepage.football-homepage i.fa {
+    display: block; }
+
 .nl-section.homepage.soccer #top5-manager-content img.helmet {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem; }
@@ -10874,24 +10913,24 @@ p {
           margin-bottom: 22px; } }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .player-info h5 {
-          line-height: 1.35rem; } }
+          line-height: 1.65rem; } }
       @media only screen and (min-width: 1367px) and (max-width: 1440px) {
         .homepage .player-info h5 {
           line-height: 1.65rem; } }
       @media only screen and (min-width: 1201px) and (max-width: 1366px) {
         .homepage .player-info h5 {
-          line-height: 1.65rem; } }
+          line-height: 1.85rem; } }
       @media (min-width: 992px) {
         .homepage .player-info h5 {
           margin-bottom: 28px; } }
       @media only screen and (min-width: 1441px) and (max-width: 1680px) {
         .homepage .player-info h5 {
-          font-size: 1.65rem;
-          line-height: 1.45rem; } }
+          font-size: 1.25rem;
+          line-height: 1.65rem; } }
       @media (min-width: 1681px) {
         .homepage .player-info h5 {
-          font-size: 1.65rem;
-          line-height: 1.45rem; } }
+          font-size: 1.25rem;
+          line-height: 1.55rem; } }
     .homepage .player-info i {
       font-size: 24px;
       color: #ffffff;
