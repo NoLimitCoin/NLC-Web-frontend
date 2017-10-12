@@ -192,9 +192,9 @@
 		text-align: left;
 	}
 
-	.nl-my-teams .nl-team-list-table td:nth-child(1) {
-		padding-left: 1.5rem;
-	}
+	// .nl-my-teams .nl-team-list-table td:nth-child(1) {
+	// 	padding-left: 1.5rem;
+	// }
 
 	.nl-team-list {
 		max-width: 27.25rem;
@@ -458,7 +458,7 @@
 	}
 
 	.nl-my-teams .table th:nth-child(2) {
-		text-align: center;
+		//text-align: center;
 	}
 
 	.rank__content.leaders-list {
@@ -604,24 +604,29 @@
 
 			&:first-child {
 				text-align: left;
-				width: 40%
+				width: 9%
 			}
 		}
 	}
 
 	.nl-my-teams .nl-team-list-table td:nth-child(2) {
-		text-align: center;
-		width: 20%;
+		text-align: left;
+		width: 40%
 	}
 
 	.nl-my-teams .nl-team-list-table td:nth-child(3) {
 		text-align: center;
-		width: 20%;
+		width: 17%;
 	}
 
 	.nl-my-teams .nl-team-list-table td:nth-child(4) {
 		text-align: center;
-		width: 20%;
+		width: 17%;
+	}
+
+	.nl-my-teams .nl-team-list-table td:nth-child(5) {
+		text-align: center;
+		width: 17%;
 	}
 
 	.nl-team-field .nl-player-block p {
