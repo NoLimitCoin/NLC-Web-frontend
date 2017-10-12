@@ -59,53 +59,9 @@
     padding-bottom: 0.25rem;
   }
 
-  .nl-GK-position {
-    bottom: 4.5%;
-  } 
-   
-  .nl-FLEXR-position{
-    top: 73%;
-    right: 2%;
-  }
-
-  .nl-ML-position{
-    top: 16%;
-  }
-  .nl-MR-position{
-    top: 16%;
-  }
-
-  .nl-MM-position {
-    top: 14%;
-  }
-
-  .nl-DM-position {
-    bottom: 31%;
-  }
-
   @include respond-to (allwide) {
     .manager-image, .player-image, .player-info {
       height: 303px;
-    }
-  }
-
-  @media (max-width: 1425px) and (min-width: 1200px) {
-    .nl-MM-position {
-      top: 18%;
-    }
-
-    .nl-ML-position{
-      top: 19%;
-    }
-    .nl-MR-position{
-      top: 19%;
-    }
-  }
-
-  @include respond-to (wide-tablets) {
-    .nl-MM-position {
-      top: 20%;
-      left: 40%;
     }
   }
 
@@ -126,6 +82,228 @@
     -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     border-radius: 0.625rem;
+  }
+
+  .nl-GK-position{
+    
+    @include respond-to (extra-large-display) {
+    left: 42%;
+    bottom: 6.5%;
+    }
+
+    @include respond-to (large-display) {
+    left: 42%;
+    bottom: 6.5%;
+    }
+
+    @include respond-to (wide-display) {
+    left: 42%;
+    bottom: 6.5%;
+    }
+
+    @include respond-to (medium-display) {
+    left: 41%;
+    bottom: 6.5%;
+    }
+
+    @include respond-to (wide-tablets) {
+    left: 40%;
+    bottom: 7.5%;
+    }
+
+    @media (min-width: 1899px) {
+      left: 44%;
+    }
+  }
+
+  .nl-DM-position{
+    @include respond-to (extra-large-display) {
+    bottom: 32%;
+    left: 42%;
+    }
+
+    @include respond-to (large-display) {
+    bottom: 32%;
+    left: 42%;
+    }
+
+    @include respond-to (wide-display) {
+    bottom: 32%;
+    left: 42%;
+    }
+
+    @include respond-to (medium-display) {
+    bottom: 32%;
+    left: 41%;
+    }
+
+    @include respond-to (wide-tablets) {
+    bottom: 33%;
+    left: 40%;
+    }
+
+    @media (min-width: 1899px) {
+      left: 44%;
+    }
+  }
+
+  .nl-MM-position{
+  //left: initial;
+
+    @include respond-to (extra-large-display) {
+    bottom: 61%;
+    left: 42%;
+    }
+
+    @include respond-to (large-display) {
+    bottom: 61%;
+    left: 42%;
+    }
+    @include respond-to (wide-display) {
+    bottom: 61%;
+    left: 42%;
+    }
+    @include respond-to (medium-display) {
+    bottom: 61%;
+    left: 41%;
+    }
+    @include respond-to (wide-tablets) {
+    bottom: 61%;
+    left: 40%;
+    }
+
+    @media (min-width: 1899px) {
+      left: 44%;
+    }
+
+  }
+
+  .nl-DL-position{
+    bottom: 30.5%;
+    left: 11%;
+
+    @include respond-to (medium-display) {
+    left: 11%;
+    }
+
+    @include respond-to (large-display) {
+    bottom: 27.5%;
+    left: 11%;
+    }
+
+    @include respond-to (extra-large-display) {
+    bottom: 29.5%;
+    left: 11%;
+    }
+  }
+  .nl-DR-position{
+    bottom: 30.5%;
+    right: 11%;
+
+    @include respond-to (medium-display) {
+    right: 11%;
+    }
+
+    @include respond-to (large-display) {
+    bottom: 27.5%;
+    right: 11%;
+    }
+
+    @include respond-to (extra-large-display) {
+      bottom: 29.5%;
+    }
+
+  }
+  .nl-FLEXL-position{
+    bottom: -1%;
+    left: 2%;
+  }
+  
+  .nl-AL-position{
+    top: -4.5%;
+    left: 28%;
+
+    @include respond-to (wide-tablets) {
+    top: -4.5%;
+    left: 22%;
+    }
+  }
+
+  .nl-AR-position{
+    top: -4.5%;
+    left: 56%;
+
+    @include respond-to (wide-tablets) {
+    top: -4.5%;
+    left: 57%;
+    }
+
+    @include respond-to (wide-display) {
+    top: -4.5%;
+    left: 54%;
+    }
+  }
+
+  .nl-FLEXR-position{
+    top: 77%;
+    right: 2%;
+  }
+
+  
+  .nl-ML-position{
+    top: 19%;
+    left: 12%;
+
+    @include respond-to (wide-tablets) {
+      top: 20%;
+    }
+
+    @include respond-to (medium-display) {
+    top: 21%;
+    left: 12%;
+    }
+
+    @include respond-to (large-display) {
+    top: 20%;
+    left: 18%;
+    }
+
+    @include respond-to (wide-display) {
+      top: 21%;
+      left: 18%;
+    }
+
+    @include respond-to (extra-large-display) {
+    top: 23%;
+    left: 25%;
+    }
+  }
+  .nl-MR-position{
+    top: 18%;
+    right: 12%;
+
+    @include respond-to (wide-tablets) {
+      top: 20%;
+    }
+
+    @include respond-to (medium-display) {
+    top: 21%;
+    right: 12%;
+    }
+    @include respond-to (large-display) {
+    top: 20%;
+    right: 18%;
+    }
+
+    @include respond-to (wide-display) {
+      top: 21%;
+      right: 18%;
+    }
+
+    @include respond-to (extra-large-display) {
+    top: 23%;
+    right: 25%;
+    }
   }
 }
 
@@ -257,16 +435,24 @@
 }
 
 .homepage .nl-create-team .nl-team-field .soccer.player-main-block {
-   
-   img {
-    max-width: 55px;
-   }
+    
+    img {
+      max-width: 55px;
+
+        @media (min-width: 1367px) and (max-width:1440px) {
+        max-width: 58px;
+      }
+
+      @include respond-to (extra-large-display) {
+        max-width: 63px;
+      }
+    }
 
    @include respond-to (wide-tablets) {
     min-height: 344px;
 
     img {
-      max-width: 40px;
+      max-width: 45px;
     }
   }
 }

@@ -10246,41 +10246,9 @@ p {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem; }
 
-.nl-section.homepage.soccer .nl-GK-position {
-  bottom: 4.5%; }
-
-.nl-section.homepage.soccer .nl-FLEXR-position {
-  top: 73%;
-  right: 2%; }
-
-.nl-section.homepage.soccer .nl-ML-position {
-  top: 16%; }
-
-.nl-section.homepage.soccer .nl-MR-position {
-  top: 16%; }
-
-.nl-section.homepage.soccer .nl-MM-position {
-  top: 14%; }
-
-.nl-section.homepage.soccer .nl-DM-position {
-  bottom: 31%; }
-
 @media (min-width: 992px) {
   .nl-section.homepage.soccer .manager-image, .nl-section.homepage.soccer .player-image, .nl-section.homepage.soccer .player-info {
     height: 303px; } }
-
-@media (max-width: 1425px) and (min-width: 1200px) {
-  .nl-section.homepage.soccer .nl-MM-position {
-    top: 18%; }
-  .nl-section.homepage.soccer .nl-ML-position {
-    top: 19%; }
-  .nl-section.homepage.soccer .nl-MR-position {
-    top: 19%; } }
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .nl-section.homepage.soccer .nl-MM-position {
-    top: 20%;
-    left: 40%; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .nl-section.homepage.soccer .manager-image, .nl-section.homepage.soccer .player-image, .nl-section.homepage.soccer .player-info {
@@ -10295,6 +10263,196 @@ p {
   -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
   border-radius: 0.625rem; }
+
+@media (min-width: 1681px) {
+  .nl-section.homepage.soccer .nl-GK-position {
+    left: 42%;
+    bottom: 6.5%; } }
+
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+  .nl-section.homepage.soccer .nl-GK-position {
+    left: 42%;
+    bottom: 6.5%; } }
+
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+  .nl-section.homepage.soccer .nl-GK-position {
+    left: 42%;
+    bottom: 6.5%; } }
+
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  .nl-section.homepage.soccer .nl-GK-position {
+    left: 41%;
+    bottom: 6.5%; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .nl-section.homepage.soccer .nl-GK-position {
+    left: 40%;
+    bottom: 7.5%; } }
+
+@media (min-width: 1899px) {
+  .nl-section.homepage.soccer .nl-GK-position {
+    left: 44%; } }
+
+@media (min-width: 1681px) {
+  .nl-section.homepage.soccer .nl-DM-position {
+    bottom: 32%;
+    left: 42%; } }
+
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+  .nl-section.homepage.soccer .nl-DM-position {
+    bottom: 32%;
+    left: 42%; } }
+
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+  .nl-section.homepage.soccer .nl-DM-position {
+    bottom: 32%;
+    left: 42%; } }
+
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  .nl-section.homepage.soccer .nl-DM-position {
+    bottom: 32%;
+    left: 41%; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .nl-section.homepage.soccer .nl-DM-position {
+    bottom: 33%;
+    left: 40%; } }
+
+@media (min-width: 1899px) {
+  .nl-section.homepage.soccer .nl-DM-position {
+    left: 44%; } }
+
+@media (min-width: 1681px) {
+  .nl-section.homepage.soccer .nl-MM-position {
+    bottom: 61%;
+    left: 42%; } }
+
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+  .nl-section.homepage.soccer .nl-MM-position {
+    bottom: 61%;
+    left: 42%; } }
+
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+  .nl-section.homepage.soccer .nl-MM-position {
+    bottom: 61%;
+    left: 42%; } }
+
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  .nl-section.homepage.soccer .nl-MM-position {
+    bottom: 61%;
+    left: 41%; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .nl-section.homepage.soccer .nl-MM-position {
+    bottom: 61%;
+    left: 40%; } }
+
+@media (min-width: 1899px) {
+  .nl-section.homepage.soccer .nl-MM-position {
+    left: 44%; } }
+
+.nl-section.homepage.soccer .nl-DL-position {
+  bottom: 30.5%;
+  left: 11%; }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-section.homepage.soccer .nl-DL-position {
+      left: 11%; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-section.homepage.soccer .nl-DL-position {
+      bottom: 27.5%;
+      left: 11%; } }
+  @media (min-width: 1681px) {
+    .nl-section.homepage.soccer .nl-DL-position {
+      bottom: 29.5%;
+      left: 11%; } }
+
+.nl-section.homepage.soccer .nl-DR-position {
+  bottom: 30.5%;
+  right: 11%; }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-section.homepage.soccer .nl-DR-position {
+      right: 11%; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-section.homepage.soccer .nl-DR-position {
+      bottom: 27.5%;
+      right: 11%; } }
+  @media (min-width: 1681px) {
+    .nl-section.homepage.soccer .nl-DR-position {
+      bottom: 29.5%; } }
+
+.nl-section.homepage.soccer .nl-FLEXL-position {
+  bottom: -1%;
+  left: 2%; }
+
+.nl-section.homepage.soccer .nl-AL-position {
+  top: -4.5%;
+  left: 28%; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-section.homepage.soccer .nl-AL-position {
+      top: -4.5%;
+      left: 22%; } }
+
+.nl-section.homepage.soccer .nl-AR-position {
+  top: -4.5%;
+  left: 56%; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-section.homepage.soccer .nl-AR-position {
+      top: -4.5%;
+      left: 57%; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-section.homepage.soccer .nl-AR-position {
+      top: -4.5%;
+      left: 54%; } }
+
+.nl-section.homepage.soccer .nl-FLEXR-position {
+  top: 77%;
+  right: 2%; }
+
+.nl-section.homepage.soccer .nl-ML-position {
+  top: 19%;
+  left: 12%; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-section.homepage.soccer .nl-ML-position {
+      top: 20%; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-section.homepage.soccer .nl-ML-position {
+      top: 21%;
+      left: 12%; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-section.homepage.soccer .nl-ML-position {
+      top: 20%;
+      left: 18%; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-section.homepage.soccer .nl-ML-position {
+      top: 21%;
+      left: 18%; } }
+  @media (min-width: 1681px) {
+    .nl-section.homepage.soccer .nl-ML-position {
+      top: 23%;
+      left: 25%; } }
+
+.nl-section.homepage.soccer .nl-MR-position {
+  top: 18%;
+  right: 12%; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-section.homepage.soccer .nl-MR-position {
+      top: 20%; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-section.homepage.soccer .nl-MR-position {
+      top: 21%;
+      right: 12%; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-section.homepage.soccer .nl-MR-position {
+      top: 20%;
+      right: 18%; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-section.homepage.soccer .nl-MR-position {
+      top: 21%;
+      right: 18%; } }
+  @media (min-width: 1681px) {
+    .nl-section.homepage.soccer .nl-MR-position {
+      top: 23%;
+      right: 25%; } }
 
 .text-center {
   text-align: center; }
@@ -10371,12 +10529,18 @@ p {
 
 .homepage .nl-create-team .nl-team-field .soccer.player-main-block img {
   max-width: 55px; }
+  @media (min-width: 1367px) and (max-width: 1440px) {
+    .homepage .nl-create-team .nl-team-field .soccer.player-main-block img {
+      max-width: 58px; } }
+  @media (min-width: 1681px) {
+    .homepage .nl-create-team .nl-team-field .soccer.player-main-block img {
+      max-width: 63px; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .homepage .nl-create-team .nl-team-field .soccer.player-main-block {
     min-height: 344px; }
     .homepage .nl-create-team .nl-team-field .soccer.player-main-block img {
-      max-width: 40px; } }
+      max-width: 45px; } }
 
 .homepage .nl-create-team.soccer .player-main-block {
   width: 100%;
@@ -12564,11 +12728,11 @@ td:nth-child(4).homepage-list-view {
 
 @media (min-width: 1367px) and (max-width: 1500px) {
   .nl-create-team.soccer .nl-team-field .nl-player-block img {
-    min-width: 65px; } }
+    max-width: 65px; } }
 
 @media (min-width: 1500px) {
   .nl-create-team.soccer .nl-team-field .nl-player-block img {
-    min-width: 70px; } }
+    max-width: 70px; } }
 
 .nl-create-team {
   padding-left: 0.875rem;

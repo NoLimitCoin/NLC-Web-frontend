@@ -35,11 +35,11 @@
 
   .nl-team-field .nl-player-block img {
   	@media (min-width: 1367px) and (max-width:1500px) {
-      min-width: 65px;
+      max-width: 65px;
     }
 
     @media (min-width: 1500px) {
-      min-width: 70px;
+      max-width: 70px;
     }
   }
 }
