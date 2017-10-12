@@ -1,3 +1,185 @@
+/* Soccer page
+---------------------------------------- */
+
+.nl-live-score.soccer {
+
+	.player-main-block {
+		min-height: 427px;
+		margin-top: 24px;
+		margin-bottom: 30px;
+	}
+
+	.nl-team-field .nl-player-block img {
+		max-width: 50px;
+	}
+
+	// .player-main-block .nl-FLEXR-position {
+	// 	top: 74%;
+	// }
+
+	// .player-main-block .nl-DM-position {
+	// 	top: 42%;
+	// }
+
+	// .player-main-block .nl-MM-position {
+	// 	top: 16%;
+	// 	left: 43%;
+	// }
+
+	.nl-GK-position{
+      
+       @include respond-to (extra-large-display) {
+        bottom: 5.5%;
+   		left: 42%;
+      }
+
+      @include respond-to (large-display) {
+        bottom: 5.5%;
+   		left: 40%;
+      }
+      @include respond-to (medium-display) {
+        left: 39%;
+        bottom: 6.5%;
+      }
+
+      @include respond-to (wide-display) {
+        left: 40%;
+        bottom: 4.5%;
+      }
+
+      @include respond-to (wide-tablets) {
+        left: 41%;
+        bottom: 4.5%;
+      }
+    }
+
+    .nl-DM-position{
+      @include respond-to (extra-large-display) {
+        left: 42%;
+        bottom: 29.5%;
+      }
+
+      @include respond-to (large-display) {
+        left: 40%;
+        bottom: 29.5%;
+      }
+
+      @include respond-to (wide-display) {
+        left: 40%;
+        bottom: 29.5%;
+      }
+
+      @include respond-to (medium-display) {
+        bottom: 32%;
+        left: 40%;
+      }
+
+      @include respond-to (wide-tablets) {
+        bottom: 33%;
+        left: 40%;
+      }
+    }
+
+    .nl-MM-position{
+    //left: initial;
+      @include respond-to (extra-large-display) {
+        bottom: 56%;
+        left: 42%;
+      }
+
+      @include respond-to (large-display) {
+        bottom: 56%;
+        left: 40%;
+      }
+      @include respond-to (wide-display) {
+        left: 40%;
+        bottom: 55%;
+      }
+      @include respond-to (medium-display) {
+        bottom: 56%;
+        left: 40%;
+      }
+      @include respond-to (wide-tablets) {
+        bottom: 58%;
+        left: 40%;
+      }
+    }
+
+    .nl-DL-position{
+      bottom: 30.5%;
+      left: 15%;
+
+      @include respond-to (medium-display) {
+        left: 11%;
+      }
+    }
+    .nl-DR-position{
+      bottom: 30.5%;
+      right: 15%;
+
+      @include respond-to (medium-display) {
+        right: 11%;
+      }
+    }
+    .nl-FLEXL-position{
+      bottom: -1%;
+      left: 2%;
+    }
+    
+    .nl-AL-position{
+      top: -4.5%;
+      left: 28%;
+
+      @include respond-to (wide-tablets) {
+        top: -4.5%;
+      	left: 26%;
+      }
+    }
+
+    .nl-AR-position{
+      top: -4.5%;
+      left: 56%;
+
+      @include respond-to (wide-display) {
+        top: -4.5%;
+      	left: 54%;
+      }
+    }
+
+    .nl-FLEXR-position{
+      top: 77%;
+      right: 2%;
+    }
+
+    
+    .nl-ML-position{
+      top: 18%;
+      left: 12%;
+
+      @include respond-to (medium-display) {
+        top: 21%;
+      	left: 12%;
+      }
+
+      @include respond-to (large-display) {
+      	top: 21%;
+      }
+
+    }
+    .nl-MR-position{
+      top: 18%;
+      right: 12%;
+
+      @include respond-to (medium-display) {
+        top: 21%;
+      	right: 12%;
+      }
+      @include respond-to (large-display) {
+      	top: 21%;
+      }
+    }  
+}
+
 /* Matches component
 ---------------------------------------- */
 .matches {
