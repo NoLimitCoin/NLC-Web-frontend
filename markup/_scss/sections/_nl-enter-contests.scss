@@ -81,81 +81,29 @@
   min-height: 563px;
   position: relative;
 
-  // .nl-GK-position{
-  //   bottom: 6.5%;
-  //   left: 43%;
-  // }
-
-  // .nl-DL-position{
-  //   bottom: 21.5%;
-  //   left: 24%;
-  // }
-  // .nl-DR-position{
-  //   bottom: 21.5%;
-  //   right: 24%;
-  // }
-  // .nl-FLEXL-position{
-  //   bottom: 35%;
-  //   left: 7%;
-  // }
-  // .nl-DM-position{
-  //   bottom: 35%;
-  //   right: 6%;
-  // }
-  // .nl-MM-position{
-  //   bottom: 43%;
-  //   left: 40%;
-  // }
-
-  // .nl-AR-position{
-  //   top: 2.5%;
-  //   left: 40%;
-  // }
-
-  // .nl-AL-position{
-  //   top: 2.5%;
-  //   left: 17%;
-  // }
-
-  // .nl-FLEXR-position{
-  //   top: 2.5%;
-  //   right: 17%;
-  // }
-
-  // .nl-ML-position{
-  //   top: 25%;
-  //   left: 17%;
-  // }
-
-  // .nl-MR-position{
-  //   top: 25%;
-  //   right: 17%;
-  // }
-
-  // @media (min-width: 1200px)  {
-  //   .nl-MM-position{
-  //     bottom: 43%;
-  //     left: 43%;
-  //   }
-  //   .nl-ML-position{
-  //     top: 25%;
-  //     left: 25%;
-  //   }
-  //   .nl-MR-position{
-  //     top: 25%;
-  //     right: 25%;
-  //   }
-  //   .nl-AR-position{
-  //     top: 2.5%;
-  //     left: 43%;
-  //   }
-  // }
-
     .nl-GK-position{
-      bottom: 3.5%;
-      left: 43%;
-    }
+      
+       @include respond-to (extra-large-display) {
+        bottom: 8.5%;
+        left: 45%;
+      }
 
+      @include respond-to (large-display) {
+        bottom: 9.5%;
+        left: 44%;
+      }
+      @include respond-to (medium-wide-display) {
+        bottom: 9.5%;
+        left: 43%;
+      }
+      @include respond-to (medium-display) {
+        left: 43%;
+      }
+      @include respond-to (wide-tablets) {
+        left: 40%;
+        bottom: 4.5%;
+      }
+    }
     .nl-DL-position{
       bottom: 30.5%;
       left: 15%;
@@ -169,18 +117,31 @@
       left: 2%;
     }
     .nl-DM-position{
-      bottom: 30%;
-      right: 40%;
-    }
-    // .nl-MM-position{
-    //   bottom: 43%;
-    //   left: 40%;
-    // }
+      @include respond-to (extra-large-display) {
+        bottom: 32%;
+        right: 43%;
+      }
 
-    // .nl-AR-position{
-    //   top: -3.5%;
-    //   left: 56%;
-    // }
+      @include respond-to (large-display) {
+        bottom: 33%;
+        right: 43%;
+      }
+
+      @include respond-to (medium-wide-display) {
+        bottom: 33%;
+        right: 43%;
+      }
+
+      @include respond-to (medium-display) {
+        bottom: 33%;
+        right: 41%;
+      }
+
+      @include respond-to (wide-tablets) {
+        bottom: 33%;
+        right: 40%;
+      }
+    }
 
     .nl-AL-position{
       top: -6.5%;
@@ -192,19 +153,29 @@
       right: 2%;
     }
 
-    // .nl-ML-position{
-    //   top: 30%;
-    //   left: 19%;
-    // }
-
-    // .nl-MR-position{
-    //   top: 30%;
-    //   right: 19%;
-    // }
-
     .nl-MM-position{
-      bottom: 56%;
-      left: 42%;
+
+      @include respond-to (extra-large-display) {
+        bottom: 58%;
+        right: 43%;
+      }
+
+      @include respond-to (large-display) {
+        bottom: 58%;
+        right: 43%;
+      }
+      @include respond-to (medium-wide-display) {
+        bottom: 58%;
+        right: 43%;
+      }
+      @include respond-to (medium-display) {
+        bottom: 58%;
+        right: 41%;
+      }
+      @include respond-to (wide-tablets) {
+        bottom: 58%;
+        right: 40%;
+      }
     }
     .nl-ML-position{
       top: 18%;

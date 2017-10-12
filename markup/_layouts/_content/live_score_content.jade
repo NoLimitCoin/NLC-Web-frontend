@@ -1,20 +1,18 @@
 mixin repeat(times)
 	each i in new Array(times)
 		div.matches__result
-			div.matches__result-header
-				span Wed. 12th 10:45
 			div.matches__content
 				ul.matches__leaders-list
 					li
 						span <img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU">
-						span cl
-						span 7
+						span RMA
+						span 2
 					li
 						span <img src="http://localhost:3000/assets/img/emblem/FCB.png" alt="MU">
-						span cin
-						span 448
-					li
-						span Final
+						span FCB
+						span 1
+			div.matches__result-header
+				span Wed 10:45
 
 mixin current-table(times)
 	each i in new Array(times)
@@ -149,8 +147,9 @@ section.nl-section.nl-players.nl-live-score
 	div.container-fluid
 		div.row
 			div.col-12.page-heading
-				h1 Live scores
-		div.row
+				h1 Live Contest Dashboard
+
+		div.row.top-bar-live-scores
 			div.col-12.col-lg-6.offset-lg-0.col-xl-8
 				h5.d-inline-block.component-header Matches
 				div.matches.rounded-corners
@@ -174,9 +173,8 @@ section.nl-section.nl-players.nl-live-score
 								table.table.table-striped
 									tbody
 										+current-table(8)
-
 		div.row
-			div.col-12.offset-0.col-sm-6.offset-sm-3.col-lg-6.offset-lg-0.col-xl-4
+			div.col-12.offset-0.col-sm-10.offset-sm-1.col-lg-6.offset-lg-0.col-xl-4
 				h5.d-inline-block.component-header Contest info
 				div.nl-contest-info-table
 					div.table-heading
@@ -359,7 +357,7 @@ section.nl-section.nl-players.nl-live-score
 							.col-12
 								div.nl-team-card.table-data-field
 									h3 team NLC2
-									<img src="assets/img/helmet.png" alt="helmet" class="hidden-xs-down">
+									<img src="assets/img/helmet.png" alt="helmet">
 
 						.row
 							.col-12.no-padding
@@ -375,7 +373,7 @@ section.nl-section.nl-players.nl-live-score
 									tbody
 										+team-field-table(9)
 
-			div.col-10.offset-1.col-sm-6.offset-sm-3.col-xl-4.offset-xl-0.chatbox
+			div.col-10.offset-1.col-sm-10.offset-sm-1.col-xl-4.offset-xl-0.chatbox
 				h5.d-inline-block.component-header Live chat
 				div.nl-contest-info-table
 					div.table-heading
