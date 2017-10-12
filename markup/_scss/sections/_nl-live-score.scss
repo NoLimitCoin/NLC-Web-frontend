@@ -27,157 +27,157 @@
 	// }
 
 	.nl-GK-position{
-      
-       @include respond-to (extra-large-display) {
-        bottom: 5.5%;
-   		left: 42%;
-      }
+	  
+	   @include respond-to (extra-large-display) {
+		bottom: 5.5%;
+		left: 42%;
+	  }
 
-      @include respond-to (large-display) {
-        bottom: 5.5%;
-   		left: 40%;
-      }
-      @include respond-to (medium-display) {
-        left: 39%;
-        bottom: 6.5%;
-      }
+	  @include respond-to (large-display) {
+		bottom: 5.5%;
+		left: 40%;
+	  }
+	  @include respond-to (medium-display) {
+		left: 39%;
+		bottom: 6.5%;
+	  }
 
-      @include respond-to (wide-display) {
-        left: 40%;
-        bottom: 4.5%;
-      }
+	  @include respond-to (wide-display) {
+		left: 40%;
+		bottom: 4.5%;
+	  }
 
-      @include respond-to (wide-tablets) {
-        left: 41%;
-        bottom: 4.5%;
-      }
-    }
+	  @include respond-to (wide-tablets) {
+		left: 41%;
+		bottom: 4.5%;
+	  }
+	}
 
-    .nl-DM-position{
-      @include respond-to (extra-large-display) {
-        left: 42%;
-        bottom: 29.5%;
-      }
+	.nl-DM-position{
+	  @include respond-to (extra-large-display) {
+		left: 42%;
+		bottom: 29.5%;
+	  }
 
-      @include respond-to (large-display) {
-        left: 40%;
-        bottom: 29.5%;
-      }
+	  @include respond-to (large-display) {
+		left: 40%;
+		bottom: 29.5%;
+	  }
 
-      @include respond-to (wide-display) {
-        left: 40%;
-        bottom: 29.5%;
-      }
+	  @include respond-to (wide-display) {
+		left: 40%;
+		bottom: 29.5%;
+	  }
 
-      @include respond-to (medium-display) {
-        bottom: 32%;
-        left: 40%;
-      }
+	  @include respond-to (medium-display) {
+		bottom: 32%;
+		left: 40%;
+	  }
 
-      @include respond-to (wide-tablets) {
-        bottom: 33%;
-        left: 40%;
-      }
-    }
+	  @include respond-to (wide-tablets) {
+		bottom: 33%;
+		left: 40%;
+	  }
+	}
 
-    .nl-MM-position{
-    //left: initial;
-      @include respond-to (extra-large-display) {
-        bottom: 56%;
-        left: 42%;
-      }
+	.nl-MM-position{
+	//left: initial;
+	  @include respond-to (extra-large-display) {
+		bottom: 56%;
+		left: 42%;
+	  }
 
-      @include respond-to (large-display) {
-        bottom: 56%;
-        left: 40%;
-      }
-      @include respond-to (wide-display) {
-        left: 40%;
-        bottom: 55%;
-      }
-      @include respond-to (medium-display) {
-        bottom: 56%;
-        left: 40%;
-      }
-      @include respond-to (wide-tablets) {
-        bottom: 58%;
-        left: 40%;
-      }
-    }
+	  @include respond-to (large-display) {
+		bottom: 56%;
+		left: 40%;
+	  }
+	  @include respond-to (wide-display) {
+		left: 40%;
+		bottom: 55%;
+	  }
+	  @include respond-to (medium-display) {
+		bottom: 56%;
+		left: 40%;
+	  }
+	  @include respond-to (wide-tablets) {
+		bottom: 58%;
+		left: 40%;
+	  }
+	}
 
-    .nl-DL-position{
-      bottom: 30.5%;
-      left: 15%;
+	.nl-DL-position{
+	  bottom: 30.5%;
+	  left: 15%;
 
-      @include respond-to (medium-display) {
-        left: 11%;
-      }
-    }
-    .nl-DR-position{
-      bottom: 30.5%;
-      right: 15%;
+	  @include respond-to (medium-display) {
+		left: 11%;
+	  }
+	}
+	.nl-DR-position{
+	  bottom: 30.5%;
+	  right: 15%;
 
-      @include respond-to (medium-display) {
-        right: 11%;
-      }
-    }
-    .nl-FLEXL-position{
-      bottom: -1%;
-      left: 2%;
-    }
-    
-    .nl-AL-position{
-      top: -4.5%;
-      left: 28%;
+	  @include respond-to (medium-display) {
+		right: 11%;
+	  }
+	}
+	.nl-FLEXL-position{
+	  bottom: -1%;
+	  left: 2%;
+	}
+	
+	.nl-AL-position{
+	  top: -4.5%;
+	  left: 28%;
 
-      @include respond-to (wide-tablets) {
-        top: -4.5%;
-      	left: 26%;
-      }
-    }
+	  @include respond-to (wide-tablets) {
+		top: -4.5%;
+		left: 26%;
+	  }
+	}
 
-    .nl-AR-position{
-      top: -4.5%;
-      left: 56%;
+	.nl-AR-position{
+	  top: -4.5%;
+	  left: 56%;
 
-      @include respond-to (wide-display) {
-        top: -4.5%;
-      	left: 54%;
-      }
-    }
+	  @include respond-to (wide-display) {
+		top: -4.5%;
+		left: 54%;
+	  }
+	}
 
-    .nl-FLEXR-position{
-      top: 77%;
-      right: 2%;
-    }
+	.nl-FLEXR-position{
+	  top: 77%;
+	  right: 2%;
+	}
 
-    
-    .nl-ML-position{
-      top: 18%;
-      left: 12%;
+	
+	.nl-ML-position{
+	  top: 18%;
+	  left: 12%;
 
-      @include respond-to (medium-display) {
-        top: 21%;
-      	left: 12%;
-      }
+	  @include respond-to (medium-display) {
+		top: 21%;
+		left: 12%;
+	  }
 
-      @include respond-to (large-display) {
-      	top: 21%;
-      }
+	  @include respond-to (large-display) {
+		top: 21%;
+	  }
 
-    }
-    .nl-MR-position{
-      top: 18%;
-      right: 12%;
+	}
+	.nl-MR-position{
+	  top: 18%;
+	  right: 12%;
 
-      @include respond-to (medium-display) {
-        top: 21%;
-      	right: 12%;
-      }
-      @include respond-to (large-display) {
-      	top: 21%;
-      }
-    }  
+	  @include respond-to (medium-display) {
+		top: 21%;
+		right: 12%;
+	  }
+	  @include respond-to (large-display) {
+		top: 21%;
+	  }
+	}  
 }
 
 /* Matches component
@@ -224,9 +224,9 @@
 	}
 
 	&__result-header {
-    background-color: #0f254f;
-    text-align: center;
-    max-width: 150px;
+	background-color: #0f254f;
+	text-align: center;
+	max-width: 150px;
 	  overflow-wrap: break-word;
 	  word-wrap: break-word;
 	  hyphens: auto;
@@ -248,37 +248,37 @@
 		margin: 0;
 		padding: 0;
 
-	    li {
-	      line-height: 1.6em;
-	      margin-bottom: calculateRem(8px);
-	      font-weight: 500;
-	      font-size: 1rem;
+		li {
+		  line-height: 1.6em;
+		  margin-bottom: calculateRem(8px);
+		  font-weight: 500;
+		  font-size: 1rem;
 
-	      img {
-	      	width: 28px;
-	      }
-	      span {
-	      	float: left;
-	      	padding: calculateRem(2px) calculateRem(4px) calculateRem(0px);
-	      }
+		  img {
+			width: 28px;
+		  }
+		  span {
+			float: left;
+			padding: calculateRem(2px) calculateRem(4px) calculateRem(0px);
+		  }
 
-	      & >span:last-child {
-	    		float: right;
-	      }
+		  & >span:last-child {
+				float: right;
+		  }
 
-	      &:last-child {
+		  &:last-child {
 
-	      	// span {
-	      	// 	font-weight: 300;
-	      	// 	float: left;
-	      	// }
-	      }
-	  		&:after {
+			// span {
+			// 	font-weight: 300;
+			// 	float: left;
+			// }
+		  }
+			&:after {
 				  content: "";
 				  display: table;
 				  clear: both;
-	  		}
-	    }
+			}
+		}
 	}
 	@include respond-to(allsmall) {
 		margin-bottom: calculateRem(24px);
@@ -325,22 +325,22 @@
 			padding: 0.25rem 0.5rem;
 			text-align: center;
 			max-width: 120px;
-		  	white-space: nowrap;
-		  	overflow: hidden;
-		  	text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 
- 			&:nth-child(1) {
-       			 width: 35%;
-      		}
-      &:nth-child(2) {
-        width: 35%;
-      }
-      &:nth-child(3) {
-        width: 15%;
-      }
-      &:nth-child(4) {
-        width: 15%;
-      }
+			&:nth-child(1) {
+				 width: 35%;
+			}
+	  &:nth-child(2) {
+		width: 35%;
+	  }
+	  &:nth-child(3) {
+		width: 15%;
+	  }
+	  &:nth-child(4) {
+		width: 15%;
+	  }
 		}
 	}
 }
@@ -359,18 +359,18 @@
 		width: 80%;
 	}
   #dropdownMenuButton {
-    width: 100%;
-    text-align: left;
+	width: 100%;
+	text-align: left;
   }
   .dropdown-toggle::after {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    color: #e48706;
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	color: #e48706;
   }
   .dropdown-menu {
-  	width: 96%;
-  	left: 0.5rem;
+	width: 96%;
+	left: 0.5rem;
   }
 	.table-info1 {
 		margin-bottom: 0.5rem;
@@ -390,31 +390,31 @@
 			text-align: center;
 
 			&:nth-child(1) {
-		        width: 10%;
-		        color: #e48706;
-		      }
+				width: 10%;
+				color: #e48706;
+			  }
 
-		  	&:nth-child(2) {
-		   	 width: 39%;
-		   	 text-align: left;
-		  	}
-		    &:nth-child(3) {
-		      width: 17%;
-		    }
+			&:nth-child(2) {
+			 width: 39%;
+			 text-align: left;
+			}
+			&:nth-child(3) {
+			  width: 17%;
+			}
 
-		   	&:nth-child(4) {
-		      width: 17%;
-		    }
-		    &:nth-child(5) {
-		      width: 17%;
-		    }
+			&:nth-child(4) {
+			  width: 17%;
+			}
+			&:nth-child(5) {
+			  width: 17%;
+			}
 		}
 	}
 
 	.nl-table-scroll2{
 	  max-height: calculateRem(805px);
 	  @include respond-to(allsmall){
-	    max-height: inherit;
+		max-height: inherit;
 	  }
 	}
 }
@@ -423,7 +423,7 @@
 ---------------------------------------- */
 
 @include respond-to(handhelds){
-    	
+		
 	.rank .leaders-list p {
 		font-size: 11px;
 	}
@@ -450,10 +450,10 @@
 
 	@include respond-to(handhelds){
 
-    	.rank__stats.part-of-block {
-    		max-width: 133px;
-    	}
- 	}
+		.rank__stats.part-of-block {
+			max-width: 133px;
+		}
+	}
 
 	.nl-team-field .nl-player-block p.playing {
 		background: green;
@@ -465,16 +465,16 @@
 		background: red;
 	}	
 	
-  	.more-teams-button {
-   		text-align: center;
+	.more-teams-button {
+		text-align: center;
 
-   		a .btn-more-teams-live {
-	    	font-size: 15px;
-	    }
-  	}
+		a .btn-more-teams-live {
+			font-size: 15px;
+		}
+	}
 
 	.nl-contest-info-table .table-info1 td .btn {
-	    margin-top: 10px;
+		margin-top: 10px;
 	}
 
 	.rounded-corners {
@@ -482,9 +482,9 @@
 		border-top-right-radius: 0.625rem;
 		border-bottom-left-radius: 0.625rem;;
 		border-bottom-right-radius: 0.625rem;;
-	    overflow: hidden;
-	    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
-	    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+		overflow: hidden;
+		-webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+		box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
 	}
 
 	.orange {
@@ -549,8 +549,8 @@
 
 	.rank__no {
 		background: #eb9a0d;
-    	background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
-    	background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+		background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
 	}
 
 	h5 {
@@ -611,8 +611,8 @@
 .rank {
 	display: flex;
 	background-color: #0f254f;
-  	border-radius: .625rem;
-  	box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+	border-radius: .625rem;
+	box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
 	color: #fff;
 	font-weight: 400;
 	font-size: 16px;
@@ -645,8 +645,8 @@
 			font-weight: 700;
 
 			@include respond-to (allmobile) {
-	    		font-size: 30px;
-	    	}
+				font-size: 30px;
+			}
 		}
 	}
 
@@ -672,26 +672,26 @@
 	  flex-direction: column;
 
 	  span {
-	  	display: block;
-	  	position: relative;
-	  	font-size: 11px;
-	  	font-weight: 400;
-	  	line-height: 1.2;
+		display: block;
+		position: relative;
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 1.2;
 
-	  	@include respond-to(allwide) {
-	  		font-size: 13px;
-	  	}
+		@include respond-to(allwide) {
+			font-size: 13px;
+		}
 
-	  	@include respond-to (handhelds) {
-    		font-size: 9px;
-    	}
+		@include respond-to (handhelds) {
+			font-size: 9px;
+		}
 	  }
 
 	  span + span {
 
 			&:before {
-	  		content: '';
-	  		display: inline-block;
+			content: '';
+			display: inline-block;
 				width: 18px;
 				height: 18px;
 				border-radius: 50%;
@@ -700,26 +700,26 @@
 				vertical-align: middle;
 
 			@include respond-to (handhelds) {
-	    		width: 13px;
+				width: 13px;
 				height: 13px;
-	    	}
-	  	}
+			}
+		}
 	  }
 
 	  .playing + span {
 			&:before {
 				background-color: green;
-	  	}
+		}
 	  }
 	  .played + span {
 			&:before {
 				background-color: #5fadcc;
-	  	}
+		}
 	  }
 	  .not-played + span {
 			&:before {
 				background-color: red;
-	  	}
+		}
 	  }
 	}
 
@@ -732,21 +732,21 @@
 	.leaders-list {
 		p {
 			padding: 0 0.25rem;
-	    	margin-bottom: 0;
-	    	font-size: 12px;
+			margin-bottom: 0;
+			font-size: 12px;
 
-	    	@include respond-to (handhelds) {
-	    		font-size: 11px;
-	    	}
+			@include respond-to (handhelds) {
+				font-size: 11px;
+			}
 		}
 		p:nth-child(even) {
-	    padding-bottom: 0.25rem;
+		padding-bottom: 0.25rem;
 		}
 	}
 
 	&__select {
 		flex: 1;
-    width: 55%;
+	width: 55%;
 
 		.dropdown {
 			width: 100%;
@@ -765,9 +765,9 @@
 .rank__stats {
 
 	&.part-of-block {
-    flex: 1;
-    max-width: 155px;
-    line-height: 1rem;
+	flex: 1;
+	max-width: 155px;
+	line-height: 1rem;
 
 		@media (min-width: 992px) and (max-width: 1680px) {
 			display: none;
@@ -902,8 +902,8 @@
 		border-bottom-left-radius: 0;
 
 		background: #eb9a0d;
-    	background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
-    	background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+		background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
 		
 		span {
 			font-size: 12px;

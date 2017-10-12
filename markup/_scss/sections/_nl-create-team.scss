@@ -32,6 +32,16 @@
       height: 70px;
     }
   }
+
+  .nl-team-field .nl-player-block img {
+  	@media (min-width: 1367px) and (max-width:1500px) {
+      min-width: 65px;
+    }
+
+    @media (min-width: 1500px) {
+      min-width: 70px;
+    }
+  }
 }
 
 .nl-create-team {
@@ -368,112 +378,196 @@
     min-height: 563px;
     position: relative;
 
+
     .nl-GK-position{
-      bottom: 5.5%;
-      left: 40%;
-    }
+	  
+	   @include respond-to (extra-large-display) {
+		left: 42%;
+		bottom: 10.5%;
+	  }
 
-    .nl-DL-position{
-      bottom: 30.5%;
-      left: 15%;
-    }
-    .nl-DR-position{
-      bottom: 30.5%;
-      right: 15%;
-    }
-    .nl-FLEXL-position{
-      bottom: 3%;
-      left: 2%;
-    }
-    .nl-DM-position{
-      bottom: 30%;
-      left: 40%;
-    }
-    // .nl-MM-position{
-    //   bottom: 43%;
-    //   left: 40%;
-    // }
+	  @include respond-to (large-display) {
+		left: 42%;
+		bottom: 10.5%;
+	  }
 
-    // .nl-AR-position{
-    //   top: -3.5%;
-    //   left: 56%;
-    // }
+	  @include respond-to (wide-display) {
+		left: 42%;
+		bottom: 10.5%;
+	  }
 
-    .nl-AL-position{
-      top: -3.5%;
-      left: 28%;
-    }
+	  @include respond-to (medium-display) {
+		left: 42%;
+		bottom: 10.5%;
+	  }
 
-    .nl-FLEXR-position{
-      top: 78%;
-      right: 2%;
-    }
+	  @include respond-to (wide-tablets) {
+		left: 40%;
+		bottom: 7.5%;
+	  }
 
-    // .nl-ML-position{
-    //   top: 30%;
-    //   left: 19%;
-    // }
+	  @media (min-width: 1899px) {
+	  	left: 44%;
+	  }
+	}
 
-    // .nl-MR-position{
-    //   top: 30%;
-    //   right: 19%;
-    // }
+	.nl-DM-position{
+	  @include respond-to (extra-large-display) {
+		bottom: 32%;
+		left: 42%;
+	  }
 
-    .nl-MM-position{
-      bottom: 56%;
-      left: 40%;
-    }
-    .nl-ML-position{
-      top: 18%;
-      left: 12%;
-    }
-    .nl-MR-position{
-      top: 18%;
-      right: 12%;
-    }
-    .nl-AR-position{
-      top: -3.5%;
-      left: 56%;
-    }
+	  @include respond-to (large-display) {
+		bottom: 32%;
+		left: 42%;
+	  }
 
-    @media (max-width: 1425px) and (min-width: 1200px) {
-      .nl-FLEXR-position{
-        top: 76%;
-        right: 2%;
-      }
-      .nl-GK-position {
-        bottom: 7.5%;
-      }
-    }
+	  @include respond-to (wide-display) {
+		bottom: 32%;
+		left: 42%;
+	  }
 
-    @media (min-width: 1425px) {
-      .nl-GK-position {
-        bottom: 9.5%;
-        left: 43%;
-      }
-    }
+	  @include respond-to (medium-display) {
+		bottom: 32%;
+		left: 42%;
+	  }
 
-    @include respond-to (wide-tablets){
-      .nl-FLEXR-position{
-        top: 74%;
-        right: 2%;
-      }
+	  @include respond-to (wide-tablets) {
+		bottom: 33%;
+		left: 40%;
+	  }
 
-       .nl-AR-position{
-        top: -3.5%;
-        left: 53%;
-      }
+	  @media (min-width: 1899px) {
+	  	left: 44%;
+	  }
+	}
 
-      .nl-DR-position {
-        right: 11%;
-      }
+	.nl-MM-position{
+	//left: initial;
 
-      .nl-DL-position {
-        left: 11%;
-      }
-    }
-    
+	  @include respond-to (extra-large-display) {
+		bottom: 56%;
+		left: 42%;
+	  }
 
+	  @include respond-to (large-display) {
+		bottom: 56%;
+		left: 42%;
+	  }
+	  @include respond-to (wide-display) {
+		bottom: 56%;
+		left: 42%;
+	  }
+	  @include respond-to (medium-display) {
+		bottom: 56%;
+		left: 42%;
+	  }
+	  @include respond-to (wide-tablets) {
+		bottom: 58%;
+		left: 40%;
+	  }
+
+	  @media (min-width: 1899px) {
+	  	left: 44%;
+	  }
+
+	}
+
+	.nl-DL-position{
+	  bottom: 30.5%;
+	  left: 11%;
+
+	  @include respond-to (medium-display) {
+		left: 11%;
+	  }
+	}
+	.nl-DR-position{
+	  bottom: 30.5%;
+	  right: 11%;
+
+	  @include respond-to (medium-display) {
+		right: 11%;
+	  }
+	}
+	.nl-FLEXL-position{
+	  bottom: -1%;
+	  left: 2%;
+	}
+	
+	.nl-AL-position{
+	  top: -4.5%;
+	  left: 28%;
+
+	  @include respond-to (wide-tablets) {
+		top: -4.5%;
+		left: 26%;
+	  }
+	}
+
+	.nl-AR-position{
+	  top: -4.5%;
+	  left: 56%;
+
+	  @include respond-to (wide-display) {
+		top: -4.5%;
+		left: 54%;
+	  }
+	}
+
+	.nl-FLEXR-position{
+	  top: 77%;
+	  right: 2%;
+	}
+
+	
+	.nl-ML-position{
+	  top: 18%;
+	  left: 12%;
+
+	  @include respond-to (medium-display) {
+		top: 21%;
+		left: 12%;
+	  }
+
+	  @include respond-to (large-display) {
+		top: 21%;
+		left: 18%;
+	  }
+
+	  @include respond-to (wide-display) {
+	  	top: 21%;
+	  	left: 18%;
+	  }
+
+	  @include respond-to (extra-large-display) {
+		top: 21%;
+		left: 18%;
+	  }
+	}
+	.nl-MR-position{
+	  top: 18%;
+	  right: 12%;
+
+	  @include respond-to (medium-display) {
+		top: 21%;
+		right: 12%;
+	  }
+	  @include respond-to (large-display) {
+		top: 21%;
+		right: 18%;
+	  }
+
+	  @include respond-to (wide-display) {
+	  	top: 21%;
+	  	right: 18%;
+	  }
+
+	  @include respond-to (extra-large-display) {
+		top: 21%;
+		right: 18%;
+	  }
+	}  
+  
     &.football{
       min-height: 509px;
 
@@ -615,6 +709,7 @@
 
       
     }
+
     @include respond-to(allsmall){
       display: none;
     }

@@ -12562,6 +12562,14 @@ td:nth-child(4).homepage-list-view {
   .nl-create-team.soccer .nl-my-teams .nl-team-card img {
     height: 70px; } }
 
+@media (min-width: 1367px) and (max-width: 1500px) {
+  .nl-create-team.soccer .nl-team-field .nl-player-block img {
+    min-width: 65px; } }
+
+@media (min-width: 1500px) {
+  .nl-create-team.soccer .nl-team-field .nl-player-block img {
+    min-width: 70px; } }
+
 .nl-create-team {
   padding-left: 0.875rem;
   padding-right: 0.875rem;
@@ -12793,78 +12801,183 @@ td:nth-child(4).homepage-list-view {
   height: 100%;
   min-height: 563px;
   position: relative; }
-  .nl-create-team .player-main-block .nl-GK-position,
-  .nl-live-score .player-main-block .nl-GK-position {
-    bottom: 5.5%;
-    left: 40%; }
+  @media (min-width: 1681px) {
+    .nl-create-team .player-main-block .nl-GK-position,
+    .nl-live-score .player-main-block .nl-GK-position {
+      left: 42%;
+      bottom: 10.5%; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-create-team .player-main-block .nl-GK-position,
+    .nl-live-score .player-main-block .nl-GK-position {
+      left: 42%;
+      bottom: 10.5%; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-create-team .player-main-block .nl-GK-position,
+    .nl-live-score .player-main-block .nl-GK-position {
+      left: 42%;
+      bottom: 10.5%; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-create-team .player-main-block .nl-GK-position,
+    .nl-live-score .player-main-block .nl-GK-position {
+      left: 42%;
+      bottom: 10.5%; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-create-team .player-main-block .nl-GK-position,
+    .nl-live-score .player-main-block .nl-GK-position {
+      left: 40%;
+      bottom: 7.5%; } }
+  @media (min-width: 1899px) {
+    .nl-create-team .player-main-block .nl-GK-position,
+    .nl-live-score .player-main-block .nl-GK-position {
+      left: 44%; } }
+  @media (min-width: 1681px) {
+    .nl-create-team .player-main-block .nl-DM-position,
+    .nl-live-score .player-main-block .nl-DM-position {
+      bottom: 32%;
+      left: 42%; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-create-team .player-main-block .nl-DM-position,
+    .nl-live-score .player-main-block .nl-DM-position {
+      bottom: 32%;
+      left: 42%; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-create-team .player-main-block .nl-DM-position,
+    .nl-live-score .player-main-block .nl-DM-position {
+      bottom: 32%;
+      left: 42%; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-create-team .player-main-block .nl-DM-position,
+    .nl-live-score .player-main-block .nl-DM-position {
+      bottom: 32%;
+      left: 42%; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-create-team .player-main-block .nl-DM-position,
+    .nl-live-score .player-main-block .nl-DM-position {
+      bottom: 33%;
+      left: 40%; } }
+  @media (min-width: 1899px) {
+    .nl-create-team .player-main-block .nl-DM-position,
+    .nl-live-score .player-main-block .nl-DM-position {
+      left: 44%; } }
+  @media (min-width: 1681px) {
+    .nl-create-team .player-main-block .nl-MM-position,
+    .nl-live-score .player-main-block .nl-MM-position {
+      bottom: 56%;
+      left: 42%; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .nl-create-team .player-main-block .nl-MM-position,
+    .nl-live-score .player-main-block .nl-MM-position {
+      bottom: 56%;
+      left: 42%; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-create-team .player-main-block .nl-MM-position,
+    .nl-live-score .player-main-block .nl-MM-position {
+      bottom: 56%;
+      left: 42%; } }
+  @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    .nl-create-team .player-main-block .nl-MM-position,
+    .nl-live-score .player-main-block .nl-MM-position {
+      bottom: 56%;
+      left: 42%; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nl-create-team .player-main-block .nl-MM-position,
+    .nl-live-score .player-main-block .nl-MM-position {
+      bottom: 58%;
+      left: 40%; } }
+  @media (min-width: 1899px) {
+    .nl-create-team .player-main-block .nl-MM-position,
+    .nl-live-score .player-main-block .nl-MM-position {
+      left: 44%; } }
   .nl-create-team .player-main-block .nl-DL-position,
   .nl-live-score .player-main-block .nl-DL-position {
     bottom: 30.5%;
-    left: 15%; }
+    left: 11%; }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-create-team .player-main-block .nl-DL-position,
+      .nl-live-score .player-main-block .nl-DL-position {
+        left: 11%; } }
   .nl-create-team .player-main-block .nl-DR-position,
   .nl-live-score .player-main-block .nl-DR-position {
     bottom: 30.5%;
-    right: 15%; }
+    right: 11%; }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-create-team .player-main-block .nl-DR-position,
+      .nl-live-score .player-main-block .nl-DR-position {
+        right: 11%; } }
   .nl-create-team .player-main-block .nl-FLEXL-position,
   .nl-live-score .player-main-block .nl-FLEXL-position {
-    bottom: 3%;
+    bottom: -1%;
     left: 2%; }
-  .nl-create-team .player-main-block .nl-DM-position,
-  .nl-live-score .player-main-block .nl-DM-position {
-    bottom: 30%;
-    left: 40%; }
   .nl-create-team .player-main-block .nl-AL-position,
   .nl-live-score .player-main-block .nl-AL-position {
-    top: -3.5%;
+    top: -4.5%;
     left: 28%; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-create-team .player-main-block .nl-AL-position,
+      .nl-live-score .player-main-block .nl-AL-position {
+        top: -4.5%;
+        left: 26%; } }
+  .nl-create-team .player-main-block .nl-AR-position,
+  .nl-live-score .player-main-block .nl-AR-position {
+    top: -4.5%;
+    left: 56%; }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+      .nl-create-team .player-main-block .nl-AR-position,
+      .nl-live-score .player-main-block .nl-AR-position {
+        top: -4.5%;
+        left: 54%; } }
   .nl-create-team .player-main-block .nl-FLEXR-position,
   .nl-live-score .player-main-block .nl-FLEXR-position {
-    top: 78%;
+    top: 77%;
     right: 2%; }
-  .nl-create-team .player-main-block .nl-MM-position,
-  .nl-live-score .player-main-block .nl-MM-position {
-    bottom: 56%;
-    left: 40%; }
   .nl-create-team .player-main-block .nl-ML-position,
   .nl-live-score .player-main-block .nl-ML-position {
     top: 18%;
     left: 12%; }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-create-team .player-main-block .nl-ML-position,
+      .nl-live-score .player-main-block .nl-ML-position {
+        top: 21%;
+        left: 12%; } }
+    @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+      .nl-create-team .player-main-block .nl-ML-position,
+      .nl-live-score .player-main-block .nl-ML-position {
+        top: 21%;
+        left: 18%; } }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+      .nl-create-team .player-main-block .nl-ML-position,
+      .nl-live-score .player-main-block .nl-ML-position {
+        top: 21%;
+        left: 18%; } }
+    @media (min-width: 1681px) {
+      .nl-create-team .player-main-block .nl-ML-position,
+      .nl-live-score .player-main-block .nl-ML-position {
+        top: 21%;
+        left: 18%; } }
   .nl-create-team .player-main-block .nl-MR-position,
   .nl-live-score .player-main-block .nl-MR-position {
     top: 18%;
     right: 12%; }
-  .nl-create-team .player-main-block .nl-AR-position,
-  .nl-live-score .player-main-block .nl-AR-position {
-    top: -3.5%;
-    left: 56%; }
-  @media (max-width: 1425px) and (min-width: 1200px) {
-    .nl-create-team .player-main-block .nl-FLEXR-position,
-    .nl-live-score .player-main-block .nl-FLEXR-position {
-      top: 76%;
-      right: 2%; }
-    .nl-create-team .player-main-block .nl-GK-position,
-    .nl-live-score .player-main-block .nl-GK-position {
-      bottom: 7.5%; } }
-  @media (min-width: 1425px) {
-    .nl-create-team .player-main-block .nl-GK-position,
-    .nl-live-score .player-main-block .nl-GK-position {
-      bottom: 9.5%;
-      left: 43%; } }
-  @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .nl-create-team .player-main-block .nl-FLEXR-position,
-    .nl-live-score .player-main-block .nl-FLEXR-position {
-      top: 74%;
-      right: 2%; }
-    .nl-create-team .player-main-block .nl-AR-position,
-    .nl-live-score .player-main-block .nl-AR-position {
-      top: -3.5%;
-      left: 53%; }
-    .nl-create-team .player-main-block .nl-DR-position,
-    .nl-live-score .player-main-block .nl-DR-position {
-      right: 11%; }
-    .nl-create-team .player-main-block .nl-DL-position,
-    .nl-live-score .player-main-block .nl-DL-position {
-      left: 11%; } }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-create-team .player-main-block .nl-MR-position,
+      .nl-live-score .player-main-block .nl-MR-position {
+        top: 21%;
+        right: 12%; } }
+    @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+      .nl-create-team .player-main-block .nl-MR-position,
+      .nl-live-score .player-main-block .nl-MR-position {
+        top: 21%;
+        right: 18%; } }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+      .nl-create-team .player-main-block .nl-MR-position,
+      .nl-live-score .player-main-block .nl-MR-position {
+        top: 21%;
+        right: 18%; } }
+    @media (min-width: 1681px) {
+      .nl-create-team .player-main-block .nl-MR-position,
+      .nl-live-score .player-main-block .nl-MR-position {
+        top: 21%;
+        right: 18%; } }
   .nl-create-team .player-main-block.football,
   .nl-live-score .player-main-block.football {
     min-height: 509px;
