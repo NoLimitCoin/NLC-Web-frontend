@@ -25,6 +25,12 @@ section .container-fluid {
   max-width: 2000px;
 }
 
+
+
+.nav-tabs .nav-link {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
 .orange {
   color: #df920b;
 }
@@ -32,6 +38,12 @@ section .container-fluid {
 .btn.btn-primary {
   font-weight: 600;
 }
+
+
+
+
+
+
 
 .nl-m-r-15{
   margin-right: calculateRem(15px);

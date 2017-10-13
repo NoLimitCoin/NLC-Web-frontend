@@ -9115,6 +9115,9 @@ body {
 section .container-fluid {
   max-width: 2000px; }
 
+.nav-tabs .nav-link {
+  border-radius: 0.5rem 0.5rem 0 0; }
+
 .orange {
   color: #df920b; }
 
@@ -9934,7 +9937,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10051,7 +10054,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10604,13 +10607,24 @@ p {
   /* kaspers update are above here */ }
   .homepage .menu-item.top-5 .number p {
     font-size: 18px;
-    line-height: 1.1; }
-    @media (min-width: 1681px) {
+    line-height: 1.1rem; }
+    @media (max-width: 991px) {
       .homepage .menu-item.top-5 .number p {
-        line-height: 1.3; } }
-    @media (min-width: 1681px) {
+        line-height: 1.5rem; } }
+    @media (min-width: 992px) {
       .homepage .menu-item.top-5 .number p {
-        line-height: 1.3; } }
+        line-height: 1.3rem; } }
+    @media (min-width: 1200px) {
+      .homepage .menu-item.top-5 .number p {
+        line-height: 1.1rem; } }
+    @media (min-width: 1680px) and (max-width: 1850px) {
+      .homepage .menu-item.top-5 .number p {
+        line-height: 1.35rem;
+        font-size: 21px; } }
+    @media (min-width: 1850px) {
+      .homepage .menu-item.top-5 .number p {
+        line-height: 1.35rem;
+        font-size: 21px; } }
   .homepage .menu-item.top-5 .number {
     font-size: 18px; }
   .homepage .nl-create-team .player-main-block.football .nl-LRB-position {
@@ -10964,7 +10978,7 @@ p {
       display: inline-block;
       margin-top: -3px;
       color: #ffffff;
-      border-radius: 0.325rem 0 0 0.325rem; }
+      border-radius: 0.125rem 0 0 0.125rem; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .menu-item .number {
           top: 58px;
@@ -11003,7 +11017,7 @@ p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      border-radius: 0.325rem; }
+      border-radius: 0.25rem; }
       .homepage .menu-item .player-thumbnail-name p {
         padding: 2px 5px 5px 15px; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -11046,7 +11060,7 @@ p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      border-radius: 0.325rem; }
+      border-radius: 0.25rem; }
       .homepage .menu-item .manager-thumbnail-name p {
         padding: 2px 5px 5px 15px; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -11185,7 +11199,7 @@ p {
     width: 100%;
     text-transform: uppercase;
     height: 40px;
-    border-radius: 0.625rem; }
+    border-radius: 0.5rem; }
     @media (max-width: 991px) {
       .homepage .manager-image-inner {
         width: 100%;
@@ -11257,7 +11271,7 @@ p {
       height: 40px;
       padding: 0;
       margin: 0;
-      border-radius: 0.625rem 0 0 0.625rem; }
+      border-radius: 0.5rem 0 0 0.5rem; }
       @media only screen and (max-width: 575px) {
         .homepage .manager-image-inner .number {
           width: 50px;
@@ -11308,7 +11322,7 @@ p {
       /* Old browsers */
       background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
       background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
-      border-radius: 0.625rem 0 0 0.625rem; }
+      border-radius: 0.325rem 0 0 0.325rem; }
     .homepage .player-image-inner .name {
       position: absolute;
       top: 4px;
@@ -11376,7 +11390,7 @@ p {
       height: 40px;
       padding: 0;
       margin: 0;
-      border-radius: 0.625rem 0 0 0.625rem; }
+      border-radius: 0.5rem 0 0 0.5rem; }
       @media only screen and (max-width: 575px) {
         .homepage .player-image-inner .number {
           width: 35px;
@@ -11629,9 +11643,12 @@ p {
         line-height: 1.1rem; } }
     .mobile-menu p.rank-manager-top5, .mobile-menu p.rank-player-top5 {
       padding-top: 10px;
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 600;
       line-height: 1.3rem; }
+      @media only screen and (max-width: 575px) {
+        .mobile-menu p.rank-manager-top5, .mobile-menu p.rank-player-top5 {
+          font-size: 20px; } }
     .mobile-menu p.name-top5 {
       line-height: 1.2rem; }
   .mobile-menu.dropdown {
@@ -13585,7 +13602,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13841,7 +13858,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -15446,7 +15463,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
