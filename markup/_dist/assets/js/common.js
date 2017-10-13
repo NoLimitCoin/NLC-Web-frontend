@@ -123,12 +123,17 @@ $(function () {
                 setWidth: true
             });
 
-
+            $(".nl-table-horizontal-scroll").mCustomScrollbar({
+                theme: "nl-theme",
+                setWidth: true,
+                axis:"x"
+            });
 
         } else {
             $(".nl-table-scroll").mCustomScrollbar("destroy");
             $(".nl-table-scroll2").mCustomScrollbar("destroy");
             $(".nl-table-scroll3").mCustomScrollbar("destroy");
+            $(".nl-table-horizontal-scroll").mCustomScrollbar("destroy");
         }
 
 
