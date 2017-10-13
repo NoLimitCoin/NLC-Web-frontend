@@ -33,37 +33,41 @@ h5.hidden-xxs.subtitle TOP 5
 				div.modal-menu(role='presentation')
 					a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#week5') Week 5
 
-
 div.row
 	button.mobile-menu.dropdown(type='button', data-toggle='modal', data-target='#weekModal') Choose Week
 	div.mobile-menu.active(data-target="#carouselTop5Managers" data-slide-to="0")
 		div.number
-			p.rank-manager-top5 1
-		p.name-top5 Matt Ryan1
+			p.rank-player-top5.nr1 1
+		div.name-fix
+			p.name-top5 Matt Ryan1
 div.row
 	div.mobile-menu.active(data-target="#carouselTop5Managers" data-slide-to="1")                
 		div.number
-			p.rank-manager-top5 2
-		p.name-top5 Matt Ryan2
+			p.rank-player-top5 2
+		div.name-fix
+			p.name-top5 Matt Ryan1
 	div.mobile-menu.active(data-target="#carouselTop5Managers" data-slide-to="2")                
 		div.number
-			p.rank-manager-top5 3
-		p.name-top5 Matt Ryan3
+			p.rank-player-top5 3
+		div.name-fix
+			p.name-top5 Matt Ryan1
 div.row
 	div.mobile-menu.active(data-target="#carouselTop5Managers" data-slide-to="3")                
 		div.number
-			p.rank-manager-top5 4
-		p.name-top5 Matt Ryan4
+			p.rank-player-top5 4
+		div.name-fix
+			p.name-top5 Matt Ryan1
 	div.mobile-menu.active(data-target="#carouselTop5Managers" data-slide-to="4")                
 		div.number
-			p.rank-manager-top5 5
-		p.name-top5 Matt Ryan5
+			p.rank-player-top5 5
+		div.name-fix
+			p.name-top5 Matt Ryan1
 
 div.tab-content(id="top5-manager-content")
 	div(role='tabpanel' class='tab-pane active top-level-panel2' id='week3')
 		div.content
 			div.row
-				div.col-12.col-lg-12.offset-lg-0
+				div.col-12.col-lg-12.offset-lg-0.no-padding
 					div#carouselTop5Managers.carousel.slide(data-ride='carousel') 
 						ul.nav.menu(role="tablist")
 							li.nav-item

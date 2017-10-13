@@ -10822,10 +10822,12 @@ p {
   .homepage .t-fp {
     color: #e19708; }
   .homepage .week {
-    margin-top: 0; }
+    margin-top: 0;
+    padding: 0; }
     @media (max-width: 991px) {
       .homepage .week {
-        margin-top: 30px; } }
+        margin-top: 30px;
+        padding: 0 15px; } }
   .homepage button:focus {
     outline: none; }
   .homepage .container-wider {
@@ -11531,6 +11533,10 @@ p {
 #top5-manager-content img.helmet {
   height: 45px; }
 
+#top5-manager-content .nav {
+  padding-left: 0px;
+  margin-right: 0px; }
+
 @media (max-width: 767px) {
   #top5-manager-content .col-12.team-list-view {
     padding-left: 0;
@@ -11621,6 +11627,10 @@ p {
   display: inline-block;
   height: 40px;
   border-radius: 0.625rem; }
+  .mobile-menu .name-fix {
+    height: 20px;
+    display: inline-block;
+    padding-top: 5px; }
   .mobile-menu .number {
     display: inline-block;
     width: 40px;
@@ -11629,28 +11639,35 @@ p {
     /* Old browsers */
     background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
     background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
-    padding-top: 3px;
+    padding-top: 4px;
     border-radius: 0.625rem 0 0 0.625rem; }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .mobile-menu .number p {
-        line-height: 1.1rem; } }
   .mobile-menu p {
     display: inline-block;
     padding: 8px 0 0 15px;
-    line-height: 0.8rem; }
+    line-height: 0.8rem;
+    vertical-align: middle; }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
       .mobile-menu p {
         line-height: 1.1rem; } }
     .mobile-menu p.rank-manager-top5, .mobile-menu p.rank-player-top5 {
-      padding-top: 10px;
       font-size: 24px;
       font-weight: 600;
-      line-height: 1.3rem; }
+      line-height: 1.6rem; }
       @media only screen and (max-width: 575px) {
         .mobile-menu p.rank-manager-top5, .mobile-menu p.rank-player-top5 {
-          font-size: 20px; } }
+          font-size: 22px;
+          padding: 8px 0 0 13px; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .mobile-menu p.rank-manager-top5, .mobile-menu p.rank-player-top5 {
+          line-height: 1.1rem; } }
+      .mobile-menu p.rank-manager-top5.nr1, .mobile-menu p.rank-player-top5.nr1 {
+        padding-left: 16px; }
     .mobile-menu p.name-top5 {
+      padding: 5px 0 0 15px;
       line-height: 1.2rem; }
+      @media only screen and (max-width: 575px) {
+        .mobile-menu p.name-top5 {
+          padding-left: 5px; } }
   .mobile-menu.dropdown {
     background: #e89608;
     /* Old browsers */

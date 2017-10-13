@@ -909,9 +909,14 @@
   .week {
     margin-top: 0;
 
+    padding: 0;
+
     @include respond-to(allsmall) {
       margin-top: 30px;
+      padding: 0 15px;
     }
+
+
   }
 
   button:focus {
@@ -1972,6 +1977,12 @@
 }
 
 #top5-manager-content {
+
+  .nav {
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+
   @include respond-to (allmobile) {
     .col-12.team-list-view {
       padding-left: 0;
@@ -2103,45 +2114,68 @@
   height: 40px;
   border-radius: 0.625rem;
 
+  .name-fix {
+    height: 20px;
+    display: inline-block;
+    padding-top: 5px;
+  }
+
   .number {
     display: inline-block;
     width: 40px;
     height: 40px;
     background: #e89608; /* Old browsers */
     background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
-    padding-top: 3px;
+    padding-top: 4px;
     border-radius: 0.625rem 0 0 0.625rem;
-
-    p {
-
-      @include respond-to (wide-handhelds) {
-        line-height: 1.1rem;
-      }
-    }
+    // p {
+    //   line-height: 1.6rem;
+    //   @include respond-to (wide-handhelds) {
+    //     line-height: 1.1rem;
+    //   }
+    // }
   }
 
   p {
     display: inline-block;
     padding: 8px 0 0 15px;
     line-height: 0.8rem;
+    vertical-align: middle;
 
     @include respond-to (wide-handhelds) {
       line-height: 1.1rem;
     }
 
     &.rank-manager-top5, &.rank-player-top5 {
-      padding-top: 10px;
+      ///padding-top: 10px;
       font-size: 24px;
       font-weight: 600;
-      line-height: 1.3rem;
+      //line-height: 1.3rem;
 
       @include respond-to (handhelds) {
-        font-size: 20px;
+        font-size: 22px;
+        padding: 8px 0 0 13px;
       }
+
+      line-height: 1.6rem;
+      @include respond-to (wide-handhelds) {
+        line-height: 1.1rem;
+      }
+
+      &.nr1 {
+        padding-left: 16px;
+      }
+
     }
 
     &.name-top5 {
+      padding: 5px 0 0 15px;
       line-height: 1.2rem;
+
+      @include respond-to (handhelds) {
+        padding-left: 5px;
+      }
+
     }
   }
 
