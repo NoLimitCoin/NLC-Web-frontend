@@ -134,7 +134,7 @@
   .nl-desc-table  thead  tr  th {
 
 
-    &:not(:first-child), {
+    &:not(:first-child){
       text-align: center;
     }
   }

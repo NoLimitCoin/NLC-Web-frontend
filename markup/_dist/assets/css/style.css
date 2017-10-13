@@ -1641,6 +1641,9 @@ pre {
   font-size: 1.25rem;
   color: #607089; }
 
+.table-striped tbody tr td:last-child {
+  padding-right: 20px; }
+
 .table-striped tbody tr td.act {
   color: #1e813e; }
 
@@ -1651,7 +1654,6 @@ pre {
   color: #e58607; }
 
 .table-striped tbody tr td .nl-pl-social {
-  padding-right: 1.25rem;
   font-size: 20px;
   font-size: 1.25rem; }
   .table-striped tbody tr td .nl-pl-social .fa-youtube-play {
@@ -10712,6 +10714,8 @@ p {
   .homepage .nl-contests-table td:not(:first-child), .homepage .nl-contests-table th:not(:first-child) {
     text-align: center !important;
     padding: 0.35rem 0.35rem; }
+  .homepage .nl-contests-table td:not(:first-child):last-child {
+    padding-right: 20px; }
   .homepage .manager-section .table .t-playername {
     padding: 0rem 1rem; }
   .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
@@ -14130,6 +14134,9 @@ td:nth-child(4).homepage-list-view {
   width: 20%;
   text-align: center; }
 
+.nl-enter-contests .nl-contest-info-table .table-info4 tr td:last-child {
+  padding-right: 10px; }
+
 .nl-enter-contests .nl-contest-info-table .table-info3 th:nth-child(1) {
   width: 15%;
   text-align: center; }
@@ -14742,6 +14749,9 @@ td:nth-child(4).homepage-list-view {
   .table-current-contests .table th:nth-child(4),
   .table-current-contests .table td:nth-child(4) {
     width: 15%; }
+  .table-current-contests .table th:last-child,
+  .table-current-contests .table td:last-child {
+    padding-right: 20px; }
 
 /* contest-info-table
 ---------------------------------------- */
@@ -14870,12 +14880,17 @@ td:nth-child(4).homepage-list-view {
 
 .nl-live-score .table-current-contests .table td {
   padding: 0.25rem 0.25rem; }
+  .nl-live-score .table-current-contests .table td:last-child {
+    padding-right: 20px; }
 
 .nl-live-score .nl-contest-info-table .table-info4 td, .nl-live-score .nl-contest-info-table .table-info4 tr {
   padding: 0rem; }
 
 .nl-live-score .nl-contest-info-table .table-info4.contestants td, .nl-live-score .nl-contest-info-table .table-info4.contestants tr {
   padding: 0.5rem; }
+
+.nl-live-score .nl-contest-info-table .table-info4.contestants td:last-child {
+  padding-right: 20px; }
 
 .nl-live-score .nl-contest-info-table .table-info4 td:nth-child(1) {
   text-align: center; }
@@ -15208,10 +15223,18 @@ td:nth-child(4).homepage-list-view {
   .nl-live-score-contest-table .table-info4 th,
   .nl-live-score-contest-table .table-info4 td {
     font-size: 10px;
-    padding: 0rem; }
+    padding: 0; }
+  .nl-live-score-contest-table .table-info3 th:last-child,
+  .nl-live-score-contest-table .table-info4 th:last-child {
+    padding-right: 10px; }
+  .nl-live-score-contest-table .table-info3 td:last-child,
+  .nl-live-score-contest-table .table-info4 td:last-child {
+    padding-right: 10px; }
   .nl-live-score-contest-table .table-info4.contestants th,
   .nl-live-score-contest-table .table-info4.contestants td {
     padding: 0.5rem; }
+  .nl-live-score-contest-table .table-info4.contestants td:last-child {
+    padding-right: 10px; }
   .nl-live-score-contest-table .indicator {
     width: 0.5rem;
     height: 0.5rem;

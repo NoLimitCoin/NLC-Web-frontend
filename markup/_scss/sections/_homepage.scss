@@ -731,6 +731,10 @@
       padding: 0.35rem 0.35rem;
   }
 
+  .nl-contests-table td:not(:first-child):last-child{
+    padding-right: 20px;
+  }
+
   .manager-section .table .t-playername {
     padding: 0rem 1rem;
   }
