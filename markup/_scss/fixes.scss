@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+}
+
+.nl-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  main {
+    flex: 1 0 auto;
+    display: flex;
+  }
+  .nl-footer {
+    flex: 0 0 auto;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+  }
+
+}
+

@@ -1796,9 +1796,6 @@ pre {
   .form-control:-ms-input-placeholder {
     color: #061540;
     opacity: 1; }
-  .form-control::-ms-input-placeholder {
-    color: #061540;
-    opacity: 1; }
   .form-control::placeholder {
     color: #061540;
     opacity: 1; }
@@ -9934,7 +9931,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10051,7 +10048,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -13585,7 +13582,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13841,7 +13838,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -15446,7 +15443,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
