@@ -15493,7 +15493,7 @@ p.ads {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      padding-left: 4.375rem;
+      padding-left: 3.5rem;
       min-height: 2.875rem;
       margin-bottom: 1.5625rem;
       font-weight: 500; }
@@ -15505,17 +15505,29 @@ p.ads {
         font-weight: 700;
         -webkit-transition: all .3s;
         transition: all .3s;
-        width: 2.875rem;
-        height: 2.875rem;
+        width: 2rem;
+        height: 2rem;
         color: #fff;
         background: #e58707;
         border-radius: 1.4375rem;
         text-align: center;
-        line-height: 2.625rem;
+        line-height: 1.8rem;
         letter-spacing: 0;
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 0; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .nl-faq #accordion h5 a:before {
+            top: 7px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .nl-faq #accordion h5 a:before {
+            top: 8px; } }
+        @media (max-width: 767px) {
+          .nl-faq #accordion h5 a:before {
+            top: 7px; } }
+        @media only screen and (max-width: 575px) {
+          .nl-faq #accordion h5 a:before {
+            top: 6px; } }
       .nl-faq #accordion h5 a:not(.collapsed):before {
         content: '-'; }
     .nl-faq #accordion .card-block {
