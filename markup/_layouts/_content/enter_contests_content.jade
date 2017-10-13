@@ -303,4 +303,55 @@ section.nl-section.nl-players.nl-enter-contests.soccer
 						thead
 							tr
 								th 
-									button.btn.btn-primary.payout Payout
+									button.btn.btn-primary.payout(type='button', data-toggle='modal', data-target='#payoutModal') Payout
+
+#payoutModal.modal.fade(role='dialog' data-backdrop="static" data-keyboard="false")
+	div.row
+		div.col-4.offset-4
+			.modal-dialog
+				.modal-content
+					div.row
+						div.col-10.offset-1
+							h4.modal-title.orange
+								span Payout Structure
+						div.exit-button 
+							button.close(type='button', data-dismiss='modal') ×
+					.modal-body
+						div.row 
+							div.col-8.offset-2
+								div.row
+									div.col-1.payout-rank   
+										p 1.
+									div.col-6  
+										p.inline 100%
+										p.inline.orange of total
+									div.col-5   
+										p.inline 30000
+										p.inline.orange NLC2
+								div.row
+									div.col-1.payout-rank   
+										p 2.
+									div.col-6  
+										p.inline 80%
+										p.inline.orange of total
+									div.col-5   
+										p.inline 30000
+										p.inline.orange NLC2
+								div.row
+									div.col-1.payout-rank   
+										p 3.
+									div.col-6  
+										p.inline 60%
+										p.inline.orange of total
+									div.col-5   
+										p.inline 30000
+										p.inline.orange NLC2
+								div.row
+									div.col-1.payout-rank   
+										p 4.
+									div.col-6  
+										p.inline 30%
+										p.inline.orange of total
+									div.col-5   
+										p.inline 30000
+										p.inline.orange NLC2

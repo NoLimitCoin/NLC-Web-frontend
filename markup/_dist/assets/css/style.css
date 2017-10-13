@@ -9115,6 +9115,40 @@ body {
 section .container-fluid {
   max-width: 2000px; }
 
+.modal {
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center; }
+  .modal .inline {
+    display: inline-block; }
+  .modal .modal-dialog {
+    overflow: hidden; }
+  .modal .subtitle-modal {
+    font-style: italic;
+    font-weight: 700; }
+  .modal .exit-button {
+    position: absolute;
+    right: 10px;
+    top: 5px; }
+    .modal .exit-button button {
+      color: white; }
+      .modal .exit-button button.close {
+        font-size: 1.7rem; }
+  .modal .modal-title {
+    margin-bottom: 30px; }
+    .modal .modal-title span {
+      display: inline-block;
+      border-bottom: 3px solid white; }
+  .modal .modal-footer {
+    border: none; }
+  .modal .payout-rank {
+    text-align: left;
+    color: #eb9a0d;
+    font-weight: 800; }
+
+.modal-content .modal-header .close {
+  color: white; }
+
 .nav-tabs .nav-link {
   border-radius: 0.5rem 0.5rem 0 0; }
 
@@ -9937,7 +9971,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10054,7 +10088,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -13619,7 +13653,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -13875,7 +13909,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -15480,7 +15514,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
