@@ -29,7 +29,7 @@ html, body {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto; }
-  .nl-wrapper .contact-wrapper, .nl-wrapper .login-wrapper, .nl-wrapper .change-password-wrapper {
+  .nl-wrapper .contact-wrapper, .nl-wrapper .login-wrapper, .nl-wrapper .change-password-wrapper, .nl-wrapper .edit-profile-wrapper {
     width: 100%; }
 
 .change-password-wrapper {
@@ -92,6 +92,100 @@ html, body {
   border-bottom-right-radius: .3rem;
   border-bottom-left-radius: .3rem; }
   #changePasswordSection .block-footer button {
+    width: 11.125rem;
+    margin: 0 auto;
+    font-size: 11px; }
+
+.edit-profile-wrapper {
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 6rem 0; }
+  .edit-profile-wrapper .center-div {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .edit-profile-wrapper button.btn.btn-primary {
+    font-weight: 600; }
+  .edit-profile-wrapper .show-password {
+    font-size: 0.75rem; }
+  .edit-profile-wrapper button.btn.btn-primary {
+    font-size: 11px; }
+
+#editProfileSection .block-content {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#editProfileSection .block-header {
+  background-color: transparent;
+  color: #061540;
+  padding: 1rem;
+  position: relative; }
+  #editProfileSection .block-header h2 {
+    color: #061540; }
+
+#editProfileSection .block-header, #editProfileSection .block-footer {
+  border: none; }
+
+#editProfileSection .block-body, #editProfileSection .block-footer {
+  background-color: transparent; }
+
+#editProfileSection .block-body {
+  height: 100%;
+  padding: 1.5625rem 6.25rem 0; }
+  #editProfileSection .block-body label {
+    color: #061540; }
+  @media (max-width: 991px) {
+    #editProfileSection .block-body {
+      padding: 0.5rem 1.25rem 0; } }
+  #editProfileSection .block-body input, #editProfileSection .block-body select {
+    width: 100%;
+    border-top-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    height: 2.8125rem;
+    font-size: 0.75rem;
+    margin-bottom: 1.25rem; }
+    @media (max-width: 991px) {
+      #editProfileSection .block-body input, #editProfileSection .block-body select {
+        width: 100%; } }
+  #editProfileSection .block-body a {
+    text-decoration: underline;
+    color: #fb8700; }
+
+#editProfileSection .block-copy-link {
+  padding: 1.4375rem 1.5625rem 1rem;
+  background-color: transparent; }
+  #editProfileSection .block-copy-link .nl-copy-wrapper {
+    padding-left: 3.3125rem;
+    position: relative; }
+    #editProfileSection .block-copy-link .nl-copy-wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.75rem;
+      height: 1.6875rem; }
+    #editProfileSection .block-copy-link .nl-copy-wrapper p {
+      color: #061540;
+      font-size: 0.875rem; }
+
+#editProfileSection .block-checkbox input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.6875rem;
+  height: 1.625rem;
+  margin: 0; }
+
+#editProfileSection .block-checkbox span {
+  margin-left: 0.9375rem;
+  vertical-align: middle;
+  color: #061540; }
+
+#editProfileSection .block-footer {
+  padding: 1.4375rem 0;
+  border-bottom-right-radius: .3rem;
+  border-bottom-left-radius: .3rem; }
+  #editProfileSection .block-footer button {
     width: 11.125rem;
     margin: 0 auto;
     font-size: 11px; }
