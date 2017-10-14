@@ -15438,7 +15438,7 @@ td:nth-child(4).homepage-list-view {
     line-height: 1.2;
     font-weight: 500; }
   .nl-live-score-contest-table .rank__title {
-    padding: 0.5rem;
+    padding: 0.25rem;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1; }
@@ -15447,7 +15447,7 @@ td:nth-child(4).homepage-list-view {
       font-size: 12px;
       line-height: 1rem; }
   .nl-live-score-contest-table .rank__thumb {
-    padding: 0.5rem; }
+    padding: 0rem; }
     .nl-live-score-contest-table .rank__thumb img {
       max-width: 39px; }
   .nl-live-score-contest-table .table-info3 th,
