@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friends Page | NLC2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fixes.css">
+  </head>
+  <body>
+    <div class="nl-wrapper">
+      <!--include _partials/preloader.jade-->
+      <!--Navigation Fixed Block-->
+      <header class="nl-header">
+        <div class="nl-header--top">
+          <div class="container-fluid">
+            <div class="row align-items-start">
+              <div class="col-4 col-lg-2">
+                <div class="nl-logotype"><a href="index.html"><img src="assets/img/logotype.png" alt="NO Limit"></a></div>
+              </div>
+              <div class="col-1 col-lg-7">
+                <div class="nl-title">The worlds first crypto fantasy sports</div>
+              </div>
+              <div class="col-12 col-lg-3">
+                <div class="nl-button-login">
+                  <button type="button" data-toggle="modal" data-target="#loginModal" class="btn btn-primary nl-m-r-15">Login</button>
+                  <button type="button" data-toggle="modal" data-target="#registrationModal" class="btn">SIGN UP</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="nl-section friends-wrapper">
+          <div class="row center-div">
+            <div class="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
+            <div class="col-8 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <div id="friendsSection" tabindex="-1" role="dialog" aria-labelledby="loginSectionLabel" aria-hidden="true">
+                <div role="document" class="block-dialog"></div>
+                <div class="block-content">
+                  <div class="block-header">
+                    <h2 id="friendsSectionLabel" class="modal-title">FRIENDS</h2>
+                  </div>
+                  <div class="block-body">
+                    <form class="form-signin">
+                      <div class="input-group">
+                        <textarea placeholder="INVITE FRIENDS BY EMAIL. PASTE MULTIPLE EMAIL ADDRESSES SEPARATED BY COMMA" required="" autofocus="" rows="5" class="form-control"></textarea>
+                      </div>
+                      <div class="input-group">
+                        <textarea placeholder="ADD A MESSAGE" required="" autofocus="" rows="5" class="form-control"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="block-footer">
+                    <button type="submit" class="btn btn-primary btn-block">SEND</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
+          </div>
+        </section>
+      </main>
+      <!--Footer Block-->
+      <footer class="nl-footer">
+        <div class="nl-footer--button">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="nl-social-icon"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="btn btn-charity"><span>Charity<br>Projects</span></a></div>
+              <p><br />Copyright © 2017 No Limit Fantasy Sports, LLC All Rights Reserved Contest Rules, Terms and Conditions and Privacy Policy<br /></p>
+            </div>
+            <div class="col-lg-4 nl-tar">
+              <div class="input-group-btn"><a href="#" class="btn btn-footer">Helpdesk</a><a href="contact.html" class="btn btn-footer">Contact Us</a></div>
+              <div class="input-group-btn"><a href="faq.html" class="btn btn-footer">Faq</a><a href="terms_conditions.html" class="btn btn-footer">Terms & Conditions</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+  </body>
+</html>

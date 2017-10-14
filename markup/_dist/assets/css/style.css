@@ -15996,6 +15996,110 @@ p.ads {
 .nl-players .nl-desc-table thead tr th:nth-child(1) {
   text-align: center; }
 
+.friends-wrapper {
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 6rem 0; }
+  .friends-wrapper .center-div {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .friends-wrapper button.btn.btn-primary {
+    font-weight: 600; }
+  .friends-wrapper .show-password {
+    font-size: 0.75rem; }
+  .friends-wrapper button.btn.btn-primary {
+    font-size: 11px; }
+  .friends-wrapper .forget-password {
+    float: right;
+    color: #fb8700;
+    font-size: 0.75rem;
+    text-decoration: underline; }
+
+#friendsSection {
+  position: relative; }
+  #friendsSection .block-dialog {
+    min-height: 0; }
+  #friendsSection .block-content {
+    border-radius: 0.5rem; }
+  #friendsSection .block-header {
+    background-color: transparent;
+    color: #061540;
+    padding: 1rem;
+    position: relative; }
+    #friendsSection .block-header h2 {
+      margin: 0 auto;
+      font-size: 2rem;
+      text-align: center; }
+    #friendsSection .block-header .close {
+      background: url(../img/close_btn.png) no-repeat;
+      position: absolute;
+      top: 1.0rem;
+      right: 1.25rem;
+      height: 49px;
+      width: 49px;
+      opacity: 1;
+      outline: none; }
+      @media (max-width: 991px) {
+        #friendsSection .block-header .close {
+          top: 0.625rem;
+          right: 0.625rem; } }
+  #friendsSection .block-header, #friendsSection .block-footer {
+    border: none; }
+  #friendsSection .block-body {
+    background-color: transparent; }
+  #friendsSection .block-footer {
+    background-color: transparent; }
+  #friendsSection .block-body {
+    height: 100%;
+    padding: 0.5rem 6.25rem 0; }
+    @media (max-width: 991px) {
+      #friendsSection .block-body {
+        padding: 0.5rem 1.25rem 0; } }
+    #friendsSection .block-body input, #friendsSection .block-body textarea {
+      border-top-right-radius: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      border-bottom-right-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+      font-size: 0.75rem;
+      margin-bottom: 1.25rem; }
+      @media (max-width: 991px) {
+        #friendsSection .block-body input, #friendsSection .block-body textarea {
+          width: 100%; } }
+    #friendsSection .block-body .input-group {
+      position: relative; }
+    #friendsSection .block-body .show-password {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      right: 0.9375rem;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fb8700;
+      cursor: pointer;
+      text-transform: uppercase; }
+    #friendsSection .block-body a {
+      text-decoration: underline;
+      color: #fb8700; }
+  #friendsSection .block-footer {
+    padding: 0.625rem 0;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem; }
+    #friendsSection .block-footer button {
+      width: 11.125rem;
+      margin: 0 auto; }
+
+@media (min-width: 576px) {
+  .block-dialog {
+    max-width: 52.625rem; } }
+
+.block-backdrop.show {
+  opacity: 0.8;
+  background-color: #fff; }
+
 .mCS-nl-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #dfdfdf; }
 
