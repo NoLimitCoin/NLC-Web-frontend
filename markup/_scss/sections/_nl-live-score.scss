@@ -453,6 +453,28 @@
 // override to nl-create-team.scss
 .nl-live-score {
 
+	.nl-team-field {
+	    #create-helmet {
+
+	      #oval {
+	        position: absolute;
+	        top: 14px;
+	        z-index: 1;
+	        right: 54%;
+	        width: 35%;
+	        height: auto;
+	      }
+	      #letter {
+	        position: absolute;
+	        top: 16px;
+	        z-index: 2;
+	        right: 52px;
+	        width: 17%;
+	        height: auto;
+	      }
+	    }
+ 	}
+
 	.nl-team-list {
 		max-width: 27.25rem;
 	}
@@ -943,6 +965,26 @@
 ---------------------------------------- */
 .nl-live-score-contest-table {
 	padding: 0;
+
+	#create-helmet {
+
+      	#oval {
+	        position: absolute;
+		    top: 18px;
+		    z-index: 1;
+		    right: 33px;
+		    width: 6%;
+		    height: auto;
+	    }
+	    #letter {
+	        position: absolute;
+		    top: 19px;
+		    z-index: 2;
+		    right: 37px;
+		    width: 3%;
+		    height: auto;
+	    }
+    }
 
 	.nl-info-table-button {
 		min-height: 3rem;

@@ -51,7 +51,10 @@ mixin list-of-teams(times)
 						p Best team evah
 						p.italic Best manager evah
 					div.rank__thumb
-						img(src="assets/img/helmet-2", alt="")
+						#create-helmet.final-helmet(style='display: block;')
+							img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
+							img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
+							img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 				table.table.table-info3
 					thead
 						tr
@@ -347,7 +350,10 @@ section.nl-section.nl-players.nl-live-score
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-DEF-position(data-position="DEF")
-							img(src="assets/img/helmet-3" alt="logo")
+							#create-helmet.final-helmet(style='display: block;')
+								img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
+								img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
+								img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 							div.nl-player-block--data
 								p.not-playing PATRIOTS
 								p.data FP <span class="orange">12.67</span> 

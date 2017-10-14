@@ -1,5 +1,26 @@
 .nl-my-teams{
 
+  #create-helmet {
+
+    #oval {
+      position: absolute;
+      top: 21px;
+      z-index: 1;
+      right: 60px;
+      width: 7%;
+      height: auto;
+    }
+    #letter {
+      position: absolute;
+      top: 23px;
+      z-index: 2;
+      right: 67px;
+      width: 3%;
+      height: auto
+    }
+  }
+
+
   .nl-status-wrapper {
     margin: 0 auto;
   }

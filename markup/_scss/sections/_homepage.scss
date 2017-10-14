@@ -1,5 +1,50 @@
 /*general for homepage*/
 .nl-section.homepage.football-homepage {
+
+  .nl-team-list {
+     #create-helmet {
+
+      #oval {
+        position: absolute;
+        top: 22px;
+        z-index: 1;
+        right: 69px;
+        width: 7%;
+        height: auto;
+      }
+      #letter {
+        position: absolute;
+        top: 25px;
+        z-index: 2;
+        right: 78px;
+        width: 3%;
+        height: auto;
+      }
+    }
+  }
+
+  .nl-team-field {
+    #create-helmet {
+
+      #oval {
+        position: absolute;
+        top: 14px;
+        z-index: 1;
+        right: 54%;
+        width: 35%;
+        height: auto;
+      }
+      #letter {
+        position: absolute;
+        top: 16px;
+        z-index: 2;
+        right: 52px;
+        width: 17%;
+        height: auto;
+      }
+    }
+  }
+
   .player-info{ 
     h5 {
       margin-bottom: 15px;
@@ -1924,6 +1969,29 @@
 #top5-player-content,
 #top5-manager-content {
   
+  #create-helmet {
+    #helmet {
+      height: 42px;
+    }
+
+    #oval {
+      position: absolute;
+      top: 7px;
+      z-index: 1;
+      right: 50%;
+      width: 38%;
+      height: auto;
+    }
+    #letter {
+      position: absolute;
+      top: 8px;
+      z-index: 2;
+      right: 22px;
+      width: 17%;
+      height: auto;
+    }
+  }
+
   .no-padding {
     padding: 0;
   }

@@ -9389,6 +9389,69 @@ main {
 .component-header {
   vertical-align: middle; }
 
+/* Temp placement
+---------------------------------------- */
+.nl-create-helmet h2 {
+  font-size: 1.16rem;
+  text-align: center;
+  margin: 0; }
+
+.nl-create-helmet .pointer {
+  cursor: pointer; }
+
+.nl-create-helmet .helmet-space {
+  margin-bottom: 1rem; }
+
+.nl-create-helmet .col-sm-4 {
+  width: 33.33%; }
+
+.nl-create-helmet .col-sm-3 {
+  width: 25%; }
+
+.nl-create-helmet .letter {
+  margin: 0.60rem;
+  width: 30px;
+  float: left;
+  padding: 2px;
+  text-align: center; }
+
+.nl-create-helmet .final-helmet {
+  margin: 1rem; }
+
+.nl-create-helmet .select-oval {
+  position: absolute;
+  top: 22%;
+  z-index: 1;
+  left: 13%;
+  width: 30%; }
+
+.nl-create-helmet .select-letter {
+  position: absolute;
+  top: 24%;
+  z-index: 2;
+  left: 19%;
+  width: 14%; }
+
+@media (max-width: 991px) {
+  .nl-create-helmet .select-oval {
+    top: 17%;
+    left: 17%;
+    width: 30%; }
+  .nl-create-helmet .select-letter {
+    top: 18.5%;
+    left: 24%;
+    width: 13%; } }
+
+@media (max-width: 576px) {
+  .nl-create-helmet .select-oval {
+    top: 21%;
+    left: 17%;
+    width: 30%; }
+  .nl-create-helmet .select-letter {
+    top: 23.5%;
+    left: 24%;
+    width: 13%; } }
+
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: uppercase;
@@ -10249,6 +10312,38 @@ p {
   background-color: #fff; }
 
 /*general for homepage*/
+.nl-section.homepage.football-homepage .nl-team-list #create-helmet #oval {
+  position: absolute;
+  top: 22px;
+  z-index: 1;
+  right: 69px;
+  width: 7%;
+  height: auto; }
+
+.nl-section.homepage.football-homepage .nl-team-list #create-helmet #letter {
+  position: absolute;
+  top: 25px;
+  z-index: 2;
+  right: 78px;
+  width: 3%;
+  height: auto; }
+
+.nl-section.homepage.football-homepage .nl-team-field #create-helmet #oval {
+  position: absolute;
+  top: 14px;
+  z-index: 1;
+  right: 54%;
+  width: 35%;
+  height: auto; }
+
+.nl-section.homepage.football-homepage .nl-team-field #create-helmet #letter {
+  position: absolute;
+  top: 16px;
+  z-index: 2;
+  right: 52px;
+  width: 17%;
+  height: auto; }
+
 .nl-section.homepage.football-homepage .player-info h5 {
   margin-bottom: 15px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -11515,6 +11610,28 @@ p {
   .week h5.visible-xxs {
     font-weight: 700; }
 
+#top5-player-content #create-helmet #helmet,
+#top5-manager-content #create-helmet #helmet {
+  height: 42px; }
+
+#top5-player-content #create-helmet #oval,
+#top5-manager-content #create-helmet #oval {
+  position: absolute;
+  top: 7px;
+  z-index: 1;
+  right: 50%;
+  width: 38%;
+  height: auto; }
+
+#top5-player-content #create-helmet #letter,
+#top5-manager-content #create-helmet #letter {
+  position: absolute;
+  top: 8px;
+  z-index: 2;
+  right: 22px;
+  width: 17%;
+  height: auto; }
+
 #top5-player-content .no-padding,
 #top5-manager-content .no-padding {
   padding: 0; }
@@ -12660,6 +12777,20 @@ td:nth-child(4).homepage-list-view {
   color: #061540;
   padding-bottom: 3.125rem;
   padding-top: 1.875rem; }
+  .nl-my-teams #create-helmet #oval {
+    position: absolute;
+    top: 21px;
+    z-index: 1;
+    right: 60px;
+    width: 7%;
+    height: auto; }
+  .nl-my-teams #create-helmet #letter {
+    position: absolute;
+    top: 23px;
+    z-index: 2;
+    right: 67px;
+    width: 3%;
+    height: auto; }
   .nl-my-teams .nl-status-wrapper {
     margin: 0 auto; }
   .nl-my-teams .nl-status-wrapper ul {
@@ -14372,6 +14503,20 @@ td:nth-child(4).homepage-list-view {
     background: url(../img/football/nl-football-field.png) no-repeat 0 0;
     background-size: contain;
     background-size: 100% 100%; }
+    .nl-enter-contests .nl-team-field.football #create-helmet #oval {
+      position: absolute;
+      top: 14px;
+      z-index: 1;
+      right: 60px;
+      width: 27%;
+      height: auto; }
+    .nl-enter-contests .nl-team-field.football #create-helmet #letter {
+      position: absolute;
+      top: 16px;
+      z-index: 2;
+      right: 68px;
+      width: 13%;
+      height: auto; }
     .nl-enter-contests .nl-team-field.football .nl-player-block img {
       max-width: 115px; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -14886,6 +15031,22 @@ td:nth-child(4).homepage-list-view {
   .rank .leaders-list p {
     font-size: 11px; } }
 
+.nl-live-score .nl-team-field #create-helmet #oval {
+  position: absolute;
+  top: 14px;
+  z-index: 1;
+  right: 54%;
+  width: 35%;
+  height: auto; }
+
+.nl-live-score .nl-team-field #create-helmet #letter {
+  position: absolute;
+  top: 16px;
+  z-index: 2;
+  right: 52px;
+  width: 17%;
+  height: auto; }
+
 .nl-live-score .nl-team-list {
   max-width: 27.25rem; }
 
@@ -15234,6 +15395,20 @@ td:nth-child(4).homepage-list-view {
 ---------------------------------------- */
 .nl-live-score-contest-table {
   padding: 0; }
+  .nl-live-score-contest-table #create-helmet #oval {
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 33px;
+    width: 6%;
+    height: auto; }
+  .nl-live-score-contest-table #create-helmet #letter {
+    position: absolute;
+    top: 19px;
+    z-index: 2;
+    right: 37px;
+    width: 3%;
+    height: auto; }
   .nl-live-score-contest-table .nl-info-table-button {
     min-height: 3rem;
     text-align: center; }
