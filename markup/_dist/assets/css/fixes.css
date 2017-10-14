@@ -93,4 +93,5 @@ html, body {
   border-bottom-left-radius: .3rem; }
   #changePasswordSection .block-footer button {
     width: 11.125rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 11px; }
