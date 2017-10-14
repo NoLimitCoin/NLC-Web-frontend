@@ -9117,6 +9117,9 @@ body {
 section .container-fluid {
   max-width: 2000px; }
 
+.text-center {
+  text-align: center; }
+
 .modal {
   font-weight: 500;
   font-size: 17px;
@@ -10330,7 +10333,7 @@ p {
   top: 22px;
   z-index: 1;
   right: 69px;
-  width: 7%;
+  width: 6%;
   height: auto; }
 
 .nl-section.homepage.football-homepage .nl-team-list #create-helmet #letter {
@@ -10828,8 +10831,7 @@ p {
   height: 75px; }
 
 .homepage {
-  background: url(../img/stadion_full.jpg) bottom center no-repeat;
-  background-size: contain;
+  background: url(../img/stadion_full.jpg) top center no-repeat fixed;
   background-size: cover;
   background-position: bottom;
   padding: 6rem 0;
@@ -12878,7 +12880,7 @@ td:nth-child(4).homepage-list-view {
   text-align: center; }
 
 .nl-my-teams {
-  background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
+  background: url(../img/stadion_full.jpg) top center no-repeat fixed;
   background-size: cover;
   color: #061540;
   padding-bottom: 3.125rem;
@@ -12888,7 +12890,7 @@ td:nth-child(4).homepage-list-view {
     top: 21px;
     z-index: 1;
     right: 60px;
-    width: 7%;
+    width: 6%;
     height: auto; }
   .nl-my-teams #create-helmet #letter {
     position: absolute;
@@ -12917,6 +12919,7 @@ td:nth-child(4).homepage-list-view {
   .nl-my-teams .soccer.nl-section {
     padding: 2.5rem 3.25rem; }
   .nl-my-teams .soccer .nl-team-card.table-data-field {
+    background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
     padding: 1.625rem 0.625rem; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .nl-my-teams {
@@ -15137,6 +15140,48 @@ td:nth-child(4).homepage-list-view {
   .rank .leaders-list p {
     font-size: 11px; } }
 
+.nl-live-score .nl-status-wrapper {
+  margin: 0 auto; }
+
+.nl-live-score .nl-status-wrapper ul {
+  padding: 0.25rem 0.5rem;
+  font-weight: 400;
+  font-size: 13px; }
+  .nl-live-score .nl-status-wrapper ul .indicator {
+    width: 0.75rem;
+    height: 0.75rem; }
+
+.nl-live-score .nl-status-wrapper span.playing {
+  background: green; }
+
+.nl-live-score .nl-status-wrapper span.played {
+  background: #5fadcc; }
+
+.nl-live-score .nl-status-wrapper span.not-playing {
+  background: red; }
+
+.nl-live-score .nl-status-wrapper {
+  display: inline-block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#061540), to(#1f3658));
+  background: linear-gradient(to top, #061540, #1f3658);
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  font-weight: 300;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  border-radius: 0.625rem; }
+  .nl-live-score .nl-status-wrapper ul {
+    list-style-type: none;
+    margin: 0; }
+    .nl-live-score .nl-status-wrapper ul li {
+      display: inline-block;
+      text-transform: uppercase; }
+      .nl-live-score .nl-status-wrapper ul li span {
+        vertical-align: middle;
+        display: inline-block; }
+
 .nl-live-score .nl-team-field #create-helmet #oval {
   position: absolute;
   top: 14px;
@@ -15503,16 +15548,16 @@ td:nth-child(4).homepage-list-view {
   padding: 0; }
   .nl-live-score-contest-table #create-helmet #oval {
     position: absolute;
-    top: 18px;
+    top: 11px;
     z-index: 1;
-    right: 33px;
-    width: 6%;
+    right: 26px;
+    width: 5%;
     height: auto; }
   .nl-live-score-contest-table #create-helmet #letter {
     position: absolute;
-    top: 19px;
+    top: 11px;
     z-index: 2;
-    right: 37px;
+    right: 30px;
     width: 3%;
     height: auto; }
   .nl-live-score-contest-table .nl-info-table-button {

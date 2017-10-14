@@ -7,7 +7,7 @@
       top: 21px;
       z-index: 1;
       right: 60px;
-      width: 7%;
+      width: 6%;
       height: auto;
     }
     #letter {
@@ -56,10 +56,11 @@
   }
 
   .soccer .nl-team-card.table-data-field {
+    background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
     padding: 1.625rem 0.625rem;
   }
 
-  background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
+  background: url(../img/stadion_full.jpg) top center no-repeat fixed;
   background-size: cover;
   color: #061540;
   padding-bottom: calculateRem(50px);

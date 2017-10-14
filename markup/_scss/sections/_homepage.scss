@@ -9,7 +9,7 @@
         top: 22px;
         z-index: 1;
         right: 69px;
-        width: 7%;
+        width: 6%;
         height: auto;
       }
       #letter {
@@ -828,8 +828,8 @@
     text-align: left;
   }
 
-  background: url(../img/stadion_full.jpg) bottom center no-repeat;
-  background-size: contain;
+  background: url(../img/stadion_full.jpg) top center no-repeat fixed;
+  //background-size: contain;
   background-size: cover;
   background-position: bottom;
   padding: 6rem 0;
