@@ -29,7 +29,7 @@ html, body {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto; }
-  .nl-wrapper .contact-wrapper, .nl-wrapper .login-wrapper, .nl-wrapper .change-password-wrapper, .nl-wrapper .edit-profile-wrapper {
+  .nl-wrapper .contact-wrapper, .nl-wrapper .login-wrapper, .nl-wrapper .change-password-wrapper, .nl-wrapper .edit-profile-wrapper, .nl-wrapper .nl-my-contests {
     width: 100%; }
 
 .change-password-wrapper {

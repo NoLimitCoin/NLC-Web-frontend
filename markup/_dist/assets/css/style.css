@@ -15689,6 +15689,313 @@ p.ads {
   .nl-table-scroll2 {
     max-height: inherit; } }
 
+.nl-my-contests .nl-mob-table #accordion a .row:after {
+  right: 2.5rem; }
+
+.nl-my-contests {
+  background: url(../img/stadion_detail.jpg) center center no-repeat fixed;
+  background-size: cover;
+  background: url(../img/stadion_full.jpg) bottom center no-repeat fixed;
+  background-size: cover;
+  background-position: bottom;
+  color: #061540;
+  padding-bottom: 4rem;
+  padding-top: 1.875rem; }
+  .nl-my-contests .nl-table-scroll2 {
+    max-height: 40rem; }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-my-contests {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem; } }
+  @media (max-width: 991px) {
+    .nl-my-contests {
+      padding-bottom: 3.75rem; }
+      .nl-my-contests .nl-table-scroll2 {
+        max-height: 35rem; } }
+  .nl-my-contests img {
+    width: auto; }
+  .nl-my-contests .nl-players-filter-title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 0.625rem; }
+    @media (max-width: 991px) {
+      .nl-my-contests .nl-players-filter-title {
+        margin: 0.625rem 0 0.625rem; } }
+  @media (max-width: 767px) {
+    .nl-my-contests .nl-players-filter .btn-link img {
+      max-width: 4.375rem; } }
+  .nl-my-contests .nl-players-filter .btn-primary {
+    font-weight: 500; }
+  .nl-my-contests .nl-players-filter-caruseul {
+    margin-bottom: 0.3125rem; }
+  .nl-my-contests .pl-teams, .nl-my-contests .pl-flag {
+    position: relative;
+    padding: 0 1.875rem;
+    width: 100%; }
+    @media (max-width: 767px) {
+      .nl-my-contests .pl-teams, .nl-my-contests .pl-flag {
+        margin-bottom: 0; } }
+  .nl-my-contests .pl-teams {
+    margin-bottom: 0; }
+  .nl-my-contests .pl-flag {
+    padding: 0;
+    max-width: 350px; }
+    .nl-my-contests .pl-flag .owl-item {
+      line-height: 64px; }
+  .nl-my-contests .owl-item {
+    line-height: 64px; }
+    .nl-my-contests .owl-item a {
+      display: inline-block;
+      vertical-align: middle; }
+    .nl-my-contests .owl-item img {
+      width: inherit;
+      height: 45px; }
+  .nl-my-contests .owl-nav {
+    font-size: 40px;
+    font-size: 2.5rem; }
+  .nl-my-contests .owl-prev {
+    position: absolute;
+    top: 0.625rem;
+    left: 0; }
+    @media only screen and (max-width: 575px) {
+      .nl-my-contests .owl-prev {
+        top: 1.5625rem; } }
+  .nl-my-contests .owl-next {
+    position: absolute;
+    top: 0.625rem;
+    right: 0; }
+    @media only screen and (max-width: 575px) {
+      .nl-my-contests .owl-next {
+        top: 1.5625rem; } }
+  .nl-my-contests .nl-table-scroll {
+    max-height: 43.75rem; }
+    @media (max-width: 991px) {
+      .nl-my-contests .nl-table-scroll {
+        max-height: inherit; } }
+  .nl-my-contests .nl-desc-table tbody tr td:not(:first-child),
+  .nl-my-contests .nl-desc-table thead tr th:not(:first-child) {
+    text-align: center; }
+
+@media (max-width: 991px) {
+  .nl-desc-table {
+    display: none; } }
+
+.nl-mob-table.mob-table-striped .card:nth-of-type(odd) {
+  background-color: #fff; }
+
+@media (min-width: 992px) {
+  .nl-mob-table {
+    display: none; } }
+
+.nl-mob-table .nl-title {
+  background: #061540;
+  color: #e48706; }
+  .nl-mob-table .nl-title p {
+    margin: 0.25rem 1.25rem;
+    font-weight: 700; }
+    .nl-mob-table .nl-title p:first-child {
+      margin-top: 5px; }
+
+.nl-mob-table .nl-content {
+  background-color: #e1e2e4;
+  color: #061540; }
+  .nl-mob-table .nl-content p {
+    margin: 0.3125rem 1.25rem; }
+
+.nl-mob-table .card-block {
+  padding-bottom: 0.5rem; }
+
+.nl-mob-table #accordion a .row {
+  position: relative; }
+  .nl-mob-table #accordion a .row:after {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    content: '\f055';
+    font-size: 2rem;
+    font-weight: 700;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 2rem;
+    height: 2rem;
+    color: #e48706;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 1.875rem; }
+
+.nl-mob-table #accordion a:not(.collapsed) .row:after {
+  font-family: 'FontAwesome';
+  content: '\f056';
+  line-height: 1.9rem; }
+
+.nl-mob-table .avatar img {
+  max-width: 5rem;
+  max-height: 5rem;
+  border-radius: 50%; }
+
+.nl-mob-table .nl-pl-social {
+  font-size: 30px;
+  font-size: 1.875rem; }
+  .nl-mob-table .nl-pl-social .fa-youtube-play {
+    color: #bd3231;
+    margin-right: 1.25rem; }
+  .nl-mob-table .nl-pl-social .fa-twitter {
+    color: #35b4da;
+    margin-right: 1.25rem; }
+  .nl-mob-table .nl-pl-social .fa-facebook-square {
+    color: #4d73bb; }
+  @media (max-width: 991px) {
+    .nl-mob-table .nl-pl-social .fa {
+      font-size: 2.5rem; } }
+
+.nl-mob-table img {
+  max-width: 1.5625rem; }
+
+.nl-mob-table i {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.nl-my-contests-table {
+  background: -webkit-gradient(linear, left bottom, left top, from(#061540), to(#1f3658));
+  background: linear-gradient(to top, #061540, #1f3658);
+  border-radius: 0.625rem;
+  color: #fff;
+  -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  overflow: hidden; }
+  .nl-my-contests-table td, .nl-my-contests-table th {
+    padding: 0.25rem 0.25rem; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-my-contests-table td, .nl-my-contests-table th {
+        padding: 0.5rem 0.25rem; } }
+    .nl-my-contests-table td:first-child, .nl-my-contests-table th:first-child {
+      padding-left: 0.5rem; }
+  .nl-my-contests-table td:not(:first-child), .nl-my-contests-table .table th:not(:first-child) {
+    text-align: left; }
+  .nl-my-contests-table-data-field {
+    position: relative;
+    padding: 1.5625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media only screen and (max-width: 575px) {
+      .nl-my-contests-table-data-field {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  @media only screen and (max-width: 575px) {
+    .nl-my-contests-table {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  .nl-my-contests-table .nl-data--avatar {
+    overflow: hidden;
+    position: relative;
+    width: 6.875rem;
+    height: 6.875rem;
+    border-radius: 50%;
+    margin-right: 1.25rem; }
+    @media (max-width: 767px) {
+      .nl-my-contests-table .nl-data--avatar {
+        width: 3.75rem;
+        height: 3.75rem;
+        margin-top: 1.25rem; } }
+    .nl-my-contests-table .nl-data--avatar img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 100%;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 100%; }
+  .nl-my-contests-table .nl-data--text {
+    padding-top: 0.9375rem; }
+    .nl-my-contests-table .nl-data--text p {
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 15.63px;
+      font-size: 0.97688rem;
+      letter-spacing: 1px; }
+      .nl-my-contests-table .nl-data--text p.title {
+        font-weight: 700;
+        color: #e89708;
+        margin-bottom: 0.3125rem;
+        font-size: 19.54px;
+        font-size: 1.22125rem; }
+  @media (max-width: 767px) {
+    .nl-my-contests-table .nl-players-table-data-field {
+      height: 5rem; } }
+  .nl-my-contests-table .nl-players-search {
+    position: absolute;
+    min-width: 9.75rem;
+    max-width: 15rem;
+    bottom: -2.0625rem;
+    right: 0.1875rem; }
+    @media (max-width: 767px) {
+      .nl-my-contests-table .nl-players-search {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-top: 1rem;
+        width: 70%; } }
+    @media (max-width: 991px) {
+      .nl-my-contests-table .nl-players-search {
+        min-width: 12.5rem; } }
+    @media only screen and (max-width: 575px) {
+      .nl-my-contests-table .nl-players-search {
+        bottom: inherit;
+        top: 0.1875rem;
+        min-width: 12.5rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .nl-my-contests-table .nl-players-search {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-my-contests-table .nl-players-search {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem; } }
+    .nl-my-contests-table .nl-players-search .input-group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      width: 100%; }
+    .nl-my-contests-table .nl-players-search .form-control {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border-right: 0; }
+    .nl-my-contests-table .nl-players-search .input-group-btn {
+      position: relative;
+      font-size: 0;
+      white-space: nowrap; }
+      .nl-my-contests-table .nl-players-search .input-group-btn .btn-secondary {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: 0; }
+
+.nl-players .nl-players-table thead th {
+  padding: 0.5rem 0.25rem; }
+
+.nl-players .nl-desc-table thead tr th:nth-child(1) {
+  text-align: center; }
+
 .mCS-nl-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #dfdfdf; }
 
