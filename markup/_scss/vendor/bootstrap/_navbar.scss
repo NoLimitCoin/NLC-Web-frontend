@@ -127,6 +127,7 @@
       width: 8%;
       max-width: inherit;
       background: linear-gradient(to top, #e37506, #e89708);
+
       .nav-link {
 
         padding-left: 10vw;
@@ -178,6 +179,11 @@
       }
 
     }
+
+    &:nth-child(2) {
+      border-left: 2px solid #fff;
+    }
+
     &:nth-child(7){
       @include respond-to(wide-tablets){
         width: 15%;

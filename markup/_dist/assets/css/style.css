@@ -2997,6 +2997,8 @@ tbody.collapse.show {
             .navbar-nav li.nav-item:nth-child(1) .dropdown-item img {
               margin-left: 0;
               margin-right: 1.25rem; } }
+    .navbar-nav li.nav-item:nth-child(2) {
+      border-left: 2px solid #fff; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .navbar-nav li.nav-item:nth-child(7) {
         width: 15%; } }
@@ -9538,6 +9540,10 @@ p {
   color: #edeeee;
   background: #061540;
   min-height: 3.5rem; }
+  .nl-header .btn-lg {
+    font-size: 1.8rem;
+    margin-top: 19px;
+    padding: 10px 25px; }
   .nl-header button {
     font-weight: 600; }
   .nl-header .orange-bar {
@@ -9583,10 +9589,15 @@ p {
         display: none; } }
   .nl-header .nl-button-login {
     text-align: right; }
-  .nl-header--slide .nl-slide {
-    background: url(../img/nl-slide-img3.jpg) center center no-repeat;
+  .nl-header--slide .nl-slide-1 {
+    background: url(../img/stadion_full_big.jpg) bottom center no-repeat; }
+  .nl-header--slide .nl-slide-2 {
+    background: url(../img/nl-slide-img.jpg) bottom center no-repeat; }
+  .nl-header--slide .nl-slide-3 {
+    background: url(../img/soccer-background.jpg) bottom center no-repeat; }
+  .nl-header--slide .nl-slides {
     background-size: cover;
-    min-height: 42.8125rem;
+    min-height: 31.25rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9596,23 +9607,25 @@ p {
     text-align: center;
     letter-spacing: 0.3125rem; }
     @media (min-width: 1681px) {
-      .nl-header--slide .nl-slide {
-        min-height: 50rem; } }
+      .nl-header--slide .nl-slides {
+        min-height: 37.5rem; } }
     @media (max-width: 991px) {
-      .nl-header--slide .nl-slide {
+      .nl-header--slide .nl-slides {
         min-height: 31.25rem;
         padding-bottom: 3.75rem;
         padding-top: 3.125rem;
         background-position: center top; } }
     @media (max-width: 767px) {
-      .nl-header--slide .nl-slide {
+      .nl-header--slide .nl-slides {
         min-height: inherit;
         padding-bottom: 5rem;
         padding-top: 4.375rem;
         background-position: center top; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .nl-header--slide .nl-slide {
+      .nl-header--slide .nl-slides {
         min-height: 25rem; } }
+    .nl-header--slide .nl-slides .btn-lg {
+      font-size: 1.8rem; }
   .nl-header--slide h1, .nl-header--slide h2 {
     font-size: 86px;
     font-size: 5.375rem;
@@ -9620,7 +9633,7 @@ p {
     text-transform: uppercase;
     font-weight: 700;
     margin: 0;
-    text-shadow: 1px 1px 2px black; }
+    text-shadow: 3px 2px 1px black; }
     @media only screen and (min-width: 1201px) and (max-width: 1366px) {
       .nl-header--slide h1, .nl-header--slide h2 {
         font-size: 72px;
@@ -9650,7 +9663,7 @@ p {
     justify-content: center;
     width: 100%;
     position: absolute;
-    margin-bottom: 3.4375rem;
+    margin-bottom: 2.5rem;
     bottom: 0; }
     @media (max-width: 991px) {
       .nl-header--slide .owl-dots {
@@ -9660,7 +9673,7 @@ p {
       border-radius: 0.5625rem;
       background: #fff;
       border: 3px solid #fff;
-      margin: 0.375rem; }
+      margin: 0.375rem 1.1rem; }
       .nl-header--slide .owl-dots .owl-dot.active {
         background: #ff9f2f; }
 
@@ -10602,21 +10615,21 @@ p {
     top: 108px; }
     .nl-section.homepage .player-thumbnail-name .number p {
       padding: 0; }
-  .nl-section.homepage #top5-players-nav img {
+  .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
     max-height: 100px;
     width: auto;
     margin: 0 auto; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .nl-section.homepage #top5-players-nav img {
+      .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
         max-height: 55px; } }
     @media (min-width: 1200px) and (max-width: 1441px) {
-      .nl-section.homepage #top5-players-nav img {
+      .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
         max-height: 70px; } }
     @media only screen and (min-width: 1441px) and (max-width: 1680px) {
-      .nl-section.homepage #top5-players-nav img {
+      .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
         max-height: 80px; } }
     @media (min-width: 1681px) {
-      .nl-section.homepage #top5-players-nav img {
+      .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
         max-height: 100px; } }
   .nl-section.homepage #top5-managers-picture, .nl-section.homepage #top5-players-picture {
     margin: 0 auto; }
@@ -10628,17 +10641,42 @@ p {
       right: 0; }
       .nl-section.homepage #top5-managers-picture .points-in-bar p, .nl-section.homepage #top5-players-picture .points-in-bar p {
         font-size: 18px; }
-  .nl-section.homepage #top-manager, .nl-section.homepage #top-player {
+  .nl-section.homepage #top-player {
     max-height: 254px;
     margin: 0 auto;
     width: auto; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .nl-section.homepage #top-manager, .nl-section.homepage #top-player {
+      .nl-section.homepage #top-player {
         width: auto;
         height: 100%; } }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .nl-section.homepage #top-manager, .nl-section.homepage #top-player {
+      .nl-section.homepage #top-player {
         max-width: 240px; } }
+  .nl-section.homepage #top-manager {
+    max-height: 210px;
+    margin: 0 auto;
+    width: auto; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .nl-section.homepage #top-manager {
+        width: auto;
+        height: 100%; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-section.homepage #top-manager {
+        max-width: 212px; } }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-section.homepage #top-manager {
+        max-height: 221px; } }
+    @media (min-width: 1367px) {
+      .nl-section.homepage #top-manager {
+        max-height: 230px; } }
+  .nl-section.homepage .manager-image-inner {
+    bottom: 28px; }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-section.homepage .manager-image-inner {
+        bottom: 36px; } }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-section.homepage .manager-image-inner {
+        bottom: 36px; } }
   @media only screen and (max-width: 575px) {
     .nl-section.homepage .player-image-inner {
       right: 0px;
@@ -11214,7 +11252,8 @@ p {
       text-overflow: ellipsis;
       border-radius: 0.25rem; }
       .homepage .menu-item .player-thumbnail-name p {
-        padding: 2px 5px 5px 15px; }
+        padding: 2px 5px 5px 15px;
+        font-weight: 500; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .menu-item .player-thumbnail-name {
           font-size: 10px;
@@ -11257,7 +11296,8 @@ p {
       text-overflow: ellipsis;
       border-radius: 0.25rem; }
       .homepage .menu-item .manager-thumbnail-name p {
-        padding: 2px 5px 5px 15px; }
+        padding: 2px 5px 5px 15px;
+        font-weight: 500; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .menu-item .manager-thumbnail-name {
           font-size: 10px;
@@ -12186,12 +12226,14 @@ td:nth-child(4).homepage-list-view {
   .nl-start-winning h2 {
     font-size: 50px;
     font-size: 3.125rem;
-    line-height: 3.75rem; }
+    line-height: 3.75rem;
+    margin-bottom: 0; }
   .nl-start-winning .btn {
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin-top: 50px; }
 
 .nl-start-win-block {
-  margin-top: 6.125rem; }
+  margin-top: 5.625rem; }
   .nl-start-win-block:before {
     position: absolute;
     content: '1';

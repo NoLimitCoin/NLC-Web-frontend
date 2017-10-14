@@ -366,7 +366,7 @@
     }
   }
 
-  #top5-players-nav img {
+  #top5-players-nav img, #top5-managers-nav img {
     max-height: 100px;
     width: auto;
     margin: 0 auto;
@@ -406,7 +406,7 @@
     }
   }
 
-  #top-manager, #top-player {
+  #top-player {
      max-height: 254px;
      margin: 0 auto;
      width: auto;
@@ -418,6 +418,42 @@
 
     @include respond-to (wide-tablets) {
       max-width: 240px;
+    }
+  }
+
+  #top-manager {
+     max-height: 210px;
+     margin: 0 auto;
+     width: auto;
+
+    @include respond-to (tablets) {
+      width: auto;
+      height: 100%;
+    }
+
+    @include respond-to (wide-tablets) {
+      max-width: 212px;
+    }
+
+    @include respond-to (medium-display) {
+      max-height: 221px;
+    }
+
+    @media (min-width: 1367px) {
+      max-height: 230px;
+    }
+  }
+
+  .manager-image-inner {
+
+    bottom: 28px;
+
+    @include respond-to (medium-display) {
+      bottom: 36px;
+    }
+
+    @include respond-to (medium-display) {
+      bottom: 36px;
     }
   }
 
@@ -1332,6 +1368,7 @@
 
       p {
         padding: 2px 5px 5px 15px;
+        font-weight: 500;
       }
 
       @include respond-to(wide-tablets) {
@@ -1391,6 +1428,7 @@
 
       p {
         padding: 2px 5px 5px 15px;
+        font-weight: 500;
       }
 
       @include respond-to(wide-tablets) {

@@ -1,5 +1,11 @@
 .nl-header {
 
+  .btn-lg {
+    font-size: 1.8rem;
+    margin-top: 19px;
+    padding: 10px 25px;
+  }
+
   button {
     font-weight: 600;
   }
@@ -68,16 +74,34 @@
   }
 
   &--slide {
-    .nl-slide {
-      background: url(../img/nl-slide-img3.jpg) center center no-repeat;
+
+
+    .nl-slide-1 {
+      background: url(../img/stadion_full_big.jpg) bottom center no-repeat;
+    }
+
+    .nl-slide-2 {
+      background: url(../img/nl-slide-img.jpg) bottom center no-repeat;
+    }
+
+    .nl-slide-3 {
+      background: url(../img/soccer-background.jpg) bottom center no-repeat;
+    }
+
+    // .nl-slide-4 {
+    //   background: url(../img/football-background.jpg) bottom center no-repeat;
+    // }
+
+    .nl-slides {
+      //background: url(../img/stadion_full_big.jpg) bottom center no-repeat;
       background-size: cover;
-      min-height: calculateRem(685px);
+      min-height: calculateRem(500px);
       display: flex;
       align-items: center;
       text-align: center;
       letter-spacing: calculateRem(5px);
       @include respond-to(extra-large-display){
-        min-height: calculateRem(800px);
+        min-height: calculateRem(600px);
       }
       @include respond-to(allsmall){
         min-height: calculateRem(500px);
@@ -94,14 +118,20 @@
       @include respond-to(wide-handhelds){
         min-height: calculateRem(400px);
       }
+
+      .btn-lg {
+        font-size: 1.8rem;
+      }
     }
     h1, h2{
       @include fontSize(86px);
       @include lineHeight(103px);
+
       text-transform: uppercase;
       font-weight: 700;
       margin: 0;
-      text-shadow: 1px 1px 2px black;
+      text-shadow: 3px 2px 1px black;
+
       @include respond-to(medium-display){
         @include fontSize(72px);
         @include lineHeight(82px);
@@ -126,7 +156,7 @@
       justify-content: center;
       width: 100%;
       position: absolute;
-      margin-bottom: calculateRem(55px);
+      margin-bottom: calculateRem(40px);
       bottom: 0;
       @include respond-to(allsmall){
         margin-bottom: calculateRem(25px) ;
@@ -136,7 +166,7 @@
         border-radius: calculateRem(9px);
         background: #fff;
         border: 3px solid #fff;
-        margin: calculateRem(6px);
+        margin: calculateRem(6px) 1.1rem;
         &.active{
           background: #ff9f2f;
         }

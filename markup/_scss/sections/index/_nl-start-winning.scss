@@ -6,14 +6,16 @@
   h2{
     @include fontSize(50px);
     @include lineHeight(60px);
+    margin-bottom: 0;
   }
   .btn{
     letter-spacing: 2px;
+    margin-top: 50px;
   }
 }
 
 .nl-start-win-block{
-  margin-top: calculateRem(98px);
+  margin-top: calculateRem(90px);
 
   &:before{
     position: absolute;
