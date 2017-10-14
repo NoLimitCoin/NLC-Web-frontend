@@ -10597,6 +10597,70 @@ p {
 
 .nl-section.homepage {
   padding: 1.5rem 2.25rem; }
+  .nl-section.homepage .player-thumbnail-name .number {
+    left: 5px;
+    top: 108px; }
+    .nl-section.homepage .player-thumbnail-name .number p {
+      padding: 0; }
+  .nl-section.homepage #top5-players-nav img {
+    max-height: 100px;
+    width: auto;
+    margin: 0 auto; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-section.homepage #top5-players-nav img {
+        max-height: 55px; } }
+    @media (min-width: 1200px) and (max-width: 1441px) {
+      .nl-section.homepage #top5-players-nav img {
+        max-height: 70px; } }
+    @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+      .nl-section.homepage #top5-players-nav img {
+        max-height: 80px; } }
+    @media (min-width: 1681px) {
+      .nl-section.homepage #top5-players-nav img {
+        max-height: 100px; } }
+  .nl-section.homepage #top5-managers-picture, .nl-section.homepage #top5-players-picture {
+    margin: 0 auto; }
+    .nl-section.homepage #top5-managers-picture p, .nl-section.homepage #top5-players-picture p {
+      margin-bottom: 0; }
+    .nl-section.homepage #top5-managers-picture .points-in-bar, .nl-section.homepage #top5-players-picture .points-in-bar {
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .nl-section.homepage #top5-managers-picture .points-in-bar p, .nl-section.homepage #top5-players-picture .points-in-bar p {
+        font-size: 18px; }
+  .nl-section.homepage #top-manager, .nl-section.homepage #top-player {
+    max-height: 254px;
+    margin: 0 auto;
+    width: auto; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .nl-section.homepage #top-manager, .nl-section.homepage #top-player {
+        width: auto;
+        height: 100%; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-section.homepage #top-manager, .nl-section.homepage #top-player {
+        max-width: 240px; } }
+  @media only screen and (max-width: 575px) {
+    .nl-section.homepage .player-image-inner {
+      right: 0px;
+      width: 100%; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .nl-section.homepage .player-image-inner {
+      right: 0px;
+      width: 100%; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nl-section.homepage .player-image-inner {
+      width: 79%;
+      left: 44px; } }
+  .nl-section.homepage .player-info {
+    z-index: 2; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-section.homepage .player-info {
+        width: 31%;
+        line-height: 1.4rem; } }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-section.homepage .player-info {
+        width: 37%;
+        line-height: 1.4rem; } }
   @media (max-width: 767px) {
     .nl-section.homepage .name-top5 {
       font-size: 16px; } }
@@ -10726,7 +10790,7 @@ p {
   height: 75px; }
 
 .homepage {
-  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
+  background: url(../img/stadion_full.jpg) bottom center no-repeat;
   background-size: contain;
   background-size: cover;
   background-position: bottom;

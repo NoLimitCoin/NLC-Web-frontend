@@ -358,6 +358,101 @@
 
 .nl-section.homepage {
 
+  .player-thumbnail-name .number {
+    left: 5px;
+    top: 108px;
+    p {
+      padding: 0;
+    }
+  }
+
+  #top5-players-nav img {
+    max-height: 100px;
+    width: auto;
+    margin: 0 auto;
+
+    @include respond-to (wide-tablets) {
+      max-height: 55px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1441px) {
+      max-height: 70px;
+    }
+
+    @include respond-to (large-display) {
+      max-height: 80px;
+    }
+
+    @include respond-to (extra-large-display) {
+      max-height: 100px;
+    }
+  }
+
+  #top5-managers-picture, #top5-players-picture {
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .points-in-bar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  #top-manager, #top-player {
+     max-height: 254px;
+     margin: 0 auto;
+     width: auto;
+
+    @include respond-to (tablets) {
+      width: auto;
+      height: 100%;
+    }
+
+    @include respond-to (wide-tablets) {
+      max-width: 240px;
+    }
+  }
+
+  .player-image-inner {
+    @include respond-to (handhelds) {
+      right: 0px;
+      width: 100%;
+    }
+
+    @include respond-to (wide-handhelds) {
+      right: 0px;
+      width: 100%;
+    }
+
+    @include respond-to (tablets) {
+      width: 79%;
+      left: 44px;
+    }
+  }
+
+  .player-info {
+
+    z-index: 2;
+
+    @include respond-to (wide-tablets) {
+      width: 31%;
+      line-height: 1.4rem;
+    }
+
+    @include respond-to (medium-display) {
+      width: 37%;
+      line-height: 1.4rem;
+    }
+  }
+  
   .name-top5 {
 
     @include respond-to (allmobile) {
@@ -697,7 +792,7 @@
     text-align: left;
   }
 
-  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
+  background: url(../img/stadion_full.jpg) bottom center no-repeat;
   background-size: contain;
   background-size: cover;
   background-position: bottom;
