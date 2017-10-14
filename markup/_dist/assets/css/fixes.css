@@ -1,3 +1,11 @@
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p {@include fontSize(12px);}
+ *
+ */
 html, body {
   height: 100%; }
 
@@ -21,5 +29,68 @@ html, body {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto; }
-  .nl-wrapper .contact-wrapper, .nl-wrapper .login-wrapper {
+  .nl-wrapper .contact-wrapper, .nl-wrapper .login-wrapper, .nl-wrapper .change-password-wrapper {
     width: 100%; }
+
+.change-password-wrapper {
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 6rem 0; }
+  .change-password-wrapper .center-div {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .change-password-wrapper button.btn.btn-primary {
+    font-weight: 600; }
+  .change-password-wrapper .show-password {
+    font-size: 0.75rem; }
+  .change-password-wrapper button.btn.btn-primary {
+    font-size: 11px; }
+
+#changePasswordSection .block-content {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#changePasswordSection .block-header {
+  background-color: transparent;
+  color: #061540;
+  padding: 1rem;
+  position: relative; }
+  #changePasswordSection .block-header h2 {
+    color: #061540; }
+
+#changePasswordSection .block-header, #changePasswordSection .block-footer {
+  border: none; }
+
+#changePasswordSection .block-body, #changePasswordSection .block-footer {
+  background-color: transparent; }
+
+#changePasswordSection .block-body {
+  height: 100%;
+  padding: 1.5625rem 6.25rem 0; }
+  @media (max-width: 991px) {
+    #changePasswordSection .block-body {
+      padding: 0.5rem 1.25rem 0; } }
+  #changePasswordSection .block-body input {
+    width: 100%;
+    border-top-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    height: 2.8125rem;
+    font-size: 0.75rem;
+    margin-bottom: 1.25rem; }
+    @media (max-width: 991px) {
+      #changePasswordSection .block-body input {
+        width: 100%; } }
+  #changePasswordSection .block-body a {
+    text-decoration: underline;
+    color: #fb8700; }
+
+#changePasswordSection .block-footer {
+  padding: 1.4375rem 0;
+  border-bottom-right-radius: .3rem;
+  border-bottom-left-radius: .3rem; }
+  #changePasswordSection .block-footer button {
+    width: 11.125rem;
+    margin: 0 auto; }
