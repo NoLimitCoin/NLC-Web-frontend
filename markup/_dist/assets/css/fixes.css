@@ -21,5 +21,5 @@ html, body {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto; }
-  .nl-wrapper .contact-wrapper {
+  .nl-wrapper .contact-wrapper, .nl-wrapper .login-wrapper {
     width: 100%; }
