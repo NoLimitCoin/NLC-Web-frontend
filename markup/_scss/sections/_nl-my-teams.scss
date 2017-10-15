@@ -294,13 +294,26 @@
 
 // refers to table on the my teams page
 .nl-my-teams {
+
+  .smaller-padding-teams {
+    padding: 0 10px;
+  }
+
   .table {
+
+    .indicator {
+      margin: 0;
+    }
+
     th, td{
+
+      font-size: 12px;
+
       &:nth-child(1){
-        width: 10%;
+        width: 7%;
       }
       &:nth-child(2){
-        width: 30%;
+        width: 33%;
       }
       &:nth-child(3){
         width: 10%;

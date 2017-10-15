@@ -13147,20 +13147,24 @@ td:nth-child(4).homepage-list-view {
       width: 24%;
       text-align: left; }
 
-.nl-my-teams .table th:nth-child(1), .nl-my-teams .table td:nth-child(1) {
-  width: 10%; }
+.nl-my-teams .smaller-padding-teams {
+  padding: 0 10px; }
 
-.nl-my-teams .table th:nth-child(2), .nl-my-teams .table td:nth-child(2) {
-  width: 30%; }
+.nl-my-teams .table .indicator {
+  margin: 0; }
 
-.nl-my-teams .table th:nth-child(3), .nl-my-teams .table td:nth-child(3) {
-  width: 10%; }
-
-.nl-my-teams .table th:nth-child(4), .nl-my-teams .table td:nth-child(4) {
-  width: 10%; }
-
-.nl-my-teams .table th:nth-child(5), .nl-my-teams .table td:nth-child(5) {
-  width: 20%; }
+.nl-my-teams .table th, .nl-my-teams .table td {
+  font-size: 12px; }
+  .nl-my-teams .table th:nth-child(1), .nl-my-teams .table td:nth-child(1) {
+    width: 7%; }
+  .nl-my-teams .table th:nth-child(2), .nl-my-teams .table td:nth-child(2) {
+    width: 33%; }
+  .nl-my-teams .table th:nth-child(3), .nl-my-teams .table td:nth-child(3) {
+    width: 10%; }
+  .nl-my-teams .table th:nth-child(4), .nl-my-teams .table td:nth-child(4) {
+    width: 10%; }
+  .nl-my-teams .table th:nth-child(5), .nl-my-teams .table td:nth-child(5) {
+    width: 20%; }
 
 .nl-my-teams .more-teams-button {
   text-align: center; }
