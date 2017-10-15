@@ -545,7 +545,7 @@
   }
 
   #top-player {
-     max-height: 237px;
+     max-height: 225px;
      margin: 0 auto;
      width: auto;
 
@@ -559,7 +559,7 @@
     }
 
     @include respond-to (wide-tablets) {
-      max-width: 240px;
+      max-width: 262px;
     }
   }
 
@@ -803,14 +803,14 @@
 .homepage .nl-create-team .nl-team-field .soccer.player-main-block {
     
     img {
-      max-width: 55px;
+      max-width: 68px;
 
         @media (min-width: 1367px) and (max-width:1440px) {
-        max-width: 58px;
+        max-width: 72px;
       }
 
       @include respond-to (extra-large-display) {
-        max-width: 63px;
+        max-width: 68px;
       }
     }
 
@@ -818,7 +818,7 @@
     min-height: 344px;
 
     img {
-      max-width: 45px;
+      max-width: 53px;
     }
   }
 }

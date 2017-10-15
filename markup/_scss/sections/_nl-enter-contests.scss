@@ -276,9 +276,9 @@
     &.soccer {
       .nl-player-block{
         img{
-          max-width: 69px;
+          max-width: 77px;
            @include respond-to(wide-tablets){
-            max-width: 51px;
+            max-width: 61px;
           }
         }
       }

@@ -15,7 +15,10 @@ $(window).on('load', function () {
     $(".owl-carousel.main-carousel").owlCarousel({
         items: 1,
         loop: true,
-        dots: true
+        dots: true,
+        autoplay:true,
+        autoplayTimeout:3500,
+        autoplayHoverPause:true
     });
 
     $(document).ready(function () {

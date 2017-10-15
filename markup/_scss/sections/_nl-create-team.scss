@@ -43,11 +43,11 @@
 
   .nl-team-field .nl-player-block img {
   	@media (min-width: 1367px) and (max-width:1500px) {
-      max-width: 65px;
+      max-width: 72px;
     }
 
     @media (min-width: 1500px) {
-      max-width: 70px;
+      max-width: 83px;
     }
   }
 }
@@ -660,7 +660,7 @@
       min-height: 408px;
 
       img {
-        max-width: 50px;
+        max-width: 66px; 
       }
     }
 
@@ -678,6 +678,26 @@
 
       .nl-QB-position {
         top: 20%;
+      }
+    }
+  }
+
+  @include respond-to (medium-display){
+    .soccer.player-main-block {
+      //min-height: 408px;
+
+    img {
+      max-width: 70px; 
+      }
+    }
+  }
+
+  @include respond-to (wide-display){
+    .soccer.player-block {
+      //min-height: 408px;
+
+    img {
+      max-width: 75px; 
       }
     }
   }
