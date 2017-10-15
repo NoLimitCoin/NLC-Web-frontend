@@ -50,7 +50,7 @@
       margin-bottom: 15px;
 
       @include respond-to(tablets) {
-        line-height: 1.4rem;
+        line-height: 2rem;
       }
 
       @include respond-to(wide-tablets) {
@@ -99,6 +99,102 @@
 
 .nl-section.homepage.soccer {
 
+  #top-player {
+     max-height: 254px;
+     margin: 0 auto;
+     width: auto;
+
+     @include respond-to (handhelds) {
+      max-height: 188px;
+     }
+
+    @include respond-to (tablets) {
+      width: auto;
+      height: 100%;
+    }
+
+    @include respond-to (wide-tablets) {
+      max-width: 280px;
+      margin-top: 30px;
+    }
+
+    @include respond-to(medium-display) {
+      max-width: 320px;
+      margin-top: 32px;
+    }
+
+   @include respond-to(wide-display) {
+      max-width: 320px;
+      margin-top: 32px;
+    }
+
+    @include respond-to (large-display) {
+      max-width: 350px;
+      margin-top: 10px;
+    }
+
+    @include respond-to (extra-large-display) {
+      max-width: 350px;
+      margin-top: 10px;
+    }
+  }
+
+  .player-info{ 
+    h5 {
+      //margin-bottom: 15px;
+
+      @include respond-to(tablets) {
+        line-height: 2rem;
+      }
+
+      @include respond-to(wide-tablets) {
+        line-height: 2.5rem;
+      }
+
+      @include respond-to(medium-display) {
+        line-height: 2.5rem;
+      }
+
+     @include respond-to(wide-display) {
+        line-height: 2.5rem;
+      }
+
+      @include respond-to (large-display) {
+          font-size: 1.25rem;
+          line-height: 2.5rem;
+      }
+
+      @include respond-to (extra-large-display) {
+          font-size: 1.25rem;
+          line-height: 2.5rem;
+      }
+
+    }
+  }
+
+  #top-manager {
+     max-height: 240px;
+     margin-top: 50px;
+
+    @include respond-to (tablets) {
+      width: auto;
+      height: 100%;
+    }
+
+    @include respond-to (wide-tablets) {
+      margin-top: 32px;
+      max-width: 204px;
+    }
+
+    @include respond-to (medium-display) {
+      max-height: 221px;
+    }
+
+    @media (min-width: 1367px) {
+      max-height: 221px;
+    }
+  }
+
   #top5-manager-content img.helmet {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -118,7 +214,7 @@
 
   @include respond-to (tablets) {
     .manager-image, .player-image, .player-info {
-      height: 225px;
+      //height: 225px;
     }
   }
 
@@ -358,12 +454,54 @@
 
 .nl-section.homepage {
 
+  // TODO fix later for Raf
+  .points-in-bar {
+    display: none;
+  }
+
+  .player-info{ 
+    h5 {
+      margin-bottom: 15px;
+
+      @include respond-to(tablets) {
+        line-height: 2rem;
+      }
+
+      @include respond-to(wide-tablets) {
+        line-height: 1.65rem;
+      }
+
+      @include respond-to(medium-display) {
+        line-height: 1.65rem;
+      }
+
+     @include respond-to(wide-display) {
+        line-height: 1.65rem;
+      }
+
+      @include respond-to (large-display) {
+          font-size: 1.25rem;
+          line-height: 1.65rem;
+      }
+
+      @include respond-to (extra-large-display) {
+          font-size: 1.25rem;
+          line-height: 1.55rem;
+      }
+
+    }
+  }
+
   .player-thumbnail-name .number {
     left: 5px;
     top: 108px;
     p {
       padding: 0;
     }
+  }
+
+  #top5-players-nav {
+    overflow: hidden;
   }
 
   #top5-players-nav img, #top5-managers-nav img {
@@ -407,9 +545,13 @@
   }
 
   #top-player {
-     max-height: 254px;
+     max-height: 237px;
      margin: 0 auto;
      width: auto;
+
+     @include respond-to (handhelds) {
+      max-height: 188px;
+     }
 
     @include respond-to (tablets) {
       width: auto;
@@ -425,6 +567,7 @@
      max-height: 210px;
      margin: 0 auto;
      width: auto;
+     margin-top: 15px;
 
     @include respond-to (tablets) {
       width: auto;
@@ -440,7 +583,7 @@
     }
 
     @media (min-width: 1367px) {
-      max-height: 230px;
+      max-height: 221px;
     }
   }
 
@@ -448,16 +591,25 @@
 
     bottom: 28px;
 
-    @include respond-to (medium-display) {
-      bottom: 36px;
-    }
-
-    @include respond-to (medium-display) {
+    @include respond-to (allwider) {
       bottom: 36px;
     }
   }
 
   .player-image-inner {
+
+    // .number {
+    //   display: inline-block;
+    // }
+
+    // .number {
+    //   display: inline-block;
+    // }
+
+    // .points {
+    //   display: inline-block;
+    // }
+
     @include respond-to (handhelds) {
       right: 0px;
       width: 100%;
@@ -469,8 +621,8 @@
     }
 
     @include respond-to (tablets) {
-      width: 79%;
-      left: 44px;
+      width: 81%;
+      left: 49px;
     }
   }
 
@@ -515,8 +667,8 @@
     }
 
     @include respond-to (extra-large-display) {
-    top: 23%;
-    left: 25%;
+      top: 23%;
+      left: 25%;
     }
   }
 
@@ -1229,6 +1381,10 @@
 
       @include respond-to(allwide) {
         padding: 0 2px;
+        
+        .points-in-bar {
+          display: none;
+        }
       }
     }
 
@@ -1276,31 +1432,6 @@
       @include respond-to(large-display) {
         height: 80px;
       }
-    }
-
-    .manager-1 {
-      background: url(../img/about/person1.png) center center no-repeat;
-      background-size: contain;
-    }
-
-    .manager-2 {
-      background: url(../img/about/Oscar.jpg) center center no-repeat;
-      background-size: contain;
-    }
-
-    .manager-3 {
-      background: url(../img/about/person3.png) center center no-repeat;
-      background-size: contain;
-    }
-
-    .manager-4 {
-      background: url(../img/about/person4.png) center center no-repeat;
-      background-size: contain;
-    }
-
-    .manager-5 {
-      background: url(../img/about/person5.png) center center no-repeat;
-      background-size: contain;
     }
 
     .number {
@@ -1539,7 +1670,7 @@
   }
 
   .player-info {
-    width: 40%;
+    width: 34%;
     background: #0f254f;
     border: 1px solid #0f254f;
     border-radius: 10px 10px 10px 0; 
@@ -1793,7 +1924,7 @@
     width: 100%;
     text-transform: uppercase;
     height: 40px;
-    border-radius: 0.625rem 0 0 0.625rem;
+    border-radius: 0.625rem;
 
     @include respond-to(allmobile) {
       // width: calc(100% - 50px);
@@ -1825,25 +1956,25 @@
       }
 
       @include respond-to(wide-handhelds) {
-        top: 4px;
+        top: 2px;
         left: 55px;
       }
 
       @include respond-to(tablets) {
-        top: 6px;
+        top: 2px;
         left: 50px;
       }
 
       @include respond-to(wide-tablets) {
-        top: 4px;
+        top: 2px;
         left: 45px;
       }
       @include respond-to(medium-display) {
-        top: 4px;
+        top: 2px;
         left: 48px;
       }
       @media (min-width: 1366px) {
-        top: 4px;
+        top: 0px;
         left: 49px;
       }
 
@@ -1879,7 +2010,7 @@
 
     p {
       //display: inline-block;
-      padding: 5px 0 0 8px;
+      padding: 9px 0 0 8px;
       font-size: 15px;
 
       &.points {
@@ -1892,8 +2023,8 @@
           display: none;
         }
 
-        @media screen and (max-width: 365px) {
-          display: none;
+        @media screen and (max-width: 568px) {
+          //display: none;
         }
       }
 

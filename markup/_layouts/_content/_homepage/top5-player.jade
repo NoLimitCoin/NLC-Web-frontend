@@ -46,34 +46,34 @@ h5.hidden-xxs.subtitle TOP 5
 					a(data-dismiss='modal', role='menuitem', tabindex='-1', value='#TE') Tight Ends
 
 div.row
-	button.mobile-menu.dropdown(type='button', data-toggle='modal', data-target='#weekModal') Choose Position
+	button.mobile-menu.dropdown(type='button', data-toggle='modal', data-target='#playerModal') Choose Position
 	div.mobile-menu.active(data-target="#carouselTop5Players" data-slide-to="0")
 		div.number
 			p.rank-player-top5.nr1 1
 		div.name-fix
-			p.name-top5 Matt Ryan1
+			p.name-top5 R. Gronkowski
 div.row
 	div.mobile-menu.active(data-target="#carouselTop5Players" data-slide-to="1")                
 		div.number
 			p.rank-player-top5 2
 		div.name-fix
-			p.name-top5 Matt Ryan2
+			p.name-top5 O. Beckham JR.
 	div.mobile-menu.active(data-target="#carouselTop5Players" data-slide-to="2")                
 		div.number
 			p.rank-player-top5 3
 		div.name-fix
-			p.name-top5 Matt Ryan3
+			p.name-top5 M. Ryan
 div.row
 	div.mobile-menu.active(data-target="#carouselTop5Players" data-slide-to="3")                
 		div.number
 			p.rank-player-top5 4
 		div.name-fix
-			p.name-top5 Matt Ryan4
+			p.name-top5 A. Rodgers
 	div.mobile-menu.active(data-target="#carouselTop5Players" data-slide-to="4")                
 		div.number
 			p.rank-player-top5 5
 		div.name-fix
-			p.name-top5 Matt Ryan5
+			p.name-top5 D. Johnson
 
 div.tab-content(id="top5-player-content")
 	div(role='tabpanel' class='tab-pane active top-level-panel' id='RB')
@@ -91,47 +91,57 @@ div.tab-content(id="top5-player-content")
 											div.number
 												p 1
 											div.player-thumbnail-name
-												p MattRyan1
+												p grownkowski
+											div.points-in-bar
+												p.points 121 PTS
 							li.nav-item
 								a.active(href="" data-target="#carouselTop5Players" data-slide-to="1")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player1.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player2.png', style='display: block;')
 											div.number
 												p 2
 											div.player-thumbnail-name
-												p Matt Ryan2
+												p beckham JR
+											div.points-in-bar
+												p.points 121 PTS
 							li.nav-item
 								a.active(href="" data-target="#carouselTop5Players" data-slide-to="2")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player1.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player3.png', style='display: block;')
 											div.number
 												p 3
 											div.player-thumbnail-name
-												p Matt Ryan3
+												p Ryan
+											div.points-in-bar
+												p.points 121 PTS
 							li.nav-item
 								a.active(href="" data-target="#carouselTop5Players" data-slide-to="3")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player1.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player4.png', style='display: block;')
 											div.number
 												p 4
 											div.player-thumbnail-name
-												p Matt Ryan4
+												p Rodgers
+											div.points-in-bar
+												p.points 121 PTS
 							li.nav-item
 								a.active(href="" data-target="#carouselTop5Players" data-slide-to="4")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player1.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player5.png', style='display: block;')
 											div.number
 												p 5
 											div.player-thumbnail-name
-												p Matt Ryan5
+												p Johnson
+											div.points-in-bar
+												p.points 121 PTS
 						div.carousel-inner
 							div.carousel-item.active
 								div.tab-content
@@ -143,7 +153,7 @@ div.tab-content(id="top5-player-content")
 													div.number
 														p 1
 													div.name
-														p Matt Ryan 1
+														p Rob Grownkowski
 													div.points-in-bar
 														p.points 121 PTS 
 											div.player-info
@@ -160,12 +170,12 @@ div.tab-content(id="top5-player-content")
 									div#player1.tab-pane.active(role="tabpanel")
 										div.row.player
 											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player1.png', style='display: block;')
+												img#top-player(src='assets/img/player2.png', style='display: block;')
 												div.player-image-inner
 													div.number
 														p 2
 													div.name
-														p Kasper Aarts
+														p Odell Beckham JR.
 													p.points 121 PTS 
 											div.player-info
 												p FP points
@@ -181,12 +191,12 @@ div.tab-content(id="top5-player-content")
 									div#player1.tab-pane.active(role="tabpanel")
 										div.row.player
 											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player1.png', style='display: block;')
+												img#top-player(src='assets/img/player3.png', style='display: block;')
 												div.player-image-inner
 													div.number
 														p 3
 													div.name
-														p Dan NLC2
+														p Matt Ryan
 													p.points 121 PTS 
 											div.player-info
 												p FP points
@@ -202,12 +212,12 @@ div.tab-content(id="top5-player-content")
 									div#player1.tab-pane.active(role="tabpanel")
 										div.row.player
 											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player1.png', style='display: block;')
+												img#top-player(src='assets/img/player4.png', style='display: block;')
 												div.player-image-inner
 													div.number
 														p 4
 													div.name
-														p Anthony NLC2
+														p Aaron Rodgers
 													p.points 121 PTS 
 											div.player-info
 												p FP points
@@ -223,12 +233,12 @@ div.tab-content(id="top5-player-content")
 									div#player1.tab-pane.active(role="tabpanel")
 										div.row.player
 											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player1.png', style='display: block;')
+												img#top-player(src='assets/img/player5.png', style='display: block;')
 												div.player-image-inner
 													div.number
 														p 5
 													div.name
-														p XP NLC2
+														p David Johnson
 													p.points 121 PTS 
 											div.player-info
 												p FP points

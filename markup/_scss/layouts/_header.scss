@@ -1,5 +1,9 @@
 .nl-header {
 
+  .owl-carousel, .owl-stage-outer {
+    max-height: 35rem;
+  }
+
   .btn-lg {
     font-size: 1.8rem;
     margin-top: 19px;
@@ -75,45 +79,56 @@
 
   &--slide {
 
-
-    .nl-slide-1 {
+    .nl-slide-4 {
       background: url(../img/stadion_full_big.jpg) bottom center no-repeat;
     }
 
     .nl-slide-2 {
-      background: url(../img/nl-slide-img.jpg) bottom center no-repeat;
+      background: url(../img/jj-banner15-san-io.jpg) bottom center no-repeat;
+      //background-size: contain !important;
+      //min-height: 32.5rem !important;
+
+       h2 {
+          //margin-top: 50px;
+          //font-size: 65px;
+          line-height: 5rem;
+      }
     }
 
     .nl-slide-3 {
-      background: url(../img/soccer-background.jpg) bottom center no-repeat;
+      background: url(../img/soccer-background.jpg) center center no-repeat;
     }
 
-    // .nl-slide-4 {
-    //   background: url(../img/football-background.jpg) bottom center no-repeat;
-    // }
+    .nl-slide-1 {
+      background: url(../img/nl-slide-img3.jpg) top center no-repeat;
+    }
 
     .nl-slides {
+
+      min-height: 31rem;
+      //min-height: 30.5rem !important;
+
       //background: url(../img/stadion_full_big.jpg) bottom center no-repeat;
       background-size: cover;
-      min-height: calculateRem(500px);
+     // min-height: calculateRem(500px);
       display: flex;
       align-items: center;
       text-align: center;
       letter-spacing: calculateRem(5px);
       @include respond-to(extra-large-display){
-        min-height: calculateRem(600px);
+        //min-height: calculateRem(600px);
       }
       @include respond-to(allsmall){
-        min-height: calculateRem(500px);
-        padding-bottom: calculateRem(60px) ;
-        padding-top: calculateRem(50px);
-        background-position: center top;
+        //min-height: calculateRem(500px);
+        //padding-bottom: calculateRem(60px) ;
+        //padding-top: calculateRem(50px);
+        //background-position: center top;
       }
       @include respond-to(allmobile){
-        min-height: inherit;
-        padding-bottom: calculateRem(80px) ;
-        padding-top: calculateRem(70px);
-        background-position: center top;
+        //min-height: inherit;
+        //padding-bottom: calculateRem(80px) ;
+        //padding-top: calculateRem(70px);
+        //background-position: center top;
       }
       @include respond-to(wide-handhelds){
         min-height: calculateRem(400px);
