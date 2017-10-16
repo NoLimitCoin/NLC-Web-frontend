@@ -189,7 +189,7 @@
 	}
 
 	.nl-team-list-table td:first-child {
-		text-align: left;
+		text-align: center;
 	}
 
 	// .nl-my-teams .nl-team-list-table td:nth-child(1) {
@@ -411,12 +411,11 @@
 			text-align: center;
 
 			&:nth-child(1) {
-				width: 10%;
-				color: #e48706;
+				width: 7%;
 			  }
 
 			&:nth-child(2) {
-			 width: 39%;
+			 width: 42%;
 			 text-align: left;
 			}
 			&:nth-child(3) {

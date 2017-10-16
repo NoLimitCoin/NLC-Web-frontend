@@ -15030,7 +15030,7 @@ td:nth-child(4).homepage-list-view {
     margin: 0.25rem 0; }
 
 .nl-live-score.soccer .nl-team-list-table td:first-child {
-  text-align: left; }
+  text-align: center; }
 
 .nl-live-score.soccer .nl-team-list {
   max-width: 27.25rem; }
@@ -15177,13 +15177,12 @@ td:nth-child(4).homepage-list-view {
     .nl-contest-info-table .table-info4 td:nth-child(1),
     .nl-contest-info-table .table-info3 th:nth-child(1),
     .nl-contest-info-table .table-info3 td:nth-child(1) {
-      width: 10%;
-      color: #e48706; }
+      width: 7%; }
     .nl-contest-info-table .table-info4 th:nth-child(2),
     .nl-contest-info-table .table-info4 td:nth-child(2),
     .nl-contest-info-table .table-info3 th:nth-child(2),
     .nl-contest-info-table .table-info3 td:nth-child(2) {
-      width: 39%;
+      width: 42%;
       text-align: left; }
     .nl-contest-info-table .table-info4 th:nth-child(3),
     .nl-contest-info-table .table-info4 td:nth-child(3),
