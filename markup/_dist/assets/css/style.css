@@ -9543,8 +9543,17 @@ p {
   color: #edeeee;
   background: #061540;
   min-height: 3.5rem; }
+  .nl-header .buttons-index {
+    margin-left: 10px; }
   .nl-header .owl-carousel, .nl-header .owl-stage-outer {
-    max-height: 35rem; }
+    min-height: 35rem; }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .nl-header .owl-carousel, .nl-header .owl-stage-outer {
+        min-height: 25rem;
+        max-height: 28rem; } }
+    @media (min-width: 1681px) {
+      .nl-header .owl-carousel, .nl-header .owl-stage-outer {
+        min-height: 45rem; } }
   .nl-header .btn-lg {
     font-size: 1.8rem;
     margin-top: 19px;
@@ -9586,7 +9595,8 @@ p {
   .nl-header .nl-title {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 20px; }
+    font-size: 19px;
+    padding-top: 5px; }
     @media (max-width: 991px) {
       .nl-header .nl-title {
         text-align: center;
@@ -9594,25 +9604,21 @@ p {
         display: none; } }
   .nl-header .nl-button-login {
     text-align: right; }
-  .nl-header--slide h2 {
-    padding-top: 100px;
-    line-height: 2.5rem;
-    line-height: 3.9375rem;
-    font-size: 4.375rem; }
-  .nl-header--slide .nl-slide-6 {
-    background: url(../img/JC.jpg) center center no-repeat; }
+  .nl-header--slide .nl-slide-1 {
+    background: url(../img/nl-slide-img.jpg) bottom center no-repeat; }
+  .nl-header--slide .nl-slide-3 {
+    background: url(../img/soccer-background.jpg) bottom center no-repeat; }
   .nl-header--slide .nl-slide-5 {
     background: url(../img/JT-1.jpg) bottom center no-repeat; }
     @media (min-width: 1681px) {
       .nl-header--slide .nl-slide-5 {
-        background-position: top center;
-        background-position-y: -26px; } }
-  .nl-header--slide .nl-slide-3 {
-    background: url(../img/soccer-background.jpg) bottom center no-repeat; }
-  .nl-header--slide .nl-slide-1 {
-    background: url(../img/nl-slide-img.jpg) bottom center no-repeat; }
+        background-position: top center; } }
+  .nl-header--slide .nl-slide-6 {
+    background: url(../img/JC-1.jpg) left center no-repeat; }
+    @media (min-width: 1681px) {
+      .nl-header--slide .nl-slide-6 {
+        background: url(../img/JC-1-xl-v2.jpg) left center no-repeat; } }
   .nl-header--slide .nl-slides {
-    min-height: 31rem;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9622,19 +9628,74 @@ p {
     align-items: center;
     text-align: center;
     letter-spacing: 0.3125rem; }
-    .nl-header--slide .nl-slides .circle-JT h2 {
-      padding-top: 200px; }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .nl-header--slide .nl-slides {
-        min-height: 25rem; } }
+    .nl-header--slide .nl-slides h1, .nl-header--slide .nl-slides h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0;
+      text-shadow: 3px 2px 1px black; }
+    .nl-header--slide .nl-slides h2 {
+      padding-top: 100px;
+      line-height: 2.5rem;
+      line-height: 3.9375rem;
+      font-size: 4.375rem; }
+      @media only screen and (max-width: 575px) {
+        .nl-header--slide .nl-slides h2 {
+          padding-top: 150px;
+          line-height: 2.4375rem;
+          font-size: 2.375rem; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .nl-header--slide .nl-slides h2 {
+          font-size: 2.875rem;
+          line-height: 2.4375rem;
+          padding-top: 150px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .nl-header--slide .nl-slides h2 {
+          padding-top: 190px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .nl-header--slide .nl-slides h2 {
+          padding-top: 170px; } }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        .nl-header--slide .nl-slides h2 {
+          padding-top: 190px; } }
+      @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+        .nl-header--slide .nl-slides h2 {
+          padding-top: 210px; } }
+      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+        .nl-header--slide .nl-slides h2 {
+          padding-top: 210px; } }
+      @media (min-width: 1681px) {
+        .nl-header--slide .nl-slides h2 {
+          padding-top: 230px;
+          font-size: 5.875rem;
+          line-height: 5.9375rem; } }
     .nl-header--slide .nl-slides .btn-lg {
       font-size: 1.8rem;
       margin-bottom: 65px; }
-  .nl-header--slide h1, .nl-header--slide h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0;
-    text-shadow: 3px 2px 1px black; }
+      @media only screen and (max-width: 575px) {
+        .nl-header--slide .nl-slides .btn-lg {
+          font-size: 1.4rem;
+          margin-bottom: 105px;
+          margin-top: 10px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .nl-header--slide .nl-slides .btn-lg {
+          font-size: 1.9rem;
+          margin-bottom: 105px;
+          margin-top: 10px; } }
+      @media (min-width: 1200px) {
+        .nl-header--slide .nl-slides .btn-lg {
+          font-size: 2.25rem;
+          margin-bottom: 105px;
+          margin-top: 10px; } }
+      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+        .nl-header--slide .nl-slides .btn-lg {
+          font-size: 2.5rem;
+          margin-bottom: 105px;
+          margin-top: 10px; } }
+      @media (min-width: 1681px) {
+        .nl-header--slide .nl-slides .btn-lg {
+          font-size: 3.25rem;
+          margin-bottom: 105px;
+          margin-top: 10px; } }
   .nl-header--slide .owl-dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9648,12 +9709,37 @@ p {
     bottom: 0; }
     .nl-header--slide .owl-dots .owl-dot {
       padding: 0.375rem;
-      border-radius: 0.5625rem;
+      border-radius: 1rem;
       background: #fff;
       border: 3px solid #fff;
       margin: 0.375rem 1.1rem; }
+      @media (min-width: 1200px) {
+        .nl-header--slide .owl-dots .owl-dot {
+          padding: 0.525rem; } }
+      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+        .nl-header--slide .owl-dots .owl-dot {
+          border-radius: 1rem; } }
+      @media (min-width: 1681px) {
+        .nl-header--slide .owl-dots .owl-dot {
+          padding: 0.875rem;
+          border-radius: 1rem; } }
       .nl-header--slide .owl-dots .owl-dot.active {
         background: #ff9f2f; }
+  .nl-header .owl-carousel, .nl-header .owl-stage-outer, .nl-header .nl-slides {
+    min-height: 30rem;
+    max-height: 30rem; }
+    @media (min-width: 1681px) {
+      .nl-header .owl-carousel, .nl-header .owl-stage-outer, .nl-header .nl-slides {
+        min-height: 45rem;
+        max-height: 45rem; } }
+    @media only screen and (max-width: 575px) {
+      .nl-header .owl-carousel, .nl-header .owl-stage-outer, .nl-header .nl-slides {
+        min-height: 25rem;
+        max-height: 25rem; } }
+    @media (min-width: 2350px) {
+      .nl-header .owl-carousel, .nl-header .owl-stage-outer, .nl-header .nl-slides {
+        min-height: 55rem;
+        max-height: 55rem; } }
 
 .nl-header-log .navbar-nav {
   font-weight: 500; }
@@ -10025,7 +10111,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10142,7 +10228,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -13965,7 +14051,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14221,7 +14307,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -15912,7 +15998,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
