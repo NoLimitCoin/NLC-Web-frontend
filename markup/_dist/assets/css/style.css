@@ -13321,6 +13321,28 @@ td:nth-child(4).homepage-list-view {
   padding-right: 0.875rem;
   padding-bottom: 3.125rem;
   padding-top: 1.875rem; }
+  .nl-create-team .team-format {
+    display: inline-block;
+    font-style: italic; }
+  .nl-create-team .nl-players-table .nl-data--text {
+    padding-top: 0.375rem; }
+    .nl-create-team .nl-players-table .nl-data--text p.team-format {
+      font-size: 12px; }
+    .nl-create-team .nl-players-table .nl-data--text.nl-m-r-80 {
+      margin-right: 0rem; }
+  .nl-create-team .nl-players-table .nl-players-search {
+    bottom: -2.2225rem; }
+  .nl-create-team .nl-players-table .nl-data--avatar {
+    margin-top: 15px; }
+  .nl-create-team .nl-players-table-data-field {
+    padding: 0rem 1.5625rem 0.75rem 1.5625rem; }
+  .nl-create-team .nl-players-table .nl-data--text p.title {
+    margin-top: 10px; }
+  @media (max-width: 767px) {
+    .nl-create-team .nl-players-table .nl-players-table-data-field {
+      height: 7rem; }
+    .nl-create-team .nl-players-table .nl-data--text {
+      padding-top: 4.2375rem; } }
   .nl-create-team .nl-my-teams .table td {
     padding: 0rem; }
     @media only screen and (max-width: 575px) {

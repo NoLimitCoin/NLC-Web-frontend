@@ -1,10 +1,10 @@
 section.nl-section.nl-players.nl-create-team.soccer
     div.container-fluid
         div.row
-            div.col-md-8.offset-md-2.col-lg-12.col-xl-12.offset-lg-0.offset-xl-0
+            div.col-md-10.offset-md-1.col-lg-12.col-xl-12.offset-lg-0.offset-xl-0
                 h1 CREATE TEAM
         div.row.sports-filtering
-            div.col-md-8.offset-md-2.col-lg-12.col-xl-12.offset-lg-0.offset-xl-0
+            div.col-md-10.offset-md-1.col-lg-12.col-xl-12.offset-lg-0.offset-xl-0
                 div.nl-players-filter-title Filter by league:
                 div.nl-players-filter
                     div.row.align-items-center
@@ -81,17 +81,30 @@ section.nl-section.nl-players.nl-create-team.soccer
                             p teams france
 
         div.row
-            div.col-md-8.offset-md-2.col-lg-7.offset-lg-0.offset-xl-0.col-xl-7
+            div.col-md-10.offset-md-1.col-lg-7.offset-lg-0.offset-xl-0.col-xl-7
                 div.nl-players-table.nl-create-team-table
                     div.nl-players-table-data-field
                         div.nl-data--avatar.hidden-sm-down
                             <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco">
 
-                        div.nl-data--text.nl-m-r-80.hidden-sm-down
-                            p.title Cristiano Ronaldo
-                            p team : Real Madrid
-                            p position: A
-                            p salary: $89000
+                        div.nl-data--text.nl-m-r-80
+                            p.team-format.team-format-title Team format:
+                            p.orange.team-format.fw-700 A:
+                            p.team-format 2
+                            p.orange.team-format.fw-700 M:
+                            p.team-format 3
+                            p.orange.team-format.fw-700 D:
+                            p.team-format 3
+                            p.orange.team-format.fw-700 GK:
+                            p.team-format 1
+                            p.orange.team-format.fw-700 FLEX:
+                            p.team-format 2
+
+                            p.hidden-sm-down.title Christiano Ronaldo
+                            p.hidden-sm-down team : Real madrid
+                            p.hidden-sm-down position: A
+                            p.hidden-sm-down salary: $89000
+                            
                         div.nl-players-search
                             div.input-group
                                 input(type="text" class="form-control" placeholder="Search")
