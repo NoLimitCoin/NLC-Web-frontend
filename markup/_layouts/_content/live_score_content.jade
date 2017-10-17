@@ -4,13 +4,13 @@ mixin repeat(times)
 			div.matches__content
 				ul.matches__leaders-list
 					li
-						span <img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU">
-						span RMA
-						span 2
+						span <img src="assets/img/emblem/green-bay.png" alt="MU">
+						span GB
+						span 17
 					li
-						span <img src="http://localhost:3000/assets/img/emblem/FCB.png" alt="MU">
-						span FCB
-						span 1
+						span <img src="assets/img/emblem/patriots.png" alt="MU">
+						span NE
+						span 12
 			div.matches__result-header
 				span Wed 10:45
 
@@ -25,9 +25,9 @@ mixin current-table(times)
 mixin contest-info(times)
 	each i in new Array(times)
 		tr
-			td 1.
-			td Username xxx
-			td Score
+			td.orange 1.
+			td Username
+			td 93.6
 
 mixin team-field-table(times)
 	each i in new Array(times)
@@ -195,7 +195,7 @@ section.nl-section.nl-players.nl-live-score
 					table.table.table-info1
 						tbody
 							tr
-								td
+								td.left
 									div.leaders-list
 										p.tit First Game
 										p 09/14/2017 08:25 AM

@@ -9,6 +9,10 @@
       right: 60px;
       width: 6%;
       height: auto;
+
+      @media (min-width: 1850px) {
+        right: 57px;
+      }
     }
     #letter {
       position: absolute;
@@ -178,12 +182,6 @@
         font-size: 20px;
       }
 
-      @include respond-to(allwider){
-        margin-left: 2rem;
-        font-size: 21px;
-
-      }
-
       @include respond-to(handhelds){
         font-size: 15px;
         margin-left: 3rem;
@@ -191,6 +189,11 @@
 
       @include respond-to(tablets){
         font-size: 17px;
+      }
+
+      @include respond-to(allwider){
+        margin-left: 1rem;
+        font-size: 21px;
       }
     }
 

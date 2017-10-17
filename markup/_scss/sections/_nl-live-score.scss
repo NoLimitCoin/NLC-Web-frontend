@@ -373,6 +373,13 @@
 	padding: 0.875rem 0 0 0;
 	margin: .25rem 0 1.5rem 0;
 
+	.table-info1 td {
+
+		&.left {
+			padding: 0.5em 0rem 0.25rem 1.25rem;
+		}
+	}
+
 	// Temp - needs custom dropdown
 	.dropdown {
 		padding: 0.5rem;
@@ -412,11 +419,12 @@
 
 			&:nth-child(1) {
 				width: 7%;
+				
 			  }
 
 			&:nth-child(2) {
 			 width: 42%;
-			 text-align: left;
+			 
 			}
 			&:nth-child(3) {
 			  width: 17%;
@@ -616,7 +624,7 @@
 	}
 
 	.nl-contest-info-table .table-info4.contestants td, .nl-contest-info-table .table-info4.contestants tr  {
-		padding: 0.5rem;
+		padding: 0.25rem;
 	}
 
 	.nl-contest-info-table .table-info4 td:nth-child(1) {
@@ -682,7 +690,7 @@
 			padding: 0.5rem;
 
 			&:first-child {
-				text-align: left;
+				text-align: center;
 				width: 9%
 			}
 		}

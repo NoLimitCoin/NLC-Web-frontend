@@ -39,7 +39,7 @@
                         </div>
                         <div class="col-lg-12">
                           <div class="nl-profile--data">
-                            <div class="name">Name</div>
+                            <div class="name">Username</div>
                           </div>
                         </div>
                         
@@ -64,13 +64,13 @@
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item hidden-md-down"><a class="nav-link"></a></li>
-                    <li class="nav-item dropdown"><a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/ball.png" alt="#"></a>
-                      <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu"><a href="create_team.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="create_team_football.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Baseball</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Tennis</span> <img src="assets/img/ball.png" alt="#" class="navbar-nav__sports-img"></a></div>
+                    <li class="nav-item dropdown"><a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
+                      <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu"><a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/Football.png" alt="#" class="navbar-nav__sports-img"></a><a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a></div>
                     </li>
                     <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
                     <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
                     <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
-                    <li class="nav-item"><a href="players.html" class="nav-link">PLAYERS</a></li>
+                    <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
                     <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
                     <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
                       <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="edit_profile.html" class="dropdown-item">Profile</a><a href="change_password.html" class="dropdown-item">edit Password</a><a href="#" class="dropdown-item">Friends </a><a href="my_balances.html" class="dropdown-item">My Balance</a></div>
@@ -100,12 +100,12 @@
       <section class="nl-section nl-players nl-create-team soccer">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-8 offset-md-2 col-lg-12 col-xl-12 offset-lg-0 offset-xl-0">
+            <div class="col-md-10 offset-md-1 col-lg-12 col-xl-12 offset-lg-0 offset-xl-0">
               <h1>CREATE TEAM</h1>
             </div>
           </div>
           <div class="row sports-filtering">
-            <div class="col-md-8 offset-md-2 col-lg-12 col-xl-12 offset-lg-0 offset-xl-0">
+            <div class="col-md-10 offset-md-1 col-lg-12 col-xl-12 offset-lg-0 offset-xl-0">
               <div class="nl-players-filter-title">Filter by league:</div>
               <div class="nl-players-filter">
                 <div class="row align-items-center">
@@ -188,15 +188,26 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-8 offset-md-2 col-lg-7 offset-lg-0 offset-xl-0 col-xl-7">
+            <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 offset-xl-0 col-xl-7">
               <div class="nl-players-table nl-create-team-table">
                 <div class="nl-players-table-data-field">
                   <div class="nl-data--avatar hidden-sm-down"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"></div>
-                  <div class="nl-data--text nl-m-r-80 hidden-sm-down">
-                    <p class="title">Cristiano Ronaldo</p>
-                    <p>team : Real Madrid</p>
-                    <p>position: A</p>
-                    <p>salary: $89000</p>
+                  <div class="nl-data--text nl-m-r-80">
+                    <p class="team-format team-format-title">Team format:</p>
+                    <p class="orange team-format fw-700">A:</p>
+                    <p class="team-format">2</p>
+                    <p class="orange team-format fw-700">M:</p>
+                    <p class="team-format">3</p>
+                    <p class="orange team-format fw-700">D:</p>
+                    <p class="team-format">3</p>
+                    <p class="orange team-format fw-700">GK:</p>
+                    <p class="team-format">1</p>
+                    <p class="orange team-format fw-700">FLEX:</p>
+                    <p class="team-format">2</p>
+                    <p class="hidden-sm-down title">Christiano Ronaldo</p>
+                    <p class="hidden-sm-down">team : Real madrid</p>
+                    <p class="hidden-sm-down">position: A</p>
+                    <p class="hidden-sm-down">salary: $89000</p>
                   </div>
                   <div class="nl-players-search">
                     <div class="input-group">

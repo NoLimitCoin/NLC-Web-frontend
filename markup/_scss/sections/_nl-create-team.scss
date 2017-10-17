@@ -54,6 +54,49 @@
 
 .nl-create-team {
 
+  .team-format {
+    display: inline-block;
+    font-style: italic;    
+  }
+
+  .nl-players-table .nl-data--text {
+    padding-top: 0.375rem;
+
+    p.team-format {
+      font-size: 12px;
+    }
+
+    &.nl-m-r-80 {
+      margin-right: 0rem;
+    }
+  }
+
+  .nl-players-table .nl-players-search {
+    bottom: -2.2225rem;
+  }
+
+  .nl-players-table .nl-data--avatar {
+    margin-top: 15px;
+  }
+
+  .nl-players-table-data-field {
+    padding: 0rem 1.5625rem 0.75rem 1.5625rem;
+  }
+
+  .nl-players-table .nl-data--text p.title {
+    margin-top: 10px;
+  }
+
+  @include respond-to (allmobile) {
+    .nl-players-table .nl-players-table-data-field {
+      height: 7rem;
+    }
+
+    .nl-players-table .nl-data--text {
+      padding-top: 4.2375rem;
+    }
+  }
+
   .nl-my-teams .table td {
     padding: 0rem;
 
