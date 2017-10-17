@@ -10389,6 +10389,9 @@ p {
   background-color: #fff; }
 
 /*general for homepage*/
+.nl-section.homepage .container-fluid {
+  max-width: 1650px; }
+
 .nl-section.homepage.football-homepage .nl-team-list #create-helmet #oval {
   position: absolute;
   top: 22px;
@@ -13038,6 +13041,9 @@ td:nth-child(4).homepage-list-view {
     right: 60px;
     width: 6%;
     height: auto; }
+    @media (min-width: 1850px) {
+      .nl-my-teams #create-helmet #oval {
+        right: 57px; } }
   .nl-my-teams #create-helmet #letter {
     position: absolute;
     top: 23px;
@@ -13163,10 +13169,6 @@ td:nth-child(4).homepage-list-view {
       @media (max-width: 1200px) {
         .nl-my-teams .nl-team-card p {
           font-size: 20px; } }
-      @media (min-width: 1200px) {
-        .nl-my-teams .nl-team-card p {
-          margin-left: 2rem;
-          font-size: 21px; } }
       @media only screen and (max-width: 575px) {
         .nl-my-teams .nl-team-card p {
           font-size: 15px;
@@ -13174,6 +13176,10 @@ td:nth-child(4).homepage-list-view {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .nl-my-teams .nl-team-card p {
           font-size: 17px; } }
+      @media (min-width: 1200px) {
+        .nl-my-teams .nl-team-card p {
+          margin-left: 1rem;
+          font-size: 21px; } }
     .nl-my-teams .nl-team-card .title {
       font-weight: 400;
       color: #fff;
@@ -15115,9 +15121,6 @@ td:nth-child(4).homepage-list-view {
   .nl-live-score.soccer .nl-team-list-table td p {
     margin: 0.25rem 0; }
 
-.nl-live-score.soccer .nl-team-list-table td:first-child {
-  text-align: left; }
-
 .nl-live-score.soccer .nl-team-list {
   max-width: 27.25rem; }
 
@@ -15233,6 +15236,8 @@ td:nth-child(4).homepage-list-view {
   background-color: #0f254f;
   padding: 0.875rem 0 0 0;
   margin: .25rem 0 1.5rem 0; }
+  .nl-contest-info-table .table-info1 td.left {
+    padding: 0.5em 0rem 0.25rem 1.25rem; }
   .nl-contest-info-table .dropdown {
     padding: 0.5rem;
     margin: 0 auto;
@@ -15417,7 +15422,7 @@ td:nth-child(4).homepage-list-view {
   padding: 0rem; }
 
 .nl-live-score .nl-contest-info-table .table-info4.contestants td, .nl-live-score .nl-contest-info-table .table-info4.contestants tr {
-  padding: 0.5rem; }
+  padding: 0.25rem; }
 
 .nl-live-score .nl-contest-info-table .table-info4 td:nth-child(1) {
   text-align: center; }
@@ -15464,7 +15469,7 @@ td:nth-child(4).homepage-list-view {
   padding: 0.5rem; }
   .nl-live-score .nl-team-list-table th:first-child,
   .nl-live-score .nl-team-list-table td:first-child {
-    text-align: left;
+    text-align: center;
     width: 9%; }
 
 .nl-live-score .nl-my-teams .nl-team-list-table td:nth-child(2) {
