@@ -110,27 +110,29 @@
      width: auto;
 
      @include respond-to (handhelds) {
-      max-height: 188px;
+        max-height: 179px;
+        margin-bottom: 38px;
      }
 
     @include respond-to (tablets) {
       width: auto;
       height: 100%;
+      max-height: 217px;
     }
 
     @include respond-to (wide-tablets) {
-      max-width: 280px;
-      margin-top: 30px;
+      max-width: 231px;
+      margin-bottom: 30px;
     }
 
     @include respond-to(medium-display) {
       max-width: 320px;
-      margin-top: 32px;
+      margin-top: 9px;
     }
 
    @include respond-to(wide-display) {
       max-width: 320px;
-      margin-top: 32px;
+      margin-top: 9px;
     }
 
     @include respond-to (large-display) {

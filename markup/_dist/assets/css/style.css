@@ -10467,23 +10467,25 @@ p {
   width: auto; }
   @media only screen and (max-width: 575px) {
     .nl-section.homepage.soccer #top-player {
-      max-height: 188px; } }
+      max-height: 179px;
+      margin-bottom: 38px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .nl-section.homepage.soccer #top-player {
       width: auto;
-      height: 100%; } }
+      height: 100%;
+      max-height: 217px; } }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .nl-section.homepage.soccer #top-player {
-      max-width: 280px;
-      margin-top: 30px; } }
+      max-width: 231px;
+      margin-bottom: 30px; } }
   @media only screen and (min-width: 1201px) and (max-width: 1366px) {
     .nl-section.homepage.soccer #top-player {
       max-width: 320px;
-      margin-top: 32px; } }
+      margin-top: 9px; } }
   @media only screen and (min-width: 1367px) and (max-width: 1440px) {
     .nl-section.homepage.soccer #top-player {
       max-width: 320px;
-      margin-top: 32px; } }
+      margin-top: 9px; } }
   @media only screen and (min-width: 1441px) and (max-width: 1680px) {
     .nl-section.homepage.soccer #top-player {
       max-width: 350px;
@@ -15315,6 +15317,10 @@ td:nth-child(4).homepage-list-view {
     .nl-contest-info-table .table-info3 th:nth-child(5),
     .nl-contest-info-table .table-info3 td:nth-child(5) {
       width: 17%; }
+  .nl-contest-info-table .table-info3 th, .nl-contest-info-table .table-info3 td {
+    padding: 0.5rem 0; }
+  .nl-contest-info-table .table-info3:nth-child(1) {
+    width: 10%; }
   .nl-contest-info-table .nl-table-scroll2 {
     max-height: 50.3125rem; }
     @media (max-width: 991px) {

@@ -419,8 +419,7 @@
 
 			&:nth-child(1) {
 				width: 7%;
-				
-			  }
+			}
 
 			&:nth-child(2) {
 			 width: 42%;
@@ -436,6 +435,16 @@
 			&:nth-child(5) {
 			  width: 17%;
 			}
+		}
+	}
+
+	.table-info3 {
+		th, td {
+			padding: 0.5rem 0;
+		}
+
+		&:nth-child(1) {
+			width: 10%;
 		}
 	}
 
