@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Change Password Page | NLC2</title>
+    <title>Friends Page | NLC2</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
@@ -33,32 +33,28 @@
         </div>
       </header>
       <main>
-        <section class="nl-section change-password-wrapper">
+        <section class="nl-section friends-wrapper">
           <div class="row center-div">
             <div class="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
             <div class="col-8 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <div id="changePasswordSection" tabindex="-1" role="dialog" aria-labelledby="changePasswordSectionLabel" aria-hidden="true">
-                <div role="document" class="block-dialog">
-                  <div class="block-content">
-                    <div class="block-header">
-                      <h2 id="changePasswordSectionLabel" class="modal-title">Change Password</h2>
-                    </div>
-                    <div class="block-body">
-                      <form class="form-signin">
-                        <div class="input-group">
-                          <input type="password" placeholder="OLD PASSWORD" class="form-control">
-                        </div>
-                        <div class="input-group">
-                          <input type="password" placeholder="NEW PASSWORD" class="form-control">
-                        </div>
-                        <div class="input-group">
-                          <input type="password" placeholder="CONFIRM PASSWORD" class="form-control">
-                        </div>
-                      </form>
-                    </div>
-                    <div class="block-footer">
-                      <button type="submit" class="btn btn-primary btn-block">Save</button>
-                    </div>
+              <div id="friendsSection" tabindex="-1" role="dialog" aria-labelledby="loginSectionLabel" aria-hidden="true">
+                <div role="document" class="block-dialog"></div>
+                <div class="block-content">
+                  <div class="block-header">
+                    <h2 id="friendsSectionLabel" class="modal-title">FRIENDS</h2>
+                  </div>
+                  <div class="block-body">
+                    <form class="form-signin">
+                      <div class="input-group">
+                        <textarea placeholder="INVITE FRIENDS BY EMAIL. PASTE MULTIPLE EMAIL ADDRESSES SEPARATED BY COMMA" required="" autofocus="" rows="5" class="form-control"></textarea>
+                      </div>
+                      <div class="input-group">
+                        <textarea placeholder="ADD A MESSAGE" required="" autofocus="" rows="5" class="form-control"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="block-footer">
+                    <button type="submit" class="btn btn-primary btn-block">SEND</button>
                   </div>
                 </div>
               </div>

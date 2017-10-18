@@ -146,6 +146,11 @@
       color: #607089;
     }
     td {
+
+
+      &:last-child{
+        padding-right: 20px;
+      }
       &.act {
         color: #1e813e;
       }
@@ -157,7 +162,6 @@
       }
 
       .nl-pl-social {
-        padding-right: calculateRem(20px);
         @include fontSize(20px);
         .fa-youtube-play {
           color: #bd3231;

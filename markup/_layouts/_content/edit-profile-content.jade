@@ -1,58 +1,56 @@
 section.nl-section.edit-profile-wrapper
-    #editProfileSection(tabindex='-1', role='dialog', aria-labelledby='editProfileSectionLabel', aria-hidden='true')
-        .block-dialog(role='document')
-            .block-content
-                .block-header
-                    h2#editProfileSectionLabel.modal-title Edit Profile
-                .block-body
-                    form.form-signin
-                        .input-group
-                            label Email
-                            input.form-control(type='email', placeholder='', required='', autofocus='')
-                        .input-group
-                            label First Name
-                            input.form-control(type='text')
-                        .input-group
-                            label Last Name
-                            input.form-control(type='text')
-                        .input-group
-                            label Phone
-                            input.form-control(type='tel')
+    div.row.center-div
+        .col-2.col-sm-3.col-md-3.col-lg-3.col-xl-3
+        .col-8.col-sm-6.col-md-6.col-lg-6.col-xl-6
+            #editProfileSection(tabindex='-1', role='dialog', aria-labelledby='editProfileSectionLabel', aria-hidden='true')
+                .block-dialog(role='document')
+                    .block-content
+                        .block-header
+                            h2#editProfileSectionLabel.modal-title Edit Profile
+                        .block-body
+                            form.form-signin
+                                .input-group
+                                    input.form-control(type='email', placeholder='EMAIL', required='', autofocus='')
+                                .input-group
+                                    input.form-control(type='text', placeholder='FIRST NAME')
+                                .input-group
+                                    input.form-control(type='text', placeholder='LAST NAME')
+                                .input-group
+                                    input.form-control(type='tel', placeholder='PHONE')
 
-                        .input-group
-                            label Country
-                            select#country.form-control.custom-select(placeholder='COUNTRY', required='')
-                                option(selected='' disabled='' hidden='') COUNTRY
-                                option USA
-                                option CANADA
-                                option UK
-                                option PORTUGAL
+                                .input-group
+                                    select#country.form-control.custom-select(placeholder='COUNTRY', required='')
+                                        option(selected='' disabled='' hidden='') COUNTRY
+                                        option USA
+                                        option CANADA
+                                        option UK
+                                        option PORTUGAL
 
-                        .input-group
-                            label State
-                            select#state.form-control.custom-select(placeholder='STATE', required='')
-                                option(selected='' disabled='' hidden='') STATE
-                                option STATE1
-                                option STATE2
-                                option STATE3
-                                option STATE4
+                                .input-group
+                                    select#state.form-control.custom-select(placeholder='STATE', required='')
+                                        option(selected='' disabled='' hidden='') STATE
+                                        option STATE1
+                                        option STATE2
+                                        option STATE3
+                                        option STATE4
 
-                        .input-group
-                            label Profile picture
-                            div.nl-data--avatar.nl-profile-picture
-                                <img src="assets/img/profile-picture.png" alt="Profile picture">
-                                button.btn.btn-primary.btn-block(type='file') Upload Profile Picture
-                .block-copy-link
-                    .nl-copy-wrapper
-                        <img src="assets/img/copy-icon.png" alt="Copy link image">
-                        p Copy link from and use to post or send to friends and get credit for users that sign up your account
+                                .input-group
+                                    label Profile picture
+                                    div.nl-data--avatar.nl-profile-picture
+                                        <img src="assets/img/profile-picture.png" alt="Profile picture">
+                                        button.btn.btn-primary.btn-block(type='file') Upload Profile Picture
+                        .block-copy-link
+                            .nl-copy-wrapper
+                                <img src="assets/img/copy-icon.png" alt="Copy link image">
+                                p Copy link from and use to post or send to friends and get credit for users that sign up your account
 
 
-                .block-body.block-checkbox
-                    .input-group
-                        input.form-control(type='checkbox')
-                        span Do not use email for my notifications
+                        .block-body.block-checkbox
+                            .input-group
+                                input.form-control(type='checkbox')
+                                span Do not use email for my notifications
 
 
-                .block-footer
-                    button.btn.btn-primary.btn-block(type='submit') Save Profile
+                        .block-footer
+                            button.btn.btn-primary.btn-block(type='submit') Save Profile
+        .col-2.col-sm-3.col-md-3.col-lg-3.col-xl-3

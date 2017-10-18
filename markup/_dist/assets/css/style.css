@@ -1641,6 +1641,9 @@ pre {
   font-size: 1.25rem;
   color: #607089; }
 
+.table-striped tbody tr td:last-child {
+  padding-right: 20px; }
+
 .table-striped tbody tr td.act {
   color: #1e813e; }
 
@@ -1651,7 +1654,6 @@ pre {
   color: #e58607; }
 
 .table-striped tbody tr td .nl-pl-social {
-  padding-right: 1.25rem;
   font-size: 20px;
   font-size: 1.25rem; }
   .table-striped tbody tr td .nl-pl-social .fa-youtube-play {
@@ -1794,9 +1796,6 @@ pre {
     color: #061540;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #061540;
-    opacity: 1; }
-  .form-control::-ms-input-placeholder {
     color: #061540;
     opacity: 1; }
   .form-control::placeholder {
@@ -10112,7 +10111,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10229,7 +10228,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -11128,6 +11127,8 @@ p {
   .homepage .nl-contests-table td:not(:first-child), .homepage .nl-contests-table th:not(:first-child) {
     text-align: center !important;
     padding: 0.35rem 0.35rem; }
+  .homepage .nl-contests-table td:not(:first-child):last-child {
+    padding-right: 20px; }
   .homepage .manager-section .table .t-playername {
     padding: 0rem 1rem; }
   .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
@@ -14082,7 +14083,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14338,7 +14339,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14629,6 +14630,9 @@ td:nth-child(4).homepage-list-view {
 .nl-enter-contests .nl-contest-info-table .table-info4 td:nth-child(4), .nl-enter-contests th:nth-child(4) {
   width: 20%;
   text-align: center; }
+
+.nl-enter-contests .nl-contest-info-table .table-info4 tr td:last-child {
+  padding-right: 10px; }
 
 .nl-enter-contests .nl-contest-info-table .table-info3 th:nth-child(1) {
   width: 15%;
@@ -15167,8 +15171,7 @@ td:nth-child(4).homepage-list-view {
     .matches {
       height: 137px; } }
   .matches.rounded-corners {
-    overflow-y: hidden;
-    overflow-x: scroll !important; }
+    overflow-y: hidden; }
   .matches__scrollarea {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15257,6 +15260,9 @@ td:nth-child(4).homepage-list-view {
   .table-current-contests .table th:nth-child(4),
   .table-current-contests .table td:nth-child(4) {
     width: 15%; }
+  .table-current-contests .table th:last-child,
+  .table-current-contests .table td:last-child {
+    padding-right: 20px; }
 
 /* contest-info-table
 ---------------------------------------- */
@@ -15447,12 +15453,17 @@ td:nth-child(4).homepage-list-view {
 
 .nl-live-score .table-current-contests .table td {
   padding: 0.25rem 0.25rem; }
+  .nl-live-score .table-current-contests .table td:last-child {
+    padding-right: 20px; }
 
 .nl-live-score .nl-contest-info-table .table-info4 td, .nl-live-score .nl-contest-info-table .table-info4 tr {
   padding: 0rem; }
 
 .nl-live-score .nl-contest-info-table .table-info4.contestants td, .nl-live-score .nl-contest-info-table .table-info4.contestants tr {
   padding: 0.25rem; }
+
+.nl-live-score .nl-contest-info-table .table-info4.contestants td:last-child {
+  padding-right: 20px; }
 
 .nl-live-score .nl-contest-info-table .table-info4 td:nth-child(1) {
   text-align: center; }
@@ -15799,10 +15810,18 @@ td:nth-child(4).homepage-list-view {
   .nl-live-score-contest-table .table-info4 th,
   .nl-live-score-contest-table .table-info4 td {
     font-size: 10px;
-    padding: 0rem; }
+    padding: 0; }
+  .nl-live-score-contest-table .table-info3 th:last-child,
+  .nl-live-score-contest-table .table-info4 th:last-child {
+    padding-right: 10px; }
+  .nl-live-score-contest-table .table-info3 td:last-child,
+  .nl-live-score-contest-table .table-info4 td:last-child {
+    padding-right: 10px; }
   .nl-live-score-contest-table .table-info4.contestants th,
   .nl-live-score-contest-table .table-info4.contestants td {
     padding: 0.5rem; }
+  .nl-live-score-contest-table .table-info4.contestants td:last-child {
+    padding-right: 10px; }
   .nl-live-score-contest-table .indicator {
     width: 0.5rem;
     height: 0.5rem;
@@ -16033,7 +16052,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -16268,6 +16287,417 @@ p.ads {
 @media (max-width: 991px) {
   .nl-table-scroll2 {
     max-height: inherit; } }
+
+.nl-my-contests .nl-mob-table #accordion a .row:after {
+  right: 2.5rem; }
+
+.nl-my-contests {
+  background: url(../img/stadion_detail.jpg) center center no-repeat fixed;
+  background-size: cover;
+  background: url(../img/stadion_full.jpg) bottom center no-repeat fixed;
+  background-size: cover;
+  background-position: bottom;
+  color: #061540;
+  padding-bottom: 4rem;
+  padding-top: 1.875rem; }
+  .nl-my-contests .nl-table-scroll2 {
+    max-height: 40rem; }
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .nl-my-contests {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem; } }
+  @media (max-width: 991px) {
+    .nl-my-contests {
+      padding-bottom: 3.75rem; }
+      .nl-my-contests .nl-table-scroll2 {
+        max-height: 35rem; } }
+  .nl-my-contests img {
+    width: auto; }
+  .nl-my-contests .nl-players-filter-title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 0.625rem; }
+    @media (max-width: 991px) {
+      .nl-my-contests .nl-players-filter-title {
+        margin: 0.625rem 0 0.625rem; } }
+  @media (max-width: 767px) {
+    .nl-my-contests .nl-players-filter .btn-link img {
+      max-width: 4.375rem; } }
+  .nl-my-contests .nl-players-filter .btn-primary {
+    font-weight: 500; }
+  .nl-my-contests .nl-players-filter-caruseul {
+    margin-bottom: 0.3125rem; }
+  .nl-my-contests .pl-teams, .nl-my-contests .pl-flag {
+    position: relative;
+    padding: 0 1.875rem;
+    width: 100%; }
+    @media (max-width: 767px) {
+      .nl-my-contests .pl-teams, .nl-my-contests .pl-flag {
+        margin-bottom: 0; } }
+  .nl-my-contests .pl-teams {
+    margin-bottom: 0; }
+  .nl-my-contests .pl-flag {
+    padding: 0;
+    max-width: 350px; }
+    .nl-my-contests .pl-flag .owl-item {
+      line-height: 64px; }
+  .nl-my-contests .owl-item {
+    line-height: 64px; }
+    .nl-my-contests .owl-item a {
+      display: inline-block;
+      vertical-align: middle; }
+    .nl-my-contests .owl-item img {
+      width: inherit;
+      height: 45px; }
+  .nl-my-contests .owl-nav {
+    font-size: 40px;
+    font-size: 2.5rem; }
+  .nl-my-contests .owl-prev {
+    position: absolute;
+    top: 0.625rem;
+    left: 0; }
+    @media only screen and (max-width: 575px) {
+      .nl-my-contests .owl-prev {
+        top: 1.5625rem; } }
+  .nl-my-contests .owl-next {
+    position: absolute;
+    top: 0.625rem;
+    right: 0; }
+    @media only screen and (max-width: 575px) {
+      .nl-my-contests .owl-next {
+        top: 1.5625rem; } }
+  .nl-my-contests .nl-table-scroll {
+    max-height: 43.75rem; }
+    @media (max-width: 991px) {
+      .nl-my-contests .nl-table-scroll {
+        max-height: inherit; } }
+  .nl-my-contests .nl-desc-table tbody tr td:not(:first-child),
+  .nl-my-contests .nl-desc-table thead tr th:not(:first-child) {
+    text-align: center; }
+
+@media (max-width: 991px) {
+  .nl-desc-table {
+    display: none; } }
+
+.nl-mob-table.mob-table-striped .card:nth-of-type(odd) {
+  background-color: #fff; }
+
+@media (min-width: 992px) {
+  .nl-mob-table {
+    display: none; } }
+
+.nl-mob-table .nl-title {
+  background: #061540;
+  color: #e48706; }
+  .nl-mob-table .nl-title p {
+    margin: 0.25rem 1.25rem;
+    font-weight: 700; }
+    .nl-mob-table .nl-title p:first-child {
+      margin-top: 5px; }
+
+.nl-mob-table .nl-content {
+  background-color: #e1e2e4;
+  color: #061540; }
+  .nl-mob-table .nl-content p {
+    margin: 0.3125rem 1.25rem; }
+
+.nl-mob-table .card-block {
+  padding-bottom: 0.5rem; }
+
+.nl-mob-table #accordion a .row {
+  position: relative; }
+  .nl-mob-table #accordion a .row:after {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    content: '\f055';
+    font-size: 2rem;
+    font-weight: 700;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 2rem;
+    height: 2rem;
+    color: #e48706;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 1.875rem; }
+
+.nl-mob-table #accordion a:not(.collapsed) .row:after {
+  font-family: 'FontAwesome';
+  content: '\f056';
+  line-height: 1.9rem; }
+
+.nl-mob-table .avatar img {
+  max-width: 5rem;
+  max-height: 5rem;
+  border-radius: 50%; }
+
+.nl-mob-table .nl-pl-social {
+  font-size: 30px;
+  font-size: 1.875rem; }
+  .nl-mob-table .nl-pl-social .fa-youtube-play {
+    color: #bd3231;
+    margin-right: 1.25rem; }
+  .nl-mob-table .nl-pl-social .fa-twitter {
+    color: #35b4da;
+    margin-right: 1.25rem; }
+  .nl-mob-table .nl-pl-social .fa-facebook-square {
+    color: #4d73bb; }
+  @media (max-width: 991px) {
+    .nl-mob-table .nl-pl-social .fa {
+      font-size: 2.5rem; } }
+
+.nl-mob-table img {
+  max-width: 1.5625rem; }
+
+.nl-mob-table i {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.nl-my-contests-table {
+  background: -webkit-gradient(linear, left bottom, left top, from(#061540), to(#1f3658));
+  background: linear-gradient(to top, #061540, #1f3658);
+  border-radius: 0.625rem;
+  color: #fff;
+  -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+  overflow: hidden; }
+  .nl-my-contests-table td, .nl-my-contests-table th {
+    padding: 0.25rem 0.25rem; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-my-contests-table td, .nl-my-contests-table th {
+        padding: 0.5rem 0.25rem; } }
+    .nl-my-contests-table td:first-child, .nl-my-contests-table th:first-child {
+      padding-left: 0.5rem; }
+  .nl-my-contests-table td:not(:first-child), .nl-my-contests-table .table th:not(:first-child) {
+    text-align: left; }
+  .nl-my-contests-table-data-field {
+    position: relative;
+    padding: 1.5625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media only screen and (max-width: 575px) {
+      .nl-my-contests-table-data-field {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  @media only screen and (max-width: 575px) {
+    .nl-my-contests-table {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  .nl-my-contests-table .nl-data--avatar {
+    overflow: hidden;
+    position: relative;
+    width: 6.875rem;
+    height: 6.875rem;
+    border-radius: 50%;
+    margin-right: 1.25rem; }
+    @media (max-width: 767px) {
+      .nl-my-contests-table .nl-data--avatar {
+        width: 3.75rem;
+        height: 3.75rem;
+        margin-top: 1.25rem; } }
+    .nl-my-contests-table .nl-data--avatar img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 100%;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 100%; }
+  .nl-my-contests-table .nl-data--text {
+    padding-top: 0.9375rem; }
+    .nl-my-contests-table .nl-data--text p {
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 15.63px;
+      font-size: 0.97688rem;
+      letter-spacing: 1px; }
+      .nl-my-contests-table .nl-data--text p.title {
+        font-weight: 700;
+        color: #e89708;
+        margin-bottom: 0.3125rem;
+        font-size: 19.54px;
+        font-size: 1.22125rem; }
+  @media (max-width: 767px) {
+    .nl-my-contests-table .nl-players-table-data-field {
+      height: 5rem; } }
+  .nl-my-contests-table .nl-players-search {
+    position: absolute;
+    min-width: 9.75rem;
+    max-width: 15rem;
+    bottom: -2.0625rem;
+    right: 0.1875rem; }
+    @media (max-width: 767px) {
+      .nl-my-contests-table .nl-players-search {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-top: 1rem;
+        width: 70%; } }
+    @media (max-width: 991px) {
+      .nl-my-contests-table .nl-players-search {
+        min-width: 12.5rem; } }
+    @media only screen and (max-width: 575px) {
+      .nl-my-contests-table .nl-players-search {
+        bottom: inherit;
+        top: 0.1875rem;
+        min-width: 12.5rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .nl-my-contests-table .nl-players-search {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-my-contests-table .nl-players-search {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem; } }
+    .nl-my-contests-table .nl-players-search .input-group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      width: 100%; }
+    .nl-my-contests-table .nl-players-search .form-control {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border-right: 0; }
+    .nl-my-contests-table .nl-players-search .input-group-btn {
+      position: relative;
+      font-size: 0;
+      white-space: nowrap; }
+      .nl-my-contests-table .nl-players-search .input-group-btn .btn-secondary {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: 0; }
+
+.nl-players .nl-players-table thead th {
+  padding: 0.5rem 0.25rem; }
+
+.nl-players .nl-desc-table thead tr th:nth-child(1) {
+  text-align: center; }
+
+.friends-wrapper {
+  background: url(../img/stadion_full.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 6rem 0; }
+  .friends-wrapper .center-div {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .friends-wrapper button.btn.btn-primary {
+    font-weight: 600; }
+  .friends-wrapper .show-password {
+    font-size: 0.75rem; }
+  .friends-wrapper button.btn.btn-primary {
+    font-size: 11px; }
+  .friends-wrapper .forget-password {
+    float: right;
+    color: #fb8700;
+    font-size: 0.75rem;
+    text-decoration: underline; }
+
+#friendsSection {
+  position: relative; }
+  #friendsSection .block-dialog {
+    min-height: 0; }
+  #friendsSection .block-content {
+    border-radius: 0.5rem; }
+  #friendsSection .block-header {
+    background-color: transparent;
+    color: #061540;
+    padding: 1rem;
+    position: relative; }
+    #friendsSection .block-header h2 {
+      margin: 0 auto;
+      font-size: 2rem;
+      text-align: center; }
+    #friendsSection .block-header .close {
+      background: url(../img/close_btn.png) no-repeat;
+      position: absolute;
+      top: 1.0rem;
+      right: 1.25rem;
+      height: 49px;
+      width: 49px;
+      opacity: 1;
+      outline: none; }
+      @media (max-width: 991px) {
+        #friendsSection .block-header .close {
+          top: 0.625rem;
+          right: 0.625rem; } }
+  #friendsSection .block-header, #friendsSection .block-footer {
+    border: none; }
+  #friendsSection .block-body {
+    background-color: transparent; }
+  #friendsSection .block-footer {
+    background-color: transparent; }
+  #friendsSection .block-body {
+    height: 100%;
+    padding: 0.5rem 6.25rem 0; }
+    @media (max-width: 991px) {
+      #friendsSection .block-body {
+        padding: 0.5rem 1.25rem 0; } }
+    #friendsSection .block-body input, #friendsSection .block-body textarea {
+      border-top-right-radius: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      border-bottom-right-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+      font-size: 0.75rem;
+      margin-bottom: 1.25rem; }
+      @media (max-width: 991px) {
+        #friendsSection .block-body input, #friendsSection .block-body textarea {
+          width: 100%; } }
+    #friendsSection .block-body .input-group {
+      position: relative; }
+    #friendsSection .block-body .show-password {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      right: 0.9375rem;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fb8700;
+      cursor: pointer;
+      text-transform: uppercase; }
+    #friendsSection .block-body a {
+      text-decoration: underline;
+      color: #fb8700; }
+  #friendsSection .block-footer {
+    padding: 0.625rem 0;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem; }
+    #friendsSection .block-footer button {
+      width: 11.125rem;
+      margin: 0 auto; }
+
+@media (min-width: 576px) {
+  .block-dialog {
+    max-width: 52.625rem; } }
+
+.block-backdrop.show {
+  opacity: 0.8;
+  background-color: #fff; }
 
 .mCS-nl-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #dfdfdf; }

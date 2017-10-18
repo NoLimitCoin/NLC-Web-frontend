@@ -1,0 +1,19 @@
+//- <div class="nl-white-bg"></div>
+section.nl-section.friends-wrapper
+    div.row.center-div
+        .col-2.col-sm-3.col-md-3.col-lg-3.col-xl-3
+        .col-8.col-sm-6.col-md-6.col-lg-6.col-xl-6
+            #friendsSection(tabindex='-1', role='dialog', aria-labelledby='loginSectionLabel', aria-hidden='true')
+                .block-dialog(role='document')
+                .block-content
+                    .block-header
+                        h2#friendsSectionLabel.modal-title FRIENDS
+                    .block-body
+                        form.form-signin
+                            .input-group
+                                textarea.form-control(placeholder='INVITE FRIENDS BY EMAIL. PASTE MULTIPLE EMAIL ADDRESSES SEPARATED BY COMMA', required='', autofocus='', rows="5")
+                            .input-group
+                                    textarea.form-control(placeholder='ADD A MESSAGE', required='', autofocus='', rows="5")
+                    .block-footer
+                        button.btn.btn-primary.btn-block(type='submit') SEND
+        .col-2.col-sm-3.col-md-3.col-lg-3.col-xl-3

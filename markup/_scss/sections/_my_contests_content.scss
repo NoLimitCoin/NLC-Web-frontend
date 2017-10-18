@@ -1,13 +1,11 @@
-.nl-players .nl-mob-table #accordion a .row:after {
+.nl-my-contests .nl-mob-table #accordion a .row:after {
   right: 2.5rem;
 }
 
-.nl-players.soccer {
+.nl-my-contests {
+
   background: url(../img/stadion_detail.jpg) center center no-repeat fixed;
   background-size: cover;
-}
-
-.nl-players { 
 
   .nl-table-scroll2 {
     max-height: 40rem;
@@ -139,46 +137,46 @@
     }
   }
 
-  .nl-desc-table  tbody  tr  td,
-  .nl-desc-table  thead  tr  th {
-    @include respond-to(allwide) {
-      //float: left;
-      &:nth-child(1) {
-        text-align: left;
-        width: 20%;
-      }
-      &:nth-child(2) {
-        width: 8%;
-      }
-      &:nth-child(3) {
-        width: 6%;
-      }
-      &:nth-child(4) {
-        width: 6%;
-      }
-      &:nth-child(5) {
-        width: 5%;
-      }
-      &:nth-child(6) {
-        width: 6%;
-      }
-      &:nth-child(7) {
-        width: 10%;
-      }
-      &:nth-child(8) {
-        width: 10%;
-      }
-      &:nth-child(9) {
-        width: 12%;
-      }
-      &:nth-child(10) {
-        width: 5%;
-      }
-      &:nth-child(11) {
-        width: 12%;
-      }
-    }
-  }
+  //.nl-desc-table  tbody  tr  td,
+  //.nl-desc-table  thead  tr  th {
+  //  @include respond-to(allwide) {
+  //    //float: left;
+  //    &:nth-child(1) {
+  //      text-align: left;
+  //      width: 5%;
+  //    }
+  //    &:nth-child(2) {
+  //      width: 10%;
+  //    }
+  //    &:nth-child(3) {
+  //      width: 10%;
+  //    }
+  //    &:nth-child(4) {
+  //      width: 5%;
+  //    }
+  //    &:nth-child(5) {
+  //      width: 5%;
+  //    }
+  //    &:nth-child(6) {
+  //      width: 5%;
+  //    }
+  //    &:nth-child(7) {
+  //      width: 5%;
+  //    }
+  //    &:nth-child(8) {
+  //      width: 5%;
+  //    }
+  //    &:nth-child(9) {
+  //      width: 5%;
+  //    }
+  //    &:nth-child(10) {
+  //      width: 5%;
+  //    }
+  //    &:nth-child(11) {
+  //      width: 5%;
+  //    }
+  //  }
+  //}
 }
 
 
@@ -301,7 +299,7 @@
 }
 
 
-.nl-players-table {
+.nl-my-contests-table {
   background: linear-gradient(to top, #061540, #1f3658);
   border-radius: calculateRem(10px);
   color: #fff;
