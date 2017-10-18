@@ -204,38 +204,6 @@
 /* Matches component
 ---------------------------------------- */
 
-.soccer .matches{
-	@include respond-to (handhelds) {
-		height: 119px;
-	}
-
-	@include respond-to (wide-handhelds) {
-		height: 130px;
-	}
-
-	@include respond-to (tablets) {
-		height: 130px;
-	}
-
-	@include respond-to (wide-tablets) {
-		height: 130px;
-	}
-
-	@include respond-to (allwider) {
-		height: 138px;
-	}
-
-	&__leaders-list {
-		li {
-
-		  img {
-			width: 28px;
-			height: 28px;
-		  }
-		}
-	}
-}	
-
 .matches {
 	width: 100%;
 	height: 137px;
@@ -361,6 +329,42 @@
 		margin-bottom: calculateRem(24px);
 	}
 }
+
+.soccer .matches {
+	@include respond-to (handhelds) {
+		height: 119px;
+	}
+
+	@include respond-to (wide-handhelds) {
+		height: 130px;
+	}
+
+	@include respond-to (tablets) {
+		height: 130px;
+	}
+
+	@include respond-to (wide-tablets) {
+		height: 130px;
+	}
+
+	@include respond-to (allwider) {
+		height: 138px;
+	}
+
+	&__leaders-list {
+		
+		li {
+		  img.soccer-logo {
+			width: 28px;
+			height: 28px;
+			min-width: 28px;
+			max-width: 28px;
+			min-height: 28px;
+			max-height: 28px;
+		  }
+		}
+	}
+}	
 
 // // Add custom scrollbar and make visible
 // .matches::-webkit-scrollbar-track {

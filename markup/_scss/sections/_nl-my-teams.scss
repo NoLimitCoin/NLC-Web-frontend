@@ -6,12 +6,35 @@
       position: absolute;
       top: 21px;
       z-index: 1;
-      right: 60px;
-      width: 6%;
+      right: 58px;
+      width: 7%;
       height: auto;
 
       @media (min-width: 1850px) {
         right: 57px;
+      }
+      @include respond-to(wide-tablets){
+        top: 16px;
+        right: 49px;
+      }
+      @include respond-to(tablets){
+        top: 17px;
+        right: 51px;
+      }
+
+      @include respond-to(wide-handhelds){
+        top: 16px;
+        right: 50px;
+      }
+      @include respond-to(handhelds){
+        width: 4%;
+        top: 15px;
+        right: 48px;
+      }
+      @include respond-to(extra-large-display){
+        width: 6%;
+        top: 20px;
+        right: 55px;
       }
     }
     #letter {
@@ -20,7 +43,32 @@
       z-index: 2;
       right: 67px;
       width: 3%;
-      height: auto
+      height: auto;
+
+      @include respond-to(wide-tablets){
+        top: 18px;
+        right: 56px;
+      }
+
+      @include respond-to(tablets){
+        top: 18px;
+        right: 58px;
+      }
+
+      @include respond-to(wide-handhelds){
+        top: 17px;
+        right: 56px;
+      }
+      @include respond-to(handhelds){
+        top: 16px;
+        right: 55px;
+        width: 2%;
+      }
+      @include respond-to(extra-large-display){
+        right: 65px;
+        width: 3%;
+        top: 22px;
+      }
     }
   }
 

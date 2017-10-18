@@ -324,20 +324,6 @@
     }
   }
 }
-//
-//.nl-table-responsive{
-//  @include respond-to(allsmall){
-//    min-width: 530px;
-//    overflow-x: auto;
-//  }
-//}
-
-//.col-lg-8{
-//  overflow-x: auto;
-//}
-//.nl-contests-table{
-//
-//}
 
 .nl-table-mw{
   @include respond-to(allsmall){
