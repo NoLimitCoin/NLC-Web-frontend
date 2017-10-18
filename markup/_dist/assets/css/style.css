@@ -15161,18 +15161,54 @@ td:nth-child(4).homepage-list-view {
 
 /* Matches component
 ---------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .soccer .matches {
+    height: 119px; } }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .soccer .matches {
+    height: 130px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .soccer .matches {
+    height: 130px; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .soccer .matches {
+    height: 130px; } }
+
+@media (min-width: 1200px) {
+  .soccer .matches {
+    height: 138px; } }
+
+.soccer .matches__leaders-list li img {
+  width: 28px;
+  height: 28px; }
+
 .matches {
   width: 100%;
   height: 137px;
   overflow-y: hidden;
   overflow-x: scroll;
   margin: 0.25rem 0 1.5rem 0; }
-  @media (max-width: 1200px) {
-    .matches {
-      height: 137px; } }
   @media only screen and (max-width: 575px) {
     .matches {
-      height: 137px; } }
+      height: 99px; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .matches {
+      height: 118px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .matches {
+      height: 118px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .matches {
+      height: 118px; } }
+  @media (min-width: 1200px) {
+    .matches {
+      height: 133px; } }
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .matches {
+      height: 131px; } }
   .matches.rounded-corners {
     overflow-y: hidden; }
   .matches__scrollarea {
@@ -15241,6 +15277,9 @@ td:nth-child(4).homepage-list-view {
   @media (max-width: 991px) {
     .current-contents {
       margin-bottom: 1.5rem; } }
+  @media (max-width: 991px) {
+    .current-contents .nl-table-mw {
+      min-width: 330px; } }
 
 .table-current-contests .table th,
 .table-current-contests .table td {
@@ -15707,6 +15746,9 @@ td:nth-child(4).homepage-list-view {
     font-size: 12px; }
   .rank__stats.single-block .leaders-list p.points {
     font-size: 16px; }
+    @media only screen and (max-width: 575px) {
+      .rank__stats.single-block .leaders-list p.points {
+        padding-top: 5px; } }
 
 .rank__stats.below-teams {
   line-height: 1rem;
