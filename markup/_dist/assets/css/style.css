@@ -15254,7 +15254,12 @@ td:nth-child(4).homepage-list-view {
       font-weight: 500;
       font-size: 1rem; }
       .matches__leaders-list li img {
-        width: 28px; }
+        width: 28px;
+        min-width: 28px;
+        max-width: 28px;
+        height: 18px;
+        max-height: 18px;
+        min-height: 18px; }
       .matches__leaders-list li span {
         float: left;
         padding: 0.125rem 0.25rem 0rem; }
