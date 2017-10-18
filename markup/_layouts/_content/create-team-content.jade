@@ -1,10 +1,10 @@
 section.nl-section.nl-players.nl-create-team.soccer
     div.container-fluid
         div.row
-            div.col-md-8.offset-md-2.col-lg-12.col-xl-12.offset-lg-0.offset-xl-0
+            div.col-md-10.offset-md-1.col-lg-12.col-xl-12.offset-lg-0.offset-xl-0
                 h1 CREATE TEAM
         div.row.sports-filtering
-            div.col-md-8.offset-md-2.col-lg-12.col-xl-12.offset-lg-0.offset-xl-0
+            div.col-md-10.offset-md-1.col-lg-12.col-xl-12.offset-lg-0.offset-xl-0
                 div.nl-players-filter-title Filter by league:
                 div.nl-players-filter
                     div.row.align-items-center
@@ -81,17 +81,30 @@ section.nl-section.nl-players.nl-create-team.soccer
                             p teams france
 
         div.row
-            div.col-md-8.offset-md-2.col-lg-7.offset-lg-0.offset-xl-0.col-xl-7
+            div.col-md-10.offset-md-1.col-lg-7.offset-lg-0.offset-xl-0.col-xl-7
                 div.nl-players-table.nl-create-team-table
                     div.nl-players-table-data-field
                         div.nl-data--avatar.hidden-sm-down
                             <img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco">
 
-                        div.nl-data--text.nl-m-r-80.hidden-sm-down
-                            p.title Cristiano Ronaldo
-                            p team : Real Madrid
-                            p position: A
-                            p salary: $89000
+                        div.nl-data--text.nl-m-r-80
+                            p.team-format.team-format-title Team format:
+                            p.orange.team-format.fw-700 A:
+                            p.team-format 2
+                            p.orange.team-format.fw-700 M:
+                            p.team-format 3
+                            p.orange.team-format.fw-700 D:
+                            p.team-format 3
+                            p.orange.team-format.fw-700 GK:
+                            p.team-format 1
+                            p.orange.team-format.fw-700 FLEX:
+                            p.team-format 2
+
+                            p.hidden-sm-down.title Christiano Ronaldo
+                            p.hidden-sm-down team : Real madrid
+                            p.hidden-sm-down position: A
+                            p.hidden-sm-down salary: $89000
+                            
                         div.nl-players-search
                             div.input-group
                                 input(type="text" class="form-control" placeholder="Search")
@@ -924,72 +937,60 @@ section.nl-section.nl-players.nl-create-team.soccer
                 div.nl-team-field
                     div.player-main-block.soccer
                         div.nl-player-block.nl-GK-position(data-position="GK")
-                            img(src="assets/img/img-goalkeeper.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/GK.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-DL-position(data-position="DL")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/D-L.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-DR-position(data-position="DR")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/D-R.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-FLEXL-position(data-position="FLEXL")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/FLEX-L.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-DM-position(data-position="DM")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/D-M.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-MM-position(data-position="MM")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/M-M.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-MR-position(data-position="MR")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/M-R.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-ML-position(data-position="ML")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/M-L.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-FLEXR-position(data-position="FLEXR")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/FLEX-R.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-AL-position(data-position="AL")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/A-L.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-AR-position(data-position="AR")
-                            img(src="assets/img/img-players.png" alt="goalkeeper")
+                            img(src="assets/img/soccer/A-R.png" alt="goalkeeper")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
                                 p gronkowski
                                 p.data.orange <span>12.67</span> <span>$42000</span>
-
                 div.nl-team-list.nl-my-teams.hide
                     .nl-card-wrapper
                         .row

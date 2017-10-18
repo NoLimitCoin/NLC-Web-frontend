@@ -4,13 +4,13 @@ mixin repeat(times)
 			div.matches__content
 				ul.matches__leaders-list
 					li
-						span <img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU">
-						span RMA
-						span 2
+						span <img src="assets/img/emblem/green-bay.png" alt="MU">
+						span GB
+						span 17
 					li
-						span <img src="http://localhost:3000/assets/img/emblem/FCB.png" alt="MU">
-						span FCB
-						span 1
+						span <img src="assets/img/emblem/patriots.png" alt="MU">
+						span NE
+						span 12
 			div.matches__result-header
 				span Wed 10:45
 
@@ -25,9 +25,9 @@ mixin current-table(times)
 mixin contest-info(times)
 	each i in new Array(times)
 		tr
-			td 1.
-			td Username xxx
-			td Score
+			td.orange 1.
+			td Username
+			td 93.6
 
 mixin team-field-table(times)
 	each i in new Array(times)
@@ -48,10 +48,13 @@ mixin list-of-teams(times)
 						div.rank__center
 							span 124
 					div.rank__title
-						p Best team evah
-						p.italic Best manager evah
+						p My Best NFL Team
+						p.italic NLC2 Kasper
 					div.rank__thumb
-						img(src="assets/img/helmet-2", alt="")
+						#create-helmet.final-helmet(style='display: block;')
+							img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
+							img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
+							img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 				table.table.table-info3
 					thead
 						tr
@@ -192,7 +195,7 @@ section.nl-section.nl-players.nl-live-score
 					table.table.table-info1
 						tbody
 							tr
-								td
+								td.left
 									div.leaders-list
 										p.tit First Game
 										p 09/14/2017 08:25 AM
@@ -216,7 +219,7 @@ section.nl-section.nl-players.nl-live-score
 					table.table.table-info3
 						thead
 							tr
-								th
+								th Rank
 								th Contestant
 								th Score
 					div.nl-table-scroll3
@@ -347,7 +350,10 @@ section.nl-section.nl-players.nl-live-score
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-DEF-position(data-position="DEF")
-							img(src="assets/img/helmet-3" alt="logo")
+							#create-helmet.final-helmet(style='display: block;')
+								img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
+								img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
+								img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 							div.nl-player-block--data
 								p.not-playing PATRIOTS
 								p.data FP <span class="orange">12.67</span> 
@@ -397,7 +403,19 @@ section.nl-section.nl-players.nl-live-score
 									div.col-8.col-lg-9
 										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 
-
+		div.row
+			div.col-12.text-center
+				div.nl-status-wrapper
+					ul
+						li
+							span.playing.indicator
+							span Playing
+						li
+							span.played.indicator
+							span Played
+						li
+							span.not-playing.indicator
+							span Not Playing
 
 		div.row
 			+list-of-teams(12)

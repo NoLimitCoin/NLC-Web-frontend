@@ -10,7 +10,7 @@
 	}
 
 	.nl-team-field .nl-player-block img {
-		max-width: 50px;
+		max-width: 61px;
 	}
 
 	// .player-main-block .nl-FLEXR-position {
@@ -189,7 +189,7 @@
 	}
 
 	.nl-team-list-table td:first-child {
-		text-align: left;
+		text-align: center;
 	}
 
 	// .nl-my-teams .nl-team-list-table td:nth-child(1) {
@@ -378,6 +378,13 @@
 	padding: 0.875rem 0 0 0;
 	margin: .25rem 0 1.5rem 0;
 
+	.table-info1 td {
+
+		&.left {
+			padding: 0.5em 0rem 0.25rem 1.25rem;
+		}
+	}
+
 	// Temp - needs custom dropdown
 	.dropdown {
 		padding: 0.5rem;
@@ -416,13 +423,12 @@
 			text-align: center;
 
 			&:nth-child(1) {
-				width: 10%;
-				color: #e48706;
-			  }
+				width: 7%;
+			}
 
 			&:nth-child(2) {
-			 width: 39%;
-			 text-align: left;
+			 width: 42%;
+			 
 			}
 			&:nth-child(3) {
 			  width: 17%;
@@ -434,6 +440,16 @@
 			&:nth-child(5) {
 			  width: 17%;
 			}
+		}
+	}
+
+	.table-info3 {
+		th, td {
+			padding: 0.5rem 0;
+		}
+
+		&:nth-child(1) {
+			width: 10%;
 		}
 	}
 
@@ -457,6 +473,86 @@
 
 // override to nl-create-team.scss
 .nl-live-score {
+
+	.nl-status-wrapper {
+		margin: 0 auto;
+	  }
+
+	.nl-status-wrapper ul {
+		padding: 0.25rem 0.5rem;
+		font-weight: 400;
+		font-size: 13px;
+
+		.indicator {
+		  width: 0.75rem;
+		  height: 0.75rem;
+		}
+	  }
+	  .nl-status-wrapper span.playing {
+		background: green;
+	  }
+
+	  .nl-status-wrapper span.played {
+		background: #5fadcc;
+	  }
+
+	  .nl-status-wrapper span.not-playing {
+		background: red;
+	  }
+
+	.nl-status-wrapper{
+		display: inline-block;
+		background: linear-gradient(to top, #061540, #1f3658);
+		color: #fff;
+		overflow: hidden;
+		margin-bottom: 0.75rem;
+		//margin-top: -3rem;
+		font-weight: 300;
+		overflow: hidden;
+		box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+		border-radius: calculateRem(10px);
+
+		ul{
+		  list-style-type: none;
+		  margin: 0;
+		  //padding: calculateRem(18px);
+
+		  li{
+			display: inline-block;
+			text-transform: uppercase;
+			//font-size: calculateRem(20px);
+
+			span{
+			  vertical-align: middle;
+			  display: inline-block;
+			}
+
+		  }
+		}
+
+	}
+
+	.nl-team-field {
+		#create-helmet {
+
+		  #oval {
+			position: absolute;
+			top: 14px;
+			z-index: 1;
+			right: 54%;
+			width: 35%;
+			height: auto;
+		  }
+		  #letter {
+			position: absolute;
+			top: 16px;
+			z-index: 2;
+			right: 52px;
+			width: 17%;
+			height: auto;
+		  }
+		}
+	}
 
 	.nl-team-list {
 		max-width: 27.25rem;
@@ -548,7 +644,7 @@
 	}
 
 	.nl-contest-info-table .table-info4.contestants td, .nl-contest-info-table .table-info4.contestants tr  {
-		padding: 0.5rem;
+		padding: 0.25rem;
 	}
 
 	.nl-contest-info-table .table-info4.contestants td:last-child{
@@ -618,7 +714,7 @@
 			padding: 0.5rem;
 
 			&:first-child {
-				text-align: left;
+				text-align: center;
 				width: 9%
 			}
 		}
@@ -959,6 +1055,26 @@
 .nl-live-score-contest-table {
 	padding: 0;
 
+	#create-helmet {
+
+		#oval {
+			position: absolute;
+			top: 11px;
+			z-index: 1;
+			right: 26px;
+			width: 5%;
+			height: auto;
+		}
+		#letter {
+			position: absolute;
+			top: 11px;
+			z-index: 2;
+			right: 30px;
+			width: 3%;
+			height: auto;
+		}
+	}
+
 	.nl-info-table-button {
 		min-height: 3rem;
 		text-align: center;
@@ -1009,7 +1125,7 @@
 	}
 
 	.rank__title {
-		padding: 0.5rem;
+		padding: 0.25rem;
 		flex: 1;
 
 		p {
@@ -1020,7 +1136,7 @@
 	}
 
 	.rank__thumb {
-		padding: 0.5rem;
+		padding: 0rem;
 
 		img {
 			max-width: 39px;

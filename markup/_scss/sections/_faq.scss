@@ -16,7 +16,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        padding-left: calculateRem(70px);
+        padding-left: 3.5rem;
         min-height: calculateRem(46px);
         margin-bottom: calculateRem(25px);
         font-weight: 500;
@@ -26,18 +26,34 @@
           @include fontSize(36px);
           font-weight: 700;
           transition: all .3s;
-          width: calculateRem(46px);
-          height: calculateRem(46px);
+          width: 2rem;
+          height: 2rem;
           color: #fff;
           background: #e58707;
           border-radius: calculateRem(23px);
           text-align: center;
-          line-height: calculateRem(42px);
+          line-height: 1.8rem;
           //margin: calculateRem(10px) calculateRem(25px) calculateRem(10px) 0 ;
           letter-spacing: 0;
           position: absolute;
-          top: 0;
+          top: 10px;
           left: 0;
+
+          @include respond-to(wide-tablets){
+            top: 7px;
+          }
+
+          @include respond-to(tablets){
+            top: 8px;
+          }
+
+          @include respond-to(allmobile){
+            top: 7px;
+          }
+
+          @include respond-to(handhelds){
+            top: 6px;
+          }
         }
         &:not(.collapsed){
           &:before{
@@ -46,6 +62,7 @@
         }
       }
     }
+
     .card-block{
       @include fontSize(18px);
       @include lineHeight(23px);

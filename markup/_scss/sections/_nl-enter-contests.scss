@@ -8,6 +8,10 @@
 
 .nl-enter-contests {
 
+  button.payout {
+    
+  }
+
   .nl-my-teams .nl-team-card img {
     height: 80px;
   }
@@ -276,15 +280,36 @@
     &.soccer {
       .nl-player-block{
         img{
-          max-width: 69px;
+          max-width: 77px;
            @include respond-to(wide-tablets){
-            max-width: 51px;
+            max-width: 61px;
           }
         }
       }
     }
 
     &.football{
+
+    #create-helmet {
+
+        #oval {
+          position: absolute;
+          top: 14px;
+          z-index: 1;
+          right: 60px;
+          width: 27%;
+          height: auto;
+        }
+        #letter {
+          position: absolute;
+          top: 16px;
+          z-index: 2;
+          right: 68px;
+          width: 13%;
+          height: auto;
+        }
+      }
+
       background: url(../img/football/nl-football-field.png) no-repeat 0 0;
       background-size: contain;
       //min-height: 420px;

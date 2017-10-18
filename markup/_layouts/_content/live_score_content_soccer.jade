@@ -4,11 +4,11 @@ mixin repeat(times)
 			div.matches__content
 				ul.matches__leaders-list
 					li
-						span <img src="http://localhost:3000/assets/img/emblem/MU.png" alt="MU">
+						span <img src="assets/img/emblem/MU.png" alt="MU">
 						span RMA
 						span 2
 					li
-						span <img src="http://localhost:3000/assets/img/emblem/FCB.png" alt="MU">
+						span <img src="assets/img/emblem/FCB.png" alt="MU">
 						span FCB
 						span 1
 			div.matches__result-header
@@ -17,7 +17,7 @@ mixin repeat(times)
 mixin current-table(times)
 	each i in new Array(times)
 		tr
-			td Touchsdowns all day long!
+			td Penalty shoot-outs!
 			td The best NLC2 team
 			td.orange 114/150
 			td 350
@@ -48,10 +48,10 @@ mixin list-of-teams(times)
 						div.rank__center
 							span 124
 					div.rank__title
-						p Best team evah
-						p.italic Best manager evah
+						p My Best Soccer Team
+						p.italic NLC2 Kasper 
 					div.rank__thumb
-						img(src="assets/img/helmet-2", alt="")
+						img(src="assets/img/soccer/A-R.png", alt="")
 				table.table.table-info3
 					thead
 						tr
@@ -206,7 +206,7 @@ section.nl-section.nl-players.nl-live-score.soccer
 					table.table.table-info1
 						tbody
 							tr
-								td
+								td.left
 									div.leaders-list
 										p.tit First Game
 										p 09/14/2017 08:25 AM
@@ -230,7 +230,7 @@ section.nl-section.nl-players.nl-live-score.soccer
 					table.table.table-info3
 						thead
 							tr
-								th
+								th Rank
 								th Contestant
 								th Score
 					div.nl-table-scroll3
@@ -251,7 +251,7 @@ section.nl-section.nl-players.nl-live-score.soccer
 								form.form-signin.dropdown-my-teams
 									.input-group
 										select#country.form-control.custom-select(placeholder='COUNTRY', required='')
-											option(selected='' disabled='' hidden='') Main best NFL Team!
+											option(selected='' disabled='' hidden='') My best soccer team!
 											option Other amazing team name1!
 											option Other amazing team name2!
 											option Other amazing team name3!
@@ -302,69 +302,69 @@ section.nl-section.nl-players.nl-live-score.soccer
 				div.nl-team-field
 					div.player-main-block.soccer
 						div.nl-player-block.nl-GK-position(data-position="GK")
-							img(src="assets/img/img-goalkeeper.png" alt="goalkeeper")
+							img(src="assets/img/soccer/GK.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p gronkowski
+								p.not-playing Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-DL-position(data-position="DL")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/D-L.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p.playing gronkowski
+								p.played Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-DR-position(data-position="DR")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/D-R.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p gronkowski
+								p.not-playing Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-FLEXL-position(data-position="FLEXL")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/FLEX-L.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p gronkowski
+								p.played Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-DM-position(data-position="DM")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/D-M.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p.not-playing gronkowski
+								p Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-MM-position(data-position="MM")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/M-M.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p gronkowski
+								p Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-MR-position(data-position="MR")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/M-R.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p.playing gronkowski
+								p.played Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-ML-position(data-position="ML")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/M-L.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p.played gronkowski
+								p Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-FLEXR-position(data-position="FLEXR")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/FLEX-R.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p gronkowski
+								p.not-playing Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-AL-position(data-position="AL")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/A-L.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p.not-playing gronkowski
+								p Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-AR-position(data-position="AR")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/A-R.png" alt="goalkeeper")
 							div.nl-player-block--data
-								p.played gronkowski
+								p.playing Ronaldo
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 
@@ -509,9 +509,19 @@ section.nl-section.nl-players.nl-live-score.soccer
 										p.orange Dharmesh
 									div.col-8.col-lg-9
 										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-
-
-
+		div.row
+			div.col-12.text-center
+				div.nl-status-wrapper
+					ul
+						li
+							span.playing.indicator
+							span Playing
+						li
+							span.played.indicator
+							span Played
+						li
+							span.not-playing.indicator
+							span Not Playing
 		div.row
 			+list-of-teams(12)
 		div.row

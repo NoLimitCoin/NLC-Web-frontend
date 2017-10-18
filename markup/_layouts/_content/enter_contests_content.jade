@@ -42,57 +42,57 @@ section.nl-section.nl-players.nl-enter-contests.soccer
 				div.nl-team-field.soccer
 					div.player-main-block
 						div.nl-player-block.nl-GK-position(data-position="GK")
-							img(src="assets/img/img-goalkeeper.png" alt="goalkeeper")
+							img(src="assets/img/soccer/GK.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-DL-position(data-position="DL")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/D-L.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-DR-position(data-position="DR")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/D-R.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-FLEXL-position(data-position="FLEXL")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/FLEX-L.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-DM-position(data-position="DM")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/D-M.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-MM-position(data-position="MM")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/M-M.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-MR-position(data-position="MR")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/M-R.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-ML-position(data-position="ML")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/M-L.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-FLEXR-position(data-position="FLEXR")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/FLEX-R.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-AL-position(data-position="AL")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/A-L.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
 						div.nl-player-block.nl-AR-position(data-position="AR")
-							img(src="assets/img/img-players.png" alt="goalkeeper")
+							img(src="assets/img/soccer/A-R.png" alt="goalkeeper")
 							div.nl-player-block--data
 								p gronkowski
 								p.data.orange <span>12.67</span> <span>$42000</span>
@@ -303,4 +303,55 @@ section.nl-section.nl-players.nl-enter-contests.soccer
 						thead
 							tr
 								th 
-									button.btn.btn-primary.payout Payout
+									button.btn.btn-primary.payout(type='button', data-toggle='modal', data-target='#payoutModal') Payout
+
+#payoutModal.modal.fade(role='dialog' data-backdrop="static" data-keyboard="false")
+	div.row
+		div.col-10.offset-1.col-sm-8.offset-sm-2.col-lg-6.offset-lg-3
+			.modal-dialog
+				.modal-content
+					div.row
+						div.col-10.offset-1
+							h4.modal-title.orange
+								span Payout Structure
+						div.exit-button 
+							button.close(type='button', data-dismiss='modal') ×
+					.modal-body
+						div.row 
+							div.col-10.offset-1
+								div.row
+									div.col-1.payout-rank   
+										p 1.
+									div.col-6  
+										p.inline 100%
+										p.inline.orange of total
+									div.col-5   
+										p.inline 30000
+										p.inline.orange NLC2
+								div.row
+									div.col-1.payout-rank   
+										p 2.
+									div.col-6  
+										p.inline 80%
+										p.inline.orange of total
+									div.col-5   
+										p.inline 30000
+										p.inline.orange NLC2
+								div.row
+									div.col-1.payout-rank   
+										p 3.
+									div.col-6  
+										p.inline 60%
+										p.inline.orange of total
+									div.col-5   
+										p.inline 30000
+										p.inline.orange NLC2
+								div.row
+									div.col-1.payout-rank   
+										p 4.
+									div.col-6  
+										p.inline 30%
+										p.inline.orange of total
+									div.col-5   
+										p.inline 30000
+										p.inline.orange NLC2

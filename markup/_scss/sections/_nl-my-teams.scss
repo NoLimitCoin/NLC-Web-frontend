@@ -1,5 +1,30 @@
 .nl-my-teams{
 
+  #create-helmet {
+
+    #oval {
+      position: absolute;
+      top: 21px;
+      z-index: 1;
+      right: 60px;
+      width: 6%;
+      height: auto;
+
+      @media (min-width: 1850px) {
+        right: 57px;
+      }
+    }
+    #letter {
+      position: absolute;
+      top: 23px;
+      z-index: 2;
+      right: 67px;
+      width: 3%;
+      height: auto
+    }
+  }
+
+
   .nl-status-wrapper {
     margin: 0 auto;
   }
@@ -35,10 +60,11 @@
   }
 
   .soccer .nl-team-card.table-data-field {
+    background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
     padding: 1.625rem 0.625rem;
   }
 
-  background: url(../img/stadion_detail.jpg) top center no-repeat fixed;
+  background: url(../img/stadion_full.jpg) top center no-repeat fixed;
   background-size: cover;
   color: #061540;
   padding-bottom: calculateRem(50px);
@@ -156,12 +182,6 @@
         font-size: 20px;
       }
 
-      @include respond-to(allwider){
-        margin-left: 2rem;
-        font-size: 21px;
-
-      }
-
       @include respond-to(handhelds){
         font-size: 15px;
         margin-left: 3rem;
@@ -169,6 +189,11 @@
 
       @include respond-to(tablets){
         font-size: 17px;
+      }
+
+      @include respond-to(allwider){
+        margin-left: 1rem;
+        font-size: 21px;
       }
     }
 
@@ -272,13 +297,26 @@
 
 // refers to table on the my teams page
 .nl-my-teams {
+
+  .smaller-padding-teams {
+    padding: 0 10px;
+  }
+
   .table {
+
+    .indicator {
+      margin: 0;
+    }
+
     th, td{
+
+      font-size: 12px;
+
       &:nth-child(1){
-        width: 10%;
+        width: 7%;
       }
       &:nth-child(2){
-        width: 30%;
+        width: 33%;
       }
       &:nth-child(3){
         width: 10%;
