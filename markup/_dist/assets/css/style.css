@@ -9161,7 +9161,10 @@ section .container-fluid {
   border-radius: 0.5rem 0.5rem 0 0; }
 
 .orange {
-  color: #df920b; }
+  color: #df920b !important; }
+
+.inline-block {
+  display: inline-block; }
 
 .btn.btn-primary {
   font-weight: 600; }
@@ -10114,7 +10117,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10231,7 +10234,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10754,6 +10757,72 @@ p {
 
 .nl-section.homepage {
   padding: 1.5rem 2.25rem; }
+  .nl-section.homepage .new-top5-players-container .new-above-table {
+    background: #061540; }
+    .nl-section.homepage .new-top5-players-container .new-above-table .row {
+      margin: 0; }
+    .nl-section.homepage .new-top5-players-container .new-above-table img {
+      width: auto;
+      display: inline-block; }
+    .nl-section.homepage .new-top5-players-container .new-above-table h3 {
+      font-size: 1.45rem;
+      line-height: 1rem;
+      font-weight: 500;
+      padding: 0;
+      color: white;
+      display: inline-block; }
+    .nl-section.homepage .new-top5-players-container .new-above-table h2 {
+      color: white;
+      margin-bottom: 0; }
+    .nl-section.homepage .new-top5-players-container .new-above-table p {
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+      color: white;
+      line-height: 1rem; }
+    .nl-section.homepage .new-top5-players-container .new-above-table h3.rank-number {
+      width: 87px;
+      height: 20px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
+      background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
+      line-height: 1.3rem;
+      text-align: center;
+      color: white;
+      border-radius: 0;
+      position: absolute;
+      top: 78px;
+      left: 15px;
+      z-index: 2;
+      font-size: 20px;
+      font-weight: 600; }
+    .nl-section.homepage .new-top5-players-container .new-above-table h3.player-name {
+      position: absolute;
+      top: 79px;
+      left: 115px;
+      z-index: 2;
+      font-size: 20px; }
+  .nl-section.homepage .new-top5-players-container .new-top5-table thead th, .nl-section.homepage .new-top5-players-container .new-top5-table td {
+    padding: 0.25rem;
+    text-align: center;
+    font-size: 10px; }
+  .nl-section.homepage .new-top5-players-container .new-top5-table thead th {
+    background: #0f254f; }
+  .nl-section.homepage .new-top5-players-container .player-data {
+    padding: 5px 0 29px 0;
+    text-align: center; }
+  .nl-section.homepage .new-top5-players-container .new-news-player {
+    background: #0f254f;
+    border-left: 3px solid orange;
+    color: white;
+    padding: 10px;
+    margin-left: -17px; }
+    .nl-section.homepage .new-top5-players-container .new-news-player h5 {
+      color: orange;
+      font-size: 12px;
+      line-height: 1rem; }
+    .nl-section.homepage .new-top5-players-container .new-news-player p {
+      font-size: 11px;
+      line-height: 1rem; }
   .nl-section.homepage .points-in-bar {
     display: none; }
   .nl-section.homepage .player-info h5 {
@@ -10811,20 +10880,6 @@ p {
       right: 0; }
       .nl-section.homepage #top5-managers-picture .points-in-bar p, .nl-section.homepage #top5-players-picture .points-in-bar p {
         font-size: 18px; }
-  .nl-section.homepage #top-player {
-    max-height: 225px;
-    margin: 0 auto;
-    width: auto; }
-    @media only screen and (max-width: 575px) {
-      .nl-section.homepage #top-player {
-        max-height: 188px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .nl-section.homepage #top-player {
-        width: auto;
-        height: 100%; } }
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .nl-section.homepage #top-player {
-        max-width: 262px; } }
   .nl-section.homepage #top-manager {
     max-height: 210px;
     margin: 0 auto;
@@ -11871,11 +11926,9 @@ p {
   .week h5.visible-xxs {
     font-weight: 700; }
 
-#top5-player-content #create-helmet #helmet,
 #top5-manager-content #create-helmet #helmet {
   height: 42px; }
 
-#top5-player-content #create-helmet #oval,
 #top5-manager-content #create-helmet #oval {
   position: absolute;
   top: 7px;
@@ -11884,7 +11937,6 @@ p {
   width: 38%;
   height: auto; }
 
-#top5-player-content #create-helmet #letter,
 #top5-manager-content #create-helmet #letter {
   position: absolute;
   top: 8px;
@@ -11893,55 +11945,43 @@ p {
   width: 17%;
   height: auto; }
 
-#top5-player-content .no-padding,
 #top5-manager-content .no-padding {
   padding: 0; }
 
-#top5-player-content .row,
 #top5-manager-content .row {
   margin-left: 0;
   margin-right: 0; }
 
-#top5-player-content .col-10,
 #top5-manager-content .col-10 {
   padding-left: 0;
   padding-right: 0; }
 
 @media (max-width: 767px) {
-  #top5-player-content,
   #top5-manager-content {
     min-height: 200px;
     padding-top: 20px; } }
 
-#top5-player-content h3,
 #top5-manager-content h3 {
   font-size: 0.95rem;
-  padding-left: 1rem;
   line-height: 1rem;
   font-weight: 500; }
 
-#top5-player-content .orange,
 #top5-manager-content .orange {
   color: #e48706; }
 
-#top5-player-content .nl-my-teams,
 #top5-manager-content .nl-my-teams {
   padding: 0; }
 
-#top5-player-content .nl-my-teams .nl-team-card,
 #top5-manager-content .nl-my-teams .nl-team-card {
   padding: 0 0.625rem; }
 
-#top5-player-content .nav,
 #top5-manager-content .nav {
   padding-left: 10px;
   margin-right: -10px; }
 
-#top5-player-content .nav-item,
 #top5-manager-content .nav-item {
   width: 19.5%; }
 
-#top5-player-content img.helmet,
 #top5-manager-content img.helmet {
   height: 45px; }
 
@@ -14130,7 +14170,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14386,7 +14426,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -16161,7 +16201,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {

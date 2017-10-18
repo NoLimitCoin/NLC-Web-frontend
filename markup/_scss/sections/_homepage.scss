@@ -461,6 +461,105 @@
 
 .nl-section.homepage {
 
+  .new-top5-players-container {
+
+    .new-above-table {
+
+      .row {
+        margin: 0;
+      }
+
+      background: #061540;
+
+      img {
+        width: auto;
+        display: inline-block;
+      }
+
+      h3 {
+        font-size: 1.45rem;
+        line-height: 1rem;
+        font-weight: 500;
+        padding: 0;
+        color: white;
+        display: inline-block;
+      }
+
+      h2 {
+        color: white;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        color: white;
+        line-height: 1rem;
+      }
+
+      h3.rank-number {
+        width: 87px;
+        height: 20px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
+        background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
+        line-height: 1.3rem;
+        text-align: center;
+        color: white;
+        border-radius: 0;
+        position: absolute;
+        top: 78px;
+        left: 15px;
+        z-index: 2;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      h3.player-name {
+        position: absolute;
+        top: 79px;
+        left: 115px;
+        z-index: 2;
+        font-size: 20px;
+      }
+    }
+
+    .new-top5-table {
+      thead th, td {
+        padding: 0.25rem;
+        text-align: center;
+        font-size: 10px;
+      }
+
+      thead th {
+        background: #0f254f;
+      }
+    }
+
+    .player-data {
+      padding: 5px 0 29px 0;
+      text-align: center;      
+    }
+
+    .new-news-player {
+      background: #0f254f;
+      border-left: 3px solid orange;
+      color: white;
+      padding: 10px;
+      margin-left: -17px;
+
+      h5 {
+        color: orange;
+        font-size: 12px;
+        line-height: 1rem;
+      }
+
+      p {
+        font-size: 11px;
+        line-height: 1rem;
+      }
+    }
+  }
+
   // TODO fix later for Raf
   .points-in-bar {
     display: none;
@@ -548,25 +647,6 @@
       p {
         font-size: 18px;
       }
-    }
-  }
-
-  #top-player {
-     max-height: 225px;
-     margin: 0 auto;
-     width: auto;
-
-     @include respond-to (handhelds) {
-      max-height: 188px;
-     }
-
-    @include respond-to (tablets) {
-      width: auto;
-      height: 100%;
-    }
-
-    @include respond-to (wide-tablets) {
-      max-width: 262px;
     }
   }
 
@@ -2241,7 +2321,6 @@
   }
 }
 
-#top5-player-content,
 #top5-manager-content {
   
   #create-helmet {
@@ -2288,7 +2367,7 @@
 
   h3 {
     font-size: 0.95rem;
-    padding-left: 1rem;
+    //padding-left: 1rem;
     line-height: 1rem;
     font-weight: 500;
   }

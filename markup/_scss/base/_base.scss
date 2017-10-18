@@ -91,7 +91,11 @@ section .container-fluid {
 }
 
 .orange {
-	color: #df920b;
+	color: #df920b !important;
+}
+
+.inline-block {
+	display: inline-block;
 }
 
 .btn.btn-primary {

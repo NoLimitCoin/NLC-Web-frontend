@@ -79,7 +79,7 @@ div.tab-content(id="top5-player-content")
 	div(role='tabpanel' class='tab-pane active top-level-panel' id='RB')
 		div.content
 			div.row
-				div.col-lg-12.menubar
+				div.col-lg-12.menubar.no-padding-all-sides
 					div#carouselTop5Players.carousel.slide(data-ride='carousel') 
 						ul.nav.menu(role="tablist")
 							li.nav-item
@@ -144,111 +144,195 @@ div.tab-content(id="top5-player-content")
 												p.points 121 PTS
 						div.carousel-inner
 							div.carousel-item.active
-								div.tab-content
-									div#player1.tab-pane.active(role="tabpanel")
-										div.row.player
-											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player1.png', style='display: block;')
-												div.player-image-inner
-													div.number
-														p 1
-													div.name
-														p Rob Grownkowski
-													div.points-in-bar
-														p.points 121 PTS 
-											div.player-info
-												p FP points
-												h5 121.5
-												p Salary
-												h5 $7100
-												p Team Name
-												h5 Barcelona
-												p More info 
-												i.fa.fa-info-circle 
-							div.carousel-item
-								div.tab-content
-									div#player1.tab-pane.active(role="tabpanel")
-										div.row.player
-											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player2.png', style='display: block;')
-												div.player-image-inner
-													div.number
-														p 2
-													div.name
-														p Odell Beckham JR.
-													p.points 121 PTS 
-											div.player-info
-												p FP points
-												h5 121.5
-												p Salary
-												h5 $7100
-												p Team Name
-												h5 Barcelona
-												p More info 
-												i.fa.fa-info-circle 
-							div.carousel-item
-								div.tab-content
-									div#player1.tab-pane.active(role="tabpanel")
-										div.row.player
-											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player3.png', style='display: block;')
-												div.player-image-inner
-													div.number
-														p 3
-													div.name
-														p Matt Ryan
-													p.points 121 PTS 
-											div.player-info
-												p FP points
-												h5 121.5
-												p Salary
-												h5 $7100
-												p Team Name
-												h5 Barcelona
-												p More info 
-												i.fa.fa-info-circle 
-							div.carousel-item
-								div.tab-content
-									div#player1.tab-pane.active(role="tabpanel")
-										div.row.player
-											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player4.png', style='display: block;')
-												div.player-image-inner
-													div.number
-														p 4
-													div.name
-														p Aaron Rodgers
-													p.points 121 PTS 
-											div.player-info
-												p FP points
-												h5 121.5
-												p Salary
-												h5 $7100
-												p Team Name
-												h5 Barcelona
-												p More info 
-												i.fa.fa-info-circle 
-							div.carousel-item
-								div.tab-content
-									div#player1.tab-pane.active(role="tabpanel")
-										div.row.player
-											#top5-players-picture(style='display: block;')
-												img#top-player(src='assets/img/player5.png', style='display: block;')
-												div.player-image-inner
-													div.number
-														p 5
-													div.name
-														p David Johnson
-													p.points 121 PTS 
-											div.player-info
-												p FP points
-												h5 121.5
-												p Salary
-												h5 $7100
-												p Team Name
-												h5 Barcelona
-												p More info 
-												i.fa.fa-info-circle 
+								div.row.new-top5-players-container
+									div.col-7.no-padding
+										div.new-above-table
+											h3.rank-number rank 1 
+											h3.player-name A Great Playerrrr
+											div.row.player-stats
+												div.col-4.no-padding
+													img#top-player-nav(src='assets/img/player1-new.png')
+												div.col-4.player-data
+													//- h3 Team
+													//- h3.orange.inline-block CHI
+													p Team
+													p.orange Patriots
+													//- h3 Pos
+													//- h3.orange.inline-block RB
+													p Pos
+													p.orange RB
+												div.col-4.player-data
+													//- h3 Salary 
+													//- h3.orange.inline-block $3200
+													//- h3 Score 
+													//- h3.orange.inline-block 13.4
+													p Salary 
+													p.orange $3200
+													p Score 
+													p.orange 13.4
+										div.tab-content
+											table.table.table-striped.new-top5-table
+												thead
+													tr
+														th week
+														th opp
+														th paatt
+														th pacm
+														th payd
+														th patd
+														th paint
+														th ruyd
+														th rutd
+												tbody
+													tr
+
+														td 124
+														td JAX
+														td 30
+														td $0
+														td 234
+														td 324
+														td 30
+														td $0
+														td 765
+													tr
+
+														td 124
+														td JAX
+														td 30
+														td $0
+														td 234
+														td 324
+														td 30
+														td $0
+														td 765
+													tr
+
+														td 124
+														td JAX
+														td 30
+														td $0
+														td 234
+														td 324
+														td 30
+														td $0
+														td 765
+													tr
+
+														td 124
+														td JAX
+														td 30
+														td $0
+														td 234
+														td 324
+														td 30
+														td $0
+														td 765
+													tr
+
+														td 124
+														td JAX
+														td 30
+														td $0
+														td 234
+														td 324
+														td 30
+														td $0
+														td 765
+
+									div.col-5.new-news-player
+										h5 Todd Gurley Bounces Back In Victory Over Jags
+										p Los Angeles Chargers quarterback Philip Rivers had a solid week against the weak Oakland secondary.
+										p
+											a(href="#") more...
+										h5 Todd Gurley Bounces Back In Victory Over Jags
+										p Los Angeles Chargers quarterback Philip Rivers had a solid week against the weak Oakland secondary.
+										p
+											a(href="#") more...
+							//- div.carousel-item
+							//- 	div.tab-content
+							//- 		div#player1.tab-pane.active(role="tabpanel")
+							//- 			div.row.player
+							//- 				#top5-players-picture(style='display: block;')
+							//- 					img#top-player(src='assets/img/player2.png', style='display: block;')
+							//- 					div.player-image-inner
+							//- 						div.number
+							//- 							p 2
+							//- 						div.name
+							//- 							p Odell Beckham JR.
+							//- 						p.points 121 PTS 
+							//- 				div.player-info
+							//- 					p FP points
+							//- 					h5 121.5
+							//- 					p Salary
+							//- 					h5 $7100
+							//- 					p Team Name
+							//- 					h5 Barcelona
+							//- 					p More info 
+							//- 					i.fa.fa-info-circle 
+							//- div.carousel-item
+							//- 	div.tab-content
+							//- 		div#player1.tab-pane.active(role="tabpanel")
+							//- 			div.row.player
+							//- 				#top5-players-picture(style='display: block;')
+							//- 					img#top-player(src='assets/img/player3.png', style='display: block;')
+							//- 					div.player-image-inner
+							//- 						div.number
+							//- 							p 3
+							//- 						div.name
+							//- 							p Matt Ryan
+							//- 						p.points 121 PTS 
+							//- 				div.player-info
+							//- 					p FP points
+							//- 					h5 121.5
+							//- 					p Salary
+							//- 					h5 $7100
+							//- 					p Team Name
+							//- 					h5 Barcelona
+							//- 					p More info 
+							//- 					i.fa.fa-info-circle 
+							//- div.carousel-item
+							//- 	div.tab-content
+							//- 		div#player1.tab-pane.active(role="tabpanel")
+							//- 			div.row.player
+							//- 				#top5-players-picture(style='display: block;')
+							//- 					img#top-player(src='assets/img/player4.png', style='display: block;')
+							//- 					div.player-image-inner
+							//- 						div.number
+							//- 							p 4
+							//- 						div.name
+							//- 							p Aaron Rodgers
+							//- 						p.points 121 PTS 
+							//- 				div.player-info
+							//- 					p FP points
+							//- 					h5 121.5
+							//- 					p Salary
+							//- 					h5 $7100
+							//- 					p Team Name
+							//- 					h5 Barcelona
+							//- 					p More info 
+							//- 					i.fa.fa-info-circle 
+							//- div.carousel-item
+							//- 	div.tab-content
+							//- 		div#player1.tab-pane.active(role="tabpanel")
+							//- 			div.row.player
+							//- 				#top5-players-picture(style='display: block;')
+							//- 					img#top-player(src='assets/img/player5.png', style='display: block;')
+							//- 					div.player-image-inner
+							//- 						div.number
+							//- 							p 5
+							//- 						div.name
+							//- 							p David Johnson
+							//- 						p.points 121 PTS 
+							//- 				div.player-info
+							//- 					p FP points
+							//- 					h5 121.5
+							//- 					p Salary
+							//- 					h5 $7100
+							//- 					p Team Name
+							//- 					h5 Barcelona
+							//- 					p More info 
+							//- 					i.fa.fa-info-circle 
 
 
 	
