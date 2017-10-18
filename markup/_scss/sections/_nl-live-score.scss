@@ -378,6 +378,20 @@
 	padding: 0.875rem 0 0 0;
 	margin: .25rem 0 1.5rem 0;
 
+	&.nl-live-score-contest-table {
+
+		.table-info4,
+		.table-info3 {
+			th,
+			td {
+				&:nth-child(2) {
+				 text-align: left;
+				 padding-left: 3px;	 
+				}
+			}
+		}
+	}
+
 	.table-info1 td {
 
 		&.left {
@@ -427,9 +441,9 @@
 			}
 
 			&:nth-child(2) {
-			 width: 42%;
-			 
+			 width: 42%;			 
 			}
+
 			&:nth-child(3) {
 			  width: 17%;
 			}
@@ -439,6 +453,10 @@
 			}
 			&:nth-child(5) {
 			  width: 17%;
+			}
+
+			&:last-child{
+				padding-right: 0 !important;
 			}
 		}
 	}

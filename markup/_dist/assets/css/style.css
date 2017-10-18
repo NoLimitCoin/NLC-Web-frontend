@@ -1798,6 +1798,9 @@ pre {
   .form-control:-ms-input-placeholder {
     color: #061540;
     opacity: 1; }
+  .form-control::-ms-input-placeholder {
+    color: #061540;
+    opacity: 1; }
   .form-control::placeholder {
     color: #061540;
     opacity: 1; }
@@ -15270,6 +15273,12 @@ td:nth-child(4).homepage-list-view {
   background-color: #0f254f;
   padding: 0.875rem 0 0 0;
   margin: .25rem 0 1.5rem 0; }
+  .nl-contest-info-table.nl-live-score-contest-table .table-info4 th:nth-child(2),
+  .nl-contest-info-table.nl-live-score-contest-table .table-info4 td:nth-child(2),
+  .nl-contest-info-table.nl-live-score-contest-table .table-info3 th:nth-child(2),
+  .nl-contest-info-table.nl-live-score-contest-table .table-info3 td:nth-child(2) {
+    text-align: left;
+    padding-left: 3px; }
   .nl-contest-info-table .table-info1 td.left {
     padding: 0.5em 0rem 0.25rem 1.25rem; }
   .nl-contest-info-table .dropdown {
@@ -15323,6 +15332,11 @@ td:nth-child(4).homepage-list-view {
     .nl-contest-info-table .table-info3 th:nth-child(5),
     .nl-contest-info-table .table-info3 td:nth-child(5) {
       width: 17%; }
+    .nl-contest-info-table .table-info4 th:last-child,
+    .nl-contest-info-table .table-info4 td:last-child,
+    .nl-contest-info-table .table-info3 th:last-child,
+    .nl-contest-info-table .table-info3 td:last-child {
+      padding-right: 0 !important; }
   .nl-contest-info-table .table-info3 th, .nl-contest-info-table .table-info3 td {
     padding: 0.5rem 0; }
   .nl-contest-info-table .table-info3:nth-child(1) {
