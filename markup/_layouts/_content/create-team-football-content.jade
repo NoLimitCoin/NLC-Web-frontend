@@ -39,8 +39,10 @@ section.nl-section.nl-players.nl-create-team
                                     button.btn.btn-secondary(type="button") <i class="fa fa-search" aria-hidden="true"></i>
 
                     ul.nav.nav-tabs(role="tablist")
-                        li.nav-item
+                        li.nav-item.hidden-xs-down
                             a.nav-link.active(data-toggle="tab" href="#all" role="tab") All players
+                        li.nav-item.hidden-sm-up
+                            a.nav-link.active(data-toggle="tab" href="#all" role="tab") All
                         li.nav-item
                             a.nav-link(data-toggle="tab" href="#qb" role="tab") QB
                         li.nav-item
@@ -888,59 +890,68 @@ section.nl-section.nl-players.nl-create-team
                 div.nl-team-field.football
                     div.player-main-block.football
                         div.nl-player-block.nl-FLEX-position(data-position="FLEX")
-                            img(src="assets/img/football/img-FLEX.png" alt="FLEX")
+                            img(src="assets/img/football/img-FLEX.png" alt="FLEX" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p gronkowski
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none gronkowski
+                                p.placeholder FLEX
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-K-position(data-position="K")
-                            img(src="assets/img/football/img-K.png" alt="K")
+                            img(src="assets/img/football/img-K.png" alt="K" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p gronkowski
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none gronkowski
+                                p.placeholder K
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-LRB-position(data-position="LRB")
-                            img(src="assets/img/football/img-LRB.png" alt="LRB")
+                            img(src="assets/img/football/img-LRB.png" alt="LRB" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p gronkowski
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none gronkowski
+                                p.placeholder RB
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-RRB-position(data-position="RRB")
-                            img(src="assets/img/football/img-RRB.png" alt="RRB")
+                            img(src="assets/img/football/img-RRB.png" alt="RRB" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p gronkowski
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none gronkowski
+                                p.placeholder RB
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-QB-position(data-position="QB")
-                            img(src="assets/img/football/img-QB.png" alt="QB")
+                            img(src="assets/img/football/img-QB.png" alt="QB" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p gronkowski
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none gronkowski
+                                p.placeholder QB
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-LWR-position(data-position="LWR")
-                            img(src="assets/img/football/img-LWR.png" alt="LWR")
+                            img(src="assets/img/football/img-LWR.png" alt="LWR" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p gronkowski
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none gronkowski
+                                p.placeholder WR
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-RWR-position(data-position="RWR")
-                            img(src="assets/img/football/img-RWR.png" alt="RWR")
+                            img(src="assets/img/football/img-RWR.png" alt="RWR" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p gronkowski
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none gronkowski
+                                p.placeholder WR
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-TE-position(data-position="TE")
-                            img(src="assets/img/football/img-TE.png" alt="TE")
+                            img(src="assets/img/football/img-TE.png" alt="TE" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p gronkowski
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none gronkowski
+                                p.placeholder TE
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
                         div.nl-player-block.nl-DEF-position(data-position="DEF")
-                            img(src="assets/img/helmet-3" alt="logo")
+                            img(src="assets/img/helmet-3" alt="logo" class="vis-hidden")
                             div.nl-player-block--data
-                                button.btn.btn-link.btn-player-close(type="button") <i class="fa fa-close" aria-hidden="true"></i>
-                                p PATRIOTS
-                                p.data.orange <span>12.67</span> <span>$42000</span>
+                                button.btn.btn-link.btn-player-close.vis-hidden(type="button") <i class="fa fa-close" aria-hidden="true"></i>
+                                p.display-none Patriots
+                                p.placeholder DEF
+                                p.data.orange.display-none <span>12.67</span> <span>$42000</span>
 
                 div.nl-team-list.nl-my-teams.hide
                     .nl-card-wrapper
