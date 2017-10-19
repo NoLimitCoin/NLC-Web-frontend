@@ -2,10 +2,15 @@
 .nl-section.homepage .container-fluid {
   max-width: 1650px;
 
-  .row {
-    @include respond-to (allwide) {
-      margin-right: 0;
-      margin-left: 0;
+  // .row {
+  //   @include respond-to (allwide) {
+  //     margin-right: 0;
+  //     margin-left: 0;
+  //   }
+  // }
+  .nl-contests-table {
+    @include respond-to (allmobile) {
+      margin-top: 0.75rem;
     }
   }
 }
@@ -1355,6 +1360,13 @@
     @include respond-to (tablets) {
       margin-bottom: 20px;
     }
+
+    &.row {
+      @include respond-to (allwide) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
   }
 
   .bottom-teams-contests-section {
@@ -1367,6 +1379,10 @@
 
   .dropdown-my-teams {
     margin-top: 1.875rem;
+
+    @include respond-to (allsmall) {
+      margin-top: 0;
+    }
   }
 
   .nl-team-info {
@@ -1376,7 +1392,7 @@
       font-weight: 600;
       margin: 14px 30px;
 
-      @include respond-to ( handhelds) {
+      @include respond-to (handhelds) {
         margin: 8px 12px;
         padding: 5px 15px;
       }
@@ -2653,6 +2669,10 @@
 
   .team-list-view {
     padding-right: 0;
+
+    @include respond-to (allsmall) {
+      padding-right: 15px;
+    }
   }
   
     
@@ -3002,6 +3022,13 @@
     @include respond-to(tablets) {
       width: 80%;
       margin: 20px auto 50px auto;
+    }
+  }
+
+  .row {
+    @include respond-to (allwide) {
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 }

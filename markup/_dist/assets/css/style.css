@@ -10397,10 +10397,9 @@ p {
 /*general for homepage*/
 .nl-section.homepage .container-fluid {
   max-width: 1650px; }
-  @media (min-width: 992px) {
-    .nl-section.homepage .container-fluid .row {
-      margin-right: 0;
-      margin-left: 0; } }
+  @media (max-width: 767px) {
+    .nl-section.homepage .container-fluid .nl-contests-table {
+      margin-top: 0.75rem; } }
 
 .nl-section.homepage.football-homepage .nl-team-list .helmet-container {
   position: relative;
@@ -11299,6 +11298,10 @@ p {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .homepage .top-5-section {
         margin-bottom: 20px; } }
+    @media (min-width: 992px) {
+      .homepage .top-5-section.row {
+        margin-right: 0;
+        margin-left: 0; } }
   .homepage .bottom-teams-contests-section {
     margin-bottom: 20px; }
     @media (max-width: 767px) {
@@ -11306,6 +11309,9 @@ p {
         padding-top: 20px; } }
   .homepage .dropdown-my-teams {
     margin-top: 1.875rem; }
+    @media (max-width: 991px) {
+      .homepage .dropdown-my-teams {
+        margin-top: 0; } }
   .homepage .nl-team-info {
     max-width: 100%; }
     .homepage .nl-team-info button {
@@ -12074,6 +12080,9 @@ p {
 
 #top5-manager-content .team-list-view {
   padding-right: 0; }
+  @media (max-width: 991px) {
+    #top5-manager-content .team-list-view {
+      padding-right: 15px; } }
 
 #top5-manager-content .no-padding {
   padding: 0; }
@@ -12306,6 +12315,11 @@ p {
   #top5-player-content .player {
     width: 80%;
     margin: 20px auto 50px auto; } }
+
+@media (min-width: 992px) {
+  #top5-player-content .row {
+    margin-right: 0;
+    margin-left: 0; } }
 
 /*week or manager*/
 .manager-name {
