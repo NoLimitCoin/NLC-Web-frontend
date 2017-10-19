@@ -1050,29 +1050,29 @@
 
   .menu-item.top-5 .number p {
     font-size: 18px;
-    line-height: 1.1rem;
+    line-height: 2.25rem;
 
-    @include respond-to (allsmall) {
-      line-height: 1.5rem;
-    }
+    // @include respond-to (allsmall) {
+    //   line-height: 1.5rem;
+    // }
 
-    @include respond-to (allwide) {
-      line-height: 1.3rem;
-    }
+    // @include respond-to (allwide) {
+    //   line-height: 1.3rem;
+    // }
 
-    @include respond-to (allwider) {
-      line-height: 1.1rem;
-    }
+    // @include respond-to (allwider) {
+    //   line-height: 1.1rem;
+    // }
 
-    @media (min-width: 1680px) and (max-width: 1850px) {
-      line-height: 1.35rem;
-      font-size: 21px;
-    }
+    // @media (min-width: 1680px) and (max-width: 1850px) {
+    //   line-height: 1.35rem;
+    //   font-size: 21px;
+    // }
 
-    @media (min-width: 1850px) {
-      line-height: 1.35rem;
-      font-size: 21px;
-    }
+    // @media (min-width: 1850px) {
+    //   line-height: 2rem;
+    //   font-size: 21px;
+    // }
   }
 
   .menu-item.top-5 .number {
@@ -1643,7 +1643,7 @@
       position: absolute;
       top: 93px;
       width: 22px;
-      height: 22px;
+      height: 35px;
       background: #e89608;
       background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
       font-size: 19px;
@@ -1655,37 +1655,22 @@
       display: inline-block;
       margin-top: -3px;
       color: #ffffff;
-      border-radius: 0.125rem 0 0 0.125rem;
+      border-radius: 0.25rem 0 0 0.25rem;
 
       @include respond-to(wide-tablets) {
         top: 58px;
-        left: 0;
-        font-size: 10px;
-        width: 18px;
-        height: 18px;
       }
 
       @include respond-to(medium-display) {
         top: 73px;
-        left: 2px;
-        font-size: 10px;
-        width: 18px;
-        height: 18px;
       }
 
       @include respond-to(wide-display) {
         top: 73px;
-        left: 2px;
-        font-size: 10px;
-        width: 18px;
-        height: 18px;
       }
 
       @include respond-to(large-display) {
         top: 83px;
-        font-size: 10px;
-        width: 18px;
-        height: 18px;
       }
     }
 
@@ -1701,52 +1686,53 @@
       overflow: hidden;
       text-overflow: ellipsis;
       border-radius: 0.25rem;
+      padding-bottom: 35px;
 
       p {
         padding: 2px 5px 5px 15px;
         font-weight: 500;
       }
 
-      @include respond-to(wide-tablets) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(wide-tablets) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 1px;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 1px;
+      //   }
+      // }
 
-      @include respond-to(medium-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(medium-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //   }
+      // }
 
-      @include respond-to(wide-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(wide-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //   }
+      // }
 
-      @include respond-to(large-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(large-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-          margin-top: -2px;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //     margin-top: -2px;
+      //   }
+      // }
     }
 
     .manager-thumbnail-name {
@@ -1761,52 +1747,71 @@
       overflow: hidden;
       text-overflow: ellipsis;
       border-radius: 0.25rem;
+      padding-bottom: 35px;
 
       p {
-        padding: 2px 5px 5px 15px;
+        padding-top: 5px;
         font-weight: 500;
-      }
+        padding-bottom: 0;
+        margin-bottom: 0;
+        line-height: 0.65rem;
+        margin-left: 23px;
 
-      @include respond-to(wide-tablets) {
-        font-size: 10px;
-        height: 18px;
+        @include respond-to (medium-display) {
+          font-size: 11px;
+        }
 
-        p {
-          padding-left: 20px;
-          padding-top: 1px;
+        @include respond-to (wide-tablets) {
+          font-size: 10px;
+          padding-top: 6px;
+        }
+
+        @include respond-to (tablets) {
+          font-size: 10px;
+          padding-top: 6px;
         }
       }
 
-      @include respond-to(medium-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(wide-tablets) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 1px;
+      //   }
+      // }
 
-      @include respond-to(wide-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(medium-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //   }
+      // }
 
-      @include respond-to(large-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(wide-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-          margin-top: -2px;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //   }
+      // }
+
+      // @include respond-to(large-display) {
+      //   font-size: 10px;
+      //   height: 18px;
+
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //     margin-top: -2px;
+      //   }
+      // }
     }
   }
 
@@ -2498,6 +2503,10 @@
       }
     }
   }
+
+  .team-list-view {
+    padding-right: 0;
+  }
   
     
   // #create-helmet {
@@ -2567,7 +2576,7 @@
   }
 
   .nav-item {
-    width: 19.5%;
+    width: 20.5%;
   }
 
   img.helmet {
@@ -2594,9 +2603,12 @@
   }
 
   h3 {
+
     @include respond-to (allwide) {
       padding-left: 0;
     }
+
+    padding: 8px;
   }
   // .manager-image-inner .name p {
   //   //padding-left: 25px;
@@ -2616,13 +2628,13 @@
   text-align: left;
 
   @include respond-to(tablets) {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 15px;
     height: 40px;
   }
 
   @include respond-to(allwide) {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 15px;
     height: 40px;
   }

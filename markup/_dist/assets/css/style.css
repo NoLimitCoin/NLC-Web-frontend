@@ -11083,24 +11083,7 @@ p {
   /* kaspers update are above here */ }
   .homepage .menu-item.top-5 .number p {
     font-size: 18px;
-    line-height: 1.1rem; }
-    @media (max-width: 991px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.5rem; } }
-    @media (min-width: 992px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.3rem; } }
-    @media (min-width: 1200px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.1rem; } }
-    @media (min-width: 1680px) and (max-width: 1850px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.35rem;
-        font-size: 21px; } }
-    @media (min-width: 1850px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.35rem;
-        font-size: 21px; } }
+    line-height: 2.25rem; }
   .homepage .menu-item.top-5 .number {
     font-size: 18px; }
   .homepage .nl-create-team .player-main-block.football .nl-LRB-position {
@@ -11431,7 +11414,7 @@ p {
       position: absolute;
       top: 93px;
       width: 22px;
-      height: 22px;
+      height: 35px;
       background: #e89608;
       background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
       background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
@@ -11444,34 +11427,19 @@ p {
       display: inline-block;
       margin-top: -3px;
       color: #ffffff;
-      border-radius: 0.125rem 0 0 0.125rem; }
+      border-radius: 0.25rem 0 0 0.25rem; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .menu-item .number {
-          top: 58px;
-          left: 0;
-          font-size: 10px;
-          width: 18px;
-          height: 18px; } }
+          top: 58px; } }
       @media only screen and (min-width: 1201px) and (max-width: 1366px) {
         .homepage .menu-item .number {
-          top: 73px;
-          left: 2px;
-          font-size: 10px;
-          width: 18px;
-          height: 18px; } }
+          top: 73px; } }
       @media only screen and (min-width: 1367px) and (max-width: 1440px) {
         .homepage .menu-item .number {
-          top: 73px;
-          left: 2px;
-          font-size: 10px;
-          width: 18px;
-          height: 18px; } }
+          top: 73px; } }
       @media only screen and (min-width: 1441px) and (max-width: 1680px) {
         .homepage .menu-item .number {
-          top: 83px;
-          font-size: 10px;
-          width: 18px;
-          height: 18px; } }
+          top: 83px; } }
     .homepage .menu-item .player-thumbnail-name {
       background: #0f254f;
       color: #ffffff;
@@ -11483,39 +11451,11 @@ p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      border-radius: 0.25rem; }
+      border-radius: 0.25rem;
+      padding-bottom: 35px; }
       .homepage .menu-item .player-thumbnail-name p {
         padding: 2px 5px 5px 15px;
         font-weight: 500; }
-      @media only screen and (min-width: 992px) and (max-width: 1200px) {
-        .homepage .menu-item .player-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .player-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 1px; } }
-      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-        .homepage .menu-item .player-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .player-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0; } }
-      @media only screen and (min-width: 1367px) and (max-width: 1440px) {
-        .homepage .menu-item .player-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .player-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0; } }
-      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
-        .homepage .menu-item .player-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .player-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0;
-            margin-top: -2px; } }
     .homepage .menu-item .manager-thumbnail-name {
       background: #0f254f;
       color: #ffffff;
@@ -11527,39 +11467,26 @@ p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      border-radius: 0.25rem; }
+      border-radius: 0.25rem;
+      padding-bottom: 35px; }
       .homepage .menu-item .manager-thumbnail-name p {
-        padding: 2px 5px 5px 15px;
-        font-weight: 500; }
-      @media only screen and (min-width: 992px) and (max-width: 1200px) {
-        .homepage .menu-item .manager-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
+        padding-top: 5px;
+        font-weight: 500;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        line-height: 0.65rem;
+        margin-left: 23px; }
+        @media only screen and (min-width: 1201px) and (max-width: 1366px) {
           .homepage .menu-item .manager-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 1px; } }
-      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-        .homepage .menu-item .manager-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
+            font-size: 11px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
           .homepage .menu-item .manager-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0; } }
-      @media only screen and (min-width: 1367px) and (max-width: 1440px) {
-        .homepage .menu-item .manager-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
+            font-size: 10px;
+            padding-top: 6px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
           .homepage .menu-item .manager-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0; } }
-      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
-        .homepage .menu-item .manager-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .manager-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0;
-            margin-top: -2px; } }
+            font-size: 10px;
+            padding-top: 6px; } }
   .homepage .dropdown.player-position, .homepage .dropdown.week-position {
     display: inline-block; }
     .homepage .dropdown.player-position .btn-primary, .homepage .dropdown.week-position .btn-primary {
@@ -11991,6 +11918,9 @@ p {
       width: auto;
       margin: 0 auto; }
 
+#top5-manager-content .team-list-view {
+  padding-right: 0; }
+
 #top5-manager-content .no-padding {
   padding: 0; }
 
@@ -12026,7 +11956,7 @@ p {
   margin-right: -10px; }
 
 #top5-manager-content .nav-item {
-  width: 19.5%; }
+  width: 20.5%; }
 
 #top5-manager-content img.helmet {
   height: 45px; }
@@ -12043,20 +11973,22 @@ p {
     padding-left: 0;
     padding-right: 0; } }
 
-@media (min-width: 992px) {
-  #top5-manager-content h3 {
-    padding-left: 0; } }
+#top5-manager-content h3 {
+  padding: 8px; }
+  @media (min-width: 992px) {
+    #top5-manager-content h3 {
+      padding-left: 0; } }
 
 .subtitle {
   text-align: left; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .subtitle {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       margin-left: 15px;
       height: 40px; } }
   @media (min-width: 992px) {
     .subtitle {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       margin-left: 15px;
       height: 40px; } }
   .subtitle span {
