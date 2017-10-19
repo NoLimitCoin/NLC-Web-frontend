@@ -10117,7 +10117,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10234,7 +10234,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10397,38 +10397,6 @@ p {
 /*general for homepage*/
 .nl-section.homepage .container-fluid {
   max-width: 1650px; }
-
-.nl-section.homepage.football-homepage .nl-team-list #create-helmet #oval {
-  position: absolute;
-  top: 22px;
-  z-index: 1;
-  right: 69px;
-  width: 6%;
-  height: auto; }
-
-.nl-section.homepage.football-homepage .nl-team-list #create-helmet #letter {
-  position: absolute;
-  top: 25px;
-  z-index: 2;
-  right: 78px;
-  width: 3%;
-  height: auto; }
-
-.nl-section.homepage.football-homepage .nl-team-field #create-helmet #oval {
-  position: absolute;
-  top: 14px;
-  z-index: 1;
-  right: 54%;
-  width: 35%;
-  height: auto; }
-
-.nl-section.homepage.football-homepage .nl-team-field #create-helmet #letter {
-  position: absolute;
-  top: 16px;
-  z-index: 2;
-  right: 52px;
-  width: 17%;
-  height: auto; }
 
 .nl-section.homepage.football-homepage .player-info h5 {
   margin-bottom: 15px; }
@@ -10902,20 +10870,6 @@ p {
     @media (min-width: 1681px) {
       .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
         max-height: 100px; } }
-    .nl-section.homepage #top5-players-nav img#oval, .nl-section.homepage #top5-managers-nav img#oval {
-      position: absolute;
-      top: 11px;
-      z-index: 1;
-      right: 65px;
-      width: 24%;
-      height: auto; }
-    .nl-section.homepage #top5-players-nav img#letter, .nl-section.homepage #top5-managers-nav img#letter {
-      position: absolute;
-      top: 13px;
-      z-index: 2;
-      right: 74px;
-      width: 11%;
-      height: auto; }
   .nl-section.homepage #top5-managers-picture, .nl-section.homepage #top5-players-picture {
     margin: 0 auto; }
     .nl-section.homepage #top5-managers-picture p, .nl-section.homepage #top5-players-picture p {
@@ -10929,25 +10883,26 @@ p {
     .nl-section.homepage #top5-managers-picture .helmet-container, .nl-section.homepage #top5-players-picture .helmet-container {
       position: relative;
       width: 220px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-top: 20px; }
       .nl-section.homepage #top5-managers-picture .helmet-container .oval-letter, .nl-section.homepage #top5-players-picture .helmet-container .oval-letter {
         position: absolute;
         top: 36px;
         left: 20px;
         z-index: 1;
         width: 70px; }
-    .nl-section.homepage #top5-managers-picture img#oval, .nl-section.homepage #top5-players-picture img#oval {
-      position: absolute; }
-    .nl-section.homepage #top5-managers-picture img#letter, .nl-section.homepage #top5-players-picture img#letter {
-      position: absolute;
-      z-index: 2;
-      width: 41%;
-      margin-left: 17px;
-      margin-top: 7px; }
-    .nl-section.homepage #top5-managers-picture img#helmet, .nl-section.homepage #top5-players-picture img#helmet {
-      height: 220px;
-      width: auto;
-      margin: 0 auto; }
+      .nl-section.homepage #top5-managers-picture .helmet-container img#oval, .nl-section.homepage #top5-players-picture .helmet-container img#oval {
+        position: absolute; }
+      .nl-section.homepage #top5-managers-picture .helmet-container img#letter, .nl-section.homepage #top5-players-picture .helmet-container img#letter {
+        position: absolute;
+        z-index: 2;
+        width: 41%;
+        margin-left: 17px;
+        margin-top: 7px; }
+      .nl-section.homepage #top5-managers-picture .helmet-container img#helmet, .nl-section.homepage #top5-players-picture .helmet-container img#helmet {
+        height: 220px;
+        width: auto;
+        margin: 0 auto; }
   .nl-section.homepage #top-manager {
     height: 200px;
     margin: 0 auto;
@@ -11253,17 +11208,17 @@ p {
   .homepage .manager-section .table .t-playername {
     padding: 0rem 1rem; }
   .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0; }
     @media (min-width: 1681px) {
       .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
-        font-size: 13px; } }
+        font-size: 11px; } }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
         font-size: 11px; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
-        font-size: 13px; } }
+        font-size: 11px; } }
     @media (max-width: 767px) {
       .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
         font-size: 11px; } }
@@ -11989,24 +11944,52 @@ p {
   .week h5.visible-xxs {
     font-weight: 700; }
 
-#top5-manager-content #create-helmet #helmet {
-  height: 42px; }
-
-#top5-manager-content #create-helmet #oval {
-  position: absolute;
-  top: 7px;
-  z-index: 1;
-  right: 50%;
-  width: 38%;
-  height: auto; }
-
-#top5-manager-content #create-helmet #letter {
-  position: absolute;
-  top: 8px;
-  z-index: 2;
-  right: 22px;
-  width: 17%;
-  height: auto; }
+#top5-manager-content #top5-managers-nav .helmet-container {
+  position: relative;
+  width: 90px;
+  margin: 0 auto; }
+  #top5-manager-content #top5-managers-nav .helmet-container .oval-letter {
+    position: absolute;
+    top: 14px;
+    left: 9px;
+    z-index: 1;
+    width: 33px; }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+      #top5-manager-content #top5-managers-nav .helmet-container .oval-letter {
+        top: 11px;
+        left: 15px;
+        width: 30px; } }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      #top5-manager-content #top5-managers-nav .helmet-container .oval-letter {
+        top: 12px;
+        left: 18px;
+        z-index: 1;
+        width: 22px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      #top5-manager-content #top5-managers-nav .helmet-container .oval-letter {
+        top: 8px;
+        left: 24px;
+        width: 22px; } }
+  #top5-manager-content #top5-managers-nav .helmet-container img {
+    height: auto; }
+    #top5-manager-content #top5-managers-nav .helmet-container img#oval {
+      position: absolute; }
+    #top5-manager-content #top5-managers-nav .helmet-container img#letter {
+      position: absolute;
+      z-index: 2;
+      width: 41%;
+      margin-left: 9px;
+      margin-top: 3px; }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        #top5-manager-content #top5-managers-nav .helmet-container img#letter {
+          margin-left: 7px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        #top5-manager-content #top5-managers-nav .helmet-container img#letter {
+          margin-left: 7px; } }
+    #top5-manager-content #top5-managers-nav .helmet-container img#helmet {
+      height: 90px;
+      width: auto;
+      margin: 0 auto; }
 
 #top5-manager-content .no-padding {
   padding: 0; }
@@ -14245,7 +14228,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14501,7 +14484,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -16281,7 +16264,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {

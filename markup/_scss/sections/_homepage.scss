@@ -9,45 +9,45 @@
   .nl-team-list {
      #create-helmet {
 
-      #oval {
-        position: absolute;
-        top: 22px;
-        z-index: 1;
-        right: 69px;
-        width: 6%;
-        height: auto;
-      }
-      #letter {
-        position: absolute;
-        top: 25px;
-        z-index: 2;
-        right: 78px;
-        width: 3%;
-        height: auto;
-      }
+      // #oval {
+      //   position: absolute;
+      //   top: 22px;
+      //   z-index: 1;
+      //   right: 69px;
+      //   width: 6%;
+      //   height: auto;
+      // }
+      // #letter {
+      //   position: absolute;
+      //   top: 25px;
+      //   z-index: 2;
+      //   right: 78px;
+      //   width: 3%;
+      //   height: auto;
+      // }
     }
   }
 
   .nl-team-field {
-    #create-helmet {
+    // #create-helmet {
 
-      #oval {
-        position: absolute;
-        top: 14px;
-        z-index: 1;
-        right: 54%;
-        width: 35%;
-        height: auto;
-      }
-      #letter {
-        position: absolute;
-        top: 16px;
-        z-index: 2;
-        right: 52px;
-        width: 17%;
-        height: auto;
-      }
-    }
+    //   #oval {
+    //     position: absolute;
+    //     top: 14px;
+    //     z-index: 1;
+    //     right: 54%;
+    //     width: 35%;
+    //     height: auto;
+    //   }
+    //   #letter {
+    //     position: absolute;
+    //     top: 16px;
+    //     z-index: 2;
+    //     right: 52px;
+    //     width: 17%;
+    //     height: auto;
+    //   }
+    // }
   }
 
   .player-info{ 
@@ -699,22 +699,22 @@
       max-height: 100px;
     }
 
-    &#oval {
-      position: absolute;
-      top: 11px;
-      z-index: 1;
-      right: 65px;
-      width: 24%;
-      height: auto;
-    }
-    &#letter {
-      position: absolute;
-      top: 13px;
-      z-index: 2;
-      right: 74px;
-      width: 11%;
-      height: auto;
-    }
+    // &#oval {
+    //   position: absolute;
+    //   top: 11px;
+    //   z-index: 1;
+    //   right: 65px;
+    //   width: 24%;
+    //   height: auto;
+    // }
+    // &#letter {
+    //   position: absolute;
+    //   top: 13px;
+    //   z-index: 2;
+    //   right: 74px;
+    //   width: 11%;
+    //   height: auto;
+    // }
   }
 
   #top5-managers-picture, #top5-players-picture {
@@ -738,34 +738,34 @@
       position: relative;
       width: 220px;
       margin: 0 auto;
+      margin-top: 20px;
+
       .oval-letter {
         position: absolute;
         top: 36px;
         left: 20px;
         z-index: 1;
         width: 70px;
-
       }
-    }
 
-    img {
-      &#oval {
-      position: absolute;
-      }
-      &#letter {
+      img {
+        &#oval {
         position: absolute;
-        z-index: 2;
-        width: 41%;
-        margin-left: 17px;
-        margin-top: 7px;
+        }
+        &#letter {
+          position: absolute;
+          z-index: 2;
+          width: 41%;
+          margin-left: 17px;
+          margin-top: 7px;
+        }
+        &#helmet {
+          height: 220px;
+          width: auto;
+          margin: 0 auto;
+        }
       }
-      &#helmet {
-
-        height: 220px;
-        width: auto;
-        margin: 0 auto;
-      }
-    }
+    }    
   }
 
   #top-manager {
@@ -1283,11 +1283,11 @@
   }
 
   .manager-section .table td, .manager-section .table th, .nl-my-teams .nl-team-list-table td {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0;
       
     @include respond-to (extra-large-display) {
-      font-size: 13px;
+      font-size: 11px;
     }
 
     @include respond-to (wide-tablets) {
@@ -1295,7 +1295,7 @@
     }
 
     @include respond-to (tablets) {
-      font-size: 13px;
+      font-size: 11px;
       //padding: 0rem 1rem;
     }
 
@@ -2436,29 +2436,92 @@
 }
 
 #top5-manager-content {
-  
-  #create-helmet {
-    #helmet {
-      height: 42px;
-    }
+  #top5-managers-nav {
 
-    #oval {
-      position: absolute;
-      top: 7px;
-      z-index: 1;
-      right: 50%;
-      width: 38%;
-      height: auto;
-    }
-    #letter {
-      position: absolute;
-      top: 8px;
-      z-index: 2;
-      right: 22px;
-      width: 17%;
-      height: auto;
+    .helmet-container {
+      position: relative;
+      width: 90px;
+      margin: 0 auto;
+
+      .oval-letter {
+        position: absolute;
+        top: 14px;
+        left: 9px;
+        z-index: 1;
+        width: 33px;
+
+        @include respond-to (wide-display) {
+          top: 11px;
+          left: 15px;
+          width: 30px;
+        }
+
+        @include respond-to (medium-display) {
+          top: 12px;
+          left: 18px;
+          z-index: 1;
+          width: 22px;
+        }
+
+        @include respond-to (wide-tablets) {
+          top: 8px;
+          left: 24px;
+          width: 22px;
+        }
+      }
+
+      img {
+        height: auto;
+        &#oval {
+          position: absolute;
+        }
+        &#letter {
+          position: absolute;
+          z-index: 2;
+          width: 41%;
+          margin-left: 9px;
+          margin-top: 3px;
+          @include respond-to (medium-display) {
+            margin-left: 7px;
+          }
+
+          @include respond-to (wide-tablets) {
+            margin-left: 7px;
+          }   
+        }
+        &#helmet {
+
+          height: 90px;
+          width: auto;
+          margin: 0 auto;
+        }
+      }
     }
   }
+  
+    
+  // #create-helmet {
+  //   #helmet {
+  //     height: 42px;
+  //   }
+
+  //   #oval {
+  //     position: absolute;
+  //     top: 7px;
+  //     z-index: 1;
+  //     right: 50%;
+  //     width: 38%;
+  //     height: auto;
+  //   }
+  //   #letter {
+  //     position: absolute;
+  //     top: 8px;
+  //     z-index: 2;
+  //     right: 22px;
+  //     width: 17%;
+  //     height: auto;
+  //   }
+  // }
 
   .no-padding {
     padding: 0;
