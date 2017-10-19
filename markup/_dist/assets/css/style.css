@@ -10926,20 +10926,24 @@ p {
       right: 0; }
       .nl-section.homepage #top5-managers-picture .points-in-bar p, .nl-section.homepage #top5-players-picture .points-in-bar p {
         font-size: 18px; }
+    .nl-section.homepage #top5-managers-picture .helmet-container, .nl-section.homepage #top5-players-picture .helmet-container {
+      position: relative;
+      width: 220px;
+      margin: 0 auto; }
+      .nl-section.homepage #top5-managers-picture .helmet-container .oval-letter, .nl-section.homepage #top5-players-picture .helmet-container .oval-letter {
+        position: absolute;
+        top: 36px;
+        left: 20px;
+        z-index: 1;
+        width: 70px; }
     .nl-section.homepage #top5-managers-picture img#oval, .nl-section.homepage #top5-players-picture img#oval {
-      position: absolute;
-      top: 36px;
-      z-index: 1;
-      right: 155px;
-      width: 27%;
-      height: auto; }
+      position: absolute; }
     .nl-section.homepage #top5-managers-picture img#letter, .nl-section.homepage #top5-players-picture img#letter {
       position: absolute;
-      top: 39px;
       z-index: 2;
-      right: 176px;
-      width: 13%;
-      height: auto; }
+      width: 41%;
+      margin-left: 17px;
+      margin-top: 7px; }
     .nl-section.homepage #top5-managers-picture img#helmet, .nl-section.homepage #top5-players-picture img#helmet {
       height: 220px;
       width: auto;

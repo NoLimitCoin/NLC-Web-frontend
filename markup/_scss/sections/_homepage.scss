@@ -734,22 +734,30 @@
       }
     }
 
+    .helmet-container {
+      position: relative;
+      width: 220px;
+      margin: 0 auto;
+      .oval-letter {
+        position: absolute;
+        top: 36px;
+        left: 20px;
+        z-index: 1;
+        width: 70px;
+
+      }
+    }
+
     img {
       &#oval {
       position: absolute;
-      top: 36px;
-      z-index: 1;
-      right: 155px;
-      width: 27%;
-      height: auto;
       }
       &#letter {
         position: absolute;
-        top: 39px;
         z-index: 2;
-        right: 176px;
-        width: 13%;
-        height: auto;
+        width: 41%;
+        margin-left: 17px;
+        margin-top: 7px;
       }
       &#helmet {
 
