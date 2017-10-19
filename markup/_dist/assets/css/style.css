@@ -10725,14 +10725,30 @@ p {
 
 .nl-section.homepage {
   padding: 1.5rem 2.25rem; }
+  .nl-section.homepage .top5-player-container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (max-width: 767px) {
+      .nl-section.homepage .top5-player-container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  @media (max-width: 767px) {
+    .nl-section.homepage .new-top5-players-container {
+      padding-top: 20px; } }
   .nl-section.homepage .new-top5-players-container .tab-content {
     overflow: hidden;
     -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     border-bottom-left-radius: 0.625rem; }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .tab-content {
+        border-bottom-right-radius: 0.625rem; } }
   .nl-section.homepage .new-top5-players-container .new-above-table {
     border-top-left-radius: 0.625rem;
     background: #061540; }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .new-above-table {
+        border-top-right-radius: 0.625rem; } }
     .nl-section.homepage .new-top5-players-container .new-above-table .player-stats {
       text-align: center; }
       .nl-section.homepage .new-top5-players-container .new-above-table .player-stats .player-image-container {
@@ -10743,6 +10759,9 @@ p {
       width: auto;
       display: inline-block;
       margin-top: -20px; }
+      @media only screen and (max-width: 575px) {
+        .nl-section.homepage .new-top5-players-container .new-above-table img {
+          margin-top: -10px; } }
     .nl-section.homepage .new-top5-players-container .new-above-table h3 {
       font-size: 1.45rem;
       line-height: 1rem;
@@ -10759,6 +10778,9 @@ p {
       padding: 0;
       color: white;
       line-height: 1rem; }
+      @media only screen and (max-width: 575px) {
+        .nl-section.homepage .new-top5-players-container .new-above-table p {
+          line-height: 1.5rem; } }
     .nl-section.homepage .new-top5-players-container .new-above-table p.title {
       font-weight: 400;
       font-size: 11px; }
@@ -10777,6 +10799,9 @@ p {
       z-index: 2;
       font-size: 15px;
       font-weight: 600; }
+      @media (max-width: 1200px) {
+        .nl-section.homepage .new-top5-players-container .new-above-table h3.rank-number {
+          line-height: 1rem; } }
     .nl-section.homepage .new-top5-players-container .new-above-table h3.player-name {
       font-size: 19px;
       padding: 9px 0; }
@@ -10784,6 +10809,9 @@ p {
     padding: 0.25rem;
     text-align: center;
     font-size: 10px; }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .new-top5-table thead th, .nl-section.homepage .new-top5-players-container .new-top5-table td {
+        font-size: 10px; } }
   .nl-section.homepage .new-top5-players-container .new-top5-table thead th {
     background: #0f254f; }
   .nl-section.homepage .new-top5-players-container .new-top5-table td {
@@ -10820,9 +10848,19 @@ p {
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .nl-section.homepage .new-top5-players-container .new-news-player {
         height: 252px; } }
+    @media (max-width: 991px) {
+      .nl-section.homepage .new-top5-players-container .new-news-player {
+        height: 252px;
+        width: 29%; } }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .new-news-player {
+        height: 215px; } }
   .nl-section.homepage .new-top5-players-container .stats-table {
     width: 70%;
     display: inline-block; }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .stats-table {
+        width: 100%; } }
   .nl-section.homepage .points-in-bar {
     display: none; }
   .nl-section.homepage .player-info h5 {
@@ -10851,7 +10889,8 @@ p {
     left: 5px;
     top: 108px; }
     .nl-section.homepage .player-thumbnail-name .number p {
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 0; }
   .nl-section.homepage #top5-players-nav {
     overflow: hidden; }
   .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
@@ -10947,7 +10986,7 @@ p {
         line-height: 1.4rem; } }
   @media (max-width: 767px) {
     .nl-section.homepage .name-top5 {
-      font-size: 16px; } }
+      font-size: 12px; } }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .nl-section.homepage .name-top5 {
       top: 20%; } }
@@ -11097,7 +11136,8 @@ p {
       padding: 0px; } }
   @media (max-width: 767px) {
     .homepage .contests .upcoming-contests {
-      padding-top: 20px; } }
+      padding-top: 20px;
+      text-align: center; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .homepage .no-padding {
       padding: 0px; } }
@@ -11149,6 +11189,12 @@ p {
       min-width: 100px; } }
   .homepage .top-5-section {
     margin-bottom: 40px; }
+    @media (max-width: 767px) {
+      .homepage .top-5-section {
+        margin-bottom: 0px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .homepage .top-5-section {
+        margin-bottom: 20px; } }
   .homepage .bottom-teams-contests-section {
     margin-bottom: 20px; }
     @media (max-width: 767px) {
@@ -11454,8 +11500,12 @@ p {
       border-radius: 0.25rem;
       padding-bottom: 35px; }
       .homepage .menu-item .player-thumbnail-name p {
-        padding: 2px 5px 5px 15px;
-        font-weight: 500; }
+        padding-top: 5px;
+        margin-left: 23px;
+        font-weight: 500;
+        font-size: 11px;
+        margin-bottom: 0;
+        line-height: 0.65rem; }
     .homepage .menu-item .manager-thumbnail-name {
       background: #0f254f;
       color: #ffffff;
@@ -12097,7 +12147,8 @@ p {
       line-height: 1.2rem; }
       @media only screen and (max-width: 575px) {
         .mobile-menu p.name-top5 {
-          padding-left: 5px; } }
+          padding-left: 0px;
+          font-size: 14px; } }
   .mobile-menu.dropdown {
     background: #e89608;
     /* Old browsers */
@@ -12142,7 +12193,10 @@ p {
       display: none; } }
 
 #top5-player-content li.nav-item {
-  width: 18.2%; }
+  width: 18.4%; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #top5-player-content li.nav-item {
+      width: 21.4%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #top5-player-content .player {

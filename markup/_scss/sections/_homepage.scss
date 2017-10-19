@@ -461,21 +461,41 @@
 
 .nl-section.homepage {
 
+  .top5-player-container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include respond-to (allmobile) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
   .new-top5-players-container {
 
+    @include respond-to (allmobile) {
+      padding-top: 20px;
+    }
 
     .tab-content {
       overflow: hidden;
       -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
       box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
       border-bottom-left-radius: 0.625rem;
+
+      @include respond-to (handhelds) {
+        border-bottom-right-radius: 0.625rem;
+      }
+
       //margin-bottom: 2.25rem;
     }
 
     .new-above-table {
 
       border-top-left-radius: 0.625rem;
-
+      @include respond-to (handhelds) {
+        border-top-right-radius: 0.625rem;
+      }
       .player-stats {
         text-align: center;
 
@@ -495,6 +515,10 @@
         width: auto;
         display: inline-block;
         margin-top: -20px;
+
+        @include respond-to (handhelds) {
+          margin-top: -10px;
+        }
       }
 
       h3 {
@@ -517,6 +541,10 @@
         padding: 0;
         color: white;
         line-height: 1rem;
+
+        @include respond-to (handhelds) {
+          line-height: 1.5rem;
+        }
       }
 
       p.title {
@@ -540,16 +568,8 @@
         font-size: 15px;
         font-weight: 600;
 
-        @include respond-to (large-display) {
-          // left: 45px;
-        }
-
-        @media (min-width: 1600px) and (max-width: 1441px){
-          // left: 39px;
-        }
-
-        @include respond-to (extra-large-display) {
-          // left: 48px;
+        @include respond-to (allnotwide) {
+          line-height: 1rem;
         }
       }
 
@@ -564,6 +584,10 @@
         padding: 0.25rem;
         text-align: center;
         font-size: 10px;
+
+        @include respond-to (handhelds) {
+          font-size: 10px;
+        }
       }
 
       thead th {
@@ -620,11 +644,24 @@
       @include respond-to (wide-tablets) {
         height: 252px;
       }
+
+      @include respond-to (allsmall) {
+        height: 252px;
+        width: 29%;
+      }
+
+      @include respond-to (handhelds) {
+        height: 215px;
+      }
     }
 
     .stats-table {
       width: 70%;
       display: inline-block;
+
+      @include respond-to (handhelds) {
+        width: 100%;
+      }
     }
   }
 
@@ -671,6 +708,7 @@
     top: 108px;
     p {
       padding: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -845,7 +883,7 @@
   .name-top5 {
 
     @include respond-to (allmobile) {
-      font-size: 16px;
+      font-size: 12px;
     }
 
     @include respond-to (wide-tablets) {
@@ -1100,6 +1138,7 @@
   @include respond-to (allmobile) {
     .contests .upcoming-contests {
       padding-top: 20px;
+      text-align: center;
     }
   }  
 
@@ -1211,6 +1250,15 @@
 
   .top-5-section {
     margin-bottom: 40px;
+
+    @include respond-to (allmobile) {
+      margin-bottom: 0px;
+    }
+
+
+    @include respond-to (tablets) {
+      margin-bottom: 20px;
+    }
   }
 
   .bottom-teams-contests-section {
@@ -1621,7 +1669,6 @@
       //background: url(../img/player1.png) top center no-repeat;
       background-size: cover;
       
-
       @include respond-to(wide-tablets) {
         height: 55px;
       }
@@ -1689,8 +1736,12 @@
       padding-bottom: 35px;
 
       p {
-        padding: 2px 5px 5px 15px;
+        padding-top: 5px;
+        margin-left: 23px;
         font-weight: 500;
+        font-size: 11px;
+        margin-bottom: 0;
+        line-height: 0.65rem;
       }
 
       // @include respond-to(wide-tablets) {
@@ -2784,9 +2835,9 @@
       line-height: 1.2rem;
 
       @include respond-to (handhelds) {
-        padding-left: 5px;
+        padding-left: 0px;
+        font-size: 14px;
       }
-
     }
   }
 
@@ -2844,7 +2895,11 @@
 
 #top5-player-content {
   li.nav-item {
-    width: 18.2%;
+    width: 18.4%;
+
+    @include respond-to (tablets) {
+      width: 21.4%;
+    }
   }
 
   .player {
