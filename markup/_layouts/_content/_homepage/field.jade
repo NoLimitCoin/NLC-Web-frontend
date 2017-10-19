@@ -59,9 +59,11 @@ div.nl-section.nl-create-team.homepage-field
 							p.data.orange <span>12.67</span> <span>$42000</span>
 					div.nl-player-block.nl-DEF-position(data-position="DEF")
 							#create-helmet.final-helmet(style='display: block;')
-								img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
-								img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-								img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+								div.helmet-container
+									img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+									div.oval-letter
+										img#oval.img-fluid.select-oval.vis-hidden(src='assets/img/oval/grayoval.png', style='display: block;')
+										img#letter.img-fluid.select-letter.vis-hidden(src='assets/img/letter/n.png', style='display: block;')
 							div.nl-player-block--data
 								p PATRIOTS
 								p.data.orange <span>12.67</span> <span>$42000</span>			
@@ -74,11 +76,8 @@ div.nl-section.nl-create-team.homepage-field
 								div.nl-team-card.table-data-field
 									h3 team NLC2
 									#create-helmet.final-helmet(style='display: block;')
-										img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
-										img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-										img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
-
-
+										div.helmet-container
+											img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
 						.row
 							.col-12.no-padding
 								table.table.table-striped.nl-team-list-table.homepage-field

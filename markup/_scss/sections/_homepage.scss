@@ -1,53 +1,141 @@
 /*general for homepage*/
 .nl-section.homepage .container-fluid {
   max-width: 1650px;
+
+  .row {
+    @include respond-to (allwide) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
 }
 
 
 .nl-section.homepage.football-homepage {
 
   .nl-team-list {
-     #create-helmet {
+    .helmet-container {
+      position: relative;
+      width: 90px;
+      margin: 0 auto;
 
-      // #oval {
-      //   position: absolute;
-      //   top: 22px;
-      //   z-index: 1;
-      //   right: 69px;
-      //   width: 6%;
-      //   height: auto;
-      // }
-      // #letter {
-      //   position: absolute;
-      //   top: 25px;
-      //   z-index: 2;
-      //   right: 78px;
-      //   width: 3%;
-      //   height: auto;
-      // }
+      .oval-letter {
+        position: absolute;
+        top: 14px;
+        left: 9px;
+        z-index: 1;
+        width: 33px;
+
+        @include respond-to (wide-display) {
+          top: 11px;
+          left: 15px;
+          width: 30px;
+        }
+
+        @include respond-to (medium-display) {
+          top: 12px;
+          left: 18px;
+          z-index: 1;
+          width: 22px;
+        }
+
+        @include respond-to (wide-tablets) {
+          top: 8px;
+          left: 24px;
+          width: 22px;
+        }
+      }
+
+      img {
+        height: auto;
+        &#oval {
+          position: absolute;
+        }
+        &#letter {
+          position: absolute;
+          z-index: 2;
+          width: 41%;
+          margin-left: 9px;
+          margin-top: 3px;
+          @include respond-to (medium-display) {
+            margin-left: 7px;
+          }
+
+          @include respond-to (wide-tablets) {
+            margin-left: 7px;
+          }   
+        }
+        &#helmet {
+
+          height: 90px;
+          width: auto;
+          margin: 0 auto;
+        }
+      }
     }
   }
 
   .nl-team-field {
-    // #create-helmet {
 
-    //   #oval {
-    //     position: absolute;
-    //     top: 14px;
-    //     z-index: 1;
-    //     right: 54%;
-    //     width: 35%;
-    //     height: auto;
-    //   }
-    //   #letter {
-    //     position: absolute;
-    //     top: 16px;
-    //     z-index: 2;
-    //     right: 52px;
-    //     width: 17%;
-    //     height: auto;
-    //   }
-    // }
+    .helmet-container {
+      position: relative;
+      width: 90px;
+      margin: 0 auto;
+
+      .oval-letter {
+        position: absolute;
+        top: 14px;
+        left: 9px;
+        z-index: 1;
+        width: 33px;
+
+        @include respond-to (wide-display) {
+          top: 11px;
+          left: 15px;
+          width: 30px;
+        }
+
+        @include respond-to (medium-display) {
+          top: 12px;
+          left: 18px;
+          z-index: 1;
+          width: 22px;
+        }
+
+        @include respond-to (wide-tablets) {
+          top: 8px;
+          left: 24px;
+          width: 22px;
+        }
+      }
+
+      img {
+        height: auto;
+        &#oval {
+          position: absolute;
+        }
+        &#letter {
+          position: absolute;
+          z-index: 2;
+          width: 41%;
+          margin-left: 9px;
+          margin-top: 3px;
+          @include respond-to (medium-display) {
+            margin-left: 7px;
+          }
+
+          @include respond-to (wide-tablets) {
+            margin-left: 7px;
+          }   
+        }
+        &#helmet {
+
+          height: 90px;
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+    }
   }
 
   .player-info{ 
@@ -778,6 +866,10 @@
       margin: 0 auto;
       margin-top: 20px;
 
+      @include respond-to (allnotwide) {
+        width: 200px;
+      }
+
       .oval-letter {
         position: absolute;
         top: 36px;
@@ -801,6 +893,10 @@
           height: 220px;
           width: auto;
           margin: 0 auto;
+
+          @include respond-to (allnotwide) {
+            height: 200px;
+          }
         }
       }
     }    
@@ -822,7 +918,7 @@
     }
 
     @include respond-to (allwider) {
-      height: 220px;
+      height: 200px;
     }
   }
 
