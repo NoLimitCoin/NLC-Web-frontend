@@ -698,6 +698,23 @@
     @include respond-to (extra-large-display) {
       max-height: 100px;
     }
+
+    &#oval {
+      position: absolute;
+      top: 11px;
+      z-index: 1;
+      right: 65px;
+      width: 24%;
+      height: auto;
+    }
+    &#letter {
+      position: absolute;
+      top: 13px;
+      z-index: 2;
+      right: 74px;
+      width: 11%;
+      height: auto;
+    }
   }
 
   #top5-managers-picture, #top5-players-picture {
@@ -714,6 +731,31 @@
       
       p {
         font-size: 18px;
+      }
+    }
+
+    img {
+      &#oval {
+      position: absolute;
+      top: 36px;
+      z-index: 1;
+      right: 155px;
+      width: 27%;
+      height: auto;
+      }
+      &#letter {
+        position: absolute;
+        top: 39px;
+        z-index: 2;
+        right: 176px;
+        width: 13%;
+        height: auto;
+      }
+      &#helmet {
+
+        height: 220px;
+        width: auto;
+        margin: 0 auto;
       }
     }
   }

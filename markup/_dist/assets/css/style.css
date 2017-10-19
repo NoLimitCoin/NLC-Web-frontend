@@ -10902,6 +10902,20 @@ p {
     @media (min-width: 1681px) {
       .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
         max-height: 100px; } }
+    .nl-section.homepage #top5-players-nav img#oval, .nl-section.homepage #top5-managers-nav img#oval {
+      position: absolute;
+      top: 11px;
+      z-index: 1;
+      right: 65px;
+      width: 24%;
+      height: auto; }
+    .nl-section.homepage #top5-players-nav img#letter, .nl-section.homepage #top5-managers-nav img#letter {
+      position: absolute;
+      top: 13px;
+      z-index: 2;
+      right: 74px;
+      width: 11%;
+      height: auto; }
   .nl-section.homepage #top5-managers-picture, .nl-section.homepage #top5-players-picture {
     margin: 0 auto; }
     .nl-section.homepage #top5-managers-picture p, .nl-section.homepage #top5-players-picture p {
@@ -10912,6 +10926,24 @@ p {
       right: 0; }
       .nl-section.homepage #top5-managers-picture .points-in-bar p, .nl-section.homepage #top5-players-picture .points-in-bar p {
         font-size: 18px; }
+    .nl-section.homepage #top5-managers-picture img#oval, .nl-section.homepage #top5-players-picture img#oval {
+      position: absolute;
+      top: 36px;
+      z-index: 1;
+      right: 155px;
+      width: 27%;
+      height: auto; }
+    .nl-section.homepage #top5-managers-picture img#letter, .nl-section.homepage #top5-players-picture img#letter {
+      position: absolute;
+      top: 39px;
+      z-index: 2;
+      right: 176px;
+      width: 13%;
+      height: auto; }
+    .nl-section.homepage #top5-managers-picture img#helmet, .nl-section.homepage #top5-players-picture img#helmet {
+      height: 220px;
+      width: auto;
+      margin: 0 auto; }
   .nl-section.homepage #top-manager {
     height: 200px;
     margin: 0 auto;
