@@ -463,6 +463,7 @@
 
   .new-top5-players-container {
 
+
     .tab-content {
       overflow: hidden;
       -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
@@ -477,6 +478,10 @@
 
       .player-stats {
         text-align: center;
+
+        .player-image-container {
+          position: relative;
+        }
       }
 
       .row {
@@ -529,15 +534,28 @@
         color: white;
         border-radius: 0;
         position: absolute;
-        top: 92px;
-        left: 34px;
+        bottom: 0;
+        margin-left: -10px;
         z-index: 2;
         font-size: 15px;
         font-weight: 600;
+
+        @include respond-to (large-display) {
+          // left: 45px;
+        }
+
+        @media (min-width: 1600px) and (max-width: 1441px){
+          // left: 39px;
+        }
+
+        @include respond-to (extra-large-display) {
+          // left: 48px;
+        }
       }
+
       h3.player-name {
         font-size: 19px;
-        padding: 10px 0;
+        padding: 9px 0;
       }
     }
 
@@ -551,6 +569,10 @@
       thead th {
         background: #0f254f;
       }
+
+      td {
+        padding: 0;
+      }
     }
 
     .player-data {
@@ -563,12 +585,17 @@
     }
 
     .new-news-player {
+
+      width: 21%;
+      display: inline-block;
+      height: 280px;
+      overflow-y: scroll;
+
       background: #0f254f;
       border-left: 3px solid orange;
       color: white;
       padding: 10px;
-      margin-left: -17px;
-      overflow: hidden;
+      margin-left: 0;
       -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
       box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
       border-radius: 0 0.625rem 0.625rem 0;
@@ -589,6 +616,15 @@
           //color: orange
         }
       }
+
+      @include respond-to (wide-tablets) {
+        height: 252px;
+      }
+    }
+
+    .stats-table {
+      width: 70%;
+      display: inline-block;
     }
   }
 
@@ -643,7 +679,7 @@
   }
 
   #top5-players-nav img, #top5-managers-nav img {
-    max-height: 100px;
+    height: 90px;
     width: auto;
     margin: 0 auto;
 
@@ -683,10 +719,10 @@
   }
 
   #top-manager {
-     max-height: 210px;
+     height: 200px;
      margin: 0 auto;
      width: auto;
-     margin-top: 15px;
+     margin-top: 0px;
 
     @include respond-to (tablets) {
       width: auto;
@@ -694,15 +730,11 @@
     }
 
     @include respond-to (wide-tablets) {
-      max-width: 212px;
+      max-width: 200px;
     }
 
-    @include respond-to (medium-display) {
-      max-height: 221px;
-    }
-
-    @media (min-width: 1367px) {
-      max-height: 221px;
+    @include respond-to (allwider) {
+      height: 220px;
     }
   }
 
@@ -1193,7 +1225,7 @@
   }
 
   .nl-contests-table td:not(:first-child):last-child{
-    padding-right: 20px;
+    //padding-right: 20px;
   }
 
   .manager-section .table .t-playername {
@@ -1559,7 +1591,7 @@
 
     .number {
       position: absolute;
-      top: 103px;
+      top: 93px;
       width: 22px;
       height: 22px;
       background: #e89608;
@@ -2686,6 +2718,10 @@
 }
 
 #top5-player-content {
+  li.nav-item {
+    width: 18.2%;
+  }
+
   .player {
     @include respond-to(tablets) {
       width: 80%;

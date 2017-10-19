@@ -87,7 +87,7 @@ div.tab-content(id="top5-player-content")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player1.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player1-new.png', style='display: block;')
 											div.number
 												p 1
 											div.player-thumbnail-name
@@ -99,7 +99,7 @@ div.tab-content(id="top5-player-content")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player2.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player1-new.png', style='display: block;')
 											div.number
 												p 2
 											div.player-thumbnail-name
@@ -111,7 +111,7 @@ div.tab-content(id="top5-player-content")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player3.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player1-new.png', style='display: block;')
 											div.number
 												p 3
 											div.player-thumbnail-name
@@ -123,7 +123,7 @@ div.tab-content(id="top5-player-content")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player4.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player1-new.png', style='display: block;')
 											div.number
 												p 4
 											div.player-thumbnail-name
@@ -135,7 +135,7 @@ div.tab-content(id="top5-player-content")
 									div.menu-item.top-5
 										div.players 
 											#top5-players-nav(style='display: block;')
-												img#top-player-nav(src='assets/img/player5.png', style='display: block;')
+												img#top-player-nav(src='assets/img/player1-new.png', style='display: block;')
 											div.number
 												p 5
 											div.player-thumbnail-name
@@ -144,15 +144,15 @@ div.tab-content(id="top5-player-content")
 												p.points 121 PTS
 						div.carousel-inner
 							div.carousel-item.active
-								div.row.new-top5-players-container
-									div.col-7.no-padding
+								div.new-top5-players-container
+									div.stats-table
 										div.new-above-table
-											h3.rank-number rank 1 
 											div.row
 												div.col-12.text-center
 													h3.player-name DeAndre Hopkins
 											div.row.player-stats
-												div.col-4.no-padding
+												div.col-4.no-padding.player-image-container
+													h3.rank-number rank 1 
 													img#top-player-nav(src='assets/img/player1-new.png')
 												div.col-4.player-data
 													//- h3 Team
@@ -241,8 +241,38 @@ div.tab-content(id="top5-player-content")
 														td 30
 														td $0
 														td 765
+													tr
 
-									div.col-4.new-news-player
+														td 124
+														td JAX
+														td 30
+														td $0
+														td 234
+														td 324
+														td 30
+														td $0
+														td 765
+													tr
+
+														td 124
+														td JAX
+														td 30
+														td $0
+														td 234
+														td 324
+														td 30
+														td $0
+														td 765
+
+									div.new-news-player
+										h5 Todd Gurley Bounces Back In Victory Over Jags
+										p Los Angeles Chargers quarterback Philip Rivers had a solid week against the weak Oakland secondary.
+										p
+											a(href="#") more...
+										h5 Todd Gurley Bounces Back In Victory Over Jags
+										p Los Angeles Chargers quarterback Philip Rivers had a solid week against the weak Oakland secondary.
+										p
+											a(href="#") more...
 										h5 Todd Gurley Bounces Back In Victory Over Jags
 										p Los Angeles Chargers quarterback Philip Rivers had a solid week against the weak Oakland secondary.
 										p
@@ -256,7 +286,7 @@ div.tab-content(id="top5-player-content")
 							//- 		div#player1.tab-pane.active(role="tabpanel")
 							//- 			div.row.player
 							//- 				#top5-players-picture(style='display: block;')
-							//- 					img#top-player(src='assets/img/player2.png', style='display: block;')
+							//- 					img#top-player(src='assets/img/player1-new.png', style='display: block;')
 							//- 					div.player-image-inner
 							//- 						div.number
 							//- 							p 2
@@ -277,7 +307,7 @@ div.tab-content(id="top5-player-content")
 							//- 		div#player1.tab-pane.active(role="tabpanel")
 							//- 			div.row.player
 							//- 				#top5-players-picture(style='display: block;')
-							//- 					img#top-player(src='assets/img/player3.png', style='display: block;')
+							//- 					img#top-player(src='assets/img/player1-new.png', style='display: block;')
 							//- 					div.player-image-inner
 							//- 						div.number
 							//- 							p 3
@@ -298,7 +328,7 @@ div.tab-content(id="top5-player-content")
 							//- 		div#player1.tab-pane.active(role="tabpanel")
 							//- 			div.row.player
 							//- 				#top5-players-picture(style='display: block;')
-							//- 					img#top-player(src='assets/img/player4.png', style='display: block;')
+							//- 					img#top-player(src='assets/img/player1-new.png', style='display: block;')
 							//- 					div.player-image-inner
 							//- 						div.number
 							//- 							p 4
@@ -319,7 +349,7 @@ div.tab-content(id="top5-player-content")
 							//- 		div#player1.tab-pane.active(role="tabpanel")
 							//- 			div.row.player
 							//- 				#top5-players-picture(style='display: block;')
-							//- 					img#top-player(src='assets/img/player5.png', style='display: block;')
+							//- 					img#top-player(src='assets/img/player1-new.png', style='display: block;')
 							//- 					div.player-image-inner
 							//- 						div.number
 							//- 							p 5

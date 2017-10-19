@@ -700,6 +700,10 @@
       visibility: hidden;
     }
 
+    p.placeholder {
+      font-size: 14px;
+    }
+
   @include respond-to(wide-tablets){
 
     .football.player-main-block {

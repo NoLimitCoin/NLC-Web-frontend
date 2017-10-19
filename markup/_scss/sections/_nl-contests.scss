@@ -73,6 +73,13 @@
 }
 
 .nl-contests-table {
+
+  .withdraw {
+    background: linear-gradient(to top, #951c1c, #cf3232);
+    padding: 0.25rem 0.1rem;
+    font-size: 11px;
+  }
+  
   margin-top: calculateRem(30px);
   th, td{
     &:nth-child(1){
