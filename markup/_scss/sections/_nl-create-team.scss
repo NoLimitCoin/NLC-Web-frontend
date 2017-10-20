@@ -427,7 +427,7 @@
   margin: calculateRem(20px) 0;
   .btn-team {
     margin: calculateRem(5px);
-      @include respond-to(allsmall){
+      @include respond-to(allmobile){
         display: none;
       }
   }
@@ -680,7 +680,7 @@
         bottom: 8.8%;
         left: 13%;
         img{
-          max-width: 75px;
+          //max-width: 75px;
         }
       }
     }
@@ -691,6 +691,18 @@
     background-size: contain;
     min-width: 100%;
     background-size: 100% 100%;
+
+    .display-none {
+      display: none !important;
+    }
+
+    .vis-hidden {
+      visibility: hidden;
+    }
+
+    p.placeholder {
+      font-size: 14px;
+    }
 
   @include respond-to(wide-tablets){
 
@@ -783,19 +795,20 @@
       }
 
       .nl-player-block.nl-DEF-position img {
-        max-width: 80px;
+        //max-width: 80px;
       }
 
       @include respond-to(tabdisp){
         .nl-player-block.nl-DEF-position img {
-          max-width: 70px;
+          //max-width: 70px;
         }
       }
 
       
     }
 
-    @include respond-to(allsmall){
+    @include respond-to(allmobile){
+
       display: none;
     }
     .goalkeeper-line {

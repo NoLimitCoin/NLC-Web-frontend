@@ -9120,8 +9120,20 @@ body {
 section .container-fluid {
   max-width: 2000px; }
 
+p.not-playing {
+  background: red; }
+
+p.played {
+  background: #5fadcc; }
+
+p.playing {
+  background: green; }
+
 .text-center {
   text-align: center; }
+
+.vis-hidden {
+  visibility: hidden; }
 
 .modal {
   font-weight: 500;
@@ -9161,7 +9173,10 @@ section .container-fluid {
   border-radius: 0.5rem 0.5rem 0 0; }
 
 .orange {
-  color: #df920b; }
+  color: #df920b !important; }
+
+.inline-block {
+  display: inline-block; }
 
 .btn.btn-primary {
   font-weight: 600; }
@@ -9254,7 +9269,7 @@ section .container-fluid {
 
 .hide {
   display: none; }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .hide {
       display: block; } }
 
@@ -10114,7 +10129,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10231,7 +10246,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78812rem; }
+    font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10394,38 +10409,103 @@ p {
 /*general for homepage*/
 .nl-section.homepage .container-fluid {
   max-width: 1650px; }
+  @media (max-width: 767px) {
+    .nl-section.homepage .container-fluid .nl-contests-table {
+      margin-top: 0.75rem; } }
 
-.nl-section.homepage.football-homepage .nl-team-list #create-helmet #oval {
-  position: absolute;
-  top: 22px;
-  z-index: 1;
-  right: 69px;
-  width: 6%;
-  height: auto; }
+.nl-section.homepage.football-homepage .nl-team-list .helmet-container {
+  position: relative;
+  width: 90px;
+  margin: 0 auto; }
+  .nl-section.homepage.football-homepage .nl-team-list .helmet-container .oval-letter {
+    position: absolute;
+    top: 14px;
+    left: 9px;
+    z-index: 1;
+    width: 33px; }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+      .nl-section.homepage.football-homepage .nl-team-list .helmet-container .oval-letter {
+        top: 11px;
+        left: 15px;
+        width: 30px; } }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-section.homepage.football-homepage .nl-team-list .helmet-container .oval-letter {
+        top: 12px;
+        left: 18px;
+        z-index: 1;
+        width: 22px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-section.homepage.football-homepage .nl-team-list .helmet-container .oval-letter {
+        top: 8px;
+        left: 24px;
+        width: 22px; } }
+  .nl-section.homepage.football-homepage .nl-team-list .helmet-container img {
+    height: auto; }
+    .nl-section.homepage.football-homepage .nl-team-list .helmet-container img#oval {
+      position: absolute; }
+    .nl-section.homepage.football-homepage .nl-team-list .helmet-container img#letter {
+      position: absolute;
+      z-index: 2;
+      width: 41%;
+      margin-left: 9px;
+      margin-top: 3px; }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        .nl-section.homepage.football-homepage .nl-team-list .helmet-container img#letter {
+          margin-left: 7px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .nl-section.homepage.football-homepage .nl-team-list .helmet-container img#letter {
+          margin-left: 7px; } }
+    .nl-section.homepage.football-homepage .nl-team-list .helmet-container img#helmet {
+      height: 90px;
+      width: auto;
+      margin: 0 auto; }
 
-.nl-section.homepage.football-homepage .nl-team-list #create-helmet #letter {
-  position: absolute;
-  top: 25px;
-  z-index: 2;
-  right: 78px;
-  width: 3%;
-  height: auto; }
-
-.nl-section.homepage.football-homepage .nl-team-field #create-helmet #oval {
-  position: absolute;
-  top: 14px;
-  z-index: 1;
-  right: 54%;
-  width: 35%;
-  height: auto; }
-
-.nl-section.homepage.football-homepage .nl-team-field #create-helmet #letter {
-  position: absolute;
-  top: 16px;
-  z-index: 2;
-  right: 52px;
-  width: 17%;
-  height: auto; }
+.nl-section.homepage.football-homepage .nl-team-field .helmet-container {
+  position: relative;
+  width: 90px;
+  margin: 0 auto; }
+  .nl-section.homepage.football-homepage .nl-team-field .helmet-container .oval-letter {
+    position: absolute;
+    top: 14px;
+    left: 9px;
+    z-index: 1;
+    width: 33px; }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+      .nl-section.homepage.football-homepage .nl-team-field .helmet-container .oval-letter {
+        top: 11px;
+        left: 15px;
+        width: 30px; } }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      .nl-section.homepage.football-homepage .nl-team-field .helmet-container .oval-letter {
+        top: 12px;
+        left: 18px;
+        z-index: 1;
+        width: 22px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-section.homepage.football-homepage .nl-team-field .helmet-container .oval-letter {
+        top: 8px;
+        left: 24px;
+        width: 22px; } }
+  .nl-section.homepage.football-homepage .nl-team-field .helmet-container img {
+    height: auto; }
+    .nl-section.homepage.football-homepage .nl-team-field .helmet-container img#oval {
+      position: absolute; }
+    .nl-section.homepage.football-homepage .nl-team-field .helmet-container img#letter {
+      position: absolute;
+      z-index: 2;
+      width: 41%;
+      margin-left: 9px;
+      margin-top: 3px; }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        .nl-section.homepage.football-homepage .nl-team-field .helmet-container img#letter {
+          margin-left: 7px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .nl-section.homepage.football-homepage .nl-team-field .helmet-container img#letter {
+          margin-left: 7px; } }
+    .nl-section.homepage.football-homepage .nl-team-field .helmet-container img#helmet {
+      height: 70px;
+      width: auto;
+      margin: 0 auto; }
 
 .nl-section.homepage.football-homepage .player-info h5 {
   margin-bottom: 15px; }
@@ -10584,6 +10664,11 @@ p {
     left: 40%;
     bottom: 7.5%; } }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nl-section.homepage.soccer .nl-GK-position {
+    left: 42%;
+    bottom: 6.5%; } }
+
 @media (min-width: 1899px) {
   .nl-section.homepage.soccer .nl-GK-position {
     left: 44%; } }
@@ -10613,6 +10698,11 @@ p {
     bottom: 33%;
     left: 40%; } }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nl-section.homepage.soccer .nl-DM-position {
+    bottom: 32%;
+    left: 42%; } }
+
 @media (min-width: 1899px) {
   .nl-section.homepage.soccer .nl-DM-position {
     left: 44%; } }
@@ -10641,6 +10731,11 @@ p {
   .nl-section.homepage.soccer .nl-MM-position {
     bottom: 61%;
     left: 40%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nl-section.homepage.soccer .nl-MM-position {
+    bottom: 61%;
+    left: 42%; } }
 
 @media (min-width: 1899px) {
   .nl-section.homepage.soccer .nl-MM-position {
@@ -10754,6 +10849,142 @@ p {
 
 .nl-section.homepage {
   padding: 1.5rem 2.25rem; }
+  .nl-section.homepage .top5-player-container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (max-width: 767px) {
+      .nl-section.homepage .top5-player-container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  @media (max-width: 767px) {
+    .nl-section.homepage .new-top5-players-container {
+      padding-top: 20px; } }
+  .nl-section.homepage .new-top5-players-container .tab-content {
+    overflow: hidden;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    border-bottom-left-radius: 0.625rem; }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .tab-content {
+        border-bottom-right-radius: 0.625rem; } }
+  .nl-section.homepage .new-top5-players-container .new-above-table {
+    border-top-left-radius: 0.625rem;
+    background: #061540; }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .new-above-table {
+        border-top-right-radius: 0.625rem; } }
+    .nl-section.homepage .new-top5-players-container .new-above-table .player-stats {
+      text-align: center; }
+      .nl-section.homepage .new-top5-players-container .new-above-table .player-stats .player-image-container {
+        position: relative; }
+    .nl-section.homepage .new-top5-players-container .new-above-table .row {
+      margin: 0; }
+    .nl-section.homepage .new-top5-players-container .new-above-table img {
+      width: auto;
+      display: inline-block;
+      margin-top: -20px; }
+      @media only screen and (max-width: 575px) {
+        .nl-section.homepage .new-top5-players-container .new-above-table img {
+          margin-top: -10px; } }
+    .nl-section.homepage .new-top5-players-container .new-above-table h3 {
+      font-size: 1.45rem;
+      line-height: 1rem;
+      font-weight: 500;
+      padding: 0;
+      color: white;
+      display: inline-block; }
+    .nl-section.homepage .new-top5-players-container .new-above-table h2 {
+      color: white;
+      margin-bottom: 0; }
+    .nl-section.homepage .new-top5-players-container .new-above-table p {
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+      color: white;
+      line-height: 1rem; }
+      @media only screen and (max-width: 575px) {
+        .nl-section.homepage .new-top5-players-container .new-above-table p {
+          line-height: 1.5rem; } }
+    .nl-section.homepage .new-top5-players-container .new-above-table p.title {
+      font-weight: 400;
+      font-size: 11px; }
+    .nl-section.homepage .new-top5-players-container .new-above-table h3.rank-number {
+      width: 84px;
+      height: 14px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
+      background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
+      line-height: 0.9rem;
+      text-align: center;
+      color: white;
+      border-radius: 0;
+      position: absolute;
+      bottom: 0;
+      margin-left: -10px;
+      z-index: 2;
+      font-size: 15px;
+      font-weight: 600; }
+      @media (max-width: 1200px) {
+        .nl-section.homepage .new-top5-players-container .new-above-table h3.rank-number {
+          line-height: 1rem; } }
+    .nl-section.homepage .new-top5-players-container .new-above-table h3.player-name {
+      font-size: 19px;
+      padding: 9px 0; }
+  .nl-section.homepage .new-top5-players-container .new-top5-table thead th, .nl-section.homepage .new-top5-players-container .new-top5-table td {
+    padding: 0.25rem;
+    text-align: center;
+    font-size: 10px; }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .new-top5-table thead th, .nl-section.homepage .new-top5-players-container .new-top5-table td {
+        font-size: 10px; } }
+  .nl-section.homepage .new-top5-players-container .new-top5-table thead th {
+    background: #0f254f; }
+  .nl-section.homepage .new-top5-players-container .new-top5-table td {
+    padding: 0; }
+  .nl-section.homepage .new-top5-players-container .player-data {
+    padding: 0;
+    text-align: center; }
+    .nl-section.homepage .new-top5-players-container .player-data p {
+      font-size: 15px;
+      font-weight: 500; }
+  .nl-section.homepage .new-top5-players-container .new-news-player {
+    width: 21%;
+    display: inline-block;
+    height: 280px;
+    overflow-y: scroll;
+    background: #0f254f;
+    border-left: 3px solid orange;
+    color: white;
+    padding: 10px;
+    margin-left: 0;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    border-radius: 0 0.625rem 0.625rem 0; }
+    .nl-section.homepage .new-top5-players-container .new-news-player h5 {
+      color: orange;
+      font-size: 12px;
+      line-height: 1rem; }
+    .nl-section.homepage .new-top5-players-container .new-news-player p {
+      font-size: 11px;
+      line-height: 1rem;
+      margin-bottom: 0.75rem; }
+      .nl-section.homepage .new-top5-players-container .new-news-player p a {
+        text-decoration: underline; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .nl-section.homepage .new-top5-players-container .new-news-player {
+        height: 252px; } }
+    @media (max-width: 991px) {
+      .nl-section.homepage .new-top5-players-container .new-news-player {
+        height: 252px;
+        width: 29%; } }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .new-news-player {
+        height: 215px; } }
+  .nl-section.homepage .new-top5-players-container .stats-table {
+    width: 70%;
+    display: inline-block; }
+    @media only screen and (max-width: 575px) {
+      .nl-section.homepage .new-top5-players-container .stats-table {
+        width: 100%; } }
   .nl-section.homepage .points-in-bar {
     display: none; }
   .nl-section.homepage .player-info h5 {
@@ -10782,11 +11013,12 @@ p {
     left: 5px;
     top: 108px; }
     .nl-section.homepage .player-thumbnail-name .number p {
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 0; }
   .nl-section.homepage #top5-players-nav {
     overflow: hidden; }
   .nl-section.homepage #top5-players-nav img, .nl-section.homepage #top5-managers-nav img {
-    max-height: 100px;
+    height: 90px;
     width: auto;
     margin: 0 auto; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -10811,38 +11043,50 @@ p {
       right: 0; }
       .nl-section.homepage #top5-managers-picture .points-in-bar p, .nl-section.homepage #top5-players-picture .points-in-bar p {
         font-size: 18px; }
-  .nl-section.homepage #top-player {
-    max-height: 225px;
-    margin: 0 auto;
-    width: auto; }
-    @media only screen and (max-width: 575px) {
-      .nl-section.homepage #top-player {
-        max-height: 188px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .nl-section.homepage #top-player {
+    .nl-section.homepage #top5-managers-picture .helmet-container, .nl-section.homepage #top5-players-picture .helmet-container {
+      position: relative;
+      width: 220px;
+      margin: 0 auto;
+      margin-top: 20px; }
+      @media (max-width: 1200px) {
+        .nl-section.homepage #top5-managers-picture .helmet-container, .nl-section.homepage #top5-players-picture .helmet-container {
+          width: 200px; } }
+      .nl-section.homepage #top5-managers-picture .helmet-container .oval-letter, .nl-section.homepage #top5-players-picture .helmet-container .oval-letter {
+        position: absolute;
+        top: 36px;
+        left: 20px;
+        z-index: 1;
+        width: 70px; }
+      .nl-section.homepage #top5-managers-picture .helmet-container img#oval, .nl-section.homepage #top5-players-picture .helmet-container img#oval {
+        position: absolute; }
+      .nl-section.homepage #top5-managers-picture .helmet-container img#letter, .nl-section.homepage #top5-players-picture .helmet-container img#letter {
+        position: absolute;
+        z-index: 2;
+        width: 41%;
+        margin-left: 17px;
+        margin-top: 7px; }
+      .nl-section.homepage #top5-managers-picture .helmet-container img#helmet, .nl-section.homepage #top5-players-picture .helmet-container img#helmet {
+        height: 220px;
         width: auto;
-        height: 100%; } }
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .nl-section.homepage #top-player {
-        max-width: 262px; } }
+        margin: 0 auto; }
+        @media (max-width: 1200px) {
+          .nl-section.homepage #top5-managers-picture .helmet-container img#helmet, .nl-section.homepage #top5-players-picture .helmet-container img#helmet {
+            height: 200px; } }
   .nl-section.homepage #top-manager {
-    max-height: 210px;
+    height: 200px;
     margin: 0 auto;
     width: auto;
-    margin-top: 15px; }
+    margin-top: 0px; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .nl-section.homepage #top-manager {
         width: auto;
         height: 100%; } }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .nl-section.homepage #top-manager {
-        max-width: 212px; } }
-    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        max-width: 200px; } }
+    @media (min-width: 1200px) {
       .nl-section.homepage #top-manager {
-        max-height: 221px; } }
-    @media (min-width: 1367px) {
-      .nl-section.homepage #top-manager {
-        max-height: 221px; } }
+        height: 200px; } }
   .nl-section.homepage .manager-image-inner {
     bottom: 28px; }
     @media (min-width: 1200px) {
@@ -10872,7 +11116,7 @@ p {
         line-height: 1.4rem; } }
   @media (max-width: 767px) {
     .nl-section.homepage .name-top5 {
-      font-size: 16px; } }
+      font-size: 12px; } }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .nl-section.homepage .name-top5 {
       top: 20%; } }
@@ -11008,24 +11252,10 @@ p {
   /* kaspers update are above here */ }
   .homepage .menu-item.top-5 .number p {
     font-size: 18px;
-    line-height: 1.1rem; }
-    @media (max-width: 991px) {
+    line-height: 2.25rem; }
+    @media (max-width: 1200px) {
       .homepage .menu-item.top-5 .number p {
-        line-height: 1.5rem; } }
-    @media (min-width: 992px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.3rem; } }
-    @media (min-width: 1200px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.1rem; } }
-    @media (min-width: 1680px) and (max-width: 1850px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.35rem;
-        font-size: 21px; } }
-    @media (min-width: 1850px) {
-      .homepage .menu-item.top-5 .number p {
-        line-height: 1.35rem;
-        font-size: 21px; } }
+        line-height: 2.5rem; } }
   .homepage .menu-item.top-5 .number {
     font-size: 18px; }
   .homepage .nl-create-team .player-main-block.football .nl-LRB-position {
@@ -11037,9 +11267,10 @@ p {
   @media only screen and (max-width: 575px) {
     .homepage .no-padding-mobile {
       padding: 0px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .homepage .contests .upcoming-contests {
-      padding-top: 20px; } }
+      margin-top: 40px;
+      text-align: center; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .homepage .no-padding {
       padding: 0px; } }
@@ -11091,13 +11322,26 @@ p {
       min-width: 100px; } }
   .homepage .top-5-section {
     margin-bottom: 40px; }
+    @media (max-width: 767px) {
+      .homepage .top-5-section {
+        margin-bottom: 0px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .homepage .top-5-section {
+        margin-bottom: 20px; } }
+    @media (min-width: 992px) {
+      .homepage .top-5-section.row {
+        margin-right: 0;
+        margin-left: 0; } }
   .homepage .bottom-teams-contests-section {
     margin-bottom: 20px; }
     @media (max-width: 767px) {
       .homepage .bottom-teams-contests-section {
-        padding-top: 20px; } }
+        margin-top: 30px; } }
   .homepage .dropdown-my-teams {
     margin-top: 1.875rem; }
+    @media (max-width: 767px) {
+      .homepage .dropdown-my-teams {
+        margin-top: 0; } }
   .homepage .nl-team-info {
     max-width: 100%; }
     .homepage .nl-team-info button {
@@ -11130,22 +11374,20 @@ p {
   .homepage .nl-contests-table td:not(:first-child), .homepage .nl-contests-table th:not(:first-child) {
     text-align: center !important;
     padding: 0.35rem 0.35rem; }
-  .homepage .nl-contests-table td:not(:first-child):last-child {
-    padding-right: 20px; }
   .homepage .manager-section .table .t-playername {
     padding: 0rem 1rem; }
   .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0; }
     @media (min-width: 1681px) {
       .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
-        font-size: 13px; } }
+        font-size: 11px; } }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
         font-size: 11px; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
-        font-size: 13px; } }
+        font-size: 11px; } }
     @media (max-width: 767px) {
       .homepage .manager-section .table td, .homepage .manager-section .table th, .homepage .nl-my-teams .nl-team-list-table td {
         font-size: 11px; } }
@@ -11356,9 +11598,9 @@ p {
           height: 80px; } }
     .homepage .menu-item .number {
       position: absolute;
-      top: 103px;
+      top: 93px;
       width: 22px;
-      height: 22px;
+      height: 35px;
       background: #e89608;
       background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
       background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
@@ -11371,34 +11613,19 @@ p {
       display: inline-block;
       margin-top: -3px;
       color: #ffffff;
-      border-radius: 0.125rem 0 0 0.125rem; }
+      border-radius: 0.25rem 0 0 0.25rem; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .homepage .menu-item .number {
-          top: 58px;
-          left: 0;
-          font-size: 10px;
-          width: 18px;
-          height: 18px; } }
+          top: 58px; } }
       @media only screen and (min-width: 1201px) and (max-width: 1366px) {
         .homepage .menu-item .number {
-          top: 73px;
-          left: 2px;
-          font-size: 10px;
-          width: 18px;
-          height: 18px; } }
+          top: 73px; } }
       @media only screen and (min-width: 1367px) and (max-width: 1440px) {
         .homepage .menu-item .number {
-          top: 73px;
-          left: 2px;
-          font-size: 10px;
-          width: 18px;
-          height: 18px; } }
+          top: 73px; } }
       @media only screen and (min-width: 1441px) and (max-width: 1680px) {
         .homepage .menu-item .number {
-          top: 83px;
-          font-size: 10px;
-          width: 18px;
-          height: 18px; } }
+          top: 83px; } }
     .homepage .menu-item .player-thumbnail-name {
       background: #0f254f;
       color: #ffffff;
@@ -11410,39 +11637,15 @@ p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      border-radius: 0.25rem; }
+      border-radius: 0.25rem;
+      padding-bottom: 35px; }
       .homepage .menu-item .player-thumbnail-name p {
-        padding: 2px 5px 5px 15px;
-        font-weight: 500; }
-      @media only screen and (min-width: 992px) and (max-width: 1200px) {
-        .homepage .menu-item .player-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .player-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 1px; } }
-      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-        .homepage .menu-item .player-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .player-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0; } }
-      @media only screen and (min-width: 1367px) and (max-width: 1440px) {
-        .homepage .menu-item .player-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .player-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0; } }
-      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
-        .homepage .menu-item .player-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .player-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0;
-            margin-top: -2px; } }
+        padding-top: 5px;
+        margin-left: 23px;
+        font-weight: 500;
+        font-size: 11px;
+        margin-bottom: 0;
+        line-height: 0.65rem; }
     .homepage .menu-item .manager-thumbnail-name {
       background: #0f254f;
       color: #ffffff;
@@ -11454,39 +11657,26 @@ p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      border-radius: 0.25rem; }
+      border-radius: 0.25rem;
+      padding-bottom: 35px; }
       .homepage .menu-item .manager-thumbnail-name p {
-        padding: 2px 5px 5px 15px;
-        font-weight: 500; }
-      @media only screen and (min-width: 992px) and (max-width: 1200px) {
-        .homepage .menu-item .manager-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
+        padding-top: 5px;
+        font-weight: 500;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        line-height: 0.65rem;
+        margin-left: 23px; }
+        @media only screen and (min-width: 1201px) and (max-width: 1366px) {
           .homepage .menu-item .manager-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 1px; } }
-      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-        .homepage .menu-item .manager-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
+            font-size: 11px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
           .homepage .menu-item .manager-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0; } }
-      @media only screen and (min-width: 1367px) and (max-width: 1440px) {
-        .homepage .menu-item .manager-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
+            font-size: 10px;
+            padding-top: 6px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
           .homepage .menu-item .manager-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0; } }
-      @media only screen and (min-width: 1441px) and (max-width: 1680px) {
-        .homepage .menu-item .manager-thumbnail-name {
-          font-size: 10px;
-          height: 18px; }
-          .homepage .menu-item .manager-thumbnail-name p {
-            padding-left: 20px;
-            padding-top: 0;
-            margin-top: -2px; } }
+            font-size: 10px;
+            padding-top: 6px; } }
   .homepage .dropdown.player-position, .homepage .dropdown.week-position {
     display: inline-block; }
     .homepage .dropdown.player-position .btn-primary, .homepage .dropdown.week-position .btn-primary {
@@ -11871,77 +12061,96 @@ p {
   .week h5.visible-xxs {
     font-weight: 700; }
 
-#top5-player-content #create-helmet #helmet,
-#top5-manager-content #create-helmet #helmet {
-  height: 42px; }
+#top5-manager-content #top5-managers-nav .helmet-container {
+  position: relative;
+  width: 90px;
+  margin: 0 auto; }
+  #top5-manager-content #top5-managers-nav .helmet-container .oval-letter {
+    position: absolute;
+    top: 14px;
+    left: 9px;
+    z-index: 1;
+    width: 33px; }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+      #top5-manager-content #top5-managers-nav .helmet-container .oval-letter {
+        top: 11px;
+        left: 15px;
+        width: 30px; } }
+    @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+      #top5-manager-content #top5-managers-nav .helmet-container .oval-letter {
+        top: 12px;
+        left: 18px;
+        z-index: 1;
+        width: 22px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      #top5-manager-content #top5-managers-nav .helmet-container .oval-letter {
+        top: 8px;
+        left: 24px;
+        width: 22px; } }
+  #top5-manager-content #top5-managers-nav .helmet-container img {
+    height: auto; }
+    #top5-manager-content #top5-managers-nav .helmet-container img#oval {
+      position: absolute; }
+    #top5-manager-content #top5-managers-nav .helmet-container img#letter {
+      position: absolute;
+      z-index: 2;
+      width: 41%;
+      margin-left: 9px;
+      margin-top: 3px; }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        #top5-manager-content #top5-managers-nav .helmet-container img#letter {
+          margin-left: 7px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        #top5-manager-content #top5-managers-nav .helmet-container img#letter {
+          margin-left: 7px; } }
+    #top5-manager-content #top5-managers-nav .helmet-container img#helmet {
+      height: 90px;
+      width: auto;
+      margin: 0 auto; }
 
-#top5-player-content #create-helmet #oval,
-#top5-manager-content #create-helmet #oval {
-  position: absolute;
-  top: 7px;
-  z-index: 1;
-  right: 50%;
-  width: 38%;
-  height: auto; }
+#top5-manager-content .team-list-view {
+  padding-right: 0; }
+  @media (max-width: 991px) {
+    #top5-manager-content .team-list-view {
+      padding-right: 15px; } }
 
-#top5-player-content #create-helmet #letter,
-#top5-manager-content #create-helmet #letter {
-  position: absolute;
-  top: 8px;
-  z-index: 2;
-  right: 22px;
-  width: 17%;
-  height: auto; }
-
-#top5-player-content .no-padding,
 #top5-manager-content .no-padding {
   padding: 0; }
 
-#top5-player-content .row,
 #top5-manager-content .row {
   margin-left: 0;
   margin-right: 0; }
 
-#top5-player-content .col-10,
 #top5-manager-content .col-10 {
   padding-left: 0;
   padding-right: 0; }
 
 @media (max-width: 767px) {
-  #top5-player-content,
   #top5-manager-content {
     min-height: 200px;
     padding-top: 20px; } }
 
-#top5-player-content h3,
 #top5-manager-content h3 {
   font-size: 0.95rem;
-  padding-left: 1rem;
   line-height: 1rem;
   font-weight: 500; }
 
-#top5-player-content .orange,
 #top5-manager-content .orange {
   color: #e48706; }
 
-#top5-player-content .nl-my-teams,
 #top5-manager-content .nl-my-teams {
   padding: 0; }
 
-#top5-player-content .nl-my-teams .nl-team-card,
 #top5-manager-content .nl-my-teams .nl-team-card {
   padding: 0 0.625rem; }
 
-#top5-player-content .nav,
 #top5-manager-content .nav {
   padding-left: 10px;
   margin-right: -10px; }
 
-#top5-player-content .nav-item,
 #top5-manager-content .nav-item {
-  width: 19.5%; }
+  width: 20.5%; }
 
-#top5-player-content img.helmet,
 #top5-manager-content img.helmet {
   height: 45px; }
 
@@ -11957,20 +12166,22 @@ p {
     padding-left: 0;
     padding-right: 0; } }
 
-@media (min-width: 992px) {
-  #top5-manager-content h3 {
-    padding-left: 0; } }
+#top5-manager-content h3 {
+  padding: 8px; }
+  @media (min-width: 992px) {
+    #top5-manager-content h3 {
+      padding-left: 0; } }
 
 .subtitle {
   text-align: left; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .subtitle {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       margin-left: 15px;
       height: 40px; } }
   @media (min-width: 992px) {
     .subtitle {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       margin-left: 15px;
       height: 40px; } }
   .subtitle span {
@@ -12079,7 +12290,8 @@ p {
       line-height: 1.2rem; }
       @media only screen and (max-width: 575px) {
         .mobile-menu p.name-top5 {
-          padding-left: 5px; } }
+          padding-left: 0px;
+          font-size: 14px; } }
   .mobile-menu.dropdown {
     background: #e89608;
     /* Old browsers */
@@ -12123,10 +12335,21 @@ p {
     .top-5-mobile {
       display: none; } }
 
+#top5-player-content li.nav-item {
+  width: 18.4%; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #top5-player-content li.nav-item {
+      width: 21.4%; } }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #top5-player-content .player {
     width: 80%;
     margin: 20px auto 50px auto; } }
+
+@media (min-width: 992px) {
+  #top5-player-content .row {
+    margin-right: 0;
+    margin-left: 0; } }
 
 /*week or manager*/
 .manager-name {
@@ -13041,67 +13264,48 @@ td:nth-child(4).homepage-list-view {
   color: #061540;
   padding-bottom: 3.125rem;
   padding-top: 1.875rem; }
-  .nl-my-teams #create-helmet #oval {
-    position: absolute;
-    top: 21px;
-    z-index: 1;
-    right: 58px;
-    width: 7%;
-    height: auto; }
-    @media (min-width: 1850px) {
-      .nl-my-teams #create-helmet #oval {
-        right: 57px; } }
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .nl-my-teams #create-helmet #oval {
-        top: 16px;
-        right: 49px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .nl-my-teams #create-helmet #oval {
-        top: 17px;
-        right: 51px; } }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .nl-my-teams #create-helmet #oval {
-        top: 16px;
-        right: 50px; } }
-    @media only screen and (max-width: 575px) {
-      .nl-my-teams #create-helmet #oval {
-        width: 4%;
-        top: 15px;
-        right: 48px; } }
-    @media (min-width: 1681px) {
-      .nl-my-teams #create-helmet #oval {
-        width: 6%;
-        top: 20px;
-        right: 55px; } }
-  .nl-my-teams #create-helmet #letter {
-    position: absolute;
-    top: 23px;
-    z-index: 2;
-    right: 67px;
-    width: 3%;
-    height: auto; }
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      .nl-my-teams #create-helmet #letter {
-        top: 18px;
-        right: 56px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .nl-my-teams #create-helmet #letter {
-        top: 18px;
-        right: 58px; } }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .nl-my-teams #create-helmet #letter {
-        top: 17px;
-        right: 56px; } }
-    @media only screen and (max-width: 575px) {
-      .nl-my-teams #create-helmet #letter {
-        top: 16px;
-        right: 55px;
-        width: 2%; } }
-    @media (min-width: 1681px) {
-      .nl-my-teams #create-helmet #letter {
-        right: 65px;
-        width: 3%;
-        top: 22px; } }
+  .nl-my-teams .helmet-container {
+    position: relative;
+    width: 90px;
+    margin: 0 auto; }
+    .nl-my-teams .helmet-container .oval-letter {
+      position: absolute;
+      top: 14px;
+      left: 9px;
+      z-index: 1;
+      width: 33px; }
+      @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+        .nl-my-teams .helmet-container .oval-letter {
+          top: 15px;
+          left: 11px;
+          width: 30px; } }
+      @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+        .nl-my-teams .helmet-container .oval-letter {
+          top: 15px;
+          left: 11px;
+          width: 30px; } }
+    .nl-my-teams .helmet-container img {
+      height: auto; }
+      .nl-my-teams .helmet-container img#oval {
+        position: absolute;
+        height: auto; }
+      .nl-my-teams .helmet-container img#letter {
+        position: absolute;
+        height: auto;
+        z-index: 2;
+        width: 41%;
+        margin-left: 9px;
+        margin-top: 3px; }
+        @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+          .nl-my-teams .helmet-container img#letter {
+            margin-left: 7px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .nl-my-teams .helmet-container img#letter {
+            margin-left: 7px; } }
+      .nl-my-teams .helmet-container img#helmet {
+        height: 90px;
+        width: auto;
+        margin: 0 auto; }
   .nl-my-teams .nl-status-wrapper {
     margin: 0 auto; }
   .nl-my-teams .nl-status-wrapper ul {
@@ -13620,7 +13824,7 @@ td:nth-child(4).homepage-list-view {
   margin: 1.25rem 0; }
   .nl-team-button .btn-team {
     margin: 0.3125rem; }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .nl-team-button .btn-team {
         display: none; } }
 
@@ -13853,9 +14057,6 @@ td:nth-child(4).homepage-list-view {
     .nl-live-score .player-main-block.football .nl-DEF-position {
       bottom: 8.8%;
       left: 13%; }
-      .nl-create-team .player-main-block.football .nl-DEF-position img,
-      .nl-live-score .player-main-block.football .nl-DEF-position img {
-        max-width: 75px; }
 
 .nl-create-team .nl-team-field,
 .nl-live-score .nl-team-field {
@@ -13863,6 +14064,15 @@ td:nth-child(4).homepage-list-view {
   background-size: contain;
   min-width: 100%;
   background-size: 100% 100%; }
+  .nl-create-team .nl-team-field .display-none,
+  .nl-live-score .nl-team-field .display-none {
+    display: none !important; }
+  .nl-create-team .nl-team-field .vis-hidden,
+  .nl-live-score .nl-team-field .vis-hidden {
+    visibility: hidden; }
+  .nl-create-team .nl-team-field p.placeholder,
+  .nl-live-score .nl-team-field p.placeholder {
+    font-size: 14px; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .nl-create-team .nl-team-field .football.player-main-block,
     .nl-live-score .nl-team-field .football.player-main-block {
@@ -13914,14 +14124,7 @@ td:nth-child(4).homepage-list-view {
         .nl-create-team .nl-team-field.football .nl-player-block img,
         .nl-live-score .nl-team-field.football .nl-player-block img {
           max-width: 95px; } }
-    .nl-create-team .nl-team-field.football .nl-player-block.nl-DEF-position img,
-    .nl-live-score .nl-team-field.football .nl-player-block.nl-DEF-position img {
-      max-width: 80px; }
-    @media only screen and (min-width: 992px) and (max-width: 1366px) {
-      .nl-create-team .nl-team-field.football .nl-player-block.nl-DEF-position img,
-      .nl-live-score .nl-team-field.football .nl-player-block.nl-DEF-position img {
-        max-width: 70px; } }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .nl-create-team .nl-team-field,
     .nl-live-score .nl-team-field {
       display: none; } }
@@ -14130,7 +14333,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14386,7 +14589,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14451,6 +14654,11 @@ td:nth-child(4).homepage-list-view {
   -webkit-box-shadow: none;
   box-shadow: none;
   overflow: inherit; }
+  .nl-contests-table .withdraw {
+    background: -webkit-gradient(linear, left bottom, left top, from(#951c1c), to(#cf3232));
+    background: linear-gradient(to top, #951c1c, #cf3232);
+    padding: 0.25rem 0.1rem;
+    font-size: 11px; }
   .nl-contests-table th:nth-child(1), .nl-contests-table td:nth-child(1) {
     width: 35%;
     text-align: left; }
@@ -15487,21 +15695,14 @@ td:nth-child(4).homepage-list-view {
         vertical-align: middle;
         display: inline-block; }
 
-.nl-live-score .nl-team-field #create-helmet #oval {
-  position: absolute;
-  top: 14px;
-  z-index: 1;
-  right: 54%;
-  width: 35%;
-  height: auto; }
-
-.nl-live-score .nl-team-field #create-helmet #letter {
-  position: absolute;
-  top: 16px;
-  z-index: 2;
-  right: 52px;
-  width: 17%;
-  height: auto; }
+.nl-live-score .nl-team-field .helmet-container {
+  position: relative;
+  width: 90px;
+  margin: 0 auto; }
+  .nl-live-score .nl-team-field .helmet-container img#helmet {
+    height: 70px;
+    width: auto;
+    margin: 0 auto; }
 
 .nl-live-score .nl-team-list {
   max-width: 27.25rem; }
@@ -15613,7 +15814,7 @@ td:nth-child(4).homepage-list-view {
 
 .nl-live-score .nl-team-list-table th,
 .nl-live-score .nl-team-list-table td {
-  padding: 0.5rem; }
+  padding: 0.25rem; }
   .nl-live-score .nl-team-list-table th:first-child,
   .nl-live-score .nl-team-list-table td:first-child {
     text-align: center;
@@ -15912,8 +16113,38 @@ td:nth-child(4).homepage-list-view {
       line-height: 1rem; }
   .nl-live-score-contest-table .rank__thumb {
     padding: 0rem; }
-    .nl-live-score-contest-table .rank__thumb img {
-      max-width: 39px; }
+    .nl-live-score-contest-table .rank__thumb .helmet-container {
+      position: relative;
+      width: 65px;
+      margin: 0 auto; }
+      .nl-live-score-contest-table .rank__thumb .helmet-container .oval-letter {
+        position: absolute;
+        top: 7px;
+        left: 13px;
+        z-index: 1;
+        width: 20px; }
+      .nl-live-score-contest-table .rank__thumb .helmet-container img {
+        height: auto; }
+        .nl-live-score-contest-table .rank__thumb .helmet-container img#oval {
+          position: absolute;
+          height: auto; }
+        .nl-live-score-contest-table .rank__thumb .helmet-container img#letter {
+          position: absolute;
+          height: auto;
+          z-index: 2;
+          width: 41%;
+          margin-left: 5px;
+          margin-top: 3px; }
+          @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+            .nl-live-score-contest-table .rank__thumb .helmet-container img#letter {
+              margin-left: 7px; } }
+          @media only screen and (min-width: 992px) and (max-width: 1200px) {
+            .nl-live-score-contest-table .rank__thumb .helmet-container img#letter {
+              margin-left: 7px; } }
+        .nl-live-score-contest-table .rank__thumb .helmet-container img#helmet {
+          height: 43px;
+          width: auto;
+          margin: 0 auto; }
   .nl-live-score-contest-table .table-info3 th,
   .nl-live-score-contest-table .table-info3 td,
   .nl-live-score-contest-table .table-info4 th,
@@ -16161,7 +16392,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78812rem; }
+      font-size: 1.78813rem; }
 
 @media (min-width: 576px) {
   .block-dialog {

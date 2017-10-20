@@ -51,10 +51,11 @@ mixin list-of-teams(times)
 						p My Best NFL Team
 						p.italic NLC2 Kasper
 					div.rank__thumb
-						#create-helmet.final-helmet(style='display: block;')
-							img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
-							img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-							img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+						div.helmet-container
+							img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+							div.oval-letter
+								img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
+								img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 				table.table.table-info3
 					thead
 						tr
@@ -350,10 +351,8 @@ section.nl-section.nl-players.nl-live-score
 								p.data FP <span class="orange">12.67</span> 
 								p.data Score <span class="orange">15</span>
 						div.nl-player-block.nl-DEF-position(data-position="DEF")
-							#create-helmet.final-helmet(style='display: block;')
-								img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
-								img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-								img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+							div.helmet-container
+								img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
 							div.nl-player-block--data
 								p.not-playing PATRIOTS
 								p.data FP <span class="orange">12.67</span> 
@@ -365,7 +364,7 @@ section.nl-section.nl-players.nl-live-score
 							.col-12
 								div.nl-team-card.table-data-field
 									h3 MY NLC2 TEAM
-									<img src="assets/img/helmet.png" alt="helmet">
+									<img src="assets/img/helmet/white-helmet.png" alt="helmet">
 
 						.row
 							.col-12.no-padding

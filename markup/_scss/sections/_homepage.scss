@@ -1,51 +1,144 @@
 /*general for homepage*/
 .nl-section.homepage .container-fluid {
   max-width: 1650px;
+
+  // .row {
+  //   @include respond-to (allwide) {
+  //     margin-right: 0;
+  //     margin-left: 0;
+  //   }
+  // }
+  .nl-contests-table {
+    @include respond-to (allmobile) {
+      margin-top: 0.75rem;
+    }
+  }
 }
 
 
 .nl-section.homepage.football-homepage {
 
   .nl-team-list {
-     #create-helmet {
+    .helmet-container {
+      position: relative;
+      width: 90px;
+      margin: 0 auto;
 
-      #oval {
+      .oval-letter {
         position: absolute;
-        top: 22px;
+        top: 14px;
+        left: 9px;
         z-index: 1;
-        right: 69px;
-        width: 6%;
-        height: auto;
+        width: 33px;
+
+        @include respond-to (wide-display) {
+          top: 11px;
+          left: 15px;
+          width: 30px;
+        }
+
+        @include respond-to (medium-display) {
+          top: 12px;
+          left: 18px;
+          z-index: 1;
+          width: 22px;
+        }
+
+        @include respond-to (wide-tablets) {
+          top: 8px;
+          left: 24px;
+          width: 22px;
+        }
       }
-      #letter {
-        position: absolute;
-        top: 25px;
-        z-index: 2;
-        right: 78px;
-        width: 3%;
+
+      img {
         height: auto;
+        &#oval {
+          position: absolute;
+        }
+        &#letter {
+          position: absolute;
+          z-index: 2;
+          width: 41%;
+          margin-left: 9px;
+          margin-top: 3px;
+          @include respond-to (medium-display) {
+            margin-left: 7px;
+          }
+
+          @include respond-to (wide-tablets) {
+            margin-left: 7px;
+          }   
+        }
+        &#helmet {
+
+          height: 90px;
+          width: auto;
+          margin: 0 auto;
+        }
       }
     }
   }
 
   .nl-team-field {
-    #create-helmet {
 
-      #oval {
+    .helmet-container {
+      position: relative;
+      width: 90px;
+      margin: 0 auto;
+
+      .oval-letter {
         position: absolute;
         top: 14px;
+        left: 9px;
         z-index: 1;
-        right: 54%;
-        width: 35%;
-        height: auto;
+        width: 33px;
+
+        @include respond-to (wide-display) {
+          top: 11px;
+          left: 15px;
+          width: 30px;
+        }
+
+        @include respond-to (medium-display) {
+          top: 12px;
+          left: 18px;
+          z-index: 1;
+          width: 22px;
+        }
+
+        @include respond-to (wide-tablets) {
+          top: 8px;
+          left: 24px;
+          width: 22px;
+        }
       }
-      #letter {
-        position: absolute;
-        top: 16px;
-        z-index: 2;
-        right: 52px;
-        width: 17%;
+
+      img {
         height: auto;
+        &#oval {
+          position: absolute;
+        }
+        &#letter {
+          position: absolute;
+          z-index: 2;
+          width: 41%;
+          margin-left: 9px;
+          margin-top: 3px;
+          @include respond-to (medium-display) {
+            margin-left: 7px;
+          }
+
+          @include respond-to (wide-tablets) {
+            margin-left: 7px;
+          }   
+        }
+        &#helmet {
+
+          height: 70px;
+          width: auto;
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -259,6 +352,11 @@
     bottom: 7.5%;
     }
 
+    @include respond-to (tablets) {
+    left: 42%;
+    bottom: 6.5%;
+    }
+
     @media (min-width: 1899px) {
       left: 44%;
     }
@@ -290,6 +388,11 @@
     left: 40%;
     }
 
+    @include respond-to (tablets) {
+    bottom: 32%;
+    left: 42%;
+    }
+
     @media (min-width: 1899px) {
       left: 44%;
     }
@@ -318,6 +421,10 @@
     @include respond-to (wide-tablets) {
     bottom: 61%;
     left: 40%;
+    }
+    @include respond-to (tablets) {
+    bottom: 61%;
+    left: 42%;
     }
 
     @media (min-width: 1899px) {
@@ -461,6 +568,210 @@
 
 .nl-section.homepage {
 
+  .top5-player-container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include respond-to (allmobile) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .new-top5-players-container {
+
+    @include respond-to (allmobile) {
+      padding-top: 20px;
+    }
+
+    .tab-content {
+      overflow: hidden;
+      -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+      box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+      border-bottom-left-radius: 0.625rem;
+
+      @include respond-to (handhelds) {
+        border-bottom-right-radius: 0.625rem;
+      }
+
+      //margin-bottom: 2.25rem;
+    }
+
+    .new-above-table {
+
+      border-top-left-radius: 0.625rem;
+      @include respond-to (handhelds) {
+        border-top-right-radius: 0.625rem;
+      }
+      .player-stats {
+        text-align: center;
+
+        .player-image-container {
+          position: relative;
+        }
+      }
+
+      .row {
+        margin: 0;
+        //padding-top: 15px;
+      }
+
+      background: #061540;
+
+      img {
+        width: auto;
+        display: inline-block;
+        margin-top: -20px;
+
+        @include respond-to (handhelds) {
+          margin-top: -10px;
+        }
+      }
+
+      h3 {
+        font-size: 1.45rem;
+        line-height: 1rem;
+        font-weight: 500;
+        padding: 0;
+        color: white;
+        display: inline-block;
+      }
+
+      h2 {
+        color: white;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        color: white;
+        line-height: 1rem;
+
+        @include respond-to (handhelds) {
+          line-height: 1.5rem;
+        }
+      }
+
+      p.title {
+        font-weight: 400;
+        font-size: 11px;
+      }
+
+      h3.rank-number {
+        width: 84px;
+        height: 14px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
+        background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
+        line-height: 0.9rem;
+        text-align: center;
+        color: white;
+        border-radius: 0;
+        position: absolute;
+        bottom: 0;
+        margin-left: -10px;
+        z-index: 2;
+        font-size: 15px;
+        font-weight: 600;
+
+        @include respond-to (allnotwide) {
+          line-height: 1rem;
+        }
+      }
+
+      h3.player-name {
+        font-size: 19px;
+        padding: 9px 0;
+      }
+    }
+
+    .new-top5-table {
+      thead th, td {
+        padding: 0.25rem;
+        text-align: center;
+        font-size: 10px;
+
+        @include respond-to (handhelds) {
+          font-size: 10px;
+        }
+      }
+
+      thead th {
+        background: #0f254f;
+      }
+
+      td {
+        padding: 0;
+      }
+    }
+
+    .player-data {
+      padding: 0;
+      text-align: center;
+      p {
+        font-size: 15px;
+        font-weight: 500;
+      }     
+    }
+
+    .new-news-player {
+
+      width: 21%;
+      display: inline-block;
+      height: 280px;
+      overflow-y: scroll;
+
+      background: #0f254f;
+      border-left: 3px solid orange;
+      color: white;
+      padding: 10px;
+      margin-left: 0;
+      -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+      box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+      border-radius: 0 0.625rem 0.625rem 0;
+
+      h5 {
+        color: orange;
+        font-size: 12px;
+        line-height: 1rem;
+      }
+
+      p {
+        font-size: 11px;
+        line-height: 1rem;
+        margin-bottom: 0.75rem;
+
+        a {
+          text-decoration: underline;
+          //color: orange
+        }
+      }
+
+      @include respond-to (wide-tablets) {
+        height: 252px;
+      }
+
+      @include respond-to (allsmall) {
+        height: 252px;
+        width: 29%;
+      }
+
+      @include respond-to (handhelds) {
+        height: 215px;
+      }
+    }
+
+    .stats-table {
+      width: 70%;
+      display: inline-block;
+
+      @include respond-to (handhelds) {
+        width: 100%;
+      }
+    }
+  }
+
   // TODO fix later for Raf
   .points-in-bar {
     display: none;
@@ -504,6 +815,7 @@
     top: 108px;
     p {
       padding: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -512,7 +824,7 @@
   }
 
   #top5-players-nav img, #top5-managers-nav img {
-    max-height: 100px;
+    height: 90px;
     width: auto;
     margin: 0 auto;
 
@@ -531,6 +843,23 @@
     @include respond-to (extra-large-display) {
       max-height: 100px;
     }
+
+    // &#oval {
+    //   position: absolute;
+    //   top: 11px;
+    //   z-index: 1;
+    //   right: 65px;
+    //   width: 24%;
+    //   height: auto;
+    // }
+    // &#letter {
+    //   position: absolute;
+    //   top: 13px;
+    //   z-index: 2;
+    //   right: 74px;
+    //   width: 11%;
+    //   height: auto;
+    // }
   }
 
   #top5-managers-picture, #top5-players-picture {
@@ -549,32 +878,54 @@
         font-size: 18px;
       }
     }
-  }
 
-  #top-player {
-     max-height: 225px;
-     margin: 0 auto;
-     width: auto;
+    .helmet-container {
+      position: relative;
+      width: 220px;
+      margin: 0 auto;
+      margin-top: 20px;
 
-     @include respond-to (handhelds) {
-      max-height: 188px;
-     }
+      @include respond-to (allnotwide) {
+        width: 200px;
+      }
 
-    @include respond-to (tablets) {
-      width: auto;
-      height: 100%;
-    }
+      .oval-letter {
+        position: absolute;
+        top: 36px;
+        left: 20px;
+        z-index: 1;
+        width: 70px;
+      }
 
-    @include respond-to (wide-tablets) {
-      max-width: 262px;
-    }
+      img {
+        &#oval {
+        position: absolute;
+        }
+        &#letter {
+          position: absolute;
+          z-index: 2;
+          width: 41%;
+          margin-left: 17px;
+          margin-top: 7px;
+        }
+        &#helmet {
+          height: 220px;
+          width: auto;
+          margin: 0 auto;
+
+          @include respond-to (allnotwide) {
+            height: 200px;
+          }
+        }
+      }
+    }    
   }
 
   #top-manager {
-     max-height: 210px;
+     height: 200px;
      margin: 0 auto;
      width: auto;
-     margin-top: 15px;
+     margin-top: 0px;
 
     @include respond-to (tablets) {
       width: auto;
@@ -582,15 +933,11 @@
     }
 
     @include respond-to (wide-tablets) {
-      max-width: 212px;
+      max-width: 200px;
     }
 
-    @include respond-to (medium-display) {
-      max-height: 221px;
-    }
-
-    @media (min-width: 1367px) {
-      max-height: 221px;
+    @include respond-to (allwider) {
+      height: 200px;
     }
   }
 
@@ -651,7 +998,7 @@
   .name-top5 {
 
     @include respond-to (allmobile) {
-      font-size: 16px;
+      font-size: 12px;
     }
 
     @include respond-to (wide-tablets) {
@@ -856,28 +1203,10 @@
 
   .menu-item.top-5 .number p {
     font-size: 18px;
-    line-height: 1.1rem;
+    line-height: 2.25rem;
 
-    @include respond-to (allsmall) {
-      line-height: 1.5rem;
-    }
-
-    @include respond-to (allwide) {
-      line-height: 1.3rem;
-    }
-
-    @include respond-to (allwider) {
-      line-height: 1.1rem;
-    }
-
-    @media (min-width: 1680px) and (max-width: 1850px) {
-      line-height: 1.35rem;
-      font-size: 21px;
-    }
-
-    @media (min-width: 1850px) {
-      line-height: 1.35rem;
-      font-size: 21px;
+    @include respond-to (allnotwide) {
+      line-height: 2.5rem;
     }
   }
 
@@ -903,9 +1232,10 @@
     }
   }
 
-  @include respond-to (allmobile) {
+  @include respond-to (allsmall) {
     .contests .upcoming-contests {
-      padding-top: 20px;
+      margin-top: 40px;
+      text-align: center;
     }
   }  
 
@@ -1017,18 +1347,38 @@
 
   .top-5-section {
     margin-bottom: 40px;
+
+    @include respond-to (allmobile) {
+      margin-bottom: 0px;
+    }
+
+
+    @include respond-to (tablets) {
+      margin-bottom: 20px;
+    }
+
+    &.row {
+      @include respond-to (allwide) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
   }
 
   .bottom-teams-contests-section {
     margin-bottom: 20px;
 
     @include respond-to (allmobile) {
-      padding-top: 20px;
+      margin-top: 30px;
     }
   }
 
   .dropdown-my-teams {
     margin-top: 1.875rem;
+
+    @include respond-to (allmobile) {
+      margin-top: 0;
+    }
   }
 
   .nl-team-info {
@@ -1038,7 +1388,7 @@
       font-weight: 600;
       margin: 14px 30px;
 
-      @include respond-to ( handhelds) {
+      @include respond-to (handhelds) {
         margin: 8px 12px;
         padding: 5px 15px;
       }
@@ -1081,7 +1431,7 @@
   }
 
   .nl-contests-table td:not(:first-child):last-child{
-    padding-right: 20px;
+    //padding-right: 20px;
   }
 
   .manager-section .table .t-playername {
@@ -1089,11 +1439,11 @@
   }
 
   .manager-section .table td, .manager-section .table th, .nl-my-teams .nl-team-list-table td {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0;
       
     @include respond-to (extra-large-display) {
-      font-size: 13px;
+      font-size: 11px;
     }
 
     @include respond-to (wide-tablets) {
@@ -1101,7 +1451,7 @@
     }
 
     @include respond-to (tablets) {
-      font-size: 13px;
+      font-size: 11px;
       //padding: 0rem 1rem;
     }
 
@@ -1427,7 +1777,6 @@
       //background: url(../img/player1.png) top center no-repeat;
       background-size: cover;
       
-
       @include respond-to(wide-tablets) {
         height: 55px;
       }
@@ -1447,9 +1796,9 @@
 
     .number {
       position: absolute;
-      top: 103px;
+      top: 93px;
       width: 22px;
-      height: 22px;
+      height: 35px;
       background: #e89608;
       background: linear-gradient(to bottom, #e89608 0%,#e37606 100%);
       font-size: 19px;
@@ -1461,37 +1810,22 @@
       display: inline-block;
       margin-top: -3px;
       color: #ffffff;
-      border-radius: 0.125rem 0 0 0.125rem;
+      border-radius: 0.25rem 0 0 0.25rem;
 
       @include respond-to(wide-tablets) {
         top: 58px;
-        left: 0;
-        font-size: 10px;
-        width: 18px;
-        height: 18px;
       }
 
       @include respond-to(medium-display) {
         top: 73px;
-        left: 2px;
-        font-size: 10px;
-        width: 18px;
-        height: 18px;
       }
 
       @include respond-to(wide-display) {
         top: 73px;
-        left: 2px;
-        font-size: 10px;
-        width: 18px;
-        height: 18px;
       }
 
       @include respond-to(large-display) {
         top: 83px;
-        font-size: 10px;
-        width: 18px;
-        height: 18px;
       }
     }
 
@@ -1507,52 +1841,57 @@
       overflow: hidden;
       text-overflow: ellipsis;
       border-radius: 0.25rem;
+      padding-bottom: 35px;
 
       p {
-        padding: 2px 5px 5px 15px;
+        padding-top: 5px;
+        margin-left: 23px;
         font-weight: 500;
+        font-size: 11px;
+        margin-bottom: 0;
+        line-height: 0.65rem;
       }
 
-      @include respond-to(wide-tablets) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(wide-tablets) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 1px;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 1px;
+      //   }
+      // }
 
-      @include respond-to(medium-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(medium-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //   }
+      // }
 
-      @include respond-to(wide-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(wide-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //   }
+      // }
 
-      @include respond-to(large-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(large-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-          margin-top: -2px;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //     margin-top: -2px;
+      //   }
+      // }
     }
 
     .manager-thumbnail-name {
@@ -1567,52 +1906,71 @@
       overflow: hidden;
       text-overflow: ellipsis;
       border-radius: 0.25rem;
+      padding-bottom: 35px;
 
       p {
-        padding: 2px 5px 5px 15px;
+        padding-top: 5px;
         font-weight: 500;
-      }
+        padding-bottom: 0;
+        margin-bottom: 0;
+        line-height: 0.65rem;
+        margin-left: 23px;
 
-      @include respond-to(wide-tablets) {
-        font-size: 10px;
-        height: 18px;
+        @include respond-to (medium-display) {
+          font-size: 11px;
+        }
 
-        p {
-          padding-left: 20px;
-          padding-top: 1px;
+        @include respond-to (wide-tablets) {
+          font-size: 10px;
+          padding-top: 6px;
+        }
+
+        @include respond-to (tablets) {
+          font-size: 10px;
+          padding-top: 6px;
         }
       }
 
-      @include respond-to(medium-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(wide-tablets) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 1px;
+      //   }
+      // }
 
-      @include respond-to(wide-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(medium-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //   }
+      // }
 
-      @include respond-to(large-display) {
-        font-size: 10px;
-        height: 18px;
+      // @include respond-to(wide-display) {
+      //   font-size: 10px;
+      //   height: 18px;
 
-        p {
-          padding-left: 20px;
-          padding-top: 0;
-          margin-top: -2px;
-        }
-      }
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //   }
+      // }
+
+      // @include respond-to(large-display) {
+      //   font-size: 10px;
+      //   height: 18px;
+
+      //   p {
+      //     padding-left: 20px;
+      //     padding-top: 0;
+      //     margin-top: -2px;
+      //   }
+      // }
     }
   }
 
@@ -2241,31 +2599,101 @@
   }
 }
 
-#top5-player-content,
 #top5-manager-content {
-  
-  #create-helmet {
-    #helmet {
-      height: 42px;
-    }
+  #top5-managers-nav {
 
-    #oval {
-      position: absolute;
-      top: 7px;
-      z-index: 1;
-      right: 50%;
-      width: 38%;
-      height: auto;
-    }
-    #letter {
-      position: absolute;
-      top: 8px;
-      z-index: 2;
-      right: 22px;
-      width: 17%;
-      height: auto;
+    .helmet-container {
+      position: relative;
+      width: 90px;
+      margin: 0 auto;
+
+      .oval-letter {
+        position: absolute;
+        top: 14px;
+        left: 9px;
+        z-index: 1;
+        width: 33px;
+
+        @include respond-to (wide-display) {
+          top: 11px;
+          left: 15px;
+          width: 30px;
+        }
+
+        @include respond-to (medium-display) {
+          top: 12px;
+          left: 18px;
+          z-index: 1;
+          width: 22px;
+        }
+
+        @include respond-to (wide-tablets) {
+          top: 8px;
+          left: 24px;
+          width: 22px;
+        }
+      }
+
+      img {
+        height: auto;
+        &#oval {
+          position: absolute;
+        }
+        &#letter {
+          position: absolute;
+          z-index: 2;
+          width: 41%;
+          margin-left: 9px;
+          margin-top: 3px;
+          @include respond-to (medium-display) {
+            margin-left: 7px;
+          }
+
+          @include respond-to (wide-tablets) {
+            margin-left: 7px;
+          }   
+        }
+        &#helmet {
+
+          height: 90px;
+          width: auto;
+          margin: 0 auto;
+        }
+      }
     }
   }
+
+  .team-list-view {
+    padding-right: 0;
+
+    @include respond-to (allsmall) {
+      padding-right: 15px;
+    }
+  }
+  
+    
+  // #create-helmet {
+  //   #helmet {
+  //     height: 42px;
+  //   }
+
+  //   #oval {
+  //     position: absolute;
+  //     top: 7px;
+  //     z-index: 1;
+  //     right: 50%;
+  //     width: 38%;
+  //     height: auto;
+  //   }
+  //   #letter {
+  //     position: absolute;
+  //     top: 8px;
+  //     z-index: 2;
+  //     right: 22px;
+  //     width: 17%;
+  //     height: auto;
+  //   }
+  // }
 
   .no-padding {
     padding: 0;
@@ -2288,7 +2716,7 @@
 
   h3 {
     font-size: 0.95rem;
-    padding-left: 1rem;
+    //padding-left: 1rem;
     line-height: 1rem;
     font-weight: 500;
   }
@@ -2311,7 +2739,7 @@
   }
 
   .nav-item {
-    width: 19.5%;
+    width: 20.5%;
   }
 
   img.helmet {
@@ -2338,9 +2766,12 @@
   }
 
   h3 {
+
     @include respond-to (allwide) {
       padding-left: 0;
     }
+
+    padding: 8px;
   }
   // .manager-image-inner .name p {
   //   //padding-left: 25px;
@@ -2360,13 +2791,13 @@
   text-align: left;
 
   @include respond-to(tablets) {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 15px;
     height: 40px;
   }
 
   @include respond-to(allwide) {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 15px;
     height: 40px;
   }
@@ -2516,9 +2947,9 @@
       line-height: 1.2rem;
 
       @include respond-to (handhelds) {
-        padding-left: 5px;
+        padding-left: 0px;
+        font-size: 14px;
       }
-
     }
   }
 
@@ -2575,10 +3006,25 @@
 }
 
 #top5-player-content {
+  li.nav-item {
+    width: 18.4%;
+
+    @include respond-to (tablets) {
+      width: 21.4%;
+    }
+  }
+
   .player {
     @include respond-to(tablets) {
       width: 80%;
       margin: 20px auto 50px auto;
+    }
+  }
+
+  .row {
+    @include respond-to (allwide) {
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 }
