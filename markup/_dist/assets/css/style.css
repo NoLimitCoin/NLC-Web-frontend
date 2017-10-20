@@ -11227,6 +11227,10 @@ p {
 .homepage-field img.helmet {
   height: 75px; }
 
+@media (max-width: 991px) {
+  .homepage-field {
+    margin-top: 30px; } }
+
 .homepage {
   background: url(../img/stadion_full.jpg) top center no-repeat fixed;
   background-size: cover;
@@ -11252,9 +11256,9 @@ p {
   @media only screen and (max-width: 575px) {
     .homepage .no-padding-mobile {
       padding: 0px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .homepage .contests .upcoming-contests {
-      padding-top: 20px;
+      margin-top: 40px;
       text-align: center; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .homepage .no-padding {
@@ -11324,7 +11328,7 @@ p {
         padding-top: 20px; } }
   .homepage .dropdown-my-teams {
     margin-top: 1.875rem; }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .homepage .dropdown-my-teams {
         margin-top: 0; } }
   .homepage .nl-team-info {

@@ -1183,6 +1183,10 @@
   img.helmet {
     height: 75px;
   }
+
+  @include respond-to (allsmall) {
+    margin-top: 30px;
+  }
 }
 
 .homepage {
@@ -1218,9 +1222,9 @@
     }
   }
 
-  @include respond-to (allmobile) {
+  @include respond-to (allsmall) {
     .contests .upcoming-contests {
-      padding-top: 20px;
+      margin-top: 40px;
       text-align: center;
     }
   }  
@@ -1362,7 +1366,7 @@
   .dropdown-my-teams {
     margin-top: 1.875rem;
 
-    @include respond-to (allsmall) {
+    @include respond-to (allmobile) {
       margin-top: 0;
     }
   }
