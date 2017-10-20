@@ -95,7 +95,7 @@
 
   &--slide {
 
-	.nl-slide-1 {
+  	.nl-slide-1 {
 	  background: url(../img/nl-slide-img.jpg) bottom center no-repeat;
 	}
 
@@ -104,7 +104,7 @@
 	}
 
 	.nl-slide-5 {
-	  background: url(../img/JT-1.jpg) bottom center no-repeat;
+	  background: url(../img/JT-2.jpg) left center no-repeat;
 
 	  @include respond-to (extra-large-display) {
 		background-position: top center;
@@ -112,10 +112,26 @@
 	}
 
 	.nl-slide-6 {
-	  background: url(../img/JC-1.jpg) left center no-repeat;
+	  background: url(../img/JC-1.jpg) right center no-repeat;
+
+	  h2 {
+	  	padding: 10px;
+	  }
 
 	  @include respond-to (extra-large-display) {
-		background: url(../img/JC-1-xl-v2.jpg) left center no-repeat;
+		//background: url(../img/JC-1-xl-v2.jpg) left center no-repeat;
+	  }
+	}
+
+	.nl-slide-7 {
+	  background: url(../img/JC-2.png) bottom center no-repeat;
+
+	  h2 {
+	  	padding: 10px;
+	  }
+
+	  @include respond-to (extra-large-display) {
+		//background: url(../img/JC-1-xl-v2.jpg) left center no-repeat;
 	  }
 	}
 
@@ -128,20 +144,20 @@
 		letter-spacing: calculateRem(5px);
 
 
-	h1, h2{
+		h1, h2{
 
-	  text-transform: uppercase;
-	  font-weight: 700;
-	  margin: 0;
-	  text-shadow: 3px 2px 1px black;
-	}
+		  text-transform: uppercase;
+		  font-weight: 700;
+		  margin: 0;
+		  text-shadow: 3px 2px 1px black;
+		}
 
-	  h2 {
-	  padding-top: 100px;
-	  //font-size: 65px;
-	  line-height: 2.5rem;
-	  line-height: 3.9375rem;
-	  font-size: 4.375rem;
+	  	h2 {
+		  padding-top: 100px;
+		  //font-size: 65px;
+		  line-height: 2.5rem;
+		  line-height: 3.9375rem;
+		  font-size: 4.375rem;
 
 		  @include respond-to (handhelds) {
 			padding-top: 150px;
@@ -182,7 +198,13 @@
 		  }
 		}
 
-	  .btn-lg {
+		&.nl-slide-5, &.nl-slide-6 {
+			h2 {
+				padding-top: 10px;
+			}
+		}
+
+	  	.btn-lg {
 
 		font-size: 1.8rem;
 		margin-bottom: 65px;
@@ -218,8 +240,14 @@
 			margin-bottom: 105px;
 			margin-top: 10px;	
 		}
-
 	  }
+
+	  	&.nl-slide-5, &.nl-slide-6 {
+	  		.btn-lg {
+
+				margin-bottom: 10px;
+	  		}
+		}
 	}
 
 
@@ -276,8 +304,8 @@
 	}
 
 	@media (min-width: 2350px) {
-		min-height: 55rem;
-		max-height: 55rem;
+		min-height: 45rem;
+		max-height: 45rem;
 	}
   }
 }

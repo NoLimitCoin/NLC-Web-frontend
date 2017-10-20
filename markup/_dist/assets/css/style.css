@@ -9627,15 +9627,18 @@ p {
   .nl-header--slide .nl-slide-3 {
     background: url(../img/soccer-background.jpg) bottom center no-repeat; }
   .nl-header--slide .nl-slide-5 {
-    background: url(../img/JT-1.jpg) bottom center no-repeat; }
+    background: url(../img/JT-2.jpg) left center no-repeat; }
     @media (min-width: 1681px) {
       .nl-header--slide .nl-slide-5 {
         background-position: top center; } }
   .nl-header--slide .nl-slide-6 {
-    background: url(../img/JC-1.jpg) left center no-repeat; }
-    @media (min-width: 1681px) {
-      .nl-header--slide .nl-slide-6 {
-        background: url(../img/JC-1-xl-v2.jpg) left center no-repeat; } }
+    background: url(../img/JC-1.jpg) right center no-repeat; }
+    .nl-header--slide .nl-slide-6 h2 {
+      padding: 10px; }
+  .nl-header--slide .nl-slide-7 {
+    background: url(../img/JC-2.png) bottom center no-repeat; }
+    .nl-header--slide .nl-slide-7 h2 {
+      padding: 10px; }
   .nl-header--slide .nl-slides {
     background-size: cover;
     display: -webkit-box;
@@ -9686,6 +9689,8 @@ p {
           padding-top: 230px;
           font-size: 5.875rem;
           line-height: 5.9375rem; } }
+    .nl-header--slide .nl-slides.nl-slide-5 h2, .nl-header--slide .nl-slides.nl-slide-6 h2 {
+      padding-top: 10px; }
     .nl-header--slide .nl-slides .btn-lg {
       font-size: 1.8rem;
       margin-bottom: 65px; }
@@ -9714,6 +9719,8 @@ p {
           font-size: 3.25rem;
           margin-bottom: 105px;
           margin-top: 10px; } }
+    .nl-header--slide .nl-slides.nl-slide-5 .btn-lg, .nl-header--slide .nl-slides.nl-slide-6 .btn-lg {
+      margin-bottom: 10px; }
   .nl-header--slide .owl-dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9756,8 +9763,8 @@ p {
         max-height: 25rem; } }
     @media (min-width: 2350px) {
       .nl-header .owl-carousel, .nl-header .owl-stage-outer, .nl-header .nl-slides {
-        min-height: 55rem;
-        max-height: 55rem; } }
+        min-height: 45rem;
+        max-height: 45rem; } }
 
 .nl-header-log .navbar-nav {
   font-weight: 500; }
@@ -10129,7 +10136,7 @@ p {
   #loginModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -10246,7 +10253,7 @@ p {
   #registrationModal .modal-footer button {
     width: 17.375rem;
     margin: 0 auto;
-    font-size: 1.78813rem; }
+    font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -14333,7 +14340,7 @@ td:nth-child(4).homepage-list-view {
     #loginSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -14589,7 +14596,7 @@ td:nth-child(4).homepage-list-view {
     #changePasswordSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
@@ -16392,7 +16399,7 @@ p.ads {
     #editProfileSection .block-footer button {
       width: 17.375rem;
       margin: 0 auto;
-      font-size: 1.78813rem; }
+      font-size: 1.78812rem; }
 
 @media (min-width: 576px) {
   .block-dialog {
