@@ -9120,8 +9120,20 @@ body {
 section .container-fluid {
   max-width: 2000px; }
 
+p.not-playing {
+  background: red; }
+
+p.played {
+  background: #5fadcc; }
+
+p.playing {
+  background: green; }
+
 .text-center {
   text-align: center; }
+
+.vis-hidden {
+  visibility: hidden; }
 
 .modal {
   font-weight: 500;
@@ -9257,7 +9269,7 @@ section .container-fluid {
 
 .hide {
   display: none; }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .hide {
       display: block; } }
 
@@ -11226,6 +11238,9 @@ p {
   .homepage .menu-item.top-5 .number p {
     font-size: 18px;
     line-height: 2.25rem; }
+    @media (max-width: 1200px) {
+      .homepage .menu-item.top-5 .number p {
+        line-height: 2.5rem; } }
   .homepage .menu-item.top-5 .number {
     font-size: 18px; }
   .homepage .nl-create-team .player-main-block.football .nl-LRB-position {
@@ -13813,7 +13828,7 @@ td:nth-child(4).homepage-list-view {
   margin: 1.25rem 0; }
   .nl-team-button .btn-team {
     margin: 0.3125rem; }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .nl-team-button .btn-team {
         display: none; } }
 
@@ -14120,7 +14135,7 @@ td:nth-child(4).homepage-list-view {
       .nl-create-team .nl-team-field.football .nl-player-block.nl-DEF-position img,
       .nl-live-score .nl-team-field.football .nl-player-block.nl-DEF-position img {
         max-width: 70px; } }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .nl-create-team .nl-team-field,
     .nl-live-score .nl-team-field {
       display: none; } }

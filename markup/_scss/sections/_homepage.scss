@@ -1191,27 +1191,9 @@
     font-size: 18px;
     line-height: 2.25rem;
 
-    // @include respond-to (allsmall) {
-    //   line-height: 1.5rem;
-    // }
-
-    // @include respond-to (allwide) {
-    //   line-height: 1.3rem;
-    // }
-
-    // @include respond-to (allwider) {
-    //   line-height: 1.1rem;
-    // }
-
-    // @media (min-width: 1680px) and (max-width: 1850px) {
-    //   line-height: 1.35rem;
-    //   font-size: 21px;
-    // }
-
-    // @media (min-width: 1850px) {
-    //   line-height: 2rem;
-    //   font-size: 21px;
-    // }
+    @include respond-to (allnotwide) {
+      line-height: 2.5rem;
+    }
   }
 
   .menu-item.top-5 .number {

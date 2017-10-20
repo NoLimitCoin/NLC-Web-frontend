@@ -25,8 +25,24 @@ section .container-fluid {
 	max-width: 2000px;
 }
 
+p.not-playing {
+	background: red;
+}
+
+p.played {
+	background: #5fadcc;
+}
+
+p.playing {
+	background: green;
+}
+
 .text-center {
 	text-align: center;
+}
+
+.vis-hidden {
+	visibility: hidden;
 }
 
 .modal { 
@@ -204,7 +220,7 @@ section .container-fluid {
 
 .hide{
 	display: none;
-	@include respond-to(allsmall){
+	@include respond-to(allmobile){
 		display: block;
 	}
 }

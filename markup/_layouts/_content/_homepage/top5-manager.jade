@@ -78,7 +78,7 @@ div.tab-content(id="top5-manager-content")
 											#top5-managers-nav(style='display: block;')
 												div.helmet-container
 													img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-													div.oval-letter
+													div.oval-letter.vis-hidden
 														img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
 														img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 											div.number
@@ -106,7 +106,11 @@ div.tab-content(id="top5-manager-content")
 									div.menu-item.top-5
 										div.players 
 											#top5-managers-nav(style='display: block;')
-												img#top-manager-nav(src='assets/img/white-helmet.png', style='display: block;')
+												div.helmet-container
+													img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+													div.oval-letter
+														img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+														img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 											div.number
 												p 3
 											div.manager-thumbnail-name
@@ -155,7 +159,7 @@ div.tab-content(id="top5-manager-content")
 													//- img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
 													div.helmet-container
 														img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-														div.oval-letter
+														div.oval-letter.vis-hidden
 															img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
 															img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 													div.manager-image-inner
@@ -247,422 +251,411 @@ div.tab-content(id="top5-manager-content")
 															p 1
 														div.name
 															p Rafael
-							//- div.carousel-item
-							//- 	div.tab-content
-							//- 		div.tab-pane.active(id="manager1" role="tabpanel")
-							//- 			div.row.player
-							//- 				div.col-12.col-xs-5.hidden-md-down.col-lg-5
-							//- 					#top5-managers-picture(style='display: block;')
-							//- 						img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
-							//- 						div.manager-image-inner
-							//- 							div.number
-							//- 								p 2
-							//- 							div.name
-							//- 								p Oscar
-							//- 				div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
-							//- 					div.nl-team-list-homepage.nl-my-teams
-							//- 						.nl-card-wrapper
-							//- 							.row
-							//- 								.col-12.no-padding
-							//- 									div.nl-team-card.table-data-field
-							//- 										div.row 
-							//- 											div.col-12.orange.no-padding
-							//- 												h3 Score: 123
-							//- 											div.col-12.no-padding
-							//- 												h3 The best NLC2 team!
-							//- 										div.row 
-							//- 											div.col-10
-							//- 												#create-helmet.final-helmet(style='display: block;')
-							//- 													img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-							//- 													img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-							//- 													img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+							div.carousel-item
+								div.tab-content
+									div.tab-pane.active(id="manager1" role="tabpanel")
+										div.row
+											div.col-12.col-xs-5.hidden-md-down.col-lg-5.no-padding
+												#top5-managers-picture(style='display: block;')
+													//- img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
+													div.helmet-container
+														img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+														div.oval-letter.vis-hidden
+															img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+															img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+													div.manager-image-inner
+														div.number
+															p 2
+														div.name
+															p Dan
+											div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+												div.nl-team-list-homepage.nl-my-teams
+													.nl-card-wrapper
+														.row
+															.col-12.no-padding
+																div.nl-team-card.table-data-field
+																	div.row 
+																		div.col-12.orange.no-padding
+																			h3 Score: 123
+																		div.col-12.no-padding
+																			h3 The best NLC2 team!!
+														.row
+															.col-12.no-padding
+																table.table.table-striped.nl-team-list-table
+																	thead
+																		tr
 
-							//- 							.row
-							//- 								.col-12.no-padding
-							//- 									table.table.table-striped.nl-team-list-table
-							//- 										thead
-							//- 											tr
+																			th.name-list-view NAME
+																			th POS
+																			th SCORE
+																			th SALARY
+																			th
 
-							//- 												th.name-list-view NAME
-							//- 												th POS
-							//- 												th SCORE
-							//- 												th SALARY
-							//- 												th
+																	tbody
+																		tr
 
-							//- 										tbody
-							//- 											tr
+																			td Player name
+																			td.pos FLEX
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos FLEX
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos K
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos K
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos RB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos RB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos RB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos RB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos QB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos QB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos WR
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos WR
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos WR
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos WR
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos TE
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos TE
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos DEF
+																			td 30
+																			td $0
+											div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+												div.manager-image-inner
+														div.number
+															p 2
+														div.name
+															p Dan
+							div.carousel-item
+								div.tab-content
+									div.tab-pane.active(id="manager1" role="tabpanel")
+										div.row
+											div.col-12.col-xs-5.hidden-md-down.col-lg-5.no-padding
+												#top5-managers-picture(style='display: block;')
+													//- img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
+													div.helmet-container
+														img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+														div.oval-letter.vis-hidden
+															img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+															img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+													div.manager-image-inner
+														div.number
+															p 3
+														div.name
+															p Johnny Chan
+											div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+												div.nl-team-list-homepage.nl-my-teams
+													.nl-card-wrapper
+														.row
+															.col-12.no-padding
+																div.nl-team-card.table-data-field
+																	div.row 
+																		div.col-12.orange.no-padding
+																			h3 Score: 123
+																		div.col-12.no-padding
+																			h3 The best NLC2 team!!
+														.row
+															.col-12.no-padding
+																table.table.table-striped.nl-team-list-table
+																	thead
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos DEF
-							//- 												td 30
-							//- 												td $0
-							//- 				div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
-							//- 					div.manager-image-inner
-							//- 							div.number
-							//- 								p 2
-							//- 							div.name
-							//- 								p Oscar
-							//- div.carousel-item
-							//- 	div.tab-content
-							//- 		div.tab-pane.active(id="manager1" role="tabpanel")
-							//- 			div.row.player
-							//- 				div.col-12.col-xs-5.hidden-md-down.col-lg-5
-							//- 					#top5-managers-picture(style='display: block;')
-							//- 						//- img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
-							//- 						img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-							//- 						img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-							//- 						img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
-							//- 						div.manager-image-inner
-							//- 							div.number
-							//- 								p 3
-							//- 							div.name
-							//- 								p Dan
-							//- 				div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
-							//- 					div.nl-team-list-homepage.nl-my-teams
-							//- 						.nl-card-wrapper
-							//- 							.row
-							//- 								.col-12.no-padding
-							//- 									div.nl-team-card.table-data-field
-							//- 										div.row 
-							//- 											div.col-12.orange.no-padding
-							//- 												h3 Score: 123
-							//- 											div.col-12.no-padding
-							//- 												h3 The best NLC2 team!
-							//- 										div.row 
-							//- 											div.col-10
-							//- 												#create-helmet.final-helmet(style='display: block;')
-							//- 													img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-							//- 													img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-							//- 													img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+																			th.name-list-view NAME
+																			th POS
+																			th SCORE
+																			th SALARY
+																			th
 
-							//- 							.row
-							//- 								.col-12.no-padding
-							//- 									table.table.table-striped.nl-team-list-table
-							//- 										thead
-							//- 											tr
+																	tbody
+																		tr
 
-							//- 												th.name-list-view NAME
-							//- 												th POS
-							//- 												th SCORE
-							//- 												th SALARY
-							//- 												th
+																			td Player name
+																			td.pos FLEX
+																			td 30
+																			td $0
+																		tr
 
-							//- 										tbody
-							//- 											tr
+																			td Player name
+																			td.pos K
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos FLEX
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos RB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos K
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos RB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos RB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos QB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos RB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos WR
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos QB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos WR
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos WR
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos TE
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos WR
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos DEF
+																			td 30
+																			td $0
+											div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+												div.manager-image-inner
+														div.number
+															p 3
+														div.name
+															p Johnny Chan
+							div.carousel-item
+								div.tab-content
+									div.tab-pane.active(id="manager1" role="tabpanel")
+										div.row
+											div.col-12.col-xs-5.hidden-md-down.col-lg-5.no-padding
+												#top5-managers-picture(style='display: block;')
+													//- img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
+													div.helmet-container
+														img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+														div.oval-letter.vis-hidden
+															img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+															img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+													div.manager-image-inner
+														div.number
+															p 4
+														div.name
+															p Kasper
+											div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+												div.nl-team-list-homepage.nl-my-teams
+													.nl-card-wrapper
+														.row
+															.col-12.no-padding
+																div.nl-team-card.table-data-field
+																	div.row 
+																		div.col-12.orange.no-padding
+																			h3 Score: 123
+																		div.col-12.no-padding
+																			h3 The best NLC2 team!!
+														.row
+															.col-12.no-padding
+																table.table.table-striped.nl-team-list-table
+																	thead
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos TE
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			th.name-list-view NAME
+																			th POS
+																			th SCORE
+																			th SALARY
+																			th
 
-							//- 												td Player name
-							//- 												td.pos DEF
-							//- 												td 30
-							//- 												td $0
-							//- 				div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
-							//- 					div.manager-image-inner
-							//- 							div.number
-							//- 								p 3
-							//- 							div.name
-							//- 								p Dan 
-							//- div.carousel-item
-							//- 	div.tab-content
-							//- 		div.tab-pane.active(id="manager1" role="tabpanel")
-							//- 			div.row.player
-							//- 				div.col-12.col-xs-5.hidden-md-down.col-lg-5
-							//- 					#top5-managers-picture(style='display: block;')
-							//- 						img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
-							//- 						div.manager-image-inner
-							//- 							div.number
-							//- 								p 4
-							//- 							div.name
-							//- 								p Nicholas
-							//- 				div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
-							//- 					div.nl-team-list-homepage.nl-my-teams
-							//- 						.nl-card-wrapper
-							//- 							.row
-							//- 								.col-12.no-padding
-							//- 									div.nl-team-card.table-data-field
-							//- 										div.row 
-							//- 											div.col-12.orange.no-padding
-							//- 												h3 Score: 123
-							//- 											div.col-12.no-padding
-							//- 												h3 The best NLC2 team!
-							//- 										div.row 
-							//- 											div.col-10
-							//- 												#create-helmet.final-helmet(style='display: block;')
-							//- 													img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-							//- 													img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-							//- 													img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+																	tbody
+																		tr
 
-							//- 							.row
-							//- 								.col-12.no-padding
-							//- 									table.table.table-striped.nl-team-list-table
-							//- 										thead
-							//- 											tr
+																			td Player name
+																			td.pos FLEX
+																			td 30
+																			td $0
+																		tr
 
-							//- 												th.name-list-view NAME
-							//- 												th POS
-							//- 												th SCORE
-							//- 												th SALARY
-							//- 												th
+																			td Player name
+																			td.pos K
+																			td 30
+																			td $0
+																		tr
 
-							//- 										tbody
-							//- 											tr
+																			td Player name
+																			td.pos RB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos FLEX
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos RB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos K
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos QB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos RB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos WR
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos RB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos WR
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos QB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos TE
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos WR
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos DEF
+																			td 30
+																			td $0
+											div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+												div.manager-image-inner
+														div.number
+															p 4
+														div.name
+															p Kasper
+							div.carousel-item
+								div.tab-content
+									div.tab-pane.active(id="manager1" role="tabpanel")
+										div.row
+											div.col-12.col-xs-5.hidden-md-down.col-lg-5.no-padding
+												#top5-managers-picture(style='display: block;')
+													//- img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
+													div.helmet-container
+														img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+														div.oval-letter.vis-hidden
+															img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+															img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+													div.manager-image-inner
+														div.number
+															p 5
+														div.name
+															p Joe Theismann
+											div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
+												div.nl-team-list-homepage.nl-my-teams
+													.nl-card-wrapper
+														.row
+															.col-12.no-padding
+																div.nl-team-card.table-data-field
+																	div.row 
+																		div.col-12.orange.no-padding
+																			h3 Score: 123
+																		div.col-12.no-padding
+																			h3 The best NLC2 team!!
+														.row
+															.col-12.no-padding
+																table.table.table-striped.nl-team-list-table
+																	thead
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos WR
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			th.name-list-view NAME
+																			th POS
+																			th SCORE
+																			th SALARY
+																			th
 
-							//- 												td Player name
-							//- 												td.pos TE
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																	tbody
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos DEF
-							//- 												td 30
-							//- 												td $0
-							//- 				div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
-							//- 					div.manager-image-inner
-							//- 							div.number
-							//- 								p 4
-							//- 							div.name
-							//- 								p Nicolas
-							//- div.carousel-item
-							//- 	div.tab-content
-							//- 		div.tab-pane.active(id="manager1" role="tabpanel")
-							//- 			div.row.player
-							//- 				div.col-12.col-xs-5.hidden-md-down.col-lg-5
-							//- 					#top5-managers-picture(style='display: block;')
-							//- 						img#top-manager(src='assets/img/white-helmet.png', style='display: block;'  class="img-fluid")
-							//- 						div.manager-image-inner
-							//- 							div.number
-							//- 								p 5
-							//- 							div.name
-							//- 								p Anthony
-							//- 				div.col-12.col-xs-7.team-list-view.col-sm-6.offset-sm-3.col-lg-7.offset-lg-0
-							//- 					div.nl-team-list-homepage.nl-my-teams
-							//- 						.nl-card-wrapper
-							//- 							.row
-							//- 								.col-12.no-padding
-							//- 									div.nl-team-card.table-data-field
-							//- 										div.row 
-							//- 											div.col-12.orange.no-padding
-							//- 												h3 Score: 123
-							//- 											div.col-12.no-padding
-							//- 												h3 The best NLC2 team!
-							//- 										div.row 
-							//- 											div.col-10
-							//- 												#create-helmet.final-helmet(style='display: block;')
-							//- 													img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-							//- 													img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-							//- 													img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+																			td Player name
+																			td.pos FLEX
+																			td 30
+																			td $0
+																		tr
 
-							//- 							.row
-							//- 								.col-12.no-padding
-							//- 									table.table.table-striped.nl-team-list-table
-							//- 										thead
-							//- 											tr
+																			td Player name
+																			td.pos K
+																			td 30
+																			td $0
+																		tr
 
-							//- 												th.name-list-view NAME
-							//- 												th POS
-							//- 												th SCORE
-							//- 												th SALARY
-							//- 												th
+																			td Player name
+																			td.pos RB
+																			td 30
+																			td $0
+																		tr
 
-							//- 										tbody
-							//- 											tr
+																			td Player name
+																			td.pos RB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos FLEX
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos QB
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos K
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos WR
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos RB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos WR
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos RB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
+																			td Player name
+																			td.pos TE
+																			td 30
+																			td $0
+																		tr
 
-							//- 												td Player name
-							//- 												td.pos QB
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
-
-							//- 												td Player name
-							//- 												td.pos WR
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
-
-							//- 												td Player name
-							//- 												td.pos WR
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
-
-							//- 												td Player name
-							//- 												td.pos TE
-							//- 												td 30
-							//- 												td $0
-							//- 											tr
-
-							//- 												td Player name
-							//- 												td.pos DEF
-							//- 												td 30
-							//- 												td $0
-							//- 				div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
-							//- 					div.manager-image-inner
-							//- 							div.number
-							//- 								p 5
-							//- 							div.name
-							//- 								p Anthony 
-
+																			td Player name
+																			td.pos DEF
+																			td 30
+																			td $0
+											div.col-12.hidden-lg-up.col-sm-6.offset-sm-3.hidden-title-bar
+												div.manager-image-inner
+														div.number
+															p 5
+														div.name
+															p Joe Theismann
+							
 	div(role='tabpanel' class='tab-pane top-level-panel2' id='week4')
 		p week 4
 	div(role='tabpanel' class='tab-pane top-level-panel2' id='week5')

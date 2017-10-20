@@ -427,7 +427,7 @@
   margin: calculateRem(20px) 0;
   .btn-team {
     margin: calculateRem(5px);
-      @include respond-to(allsmall){
+      @include respond-to(allmobile){
         display: none;
       }
   }
@@ -807,7 +807,8 @@
       
     }
 
-    @include respond-to(allsmall){
+    @include respond-to(allmobile){
+
       display: none;
     }
     .goalkeeper-line {
