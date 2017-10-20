@@ -30,10 +30,11 @@ section.nl-section.nl-my-teams
                         .col-12
                             div.nl-team-card.table-data-field
                                 p team NLC2
-                                #create-helmet.final-helmet(style='display: block;')
-                                    img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
-                                    img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-                                    img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+                                div.helmet-container
+                                    img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+                                    div.oval-letter
+                                        img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+                                        img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 
                     .row
                         .col-12
@@ -127,10 +128,11 @@ section.nl-section.nl-my-teams
                         .col-12
                             div.nl-team-card.table-data-field
                                 p team NLC2
-                                #create-helmet.final-helmet(style='display: block;')
+                                div.helmet-container
                                     img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-                                    img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-                                    img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+                                    div.oval-letter
+                                        img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+                                        img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
                     .row
                         .col-12
                             table.table.table-striped
@@ -223,203 +225,11 @@ section.nl-section.nl-my-teams
                         .col-12
                             div.nl-team-card.table-data-field
                                 p team NLC2
-                                #create-helmet.final-helmet(style='display: block;')
-                                    img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
-                                    img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-                                    img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
-
-                    .row
-                        .col-12
-                            table.table.table-striped
-                                thead
-                                    tr
-                                        th
-                                        th NAME
-                                        th POS
-                                        th FP
-                                        th SALARY
-
-                                tbody
-                                    tr
-                                        td
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.played.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.playing.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.playing.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.not-playing.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.playing.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                    .row
-                        .col-12
-                            div.nl-team-card-footer
-                                div.nl-team-card-footer--left
-                                    .nl-team-card-btns
-                                        button.btn.btn-primary.btn-sm.nl-m-b-14 Edit
-                                        button.btn.btn-sm.btn-warning Delete
-                                div.nl-team-card-footer--right
-                                    .nl-team-card-result
-                                        p
-                                            | TOTAL:
-                                            span.result $69000
-                                        p
-                                            | FP TOTAL:
-                                            span.result 199.7
-            div.col-12.col-sm-6.col-md-4.col-lg-4.col-xl-3.smaller-padding-teams
-                .nl-card-wrapper
-                    .row
-                        .col-12
-                            div.nl-team-card.table-data-field
-                                p team NLC2
-                                #create-helmet.final-helmet(style='display: block;')
+                                div.helmet-container
                                     img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-                                    img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-                                    img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
-                    .row
-                        .col-12
-                            table.table.table-striped
-                                thead
-                                    tr
-                                        th
-                                        th NAME
-                                        th POS
-                                        th FP
-                                        th SALARY
-
-                                tbody
-                                    tr
-                                        td
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.played.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.playing.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.playing.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.not-playing.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                                    tr
-                                        td.indicated
-                                            span.playing.indicator
-                                        td Player name
-                                        td.pos QB
-                                        td 30
-                                        td $0
-                    .row
-                        .col-12
-                            div.nl-team-card-footer
-                                div.nl-team-card-footer--left
-                                    .nl-team-card-btns
-                                        button.btn.btn-primary.btn-sm.nl-m-b-14 Edit
-                                        button.btn.btn-sm.btn-warning Delete
-                                div.nl-team-card-footer--right
-                                    .nl-team-card-result
-                                        p
-                                            | TOTAL:
-                                            span.result $69000
-                                        p
-                                            | FP TOTAL:
-                                            span.result 199.7
-            div.col-12.col-sm-6.col-md-4.col-lg-4.col-xl-3.smaller-padding-teams
-                .nl-card-wrapper
-                    .row
-                        .col-12
-                            div.nl-team-card.table-data-field
-                                p team NLC2
-                                #create-helmet.final-helmet(style='display: block;')
-                                    img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
-                                    img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-                                    img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+                                    div.oval-letter
+                                        img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+                                        img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 
                     .row
                         .col-12
@@ -513,10 +323,206 @@ section.nl-section.nl-my-teams
                         .col-12
                             div.nl-team-card.table-data-field
                                 p team NLC2
-                                #create-helmet.final-helmet(style='display: block;')
+                                div.helmet-container
                                     img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-                                    img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-                                    img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+                                    div.oval-letter
+                                        img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+                                        img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+                    .row
+                        .col-12
+                            table.table.table-striped
+                                thead
+                                    tr
+                                        th
+                                        th NAME
+                                        th POS
+                                        th FP
+                                        th SALARY
+
+                                tbody
+                                    tr
+                                        td
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.played.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.playing.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.playing.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.not-playing.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.playing.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                    .row
+                        .col-12
+                            div.nl-team-card-footer
+                                div.nl-team-card-footer--left
+                                    .nl-team-card-btns
+                                        button.btn.btn-primary.btn-sm.nl-m-b-14 Edit
+                                        button.btn.btn-sm.btn-warning Delete
+                                div.nl-team-card-footer--right
+                                    .nl-team-card-result
+                                        p
+                                            | TOTAL:
+                                            span.result $69000
+                                        p
+                                            | FP TOTAL:
+                                            span.result 199.7
+            div.col-12.col-sm-6.col-md-4.col-lg-4.col-xl-3.smaller-padding-teams
+                .nl-card-wrapper
+                    .row
+                        .col-12
+                            div.nl-team-card.table-data-field
+                                p team NLC2
+                                div.helmet-container
+                                    img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+                                    div.oval-letter
+                                        img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+                                        img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+
+                    .row
+                        .col-12
+                            table.table.table-striped
+                                thead
+                                    tr
+                                        th
+                                        th NAME
+                                        th POS
+                                        th FP
+                                        th SALARY
+
+                                tbody
+                                    tr
+                                        td
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.played.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.playing.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.playing.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.not-playing.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                                    tr
+                                        td.indicated
+                                            span.playing.indicator
+                                        td Player name
+                                        td.pos QB
+                                        td 30
+                                        td $0
+                    .row
+                        .col-12
+                            div.nl-team-card-footer
+                                div.nl-team-card-footer--left
+                                    .nl-team-card-btns
+                                        button.btn.btn-primary.btn-sm.nl-m-b-14 Edit
+                                        button.btn.btn-sm.btn-warning Delete
+                                div.nl-team-card-footer--right
+                                    .nl-team-card-result
+                                        p
+                                            | TOTAL:
+                                            span.result $69000
+                                        p
+                                            | FP TOTAL:
+                                            span.result 199.7
+            div.col-12.col-sm-6.col-md-4.col-lg-4.col-xl-3.smaller-padding-teams
+                .nl-card-wrapper
+                    .row
+                        .col-12
+                            div.nl-team-card.table-data-field
+                                p team NLC2
+                                div.helmet-container
+                                    img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+                                    div.oval-letter
+                                        img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+                                        img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
                     .row
                         .col-12
                             table.table.table-striped
@@ -609,10 +615,11 @@ section.nl-section.nl-my-teams
                         .col-12
                             div.nl-team-card.table-data-field
                                 p team NLC2
-                                #create-helmet.final-helmet(style='display: block;')
-                                    img#helmet.helmet-img(src='assets/img/helmet/red-helmet.png', style='display: block;')
-                                    img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-                                    img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+                                div.helmet-container
+                                    img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
+                                    div.oval-letter
+                                        img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+                                        img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
 
                     .row
                         .col-12
@@ -706,10 +713,11 @@ section.nl-section.nl-my-teams
                         .col-12
                             div.nl-team-card.table-data-field
                                 p team NLC2
-                                #create-helmet.final-helmet(style='display: block;')
+                                div.helmet-container
                                     img#helmet.helmet-img(src='assets/img/helmet/white-helmet.png', style='display: block;')
-                                    img#oval.img-fluid.select-oval(src='assets/img/oval/whiteoval.png', style='display: block;')
-                                    img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
+                                    div.oval-letter
+                                        img#oval.img-fluid.select-oval(src='assets/img/oval/grayoval.png', style='display: block;')
+                                        img#letter.img-fluid.select-letter(src='assets/img/letter/n.png', style='display: block;')
                     .row
                         .col-12
                             table.table.table-striped

@@ -1,73 +1,56 @@
 .nl-my-teams{
 
-  #create-helmet {
+  .helmet-container {
+    position: relative;
+    width: 90px;
+    margin: 0 auto;
 
-    #oval {
+    .oval-letter {
       position: absolute;
-      top: 21px;
+      top: 14px;
+      left: 9px;
       z-index: 1;
-      right: 58px;
-      width: 7%;
-      height: auto;
+      width: 33px;
 
-      @media (min-width: 1850px) {
-        right: 57px;
-      }
-      @include respond-to(wide-tablets){
-        top: 16px;
-        right: 49px;
-      }
-      @include respond-to(tablets){
-        top: 17px;
-        right: 51px;
-      }
-
-      @include respond-to(wide-handhelds){
-        top: 16px;
-        right: 50px;
-      }
-      @include respond-to(handhelds){
-        width: 4%;
+      @include respond-to (wide-display) {
         top: 15px;
-        right: 48px;
+        left: 11px;
+        width: 30px;
       }
-      @include respond-to(extra-large-display){
-        width: 6%;
-        top: 20px;
-        right: 55px;
+
+      @include respond-to (medium-display) {
+        top: 15px;
+        left: 11px;
+        width: 30px;
       }
     }
-    #letter {
-      position: absolute;
-      top: 23px;
-      z-index: 2;
-      right: 67px;
-      width: 3%;
+
+    img {
       height: auto;
+      &#oval {
+        position: absolute;
+        height: auto;
+      }
+      &#letter {
+        position: absolute;
+        height: auto;
+        z-index: 2;
+        width: 41%;
+        margin-left: 9px;
+        margin-top: 3px;
+        @include respond-to (medium-display) {
+          margin-left: 7px;
+        }
 
-      @include respond-to(wide-tablets){
-        top: 18px;
-        right: 56px;
+        @include respond-to (wide-tablets) {
+          margin-left: 7px;
+        }   
       }
+      &#helmet {
 
-      @include respond-to(tablets){
-        top: 18px;
-        right: 58px;
-      }
-
-      @include respond-to(wide-handhelds){
-        top: 17px;
-        right: 56px;
-      }
-      @include respond-to(handhelds){
-        top: 16px;
-        right: 55px;
-        width: 2%;
-      }
-      @include respond-to(extra-large-display){
-        right: 65px;
-        width: 3%;
-        top: 22px;
+        height: 90px;
+        width: auto;
+        margin: 0 auto;
       }
     }
   }

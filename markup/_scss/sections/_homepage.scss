@@ -135,7 +135,7 @@
         }
         &#helmet {
 
-          height: 90px;
+          height: 70px;
           width: auto;
           margin: 0 auto;
         }
@@ -352,6 +352,11 @@
     bottom: 7.5%;
     }
 
+    @include respond-to (tablets) {
+    left: 42%;
+    bottom: 6.5%;
+    }
+
     @media (min-width: 1899px) {
       left: 44%;
     }
@@ -383,6 +388,11 @@
     left: 40%;
     }
 
+    @include respond-to (tablets) {
+    bottom: 32%;
+    left: 42%;
+    }
+
     @media (min-width: 1899px) {
       left: 44%;
     }
@@ -411,6 +421,10 @@
     @include respond-to (wide-tablets) {
     bottom: 61%;
     left: 40%;
+    }
+    @include respond-to (tablets) {
+    bottom: 61%;
+    left: 42%;
     }
 
     @media (min-width: 1899px) {
@@ -1183,10 +1197,6 @@
   img.helmet {
     height: 75px;
   }
-
-  @include respond-to (allsmall) {
-    margin-top: 30px;
-  }
 }
 
 .homepage {
@@ -1359,7 +1369,7 @@
     margin-bottom: 20px;
 
     @include respond-to (allmobile) {
-      padding-top: 20px;
+      margin-top: 30px;
     }
   }
 
