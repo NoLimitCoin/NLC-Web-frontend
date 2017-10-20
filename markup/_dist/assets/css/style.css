@@ -15695,21 +15695,14 @@ td:nth-child(4).homepage-list-view {
         vertical-align: middle;
         display: inline-block; }
 
-.nl-live-score .nl-team-field #create-helmet #oval {
-  position: absolute;
-  top: 14px;
-  z-index: 1;
-  right: 54%;
-  width: 35%;
-  height: auto; }
-
-.nl-live-score .nl-team-field #create-helmet #letter {
-  position: absolute;
-  top: 16px;
-  z-index: 2;
-  right: 52px;
-  width: 17%;
-  height: auto; }
+.nl-live-score .nl-team-field .helmet-container {
+  position: relative;
+  width: 90px;
+  margin: 0 auto; }
+  .nl-live-score .nl-team-field .helmet-container img#helmet {
+    height: 70px;
+    width: auto;
+    margin: 0 auto; }
 
 .nl-live-score .nl-team-list {
   max-width: 27.25rem; }
@@ -15821,7 +15814,7 @@ td:nth-child(4).homepage-list-view {
 
 .nl-live-score .nl-team-list-table th,
 .nl-live-score .nl-team-list-table td {
-  padding: 0.5rem; }
+  padding: 0.25rem; }
   .nl-live-score .nl-team-list-table th:first-child,
   .nl-live-score .nl-team-list-table td:first-child {
     text-align: center;
@@ -16120,8 +16113,38 @@ td:nth-child(4).homepage-list-view {
       line-height: 1rem; }
   .nl-live-score-contest-table .rank__thumb {
     padding: 0rem; }
-    .nl-live-score-contest-table .rank__thumb img {
-      max-width: 39px; }
+    .nl-live-score-contest-table .rank__thumb .helmet-container {
+      position: relative;
+      width: 65px;
+      margin: 0 auto; }
+      .nl-live-score-contest-table .rank__thumb .helmet-container .oval-letter {
+        position: absolute;
+        top: 7px;
+        left: 13px;
+        z-index: 1;
+        width: 20px; }
+      .nl-live-score-contest-table .rank__thumb .helmet-container img {
+        height: auto; }
+        .nl-live-score-contest-table .rank__thumb .helmet-container img#oval {
+          position: absolute;
+          height: auto; }
+        .nl-live-score-contest-table .rank__thumb .helmet-container img#letter {
+          position: absolute;
+          height: auto;
+          z-index: 2;
+          width: 41%;
+          margin-left: 5px;
+          margin-top: 3px; }
+          @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+            .nl-live-score-contest-table .rank__thumb .helmet-container img#letter {
+              margin-left: 7px; } }
+          @media only screen and (min-width: 992px) and (max-width: 1200px) {
+            .nl-live-score-contest-table .rank__thumb .helmet-container img#letter {
+              margin-left: 7px; } }
+        .nl-live-score-contest-table .rank__thumb .helmet-container img#helmet {
+          height: 43px;
+          width: auto;
+          margin: 0 auto; }
   .nl-live-score-contest-table .table-info3 th,
   .nl-live-score-contest-table .table-info3 td,
   .nl-live-score-contest-table .table-info4 th,

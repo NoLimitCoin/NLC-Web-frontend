@@ -617,24 +617,19 @@
 	}
 
 	.nl-team-field {
-		#create-helmet {
+		.helmet-container {
+			position: relative;
+			width: 90px;
+			margin: 0 auto;
 
-		  #oval {
-			position: absolute;
-			top: 14px;
-			z-index: 1;
-			right: 54%;
-			width: 35%;
-			height: auto;
-		  }
-		  #letter {
-			position: absolute;
-			top: 16px;
-			z-index: 2;
-			right: 52px;
-			width: 17%;
-			height: auto;
-		  }
+			img {
+			  &#helmet {
+
+			    height: 70px;
+			    width: auto;
+			    margin: 0 auto;
+			  }
+			}
 		}
 	}
 
@@ -795,7 +790,7 @@
 	.nl-team-list-table {
 		th,
 		td {
-			padding: 0.5rem;
+			padding: 0.25rem;
 
 			&:first-child {
 				text-align: center;
@@ -1225,8 +1220,47 @@
 	.rank__thumb {
 		padding: 0rem;
 
-		img {
-			max-width: 39px;
+		.helmet-container {
+			position: relative;
+			width: 65px;
+			margin: 0 auto;
+
+			.oval-letter {
+			    position: absolute;
+			    top: 7px;
+			    left: 13px;
+			    z-index: 1;
+			    width: 20px;
+			}
+
+			img {
+			  height: auto;
+			  &#oval {
+			    position: absolute;
+			    height: auto;
+			  }
+			  &#letter {
+			    position: absolute;
+			    height: auto;
+			    z-index: 2;
+			    width: 41%;
+			    margin-left: 5px;
+			    margin-top: 3px;
+			    @include respond-to (medium-display) {
+			      margin-left: 7px;
+			    }
+
+			    @include respond-to (wide-tablets) {
+			      margin-left: 7px;
+			    }   
+			  }
+			  &#helmet {
+
+			    height: 43px;
+			    width: auto;
+			    margin: 0 auto;
+			  }
+			}
 		}
 	}
 
