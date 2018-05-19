@@ -10,186 +10,167 @@
     <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fixes.css">
+	<link type="text/css" href="assets/css/fancy-select.css" rel="stylesheet">
   </head>
   <body>
     <!--include _partials/preloader.jade-->
-    <header class="nl-header-log">
-      <div class="nl-header-top">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 p-0">
-              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
-                <div class="row m-0">
-                  <div class="col-lg-7 nl-header-top--left">
-                    <div class="row nl-h100">
-                      <div class="col-lg-2">
-                        <div class="nl-logotype"><a href="index.html"><img src="assets/img/logotype.png" alt="NO Limit"></a></div>
-                      </div>
-                      <div class="col-lg-10 align-self-center">
-                        <div class="nl-title">The worlds first crypto fantasy sports</div>
-                      </div>
+     <header class="nl-header-log">
+        <div class="nl-header-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                            <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
+                            <div class="row m-0">
+                                <div class="col-lg-7 nl-header-top--left">
+                                    <div class="row nl-h100">
+                                        <div class="col-lg-3">
+                                            <div class="nl-logotype"><a href="index.html"><img src="assets/img/nl-logo.png" alt="NO Limit"></a></div>
+                                        </div>
+                                        <div class="col-lg-9 align-self-center hidden-md-down">
+                                            <div class="nl-title">The world's first crypto fantasy sports</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 nl-header-top--right">
+                                    <div class="nl-profile">
+                                        <div class="row">
+                                            
+                                            <div class="col-lg-12">
+                                                <div class="nl-profile--data">
+                                                    <div class="name">Username</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="nl-balance">
+                                        <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                                        <div class="nl-balance--data">
+                                            <div class="title">balance</div>
+                                            <div class="sub-title">20023 NLC2</div>
+                                        </div>
+                                    </div>
+                                    <div class="nl-btn-control">
+                                        <div class="nl-btn-group">
+                                            <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                                            <div class="btn btn-big-radius btn-block">logout</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <!--<li class="nav-item hidden-md-down"><a class="nav-link"></a></li>-->
+                                    <li class="nav-item dropdown">
+                                        <a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
+                                        <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu">
+										<a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/soccer.png" alt="#" class="navbar-nav__sports-img"></a>
+										
+										<a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>MMA</span> <img src="assets/img/mma.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>baseball</span> <img src="assets/img/baseball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>cricket</span> <img src="assets/img/cricket.png" alt="#" class="navbar-nav__sports-img"></a>
+										
+										
+										</div>
+                                    </li>
+                                    <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
+                                    <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
+                                    <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
+                                    <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
+                                    <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
+                                        <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu">
+										<a href="edit_profile.html" class="dropdown-item">PROFILE</a>
+										<a href="change_password.html" class="dropdown-item">edit Password</a>
+										<a href="friends.html" class="dropdown-item">INVITE FRIENDS</a>
+										<a href="my_balances.html" class="dropdown-item">My Balance</a>
+										<a href="scoring-rules.html" class="dropdown-item">SCORING RULES</a>
+										<a href="my_contests.html" class="dropdown-item">MY CONTESTS</a>
+										</div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                                        <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                                    </li>
+                                </ul>
+                                <div class="nl-profile-mobile">
+                                    <div class="nl-profile--data">
+                                        <p>Name</p>
+                                        <p>balance: 1 NLC2=00345 USD</p>
+										<p>balance: 1 NLC2=00345 btc</p>
+                                        <div class="nl-btn-control">
+                                            <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
+                                            <div class="btn btn-big-radius">logout</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                  </div>
-                  <div class="col-lg-5 nl-header-top--right">
-                    <div class="nl-profile">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="nl-profile--avatar"><img src="assets/img/profile-picture.png" alt="NO Limit">
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="nl-profile--data">
-                            <div class="name">Username</div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                    <div class="nl-balance">
-                      <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
-                      <div class="nl-balance--data">
-                        <div class="title">balance</div>
-                        <div class="sub-title">20023 NLC2</div>
-                        <div class="data">1 NLC2=00345 btc</div>
-                      </div>
-                    </div>
-                    <div class="nl-btn-control">
-                      <div class="nl-btn-group">
-                        <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
-                        <div class="btn btn-big-radius btn-block">logout</div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item hidden-md-down"><a class="nav-link"></a></li>
-                    <li class="nav-item dropdown"><a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
-                      <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu"><a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/Football.png" alt="#" class="navbar-nav__sports-img"></a><a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a></div>
-                    </li>
-                    <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
-                    <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
-                    <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
-                    <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
-                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
-                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="edit_profile.html" class="dropdown-item">Profile</a><a href="change_password.html" class="dropdown-item">edit Password</a><a href="friends.html" class="dropdown-item">Friends </a><a href="my_balances.html" class="dropdown-item">My Balance</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
-                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
-                    </li>
-                  </ul>
-                  <div class="nl-profile-mobile">
-                    <div class="nl-profile--data">
-                      <p><i class="fa fa-user-circle" aria-hidden="true"></i> Name</p>
-                      <p>balance: 1 NLC2=00345 btc</p>
-                      <div class="nl-btn-control">
-                        <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
-                        <div class="btn btn-big-radius">logout</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
             </div>
-          </div>
         </div>
-      </div>
     </header>
     <main>
+
       <section class="nl-section nl-players nl-create-team soccer">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-10 offset-md-1 col-lg-12 col-xl-12 offset-lg-0 offset-xl-0">
-              <h1>CREATE TEAM</h1>
-            </div>
-          </div>
-          <div class="row sports-filtering">
-            <div class="col-md-10 offset-md-1 col-lg-12 col-xl-12 offset-lg-0 offset-xl-0">
-              <div class="nl-players-filter-title">Filter by league:</div>
-              <div class="nl-players-filter">
-                <div class="row align-items-center">
-                  <div>
-                    <ul role="tablist" class="country-selector nav nav-tabs">
-                      <li class="nav-item"><a data-toggle="tab" href="#usa" role="tab" class="country-selector__link"><img src="assets/img/flag/USA.png" alt="USA"></a></li>
-                      <li class="nav-item"><a data-toggle="tab" href="#spain" role="tab" class="country-selector__link"><img src="assets/img/flag/Spain.png" alt="Spain"></a></li>
-                      <li class="nav-item"><a data-toggle="tab" href="#germany" role="tab" class="country-selector__link"><img src="assets/img/flag/Germany.png" alt="Germany"></a></li>
-                      <li class="nav-item"><a data-toggle="tab" href="#france" role="tab" class="country-selector__link"><img src="assets/img/flag/France.png" alt="France"></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-content">
-                <div id="usa" role="tabpanel" class="tab-pane fade show">
-                  <div class="nl-players-filter-caruseul">
-                    <div class="nl-players-filter-title">Filter by team:</div>
-                    <div class="owl-carousel pl-teams">
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FC.png" alt="FC"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FC.png" alt="FC"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCB.png" alt="FCB"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/FCBrasil.png" alt="FCBrasil"></button>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-link"><img src="assets/img/emblem/MU.png" alt="MU"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="spain" role="tabpanel" class="tab-pane fade">
-                  <div class="nl-players-filter-title">Filter by team:</div>
-                  <div class="nl-players-filter-caruseul">
-                    <p>teams spain</p>
-                  </div>
-                </div>
-                <div id="germany" role="tabpanel" class="tab-pane fade">
-                  <div class="nl-players-filter-title">Filter by team:</div>
-                  <div class="nl-players-filter-caruseul">
-                    <p>teams germany</p>
-                  </div>
-                </div>
-                <div id="france" role="tabpanel" class="tab-pane fade">
-                  <div class="nl-players-filter-title">Filter by team:</div>
-                  <div class="nl-players-filter-caruseul">
-                    <p>teams france</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 offset-xl-0 col-xl-7">
+			  <div class="row">
+				 <div class="col-md-10 offset-md-1 col-lg-12 col-xl-12 offset-lg-0 offset-xl-0">
+					<h1>MANAGE TEAM</h1>
+					<div class="col-md-12 col-lg-7 offset-lg-0 offset-xl-0 col-xl-7 dropdowns">
+				       <div class="row">
+						<div class="col-sm-4 date-dropdown mb-3">
+						 <div class="input-group">
+							 <label>Select date of your contest</label>
+							 <select id="" placeholder="" required="" class="form-control custom-select">
+							  <option>27 Mar, 2018</option>
+							  <option>26 Mar, 2018</option>
+							  <option>25 Mar, 2018</option>
+							  <option>20 Mar, 2018</option>
+							</select>
+						  </div>
+						</div>
+				
+						<div class="col-sm-4 league-dropdown mb-3">
+						  <div class="input-group">
+							<label>Select league group</label>
+							<select id="league-group">
+							  <option value="0" data-imagesrc="assets/img/litecoin_logo.png" class="dd-option-image league-img"></option>
+							  <option value="1" data-imagesrc="assets/img/bitcoin_cash.png"></option>
+							  <option value="2" selected="selected" data-imagesrc="assets/img/litecoin_logo.png"></option>
+							  <option value="3" data-imagesrc="assets/img/bitcoin_cash.png"></option>
+							  <option value="4" data-imagesrc="assets/img/litecoin_logo.png"></option>
+							</select>
+						 </div>
+						</div>
+				
+						<div class="col-sm-4 team-name mb-3">
+							<div class="input-group">
+							    <label>Enter your team name</label>
+								<input type="text" class="form-control" name="teamname" placeholder="Enter your team name" id="txtteamname">
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			  </div>
+
+			<div class="row">
+			 <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 offset-xl-0 col-xl-7">
+				<p class="hidden-lg-up">
+				 Sort by:
+				 <button class="btn btn-team btn-big-radius active list-view-btn">Name</button>
+				 <button class="btn btn-team btn-big-radius list-view-btn">SALARY</button>
+				 <button class="btn btn-team btn-big-radius list-view-btn">FP</button>
+				 <button class="btn btn-team btn-big-radius list-view-btn">STATUS</button>
+				</p>
+			
               <div class="nl-players-table nl-create-team-table">
                 <div class="nl-players-table-data-field">
                   <div class="nl-data--avatar hidden-sm-down"><img src="assets/img/pl-avatar-table.jpg" alt="Sebastian Giovinco"></div>
@@ -1341,8 +1322,9 @@
                       <table class="table table-striped nl-team-list-table">
                         <thead>
                           <tr>
+						    <th>POS</th>
+							<th></th>
                             <th>NAME</th>
-                            <th>POS</th>
                             <th>FP</th>
                             <th>SALARY</th>
                             <th></th>
@@ -1350,11 +1332,12 @@
                         </thead>
                         <tbody>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">G</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1362,11 +1345,12 @@
                             </td>
                           </tr>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">D</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1374,11 +1358,38 @@
                             </td>
                           </tr>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">D</td>
+                            <td>30</td>
+                            <td>$0</td>
+                            <td>
+                              <button class="btn btn-sm btn-warning">cut</button>
+                            </td>
+                          </tr>
+                         <tr>
+						  <td class="pos">G</td>
+						  <td></td>
+                            <td> 
+                              <p>Player name</p>
+                              <p class="gametime">RMA-BAR 3:00PM</p>
+                            </td>
+                            <td>30</td>
+                            <td>$0</td>
+                            <td>
+                              <button class="btn btn-sm btn-warning">cut</button>
+                            </td>
+                          </tr>
+                         <tr>
+						  <td class="pos">G</td>
+						  <td></td>
+                            <td> 
+                              <p>Player name</p>
+                              <p class="gametime">RMA-BAR 3:00PM</p>
+                            </td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1386,11 +1397,12 @@
                             </td>
                           </tr>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">D</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1398,11 +1410,12 @@
                             </td>
                           </tr>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">D</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1410,11 +1423,12 @@
                             </td>
                           </tr>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">M</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1422,11 +1436,12 @@
                             </td>
                           </tr>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">M</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1434,11 +1449,12 @@
                             </td>
                           </tr>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">M</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1446,35 +1462,12 @@
                             </td>
                           </tr>
                           <tr>
+						  <td class="pos">G</td>
+						  <td></td>
                             <td> 
                               <p>Player name</p>
                               <p class="gametime">RMA-BAR 3:00PM</p>
                             </td>
-                            <td class="pos">S</td>
-                            <td>30</td>
-                            <td>$0</td>
-                            <td>
-                              <button class="btn btn-sm btn-warning">cut</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td> 
-                              <p>Player name</p>
-                              <p class="gametime">RMA-BAR 3:00PM</p>
-                            </td>
-                            <td class="pos">S</td>
-                            <td>30</td>
-                            <td>$0</td>
-                            <td>
-                              <button class="btn btn-sm btn-warning">cut</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td> 
-                              <p>Player name</p>
-                              <p class="gametime">RMA-BAR 3:00PM</p>
-                            </td>
-                            <td class="pos">S</td>
                             <td>30</td>
                             <td>$0</td>
                             <td>
@@ -1515,5 +1508,9 @@
     <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
+	<script src="assets/js/jquery.ddslick.min.js"></script>
+		<script language="javascript">
+		   $('#league-group').ddslick();
+		</script>
   </body>
 </html>

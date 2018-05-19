@@ -14,88 +14,106 @@
   <body class="sp">
     <!--include _partials/preloader.jade-->
     <header class="nl-header-log">
-      <div class="nl-header-top">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 p-0">
-              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
-                <div class="row m-0">
-                  <div class="col-lg-7 nl-header-top--left">
-                    <div class="row nl-h100">
-                      <div class="col-lg-2">
-                        <div class="nl-logotype"><a href="index.html"><img src="assets/img/logotype.png" alt="NO Limit"></a></div>
-                      </div>
-                      <div class="col-lg-10 align-self-center">
-                        <div class="nl-title">The worlds first crypto fantasy sports</div>
-                      </div>
+        <div class="nl-header-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                            <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
+                            <div class="row m-0">
+                                <div class="col-lg-7 nl-header-top--left">
+                                    <div class="row nl-h100">
+                                        <div class="col-lg-3">
+                                            <div class="nl-logotype"><a href="index.html"><img src="assets/img/nl-logo.png" alt="NO Limit"></a></div>
+                                        </div>
+                                        <div class="col-lg-9 align-self-center hidden-md-down">
+                                            <div class="nl-title">The world's first crypto fantasy sports</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 nl-header-top--right">
+                                    <div class="nl-profile">
+                                        <div class="row">
+                                            
+                                            <div class="col-lg-12">
+                                                <div class="nl-profile--data">
+                                                    <div class="name">Username</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="nl-balance">
+                                        <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                                        <div class="nl-balance--data">
+                                            <div class="title">balance</div>
+                                            <div class="sub-title">20023 NLC2</div>
+                                        </div>
+                                    </div>
+                                    <div class="nl-btn-control">
+                                        <div class="nl-btn-group">
+                                            <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                                            <div class="btn btn-big-radius btn-block">logout</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <!--<li class="nav-item hidden-md-down"><a class="nav-link"></a></li>-->
+                                    <li class="nav-item dropdown">
+                                        <a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
+                                        <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu">
+										<a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/soccer.png" alt="#" class="navbar-nav__sports-img"></a>
+										
+										<a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>MMA</span> <img src="assets/img/mma.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>baseball</span> <img src="assets/img/baseball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>cricket</span> <img src="assets/img/cricket.png" alt="#" class="navbar-nav__sports-img"></a>
+										
+										
+										</div>
+                                    </li>
+                                    <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
+                                    <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
+                                    <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
+                                    <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
+                                    <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
+                                        <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu">
+										<a href="edit_profile.html" class="dropdown-item">PROFILE</a>
+										<a href="change_password.html" class="dropdown-item">edit Password</a>
+										<a href="friends.html" class="dropdown-item">INVITE FRIENDS</a>
+										<a href="my_balances.html" class="dropdown-item">My Balance</a>
+										<a href="scoring-rules.html" class="dropdown-item">SCORING RULES</a>
+										<a href="my_contests.html" class="dropdown-item">MY CONTESTS</a>
+										</div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                                        <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                                    </li>
+                                </ul>
+                                <div class="nl-profile-mobile">
+                                    <div class="nl-profile--data">
+                                        <p>Name</p>
+                                        <p>balance: 1 NLC2=00345 USD</p>
+										<p>balance: 1 NLC2=00345 btc</p>
+                                        <div class="nl-btn-control">
+                                            <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
+                                            <div class="btn btn-big-radius">logout</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                  </div>
-                  <div class="col-lg-5 nl-header-top--right">
-                    <div class="nl-profile">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="nl-profile--avatar"><img src="assets/img/profile-picture.png" alt="NO Limit">
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="nl-profile--data">
-                            <div class="name">Username</div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                    <div class="nl-balance">
-                      <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
-                      <div class="nl-balance--data">
-                        <div class="title">balance</div>
-                        <div class="sub-title">20023 NLC2</div>
-                        <div class="data">1 NLC2=00345 btc</div>
-                      </div>
-                    </div>
-                    <div class="nl-btn-control">
-                      <div class="nl-btn-group">
-                        <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
-                        <div class="btn btn-big-radius btn-block">logout</div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item hidden-md-down"><a class="nav-link"></a></li>
-                    <li class="nav-item dropdown"><a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
-                      <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu"><a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/Football.png" alt="#" class="navbar-nav__sports-img"></a><a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a></div>
-                    </li>
-                    <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
-                    <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
-                    <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
-                    <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
-                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
-                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="edit_profile.html" class="dropdown-item">Profile</a><a href="change_password.html" class="dropdown-item">edit Password</a><a href="friends.html" class="dropdown-item">Friends </a><a href="my_balances.html" class="dropdown-item">My Balance</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
-                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
-                    </li>
-                  </ul>
-                  <div class="nl-profile-mobile">
-                    <div class="nl-profile--data">
-                      <p><i class="fa fa-user-circle" aria-hidden="true"></i> Name</p>
-                      <p>balance: 1 NLC2=00345 btc</p>
-                      <div class="nl-btn-control">
-                        <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
-                        <div class="btn btn-big-radius">logout</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
             </div>
-          </div>
         </div>
-      </div>
     </header>
     <main>
       <section class="nl-section nl-players nl-live-score soccer">
@@ -106,7 +124,7 @@
             </div>
           </div>
           <div class="row top-bar-live-scores">
-            <div class="col-12 col-lg-6 offset-lg-0 col-xl-8">
+            <div class="col-12 col-lg-12 offset-lg-0 col-xl-12">
               <h5 class="d-inline-block component-header">Matches</h5>
               <div class="matches rounded-corners nl-table-horizontal-scroll">
                 <div class="matches__scrollarea">
@@ -221,16 +239,17 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 offset-0 col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 col-xl-4 live-current-contest">
+            <!--<div class="col-12 offset-0 col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 col-xl-4 live-current-contest">
               <h5 class="d-inline-block component-header">My current contests</h5><a class="btn btn-primary btn-sm btn-inline">Refresh</a>
               <div class="current-contents">
                 <div class="nl-table-responsive">
                   <div class="nl-table-mw table-current-contests rounded-corners">
-                    <table class="table table-striped">
+                   <table class="table table-striped">
                       <thead>
                         <tr>
                           <th>Contests name</th>
                           <th>Team name</th>
+						  <th>Score</th>
                           <th>Rank</th>
                           <th>PMR</th>
                         </tr>
@@ -240,50 +259,58 @@
                       <table class="table table-striped">
                         <tbody>
                                 <tr>
-                                  <td>Penalty shoot-outs!</td>
+                                  <td>Touchsdowns all day long!</td>
                                   <td>The best NLC2 team</td>
+								  <td>135</td>
                                   <td class="orange">114/150</td>
                                   <td>350</td>
                                 </tr>
                                 <tr>
-                                  <td>Penalty shoot-outs!</td>
+                                  <td>Touchsdowns all day long!</td>
                                   <td>The best NLC2 team</td>
+								  <td>135</td>
                                   <td class="orange">114/150</td>
                                   <td>350</td>
                                 </tr>
                                 <tr>
-                                  <td>Penalty shoot-outs!</td>
+                                  <td>Touchsdowns all day long!</td>
                                   <td>The best NLC2 team</td>
+								  <td>135</td>
                                   <td class="orange">114/150</td>
                                   <td>350</td>
                                 </tr>
                                 <tr>
-                                  <td>Penalty shoot-outs!</td>
+                                  <td>Touchsdowns all day long!</td>
                                   <td>The best NLC2 team</td>
+								  <td>135</td>
                                   <td class="orange">114/150</td>
                                   <td>350</td>
                                 </tr>
                                 <tr>
-                                  <td>Penalty shoot-outs!</td>
+                                  <td>Touchsdowns all day long!</td>
                                   <td>The best NLC2 team</td>
+								  <td>135</td>
                                   <td class="orange">114/150</td>
                                   <td>350</td>
                                 </tr>
                                 <tr>
-                                  <td>Penalty shoot-outs!</td>
+                                  <td>Touchsdowns all day long!</td>
                                   <td>The best NLC2 team</td>
+								  <td>135</td>
+                                  <td class="orange">114/150</td>
+                                  <td>350</td>
+                                </tr>
+                                 <tr>
+                                  <td>Touchsdowns all day long!</td>
+                                  <td>The best NLC2 team</td>
+								  <td>135</td>
                                   <td class="orange">114/150</td>
                                   <td>350</td>
                                 </tr>
                                 <tr>
-                                  <td>Penalty shoot-outs!</td>
+                                  <td>Touchsdowns all day long!</td>
                                   <td>The best NLC2 team</td>
-                                  <td class="orange">114/150</td>
-                                  <td>350</td>
-                                </tr>
-                                <tr>
-                                  <td>Penalty shoot-outs!</td>
-                                  <td>The best NLC2 team</td>
+								  <td>135</td>
                                   <td class="orange">114/150</td>
                                   <td>350</td>
                                 </tr>
@@ -293,10 +320,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
           <div class="row">
-            <div class="col-12 offset-0 col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 col-xl-4">
+            <div class="col-12 offset-0 col-sm-10 offset-sm-1 col-lg-4 offset-lg-0 col-xl-3">
               <h5 class="d-inline-block component-header">Contest info</h5>
               <div class="nl-contest-info-table">
                 <div class="table-heading">
@@ -336,160 +363,74 @@
                           <p class="tit">Registered Teams</p>
                           <p>198 / 200</p>
                           <p class="tit"></p>
-                          <button class="btn btn-warning">Withdraw</button>
+                          <!--<button class="btn btn-warning">Withdraw</button>-->
                         </div>
                       </td>
                     </tr>
                   </tbody>
                 </table>
-                <table class="table table-info3">
-                  <thead>
-                    <tr>
-                      <th>Rank</th>
-                      <th>Contestant</th>
-                      <th>Score</th>
-                    </tr>
-                  </thead>
-                </table>
-                <div class="nl-table-scroll3">
-                  <table class="table table-striped table-info4 contestants">
-                    <tbody>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                            <tr>
-                              <td>1.</td>
-                              <td>Username xxx</td>
-                              <td>Score</td>
-                            </tr>
-                    </tbody>
+                <table class="table table-info3-new">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Contestant</th>
+                  <th>Team</th>
+				  <th>Score</th>
+                </tr>
+              </thead>
+            </table>
+            <div class="nl-table-scroll3">
+              <table class="table table-striped table-info4-new contestants">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>Username</td>
+					<td>Team Name</td>
+                    <td>93.6</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                   <td>Username</td>
+					<td>Team Name</td>
+                    <td>93.6</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>Username</td>
+					<td>Team Name</td>
+                    <td>93.6</td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>Username</td>
+					<td>Team Name</td>
+                    <td>93.6</td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>Username</td>
+					<td>Team Name</td>
+                    <td>93.6</td>
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>Username</td>
+					<td>Team Name</td>
+                    <td>93.6</td>
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>Username</td>
+					<td>Team Name</td>
+                    <td>93.6</td>
+                  </tr>
+                </tbody>
+              </table>
                   </table>
                 </div>
               </div>
             </div>
-            <div class="col-12 offset-0 col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 col-xl-4">
+            <div class="col-12 offset-0 col-sm-10 offset-sm-1 col-lg-8 offset-lg-0 col-xl-6">
               <h5 class="d-inline-block component-header">MY TEAM</h5>
               <div class="team-field-section">
                 <div class="rank">
@@ -510,13 +451,13 @@
                         </div>
                       </form>
                       <div class="rank__playlist">
-                        <div class="rank__playlist-item"><span class="playing">PLAYING</span><span>4</span></div>
-                        <div class="rank__playlist-item"><span class="played">PLAYED</span><span>2</span></div>
-                        <div class="rank__playlist-item"><span class="not-played">NOT PLAYING</span><span>4</span></div>
+                        <div class="rank__playlist-item"><span class="playing">PLAYING</span><span></span></div>
+                        <div class="rank__playlist-item"><span class="played">PLAYED</span><span></span></div>
+                       <!-- <div class="rank__playlist-item"><span class="not-played">NOT PLAYING</span><span></span></div>-->
                       </div>
                     </div>
                   </div>
-                  <div class="rank__stats part-of-block">
+                  <!--<div class="rank__stats part-of-block">
                     <div class="rank__content leaders-list">
                       <div class="row">
                         <div class="col-12">
@@ -533,7 +474,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
               </div>
               <div class="rank margin-top-10">
@@ -541,7 +482,7 @@
                   <div class="row">
                     <div class="col-3 small-padding-live-score">
                       <div class="rank__content leaders-list">
-                        <p class="tit">original</p>
+                        <p class="tit">FP</p>
                         <p class="points">90.3</p>
                       </div>
                     </div>
@@ -656,12 +597,19 @@
                   </div>
                   <div class="row">
                     <div class="col-12">
+					<table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-striped nl-team-list-table">
                         <thead>
                           <tr>
+						    <th>POS</th>
                             <th></th>
                             <th>NAME</th>
-                            <th>POS</th>
                             <th>FP</th>
                             <th>SCORE</th>
                             <th></th>
@@ -669,111 +617,112 @@
                         </thead>
                         <tbody>
                           <tr>
+						  <td class="pos">G</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">G</td>
+                            
                             <td>30</td>
                             <td>12</td>
                             <td></td>
                           </tr>
                           <tr>
+						  <td class="pos">D</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">D</td>
                             <td>30</td>
                             <td>12</td>
                             <td></td>
                           </tr>
                           <tr>
+						  <td class="pos">D</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">D</td>
                             <td>30</td>
                             <td>12</td>
                             <td></td>
                           </tr>
                           <tr>
+						   <td class="pos">D</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">D</td>
+                            <td>30</td>
+                            <td>12</td>
+                            <td></td>
+                          </tr>
+                          <tr class="light-red">
+						   <td class="pos">D</td>
+                            <td class="indicated"><span class="not-playing indicator"></span></td>
+                            <td> 
+                              <p>Player name</p>
+                            </td>
+                            <td>30</td>
+                            <td>12</td>
+                            <td></td>
+                          </tr>
+                          <tr class="light-blue">
+						    <td class="pos">M</td>
+                            <td class="indicated"><span class="played indicator"></span></td>
+                            <td> 
+                              <p>Player name</p>
+                            </td>
                             <td>30</td>
                             <td>12</td>
                             <td></td>
                           </tr>
                           <tr>
+						    <td class="pos">M</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">D</td>
                             <td>30</td>
                             <td>12</td>
                             <td></td>
                           </tr>
                           <tr>
+						    <td class="pos">M</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">M</td>
                             <td>30</td>
                             <td>12</td>
                             <td></td>
                           </tr>
                           <tr>
+						    <td class="pos">S</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">M</td>
                             <td>30</td>
                             <td>12</td>
                             <td></td>
                           </tr>
                           <tr>
+						    <td class="pos">S</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">M</td>
                             <td>30</td>
                             <td>12</td>
                             <td></td>
                           </tr>
                           <tr>
+						    <td class="pos">S</td>
                             <td class="indicated"><span class="played indicator"></span></td>
                             <td> 
                               <p>Player name</p>
                             </td>
-                            <td class="pos">S</td>
-                            <td>30</td>
-                            <td>12</td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td class="indicated"><span class="played indicator"></span></td>
-                            <td> 
-                              <p>Player name</p>
-                            </td>
-                            <td class="pos">S</td>
-                            <td>30</td>
-                            <td>12</td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td class="indicated"><span class="played indicator"></span></td>
-                            <td> 
-                              <p>Player name</p>
-                            </td>
-                            <td class="pos">S</td>
                             <td>30</td>
                             <td>12</td>
                             <td></td>
@@ -785,39 +734,141 @@
                 </div>
               </div>
             </div>
-            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-xl-4 offset-xl-0 chatbox">
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-xl-3 offset-xl-0 chatbox">
               <h5 class="d-inline-block component-header">Live chat</h5>
-              <div class="nl-contest-info-table">
-                <div class="table-heading">
-                  <div class="chat-search">
-                    <input class="chat-search__input form-control">
-                    <button class="chat-search__button btn btn-primary"><span>Post</span></button>
-                  </div>
-                </div>
-                <div class="nl-table-scroll2">
-                  <div class="chat">
-                    <div class="chat__area">
-                      <div class="row"> 
-                        <div class="col-4 col-lg-3">
-                          <p class="orange">Kasper</p>
-                        </div>
-                        <div class="col-8 col-lg-9">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                        </div>
-                        <div class="col-4 col-lg-3">
-                          <p class="orange">Dharmesh</p>
-                        </div>
-                        <div class="col-8 col-lg-9">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                        </div>
+               
+			   <div class="soccer_nl_live_score">
+                  <div class="soccer-matchies">
+                    <ul role="tablist" class="nav nav-tabs">
+                      <li class="nav-item smaller-nav"><a data-toggle="tab" href="#all_matchies" role="tab" class="nav-link active">All</a></li>
+                      <li class="nav-item smaller-nav"><a data-toggle="tab" href="#leag1" role="tab" class="nav-link"><img src="assets/img/flag/France.png"></a></li>
+                      <li class="nav-item smaller-nav"><a data-toggle="tab" href="#leag2" role="tab" class="nav-link"><img src="assets/img/flag/France.png"></a></li>
+                      <li class="nav-item bigger-nav"><a data-toggle="tab" href="#leag3" role="tab" class="nav-link"><img src="assets/img/flag/France.png"></a></li>
+                    </ul>
+                    <div class="tab-content rounded-corners">
+                      <div id="all_matchies" role="tabpanel" class="tab-pane active">
+                        <div class="nl-table-mw live-contest-matchies">
+						  <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th>C</th>
+                                  <th></th>
+                                  <th>Fixture</th>
+                                  <th></th>
+                                  <th>Status</th>
+                                </tr>
+                              </thead>
+                            </table>
+						 <div class="nl-table-scroll2">
+						   <table class="table table-striped">
+                                <tbody>
+                                  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								</tbody>
+						   </table>
+						 </div>
+						 
+						</div>
                       </div>
+                      <div id="leag1" role="tabpanel" class="tab-pane">
+					  
+					  <div class="nl-table-mw live-contest-matchies">
+						  <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th>C</th>
+                                  <th></th>
+                                  <th>Fixture</th>
+                                  <th></th>
+                                  <th>Status</th>
+                                </tr>
+                              </thead>
+                            </table>
+						 <div class="nl-table-scroll2">
+						   <table class="table table-striped">
+                                <tbody>
+                                  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								  <tr>
+                                    <td><img src="assets/img/flag/France.png"></td>
+                                    <td>Champions</td>
+                                    <td>0-0</td>
+                                    <td>Champions</td>
+									<td>65</td>
+                                  </tr>
+								</tbody>
+						   </table>
+						 </div>
+						</div>
+					  </div>
+                      <div id="leag2" role="tabpanel" class="tab-pane">TAB3</div>
+                      <div id="leag3" role="tabpanel" class="tab-pane">TAB4</div>
                     </div>
                   </div>
                 </div>
-              </div>
+			   
             </div>
           </div>
-          <div class="row">
+          <!--<div class="row">
             <div class="col-12 text-center">
               <div class="nl-status-wrapper">
                 <ul>
@@ -827,7 +878,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div>-->
           <div class="row">
                   <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 col-xl-2 small-padding-live-score">
                     <div class="nl-contest-info-table nl-live-score-contest-table">
@@ -837,16 +888,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
-                            <th>Name</th>
-                            <th>Pos</th>
+                            <th><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -856,79 +914,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -971,16 +1029,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -990,79 +1055,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -1105,16 +1170,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -1124,79 +1196,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -1239,16 +1311,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -1258,79 +1337,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -1373,16 +1452,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -1392,79 +1478,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -1507,16 +1593,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -1526,79 +1619,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -1641,98 +1734,105 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
                         </thead>
                       </table>
                       <div class="nl-table-scroll2">
-                        <table class="table table-striped table-info4">
+                       <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -1775,16 +1875,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -1794,79 +1901,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -1909,16 +2016,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -1928,79 +2042,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -2043,16 +2157,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -2062,79 +2183,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -2177,98 +2298,105 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
                         </thead>
                       </table>
                       <div class="nl-table-scroll2">
-                        <table class="table table-striped table-info4">
+                       <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -2311,16 +2439,23 @@
                         </div>
                         <div class="rank__title">
                           <p>My Best Soccer Team</p>
-                          <p class="italic">NLC2 Kasper </p>
+                          <p>NLC2 Kasper </p>
                         </div>
                         <div class="rank__thumb"><img src="assets/img/soccer/AR.png" alt=""></div>
                       </div>
+					   <table class="table table-livescore">
+                          <tr>
+                            <td>Yet to Play:4</td>
+                            <td>Playing:0</td>
+                            <td>Played:0</td>
+                          </tr>
+                      </table>
                       <table class="table table-info3">
                         <thead>
                           <tr>
+						    <th>Pos</th>
                             <th class="indicated"><span class="played indicator visibility-hidden"></span></th>
                             <th>Name</th>
-                            <th>Pos</th>
                             <th>FP</th>
                             <th>Score</th>
                           </tr>
@@ -2330,79 +2465,79 @@
                         <table class="table table-striped table-info4">
                           <tbody>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
+                              <td>123</td>
+                              <td>15</td>
+                            </tr>
+							<tr>
+							  <td class="orange">A</td>
+                              <td class="indicated"><span class="played indicator"></span></td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
                             <tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
-                            <tr>
+							<tr>
+							  <td class="orange">A</td>
                               <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
-                              <td>123</td>
-                              <td>15</td>
-                            </tr>
-                            <tr>
-                              <td class="indicated"><span class="played indicator"></span></td>
-                              <td>Name</td>
-                              <td class="orange">A</td>
+                              <td><a href="" data-toggle="modal" data-target="#largteamModal">Name</a></td>
                               <td>123</td>
                               <td>15</td>
                             </tr>
@@ -2445,81 +2580,158 @@
         </div>
       </section>
     </main>
-    <div id="enterContestsModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true" class="modal fade">
-      <div role="document" class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"></span></button>
-            <div class="owl-carousel enterContests">
-              <div><img src="assets/img/enter-img1.png">
-                <button type="button" class="btn btn-primary">team name 1</button>
-              </div>
-              <div><img src="assets/img/enter-img2.png">
-                <button type="button" class="btn btn-primary">team name 2</button>
-              </div>
-              <div><img src="assets/img/enter-img3.png">
-                <button type="button" class="btn btn-primary">team name 3</button>
-              </div>
-              <div><img src="assets/img/enter-img3.png">
-                <button type="button" class="btn btn-primary">team name 4</button>
-              </div>
-              <div><img src="assets/img/enter-img3.png">
-                <button type="button" class="btn btn-primary">team name 5</button>
-              </div>
-            </div>
-            <div class="nl-contests-search">
-              <div class="input-group">
-                <input type="text" placeholder="Search contests" class="form-control"><span class="input-group-btn">
-                  <button type="button" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button></span>
-              </div>
-            </div>
-            <div class="nl-team-button">
-              <button type="button" class="btn btn-primary field-view-btn active">field view</button>
-              <button type="button" class="btn list-view-btn">list view</button>
-            </div>
-            <div class="nl-team-field football">
-              <div class="player-main-block">
-                <div data-position="QB" class="nl-player-block nl-QB-position"><img src="assets/img/football/img-img-QB.png" alt="QB">
-                  <div class="nl-player-block--data">
-                    <p>gronkowski</p>
-                    <p class="data orange"><span>12.67</span> <span>$42000</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="nl-modal-table">
-              <table class="table table-striped">
-                <tbody>
-                  <tr>
-                    <td>Projections</td>
-                    <td class="pos">101.9 FP</td>
-                  </tr>
-                  <tr>
-                    <td>total salary:</td>
-                    <td>$55000</td>
-                  </tr>
-                  <tr>
-                    <td>Total Teams:</td>
-                    <td>69/100</td>
-                  </tr>
-                  <tr>
-                    <td>Buy in:</td>
-                    <td>10 NLC2</td>
-                  </tr>
-                  <tr>
-                    <td>week:</td>
-                    <td>3</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">enter contest</button>
+    <div id="largteamModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true" class="modal fade">
+  <div role="document" class="modal-dialog modal-small">
+    <div class="modal-content">
+      <div class="text-left">
+        <div class="exit-button">
+          <button type="button" data-dismiss="modal" class="close">×</button>
+        </div>
+        <br>
+        <div class="nl-team-card table-data-field">
+          <h4>team NLC2</h4>
+          <div class="helmet-container">
+            <img id="helmet" src="assets/img/soccer/AR.png" style="display: block;" class="helmet-img">
           </div>
         </div>
+        <table class="table white-text">
+          <tr>
+            <td class="text-center">Yet to Play:4</td>
+            <td class="text-center">Playing:0</td>
+            <td class="text-center">Played:0</td>
+          </tr>
+        </table>
+        <div class="row">
+          <div class="col-12 no-padding text-left">
+            <table class="table table-striped nl-team-list-table homepage-field">
+              <thead>
+                <tr>
+                  <th>POS</th>
+                  <th></th>
+                  <th class="name-list-view">NAME</th>
+                  <th>Status</th>
+                  <th>FP</th>
+                  <th>SALARY</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+               <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+				<tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td class="pos">FLEX</td>
+                  <td class="indicated"><span class="played indicator"></span></td>
+                  <td><b>Jameis Winston / TB</b><br>
+                    TB/NYJ 1:00 PMEST</td>
+                  <td class="ACT">ACT</td>
+                  <td>30</td>
+                  <td>$0</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th>PMR: <span class="white-text">420</span></th>
+                  <th>TOTAL</th>
+                  <th><span class="white-text">49.83</span></th>
+                  <th><span class="white-text">$44500</span></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
       </div>
     </div>
+  </div>
+</div>
+</div>
     <!--Footer Block-->
     <footer class="nl-footer">
       <div class="nl-footer--button">

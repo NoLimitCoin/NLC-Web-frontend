@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Enter a contest</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+      <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/fixes.css">
+   </head>
+   <body class="sp">
+      <!--include _partials/preloader.jade-->
+      <header class="nl-header-log">
+         <div class="nl-header-top">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12 p-0">
+                     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                        <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
+                        <div class="row m-0">
+                           <div class="col-lg-7 nl-header-top--left">
+                              <div class="row nl-h100">
+                                 <div class="col-lg-3">
+                                    <div class="nl-logotype"><a href="index.html"><img src="assets/img/nl-logo.png" alt="NO Limit"></a></div>
+                                 </div>
+                                 <div class="col-lg-9 align-self-center hidden-md-down">
+                                    <div class="nl-title">The world's first crypto fantasy sports</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-5 nl-header-top--right">
+                              <div class="nl-profile">
+                                 <div class="row">
+                                    <div class="col-lg-12">
+                                       <div class="nl-profile--data">
+                                          <div class="name">Username</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="nl-balance">
+                                 <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                                 <div class="nl-balance--data">
+                                    <div class="title">balance</div>
+                                    <div class="sub-title">20023 NLC2</div>
+                                 </div>
+                              </div>
+                              <div class="nl-btn-control">
+                                 <div class="nl-btn-group">
+                                    <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                                    <div class="btn btn-big-radius btn-block">logout</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                           <ul class="navbar-nav mr-auto">
+                              <!--<li class="nav-item hidden-md-down"><a class="nav-link"></a></li>-->
+                              <li class="nav-item dropdown">
+                                 <a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
+                                 <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu">
+                                    <a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a>
+                                    <a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/soccer.png" alt="#" class="navbar-nav__sports-img"></a>
+                                    <a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a>
+                                    <a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>MMA</span> <img src="assets/img/mma.png" alt="#" class="navbar-nav__sports-img"></a>
+                                    <a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a>
+                                    <a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>baseball</span> <img src="assets/img/baseball.png" alt="#" class="navbar-nav__sports-img"></a>
+                                    <a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>cricket</span> <img src="assets/img/cricket.png" alt="#" class="navbar-nav__sports-img"></a>
+                                 </div>
+                              </li>
+                              <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
+                              <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
+                              <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
+                              <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
+                              <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
+                              <li class="nav-item dropdown">
+                                 <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
+                                 <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu">
+                                    <a href="edit_profile.html" class="dropdown-item">PROFILE</a>
+                                    <a href="change_password.html" class="dropdown-item">edit Password</a>
+                                    <a href="friends.html" class="dropdown-item">INVITE FRIENDS</a>
+                                    <a href="my_balances.html" class="dropdown-item">My Balance</a>
+                                    <a href="scoring-rules.html" class="dropdown-item">SCORING RULES</a>
+                                    <a href="my_contests.html" class="dropdown-item">MY CONTESTS</a>
+                                 </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                 <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                                 <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                              </li>
+                           </ul>
+                           <div class="nl-profile-mobile">
+                              <div class="nl-profile--data">
+                                 <p>Name</p>
+                                 <p>balance: 1 NLC2=00345 USD</p>
+                                 <p>balance: 1 NLC2=00345 btc</p>
+                                 <div class="nl-btn-control">
+                                    <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
+                                    <div class="btn btn-big-radius">logout</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section class="nl-section nl-players nl-enter-contests crypto">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-6 col-lg-6 col-xl-6">
+                     <div class="heading-search">
+                        <h1 class="heading-search__header">Enter contest</h1>
+                        <div class="row">
+                           <div class="col-sm-3 col-md-2 col-lg-3"></div>
+                           <div class="heading-search__search col-sm-6 col-md-8 col-lg-6">
+                           </div>
+                           <div class="col-md-2 col-lg-3"></div>
+                        </div>
+                     </div>
+                     <div class="nl-team-info">
+                        <div class="nl-team-name">
+                           <form class="form-signin">
+                              <div class="input-group">
+                                 <select id="country" placeholder="COUNTRY" required="" class="form-control custom-select">
+                                    <option selected="" disabled="" hidden="">SELECT TEAM</option>
+                                    <option>USA</option>
+                                    <option>CANADA</option>
+                                    <option>UK</option>
+                                    <option>PORTUGAL</option>
+                                 </select>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="nl-team-button">
+                        <button type="button" class="btn btn-team btn-big-radius active field-view-btn">Lambo view</button>
+                        <button type="button" class="btn btn-team btn-big-radius list-view-btn">list view</button>
+                     </div>
+					 
+                    
+					 <div class="lambo-view-coin">
+							   <div class="lambo-view-container visible">
+								  <h3 class="your-drivers">YOUR DRIVERS: </h3>
+								  <div class="lambo-view-driver">
+									 <img class="coin-choice coin-user-1" src="assets/img/coin/bitcoin.png">
+									 <img class="coin-choice coin-user-2" src="assets/img/coin/nolimitcoin.png">
+									 <img class="coin-choice coin-user-3" src="assets/img/coin/lisk.png">
+									 <img class="coin-choice coin-user-4" src="assets/img/coin/dogecoin.png">
+									 <img class="coin-choice coin-user-5" src="assets/img/coin/omisego.png">
+								  </div>
+								  <div class="lambo-view">
+									 <img class="lambo-image" src="assets/img/nlc2-lambo-tires.png">
+								  </div>
+								  <div class="nl-team-coin nl-my-teams">
+									 <div class="nl-card-wrapper">
+										<div class="row">
+										   <div class="col-12">
+											  <table class="table table-striped nl-team-list-coin">
+												 <thead>
+													<tr>
+													   <th></th>
+													   <th>COIN</th>
+													   <th>Amount</th>
+													   <th>PRICE</th>
+													   <th>value</th>
+													   <th>CMC %</th>
+													</tr>
+												 </thead>
+												 <tbody>
+													<tr>
+													   <td><img src="assets/img/coin/bitcoin.png"></td>
+													   <td>BTC</td>
+													   <td>1BTC</td>
+													   <td>$15,374.30</td>
+													   <td>$24342</td>
+													   <td class="red">18.20%</td>
+													</tr>
+													<tr>
+													   <td><img src="assets/img/coin/bitcoin.png"></td>
+													   <td>BTC</td>
+													   <td>1BTC</td>
+													   <td>$15,374.30</td>
+													   <td>$24342</td>
+													   <td class="green">18.20%</td>
+													</tr>
+													<tr>
+													   <td><img src="assets/img/coin/bitcoin.png"></td>
+													   <td>BTC</td>
+													   <td>1BTC</td>
+													   <td>$15,374.30</td>
+													   <td>$24342</td>
+													   <td class="green">18.20%</td>
+													</tr>
+													<tr>
+													   <td><img src="assets/img/coin/bitcoin.png"></td>
+													   <td>BTC</td>
+													   <td>1BTC</td>
+													   <td>$15,374.30</td>
+													   <td>$24342</td>
+													   <td class="green">18.20%</td>
+													</tr>
+													<tr>
+													   <td><img src="assets/img/coin/bitcoin.png"></td>
+													   <td>BTC</td>
+													   <td>1BTC</td>
+													   <td>$15,374.30</td>
+													   <td>$24342</td>
+													   <td class="green">18.20%</td>
+													</tr>
+												 </tbody>
+											  </table>
+										   </div>
+										</div>
+									 </div>
+								  </div>
+								 
+						         <div class="text-center"><a href="#" class="btn btn-primary payout" data-toggle="modal" data-target="#payoutModal">edit team</a></div>
+							   </div>
+							</div>
+				  
+				   <div class="nl-team-coin nl-coin-list nl-my-teams showe-list hide">
+                        <div class="nl-card-wrapper">
+                           <div class="row">
+                              <div class="col-12">
+                                 <div class="nl-team-card table-data-field">
+                                    <h3>team NLC2</h3>
+                                    <img src="assets/img/coin/top5/coin-1.png" alt="coin">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-12">
+                                 <table class="table table-striped nl-team-list-coin">
+                                    <thead>
+                                       <tr>
+                                          <th></th>
+                                          <th>COIN</th>
+                                          <th>AMOUNT</th>
+                                          <th>PRICE</th>
+                                          <th>value</th>
+                                          <th>CMC %</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td><img src="assets/img/coin/bitcoin.png"></td>
+                                          <td>BTC</td>
+                                          <td>1BTC</td>
+                                          <td>$15,374.30</td>
+                                          <td>$24342</td>
+                                          <td class="green">18.20%</td>
+                                       </tr>
+                                       <tr>
+                                          <td><img src="assets/img/coin/bitcoin.png"></td>
+                                          <td>BTC</td>
+                                          <td>1BTC</td>
+                                          <td>$15,374.30</td>
+                                          <td>$24342</td>
+                                          <td class="green">18.20%</td>
+                                       </tr>
+                                       <tr>
+                                          <td><img src="assets/img/coin/bitcoin.png"></td>
+                                          <td>BTC</td>
+                                          <td>1BTC</td>
+                                          <td>$15,374.30</td>
+                                          <td>$24342</td>
+                                          <td class="green">18.20%</td>
+                                       </tr>
+                                       <tr>
+                                          <td><img src="assets/img/coin/bitcoin.png"></td>
+                                          <td>BTC</td>
+                                          <td>1BTC</td>
+                                          <td>$15,374.30</td>
+                                          <td>$24342</td>
+                                          <td class="green">18.20%</td>
+                                       </tr>
+									   <tr>
+                                          <td><img src="assets/img/coin/bitcoin.png"></td>
+                                          <td>BTC</td>
+                                          <td>1BTC</td>
+                                          <td>$15,374.30</td>
+                                          <td>$24342</td>
+                                          <td class="green">18.20%</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+						 <div class="text-center"><a href="#" class="btn btn-primary payout" data-toggle="modal" data-target="#payoutModal">edit team</a></div>
+                     </div>
+				  </div>
+                  <div class="col-md-6 col-lg-6 col-xl-5 offset-xl-1">
+                     <div class="nl-contest-info-title">
+                        <h1 class="heading-search__header">Contest information</h1>
+                     </div>
+                     <!-- <form class="form-signin">
+                        <div class="input-group">
+                        <select id="country" placeholder="ENTRIES" required="" class="form-control custom-select">
+                         <option selected="" disabled="" hidden="">ENTRIES</option>
+                         <option>USA</option>
+                         <option>CANADA</option>
+                         <option>UK</option>
+                         <option>PORTUGAL</option>
+                        </select>
+                        </div>
+                        </form>-->
+                     <div class="nl-contest-info-table">
+                        <div class="table-heading">
+                           <!-- <h5 class="text-center">Super high stakes 100k pool h2h</h5>-->
+                           <form class="form-signin">
+                              <div class="input-group">
+                                 <select id="country" placeholder="ENTRIES" required="" class="form-control custom-select">
+                                    <option selected="" disabled="" hidden="">Super high stakes 100k pool h2h</option>
+                                    <option>Super high stakes 100k Super high stakes 100k pool h2h</option>
+                                    <option>Super high stakes</option>
+                                    <option>Super high</option>
+                                    <option>Super</option>
+                                 </select>
+                              </div>
+                           </form>
+                           <p></p>
+                           <div class="row">
+                              <div class="col-12 col-md-3"><a href="contests.html"><button type="button" class="btn btn-primary payout btn-sm">Enter</button></a></div>
+                              <div class="col-12 col-md-6 p-2"><button type="button" class="btn btn-default btn-sm">Return to lobby</button></div>
+                              <div class="col-12 col-md-3 p-2"><button type="button" class="btn btn-default btn-sm">Live score</button></div>
+                           </div>
+                        </div>
+                        <table class="table table-info2">
+                           <thead>
+                              <tr>
+                                 <th>
+                                    Starts in
+                                    <div class="nl-time-block">
+                                       <div><span>4</span>Days</div>
+                                       <div><span>16</span>hours</div>
+                                       <div><span>0</span>minutes</div>
+                                       <div><span>5</span>seconds</div>
+                                    </div>
+                                 </th>
+                              </tr>
+                           </thead>
+                        </table>
+                        <table class="table table-info1">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <div class="leaders-list">
+                                       <p class="tit">First Game</p>
+                                       <p>19-07-2017 08:25 AM</p>
+                                       <p class="tit">Week</p>
+                                       <p>3</p>
+                                       <p class="tit">Prize money</p>
+                                       <p>1.000 NLC</p>
+                                       <a href="#" class="btn btn-primary payout"  data-toggle="modal" data-target="#payoutModal"><b>Payout</b></a>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="leaders-list">
+                                       <p class="tit">Last game</p>
+                                       <p>19-07-2017 08:25 AM</p>
+                                       <p class="tit">Buy-in</p>
+                                       <p>10</p>
+                                       <p class="tit">Registered Teams</p>
+                                       <p>198 / 200</p>
+                                       <p class="tit">Allowed teams</p>
+                                       <p>2</p>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table class="table table-info3">
+                           <thead>
+                              <tr>
+                                 <th>User</th>
+                                 <th></th>
+                                 <th></th>
+                              </tr>
+                           </thead>
+                        </table>
+                        <div class="nl-table-scroll2">
+                           <table class="table table-striped table-info4">
+                              <tbody>
+                      <tr>
+                        <td>Username</td>
+						<td><img src="assets/img/yes.png" alt=""></td>
+                        <td> <button class="btn btn-success btn-sm">Ready to start</button> <button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-warning btn-sm">Withdraw</button></td>
+                      </tr>
+					  <tr>
+                        <td>Username</td>
+						<td><img src="assets/img/yes.png" alt=""></td>
+                        <td> <button class="btn btn-success btn-sm">Ready to start</button> <button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-warning btn-sm">Withdraw</button></td>
+                      </tr>
+					  <tr>
+                        <td>Username</td>
+						<td><img src="assets/img/yes.png" alt=""></td>
+                        <td> <button class="btn btn-success btn-sm">Ready to start</button> <button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-warning btn-sm">Withdraw</button></td>
+                      </tr>
+					  <tr>
+                        <td>Username</td>
+						<td><img src="assets/img/yes.png" alt=""></td>
+                        <td> <button class="btn btn-success btn-sm">Ready to start</button> <button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-warning btn-sm">Withdraw</button></td>
+                      </tr>
+					  <tr>
+                        <td>Username</td>
+						<td><img src="assets/img/yes.png" alt=""></td>
+                        <td> <button class="btn btn-success btn-sm">Ready to start</button> <button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-warning btn-sm">Withdraw</button></td>
+                      </tr>
+					  <tr>
+                        <td>Username</td>
+						<td><img src="assets/img/yes.png" alt=""></td>
+                        <td> <button class="btn btn-success btn-sm">Ready to start</button> <button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-warning btn-sm">Withdraw</button></td>
+                      </tr>
+					  <tr>
+                        <td>Username</td>
+						<td><img src="assets/img/yes.png" alt=""></td>
+                        <td> <button class="btn btn-success btn-sm">Ready to start</button> <button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-warning btn-sm">Withdraw</button></td>
+                      </tr>
+					  <tr>
+                        <td>Username</td>
+						<td><img src="assets/img/yes.png" alt=""></td>
+                        <td> <button class="btn btn-success btn-sm">Ready to start</button> <button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-warning btn-sm">Withdraw</button></td>
+                      </tr>
+                    </tbody>
+                           </table>
+                        </div>
+                        <!-- <table class="table table-info3">
+                           <thead>
+                             <tr>
+                               <th> 
+                                 <button type="button" data-toggle="modal" data-target="#payoutModal" class="btn btn-primary payout">Payout</button>
+                               </th>
+                             </tr>
+                           </thead>
+                           </table>-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div id="payoutModal" role="dialog" data-backdrop="static" data-keyboard="false" class="modal fade">
+            <div class="row">
+               <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="row">
+                           <div class="col-10 offset-1">
+                              <h4 class="modal-title orange"><span>Payout Structure</span></h4>
+                           </div>
+                           <div class="exit-button"> 
+                              <button type="button" data-dismiss="modal" class="close">×</button>
+                           </div>
+                        </div>
+                        <div class="modal-body">
+                           <div class="row">
+                              <div class="col-10 offset-1">
+                                 <div class="row">
+                                    <div class="col-1 payout-rank">
+                                       <p>1.</p>
+                                    </div>
+                                    <div class="col-6">
+                                       <p class="inline">100%</p>
+                                       <p class="inline orange">of total</p>
+                                    </div>
+                                    <div class="col-5">
+                                       <p class="inline">30000</p>
+                                       <p class="inline orange">NLC2</p>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-1 payout-rank">
+                                       <p>2.</p>
+                                    </div>
+                                    <div class="col-6">
+                                       <p class="inline">80%</p>
+                                       <p class="inline orange">of total</p>
+                                    </div>
+                                    <div class="col-5">
+                                       <p class="inline">30000</p>
+                                       <p class="inline orange">NLC2</p>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-1 payout-rank">
+                                       <p>3.</p>
+                                    </div>
+                                    <div class="col-6">
+                                       <p class="inline">60%</p>
+                                       <p class="inline orange">of total</p>
+                                    </div>
+                                    <div class="col-5">
+                                       <p class="inline">30000</p>
+                                       <p class="inline orange">NLC2</p>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-1 payout-rank">
+                                       <p>4.</p>
+                                    </div>
+                                    <div class="col-6">
+                                       <p class="inline">30%</p>
+                                       <p class="inline orange">of total</p>
+                                    </div>
+                                    <div class="col-5">
+                                       <p class="inline">30000</p>
+                                       <p class="inline orange">NLC2</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <div id="enterContestsModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true" class="modal fade">
+         <div role="document" class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"></span></button>
+                  <div class="owl-carousel enterContests">
+                     <div><img src="assets/img/enter-img1.png">
+                        <button type="button" class="btn btn-primary">team name 1</button>
+                     </div>
+                     <div><img src="assets/img/enter-img2.png">
+                        <button type="button" class="btn btn-primary">team name 2</button>
+                     </div>
+                     <div><img src="assets/img/enter-img3.png">
+                        <button type="button" class="btn btn-primary">team name 3</button>
+                     </div>
+                     <div><img src="assets/img/enter-img3.png">
+                        <button type="button" class="btn btn-primary">team name 4</button>
+                     </div>
+                     <div><img src="assets/img/enter-img3.png">
+                        <button type="button" class="btn btn-primary">team name 5</button>
+                     </div>
+                  </div>
+                  <div class="nl-contests-search">
+                     <div class="input-group">
+                        <input type="text" placeholder="Search contests" class="form-control"><span class="input-group-btn">
+                        <button type="button" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+                     </div>
+                  </div>
+                  <div class="nl-team-button">
+                     <button type="button" class="btn btn-primary field-view-btn active">field view</button>
+                     <button type="button" class="btn list-view-btn">list view</button>
+                  </div>
+                  <div class="nl-team-field football">
+                     <div class="player-main-block">
+                        <div data-position="QB" class="nl-player-block nl-QB-position">
+                           <img src="assets/img/football/img-img-QB.png" alt="QB">
+                           <div class="nl-player-block--data">
+                              <p>gronkowski</p>
+                              <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="nl-modal-table">
+                     <table class="table table-striped">
+                        <tbody>
+                           <tr>
+                              <td>Projections</td>
+                              <td class="pos">101.9 FP</td>
+                           </tr>
+                           <tr>
+                              <td>total salary:</td>
+                              <td>$55000</td>
+                           </tr>
+                           <tr>
+                              <td>Total Teams:</td>
+                              <td>69/100</td>
+                           </tr>
+                           <tr>
+                              <td>Buy in:</td>
+                              <td>10 NLC2</td>
+                           </tr>
+                           <tr>
+                              <td>week:</td>
+                              <td>3</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">enter contest</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer Block-->
+      <footer class="nl-footer">
+         <div class="nl-footer--button">
+            <div class="row">
+               <div class="col-lg-8">
+                  <div class="nl-social-icon"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="btn btn-charity"><span>Charity<br>Projects</span></a></div>
+                  <p><br />Copyright © 2017 No Limit Fantasy Sports, LLC All Rights Reserved Contest Rules, Terms and Conditions and Privacy Policy<br /></p>
+               </div>
+               <div class="col-lg-4 nl-tar">
+                  <div class="input-group-btn"><a href="#" class="btn btn-footer">Helpdesk</a><a href="contact.html" class="btn btn-footer">Contact Us</a></div>
+                  <div class="input-group-btn"><a href="faq.html" class="btn btn-footer">Faq</a><a href="terms_conditions.html" class="btn btn-footer">Terms & Conditions</a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+      <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+      <script type="text/javascript" src="assets/js/tether.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/js/common.js"></script>
+   </body>
+</html>

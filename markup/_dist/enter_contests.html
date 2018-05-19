@@ -13,89 +13,107 @@
   </head>
   <body class="sp">
     <!--include _partials/preloader.jade-->
-    <header class="nl-header-log">
-      <div class="nl-header-top">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 p-0">
-              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
-                <div class="row m-0">
-                  <div class="col-lg-7 nl-header-top--left">
-                    <div class="row nl-h100">
-                      <div class="col-lg-2">
-                        <div class="nl-logotype"><a href="index.html"><img src="assets/img/logotype.png" alt="NO Limit"></a></div>
-                      </div>
-                      <div class="col-lg-10 align-self-center">
-                        <div class="nl-title">The worlds first crypto fantasy sports</div>
-                      </div>
+     <header class="nl-header-log">
+        <div class="nl-header-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                            <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
+                            <div class="row m-0">
+                                <div class="col-lg-7 nl-header-top--left">
+                                    <div class="row nl-h100">
+                                        <div class="col-lg-3">
+                                            <div class="nl-logotype"><a href="index.html"><img src="assets/img/nl-logo.png" alt="NO Limit"></a></div>
+                                        </div>
+                                        <div class="col-lg-9 align-self-center hidden-md-down">
+                                            <div class="nl-title">The world's first crypto fantasy sports</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 nl-header-top--right">
+                                    <div class="nl-profile">
+                                        <div class="row">
+                                            
+                                            <div class="col-lg-12">
+                                                <div class="nl-profile--data">
+                                                    <div class="name">Username</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="nl-balance">
+                                        <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                                        <div class="nl-balance--data">
+                                            <div class="title">balance</div>
+                                            <div class="sub-title">20023 NLC2</div>
+                                        </div>
+                                    </div>
+                                    <div class="nl-btn-control">
+                                        <div class="nl-btn-group">
+                                            <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                                            <div class="btn btn-big-radius btn-block">logout</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <!--<li class="nav-item hidden-md-down"><a class="nav-link"></a></li>-->
+                                    <li class="nav-item dropdown">
+                                        <a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
+                                        <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu">
+										<a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/soccer.png" alt="#" class="navbar-nav__sports-img"></a>
+										
+										<a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>MMA</span> <img src="assets/img/mma.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>baseball</span> <img src="assets/img/baseball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>cricket</span> <img src="assets/img/cricket.png" alt="#" class="navbar-nav__sports-img"></a>
+										
+										
+										</div>
+                                    </li>
+                                    <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
+                                    <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
+                                    <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
+                                    <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
+                                    <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
+                                        <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu">
+										<a href="edit_profile.html" class="dropdown-item">PROFILE</a>
+										<a href="change_password.html" class="dropdown-item">edit Password</a>
+										<a href="friends.html" class="dropdown-item">INVITE FRIENDS</a>
+										<a href="my_balances.html" class="dropdown-item">My Balance</a>
+										<a href="scoring-rules.html" class="dropdown-item">SCORING RULES</a>
+										<a href="my_contests.html" class="dropdown-item">MY CONTESTS</a>
+										</div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                                        <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                                    </li>
+                                </ul>
+                                <div class="nl-profile-mobile">
+                                    <div class="nl-profile--data">
+                                        <p>Name</p>
+                                        <p>balance: 1 NLC2=00345 USD</p>
+										<p>balance: 1 NLC2=00345 btc</p>
+                                        <div class="nl-btn-control">
+                                            <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
+                                            <div class="btn btn-big-radius">logout</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                  </div>
-                  <div class="col-lg-5 nl-header-top--right">
-                    <div class="nl-profile">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="nl-profile--avatar"><img src="assets/img/profile-picture.png" alt="NO Limit">
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="nl-profile--data">
-                            <div class="name">Username</div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                    <div class="nl-balance">
-                      <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
-                      <div class="nl-balance--data">
-                        <div class="title">balance</div>
-                        <div class="sub-title">20023 NLC2</div>
-                        <div class="data">1 NLC2=00345 btc</div>
-                      </div>
-                    </div>
-                    <div class="nl-btn-control">
-                      <div class="nl-btn-group">
-                        <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
-                        <div class="btn btn-big-radius btn-block">logout</div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item hidden-md-down"><a class="nav-link"></a></li>
-                    <li class="nav-item dropdown"><a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
-                      <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu"><a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/Football.png" alt="#" class="navbar-nav__sports-img"></a><a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a><a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a></div>
-                    </li>
-                    <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
-                    <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
-                    <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
-                    <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
-                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
-                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="edit_profile.html" class="dropdown-item">Profile</a><a href="change_password.html" class="dropdown-item">edit Password</a><a href="friends.html" class="dropdown-item">Friends </a><a href="my_balances.html" class="dropdown-item">My Balance</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
-                      <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
-                    </li>
-                  </ul>
-                  <div class="nl-profile-mobile">
-                    <div class="nl-profile--data">
-                      <p><i class="fa fa-user-circle" aria-hidden="true"></i> Name</p>
-                      <p>balance: 1 NLC2=00345 btc</p>
-                      <div class="nl-btn-control">
-                        <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
-                        <div class="btn btn-big-radius">logout</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
             </div>
-          </div>
         </div>
-      </div>
     </header>
     <main>
       <section class="nl-section nl-players nl-enter-contests soccer">
@@ -231,76 +249,100 @@
                       <table class="table table-striped nl-team-list-table">
                         <thead>
                           <tr>
-                            <th class="name-enter-contest">NAME</th>
                             <th>POS</th>
+							<th></th>
+                            <th class="name-enter-contest">NAME</th>
+                            <th>STATUS</th>
                             <th>FP</th>
                             <th>SALARY</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">G</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
                           <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">DL</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">DR</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">DAL</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">DAR</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">CM</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">RWM</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">LWM</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">RS</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">LS</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
-                          <tr>
+						  <tr>
+                            <td class="pos">FLEX</td>
+							<td></td>
                             <td>Player name</td>
-                            <td class="pos">ST</td>
+                            <td class="ACT">ACT</td>
                             <td>30</td>
                             <td>$0</td>
                           </tr>
@@ -315,11 +357,28 @@
               <div class="nl-contest-info-title">
                 <h1 class="heading-search__header">Contest information</h1>
               </div>
+			  
+			   <form class="form-signin">
+				  <div class="input-group">
+					<select id="country" placeholder="ENTRIES" required="" class="form-control custom-select">
+					  <option selected="" disabled="" hidden="">ENTRIES</option>
+					  <option>USA</option>
+					  <option>CANADA</option>
+					  <option>UK</option>
+					  <option>PORTUGAL</option>
+					</select>
+				  </div>
+			  </form>
+			  
               <div class="nl-contest-info-table">
                 <div class="table-heading">
                   <h5 class="text-center">Super high stakes 100k pool h2h</h5>
-                  <button class="btn btn-primary btn-lg">Enter contest</button>
-                </div>
+                  <!--<button class="btn btn-primary btn-lg">Enter contest</button>-->
+				  <div class="row">
+				   <div class="col-12 col-md-6"><a href="contests.html"><button type="button" class="btn btn-primary payout">Enter contest</button></a></div>
+				   <div class="col-12 col-md-6 p-2"><button type="button" class="btn btn-default">Return to lobby</button></div>
+				  </div>
+				</div>
                 <table class="table table-info2">
                   <thead>
                     <tr>
@@ -345,6 +404,7 @@
                           <p>3</p>
                           <p class="tit">Prize money</p>
                           <p>1.000 NLC</p>
+						  <a href="#" class="btn btn-primary payout"  data-toggle="modal" data-target="#payoutModal"><b>Payout</b></a>
                         </div>
                       </td>
                       <td>
@@ -368,7 +428,6 @@
                       <th>Rank</th>
                       <th>user</th>
                       <th>team name</th>
-                      <th>score</th>
                     </tr>
                   </thead>
                 </table>
@@ -379,78 +438,76 @@
                         <td>1</td>
                         <td>Username</td>
                         <td>MyTeamName</td>
-                        <td>37.90</td>
                       </tr>
                       <tr>
                         <td>1</td>
                         <td>Username</td>
                         <td>MyTeamName</td>
-                        <td>37.90</td>
+                      </tr>
+					   <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
                       </tr>
                       <tr>
                         <td>1</td>
                         <td>Username</td>
                         <td>MyTeamName</td>
-                        <td>37.90</td>
+                      </tr>
+					   <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
                       </tr>
                       <tr>
                         <td>1</td>
                         <td>Username</td>
                         <td>MyTeamName</td>
-                        <td>37.90</td>
+                      </tr>
+					   <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
                       </tr>
                       <tr>
                         <td>1</td>
                         <td>Username</td>
                         <td>MyTeamName</td>
-                        <td>37.90</td>
+                      </tr>
+					   <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
                       </tr>
                       <tr>
                         <td>1</td>
                         <td>Username</td>
                         <td>MyTeamName</td>
-                        <td>37.90</td>
+                      </tr>
+					   <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
                       </tr>
                       <tr>
                         <td>1</td>
                         <td>Username</td>
                         <td>MyTeamName</td>
-                        <td>37.90</td>
+                      </tr>
+					   <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>MyTeamName</td>
                       </tr>
                       <tr>
                         <td>1</td>
                         <td>Username</td>
                         <td>MyTeamName</td>
-                        <td>37.90</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Username</td>
-                        <td>MyTeamName</td>
-                        <td>37.90</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Username</td>
-                        <td>MyTeamName</td>
-                        <td>37.90</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Username</td>
-                        <td>MyTeamName</td>
-                        <td>37.90</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Username</td>
-                        <td>MyTeamName</td>
-                        <td>37.90</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <table class="table table-info3">
+               <!-- <table class="table table-info3">
                   <thead>
                     <tr>
                       <th> 
@@ -458,7 +515,7 @@
                       </th>
                     </tr>
                   </thead>
-                </table>
+                </table>-->
               </div>
             </div>
           </div>
