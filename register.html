@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register Page | NLC2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fixes.css">
+  </head>
+  <body>
+    <!--include _partials/preloader.jade-->
+    <!--Navigation Fixed Block-->
+    <header class="nl-header">
+      <div class="nl-header--top">
+        <div class="container-fluid">
+          <div class="row align-items-start">
+             <div class="col-4 col-lg-3">
+              <div class="nl-logotype"><a href="index.html"><img src="assets/img/nl-logo.png" alt="NO Limit"></a></div>
+            </div>
+            <div class="col-1 col-lg-5">
+              <div class="nl-title">The world's first crypto fantasy sports</div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="nl-button-login"><a href="login.html" class="btn btn-primary nl-m-r-15">Login</a><a href="register.html" class="btn">SIGN UP</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="nl-section registration-wrapper">
+        <div class="row center-div">
+          <div class="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
+          <div class="col-8 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div id="registrationSection" tabindex="-1" role="dialog" aria-labelledby="loginSectionLabel" aria-hidden="true">
+              <div role="document" class="block-dialog"></div>
+              <div class="block-content">
+                <div class="block-header">
+                  <h2 id="loginSectionLabel" class="modal-title">Sign Up</h2>
+                </div>
+                <div class="block-body">
+                  <form class="form-signin">
+                    <div class="input-group">
+                      <input id="inputEmail" type="email" placeholder="EMAIL" required="" autofocus="" class="form-control">
+                    </div>
+                    <div class="input-group">
+                      <input type="password" placeholder="PASSWORD" aria-describedby="show" class="form-control"><span class="show-password input-group-addon">show</span>
+                    </div>
+                    <div class="input-group">
+                      <input type="password" placeholder="RE-TYPE PASSWORD" class="form-control">
+                    </div>
+                    <div class="input-group">
+                      <input id="screenName" placeholder="SCREEN NAME" required="" autofocus="" class="form-control">
+                    </div>
+                    <div class="input-group">
+                      <input id="firstName" placeholder="FIRST NAME" required="" autofocus="" class="form-control">
+                    </div>
+                    <div class="input-group">
+                      <input id="lastName" placeholder="LAST NAME" required="" autofocus="" class="form-control">
+                    </div>
+                    <div class="input-group">
+                      <select id="country" placeholder="COUNTRY" required="" class="form-control custom-select">
+                        <option selected="" disabled="" hidden="">COUNTRY</option>
+                        <option>USA</option>
+                        <option>CANADA</option>
+                        <option>UK</option>
+                        <option>PORTUGAL</option>
+                      </select>
+                    </div>
+                    <div class="input-group">
+                      <input id="promoCode" placeholder="PROMO CODE(OPTIONAL)" required="" autofocus="" class="form-control">
+                    </div>
+                    <div data-sitekey="your_site_key" class="g-recaptcha"></div>
+                    <label class="check-wrapper">
+                      <input type="checkbox" value="">
+                      <p>I agree to the No Limit Fantasy Sports, LLC Contest <a href="#">Rules</a> , <a href="#">Terms and Conditions</a>  and <a href="#">Privacy Policy</a>  and represent that I am of legal age to play Fantasy Sports in my state of residence. Residents of the states of Alabama, Arizona, Colorado, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Louisiana, Massachusetts, Michigan, Mississippi, Missouri, Montana, Nevada, New York, North Dakota, Pennsylvania, Tennessee, Texas, Vermont, Virginia and Washington, as well as Puerto Rico and where otherwise prohibited by law are not eligible to enter Fantasy Sports Pay to play contests.
+                      </p>
+                    </label>
+                  </form>
+                </div>
+                <div class="block-footer">
+                  <button type="submit" class="btn btn-primary btn-block">REGISTER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
+        </div>
+      </section>
+    </main>
+    <!--Footer Block-->
+    <footer class="nl-footer">
+      <div class="nl-footer--button">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="nl-social-icon"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="btn btn-charity"><span>Charity<br>Projects</span></a></div>
+            <p><br />Copyright © 2017 No Limit Fantasy Sports, LLC All Rights Reserved Contest Rules, Terms and Conditions and Privacy Policy<br /></p>
+          </div>
+          <div class="col-lg-4 nl-tar">
+            <div class="input-group-btn"><a href="#" class="btn btn-footer">Helpdesk</a><a href="contact.html" class="btn btn-footer">Contact Us</a></div>
+            <div class="input-group-btn"><a href="faq.html" class="btn btn-footer">Faq</a><a href="terms_conditions.html" class="btn btn-footer">Terms & Conditions</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+  </body>
+</html>
