@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My teams Page | NLC2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fixes.css">
+  </head>
+  <body>
+    <!--include _partials/preloader.jade-->
+    <header class="nl-header-log">
+        <div class="nl-header-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                            <button type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mob-nav-toggle"><span class="navbar-toggler-icon"></span></button>
+                            <div class="row m-0">
+                                <div class="col-lg-7 nl-header-top--left">
+                                    <div class="row nl-h100">
+                                        <div class="col-lg-3">
+                                            <div class="nl-logotype"><a href="index.html"><img src="assets/img/nl-logo.png" alt="NO Limit"></a></div>
+                                        </div>
+                                        <div class="col-lg-9 align-self-center hidden-md-down">
+                                            <div class="nl-title">The world's first crypto fantasy sports</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 nl-header-top--right">
+                                    <div class="nl-profile">
+                                        <div class="row">
+                                            
+                                            <div class="col-lg-12">
+                                                <div class="nl-profile--data">
+                                                    <div class="name">Username</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="nl-balance">
+                                        <div class="nl-balance--logo"><a href="index.html"><img src="assets/img/nl-logo-header-log.png" alt="NL"></a></div>
+                                        <div class="nl-balance--data">
+                                            <div class="title">balance</div>
+                                            <div class="sub-title">20023 NLC2</div>
+                                        </div>
+                                    </div>
+                                    <div class="nl-btn-control">
+                                        <div class="nl-btn-group">
+                                            <div class="btn btn-primary btn-big-radius btn-block">Buy NLC2</div>
+                                            <div class="btn btn-big-radius btn-block">logout</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <!--<li class="nav-item hidden-md-down"><a class="nav-link"></a></li>-->
+                                    <li class="nav-item dropdown">
+                                        <a href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Sport</span> <img src="assets/img/americanfootball.png" alt="#"></a>
+                                        <div aria-labelledby="dropdownMenuLink" class="sports-selector dropdown-menu">
+										<a href="homepage.html" data-sports="football" class="sport-link dropdown-item"><span>Football</span> <img src="assets/img/americanfootball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="homepage_soccer.html" data-sports="soccer" class="sport-link dropdown-item"><span>Soccer</span> <img src="assets/img/soccer.png" alt="#" class="navbar-nav__sports-img"></a>
+										
+										<a href="#" data-sports="baseball" class="sport-link dropdown-item"><span>Hockey</span> <img src="assets/img/hockey.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>MMA</span> <img src="assets/img/mma.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>Basketball</span> <img src="assets/img/basketball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>baseball</span> <img src="assets/img/baseball.png" alt="#" class="navbar-nav__sports-img"></a>
+										<a href="#" data-sports="tennis" class="sport-link dropdown-item"><span>cricket</span> <img src="assets/img/cricket.png" alt="#" class="navbar-nav__sports-img"></a>
+										
+										
+										</div>
+                                    </li>
+                                    <li class="nav-item"><a href="homepage.html" class="nav-link">HOME</a></li>
+                                    <li class="nav-item"><a href="my_teams.html" class="nav-link">MY TEAMS</a></li>
+                                    <li class="nav-item"><a href="contests.html" class="nav-link">CONTESTS</a></li>
+                                    <li class="nav-item"><a href="players_football.html" class="nav-link">PLAYERS</a></li>
+                                    <li class="nav-item"><a href="live_score.html" class="nav-link">LIVE SCORES</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">MY ACCOUNT</a>
+                                        <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu">
+										<a href="edit_profile.html" class="dropdown-item">PROFILE</a>
+										<a href="change_password.html" class="dropdown-item">edit Password</a>
+										<a href="friends.html" class="dropdown-item">INVITE FRIENDS</a>
+										<a href="my_balances.html" class="dropdown-item">My Balance</a>
+										<a href="scoring-rules.html" class="dropdown-item">SCORING RULES</a>
+										<a href="my_contests.html" class="dropdown-item">MY CONTESTS</a>
+										</div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img alt="" src="assets/img/flag/USA.png"></a>
+                                        <div aria-labelledby="dropdownMenuLink2" class="dropdown-menu"><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Spain.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/Germany.png"></a><a href="#" class="dropdown-item"><img alt="" src="assets/img/flag/USA.png"></a></div>
+                                    </li>
+                                </ul>
+                                <div class="nl-profile-mobile">
+                                    <div class="nl-profile--data">
+                                        <p>Name</p>
+                                        <p>balance: 1 NLC2=00345 USD</p>
+										
+                                        <div class="nl-btn-control">
+                                            <div class="btn btn-primary btn-big-radius">Buy NLC2</div>
+                                            <div class="btn btn-big-radius">logout</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+	
+      <section class="nl-section nl-my-teams pro">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>PICK YOUR PRO</h1>
+            </div>
+          </div>
+		 
+		<div class="row">
+		<div class="col-md-12 col-lg-4 mt-3">
+		 <h5>Buy-IN : 5000 NLC2<br>Contest name : Pro challenge</h5>
+		</div>
+		<div class="col-md-12 col-lg-8 mt-3">
+		<div class="nl-table-responsive table-pro">
+		<table class="table table-striped">
+              <thead>
+                <tr>
+				  <th></th>
+                  <th>PHILLYD</th>
+                  <th>Kasper</th>
+                  <th>Covered Bets</th>
+				  <th>Open Bets</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Number of registrations</td>
+                  <td>10</td>
+                  <td>35</td>
+                  <td>10</td>
+				  <td>25</td>
+                </tr>
+              </tbody>
+            </table>
+		  </div>
+		 </div>
+	    </div>
+		
+		
+		<div class="row pro-set">
+		  <div class="col-md-12 col-lg-6">
+			<div class="nl-section nl-create-team homepage-field">
+				<div class="row">
+					<div class="col-12 no-padding-mobile text-center mt-3">
+					   
+					    <img src="assets/img/about/person4.png" class="pro-avtar rounded-circle">
+						<h5>Nicholas</h5>
+						 <p><a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pro-confirmation">PICK TEAM</a></p>
+					</div>
+					
+					<div class="col-12">
+						
+						<div class="nl-team-field soccer visible">
+							<div class="nl-team-field">
+							<div class="player-main-block">
+							  <div data-position="GK" class="nl-player-block nl-GK-position">
+							  <img src="assets/img/worldcup/12.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/GK.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="DL" class="nl-player-block nl-DL-position">
+							  <img src="assets/img/worldcup/13.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/DL.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="DR" class="nl-player-block nl-DR-position">
+							  <img src="assets/img/worldcup/22.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/DR.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="FLEXL" class="nl-player-block nl-FLEXL-position">
+							  <img src="assets/img/worldcup/25.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/FLEXL.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="DM" class="nl-player-block nl-DM-position">
+							  <img src="assets/img/worldcup/29.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/DM.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="MM" class="nl-player-block nl-MM-position">
+							  <img src="assets/img/worldcup/2.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/MM.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="MR" class="nl-player-block nl-MR-position">
+							  <img src="assets/img/worldcup/9.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/MM.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="ML" class="nl-player-block nl-ML-position">
+							  <img src="assets/img/worldcup/15.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/ML.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="FLEXR" class="nl-player-block nl-FLEXR-position">
+							  <img src="assets/img/worldcup/2.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/FLEXR.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="AL" class="nl-player-block nl-AL-position">
+							  <img src="assets/img/worldcup/32.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/AL.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							  <div data-position="AR" class="nl-player-block nl-AR-position">
+							  <img src="assets/img/worldcup/30.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+							  <img src="assets/img/soccer/AR.png" alt="goalkeeper">
+								<div class="nl-player-block--data">
+								  <p>gronkowski</p>
+								  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+					
+					<div class="row mx-auto">
+						<div class="col-12 offset-0 col-lg-12">
+							<div class="nl-team-list nl-my-teams hide" id="sec1_list_view">
+								<div class="nl-card-wrapper">
+									<div class="row">
+										<div class="col-12 no-padding">
+											<div class="nl-team-card table-data-field">
+												<h5>team NLC2<br>
+												<small>SALARY CAP:$65000</small>
+												</h5>
+												
+												<div id="create-helmet" style="display: block;" class="final-helmet">
+													<div class="helmet-container">
+													<img id="helmet" src="assets/img/NHL/img-players-1.png" style="display: block;" class="helmet-img">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 no-padding">
+											<table class="table table-striped nl-team-list-table homepage-field">
+												<thead>
+													<tr>
+														<th>POS</th>
+														<th></th>
+														<th class="name-list-view">NAME</th>
+														<th>Status</th>
+														<th>FP</th>
+														<th>SALARY</th>
+													   
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="pos">C</td>
+														<td class="indicated"><span class="played indicator"></span></td>
+														<td>Player name</td>
+														<td class="ACT">ACT</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+													<tr class="light-red">
+														<td class="pos">C</td>
+														<td class="indicated"><span class="not-playing indicator"></span></td>
+														<td>Player name</td>
+														<td class="Q">Q</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+													<tr>
+														<td class="pos">D</td>
+														<td class="indicated"><span class="playing indicator"></span></td>
+														<td>Player name</td>
+														<td class="BYE">BYE</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+													<tr>
+														<td class="pos">D</td>
+														<td></td>
+														<td>Player name</td>
+														<td class="L">L</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+													<tr>
+														<td class="pos">LW</td>
+														<td></td>
+														<td>Player name</td>
+														<td class="L">L</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+													<tr class="light-red">
+														<td class="pos">RW</td>
+														<td class="indicated"><span class="not-playing indicator"></span></td>
+														<td>Player name</td>
+														<td class="L">L</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+													<tr>
+														<td class="pos">G</td>
+														<td></td>
+														<td>Player name</td>
+														<td class="L">L</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+													<tr class="light-red">
+														<td class="pos">FLEX</td>
+														<td class="indicated"><span class="not-playing indicator"></span></td>
+														<td>Player name</td>
+														<td class="L">L</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+													<tr>
+														<td class="pos">FLEX</td>
+														<td></td>
+														<td>Player name</td>
+														<td class="L">L</td>
+														<td>30</td>
+														<td>$0</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="row">
+									  <div class="col-12 no-padding">
+										<div class="nl-team-card-footer">
+										<div class="nl-team-card-footer--left">
+											<div class="nl-team-card-btns">
+											 <a class="btn btn-primary btn-sm nl-m-b-14" data-toggle="modal" data-target="#pro-confirmation">SELECT THIS TEAM</a>
+											   Total picks: 17
+											</div>
+										  </div>
+										  <div class="nl-team-card-footer--right">
+											<div class="nl-team-card-result">
+											  <p>TOTAL:<span class="result">$69000</span></p>
+											  <p>AVAILABLE:<span class="result">$69000</span></p>
+											  <p>FP TOTAL:<span class="result">199.7</span></p>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="nl-team-field" style="background:none;" id="salary">
+							 <div class="col-12 ">
+								<div class="nl-team-info">
+									<div class="nl-team-data">
+										<div class="row">
+											<div class="col-3 col-lg-5 mt-4 text-center">
+												<p class="m-0"><a class="btn btn-primary" data-toggle="modal" data-target="#pro-confirmation">SELECT THIS TEAM</a></p>
+												 Total picks: 17
+											</div>
+											<div class="col-9 col-lg-7">
+												<div class="row">
+													<div class="col-7">SALARY CAP</div>
+													<div class="col-5"><span>$65000</span></div>
+													<div class="col-7">Available</div>
+													<div class="col-5"><span class="avalibe">$25000</span></div>
+													<div class="col-7">TOTAL SALARY</div>
+													<div class="col-5"><span>$46730</span></div>
+													<div class="col-7">PROJECTION</div>
+													<div class="col-5"><span class="avalibe">133</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							 </div>
+						   </div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="pro-vs">VS</div>
+
+				<div class="col-md-12 col-lg-6">
+					<div class="nl-section nl-create-team homepage-field">
+						<div class="row">
+							<div class="col-12 no-padding-mobile text-center mt-3">
+							    
+							    <img src="assets/img/about/person1.png" class="pro-avtar rounded-circle">
+								<h5>rgroswirt</h5>
+								<p><a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pro-confirmation">PICK TEAM</a></p>
+							</div>
+							<div class="col-12">
+								
+							<div class="nl-team-field soccer visible">
+								<div class="nl-team-field">
+								<div class="player-main-block ">
+								  <div data-position="GK" class="nl-player-block nl-GK-position">
+								  <img src="assets/img/worldcup/2.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/GK.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="DL" class="nl-player-block nl-DL-position">
+								  <img src="assets/img/worldcup/3.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/DL.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="DR" class="nl-player-block nl-DR-position">
+								  <img src="assets/img/worldcup/4.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/DR.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="FLEXL" class="nl-player-block nl-FLEXL-position">
+								  <img src="assets/img/worldcup/5.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/FLEXL.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="DM" class="nl-player-block nl-DM-position">
+								  <img src="assets/img/worldcup/2.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/DM.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="MM" class="nl-player-block nl-MM-position">
+								  <img src="assets/img/worldcup/7.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/MM.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="MR" class="nl-player-block nl-MR-position">
+								  <img src="assets/img/worldcup/8.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/MM.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="ML" class="nl-player-block nl-ML-position">
+								  <img src="assets/img/worldcup/10.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/ML.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="FLEXR" class="nl-player-block nl-FLEXR-position">
+								  <img src="assets/img/worldcup/1.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/FLEXR.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="AL" class="nl-player-block nl-AL-position">
+								  <img src="assets/img/worldcup/15.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/AL.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								  <div data-position="AR" class="nl-player-block nl-AR-position">
+								  <img src="assets/img/worldcup/20.png" alt="goalkeeper" class="flag-logo-soccer" data-toggle="tooltip" data-placement="top" title="Team Name">
+								  <img src="assets/img/soccer/AR.png" alt="goalkeeper">
+									<div class="nl-player-block--data">
+									  <p>gronkowski</p>
+									  <p class="data orange"><span>12.67</span> <span>$42000</span></p>
+									</div>
+								  </div>
+								</div>
+							  </div>
+								</div>
+							</div>
+							<div class="row mx-auto">
+								<div class="col-12 offset-0 col-lg-12">
+									<div class="nl-team-list nl-my-teams hide" id="sec2_list_view">
+										<div class="nl-card-wrapper">
+											<div class="row">
+												<div class="col-12 no-padding">
+													<div class="nl-team-card table-data-field">
+														<h5>team NLC2<br>
+														<small>SALARY CAP:$65000</small>
+														</h5>
+														
+														<div id="create-helmet" style="display: block;" class="final-helmet">
+															<div class="helmet-container">
+															<img id="helmet" src="assets/img/NHL/img-players-1.png" style="display: block;" class="helmet-img">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12 no-padding">
+													<table class="table table-striped nl-team-list-table homepage-field">
+														<thead>
+															<tr>
+																<th>POS</th>
+																<th></th>
+																<th class="name-list-view">NAME</th>
+																<th>Status</th>
+																<th>FP</th>
+																<th>SALARY</th>
+															   
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="pos">C</td>
+																<td class="indicated"><span class="played indicator"></span></td>
+																<td>Player name</td>
+																<td class="ACT">ACT</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+															<tr class="light-red">
+																<td class="pos">C</td>
+																<td class="indicated"><span class="not-playing indicator"></span></td>
+																<td>Player name</td>
+																<td class="Q">Q</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+															<tr>
+																<td class="pos">D</td>
+																<td class="indicated"><span class="playing indicator"></span></td>
+																<td>Player name</td>
+																<td class="BYE">BYE</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+															<tr>
+																<td class="pos">D</td>
+																<td></td>
+																<td>Player name</td>
+																<td class="L">L</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+															<tr>
+																<td class="pos">LW</td>
+																<td></td>
+																<td>Player name</td>
+																<td class="L">L</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+															<tr class="light-red">
+																<td class="pos">RW</td>
+																<td class="indicated"><span class="not-playing indicator"></span></td>
+																<td>Player name</td>
+																<td class="L">L</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+															<tr>
+																<td class="pos">G</td>
+																<td></td>
+																<td>Player name</td>
+																<td class="L">L</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+															<tr class="light-red">
+																<td class="pos">FLEX</td>
+																<td class="indicated"><span class="not-playing indicator"></span></td>
+																<td>Player name</td>
+																<td class="L">L</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+															<tr>
+																<td class="pos">FLEX</td>
+																<td></td>
+																<td>Player name</td>
+																<td class="L">L</td>
+																<td>30</td>
+																<td>$0</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="row">
+											  <div class="col-12 no-padding">
+												<div class="nl-team-card-footer">
+												<div class="nl-team-card-footer--left">
+													<div class="nl-team-card-btns">
+													  <a class="btn btn-primary btn-sm nl-m-b-14" data-toggle="modal" data-target="#pro-confirmation">SELECT THIS TEAM</a>
+													   Total picks: 17
+													</div>
+												  </div>
+												  <div class="nl-team-card-footer--right">
+													<div class="nl-team-card-result">
+													  <p>TOTAL:<span class="result">$69000</span></p>
+													  <p>AVAILABLE:<span class="result">$69000</span></p>
+													  <p>FP TOTAL:<span class="result">199.7</span></p>
+													</div>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="nl-team-field" style="background:none;" id="sec_salary">
+									 <div class="col-12 ">
+										<div class="nl-team-info">
+											<div class="nl-team-data">
+												
+											  <div class="row">
+                                                    <div class="col-3 col-lg-5 mt-4 text-center">
+                                                         <p class="m-0"><a class="btn btn-primary" data-toggle="modal" data-target="#pro-confirmation">SELECT THIS TEAM</a></p>
+														 Total picks: 17
+                                                    </div>
+                                                    <div class="col-9 col-lg-7">
+                                                        <div class="row">
+                                                            <div class="col-7">SALARY CAP</div>
+                                                            <div class="col-5"><span>$65000</span></div>
+                                                            <div class="col-7">Available</div>
+                                                            <div class="col-5"><span class="avalibe">$25000</span></div>
+                                                            <div class="col-7">TOTAL SALARY</div>
+                                                            <div class="col-5"><span>$46730</span></div>
+                                                            <div class="col-7">PROJECTION</div>
+                                                            <div class="col-5"><span class="avalibe">133</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+												
+											</div>
+										</div>
+									 </div>
+								   </div>
+									
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				  </div>
+				  
+				
+		         </div>
+		      </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer Block-->
+    <footer class="nl-footer">
+      <div class="nl-footer--button">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="nl-social-icon"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="btn btn-charity"><span>Charity<br>Projects</span></a></div>
+            <p><br />Copyright © 2017 No Limit Fantasy Sports, LLC All Rights Reserved Contest Rules, Terms and Conditions and Privacy Policy<br /></p>
+          </div>
+          <div class="col-lg-4 nl-tar">
+            <div class="input-group-btn"><a href="#" class="btn btn-footer">Helpdesk</a><a href="contact.html" class="btn btn-footer">Contact Us</a></div>
+            <div class="input-group-btn"><a href="faq.html" class="btn btn-footer">Faq</a><a href="terms_conditions.html" class="btn btn-footer">Terms & Conditions</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+	
+	<div class="modal fade" id="pro-confirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="row">
+			  <div class="exit-button"> 
+				<button type="button" data-dismiss="modal" class="close">×</button>
+			  </div>
+			</div>
+			<div class="modal-body">
+			<p>Are you sure you want to enter this team?</p>
+			<button type="button" class="btn btn-primary payout">Yes</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+	
+  </body>
+</html>
