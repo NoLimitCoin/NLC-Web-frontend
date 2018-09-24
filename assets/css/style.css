@@ -10,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    padding-right: 0 !important;
 }
 
 section {
@@ -3500,6 +3501,7 @@ fieldset[disabled] a.btn {
     color: #0f254f;
     background-color: #ffffff;
     border-color: #ffffff;
+	white-space: normal;
 }
 
     .btn-default:hover {
@@ -8424,6 +8426,8 @@ a.bg-inverse:hover {
         margin-top: 0.25rem !important;
     }
 
+
+
     .mr-sm-1 {
         margin-right: 0.25rem !important;
     }
@@ -10018,6 +10022,7 @@ a.bg-inverse:hover {
 
     .text-lg-center {
         text-align: center !important;
+
     }
 }
 
@@ -12152,6 +12157,7 @@ a.text-gray-dark:hover {
     content: "";
 }
 
+
 .fa-file-zip-o:before,
 .fa-file-archive-o:before {
     content: "";
@@ -13811,6 +13817,7 @@ p.playing {
     display: block;
 }
 
+
 main {
     position: relative;
 }
@@ -13974,6 +13981,11 @@ main {
 
 .nl-table-scroll-nba {
     max-height: 34.0625rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.nl-table-scroll-popup {
+    max-height: 10rem;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -14144,7 +14156,7 @@ h4 {
 
 h5 {
     font-size: 22px;
-    font-size: 1.375rem;
+    font-size: 1.075rem;
     line-height: 1.6875rem;
 }
 
@@ -14361,6 +14373,10 @@ p {
 .nl-header--slide .nl-slide-crypto {
     background: url(../img/nl-slide-crypto.jpg) bottom center no-repeat;
 }
+.nl-header--slide .nl-slide-baseball {
+    background: url(../img/slider-baseball.jpg) bottom center no-repeat;
+}
+
 
 @media (min-width: 1681px) {
     .nl-header--slide .nl-slide-5 {
@@ -18260,6 +18276,7 @@ p {
 }
 
 .homepage .player-image-inner .name {
+
     position: absolute;
     top: 4px;
     left: 49px;
@@ -18417,12 +18434,12 @@ p {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/*@media only screen and (min-width: 768px) and (max-width: 991px) {
     .homepage .upcoming-contests h5 {
         padding-left: 15px;
         padding-top: 30px;
     }
-}
+}*/
 
 .sports-options {
     margin-top: 10px;
@@ -19297,7 +19314,7 @@ td:nth-child(4).homepage-list-view {
     padding: 1.5rem 0.25rem;
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+/*@media only screen and (min-width: 1201px) and (max-width: 1366px) {
     .nl-section {
         padding: 5rem 0;
     }
@@ -19307,7 +19324,7 @@ td:nth-child(4).homepage-list-view {
     .nl-section {
         padding: 5rem 0;
     }
-}
+}*/
 
 @media (max-width: 991px) {
     .nl-section {
@@ -21572,7 +21589,7 @@ td:nth-child(4).homepage-list-view {
 }
 
 .nl-team-info {
-    background: #142d57;
+    background: #061540;
     color: #fff;
     font-size: 15px;
     font-size: 0.9375rem;
@@ -21583,6 +21600,7 @@ td:nth-child(4).homepage-list-view {
     max-width: 310px;
     margin-left: auto;
     margin-right: auto;
+	margin-top:10px;
 }
 
     .nl-team-info .nl-team-name {
@@ -22197,8 +22215,8 @@ td:nth-child(4).homepage-list-view {
     left:24%;
 }
 
-.nl-create-team .player-main-block.baseball .nl-SPM-position,
-.nl-live-score .player-main-block.baseball .nl-SPM-position {
+.nl-create-team .player-main-block.baseball .nl-SPL-position,
+.nl-live-score .player-main-block.baseball .nl-SPL-position {
     bottom: 32%;
     left: 42%;
 }
@@ -22214,10 +22232,10 @@ td:nth-child(4).homepage-list-view {
     left: 42%;
     bottom: 10.5%;
 }
-.nl-create-team .player-main-block.baseball .nl-SPL-position,
-.nl-live-score .player-main-block.baseball .nl-SPL-position {
-    bottom: 8%;
-    left: 11%;
+.nl-create-team .player-main-block.baseball .nl-SPM-position,
+.nl-live-score .player-main-block.baseball .nl-SPM-position {
+  	 bottom: 8%;
+    left: 11%; 
 }
 .nl-create-team .player-main-block.baseball .nl-UTIL-position,
 .nl-live-score .player-main-block.baseball .nl-UTIL-position {
@@ -23010,6 +23028,7 @@ td:nth-child(4).homepage-list-view {
             max-width: 15.5625rem;
             margin: 0 auto;
             display: block;
+
             border: 0.25rem solid #fff;
             border-radius: 0.25rem;
             margin-bottom: 0.9375rem;
@@ -23370,6 +23389,7 @@ td:nth-child(4).homepage-list-view {
 
 .nl-contests-table .tab-content {
     border-radius: .625rem;
+
     border-top-left-radius: 0;
     -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
@@ -24120,10 +24140,10 @@ td:nth-child(4).homepage-list-view {
     left: 20%;
 }
 
-.nl-enter-contests .player-main-block.baseball .nl-SPM-position,
-.nl-enter-contests .player-main-block.baseball .nl-SPM-position {
-   bottom: 39%;
-    left: 42%;
+.nl-enter-contests .player-main-block.baseball .nl-SPL-position,
+.nl-enter-contests .player-main-block.baseball .nl-SPL-position {
+	bottom:15%;
+    left: 14%;
 }
 
 .nl-enter-contests .player-main-block.baseball .nl-1B-position,
@@ -24137,10 +24157,10 @@ td:nth-child(4).homepage-list-view {
     left: 43%;
     bottom: 18.5%;
 }
-.nl-enter-contests .player-main-block.baseball .nl-SPL-position,
-.nl-enter-contests .player-main-block.baseball .nl-SPL-position {
-    bottom:15%;
-    left: 14%;
+.nl-enter-contests .player-main-block.baseball .nl-SPM-position,
+.nl-enter-contests .player-main-block.baseball .nl-SPM-position {
+    bottom: 39%;
+    left: 42%;
 }
 .nl-enter-contests .player-main-block.baseball .nl-UTIL-position,
 .nl-enter-contests .player-main-block.baseball .nl-UTIL-position {
@@ -26860,6 +26880,7 @@ p.ads {
 
 .nl-my-contests .pl-teams {
     margin-bottom: 0;
+
 }
 
 .nl-my-contests .pl-flag {
@@ -27894,12 +27915,14 @@ p.ads {
     background: url(../img/background-hockey.jpg) center center no-repeat fixed;
     background-size: cover;
 }
-
 .nl-section.crypto {
     background: url(../img/coin-background.png) center center no-repeat fixed;
     background-size: cover;
 }
-
+.nl-section.crypto, .nl-invite-bonus {
+    background: url(../img/coin-background.png) center center no-repeat fixed;
+    background-size: cover;
+}
 .nl-section.basketball, .edit-profile-wrapper.basketball {
     background: url(../img/basketball-background.jpg) center center no-repeat fixed;
     background-size: cover;
@@ -27992,6 +28015,7 @@ section.nl-section.nl-my-balances #divNLCPurchaseForm .block-body {
 
 @media (min-width: 1200px) {
     /*.nl-create-team-table .nl-coin-table tbody tr td:nth-child(2),
+
     .nl-create-team-table .nl-coin-table thead tr th:nth-child(2) {
         width: 7%;
         text-align: center;
@@ -28432,7 +28456,8 @@ div#nba-explained li, #crypto-explained li, #football-explained li, #soccer-expl
     }
 }
 
-div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explained a, #hockey-explained a {
+
+div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explained a, #hockey-explained a,#userloginpopup a {
     display: inline-block;
     width: fit-content;
     color: orange;
@@ -28988,4 +29013,475 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
 .news-header .season-stats span {
 	font-size:16px;
 	font-weight:700;
+}
+.nl-home--slide {
+	margin-top:7rem;
+	vertical-align:bottom;
+}
+.nl-home--slide img {
+	margin:0 auto;
+	min-height:300px;
+	max-height:320px;
+	width:auto;
+}
+.sport-icon img {
+	width:20px;
+}
+
+
+.table-pro .table-striped {
+    border-radius: .625rem;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    overflow: hidden;
+    margin-top: 1px;
+}
+.table-pro table {
+    max-height:50px;
+	overflow:scroll;
+}
+
+.nl-my-teams .table-pro tbody tr td,
+.nl-my-teams .table-pro thead tr th {
+	font-size:15px;
+}
+
+.nl-my-teams .table-pro tbody tr td:nth-child(1),
+.nl-my-teams .table-pro thead tr th:nth-child(1) {
+	text-align: left;
+	width:30%;
+	padding-left:1%;
+}
+
+.nl-my-teams .table-pro tbody tr td:nth-child(2),
+.nl-my-teams  .table-pro thead tr th:nth-child(2) {
+	width:15%;
+	text-align:center;
+	padding:10px 0px;
+}
+
+.nl-my-teams .table-pro tbody tr td:nth-child(3),
+.nl-my-teams .table-pro thead tr th:nth-child(3) {
+	width:15%;
+	text-align:center;
+	padding:10px 0px;
+}
+.nl-my-teams .table-pro tbody tr td:nth-child(4),
+.nl-my-teams .table-pro thead tr th:nth-child(4) {
+	width:20%;
+	padding:10px 0px;
+}
+.nl-my-teams .table-pro tbody tr td:nth-child(5),
+.nl-my-teams .table-pro thead tr th:nth-child(5) {
+	width:20%;
+	padding:10px 0px;
+}
+.pro .nl-team-info {
+    background: #061540;
+    color: #fff;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.pro .pro-avtar {
+	width:60px;
+}
+.pro .pro-set {
+	position:relative;
+}
+.pro .pro-vs {
+	position:absolute;
+	top:35%;
+	width:100%;
+	text-align:center;
+	font-size:80px;
+	font-weight:900;
+}
+.pro .pro-enter-btn {
+	margin-top:50%;
+	text-align:center;
+}
+.pro .nl-my-teams .nl-team-card-footer .nl-team-card-btns button {
+    font-weight: 600;
+    display: block;
+    min-width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+}
+.nl-contests-table .homepage-contest-leaderboards th:nth-child(1),
+.nl-contests-table .homepage-contest-leaderboards td:nth-child(1) {
+    width: 10% !important;
+    text-align: center;
+}
+
+.nl-contests-table .homepage-contest-leaderboards th:nth-child(2),
+.nl-contests-table .homepage-contest-leaderboards td:nth-child(2) {
+    width:50%;
+    text-align: left !important;
+}
+
+.nl-contests-table .homepage-contest-leaderboards th:nth-child(3),
+.nl-contests-table .homepage-contest-leaderboards td:nth-child(3) {
+    width:20%;
+    text-align: left !important;
+}
+
+.nl-contests-table .homepage-contest-leaderboards th:nth-child(4),
+.nl-contests-table .homepage-contest-leaderboards td:nth-child(4) {
+    width:20%;
+    text-align: left;
+}
+.nl-table-custom {
+    max-height: 16.0625rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.peer-peer .btn-primary{
+	font-size:20px;
+	min-width:300px;
+}
+.peer-player {
+	margin-top:20%;
+}
+.peer-bg {
+	background: url(../img/peer-bg.png) center center no-repeat;
+	min-height:600px;
+}
+@media (max-width: 992px) {
+	.pro .pro-vs {
+	position:inherit;
+	width:100%;
+	top:inherit;
+	font-size:60px;
+	padding-bottom:40px;
+}
+.pro .pro-enter-btn {
+	margin-top:0;
+	text-align:center;
+}
+.peer-bg {
+	background:none;
+	min-height:inherit;
+}
+}
+
+.table-pro .table-striped {
+    border-radius: .625rem;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    overflow: hidden;
+    margin-top: 1px;
+}
+.table-pro table {
+    max-height:50px;
+	overflow:scroll;
+}
+
+.nl-my-teams .table-pro tbody tr td,
+.nl-my-teams .table-pro thead tr th {
+	font-size:15px;
+}
+
+.nl-my-teams .table-pro tbody tr td:nth-child(1),
+.nl-my-teams .table-pro thead tr th:nth-child(1) {
+	text-align: left;
+	width:30%;
+	padding-left:1%;
+}
+
+.nl-my-teams .table-pro tbody tr td:nth-child(2),
+.nl-my-teams  .table-pro thead tr th:nth-child(2) {
+	width:15%;
+	text-align:center;
+	padding:10px 0px;
+}
+
+.nl-my-teams .table-pro tbody tr td:nth-child(3),
+.nl-my-teams .table-pro thead tr th:nth-child(3) {
+	width:15%;
+	text-align:center;
+	padding:10px 0px;
+}
+.nl-my-teams .table-pro tbody tr td:nth-child(4),
+.nl-my-teams .table-pro thead tr th:nth-child(4) {
+	width:20%;
+	padding:10px 0px;
+}
+.nl-my-teams .table-pro tbody tr td:nth-child(5),
+.nl-my-teams .table-pro thead tr th:nth-child(5) {
+	width:20%;
+	padding:10px 0px;
+}
+.pro .nl-team-info {
+    background: #061540;
+    color: #fff;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.pro .pro-avtar {
+	width:60px;
+}
+.pro .pro-set {
+	position:relative;
+}
+.pro .pro-vs {
+	position:absolute;
+	top:35%;
+	width:100%;
+	text-align:center;
+	font-size:80px;
+	font-weight:900;
+	height: 0;
+}
+.pro .pro-enter-btn {
+	margin-top:50%;
+	text-align:center;
+}
+.pro .nl-my-teams .nl-team-card-footer .nl-team-card-btns button {
+    font-weight: 600;
+    display: block;
+    min-width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+}
+.peer-peer .btn-primary{
+	font-size:20px;
+	min-width:300px;
+}
+.peer-checkbox .custom-control {
+     margin-right:5px; 
+}
+.peer-radio .custom-control-indicator {
+     border:solid 3px #ff9f2f;
+	 width:2em;
+	 height:2em;
+}
+.peer-checkbox .custom-control-indicator {
+     border:solid 2px #ff9f2f;
+	 width:1.6em;
+	 height:1.6em;
+}
+
+#newsSource {
+	opacity: 0.5;
+}
+.popover{
+	width:480px !important;
+    max-width:600px !important;
+}
+@media (max-width: 992px) {
+	.pro .pro-vs {
+	position:inherit;
+	width:100%;
+	top:inherit;
+	font-size:60px;
+	padding-bottom:40px;
+}
+.pro .pro-enter-btn {
+	margin-top:0;
+	text-align:center;
+}
+.popover{
+	width:220px !important;
+}
+}
+.twitter-typeahead {
+	width:100%;
+}
+.col-auto {
+	margin-bottom:0px;
+}
+.typeahead,
+.tt-query,
+.tt-hint {
+	width:100%;
+	height:34px;
+	padding:10px 13px;
+	line-height:18px;
+	outline: none;
+	font-size: 14px;
+	color:#9f9f9f;
+	font-weight:400;
+	margin-bottom:0px;
+}
+.typeahead {
+	background-color: none;
+}
+.tt-query {
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.tt-hint {
+	color: #999;
+}
+.tt-dropdown-menu {
+	width:100%;
+	padding: 5px 0;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius:3px;
+	margin-top:-20px;
+}
+.tt-suggestion {
+	padding: 3px 17px;
+	font-size:14px;
+	line-height: 24px;
+	font-weight:400;
+}
+.tt-suggestion.tt-cursor {
+	color: #fff;
+	background-color: #e89608;
+}
+.tt-suggestion p {
+	margin: 0;
+}
+
+.nl-contests-table-pro th:nth-child(1),
+.nl-contests-table-pro td:nth-child(1) {
+    width: 7%;
+}
+.nl-contests-table-pro th:nth-child(2),
+.nl-contests-table-pro td:nth-child(2) {
+    width:10%;
+}
+
+.nl-contests-table-pro th:nth-child(3),
+.nl-contests-table-pro td:nth-child(3) {
+    width:10%;
+}
+
+.nl-contests-table-pro th:nth-child(4),
+.nl-contests-table-pro td:nth-child(4) {
+    width:10%;
+}
+
+.nl-contests-table-pro th:nth-child(5),
+.nl-contests-table-pro td:nth-child(5) {
+    width: 12%;
+}
+
+.nl-contests-table-pro th:nth-child(6),
+.nl-contests-table-pro td:nth-child(6) {
+    width:12%;
+}
+
+.nl-contests-table-pro th:nth-child(7),
+.nl-contests-table-pro td:nth-child(7) {
+    width: 12%;
+}
+
+.nl-contests-table-pro th:nth-child(8),
+.nl-contests-table-pro td:nth-child(8) {
+    width:9%;
+}
+.nl-contests-table-pro th:nth-child(9),
+.nl-contests-table-pro td:nth-child(9) {
+    width:9%;
+}
+.nl-contests-table-pro th:nth-child(10),
+.nl-contests-table-pro td:nth-child(10) {
+    width:9%;
+}
+.peer-scroll {
+	max-height:390px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	font-size:14px;
+}
+.peer-scroll p {
+	margin-bottom:0px;
+}
+.head-team h6 {
+	font-size:14px;
+	font-weight:700;
+	text-transform:uppercase;
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.game-inline {
+	margin-bottom:15px;
+}
+.game-inline .nl-time-block {
+    background: #eb9a0d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+    background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0.2125rem 0;
+}
+.nl-time-block .countdown_row {
+    display: inline-flex;
+}
+.game-inline .nl-time-block .countdown_section {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+	font-size: 0.55rem;
+	line-height: 12px;
+	padding:0px 12px;
+}
+.game-inline .nl-time-block .countdown_section  span {
+	display: block;
+	font-size:17px;
+	font-size: 1rem;
+	color: #fff;
+	line-height: 14px;
+}
+.soccer .flag-logo-soccer {
+    position: absolute;
+    bottom:40px;
+    left: 30px;
+	max-width:20px !important;
+
+}
+.baseball .flag-logo-mlb {
+    position: absolute;
+    bottom:32px;
+    left: 33px;
+	max-width:15px !important;
+}
+.baseball .flag-logo-nba {
+    position: absolute;
+    bottom:32px;
+    left: 33px;
+	max-width:15px !important;
+}
+.basketball .flag-logo-nba {
+    position: absolute;
+    bottom:32px;
+    left: 30px;
+	max-width:24px !important;
+}
+.hockey .flag-logo-nhl {
+    position: absolute;
+    bottom:28px;
+    left: 30px;
+	max-width:20px !important;
 }
