@@ -92,155 +92,139 @@
 </header>
 <main>
   <section class="nl-section nl-my-balances">
-    <div class="container nl-my-balances-wrapper">
-      <div class="row">
-        <div class="col-12">
-          <h2>BUY NO LIMIT COIN</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4 offset-lg-2">
-          <div class="quote-wrapper">
-            <p>NLC2 - BTC:<span class="value">0.00001936</span></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="quote-wrapper">
-            <p>NLC2 - USD :<span class="value">N/A</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="row center-div">
-        <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
-        <div class="col-10 col-sm-8 col-md-6 col-lg-6 col-xl-6">
-          <div id="editProfileSection" tabindex="-1" role="dialog" aria-labelledby="editProfileSectionLabel" aria-hidden="true">
-            <div role="document" class="block-dialog">
-              <div class="block-content">
-                <div class="block-body">
-                  <input type="hidden" name="NLCPaymentType" id="NLCPaymentType" value="1">
-                  <label>Select method of payment </label>
-				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody><tr>
-					<td width="3%" valign="top">
-					<input type="radio" value="1" class="clsPayType" id="radBitcoin" name="package" data-display="BTC ฿">
-					</td>
-					<td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
-					<img src="assets/img/bitcoin-icon.png">
-					</td>
-					<td width="6%"></td>
-					<td width="3%" valign="top"><input type="radio" id="radVisaMC" value="3" class="clsPayType" name="package" data-display="USD $"></td>
-					<td width="10%" valign="top" style="padding-top:7px; padding-left:5px;">
-					<img src="assets/img/visa-mc.png">
-					<!--<br>
-					<a href="#"><div class="btn btn-primary btn-sm">Add Cards</div></a>-->
-					 </td>
-					<td width="5%"></td>
-					<td width="3%" valign="top"><input type="radio" value="2" class="clsPayType" id="radAlipay" name="package" data-display="RMB ¥"></td>
-					<td width="13%" valign="top" style="padding-top:5px; padding-left:5px;">
-					<img src="assets/img/alipay.png">
-					<!--<br>
-					<a href="#"><div class="btn btn-primary btn-sm">Add ID</div></a>-->
-					</td>
-					</tr>
-					</tbody></table>
-					<h6>PRICES BASED ON EXCHANGE PRICE LADDER</h6>
-					<div class="ladder">
-					<div class="table-responsive">
-						
-					<table class="table table-striped">
-					<thead>
-					  <tr>
-						<th>Price (BTC)</th>
-						<th>Amount (NLC2)</th>
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr>
-						<td> 0.00000863</td>
-						<td> 2507.51101112 </td>
-					  </tr>
-					   <tr>
-						<td> 0.00000863</td>
-						<td> 2507.51101112 </td>
-					  </tr>
-					   <tr>
-						<td> 0.00000863</td>
-						<td> 2507.51101112 </td>
-					  </tr>
-					   <tr>
-						<td> 0.00000863</td>
-						<td> 2507.51101112 </td>
-					  </tr>
-					   <tr>
-						<td> 0.00000863</td>
-						<td> 2507.51101112 </td>
-					  </tr>
-					   <tr>
-						<td> 0.00000863</td>
-						<td> 2507.51101112 </td>
-					  </tr>
-					   <tr>
-						<td> 0.00000863</td>
-						<td> 2507.51101112 </td>
-					  </tr>
-					   <tr>
-						<td> 0.00000863</td>
-						<td> 2507.51101112 </td>
-					  </tr>
-					</tbody>
-				  </table>
-				  </div>
-				  </div>
-					
-                  <!--<table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tbody>
-                      <tr>
-                        <td width="3%" valign="top"><input type="radio" value="1" class="clsPayType" id="radBitcoin" name="package">
-                        </td>
-                        <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;"><img src="assets/img/bitcoin-icon.png"> </td>
-                        <td width="6%"></td>
-                        <td width="3%" valign="top"><input type="radio" value="2" class="clsPayType" id="radAlipay" name="package"></td>
-                        <td width="13%" valign="top" style="padding-top:5px; padding-left:5px;"><img src="assets/img/alipay.png"></td>
-                        <td width="5%"></td>
-                        <td width="3%" valign="top"><input type="radio" id="radVisaMC" disabled="disabled"></td>
-                        <td width="10%" valign="top" style="padding-top:7px; padding-left:5px;"><img src="assets/img/visa-mc.png"><br><span class="small">Visa/MC process in maintenance will he back shortly</span></td>
-                      </tr>
-                    </tbody>
-                  </table>-->
-                  <label>Enter quantity of No Limit Coin to Purchase</label>
-                  <div class="input-group">
-                    <div class="row">
-                      <div class="col-2 top-p"> NLC2 </div>
-                      <div class="col-10">
-                        <input autocomplete="off" class="form-control" id="NLCQty" name="NLCQty" onKeyPress="return isNumber(event)" required="required" type="text" value="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="input-group">
-                    <p><strong>Please Pay : $500</strong></p>
-                    <div class="block-footer">
-                      <button id="btnPurchase" type="button" class="btn btn-primary btn-block">Purchase</button>
-                    </div>
-                    <label>Coming Soon as payment methods to purchase NLC2</label>
-                    <table width="100%" border="0" cellspacing="0" cellpadding="5">
-                      <tbody>
-                        <tr>
-                          <td width="30%"><img src="assets/img/litecoin_logo.png"></td>
-                          <td width="40%"><img src="assets/img/bitcoin_cash.png"></td>
-                          <td width="30%"><img src="assets/img/eth.png"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+    <div id="divNLCPurchaseForm" class="container nl-my-balances-wrapper">
+<form action="/Baseball/Member/NlcPurchase" method="post">
+<div class="row">
+                <div class="col-12">
+                    <h2>BUY NO LIMIT COIN</h2>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 offset-lg-2">
+
+                    <div class="quote-wrapper">
+                        <p id="lblnlctobtc" style="display: block;">NLC2 - BTC:<span class="value">0.00000422</span></p>
+                        <p id="lblnlctoltc" style="display:none">NLC2 - LTC:<span class="value">0.0004885</span></p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+
+                    <div class="quote-wrapper">
+                        <p>NLC2 - USD :<span class="value">0.02716</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row center-div">
+                <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
+                <div class="col-10 col-sm-8 col-md-6 col-lg-6 col-xl-6">
+                    <div id="editProfileSection" tabindex="-1" role="dialog" aria-labelledby="editProfileSectionLabel" aria-hidden="true">
+                        <div role="document" class="block-dialog">
+                            <div class="block-content">
+                                <div class="block-body">
+                                    <label>Select method of payment </label>
+									
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody><tr>
+                                            <td width="3%" valign="top">
+                                                <input type="radio" value="1" class="clsPayType" id="radBitcoin" name="package" data-display="BTC">
+                                            </td>
+                                            <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                <img src="assets/img/btc.png" style="width: 320%;" class="mt-2">
+                                            </td>
+                                            <td width="7%"></td>
+                                            <td width="3%" valign="top">
+                                                <input type="radio" value="4" class="clsPayType" id="radltccoin" name="package" data-display="LTC">
+                                            </td>
+                                            <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                <img src="assets/img/ltc.png" style="width: 320%;"  class="mt-2">
+                                            </td>
+                                            <td width="7%"></td>
+                                                <td width="3%" valign="top"><input type="radio" id="radVisaMC" value="3" class="clsPayType" name="package" data-display="USD $"></td>
+                                                <td width="10%" valign="top" style="padding-top:7px; padding-left:5px;">
+                                                    <img src="assets/img/visa-mc.png"  class="mt-1">
+                                                    
+                                                </td>
+                                            <td width="5%"></td>
+                                                <td width="3%" valign="top"><input type="radio" value="2" class="clsPayType" id="radAlipay" name="package" data-display="RMB ¥"></td>
+                                                <td width="13%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                    <img src="assets/img/alipay.png"  class="mt-2">
+                                                    
+                                                </td>
+                                            <td width="5%"></td>
+                                                <td width="3%" valign="top"><input type="radio" id="radGiftCard" value="5" class="clsPayType" name="package" data-display="USD $"></td>
+                                                <td width="13%" valign="top" style="padding-top:7px; padding-left:5px;">
+                                                    <img src="assets/img/gift-card.png" class="mt-1">
+                                                </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <label>Enter quantity of NoLimitCoin to Purchase</label>
+                                    <div class="input-group">
+                                        <div class="row">
+                                            <div class="col-2 top-p">
+                                                NLC2
+                                            </div>
+                                            <div class="col-10">
+                                                <input autocomplete="off" class="form-control" id="NLCQty" maxlength="10" name="NLCQty" onkeypress="return isNumber(event)" required="required" type="text" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <h6>Live order book (cryptopia)</h6>
+                                        <div class="ladder">
+                                            <div class="table-responsive">
+                                                <table id="Cryptopia_tbl" class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Price (BTC)</th>
+                                                            <th>Amount (NLC2)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody><tr><td>0.00000384</td><td>734.83318052</td></tr><tr><td>0.00000387</td><td>167.95798156</td></tr><tr><td>0.00000388</td><td>5,283.33098269</td></tr></tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                      
+										<p class="mb-1"><strong>Average for this purchase : </strong>27.32 USD $</p>
+										<p class="mb-1"><strong>Average price per coin : </strong>0.00000384</p>
+										<p class="mb-1"><strong>Transaction fees 10% : </strong>2.47 USD $</p>
+                                        <p><strong>Total amount to pay : </strong>27.32 USD $</p>
+
+                                        <div class="block-footer">
+                                            <button id="btnPurchase" type="button" class="btn btn-primary btn-block" onclick="fnPurchaseClick()">Purchase</button>
+                                        </div>
+                                        <div id="divPayNotify1" class="clsPayNotify hide" style="text-align: center; font-weight: bolder; display: none;">
+                                            <p> To purchase more, contact <a class="pointer" style="color:#e98f0b;" href="mailto:support@cryptofantasysports.com"> support@cryptofantasysports.com </a></p>
+                                        </div>
+                                        <div id="divPayNotify2" class="clsPayNotify hide" style="text-align: center; font-weight: bolder; display: none;">
+                                            <p class="text-left">Maximum 1 purchase per day with a minimum of 100 NLC2 per purchase. In total a user is allowed to purchase 5000 NLC2 per week.</p>
+                                            <p> To purchase more, contact <a class="pointer" style="color:#e98f0b;" href="javascript:void(0)"> 18665304295 on WeChat </a></p>
+
+                                            
+                                        </div>
+                                        <div id="divPayNotify3" class="clsPayNotify hide" style="text-align: center; font-weight: bolder; display: block;">
+                                            <p class="text-left"> Maximum 1 purchase per day with a minimum of $1 per purchase. In total a user is allowed to purchase $1000 worth of NLC2 per week.</p>
+                                            <p class="text-left"> To purchase more, contact <a class="pointer" style="color:#e98f0b;" href="mailto:support@cryptofantasysports.com"> support@cryptofantasysports.com </a></p>
+                                        </div>
+                                        <label>Coming Soon as payment methods to purchase NLC2</label>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                                            <tbody><tr>
+                                                
+                                                <td width="40%"><img src="assets/img/bitcoin_cash.png"></td>
+                                                <td width="30%"><img src="assets/img/eth.png"></td>
+                                            </tr>
+                                        </tbody></table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
+                </div>
+            </div>
+</form>    </div>
+</section>
 </main>
 <!--include _partials/login-modal.jade-->
 <!--include _partials/registration-modal.jade-->
