@@ -2203,8 +2203,14 @@
                         <input type="password" placeholder="PASSWORD" aria-describedby="show" class="form-control">
                       </div>
 					  
-					  <div class="form-group">
+					  <!--<div class="form-group">
                        Captcha Code
+                      </div>-->
+					  
+					  <div class="form-group d-flex">
+                        <img id="m_imgCaptcha" alt="Click to Change image" src="assets/img/capcha.png" style="width: 200px;height:38px;">
+                        <a href="javascript:void(0)" onclick="loadCaptcha()" class="btn btn-sm btn-primary mt-2"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                        <input class="form-control" id="CaptchaImagetext" autocomplete="off" name="CaptchaImagetext" placeholder="Enter the text" type="text" value="">
                       </div>
 					  
 					  <div class="row">
