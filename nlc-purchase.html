@@ -114,50 +114,118 @@
                         <p>NLC2 - USD :<span class="value">0.02716</span></p>
                     </div>
                 </div>
+				
             </div>
-            <div class="row center-div">
-                <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
-                <div class="col-10 col-sm-8 col-md-6 col-lg-6 col-xl-6">
+			
+            <div class="row justify-content-md-center">
+                <!--<div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>-->
+                <div class="col-md-10 col-lg-6 col-xl-6">
                     <div id="editProfileSection" tabindex="-1" role="dialog" aria-labelledby="editProfileSectionLabel" aria-hidden="true">
                         <div role="document" class="block-dialog">
                             <div class="block-content">
                                 <div class="block-body">
                                     <label>Select method of payment </label>
 									
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                        <tbody><tr>
-                                            <td width="3%" valign="top">
-                                                <input type="radio" value="1" class="clsPayType" id="radBitcoin" name="package" data-display="BTC">
-                                            </td>
-                                            <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
-                                                <img src="assets/img/btc.png" style="width: 320%;" class="mt-2">
-                                            </td>
-                                            <td width="7%"></td>
-                                            <td width="3%" valign="top">
-                                                <input type="radio" value="4" class="clsPayType" id="radltccoin" name="package" data-display="LTC">
-                                            </td>
-                                            <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
-                                                <img src="assets/img/ltc.png" style="width: 320%;"  class="mt-2">
-                                            </td>
-                                            <td width="7%"></td>
-                                                <td width="3%" valign="top"><input type="radio" id="radVisaMC" value="3" class="clsPayType" name="package" data-display="USD $"></td>
-                                                <td width="10%" valign="top" style="padding-top:7px; padding-left:5px;">
-                                                    <img src="assets/img/visa-mc.png"  class="mt-1">
+									<div class="row">
+									 <div class="col-md-6">
+									  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td width="3%" valign="top">
+                                                    <input type="radio" value="1" class="clsPayType" id="radBitcoin" name="package" data-display="BTC">
+                                                </td>
+                                                <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                    <img src="assets/img/btc.png" style="width: 320%;" class="card-space">
+                                                </td>
+                                                <td width="7%"></td>
+                                                <td width="3%" valign="top">
+                                                    <input type="radio" value="4" class="clsPayType" id="radltccoin" name="package" data-display="LTC">
+                                                </td>
+                                                <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                    <img src="assets/img/ltc.png" style="width: 320%;" class="card-space">
+                                                </td>
+                                                <td width="7%"></td>
+                                                
+                                                    <td width="3%" valign="top"><input type="radio" id="radVisaMC" value="3" cardtype="mastercard" class="clsPayType" name="package" data-display="USD $"></td>
+                                                    <td width="10%" valign="top" style="padding-top:7px; padding-left:5px;">
+                                                        <img src="assets/img/mastercard.png" class="card-space">
+                                                    </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+									 </div>
+									 <div class="col-md-6">
+									  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                
+                                                
                                                     
+                                                    <td width="3%" valign="top"><input type="radio" id="radVisaMC" value="3" cardtype="visacard" class="clsPayType" name="package" data-display="USD $"></td>
+                                                    <td width="7%" valign="top" style="padding-top:7px; padding-left:5px;">
+                                                        <img src="assets/img/visa.png" class="card-space">
+                                                    </td>
+                                                <td width="4%"></td>
+
+
+                                                    <td width="3%" valign="top"><input type="radio" value="2" class="clsPayType" id="radAlipay" name="package" data-display="RMB ¥"></td>
+                                                    <td width="10%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                        <img src="assets/img/alipay.png" class="card-space">
+                                                    </td>
+                                                <td width="4%"></td>
+                                                    <td width="3%" valign="top"><input type="radio" id="radGiftCard" value="5" class="clsPayType" name="package" data-display="USD $"></td>
+                                                    <td width="9%" valign="top" style="padding-top:7px; padding-left:5px;">
+                                                        <img src="assets/img/GiftPay.png" class="card-space">
+                                                    </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+									 </div>
+									</div>
+									
+									<!--<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td width="3%" valign="top">
+                                                    <input type="radio" value="1" class="clsPayType" id="radBitcoin" name="package" data-display="BTC">
                                                 </td>
-                                            <td width="5%"></td>
-                                                <td width="3%" valign="top"><input type="radio" value="2" class="clsPayType" id="radAlipay" name="package" data-display="RMB ¥"></td>
-                                                <td width="13%" valign="top" style="padding-top:5px; padding-left:5px;">
-                                                    <img src="assets/img/alipay.png"  class="mt-2">
-                                                    
+                                                <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                    <img src="assets/img/btc.png" style="width: 320%;" class="mt-2">
                                                 </td>
-                                            <td width="5%"></td>
-                                                <td width="3%" valign="top"><input type="radio" id="radGiftCard" value="5" class="clsPayType" name="package" data-display="USD $"></td>
-                                                <td width="13%" valign="top" style="padding-top:7px; padding-left:5px;">
-                                                    <img src="assets/img/gift-card.png" class="mt-1">
+                                                <td width="7%"></td>
+                                                <td width="3%" valign="top">
+                                                    <input type="radio" value="4" class="clsPayType" id="radltccoin" name="package" data-display="LTC">
                                                 </td>
-                                        </tr>
-                                    </tbody></table>
+                                                <td width="4%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                    <img src="assets/img/ltc.png" style="width: 320%;" class="mt-2">
+                                                </td>
+                                                <td width="7%"></td>
+                                                
+                                                    <td width="3%" valign="top"><input type="radio" id="radVisaMC" value="3" cardtype="mastercard" class="clsPayType" name="package" data-display="USD $"></td>
+                                                    <td width="10%" valign="top" style="padding-top:7px; padding-left:5px;">
+                                                        <img src="assets/img/Master-Card.png" class="mt-1">
+                                                    </td>
+                                                <td width="5%"></td>
+                                                    <td width="3%" valign="top"><input type="radio" id="radVisaMC" value="3" cardtype="visacard" class="clsPayType" name="package" data-display="USD $"></td>
+                                                    <td width="10%" valign="top" style="padding-top:7px; padding-left:5px;">
+                                                        <img src="assets/img/Visa-Card.png" class="mt-1">
+                                                    </td>
+                                                <td width="5%"></td>
+
+
+                                                    <td width="3%" valign="top"><input type="radio" value="2" class="clsPayType" id="radAlipay" name="package" data-display="RMB ¥"></td>
+                                                    <td width="13%" valign="top" style="padding-top:5px; padding-left:5px;">
+                                                        <img src="assets/img/alipay.png" class="mt-2">
+                                                    </td>
+                                                <td width="5%"></td>
+                                                    <td width="3%" valign="top"><input type="radio" id="radGiftCard" value="5" class="clsPayType" name="package" data-display="USD $"></td>
+                                                    <td width="13%" valign="top" style="padding-top:7px; padding-left:5px;">
+                                                        <img src="assets/img/GiftPay.png" class="mt-1">
+                                                    </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>-->
                                     <label>Enter quantity of NoLimitCoin to Purchase</label>
                                     <div class="input-group">
                                         <div class="row">
@@ -165,7 +233,7 @@
                                                 NLC2
                                             </div>
                                             <div class="col-10">
-                                                <input autocomplete="off" class="form-control" id="NLCQty" maxlength="10" name="NLCQty" onkeypress="return isNumber(event)" required="required" type="text" value="">
+                                                <input autocomplete="off" class="form-control" id="NLCQty" maxlength="10" name="NLCQty" onKeyPress="return isNumber(event)" required="required" type="text" value="">
                                             </div>
                                         </div>
                                     </div>
@@ -191,7 +259,7 @@
                                         <p><strong>Total amount to pay : </strong>27.32 USD $</p>
 
                                         <div class="block-footer">
-                                            <button id="btnPurchase" type="button" class="btn btn-primary btn-block" onclick="fnPurchaseClick()">Purchase</button>
+                                            <button id="btnPurchase" type="button" class="btn btn-primary btn-block" onClick="fnPurchaseClick()">Purchase</button>
                                         </div>
                                         <div id="divPayNotify1" class="clsPayNotify hide" style="text-align: center; font-weight: bolder; display: none;">
                                             <p> To purchase more, contact <a class="pointer" style="color:#e98f0b;" href="mailto:support@cryptofantasysports.com"> support@cryptofantasysports.com </a></p>
@@ -220,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
+                    <!--<div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>-->
                 </div>
             </div>
 </form>    </div>
