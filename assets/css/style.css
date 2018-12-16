@@ -825,6 +825,7 @@ pre {
 
 .news-header img {
     margin-right: 1rem;
+    max-width: 70px;
 }
 
 .news-table tr td {
@@ -3457,7 +3458,7 @@ select.form-control-lg:not([size]):not([multiple]) {
     color: #fff;
     border: 2px solid #ffffff;
     background: transparent;
-    padding: 0.475rem 0.925rem;
+    padding: 0.475rem 0.425rem;
     font-size: 0.9375rem;
     border-radius: 0.625rem;
     -webkit-transition: all 0.2s ease-in-out;
@@ -3501,7 +3502,7 @@ fieldset[disabled] a.btn {
     color: #0f254f;
     background-color: #ffffff;
     border-color: #ffffff;
-	white-space: normal;
+    white-space: normal;
 }
 
     .btn-default:hover {
@@ -5926,7 +5927,7 @@ button.close {
 }
 
 .modal-open {
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .modal {
@@ -10022,7 +10023,6 @@ a.bg-inverse:hover {
 
     .text-lg-center {
         text-align: center !important;
-
     }
 }
 
@@ -13672,7 +13672,7 @@ p.playing {
 }
 
 .nl-m-r-15 {
-    margin-right: 0.9375rem;
+    margin-right: 0.3375rem;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -13984,6 +13984,13 @@ main {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+.nl-table-scroll-ls-contestinfo {
+    max-height: 25.0625rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .nl-table-scroll-popup {
     max-height: 10rem;
     overflow-x: hidden;
@@ -14225,7 +14232,7 @@ p {
 }
 
     .nl-header .buttons-index {
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .nl-header .owl-carousel,
@@ -14373,6 +14380,7 @@ p {
 .nl-header--slide .nl-slide-crypto {
     background: url(../img/nl-slide-crypto.jpg) bottom center no-repeat;
 }
+
 .nl-header--slide .nl-slide-baseball {
     background: url(../img/slider-baseball.jpg) bottom center no-repeat;
 }
@@ -14863,9 +14871,9 @@ p {
     .nl-header-log .nl-balance--data .data {
         font-weight: 300;
         font-size: 8.8px;
-        font-size: 0.6rem;
+        font-size: 0.90rem;
         /* padding-top: 0.3125rem; */
-        line-height: 0.8rem;
+        line-height: 0.9rem;
         font-style: italic;
     }
 
@@ -18276,7 +18284,6 @@ p {
 }
 
 .homepage .player-image-inner .name {
-
     position: absolute;
     top: 4px;
     left: 49px;
@@ -19267,19 +19274,19 @@ td:nth-child(4).homepage-list-view {
 }
 
 .homepage-contest-content td:nth-child(4) {
-    width: 8% !important;
-}
-
-.homepage-contest-content td:nth-child(5) {
     width: 10% !important;
 }
 
+.homepage-contest-content td:nth-child(5) {
+    width: 9% !important;
+}
+
 .homepage-contest-content td:nth-child(6) {
-    width: 12.5% !important;
+    width: 11% !important;
 }
 
 .homepage-contest-content td:nth-child(7) {
-    width: 12.5% !important;
+    width: 11% !important;
 }
 
 .homepage-contest-content th:nth-child(1) {
@@ -19295,19 +19302,19 @@ td:nth-child(4).homepage-list-view {
 }
 
 .homepage-contest-content th:nth-child(4) {
-    width: 8% !important;
-}
-
-.homepage-contest-content th:nth-child(5) {
     width: 10% !important;
 }
 
+.homepage-contest-content th:nth-child(5) {
+    width: 9% !important;
+}
+
 .homepage-contest-content th:nth-child(6) {
-    width: 12.5% !important;
+    width: 9% !important;
 }
 
 .homepage-contest-content th:nth-child(7) {
-    width: 12.5% !important;
+    width: 11% !important;
 }
 
 .nl-section {
@@ -19716,11 +19723,11 @@ td:nth-child(4).homepage-list-view {
     color: #061540;
 }
 
-    .nl-learn #accordion {
+    .nl-learn .clsaccordioncollapse {
         color: #0d3663;
     }
 
-        .nl-learn #accordion h5 a {
+        .nl-learn .clsaccordioncollapse h5 a {
             position: relative;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -19733,7 +19740,7 @@ td:nth-child(4).homepage-list-view {
             margin-bottom: 1.5625rem;
         }
 
-            .nl-learn #accordion h5 a:before {
+            .nl-learn .clsaccordioncollapse h5 a:before {
                 display: inline-block;
                 content: '+';
                 font-size: 36px;
@@ -19754,11 +19761,11 @@ td:nth-child(4).homepage-list-view {
                 left: 0;
             }
 
-            .nl-learn #accordion h5 a:not(.collapsed):before {
+            .nl-learn .clsaccordioncollapse h5 a:not(.collapsed):before {
                 content: '-';
             }
 
-        .nl-learn #accordion .card-block {
+        .nl-learn .clsaccordioncollapse .card-block {
             font-size: 18px;
             font-size: 1.125rem;
             line-height: 1.4375rem;
@@ -19767,18 +19774,18 @@ td:nth-child(4).homepage-list-view {
         }
 
 @media (max-width: 991px) {
-    .nl-learn #accordion .card-block {
+    .nl-learn .clsaccordioncollapse .card-block {
         padding-left: 0;
     }
 }
 
-.nl-learn #accordion .card-block a {
+.nl-learn .clsaccordioncollapse .card-block a {
     color: #ff9f2f;
     -webkit-transition: all .3s;
     transition: all .3s;
 }
 
-    .nl-learn #accordion .card-block a:hover {
+    .nl-learn .clsaccordioncollapse .card-block a:hover {
         color: #c7710c;
     }
 
@@ -19798,10 +19805,10 @@ td:nth-child(4).homepage-list-view {
     }
 }
 /*changes made*/
-/*.nl-players .nl-mob-table #accordion a .row:after {
+/*.nl-players .nl-mob-table .clsaccordioncollapse a .row:after {
   right: 2.5rem; }*/
 
-.nl-players .nl-mob-table #accordion a .row:after {
+.nl-players .nl-mob-table .clsaccordioncollapse a .row:after {
     right: 3.5rem;
 }
 
@@ -19963,64 +19970,64 @@ td:nth-child(4).homepage-list-view {
     .nl-players .nl-desc-table tbody tr td:nth-child(1),
     .nl-players .nl-desc-table thead tr th:nth-child(1) {
         text-align: left;
-        width: 18%;
+        width: 20%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(2),
     .nl-players .nl-desc-table thead tr th:nth-child(2) {
-        width: 8%;
+        width: 9%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(3),
     .nl-players .nl-desc-table thead tr th:nth-child(3) {
-        width: 6%;
+        width: 7%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(4),
     .nl-players .nl-desc-table thead tr th:nth-child(4) {
-        width: 6%;
+        width: 7%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(5),
     .nl-players .nl-desc-table thead tr th:nth-child(5) {
-        width: 5%;
+        width: 6%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(6),
     .nl-players .nl-desc-table thead tr th:nth-child(6) {
-        width: 6%;
+        width: 7%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(7),
     .nl-players .nl-desc-table thead tr th:nth-child(7) {
-        width: 5%;
+        width: 6%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(8),
     .nl-players .nl-desc-table thead tr th:nth-child(8) {
-        width: 5%;
+        width: 12%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(9),
     .nl-players .nl-desc-table thead tr th:nth-child(9) {
-        width: 12%;
+        width: 8%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(10),
     .nl-players .nl-desc-table thead tr th:nth-child(10) {
-        width: 5%;
+        width: 12%;
     }
 
     .nl-players .nl-desc-table tbody tr td:nth-child(11),
     .nl-players .nl-desc-table thead tr th:nth-child(11) {
-        width: 12%;
-    }
-
-    .nl-players .nl-desc-table tbody tr td:nth-child(12),
-    .nl-players .nl-desc-table thead tr th:nth-child(12) {
         width: 1%;
     }
 
+    /*.nl-players .nl-desc-table tbody tr td:nth-child(12),
+    .nl-players .nl-desc-table thead tr th:nth-child(12) {
+        width: 1%;
+    }
+*/
     .nl-players .nl-coin-table tbody tr td:nth-child(1),
     .nl-players .nl-coin-table thead tr th:nth-child(1) {
         text-align: center;
@@ -20150,11 +20157,11 @@ td:nth-child(4).homepage-list-view {
     padding-bottom: 0.5rem;
 }
 
-.nl-mob-table #accordion a .row {
+.nl-mob-table .clsaccordioncollapse a .row {
     position: relative;
 }
 
-    .nl-mob-table #accordion a .row:after {
+    .nl-mob-table .clsaccordioncollapse a .row:after {
         font-family: 'FontAwesome';
         display: inline-block;
         content: '\f055';
@@ -20176,7 +20183,7 @@ td:nth-child(4).homepage-list-view {
         right: 1.875rem;
     }
 
-.nl-mob-table #accordion a:not(.collapsed) .row:after {
+.nl-mob-table .clsaccordioncollapse a:not(.collapsed) .row:after {
     font-family: 'FontAwesome';
     content: '\f056';
     line-height: 1.9rem;
@@ -21026,7 +21033,7 @@ td:nth-child(4).homepage-list-view {
     background-color: #a0a0a0;
 }
 
-.nl-create-teams .nl-mob-table #accordion a .row:after {
+.nl-create-teams .nl-mob-table .clsaccordioncollapse a .row:after {
     right: 2.5rem;
 }
 
@@ -21059,7 +21066,8 @@ td:nth-child(4).homepage-list-view {
     .nl-create-team.soccer .nl-my-teams .nl-team-card img {
         height: 73px;
     }
-	 .nl-create-team.baseball .nl-my-teams .nl-team-card img {
+
+    .nl-create-team.baseball .nl-my-teams .nl-team-card img {
         height: 55px;
     }
 }
@@ -21068,7 +21076,8 @@ td:nth-child(4).homepage-list-view {
     .nl-create-team.soccer .nl-my-teams .nl-team-card img {
         height: 70px;
     }
-	 .nl-create-team.baseball .nl-my-teams .nl-team-card img {
+
+    .nl-create-team.baseball .nl-my-teams .nl-team-card img {
         height: 55px;
     }
 }
@@ -21077,7 +21086,8 @@ td:nth-child(4).homepage-list-view {
     .nl-create-team.soccer .nl-my-teams .nl-team-card img {
         height: 70px;
     }
-	 .nl-create-team.baseball .nl-my-teams .nl-team-card img {
+
+    .nl-create-team.baseball .nl-my-teams .nl-team-card img {
         height: 60px;
     }
 }
@@ -21086,8 +21096,9 @@ td:nth-child(4).homepage-list-view {
     .nl-create-team.soccer .nl-team-field .nl-player-block img {
         max-width: 72px;
     }
-	.nl-create-team.baseball .nl-team-field .nl-player-block img {
-        max-width:60px;
+
+    .nl-create-team.baseball .nl-team-field .nl-player-block img {
+        max-width: 60px;
     }
 }
 
@@ -21600,7 +21611,7 @@ td:nth-child(4).homepage-list-view {
     max-width: 310px;
     margin-left: auto;
     margin-right: auto;
-	margin-top:10px;
+    margin-top: 10px;
 }
 
     .nl-team-info .nl-team-name {
@@ -21815,6 +21826,16 @@ td:nth-child(4).homepage-list-view {
     .nl-create-team .player-main-block .nl-MM-position,
     .nl-live-score .player-main-block .nl-MM-position {
         bottom: 58%;
+        left: 45%;
+    }
+
+    .nl-create-team .player-main-block .nl-GK-position, .nl-live-score .player-main-block .nl-GK-position {
+        left: 45%;
+        bottom: 7.5%;
+    }
+
+    .nl-create-team .player-main-block .nl-DM-position, .nl-live-score .player-main-block .nl-DM-position {
+        bottom: 33%;
         left: 45%;
     }
 }
@@ -22212,7 +22233,7 @@ td:nth-child(4).homepage-list-view {
 .nl-create-team .player-main-block.baseball .nl-3B-position,
 .nl-live-score .player-main-block.baseball .nl-3B-position {
     bottom: 30.5%;
-    left:24%;
+    left: 24%;
 }
 
 .nl-create-team .player-main-block.baseball .nl-SPL-position,
@@ -22232,11 +22253,13 @@ td:nth-child(4).homepage-list-view {
     left: 42%;
     bottom: 10.5%;
 }
+
 .nl-create-team .player-main-block.baseball .nl-SPM-position,
 .nl-live-score .player-main-block.baseball .nl-SPM-position {
-  	 bottom: 8%;
-    left: 11%; 
+    bottom: 8%;
+    left: 11%;
 }
+
 .nl-create-team .player-main-block.baseball .nl-UTIL-position,
 .nl-live-score .player-main-block.baseball .nl-UTIL-position {
     right: 11%;
@@ -22316,7 +22339,8 @@ td:nth-child(4).homepage-list-view {
         min-height: 499px;
         max-height: 558px;
     }
-	.nl-create-team .nl-team-field .baseball,
+
+    .nl-create-team .nl-team-field .baseball,
     .nl-live-score .nl-team-field .baseball {
         min-height: 499px;
         max-height: 558px;
@@ -22358,7 +22382,7 @@ td:nth-child(4).homepage-list-view {
     .nl-live-score .nl-team-field.basketball .nl-player-block img {
         max-width: 104px;
     }
-	
+
 .nl-create-team .nl-team-field.baseball,
 .nl-live-score .nl-team-field.baseball {
     background: url(../img/baseball/nl-baseball-field.png) no-repeat 0 0;
@@ -23028,7 +23052,6 @@ td:nth-child(4).homepage-list-view {
             max-width: 15.5625rem;
             margin: 0 auto;
             display: block;
-
             border: 0.25rem solid #fff;
             border-radius: 0.25rem;
             margin-bottom: 0.9375rem;
@@ -23333,7 +23356,7 @@ td:nth-child(4).homepage-list-view {
 
 .nl-contests-table th:nth-child(4),
 .nl-contests-table td:nth-child(4) {
-    width: 9%;
+    width: 10%;
 }
 
 .nl-contests-table th:nth-child(5),
@@ -23389,7 +23412,6 @@ td:nth-child(4).homepage-list-view {
 
 .nl-contests-table .tab-content {
     border-radius: .625rem;
-
     border-top-left-radius: 0;
     -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
@@ -24142,13 +24164,13 @@ td:nth-child(4).homepage-list-view {
 
 .nl-enter-contests .player-main-block.baseball .nl-SPL-position,
 .nl-enter-contests .player-main-block.baseball .nl-SPL-position {
-	bottom:15%;
+    bottom: 15%;
     left: 14%;
 }
 
 .nl-enter-contests .player-main-block.baseball .nl-1B-position,
 .nl-enter-contests .player-main-block.baseball .nl-1B-position {
-   bottom: 36%;
+    bottom: 36%;
     right: 20%;
 }
 
@@ -24157,15 +24179,17 @@ td:nth-child(4).homepage-list-view {
     left: 43%;
     bottom: 18.5%;
 }
+
 .nl-enter-contests .player-main-block.baseball .nl-SPM-position,
 .nl-enter-contests .player-main-block.baseball .nl-SPM-position {
     bottom: 39%;
     left: 42%;
 }
+
 .nl-enter-contests .player-main-block.baseball .nl-UTIL-position,
 .nl-enter-contests .player-main-block.baseball .nl-UTIL-position {
     right: 14%;
-    bottom:15%;
+    bottom: 15%;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -25585,6 +25609,10 @@ td:nth-child(4).homepage-list-view {
     margin-top: 10px;
 }
 
+.rank.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
 .rank {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26466,11 +26494,11 @@ p.ads {
     }
 }
 
-.nl-faq #accordion {
+.nl-faq .clsaccordioncollapse {
     color: #0d3663;
 }
 
-    .nl-faq #accordion h5 a {
+    .nl-faq .clsaccordioncollapse h5 a {
         text-transform: none;
         position: relative;
         display: -webkit-box;
@@ -26485,7 +26513,7 @@ p.ads {
         font-weight: 500;
     }
 
-        .nl-faq #accordion h5 a:before {
+        .nl-faq .clsaccordioncollapse h5 a:before {
             display: inline-block;
             content: '+';
             font-size: 36px;
@@ -26507,34 +26535,34 @@ p.ads {
         }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .nl-faq #accordion h5 a:before {
+    .nl-faq .clsaccordioncollapse h5 a:before {
         top: 7px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .nl-faq #accordion h5 a:before {
+    .nl-faq .clsaccordioncollapse h5 a:before {
         top: 8px;
     }
 }
 
 @media (max-width: 767px) {
-    .nl-faq #accordion h5 a:before {
+    .nl-faq .clsaccordioncollapse h5 a:before {
         top: 7px;
     }
 }
 
 @media only screen and (max-width: 575px) {
-    .nl-faq #accordion h5 a:before {
+    .nl-faq .clsaccordioncollapse h5 a:before {
         top: 6px;
     }
 }
 
-.nl-faq #accordion h5 a:not(.collapsed):before {
+.nl-faq .clsaccordioncollapse h5 a:not(.collapsed):before {
     content: '-';
 }
 
-.nl-faq #accordion .card-block {
+.nl-faq .clsaccordioncollapse .card-block {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 1.4375rem;
@@ -26544,18 +26572,18 @@ p.ads {
 }
 
 @media (max-width: 991px) {
-    .nl-faq #accordion .card-block {
+    .nl-faq .clsaccordioncollapse .card-block {
         padding-left: 0;
     }
 }
 
-.nl-faq #accordion .card-block a {
+.nl-faq .clsaccordioncollapse .card-block a {
     color: #ff9f2f;
     -webkit-transition: all .3s;
     transition: all .3s;
 }
 
-    .nl-faq #accordion .card-block a:hover {
+    .nl-faq .clsaccordioncollapse .card-block a:hover {
         color: #c7710c;
     }
 
@@ -26796,7 +26824,7 @@ p.ads {
     }
 }
 
-.nl-my-contests .nl-mob-table #accordion a .row:after {
+.nl-my-contests .nl-mob-table .clsaccordioncollapse a .row:after {
     right: 2.5rem;
 }
 
@@ -26880,7 +26908,6 @@ p.ads {
 
 .nl-my-contests .pl-teams {
     margin-bottom: 0;
-
 }
 
 .nl-my-contests .pl-flag {
@@ -26954,6 +26981,9 @@ p.ads {
     .nl-desc-table {
         display: none;
     }
+	.nl-live-desc-table {
+        display: block;
+    }
 }
 
 .nl-mob-table.mob-table-striped .card:nth-of-type(odd) {
@@ -26994,11 +27024,11 @@ p.ads {
     padding-bottom: 0.5rem;
 }
 
-.nl-mob-table #accordion a .row {
+.nl-mob-table .clsaccordioncollapse a .row {
     position: relative;
 }
 
-    .nl-mob-table #accordion a .row:after {
+    .nl-mob-table .clsaccordioncollapse a .row:after {
         font-family: 'FontAwesome';
         display: inline-block;
         content: '\f055';
@@ -27020,7 +27050,7 @@ p.ads {
         right: 1.875rem;
     }
 
-.nl-mob-table #accordion a:not(.collapsed) .row:after {
+.nl-mob-table .clsaccordioncollapse a:not(.collapsed) .row:after {
     font-family: 'FontAwesome';
     content: '\f056';
     line-height: 1.9rem;
@@ -27915,16 +27945,24 @@ p.ads {
     background: url(../img/background-hockey.jpg) center center no-repeat fixed;
     background-size: cover;
 }
+
 .nl-section.crypto {
     background: url(../img/coin-background.png) center center no-repeat fixed;
     background-size: cover;
 }
+
 .nl-section.crypto, .nl-invite-bonus {
     background: url(../img/coin-background.png) center center no-repeat fixed;
     background-size: cover;
 }
+
 .nl-section.basketball, .edit-profile-wrapper.basketball {
     background: url(../img/basketball-background.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+.nl-section.baseball {
+    background: url(../img/Background-baseball.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 
@@ -28457,7 +28495,7 @@ div#nba-explained li, #crypto-explained li, #football-explained li, #soccer-expl
 }
 
 
-div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explained a, #hockey-explained a,#userloginpopup a {
+div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explained a, #hockey-explained a, #userloginpopup a {
     display: inline-block;
     width: fit-content;
     color: orange;
@@ -28925,30 +28963,33 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
 }
 
 .nl-invite-bonus .btn-big {
-	font-size: 25px;
-	padding:15px 10px;
+    font-size: 25px;
+    padding: 15px 10px;
 }
+
 .live-news {
-	width:108px;
-	height:100px;
-	background:#fff;
-	margin-left:2px;
-	border:solid 1px #ccc;
-	border-radius: 5px;
-	verflow-y: scroll;
-	overflow-x: hidden;
-	padding:2px;
-	line-height:15px;
+    width: 108px;
+    height: 100px;
+    background: #fff;
+    margin-left: 2px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    verflow-y: scroll;
+    overflow-x: hidden;
+    padding: 2px;
+    line-height: 15px;
 }
-.live-news li{
-	list-style:none;
-	padding:5px 0px;
-	border-bottom:solid 1px #ccc;
-}
-.live-news a{
-	font-size:11px;
-	color:#64686c;
-}
+
+    .live-news li {
+        list-style: none;
+        padding: 5px 0px;
+        border-bottom: solid 1px #ccc;
+    }
+
+    .live-news a {
+        font-size: 11px;
+        color: #64686c;
+    }
 
 @media (min-width: 768px) {
     .modal-dialog {
@@ -28967,65 +29008,73 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
         margin: 150px auto;
     }
 }
+
 @media (max-width: 992px) {
-   .nl-invite-bonus .btn-big {
-	font-size:16px;
-	padding:10px 7px;
-}
-.nl-contest-info-table .table-info2 .nl-time-block div span {
-    font-size: 1rem;
-	color:#e32424;
-}
-.crypto.nl-invite-bonus .headers th {
-    font-size: 10px;
-}
+    .nl-invite-bonus .btn-big {
+        font-size: 16px;
+        padding: 10px 7px;
+    }
+
+    .nl-contest-info-table .table-info2 .nl-time-block div span {
+        font-size: 1rem;
+        color: #e32424;
+    }
+
+    .crypto.nl-invite-bonus .headers th {
+        font-size: 10px;
+    }
 }
 
 .myaffiliates-desc-table tbody tr td:nth-child(1),
 .myaffiliates-desc-table thead tr th:nth-child(1) {
-	text-align: left;
-	width:15%;
+    text-align: left;
+    width: 15%;
 }
 
 .myaffiliates-desc-table tbody tr td:nth-child(2),
 .myaffiliates-desc-table thead tr th:nth-child(2) {
-	width:35%;
-	text-align: left;
+    width: 35%;
+    text-align: left;
 }
 
 .myaffiliates-desc-table tbody tr td:nth-child(3),
 .myaffiliates-desc-table thead tr th:nth-child(3) {
-	width:50%;
-	text-align: left;
+    width: 50%;
+    text-align: left;
 }
+
 .news-header .season-stats {
-	width:55px;
-	padding:3px;
-	font-size:12px;
-	text-align:center;
-	line-height:20px;
-	border-radius: 0.25rem;
-	background: -webkit-gradient(linear, left bottom, left top, from(#e37506), to(#e89708));
+    width: 55px;
+    padding: 3px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 0.25rem;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e37506), to(#e89708));
     background: linear-gradient(to top, #e37506, #e89708);
     border-color: #ddd #ddd linear-gradient(to top, #e37506, #e89708);
-	display: inline-grid;
+    display: inline-grid;
 }
-.news-header .season-stats span {
-	font-size:16px;
-	font-weight:700;
-}
+
+    .news-header .season-stats span {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
 .nl-home--slide {
-	margin-top:7rem;
-	vertical-align:bottom;
+    margin-top: 7rem;
+    vertical-align: bottom;
 }
-.nl-home--slide img {
-	margin:0 auto;
-	min-height:300px;
-	max-height:320px;
-	width:auto;
-}
+
+    .nl-home--slide img {
+        margin: 0 auto;
+        min-height: 300px;
+        max-height: 320px;
+        width: auto;
+    }
+
 .sport-icon img {
-	width:20px;
+    width: 20px;
 }
 
 
@@ -29036,46 +29085,50 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
     overflow: hidden;
     margin-top: 1px;
 }
+
 .table-pro table {
-    max-height:50px;
-	overflow:scroll;
+    max-height: 50px;
+    overflow: scroll;
 }
 
 .nl-my-teams .table-pro tbody tr td,
 .nl-my-teams .table-pro thead tr th {
-	font-size:15px;
+    font-size: 15px;
 }
 
-.nl-my-teams .table-pro tbody tr td:nth-child(1),
-.nl-my-teams .table-pro thead tr th:nth-child(1) {
-	text-align: left;
-	width:30%;
-	padding-left:1%;
-}
+    .nl-my-teams .table-pro tbody tr td:nth-child(1),
+    .nl-my-teams .table-pro thead tr th:nth-child(1) {
+        text-align: left;
+        width: 30%;
+        padding-left: 1%;
+    }
 
-.nl-my-teams .table-pro tbody tr td:nth-child(2),
-.nl-my-teams  .table-pro thead tr th:nth-child(2) {
-	width:15%;
-	text-align:center;
-	padding:10px 0px;
-}
+    .nl-my-teams .table-pro tbody tr td:nth-child(2),
+    .nl-my-teams .table-pro thead tr th:nth-child(2) {
+        width: 15%;
+        text-align: center;
+        padding: 10px 0px;
+    }
 
-.nl-my-teams .table-pro tbody tr td:nth-child(3),
-.nl-my-teams .table-pro thead tr th:nth-child(3) {
-	width:15%;
-	text-align:center;
-	padding:10px 0px;
-}
-.nl-my-teams .table-pro tbody tr td:nth-child(4),
-.nl-my-teams .table-pro thead tr th:nth-child(4) {
-	width:20%;
-	padding:10px 0px;
-}
-.nl-my-teams .table-pro tbody tr td:nth-child(5),
-.nl-my-teams .table-pro thead tr th:nth-child(5) {
-	width:20%;
-	padding:10px 0px;
-}
+    .nl-my-teams .table-pro tbody tr td:nth-child(3),
+    .nl-my-teams .table-pro thead tr th:nth-child(3) {
+        width: 15%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .nl-my-teams .table-pro tbody tr td:nth-child(4),
+    .nl-my-teams .table-pro thead tr th:nth-child(4) {
+        width: 20%;
+        padding: 10px 0px;
+    }
+
+    .nl-my-teams .table-pro tbody tr td:nth-child(5),
+    .nl-my-teams .table-pro thead tr th:nth-child(5) {
+        width: 20%;
+        padding: 10px 0px;
+    }
+
 .pro .nl-team-info {
     background: #061540;
     color: #fff;
@@ -29085,29 +29138,34 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
     font-weight: 600;
     overflow: hidden;
     border-radius: 0.625rem;
-    max-width:100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
 }
+
 .pro .pro-avtar {
-	width:60px;
+    width: 60px;
 }
+
 .pro .pro-set {
-	position:relative;
+    position: relative;
 }
+
 .pro .pro-vs {
-	position:absolute;
-	top:35%;
-	width:100%;
-	text-align:center;
-	font-size:80px;
-	font-weight:900;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
 }
+
 .pro .pro-enter-btn {
-	margin-top:50%;
-	text-align:center;
+    margin-top: 50%;
+    text-align: center;
 }
+
 .pro .nl-my-teams .nl-team-card-footer .nl-team-card-btns button {
     font-weight: 600;
     display: block;
@@ -29116,6 +29174,7 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
     margin-right: auto;
     font-size: 10px;
 }
+
 .nl-contests-table .homepage-contest-leaderboards th:nth-child(1),
 .nl-contests-table .homepage-contest-leaderboards td:nth-child(1) {
     width: 10% !important;
@@ -29124,53 +29183,60 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
 
 .nl-contests-table .homepage-contest-leaderboards th:nth-child(2),
 .nl-contests-table .homepage-contest-leaderboards td:nth-child(2) {
-    width:50%;
+    width: 50%;
     text-align: left !important;
 }
 
 .nl-contests-table .homepage-contest-leaderboards th:nth-child(3),
 .nl-contests-table .homepage-contest-leaderboards td:nth-child(3) {
-    width:20%;
+    width: 20%;
     text-align: left !important;
 }
 
 .nl-contests-table .homepage-contest-leaderboards th:nth-child(4),
 .nl-contests-table .homepage-contest-leaderboards td:nth-child(4) {
-    width:20%;
+    width: 20%;
     text-align: left;
 }
+
 .nl-table-custom {
     max-height: 16.0625rem;
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.peer-peer .btn-primary{
-	font-size:20px;
-	min-width:300px;
+
+.peer-peer .btn-primary {
+    font-size: 20px;
+    min-width: 300px;
 }
+
 .peer-player {
-	margin-top:20%;
+    margin-top: 20%;
 }
+
 .peer-bg {
-	background: url(../img/peer-bg.png) center center no-repeat;
-	min-height:600px;
+    background: url(../img/peer-bg.png) center center no-repeat;
+    min-height: 600px;
 }
+
 @media (max-width: 992px) {
-	.pro .pro-vs {
-	position:inherit;
-	width:100%;
-	top:inherit;
-	font-size:60px;
-	padding-bottom:40px;
-}
-.pro .pro-enter-btn {
-	margin-top:0;
-	text-align:center;
-}
-.peer-bg {
-	background:none;
-	min-height:inherit;
-}
+    .pro .pro-vs {
+        position: inherit;
+        width: 100%;
+        top: inherit;
+        font-size: 60px;
+        padding-bottom: 40px;
+    }
+
+    .pro .pro-enter-btn {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .peer-bg {
+        background: none;
+        min-height: inherit;
+    }
 }
 
 .table-pro .table-striped {
@@ -29180,46 +29246,50 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
     overflow: hidden;
     margin-top: 1px;
 }
+
 .table-pro table {
-    max-height:50px;
-	overflow:scroll;
+    max-height: 50px;
+    overflow: scroll;
 }
 
 .nl-my-teams .table-pro tbody tr td,
 .nl-my-teams .table-pro thead tr th {
-	font-size:15px;
+    font-size: 15px;
 }
 
-.nl-my-teams .table-pro tbody tr td:nth-child(1),
-.nl-my-teams .table-pro thead tr th:nth-child(1) {
-	text-align: left;
-	width:30%;
-	padding-left:1%;
-}
+    .nl-my-teams .table-pro tbody tr td:nth-child(1),
+    .nl-my-teams .table-pro thead tr th:nth-child(1) {
+        text-align: left;
+        width: 30%;
+        padding-left: 1%;
+    }
 
-.nl-my-teams .table-pro tbody tr td:nth-child(2),
-.nl-my-teams  .table-pro thead tr th:nth-child(2) {
-	width:15%;
-	text-align:center;
-	padding:10px 0px;
-}
+    .nl-my-teams .table-pro tbody tr td:nth-child(2),
+    .nl-my-teams .table-pro thead tr th:nth-child(2) {
+        width: 15%;
+        text-align: center;
+        padding: 10px 0px;
+    }
 
-.nl-my-teams .table-pro tbody tr td:nth-child(3),
-.nl-my-teams .table-pro thead tr th:nth-child(3) {
-	width:15%;
-	text-align:center;
-	padding:10px 0px;
-}
-.nl-my-teams .table-pro tbody tr td:nth-child(4),
-.nl-my-teams .table-pro thead tr th:nth-child(4) {
-	width:20%;
-	padding:10px 0px;
-}
-.nl-my-teams .table-pro tbody tr td:nth-child(5),
-.nl-my-teams .table-pro thead tr th:nth-child(5) {
-	width:20%;
-	padding:10px 0px;
-}
+    .nl-my-teams .table-pro tbody tr td:nth-child(3),
+    .nl-my-teams .table-pro thead tr th:nth-child(3) {
+        width: 15%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .nl-my-teams .table-pro tbody tr td:nth-child(4),
+    .nl-my-teams .table-pro thead tr th:nth-child(4) {
+        width: 20%;
+        padding: 10px 0px;
+    }
+
+    .nl-my-teams .table-pro tbody tr td:nth-child(5),
+    .nl-my-teams .table-pro thead tr th:nth-child(5) {
+        width: 20%;
+        padding: 10px 0px;
+    }
+
 .pro .nl-team-info {
     background: #061540;
     color: #fff;
@@ -29229,30 +29299,35 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
     font-weight: 600;
     overflow: hidden;
     border-radius: 0.625rem;
-    max-width:100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
 }
+
 .pro .pro-avtar {
-	width:60px;
+    width: 60px;
 }
+
 .pro .pro-set {
-	position:relative;
+    position: relative;
 }
+
 .pro .pro-vs {
-	position:absolute;
-	top:35%;
-	width:100%;
-	text-align:center;
-	font-size:80px;
-	font-weight:900;
-	height: 0;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    height: 0;
 }
+
 .pro .pro-enter-btn {
-	margin-top:50%;
-	text-align:center;
+    margin-top: 50%;
+    text-align: center;
 }
+
 .pro .nl-my-teams .nl-team-card-footer .nl-team-card-btns button {
     font-weight: 600;
     display: block;
@@ -29261,117 +29336,136 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
     margin-right: auto;
     font-size: 10px;
 }
-.peer-peer .btn-primary{
-	font-size:20px;
-	min-width:300px;
+
+.peer-peer .btn-primary {
+    font-size: 20px;
+    min-width: 300px;
 }
+
 .peer-checkbox .custom-control {
-     margin-right:5px; 
+    margin-right: 5px;
 }
+
 .peer-radio .custom-control-indicator {
-     border:solid 3px #ff9f2f;
-	 width:2em;
-	 height:2em;
+    border: solid 3px #ff9f2f;
+    width: 2em;
+    height: 2em;
 }
+
 .peer-checkbox .custom-control-indicator {
-     border:solid 2px #ff9f2f;
-	 width:1.6em;
-	 height:1.6em;
+    border: solid 2px #ff9f2f;
+    width: 1.6em;
+    height: 1.6em;
 }
 
 #newsSource {
-	opacity: 0.5;
+    opacity: 0.5;
 }
-.popover{
-	width:480px !important;
-    max-width:600px !important;
+
+.popover {
+    width: 480px !important;
+    max-width: 600px !important;
 }
+
 @media (max-width: 992px) {
-	.pro .pro-vs {
-	position:inherit;
-	width:100%;
-	top:inherit;
-	font-size:60px;
-	padding-bottom:40px;
+    .pro .pro-vs {
+        position: inherit;
+        width: 100%;
+        top: inherit;
+        font-size: 60px;
+        padding-bottom: 40px;
+    }
+
+    .pro .pro-enter-btn {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .popover {
+        width: 220px !important;
+    }
 }
-.pro .pro-enter-btn {
-	margin-top:0;
-	text-align:center;
-}
-.popover{
-	width:220px !important;
-}
-}
+
 .twitter-typeahead {
-	width:100%;
+    width: 100%;
 }
+
 .col-auto {
-	margin-bottom:0px;
+    margin-bottom: 0px;
 }
+
 .typeahead,
 .tt-query,
 .tt-hint {
-	width:100%;
-	height:34px;
-	padding:10px 13px;
-	line-height:18px;
-	outline: none;
-	font-size: 14px;
-	color:#9f9f9f;
-	font-weight:400;
-	margin-bottom:0px;
+    width: 100%;
+    height: 34px;
+    padding: 10px 13px;
+    line-height: 18px;
+    outline: none;
+    font-size: 14px;
+    color: #9f9f9f;
+    font-weight: 400;
+    margin-bottom: 0px;
 }
+
 .typeahead {
-	background-color: none;
+    background-color: none;
 }
+
 .tt-query {
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-		  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
+
 .tt-hint {
-	color: #999;
+    color: #999;
 }
-.tt-dropdown-menu {
-	width:100%;
-	padding: 5px 0;
-	background-color: #fff;
-	border: 1px solid #dcdcdc;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius:3px;
-	margin-top:-20px;
+
+.tt-menu, .tt-dropdown-menu {
+    width: 100%;
+    padding: 5px 0;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin-top: -20px;
 }
+
 .tt-suggestion {
-	padding: 3px 17px;
-	font-size:14px;
-	line-height: 24px;
-	font-weight:400;
+    padding: 3px 17px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
 }
-.tt-suggestion.tt-cursor {
-	color: #fff;
-	background-color: #e89608;
-}
-.tt-suggestion p {
-	margin: 0;
-}
+
+    .tt-suggestion.tt-cursor {
+        color: #fff;
+        background-color: #e89608;
+    }
+
+    .tt-suggestion p {
+        margin: 0;
+    }
 
 .nl-contests-table-pro th:nth-child(1),
 .nl-contests-table-pro td:nth-child(1) {
     width: 7%;
 }
+
 .nl-contests-table-pro th:nth-child(2),
 .nl-contests-table-pro td:nth-child(2) {
-    width:10%;
+    width: 10%;
 }
 
 .nl-contests-table-pro th:nth-child(3),
 .nl-contests-table-pro td:nth-child(3) {
-    width:10%;
+    width: 10%;
 }
 
 .nl-contests-table-pro th:nth-child(4),
 .nl-contests-table-pro td:nth-child(4) {
-    width:10%;
+    width: 10%;
 }
 
 .nl-contests-table-pro th:nth-child(5),
@@ -29381,7 +29475,7 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
 
 .nl-contests-table-pro th:nth-child(6),
 .nl-contests-table-pro td:nth-child(6) {
-    width:12%;
+    width: 12%;
 }
 
 .nl-contests-table-pro th:nth-child(7),
@@ -29391,97 +29485,965 @@ div#nba-explained a, #crypto-explained a, #football-explained a, #soccer-explain
 
 .nl-contests-table-pro th:nth-child(8),
 .nl-contests-table-pro td:nth-child(8) {
-    width:9%;
+    width: 9%;
 }
+
 .nl-contests-table-pro th:nth-child(9),
 .nl-contests-table-pro td:nth-child(9) {
-    width:9%;
+    width: 9%;
 }
+
 .nl-contests-table-pro th:nth-child(10),
 .nl-contests-table-pro td:nth-child(10) {
-    width:9%;
+    width: 9%;
 }
+
 .peer-scroll {
-	max-height:390px;
-	overflow-x:hidden;
-	overflow-y:auto;
-	font-size:14px;
+    max-height: 390px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 14px;
 }
-.peer-scroll p {
-	margin-bottom:0px;
-}
+
+    .peer-scroll p {
+        margin-bottom: 0px;
+    }
+
 .head-team h6 {
-	font-size:14px;
-	font-weight:700;
-	text-transform:uppercase;
-	margin-top:3px;
-	margin-bottom:3px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
+
 .game-inline {
-	margin-bottom:15px;
+    margin-bottom: 15px;
 }
-.game-inline .nl-time-block {
-    background: #eb9a0d;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
-    background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
-    border-radius: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    padding: 0.2125rem 0;
-}
+
+    .game-inline .nl-time-block {
+        background: #eb9a0d;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9a0d), color-stop(51%, #e57709), to(#eb9a0d));
+        background-image: linear-gradient(to bottom, #eb9a0d 0%, #e57709 51%, #eb9a0d 100%);
+        border-radius: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        padding: 0.2125rem 0;
+    }
+
 .nl-time-block .countdown_row {
     display: inline-flex;
 }
+
 .game-inline .nl-time-block .countdown_section {
-	text-align: center;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 14px;
-	font-size: 0.55rem;
-	line-height: 12px;
-	padding:0px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-size: 0.55rem;
+    line-height: 12px;
+    padding: 0px 12px;
 }
-.game-inline .nl-time-block .countdown_section  span {
-	display: block;
-	font-size:17px;
-	font-size: 1rem;
-	color: #fff;
-	line-height: 14px;
-}
+
+    .game-inline .nl-time-block .countdown_section span {
+        display: block;
+        font-size: 17px;
+        font-size: 1rem;
+        color: #fff;
+        line-height: 14px;
+    }
+
 .soccer .flag-logo-soccer {
     position: absolute;
-    bottom:40px;
+    bottom: 40px;
     left: 30px;
-	max-width:20px !important;
-
+    max-width: 20px !important;
 }
+
 .baseball .flag-logo-mlb {
     position: absolute;
-    bottom:32px;
+    bottom: 32px;
     left: 33px;
-	max-width:15px !important;
+    max-width: 15px !important;
 }
+
 .baseball .flag-logo-nba {
     position: absolute;
-    bottom:32px;
+    bottom: 32px;
     left: 33px;
-	max-width:15px !important;
+    max-width: 15px !important;
 }
+
 .basketball .flag-logo-nba {
     position: absolute;
-    bottom:32px;
+    bottom: 32px;
     left: 30px;
-	max-width:24px !important;
+    max-width: 24px !important;
 }
+
 .hockey .flag-logo-nhl {
     position: absolute;
-    bottom:28px;
+    bottom: 28px;
     left: 30px;
-	max-width:20px !important;
+    max-width: 20px !important;
+}
+
+.card-space {
+    padding-top: 7px;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(1),
+.nl-contests-table-pro .table_my_contests td:nth-child(1) {
+    width: 10% !important;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(2),
+.nl-contests-table-pro .table_my_contests td:nth-child(2) {
+    width: 15%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(3),
+.nl-contests-table-pro .table_my_contests td:nth-child(3) {
+    width: 15%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(4),
+.nl-contests-table-pro .table_my_contests td:nth-child(4) {
+    width: 9%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(5),
+.nl-contests-table-pro .table_my_contests td:nth-child(5) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(6),
+.nl-contests-table-pro .table_my_contests td:nth-child(6) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(7),
+.nl-contests-table-pro .table_my_contests td:nth-child(7) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(8),
+.nl-contests-table-pro .table_my_contests td:nth-child(8) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(9),
+.nl-contests-table-pro .table_my_contests td:nth-child(9) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(10),
+.nl-contests-table-pro .table_my_contests td:nth-child(10) {
+    width: 5%;
+}
+
+.nl-contests-table-pro .table_my_contests th:nth-child(11) {
+    width: 35px;
+}
+
+.nl-contests-table-pro .table_my_contests td:nth-child(11) {
+    width: 1%;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(1),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(1) {
+    width: 10% !important;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(2),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(2) {
+    width: 20%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(3),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(3) {
+    width: 11%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(4),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(4) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(5),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(5) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(6),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(6) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(7),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(7) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(8),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(8) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(9),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(9) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(10),
+.nl-contests-table-pro .table_my_contests2 td:nth-child(10) {
+    width: 5%;
+}
+
+.nl-contests-table-pro .table_my_contests2 th:nth-child(11) {
+    width: 35px;
+}
+
+.nl-contests-table-pro .table_my_contests2 td:nth-child(11) {
+    width: 1%;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(1),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(1) {
+    width: 10% !important;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(2),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(2) {
+    width: 15%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(3),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(3) {
+    width: 13%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(4),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(4) {
+    width: 9%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(5),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(5) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(6),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(6) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(7),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(7) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(8),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(8) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(9),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(9) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(10),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(10) {
+    width: 5%;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(11),
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(11) {
+    width: 5%;
+}
+
+.nl-contests-table-pro .table_my_contests_pro th:nth-child(12) {
+    width: 35px;
+}
+
+.nl-contests-table-pro .table_my_contests_pro td:nth-child(12) {
+    width: 1%;
+}
+
+@media (min-width: 1441px) {
+    .nl-contests-table-pro .table_my_contests_pro td:nth-child(12) {
+        width: 2%;
+    }
+
+    .nl-contests-table-pro .table_my_contests td:nth-child(12) {
+        width: 2%;
+    }
+
+    .nl-contests-table-pro .table_my_contests2 td:nth-child(12) {
+        width: 2%;
+    }
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(1),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(1) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(2),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(2) {
+    width: 15%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(3),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(3) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(4),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(4) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(5),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(5) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(6),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(6) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(7),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(7) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(8),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(8) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(9),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(9) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(10),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(10) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(11),
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(11) {
+    width: 5%;
+    text-align: center !important;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto th:nth-child(12) {
+    width: 35px;
+}
+
+.nl-contests-table-crypto .table_my_contests_crypto td:nth-child(12) {
+    width: 2%;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 100px) {
+    .resize-nl-desc-table {
+        display: block !important;
+    }
+}
+
+.nl-table-scroll-contestant {
+    max-height: 16.0625rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.lightbox {
+    background-color: fade(black, 80%);
+    overflow: scroll;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.lightbox-close {
+    top: 0;
+    position: absolute;
+    right: 0;
+    height: 36px;
+    width: 36px;
+    background-color: #eb9a0d;
+    opacity: 1;
+    border: 5px solid #ffffff;
+    text-shadow: none;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 18px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.video-container {
+    padding-bottom: 56.25%;
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+    height: 0;
+}
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+.basketball .myresults th:nth-child(1),
+.basketball .myresults td:nth-child(1) {
+    width: 8% !important;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(2),
+.basketball .myresults td:nth-child(2) {
+    width: 24%;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(3),
+.basketball .myresults td:nth-child(3) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(4),
+.basketball .myresults td:nth-child(4) {
+    width: 6%;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(5),
+.basketball .myresults td:nth-child(5) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(6),
+.basketball .myresults td:nth-child(6) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(7),
+.basketball .myresults td:nth-child(7) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(8),
+.basketball .myresults td:nth-child(8) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(9),
+.basketball .myresults td:nth-child(9) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.basketball .myresults th:nth-child(10),
+.basketball .myresults td:nth-child(10) {
+    width: 10%;
+    text-align: center;
+}
+
+.basketball .myresults th:nth-child(11) {
+    width: 35px;
+}
+
+.basketball .myresults td:nth-child(11) {
+    width: 1%;
+}
+
+.hockey .myresults th:nth-child(1),
+.hockey .myresults td:nth-child(1) {
+    width: 8% !important;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(2),
+.hockey .myresults td:nth-child(2) {
+    width: 24%;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(3),
+.hockey .myresults td:nth-child(3) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(4),
+.hockey .myresults td:nth-child(4) {
+    width: 6%;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(5),
+.hockey .myresults td:nth-child(5) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(6),
+.hockey .myresults td:nth-child(6) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(7),
+.hockey .myresults td:nth-child(7) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(8),
+.hockey .myresults td:nth-child(8) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(9),
+.hockey .myresults td:nth-child(9) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.hockey .myresults th:nth-child(10),
+.hockey .myresults td:nth-child(10) {
+    width: 10%;
+    text-align: center;
+}
+
+.hockey .myresults th:nth-child(11) {
+    width: 35px;
+}
+
+.hockey .myresults td:nth-child(11) {
+    width: 1%;
+}
+
+.baseball .myresults th:nth-child(1),
+.baseball .myresults td:nth-child(1) {
+    width: 8% !important;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(2),
+.baseball .myresults td:nth-child(2) {
+    width: 24%;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(3),
+.baseball .myresults td:nth-child(3) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(4),
+.baseball .myresults td:nth-child(4) {
+    width: 6%;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(5),
+.baseball .myresults td:nth-child(5) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(6),
+.baseball .myresults td:nth-child(6) {
+    width: 7%;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(7),
+.baseball .myresults td:nth-child(7) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(8),
+.baseball .myresults td:nth-child(8) {
+    width: 8%;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(9),
+.baseball .myresults td:nth-child(9) {
+    width: 10%;
+    text-align: left !important;
+}
+
+.baseball .myresults th:nth-child(10),
+.baseball .myresults td:nth-child(10) {
+    width: 10%;
+    text-align: center;
+}
+
+.baseball .myresults th:nth-child(11) {
+    width: 35px;
+}
+
+.baseball .myresults td:nth-child(11) {
+    width: 1%;
+}
+
+.game-time-player-font {
+    font-size: 9px;
+}
+
+.token-wrapper .nav-tabs {
+    margin-bottom: 1px;
+}
+
+.token-wrapper .tab-content {
+    border-radius: .625rem;
+    border-top-left-radius: 0;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+.token-wrapper .tx-log {
+    border-radius: .625rem;
+    -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.21);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.token-wrapper .nl-table-scroll {
+    max-height: 150px;
+}
+
+.table-total-positive {
+    background: #ccc;
+}
+
+    .table-total-positive .bold {
+        font-weight: 900;
+    }
+
+    .nl-table-positive th:nth-child(1),
+    .nl-table-positive td:nth-child(1),
+    .table-total-positive td:nth-child(1) {
+        width: 40% !important;
+        text-align: left !important;
+    }
+
+    .nl-table-positive th:nth-child(2),
+    .nl-table-positive td:nth-child(2),
+    .table-total-positive td:nth-child(2) {
+        width: 20%;
+        text-align: left !important;
+    }
+
+    .nl-table-positive th:nth-child(3),
+    .nl-table-positive td:nth-child(3),
+    .table-total-positive td:nth-child(3) {
+        width: 20%;
+        text-align: left !important;
+    }
+
+    .nl-table-positive th:nth-child(4),
+    .nl-table-positive td:nth-child(4),
+    .table-total-positive td:nth-child(4) {
+        width: 20%;
+    }
+
+.nl-table-log th:nth-child(1),
+.nl-table-log td:nth-child(1),
+.table-total-log td:nth-child(1) {
+    width: 30% !important;
+    text-align: left !important;
+}
+
+.nl-table-log th:nth-child(2),
+.nl-table-log td:nth-child(2),
+.table-total-log td:nth-child(2) {
+    width: 25%;
+    text-align: left !important;
+}
+
+.nl-table-log th:nth-child(3),
+.nl-table-log td:nth-child(3),
+.table-total-log td:nth-child(3) {
+    width: 15%;
+    text-align: left !important;
+}
+
+.nl-table-log th:nth-child(4),
+.nl-table-log td:nth-child(4),
+.table-total-log td:nth-child(4) {
+    width: 15%;
+}
+
+.nl-table-log th:nth-child(5),
+.nl-table-log td:nth-child(5),
+.table-total-log td:nth-child(5) {
+    width: 15%;
+}
+
+.myteam-model th:nth-child(1),
+.myteam-model td:nth-child(1) {
+    width: 10% !important;
+    text-align: left !important;
+    font-size: 13px;
+}
+
+.myteam-model th:nth-child(2),
+.myteam-model td:nth-child(2) {
+    width: 60%;
+    text-align: left !important;
+    font-size: 13px;
+}
+
+.myteam-model th:nth-child(3),
+.myteam-model td:nth-child(3) {
+    width: 10%;
+    text-align: left !important;
+    font-size: 13px;
+}
+
+.myteam-model th:nth-child(4),
+.myteam-model td:nth-child(4) {
+    width: 10%;
+    text-align: left !important;
+    font-size: 13px;
+}
+
+.myteam-model th:nth-child(5),
+.myteam-model td:nth-child(5) {
+    width: 10%;
+    text-align: left !important;
+    font-size: 13px;
+}
+
+.scroll-pop {
+    max-height: 700px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+    .scroll-pop .nl-team-card {
+        box-shadow: none;
+        width: 100%;
+        padding: 0 0.625rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #fff;
+        overflow: hidden;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-top-left-radius: 0.625rem;
+        border-top-right-radius: 0.625rem;
+        background: #061540;
+    }
+
+    .scroll-pop .myteam-livescore {
+        background: #061540;
+    }
+
+.leader_board_bg {
+    background: #fff;
+    margin-top: 20px;
+    max-height: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+    background: url(../img/leader_board_bg.jpg) center center no-repeat;
+    background-size: cover;
+    color: #333;
+    padding: 15px;
+}
+
+    .leader_board_bg img {
+        margin: 0 auto;
+        max-height: 150px;
+    }
+
+    .leader_board_bg .player_nam {
+        margin-bottom: 0px;
+    }
+
+    .leader_board_bg .rank {
+        text-align: center !important;
+        color: #fff;
+        padding: 5px;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 5px;
+    }
+
+    .leader_board_bg .leader_rank {
+        background: #e89608;
+        background: -webkit-gradient(linear, left top, left bottom, from(#e89608), to(#e37606));
+        background: linear-gradient(to bottom, #e89608 0%, #e37606 100%);
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 5rem;
+        text-align: center;
+        color: #fff;
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+.bgorange {
+    background-color: orange !important;
+}
+
+.img-leader {
+    width: 150px;
+    height: 150px;
+}
+
+.emojisection section {
+    min-height: 0 !important;
+}
+
+.nl-table-scroll-livescore-chat {
+    max-height: 15.0625rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.newchat {
+    background-color: #fff;
+    min-height: 15.0625rem;
+}
+.nl-live-desc-table {
+	font-size:15px !important;
+	white-space: nowrap;
+}
+.nl-live-desc-table th:nth-child(1),
+.nl-live-desc-table td:nth-child(1) {
+	width:30%;
+}
+.nl-live-desc-table th:nth-child(2),
+.nl-live-desc-table td:nth-child(2) {
+	width:20%;
+}
+.nl-live-desc-table th:nth-child(3),
+.nl-live-desc-table td:nth-child(3) {
+	width:5%;
+}
+.nl-live-desc-table th:nth-child(4),
+.nl-live-desc-table td:nth-child(4) {
+	width:5%;
+}
+.nl-live-desc-table th:nth-child(5),
+.nl-live-desc-table td:nth-child(5) {
+	width:5%;
+}
+.nl-live-desc-table th:nth-child(6),
+.nl-live-desc-table td:nth-child(6) {
+	width:5%;
+}
+.nl-live-desc-table th:nth-child(7),
+.nl-live-desc-table td:nth-child(7) {
+	width:5%;
+}
+.nl-live-desc-table th:nth-child(8),
+.nl-live-desc-table td:nth-child(8) {
+	width:5%;
+}
+.nl-live-desc-table th:nth-child(9),
+.nl-live-desc-table td:nth-child(9) {
+	width:5%;
+}
+.nl-live-desc-table th:nth-child(10),
+.nl-live-desc-table td:nth-child(10) {
+	width:5%;
+}
+.nl-live-desc-table th:nth-child(11),
+.nl-live-desc-table td:nth-child(11) {
+	width:10%;
+}
+@media (max-width:768px) {
+    .hide-mobile {
+        display: none;
+    }
+    .card-space {
+        padding-top: 0px;
+    }
+	.nl-live-desc-table .btn-sm {
+		padding: 0.15rem 0.2rem;
+		font-size: 0.675rem;
+		border-radius: 0.225rem;
+	}
 }
