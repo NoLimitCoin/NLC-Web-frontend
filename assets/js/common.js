@@ -143,13 +143,17 @@ $(function () {
     }).trigger('resize');
 
 })(jQuery);
-
-
+/*--------------------------------------------------------------
+ # Tooltip
+ --------------------------------------------------------------*/
+$(function () {
+     $('[data-toggle="tooltip"]').tooltip()
+})
 /*--------------------------------------------------------------
  # Demo
  --------------------------------------------------------------*/
 
-(function ($) {
+$(function () {
 
     var $nlPlayerTable = $('.nl-create-team-table .table-striped'),
         $nlTeamListTable = $('.nl-team-list .table-striped'),
@@ -286,6 +290,40 @@ $(function () {
 
     $('.list-view-btn').on('click', function () {
         switchAreas.call(this, '.nl-team-list', '.nl-team-field');
+    });
+ 	$('#sec1_fieldview').on('click', function () {
+        switchAreas.call(this, '#sec1_field_view', '#sec1_list_view');
+		  $("#salary").show();
+    });
+
+    $('#sec1_listview').on('click', function () {
+        switchAreas.call(this, '#sec1_list_view', '#sec1_field_view');
+		  $("#salary").hide();
+    });
+	 $('#sec2_fieldview').on('click', function () {
+        switchAreas.call(this, '#sec2_field_view', '#sec2_list_view');
+		 $("#sec_salary").show();
+    });
+
+    $('#sec2_listview').on('click', function () {
+        switchAreas.call(this, '#sec2_list_view', '#sec2_field_view');
+		 $("#sec_salary").hide();
+    });
+	
+	
+	
+	function switchAreas(showEl, hideEl) {
+        $(showEl).addClass('visible').removeClass('hide');
+        $(hideEl).addClass('hide').removeClass('visible');
+        $(this).addClass('active').siblings().removeClass('active');
+    }
+
+    $('.field-view-btn').on('click', function () {
+        switchAreas.call(this, '.lambo-view-coin', '.showe-list');
+    });
+
+    $('.list-view-btn').on('click', function () {
+        switchAreas.call(this, '.showe-list', '.lambo-view-coin');
     });
 
 
